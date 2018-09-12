@@ -7,9 +7,9 @@ namespace NetCoreApp.Data.EF
 {
     public class EfUnitOfWork : IUnitOfWork
     {
-        private readonly ApplicationDbContext _context;
+        private readonly AppDbContext _context;
 
-        public EfUnitOfWork(ApplicationDbContext context)
+        public EfUnitOfWork(AppDbContext context)
         {
             _context = context;
         }

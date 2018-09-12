@@ -10,9 +10,9 @@ namespace NetCoreApp.Data.EF
 {
     public class EfRepository<T, K> : IRepository<T,K>, IDisposable where T:DomainEntity<K>
     {
-        private readonly ApplicationDbContext _dbContext;
+        private readonly AppDbContext _dbContext;
 
-        public EfRepository(ApplicationDbContext dbContext)
+        public EfRepository(AppDbContext dbContext)
         {
             _dbContext = dbContext;
         }

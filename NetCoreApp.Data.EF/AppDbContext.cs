@@ -11,9 +11,9 @@ using NetCoreApp.Data.Interfaces;
 
 namespace NetCoreApp.Data.EF
 {
-    public class ApplicationDbContext : IdentityDbContext<AppUser, AppRole, Guid>
+    public class AppDbContext : IdentityDbContext<AppUser, AppRole, Guid>
     {
-        public ApplicationDbContext(DbContextOptions options) : base(options)
+        public AppDbContext(DbContextOptions options) : base(options)
         {
 
         }
