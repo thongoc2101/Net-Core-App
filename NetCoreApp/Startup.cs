@@ -1,10 +1,14 @@
-﻿using Microsoft.AspNetCore.Builder;
+﻿using AutoMapper;
+using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using NetCoreApp.Application.Implementations;
+using NetCoreApp.Application.Interfaces;
 using NetCoreApp.Data.EF;
+using NetCoreApp.Data.EF.Repositories;
 using NetCoreApp.Data.Entities;
 using NetCoreApp.Services;
 
@@ -34,8 +38,19 @@ namespace NetCoreApp
             services.AddScoped<UserManager<AppUser>, UserManager<AppUser>>();
             services.AddScoped<RoleManager<AppRole>, RoleManager<AppRole>>();
 
+            // Mapping from view model to model, and opposite
+            services.AddSingleton(Mapper.Configuration);
+            services.AddScoped<IMapper>(serviceProvider =>
+                new Mapper(serviceProvider.GetRequiredService<AutoMapper.IConfigurationProvider>(),
+                    serviceProvider.GetService));
+
             services.AddTransient<IEmailSender, EmailSender>();
+
+            // Created Seeding database
             services.AddTransient<DbInitializer>();
+
+            services.AddTransient<IProductCategoryRepository, ProductCategoryRepository>();
+            services.AddTransient<IProductCategoryService, ProductCategoryService>();
 
             services.AddMvc();
         }
