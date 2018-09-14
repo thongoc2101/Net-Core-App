@@ -1,13 +1,17 @@
 ﻿using System;
+using System.IO;
 using System.Linq;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.ChangeTracking;
+using Microsoft.EntityFrameworkCore.Design;
+using Microsoft.Extensions.Configuration;
 using NetCoreApp.Data.EF.Configurations;
 using NetCoreApp.Data.EF.Extensions;
 using NetCoreApp.Data.Entities;
 using NetCoreApp.Data.Interfaces;
+using NetCoreApp.Infrastructure.SharedKernel;
 
 namespace NetCoreApp.Data.EF
 {
@@ -59,11 +63,11 @@ namespace NetCoreApp.Data.EF
             // change default table name in DB 
             #region Identity config
 
-            modelBuilder.Entity<IdentityUserClaim<string>>().ToTable("AppUserClaims").HasKey(x => x.Id);
-            modelBuilder.Entity<IdentityRoleClaim<string>>().ToTable("AppRoleClaims").HasKey(x => x.Id);
-            modelBuilder.Entity<IdentityUserLogin<string>>().ToTable("AppUserLogins").HasKey(x => x.UserId);
-            modelBuilder.Entity<IdentityUserRole<string>>().ToTable("AppUserRoles").HasKey(x => new {x.UserId, x.RoleId});
-            modelBuilder.Entity<IdentityUserToken<string>>().ToTable("AppUserTokens").HasKey(x => x.UserId);
+            modelBuilder.Entity<IdentityUserClaim<Guid>>().ToTable("AppUserClaims").HasKey(x => x.Id);
+            modelBuilder.Entity<IdentityRoleClaim<Guid>>().ToTable("AppRoleClaims").HasKey(x => x.Id);
+            modelBuilder.Entity<IdentityUserLogin<Guid>>().ToTable("AppUserLogins").HasKey(x => x.UserId);
+            modelBuilder.Entity<IdentityUserRole<Guid>>().ToTable("AppUserRoles").HasKey(x => new {x.UserId, x.RoleId});
+            modelBuilder.Entity<IdentityUserToken<Guid>>().ToTable("AppUserTokens").HasKey(x => x.UserId);
 
             #endregion
 
@@ -77,7 +81,8 @@ namespace NetCoreApp.Data.EF
             modelBuilder.AddConfiguration(new ProductTagConfiguration());
             modelBuilder.AddConfiguration(new SystemConfigConfiguration());
 
-            base.OnModelCreating(modelBuilder);
+            // Delete table default in database
+            //base.OnModelCreating(modelBuilder);
         }
 
         public override int SaveChanges()
@@ -97,6 +102,28 @@ namespace NetCoreApp.Data.EF
                 }
             }
             return base.SaveChanges();
+        }
+    }
+
+    public class DesignTimeDbContextFactory : IDesignTimeDbContextFactory<AppDbContext>
+    {
+        /// <summary>
+        /// Created Db context
+        /// </summary>
+        /// <param name="args"></param>
+        /// <returns></returns>
+        public AppDbContext CreateDbContext(string[] args)
+        {
+            IConfiguration configuration = new ConfigurationBuilder()
+                .SetBasePath(Directory.GetCurrentDirectory())
+                .AddJsonFile("appsettings.json").Build();
+
+            var builder = new DbContextOptionsBuilder<AppDbContext>();
+
+            var connectionString = configuration.GetConnectionString("DefaultConnection");
+
+            builder.UseSqlServer(connectionString);
+            return new AppDbContext(builder.Options);
         }
     }
 }
