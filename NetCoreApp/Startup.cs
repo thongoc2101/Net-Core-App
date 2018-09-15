@@ -6,12 +6,14 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Logging;
 using NetCoreApp.Application.Implementations;
 using NetCoreApp.Application.Interfaces;
 using NetCoreApp.Data.EF;
 using NetCoreApp.Data.EF.Repositories;
 using NetCoreApp.Data.Entities;
 using NetCoreApp.Services;
+using Newtonsoft.Json.Serialization;
 
 namespace NetCoreApp
 {
@@ -71,12 +73,13 @@ namespace NetCoreApp
             services.AddTransient<IProductCategoryRepository, ProductCategoryRepository>();
             services.AddTransient<IProductCategoryService, ProductCategoryService>();
 
-            services.AddMvc();
+            services.AddMvc().AddJsonOptions(options => options.SerializerSettings.ContractResolver = new DefaultContractResolver());
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IHostingEnvironment env)
+        public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)
         {
+            loggerFactory.AddFile("Logs/app-{Date}.txt");
             if (env.IsDevelopment())
             {
                 app.UseBrowserLink();
@@ -100,7 +103,7 @@ namespace NetCoreApp
 
                 // setting areas 
                 routes.MapRoute(name: "areaRoute",
-                    template: "{area:exists}/{controller=Home}/{action=Index}/{id?}");
+                    template: "{area:exists}/{controller=Login}/{action=Index}/{id?}");
             });
         }
     }
