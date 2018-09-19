@@ -1,4 +1,6 @@
-﻿<!DOCTYPE html>
+﻿@using NetCoreApp.Extensions
+
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -40,7 +42,7 @@
                         </div>
                         <div class="profile_info">
                             <span>Welcome,</span>
-                            <h2>John Doe</h2>
+                            <h2>@User.GetSpecificClaim("FullName")</h2>
                         </div>
                     </div>
                     <!-- /menu profile quick info -->
@@ -194,7 +196,7 @@
                         <ul class="nav navbar-nav navbar-right">
                             <li class="">
                                 <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
-                                    <img src="~/admin-side/images/img.jpg" alt="">John Doe
+                                    <img src="@User.GetSpecificClaim("Avatar")" alt="">@User.GetSpecificClaim("FullName")
                                     <span class=" fa fa-angle-down"></span>
                                 </a>
                                 <ul class="dropdown-menu dropdown-usermenu pull-right">
@@ -310,17 +312,17 @@
     <!-- jQuery Sparklines -->
     <script src="~/vendor/jquery-sparkline/jquery.sparkline.js"></script>
     <!-- Flot -->
-    @*<script src="~/vendor/flot/jquery.flot.js"></script>
+    <script src="~/vendor/flot/jquery.flot.js"></script>
     <script src="~/vendor/flot/jquery.flot.pie.js"></script>
     <script src="~/vendor/flot/jquery.flot.time.js"></script>
     <script src="~/vendor/flot/jquery.flot.stack.js"></script>
-    <script src="~/vendor/flot/jquery.flot.resize.js"></script>*@
+    <script src="~/vendor/flot/jquery.flot.resize.js"></script>
     <!-- Flot plugins -->
-    @*<script src="~/vendor/flot-spline/jquery.flot.spline.js"></script>
+    <script src="~/vendor/flot-spline/jquery.flot.spline.js"></script>
     <script src="~/vendor/flot-orderbars/jquery.flot.orderBars.js"></script>
-    <script src="~/vendor/flot.curvedlines/curvedLines.js"></script>*@
+    <script src="~/vendor/flot.curvedlines/curvedLines.js"></script>
     <!-- DateJS -->
-    @*<script src="~/vendor/datejs/date.js"></script>*@
+    <script src="~/vendor/datejs/date.js"></script>
     <!-- bootstrap-daterangepicker -->
     <script src="~/vendor/bootstrap-daterangepicker/moment.min.js"></script>
     <script src="~/vendor/bootstrap-daterangepicker/daterangepicker.js"></script>

@@ -12,6 +12,7 @@ using NetCoreApp.Application.Interfaces;
 using NetCoreApp.Data.EF;
 using NetCoreApp.Data.EF.Repositories;
 using NetCoreApp.Data.Entities;
+using NetCoreApp.Helpers;
 using NetCoreApp.Services;
 using Newtonsoft.Json.Serialization;
 
@@ -74,6 +75,8 @@ namespace NetCoreApp
             services.AddTransient<IProductCategoryService, ProductCategoryService>();
 
             services.AddMvc().AddJsonOptions(options => options.SerializerSettings.ContractResolver = new DefaultContractResolver());
+
+            services.AddScoped<IUserClaimsPrincipalFactory<AppUser>, CustomClaimPrincipalFactory>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

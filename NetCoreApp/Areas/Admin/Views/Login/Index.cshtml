@@ -11,7 +11,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Đăng nhập hệ thống admin</title>
+    <title>Login</title>
     <!-- Bootstrap -->
     <link href="~/lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
     <!-- Font Awesome -->
@@ -29,25 +29,26 @@
         <div class="login_wrapper">
             <div class="animate form login_form">
                 <section class="login_content">
-                    <form>
+                    <form id="frmLogin">
                         @Html.AntiForgeryToken()
-                        <h1>Đăng nhập</h1>
+                        <h1>Login</h1>
                         <div>
-                            <input type="text" class="form-control" name="UserName" id="txtUseName" placeholder="Tên đăng nhập" required=""/>
+                            <input type="text" class="form-control" name="userName" id="txtUserName" placeholder="User name" required="" />
                         </div>
                         <div>
-                            <input type="password" class="form-control" name="password" id="txtPassword" placeholder="Password" required=""/>
+                            <input type="password" class="form-control" name="password" id="txtPassword" placeholder="Password" required="" />
                         </div>
+
                         <div>
-                            <a class="btn btn-default submit" id="btnLogin">Đăng nhập</a>
-                            <a class="reset_pass" href="#">Quên mật khẩu?</a>
+                            <a class="btn btn-default submit" id="btnLogin">Login</a>
+                            <a class="reset_pass" href="#">Forgot password?</a>
                         </div>
                         <div class="clearfix"></div>
                         <div class="separator">
                             <div class="clearfix"></div>
-                            <br/>
+                            <br />
                             <div>
-                                <h1><i class="fa fa-paw"></i> Gentelella Alela!</h1>
+                                <h1><i class="fa fa-paw"></i>ShopOnline</h1>
                                 <p>2018 Developer by PhanNgocCam</p>
                             </div>
                         </div>
@@ -59,6 +60,10 @@
     <script src="~/lib/jquery/dist/jquery.js"></script>
     <script src="~/vendor/notifyjs/notify.js"></script>
     <script src="~/app/Shared/app.js"></script>
+    <script src="~/lib/jquery-validation/dist/jquery.validate.js"></script>
+    <script src="~/lib/jquery-validation/dist/additional-methods.js"></script>
+    <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"></script>
+    <script src="~/vendor/jquery-validation/localization/messages_vi.js"></script>
     <script src="~/app/controllers/login/index.js"></script>
     <script>
         var login = new loginController();

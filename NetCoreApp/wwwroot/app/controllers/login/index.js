@@ -4,30 +4,45 @@
     }
 
     var registerEvents = function() {
+        $('#frmLogin').validate({
+            errorClass: 'red',
+            ignore: [],
+            rule: {
+                userName: {
+                    required: true
+                },
+                password: {
+                    required: true
+                }
+            }
+        });
+
         $('#btnLogin').on('click',
             function(e) {
-                e.preventDefault();
-                var user = $('#txtUseName').val();
-                var password = $('#txtPassword').val();
-                login(user, password);
+                if ($('#frmLogin').valid()) {
+                    e.preventDefault();
+                    var user = $('#txtUserName').val();
+                    var password = $('#txtPassword').val();
+                    login(user, password);
+                }
             });
     }
 
-    var login = function(user, pass) {
+var login = function(user, pass) {
         $.ajax({
-            type: "POST",
+            type: 'POST',
             data: {
                 UserName: user,
                 Password: pass
             },
             dataType: "json",
-            url: "/admin/login/authen",
+            url: "/admin/login/Authen",
             success: function(res) {
                 if (res.Success) {
                     app.notify("Login success", "success");
                     window.location.href = "/Admin/Home/Index";
                 } else {
-                    app.notify("Đăng nhập không đúng", "error");
+                    app.notify("Login Failed", "error");
                 }
             }
         });
