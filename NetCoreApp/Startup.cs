@@ -12,6 +12,7 @@ using NetCoreApp.Application.Interfaces;
 using NetCoreApp.Data.EF;
 using NetCoreApp.Data.EF.Repositories;
 using NetCoreApp.Data.Entities;
+using NetCoreApp.Data.IRepositories;
 using NetCoreApp.Helpers;
 using NetCoreApp.Services;
 using Newtonsoft.Json.Serialization;
@@ -71,8 +72,13 @@ namespace NetCoreApp
             // Created Seeding database
             services.AddTransient<DbInitializer>();
 
+            //Repository
             services.AddTransient<IProductCategoryRepository, ProductCategoryRepository>();
+            services.AddTransient<IFunctionRepository, FunctionRepository>();
+
+            //Service
             services.AddTransient<IProductCategoryService, ProductCategoryService>();
+            services.AddTransient<IFunctionService, FunctionService>();
 
             services.AddMvc().AddJsonOptions(options => options.SerializerSettings.ContractResolver = new DefaultContractResolver());
 

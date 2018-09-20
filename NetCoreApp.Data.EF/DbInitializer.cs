@@ -100,7 +100,6 @@ namespace NetCoreApp.Data.EF
                     Id = CommonConstants.DefaultFooterId,
                     Content = content
                 });
-                _context.SaveChanges();
             }
 
             if (_context.Colors.Count() == 0)
@@ -248,6 +247,8 @@ namespace NetCoreApp.Data.EF
                     Status = Status.Active
                 });
             }
+            //Lối nè, thiếu cái db.savechange
+            await _context.SaveChangesAsync();
         }
     }
 }
