@@ -22,6 +22,7 @@
 
     <!-- Custom Theme Style -->
     <link href="~/admin-side/css/custom.css" rel="stylesheet" />
+    @RenderSection("Styles", required: false)
 </head>
 
 <body class="nav-md">
@@ -195,6 +196,9 @@
     <script src="~/vendor/flot.curvedlines/curvedLines.js"></script>
     <!-- DateJS -->
     <script src="~/vendor/datejs/date.js"></script>
+
+    <!--Mustache-->
+    <script src="~/vendor/mustache/mustache.js"></script>
     <!-- bootstrap-daterangepicker -->
     <script src="~/vendor/bootstrap-daterangepicker/moment.min.js"></script>
     <script src="~/vendor/bootstrap-daterangepicker/daterangepicker.js"></script>
@@ -202,7 +206,8 @@
     <script src="~/vendor/notifyjs/notify.js"></script>
 
 
-<!-- Custom Theme Scripts -->
+    <!-- Custom Theme Scripts -->
     <script src="~/admin-side/js/custom.js"></script>
+    @RenderSection("Scrips", required: false)
 </body>
 </html>

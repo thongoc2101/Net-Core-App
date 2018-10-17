@@ -26,6 +26,7 @@
     "bootbox": "4.4.0",
     "animate.css": "3.7.0",
     "jquery-validation": "1.18.0",
-    "jquery-validation-unobtrusive": "3.2.10"
+    "jquery-validation-unobtrusive": "3.2.10",
+    "mustache": "3.0.0"
   }
 }

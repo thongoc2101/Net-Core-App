@@ -38,6 +38,6 @@ namespace NetCoreApp.Application.ViewModels
 
         public string SeoDescription { set; get; }
 
-        public ICollection<ProductViewModel> ProductViewModels { set; get; }
+        public ICollection<ProductViewModel> Products { set; get; }
     }
 }

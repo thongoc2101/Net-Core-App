@@ -65,6 +65,9 @@ var nodeLibs = {
     },
     "jquery-validation-unobtrusive": {
         "dist/*":""
+    },
+    "mustache": {
+        "*.js":""
     }
 };
 var templates = {
