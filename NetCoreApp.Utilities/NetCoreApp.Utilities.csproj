@@ -5,9 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Constants\" />
     <Folder Include="Helpers\" />
-    <Folder Include="Dtos\" />
   </ItemGroup>
 
 </Project>
