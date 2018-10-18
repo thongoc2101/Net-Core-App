@@ -11,6 +11,33 @@ namespace NetCoreApp.Data.Entities
     [Table("Products")]
     public class Product : DomainEntity<int>, ISwitchable, IDateTracking, IHasSeoMetaData
     {
+        //public Product(string name, int categoryId, string image, decimal price, decimal? promotionPrice,
+        //    decimal originalPrice, string description, string content, bool? hotFlag, bool? homeFlag,
+        //    int? viewCount, string tags, string unit, string seoAlias, string seoPageTitle, string seoDescription,
+        //    string seoKeywords, DateTime dateCreated, DateTime dateModified, Status status)
+        //{
+        //    Name = name;
+        //    CategoryId = categoryId;
+        //    Image = image;
+        //    Price = price;
+        //    PromotionPrice = promotionPrice;
+        //    OriginalPrice = originalPrice;
+        //    Description = description;
+        //    Content = content;
+        //    HotFlag = hotFlag;
+        //    HomeFlag = homeFlag;
+        //    ViewCount = viewCount;
+        //    Tags = tags;
+        //    Unit = unit;
+        //    SeoAlias = seoAlias;
+        //    SeoPageTitle = seoPageTitle;
+        //    SeoDescription = seoDescription;
+        //    SeoKeywords = seoKeywords;
+        //    DateCreated = dateCreated;
+        //    DateModified = dateModified;
+        //    Status = status;
+        //}
+
         [StringLength(255)]
         [Required]
         public string Name { get; set; }

@@ -7,9 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace NetCoreApp.Areas.Admin.Controllers
 {
-    [Area("Admin")]
-    [Authorize]
-    public class HomeController : Controller
+    public class HomeController : BaseController
     {
         public IActionResult Index()
         {

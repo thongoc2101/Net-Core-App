@@ -65,6 +65,12 @@ var nodeLibs = {
     },
     "jquery-validation-unobtrusive": {
         "dist/*":""
+    },
+    "mustache": {
+        "*.js":""
+    },
+    "twbs-pagination": {
+        "*.js":""
     }
 };
 var templates = {
