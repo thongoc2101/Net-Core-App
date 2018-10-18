@@ -68,6 +68,9 @@ var nodeLibs = {
     },
     "mustache": {
         "*.js":""
+    },
+    "twbs-pagination": {
+        "*.js":""
     }
 };
 var templates = {

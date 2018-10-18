@@ -4,7 +4,8 @@
 }
 
 @section Scrips{
-    <script src="~/app/controllers/product/index.js"></script>
+    <script src="~/app/Shared/app.js"></script>
+    <script src="~/app/controllers/product/index.js" asp-append-version="true"></script>
     <script>
         var productController = new productController();
         productController.initialize();
@@ -18,9 +19,9 @@
     <div class="title_right">
         <div class="col-md-5 col-sm-5 col-xs-12 form-group pull-right top_search">
             <div class="input-group">
-                <input type="text" class="form-control" placeholder="Search for...">
+                <input type="text" id="txtKeyword" class="form-control" placeholder="Search for...">
                 <span class="input-group-btn">
-                    <button class="btn btn-default" type="button">Go!</button>
+                    <button class="btn btn-default" id="btnSearch" type="button">Go!</button>
                 </span>
             </div>
         </div>
@@ -37,7 +38,7 @@
                 <table class="table table-bordered">
                     <thead>
                         <tr>
-                            <th>#</th>
+                            <th>Action</th>
                             <th>Name</th>
                             <th>Category</th>
                             <th>Price</th>
@@ -48,6 +49,28 @@
                     </thead>
                     <tbody id="table-content"></tbody>
                 </table>
+
+                <!--Pagination-->
+                <div class="row">
+                    <div class="col-sm-5">
+                        <div class="dataTables_info" id="datatable-checkbox_info" role="status" aria-live="polite">
+                            <select id="ddlShowPage">
+                                <option value="10" selected="selected">10</option>
+                                <option value="20">20</option>
+                                <option value="30">30</option>
+                                <option value="50">50</option>
+                            </select>
+                            <span class="item-per-page">
+                                records per page.
+                            </span>
+                            Total records: <strong id="lblTotalRecords"></strong>
+                        </div>
+                    </div><div class="col-sm-7">
+                        <div class="dataTables_paginate paging_simple_numbers" id="datatable-checkbox_paginate">
+                            <ul id="paginationUL"></ul>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -61,8 +84,8 @@
         <td>{{Name}}</td>
         <td>{{Category}}</td>
         <td>{{Price}}</td>
-        <td>{{Image}}</td>
+        <td>{{{Image}}}</td>
         <td>{{CreatedDate}}</td>
-        <td>{{Status}}</td>
+        <td>{{{Status}}}</td>
     </tr>
 </script>

@@ -28,6 +28,12 @@ namespace NetCoreApp.Areas.Admin.Controllers
             return new OkObjectResult(_productService.GetAll());
         }
 
+        [HttpGet]
+        public IActionResult GetAllPaging(int? categoryId, string keyword, int page, int pageSize)
+        {
+            return new OkObjectResult(_productService.GetAllPaging(categoryId, keyword, page, pageSize));
+        }
+
         #endregion
     }
 }
