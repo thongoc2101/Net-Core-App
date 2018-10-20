@@ -1,0 +1,625 @@
+2018-10-19T23:50:56.2299972+07:00  [INF] Entity Framework Core "2.0.0-rtm-26452" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=NetCoreApp.Data.EF " (9958f5bb)
+2018-10-19T23:50:56.9065898+07:00  [INF] Executed DbCommand ("155"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppRoles] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-10-19T23:50:56.9719618+07:00  [INF] Executed DbCommand ("29"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppUsers] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-10-19T23:50:57.0468517+07:00  [INF] Executed DbCommand ("37"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Functions] AS [f]" (0723d8ff)
+2018-10-19T23:50:57.1148360+07:00  [INF] Executed DbCommand ("25"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Footers] AS [x]
+WHERE [x].[Id] = 'DefaultFooterId'" (0723d8ff)
+2018-10-19T23:50:57.1495900+07:00  [INF] Executed DbCommand ("22"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Colors] AS [c]" (0723d8ff)
+2018-10-19T23:50:57.1871767+07:00  [INF] Executed DbCommand ("23"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [AdvertisementPages] AS [a]" (0723d8ff)
+2018-10-19T23:50:57.2324363+07:00  [INF] Executed DbCommand ("28"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Slides] AS [s]" (0723d8ff)
+2018-10-19T23:50:57.3092150+07:00  [INF] Executed DbCommand ("45"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Sizes] AS [s]" (0723d8ff)
+2018-10-19T23:50:57.3515271+07:00  [INF] Executed DbCommand ("28"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [ProductCategories] AS [p]" (0723d8ff)
+2018-10-19T23:50:57.3951059+07:00  [INF] Executed DbCommand ("28"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeTitle')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-10-19T23:50:57.4288632+07:00  [INF] Executed DbCommand ("20"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaKeyword')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-10-19T23:50:57.4654267+07:00  [INF] Executed DbCommand ("22"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaDescription')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-10-19T23:50:58.3305435+07:00 0HLHLSC5I04EA:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44383/   (ca22a1cb)
+2018-10-19T23:50:58.4276581+07:00 0HLHLSC5I04EB:00000001 [INF] Request starting HTTP/1.1 DEBUG http://localhost:15649/  0 (ca22a1cb)
+2018-10-19T23:50:58.6002194+07:00 0HLHLSC5I04EB:00000001 [INF] Request finished in 300.1469ms 200  (791a596a)
+2018-10-19T23:50:59.7160935+07:00 0HLHLSC5I04EA:00000001 [INF] Executing action method "NetCoreApp.Controllers.HomeController.Index (NetCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-10-19T23:51:04.8157615+07:00 0HLHLSC5I04EA:00000001 [INF] Executing ViewResult, running view at path "/Views/Home/Index.cshtml". (9707eebe)
+2018-10-19T23:51:05.9007019+07:00 0HLHLSC5I04EA:00000001 [INF] Executed action "NetCoreApp.Controllers.HomeController.Index (NetCoreApp)" in 6522.8145ms (afa2e885)
+2018-10-19T23:51:06.5366703+07:00 0HLHLSC5I04EA:00000001 [INF] Request finished in 7731.0922ms 200 text/html; charset=utf-8 (791a596a)
+2018-10-19T23:51:06.7837600+07:00 0HLHLSC5I04EB:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44383/lib/bootstrap/dist/css/bootstrap.css   (ca22a1cb)
+2018-10-19T23:51:06.9120219+07:00 0HLHLSC5I04ED:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44383/images/banner1.svg   (ca22a1cb)
+2018-10-19T23:51:06.9632878+07:00 0HLHLSC5I04EC:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44383/images/banner2.svg   (ca22a1cb)
+2018-10-19T23:51:06.9693044+07:00 0HLHLSC5I04EB:00000002 [INF] Sending file. Request path: '"/lib/bootstrap/dist/css/bootstrap.css"'. Physical path: '"D:\NetCore\NetCoreApp\NetCoreApp\wwwroot\lib\bootstrap\dist\css\bootstrap.css"' (27b0a520)
+2018-10-19T23:51:07.0456544+07:00 0HLHLSC5I04ED:00000001 [INF] Sending file. Request path: '"/images/banner1.svg"'. Physical path: '"D:\NetCore\NetCoreApp\NetCoreApp\wwwroot\images\banner1.svg"' (27b0a520)
+2018-10-19T23:51:07.5105569+07:00 0HLHLSC5I04EE:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44383/lib/jquery/dist/jquery.js   (ca22a1cb)
+2018-10-19T23:51:07.5264850+07:00 0HLHLSC5I04EC:00000001 [INF] Sending file. Request path: '"/images/banner2.svg"'. Physical path: '"D:\NetCore\NetCoreApp\NetCoreApp\wwwroot\images\banner2.svg"' (27b0a520)
+2018-10-19T23:51:07.5612070+07:00 0HLHLSC5I04EA:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44383/css/site.css   (ca22a1cb)
+2018-10-19T23:51:07.5846781+07:00 0HLHLSC5I04EE:00000001 [INF] Sending file. Request path: '"/lib/jquery/dist/jquery.js"'. Physical path: '"D:\NetCore\NetCoreApp\NetCoreApp\wwwroot\lib\jquery\dist\jquery.js"' (27b0a520)
+2018-10-19T23:51:07.6677644+07:00 0HLHLSC5I04EC:00000001 [INF] Request finished in 1369.3593ms 200 image/svg+xml (791a596a)
+2018-10-19T23:51:07.6770999+07:00 0HLHLSC5I04ED:00000001 [INF] Request finished in 859.2052ms 200 image/svg+xml (791a596a)
+2018-10-19T23:51:07.6837529+07:00 0HLHLSC5I04EF:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44383/images/banner4.svg   (ca22a1cb)
+2018-10-19T23:51:07.6999794+07:00 0HLHLSC5I04EG:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44383/js/site.js?v=ji3-IxbEzYWjzzLCGkF1KDjrT2jLbbrSYXw-AhMPNIA   (ca22a1cb)
+2018-10-19T23:51:07.7079883+07:00 0HLHLSC5I04EA:00000002 [INF] Sending file. Request path: '"/css/site.css"'. Physical path: '"D:\NetCore\NetCoreApp\NetCoreApp\wwwroot\css\site.css"' (27b0a520)
+2018-10-19T23:51:07.8600059+07:00 0HLHLSC5I04EG:00000001 [INF] Sending file. Request path: '"/js/site.js"'. Physical path: '"D:\NetCore\NetCoreApp\NetCoreApp\wwwroot\js\site.js"' (27b0a520)
+2018-10-19T23:51:07.9452916+07:00 0HLHLSC5I04EG:00000001 [INF] Request finished in 228.8026ms 200 application/javascript (791a596a)
+2018-10-19T23:51:07.9531166+07:00 0HLHLSC5I04EF:00000001 [INF] Sending file. Request path: '"/images/banner4.svg"'. Physical path: '"D:\NetCore\NetCoreApp\NetCoreApp\wwwroot\images\banner4.svg"' (27b0a520)
+2018-10-19T23:51:07.9926149+07:00 0HLHLSC5I04EH:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44383/lib/bootstrap/dist/js/bootstrap.js   (ca22a1cb)
+2018-10-19T23:51:07.9998422+07:00 0HLHLSC5I04EA:00000002 [INF] Request finished in 831.9512ms 200 text/css (791a596a)
+2018-10-19T23:51:08.0338308+07:00 0HLHLSC5I04EI:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44383/images/banner3.svg   (ca22a1cb)
+2018-10-19T23:51:08.1933405+07:00 0HLHLSC5I04EF:00000001 [INF] Request finished in 636.9513ms 200 image/svg+xml (791a596a)
+2018-10-19T23:51:08.3908261+07:00 0HLHLSC5I04EB:00000002 [INF] Request finished in 2051.453ms 200 text/css (791a596a)
+2018-10-19T23:51:08.6451747+07:00 0HLHLSC5I04EH:00000001 [INF] Sending file. Request path: '"/lib/bootstrap/dist/js/bootstrap.js"'. Physical path: '"D:\NetCore\NetCoreApp\NetCoreApp\wwwroot\lib\bootstrap\dist\js\bootstrap.js"' (27b0a520)
+2018-10-19T23:51:08.7396235+07:00 0HLHLSC5I04EI:00000001 [INF] Sending file. Request path: '"/images/banner3.svg"'. Physical path: '"D:\NetCore\NetCoreApp\NetCoreApp\wwwroot\images\banner3.svg"' (27b0a520)
+2018-10-19T23:51:09.0141254+07:00 0HLHLSC5I04EE:00000001 [INF] Request finished in 1548.6174ms 200 application/javascript (791a596a)
+2018-10-19T23:51:09.0895459+07:00 0HLHLSC5I04ED:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44383/lib/bootstrap/dist/fonts/glyphicons-halflings-regular.woff2   (ca22a1cb)
+2018-10-19T23:51:09.1248415+07:00 0HLHLSC5I04EI:00000001 [INF] Request finished in 1127.2172ms 200 image/svg+xml (791a596a)
+2018-10-19T23:51:09.1901763+07:00 0HLHLSC5I04EH:00000001 [INF] Request finished in 1145.2564ms 200 application/javascript (791a596a)
+2018-10-19T23:51:09.1937420+07:00 0HLHLSC5I04ED:00000002 [INF] Sending file. Request path: '"/lib/bootstrap/dist/fonts/glyphicons-halflings-regular.woff2"'. Physical path: '"D:\NetCore\NetCoreApp\NetCoreApp\wwwroot\lib\bootstrap\dist\fonts\glyphicons-halflings-regular.woff2"' (27b0a520)
+2018-10-19T23:51:09.3284341+07:00 0HLHLSC5I04ED:00000002 [INF] Request finished in 882.7917ms 200 font/woff2 (791a596a)
+2018-10-19T23:51:10.0935620+07:00 0HLHLSC5I04EC:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44383/admin   (ca22a1cb)
+2018-10-19T23:51:10.1874617+07:00 0HLHLSC5I04EC:00000002 [INF] Executing action method "NetCoreApp.Areas.Admin.Controllers.LoginController.Index (NetCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-10-19T23:51:10.8406052+07:00 0HLHLSC5I04EA:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44383/admin   (ca22a1cb)
+2018-10-19T23:51:10.8966697+07:00 0HLHLSC5I04EA:00000003 [INF] Executing action method "NetCoreApp.Areas.Admin.Controllers.LoginController.Index (NetCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-10-19T23:51:10.9553709+07:00 0HLHLSC5I04EC:00000002 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Login/Index.cshtml". (9707eebe)
+2018-10-19T23:51:10.9599463+07:00 0HLHLSC5I04EA:00000003 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Login/Index.cshtml". (9707eebe)
+2018-10-19T23:51:11.0569424+07:00 0HLHLSC5I04EC:00000002 [INF] Executed action "NetCoreApp.Areas.Admin.Controllers.LoginController.Index (NetCoreApp)" in 930.9605ms (afa2e885)
+2018-10-19T23:51:11.3651144+07:00 0HLHLSC5I04EA:00000003 [INF] Executed action "NetCoreApp.Areas.Admin.Controllers.LoginController.Index (NetCoreApp)" in 192.3235ms (afa2e885)
+2018-10-19T23:51:11.4353507+07:00 0HLHLSC5I04EG:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44383/vendor/font-awesome/css/font-awesome.css   (ca22a1cb)
+2018-10-19T23:51:11.4912189+07:00 0HLHLSC5I04EH:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44383/admin-side/css/custom.css   (ca22a1cb)
+2018-10-19T23:51:11.5031282+07:00 0HLHLSC5I04EG:00000002 [INF] Sending file. Request path: '"/vendor/font-awesome/css/font-awesome.css"'. Physical path: '"D:\NetCore\NetCoreApp\NetCoreApp\wwwroot\vendor\font-awesome\css\font-awesome.css"' (27b0a520)
+2018-10-19T23:51:11.5401693+07:00 0HLHLSC5I04EC:00000002 [INF] Request finished in 1001.8801ms 200 text/html; charset=utf-8 (791a596a)
+2018-10-19T23:51:11.5462968+07:00 0HLHLSC5I04EA:00000003 [INF] Request finished in 545.5811ms 200 text/html; charset=utf-8 (791a596a)
+2018-10-19T23:51:11.5850271+07:00 0HLHLSC5I04EI:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44383/lib/jquery/dist/jquery.js   (ca22a1cb)
+2018-10-19T23:51:11.7159214+07:00 0HLHLSC5I04EH:00000002 [INF] Sending file. Request path: '"/admin-side/css/custom.css"'. Physical path: '"D:\NetCore\NetCoreApp\NetCoreApp\wwwroot\admin-side\css\custom.css"' (27b0a520)
+2018-10-19T23:51:11.8752953+07:00 0HLHLSC5I04EI:00000002 [INF] Sending file. Request path: '"/lib/jquery/dist/jquery.js"'. Physical path: '"D:\NetCore\NetCoreApp\NetCoreApp\wwwroot\lib\jquery\dist\jquery.js"' (27b0a520)
+2018-10-19T23:51:11.9228795+07:00 0HLHLSC5I04ED:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44383/vendor/notifyjs/notify.js   (ca22a1cb)
+2018-10-19T23:51:11.9802228+07:00 0HLHLSC5I04EB:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44383/vendor/nprogress/nprogress.css   (ca22a1cb)
+2018-10-19T23:51:12.0244025+07:00 0HLHLSC5I04ED:00000003 [INF] Sending file. Request path: '"/vendor/notifyjs/notify.js"'. Physical path: '"D:\NetCore\NetCoreApp\NetCoreApp\wwwroot\vendor\notifyjs\notify.js"' (27b0a520)
+2018-10-19T23:51:12.1652494+07:00 0HLHLSC5I04EB:00000003 [INF] Sending file. Request path: '"/vendor/nprogress/nprogress.css"'. Physical path: '"D:\NetCore\NetCoreApp\NetCoreApp\wwwroot\vendor\nprogress\nprogress.css"' (27b0a520)
+2018-10-19T23:51:12.2147875+07:00 0HLHLSC5I04EC:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44383/lib/jquery-validation/dist/jquery.validate.js   (ca22a1cb)
+2018-10-19T23:51:12.2536562+07:00 0HLHLSC5I04EF:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44383/lib/bootstrap/dist/css/bootstrap.css   (ca22a1cb)
+2018-10-19T23:51:12.2756282+07:00 0HLHLSC5I04EB:00000003 [INF] Request finished in 246.5457ms 200 text/css (791a596a)
+2018-10-19T23:51:12.2849331+07:00 0HLHLSC5I04EC:00000003 [INF] Sending file. Request path: '"/lib/jquery-validation/dist/jquery.validate.js"'. Physical path: '"D:\NetCore\NetCoreApp\NetCoreApp\wwwroot\lib\jquery-validation\dist\jquery.validate.js"' (27b0a520)
+2018-10-19T23:51:12.3392799+07:00 0HLHLSC5I04EF:00000002 [INF] Sending file. Request path: '"/lib/bootstrap/dist/css/bootstrap.css"'. Physical path: '"D:\NetCore\NetCoreApp\NetCoreApp\wwwroot\lib\bootstrap\dist\css\bootstrap.css"' (27b0a520)
+2018-10-19T23:51:12.3498972+07:00 0HLHLSC5I04EE:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44383/vendor/animate.css/animate.css   (ca22a1cb)
+2018-10-19T23:51:12.3624384+07:00 0HLHLSC5I04ED:00000003 [INF] Request finished in 615.2012ms 200 application/javascript (791a596a)
+2018-10-19T23:51:12.4331919+07:00 0HLHLSC5I04EE:00000002 [INF] Sending file. Request path: '"/vendor/animate.css/animate.css"'. Physical path: '"D:\NetCore\NetCoreApp\NetCoreApp\wwwroot\vendor\animate.css\animate.css"' (27b0a520)
+2018-10-19T23:51:12.4597594+07:00 0HLHLSC5I04EJ:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44383/lib/jquery-validation/dist/additional-methods.js   (ca22a1cb)
+2018-10-19T23:51:12.4815324+07:00 0HLHLSC5I04EC:00000003 [INF] Request finished in 616.1245ms 200 application/javascript (791a596a)
+2018-10-19T23:51:12.5083238+07:00 0HLHLSC5I04EK:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44383/app/Shared/app.js   (ca22a1cb)
+2018-10-19T23:51:12.5436632+07:00 0HLHLSC5I04EM:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44383/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js   (ca22a1cb)
+2018-10-19T23:51:12.5647825+07:00 0HLHLSC5I04EK:00000001 [INF] Sending file. Request path: '"/app/Shared/app.js"'. Physical path: '"D:\NetCore\NetCoreApp\NetCoreApp\wwwroot\app\Shared\app.js"' (27b0a520)
+2018-10-19T23:51:12.6486681+07:00 0HLHLSC5I04EN:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44383/app/controllers/login/index.js   (ca22a1cb)
+2018-10-19T23:51:12.6586100+07:00 0HLHLSC5I04EJ:00000001 [INF] Sending file. Request path: '"/lib/jquery-validation/dist/additional-methods.js"'. Physical path: '"D:\NetCore\NetCoreApp\NetCoreApp\wwwroot\lib\jquery-validation\dist\additional-methods.js"' (27b0a520)
+2018-10-19T23:51:12.6986053+07:00 0HLHLSC5I04EN:00000001 [INF] Sending file. Request path: '"/app/controllers/login/index.js"'. Physical path: '"D:\NetCore\NetCoreApp\NetCoreApp\wwwroot\app\controllers\login\index.js"' (27b0a520)
+2018-10-19T23:51:12.7213976+07:00 0HLHLSC5I04EN:00000001 [INF] Request finished in 130.6195ms 200 application/javascript (791a596a)
+2018-10-19T23:51:12.7276515+07:00 0HLHLSC5I04EM:00000001 [INF] Sending file. Request path: '"/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"'. Physical path: '"D:\NetCore\NetCoreApp\NetCoreApp\wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.js"' (27b0a520)
+2018-10-19T23:51:12.8198849+07:00 0HLHLSC5I04EG:00000002 [INF] Request finished in 1552.3678ms 200 text/css (791a596a)
+2018-10-19T23:51:12.8244079+07:00 0HLHLSC5I04EL:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44383/vendor/jquery-validation/localization/messages_vi.js   (ca22a1cb)
+2018-10-19T23:51:12.8459109+07:00 0HLHLSC5I04EM:00000001 [INF] Request finished in 245.6303ms 200 application/javascript (791a596a)
+2018-10-19T23:51:12.8823150+07:00 0HLHLSC5I04EJ:00000001 [INF] Request finished in 307.7772ms 200 application/javascript (791a596a)
+2018-10-19T23:51:12.9316088+07:00 0HLHLSC5I04EH:00000002 [INF] Request finished in 1484.3247ms 200 text/css (791a596a)
+2018-10-19T23:51:13.1308876+07:00 0HLHLSC5I04EE:00000002 [INF] Request finished in 777.1587ms 200 text/css (791a596a)
+2018-10-19T23:51:13.2040687+07:00 0HLHLSC5I04EK:00000001 [INF] Request finished in 477.4894ms 200 application/javascript (791a596a)
+2018-10-19T23:51:13.2244717+07:00 0HLHLSC5I04EL:00000001 [INF] Sending file. Request path: '"/vendor/jquery-validation/localization/messages_vi.js"'. Physical path: '"D:\NetCore\NetCoreApp\NetCoreApp\wwwroot\vendor\jquery-validation\localization\messages_vi.js"' (27b0a520)
+2018-10-19T23:51:13.2350147+07:00 0HLHLSC5I04EF:00000002 [INF] Request finished in 1204.1629ms 200 text/css (791a596a)
+2018-10-19T23:51:13.5216987+07:00 0HLHLSC5I04EA:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44383/vendor/font-awesome/fonts/fontawesome-webfont.woff2?v=4.7.0   (ca22a1cb)
+2018-10-19T23:51:13.5477897+07:00 0HLHLSC5I04EI:00000002 [INF] Request finished in 1729.2571ms 200 application/javascript (791a596a)
+2018-10-19T23:51:13.5847453+07:00 0HLHLSC5I04EA:00000004 [INF] Sending file. Request path: '"/vendor/font-awesome/fonts/fontawesome-webfont.woff2"'. Physical path: '"D:\NetCore\NetCoreApp\NetCoreApp\wwwroot\vendor\font-awesome\fonts\fontawesome-webfont.woff2"' (27b0a520)
+2018-10-19T23:51:13.7555911+07:00 0HLHLSC5I04EL:00000001 [INF] Request finished in 689.4828ms 200 application/javascript (791a596a)
+2018-10-19T23:51:14.2805475+07:00 0HLHLSC5I04EA:00000004 [INF] Request finished in 662.7076ms 200 font/woff2 (791a596a)
+2018-10-19T23:51:14.8542403+07:00 0HLHLSC5I04EB:00000004 [INF] Request starting HTTP/1.1 POST http://localhost:44383/admin/login/Authen application/x-www-form-urlencoded; charset=UTF-8 33 (ca22a1cb)
+2018-10-19T23:51:15.2173000+07:00 0HLHLSC5I04EB:00000004 [INF] Executing action method "NetCoreApp.Areas.Admin.Controllers.LoginController.Authen (NetCoreApp)" with arguments (["NetCoreApp.Models.AccountViewModels.LoginViewModel"]) - ModelState is Valid (ba7f4ac2)
+2018-10-19T23:51:15.2601311+07:00 0HLHLSC5I04EB:00000004 [INF] Entity Framework Core "2.0.0-rtm-26452" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=NetCoreApp.Data.EF " (9958f5bb)
+2018-10-19T23:51:15.5546113+07:00 0HLHLSC5I04EB:00000004 [INF] Executed DbCommand ("190"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[Avatar], [u].[Balance], [u].[BirthDay], [u].[ConcurrencyStamp], [u].[DateCreated], [u].[DateModified], [u].[Email], [u].[EmailConfirmed], [u].[FullName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Status], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AppUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2018-10-19T23:51:15.8708675+07:00 0HLHLSC5I04EB:00000004 [INF] Executed DbCommand ("117"ms) [Parameters=["@__user_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AppUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0" (0723d8ff)
+2018-10-19T23:51:15.9931210+07:00 0HLHLSC5I04EB:00000004 [INF] Executed DbCommand ("46"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2018-10-19T23:51:16.1587571+07:00 0HLHLSC5I04EB:00000004 [INF] Executed DbCommand ("107"ms) [Parameters=["@__normalizedName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Description], [r].[Name], [r].[NormalizedName]
+FROM [AppRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2018-10-19T23:51:16.3036709+07:00 0HLHLSC5I04EB:00000004 [INF] Executed DbCommand ("81"ms) [Parameters=["@__role_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AppRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0" (0723d8ff)
+2018-10-19T23:51:16.3892045+07:00 0HLHLSC5I04EB:00000004 [INF] Executed DbCommand ("72"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2018-10-19T23:51:16.4090970+07:00 0HLHLSC5I04EB:00000004 [INF] AuthenticationScheme: "Identity.Application" signed in. (c66dd7e7)
+2018-10-19T23:51:16.4194005+07:00 0HLHLSC5I04EB:00000004 [INF] User logged in. (fdce0db4)
+2018-10-19T23:51:16.4361753+07:00 0HLHLSC5I04EB:00000004 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-10-19T23:51:16.5412115+07:00 0HLHLSC5I04EB:00000004 [INF] Executed action "NetCoreApp.Areas.Admin.Controllers.LoginController.Authen (NetCoreApp)" in 1549.1077ms (afa2e885)
+2018-10-19T23:51:16.5686166+07:00 0HLHLSC5I04EB:00000004 [INF] Request finished in 1717.1343ms 200 application/json; charset=utf-8 (791a596a)
+2018-10-19T23:51:16.6432677+07:00 0HLHLSC5I04ED:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44383/Admin/Home/Index   (ca22a1cb)
+2018-10-19T23:51:16.6557813+07:00 0HLHLSC5I04ED:00000004 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-10-19T23:51:16.6792580+07:00 0HLHLSC5I04ED:00000004 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-10-19T23:51:16.7342014+07:00 0HLHLSC5I04ED:00000004 [INF] Executing action method "NetCoreApp.Areas.Admin.Controllers.HomeController.Index (NetCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-10-19T23:51:17.1162191+07:00 0HLHLSC5I04ED:00000004 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Home/Index.cshtml". (9707eebe)
+2018-10-19T23:51:17.6929630+07:00 0HLHLSC5I04ED:00000004 [INF] Entity Framework Core "2.0.0-rtm-26452" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=NetCoreApp.Data.EF " (9958f5bb)
+2018-10-19T23:51:17.9355242+07:00 0HLHLSC5I04ED:00000004 [INF] Executed DbCommand ("162"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[Url], [dto].[ParentId], [dto].[IconCss], [dto].[SortOrder], [dto].[Status]
+FROM [Functions] AS [dto]" (0723d8ff)
+2018-10-19T23:51:19.0365103+07:00 0HLHLSC5I04ED:00000004 [INF] Executed action "NetCoreApp.Areas.Admin.Controllers.HomeController.Index (NetCoreApp)" in 2203.9229ms (afa2e885)
+2018-10-19T23:51:19.1127881+07:00 0HLHLSC5I04EH:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44383/vendor/nprogress/nprogress.css   (ca22a1cb)
+2018-10-19T23:51:19.1349152+07:00 0HLHLSC5I04EN:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44383/vendor/font-awesome/css/font-awesome.css   (ca22a1cb)
+2018-10-19T23:51:19.1512144+07:00 0HLHLSC5I04EG:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44383/admin-side/images/img.jpg   (ca22a1cb)
+2018-10-19T23:51:19.1795456+07:00 0HLHLSC5I04EM:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44383/admin-side/css/custom.css   (ca22a1cb)
+2018-10-19T23:51:19.1866157+07:00 0HLHLSC5I04EJ:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44383/vendor/bootstrap-daterangepicker/daterangepicker.css   (ca22a1cb)
+2018-10-19T23:51:19.2007009+07:00 0HLHLSC5I04EN:00000002 [INF] Sending file. Request path: '"/vendor/font-awesome/css/font-awesome.css"'. Physical path: '"D:\NetCore\NetCoreApp\NetCoreApp\wwwroot\vendor\font-awesome\css\font-awesome.css"' (27b0a520)
+2018-10-19T23:51:19.2202756+07:00 0HLHLSC5I04EH:00000003 [INF] Sending file. Request path: '"/vendor/nprogress/nprogress.css"'. Physical path: '"D:\NetCore\NetCoreApp\NetCoreApp\wwwroot\vendor\nprogress\nprogress.css"' (27b0a520)
+2018-10-19T23:51:19.3146715+07:00 0HLHLSC5I04EC:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44383/vendor/bootstrap/css/bootstrap.css   (ca22a1cb)
+2018-10-19T23:51:19.4141686+07:00 0HLHLSC5I04EG:00000003 [INF] Sending file. Request path: '"/admin-side/images/img.jpg"'. Physical path: '"D:\NetCore\NetCoreApp\NetCoreApp\wwwroot\admin-side\images\img.jpg"' (27b0a520)
+2018-10-19T23:51:19.5674395+07:00 0HLHLSC5I04ED:00000004 [INF] Request finished in 2410.3881ms 200 text/html; charset=utf-8 (791a596a)
+2018-10-19T23:51:19.7813351+07:00 0HLHLSC5I04EN:00000002 [INF] Request finished in 192.5284ms 200 text/css (791a596a)
+2018-10-19T23:51:20.0981101+07:00 0HLHLSC5I04EM:00000002 [INF] Sending file. Request path: '"/admin-side/css/custom.css"'. Physical path: '"D:\NetCore\NetCoreApp\NetCoreApp\wwwroot\admin-side\css\custom.css"' (27b0a520)
+2018-10-19T23:51:20.1288473+07:00 0HLHLSC5I04EJ:00000002 [INF] Sending file. Request path: '"/vendor/bootstrap-daterangepicker/daterangepicker.css"'. Physical path: '"D:\NetCore\NetCoreApp\NetCoreApp\wwwroot\vendor\bootstrap-daterangepicker\daterangepicker.css"' (27b0a520)
+2018-10-19T23:51:20.1503002+07:00 0HLHLSC5I04EH:00000003 [INF] Request finished in 240.8982ms 200 text/css (791a596a)
+2018-10-19T23:51:20.2085522+07:00 0HLHLSC5I04EC:00000004 [INF] Sending file. Request path: '"/vendor/bootstrap/css/bootstrap.css"'. Physical path: '"D:\NetCore\NetCoreApp\NetCoreApp\wwwroot\vendor\bootstrap\css\bootstrap.css"' (27b0a520)
+2018-10-19T23:51:20.2305541+07:00 0HLHLSC5I04EK:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44383/vendor/nprogress/nprogress.js   (ca22a1cb)
+2018-10-19T23:51:20.2883799+07:00 0HLHLSC5I04EN:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44383/vendor/flot/jquery.flot.time.js   (ca22a1cb)
+2018-10-19T23:51:20.3091984+07:00 0HLHLSC5I04EB:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:44383/vendor/jquery-sparkline/jquery.sparkline.js   (ca22a1cb)
+2018-10-19T23:51:20.3846276+07:00 0HLHLSC5I04EF:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44383/lib/jquery/dist/jquery.js   (ca22a1cb)
+2018-10-19T23:51:20.4506931+07:00 0HLHLSC5I04EO:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44383/vendor/flot-spline/jquery.flot.spline.js   (ca22a1cb)
+2018-10-19T23:51:20.5637661+07:00 0HLHLSC5I04EH:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44383/vendor/flot/jquery.flot.pie.js   (ca22a1cb)
+2018-10-19T23:51:20.5748204+07:00 0HLHLSC5I04EK:00000002 [INF] Sending file. Request path: '"/vendor/nprogress/nprogress.js"'. Physical path: '"D:\NetCore\NetCoreApp\NetCoreApp\wwwroot\vendor\nprogress\nprogress.js"' (27b0a520)
+2018-10-19T23:51:20.5879245+07:00 0HLHLSC5I04EN:00000003 [INF] Sending file. Request path: '"/vendor/flot/jquery.flot.time.js"'. Physical path: '"D:\NetCore\NetCoreApp\NetCoreApp\wwwroot\vendor\flot\jquery.flot.time.js"' (27b0a520)
+2018-10-19T23:51:20.6080782+07:00 0HLHLSC5I04EJ:00000002 [INF] Request finished in 1167.65ms 200 text/css (791a596a)
+2018-10-19T23:51:20.6403123+07:00 0HLHLSC5I04ED:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:44383/vendor/flot/jquery.flot.resize.js   (ca22a1cb)
+2018-10-19T23:51:20.6749415+07:00 0HLHLSC5I04EB:00000005 [INF] Sending file. Request path: '"/vendor/jquery-sparkline/jquery.sparkline.js"'. Physical path: '"D:\NetCore\NetCoreApp\NetCoreApp\wwwroot\vendor\jquery-sparkline\jquery.sparkline.js"' (27b0a520)
+2018-10-19T23:51:20.7079958+07:00 0HLHLSC5I04EO:00000001 [INF] Sending file. Request path: '"/vendor/flot-spline/jquery.flot.spline.js"'. Physical path: '"D:\NetCore\NetCoreApp\NetCoreApp\wwwroot\vendor\flot-spline\jquery.flot.spline.js"' (27b0a520)
+2018-10-19T23:51:20.7315487+07:00 0HLHLSC5I04EH:00000004 [INF] Sending file. Request path: '"/vendor/flot/jquery.flot.pie.js"'. Physical path: '"D:\NetCore\NetCoreApp\NetCoreApp\wwwroot\vendor\flot\jquery.flot.pie.js"' (27b0a520)
+2018-10-19T23:51:20.7472787+07:00 0HLHLSC5I04EP:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44383/vendor/flot.curvedlines/curvedLines.js   (ca22a1cb)
+2018-10-19T23:51:20.7938657+07:00 0HLHLSC5I04EF:00000003 [INF] Sending file. Request path: '"/lib/jquery/dist/jquery.js"'. Physical path: '"D:\NetCore\NetCoreApp\NetCoreApp\wwwroot\lib\jquery\dist\jquery.js"' (27b0a520)
+2018-10-19T23:51:20.8477248+07:00 0HLHLSC5I04EN:00000003 [INF] Request finished in 500.0309ms 200 application/javascript (791a596a)
+2018-10-19T23:51:20.9700272+07:00 0HLHLSC5I04EK:00000002 [INF] Request finished in 706.8987ms 200 application/javascript (791a596a)
+2018-10-19T23:51:20.9877300+07:00 0HLHLSC5I04ER:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44383/vendor/notifyjs/notify.js   (ca22a1cb)
+2018-10-19T23:51:21.0150404+07:00 0HLHLSC5I04EO:00000001 [INF] Request finished in 621.0994ms 200 application/javascript (791a596a)
+2018-10-19T23:51:21.0241349+07:00 0HLHLSC5I04ED:00000005 [INF] Sending file. Request path: '"/vendor/flot/jquery.flot.resize.js"'. Physical path: '"D:\NetCore\NetCoreApp\NetCoreApp\wwwroot\vendor\flot\jquery.flot.resize.js"' (27b0a520)
+2018-10-19T23:51:21.0299880+07:00 0HLHLSC5I04EQ:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44383/vendor/twbs-pagination/jquery.twbsPagination.js   (ca22a1cb)
+2018-10-19T23:51:21.0719319+07:00 0HLHLSC5I04EP:00000001 [INF] Sending file. Request path: '"/vendor/flot.curvedlines/curvedLines.js"'. Physical path: '"D:\NetCore\NetCoreApp\NetCoreApp\wwwroot\vendor\flot.curvedlines\curvedLines.js"' (27b0a520)
+2018-10-19T23:51:21.0916645+07:00 0HLHLSC5I04EH:00000004 [INF] Request finished in 548.7469ms 200 application/javascript (791a596a)
+2018-10-19T23:51:21.0973909+07:00 0HLHLSC5I04EL:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44383/vendor/flot/jquery.flot.js   (ca22a1cb)
+2018-10-19T23:51:21.1081357+07:00 0HLHLSC5I04ER:00000001 [INF] Sending file. Request path: '"/vendor/notifyjs/notify.js"'. Physical path: '"D:\NetCore\NetCoreApp\NetCoreApp\wwwroot\vendor\notifyjs\notify.js"' (27b0a520)
+2018-10-19T23:51:21.1230750+07:00 0HLHLSC5I04EA:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:44383/vendor/chart.js/Chart.js   (ca22a1cb)
+2018-10-19T23:51:21.2148972+07:00 0HLHLSC5I04EL:00000002 [INF] Sending file. Request path: '"/vendor/flot/jquery.flot.js"'. Physical path: '"D:\NetCore\NetCoreApp\NetCoreApp\wwwroot\vendor\flot\jquery.flot.js"' (27b0a520)
+2018-10-19T23:51:21.2255236+07:00 0HLHLSC5I04EQ:00000001 [INF] Sending file. Request path: '"/vendor/twbs-pagination/jquery.twbsPagination.js"'. Physical path: '"D:\NetCore\NetCoreApp\NetCoreApp\wwwroot\vendor\twbs-pagination\jquery.twbsPagination.js"' (27b0a520)
+2018-10-19T23:51:21.2327809+07:00 0HLHLSC5I04EA:00000005 [INF] Sending file. Request path: '"/vendor/chart.js/Chart.js"'. Physical path: '"D:\NetCore\NetCoreApp\NetCoreApp\wwwroot\vendor\chart.js\Chart.js"' (27b0a520)
+2018-10-19T23:51:21.2438932+07:00 0HLHLSC5I04EU:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44383/vendor/flot-orderbars/jquery.flot.orderBars.js   (ca22a1cb)
+2018-10-19T23:51:21.2501277+07:00 0HLHLSC5I04EI:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44383/vendor/fastclick/fastclick.js   (ca22a1cb)
+2018-10-19T23:51:21.2589414+07:00 0HLHLSC5I04EG:00000003 [INF] Request finished in 535.3147ms 200 image/jpeg (791a596a)
+2018-10-19T23:51:21.2902075+07:00 0HLHLSC5I04ES:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44383/vendor/datejs/date.js   (ca22a1cb)
+2018-10-19T23:51:21.3060433+07:00 0HLHLSC5I04ER:00000001 [INF] Request finished in 418.1672ms 200 application/javascript (791a596a)
+2018-10-19T23:51:21.4047249+07:00 0HLHLSC5I04ED:00000005 [INF] Request finished in 925.6812ms 200 application/javascript (791a596a)
+2018-10-19T23:51:21.4750879+07:00 0HLHLSC5I04ET:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44383/vendor/bootstrap-daterangepicker/daterangepicker.js   (ca22a1cb)
+2018-10-19T23:51:21.5916852+07:00 0HLHLSC5I04EU:00000001 [INF] Sending file. Request path: '"/vendor/flot-orderbars/jquery.flot.orderBars.js"'. Physical path: '"D:\NetCore\NetCoreApp\NetCoreApp\wwwroot\vendor\flot-orderbars\jquery.flot.orderBars.js"' (27b0a520)
+2018-10-19T23:51:21.6330396+07:00 0HLHLSC5I04EV:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44383/vendor/bootstrap-daterangepicker/moment.min.js   (ca22a1cb)
+2018-10-19T23:51:21.6989713+07:00 0HLHLSC5I04F0:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44383/vendor/mustache/mustache.js   (ca22a1cb)
+2018-10-19T23:51:21.7068613+07:00 0HLHLSC5I04ES:00000001 [INF] Sending file. Request path: '"/vendor/datejs/date.js"'. Physical path: '"D:\NetCore\NetCoreApp\NetCoreApp\wwwroot\vendor\datejs\date.js"' (27b0a520)
+2018-10-19T23:51:21.7789115+07:00 0HLHLSC5I04EQ:00000001 [INF] Request finished in 517.2124ms 200 application/javascript (791a596a)
+2018-10-19T23:51:21.8309759+07:00 0HLHLSC5I04EV:00000001 [INF] Sending file. Request path: '"/vendor/bootstrap-daterangepicker/moment.min.js"'. Physical path: '"D:\NetCore\NetCoreApp\NetCoreApp\wwwroot\vendor\bootstrap-daterangepicker\moment.min.js"' (27b0a520)
+2018-10-19T23:51:21.8462402+07:00 0HLHLSC5I04F0:00000001 [INF] Sending file. Request path: '"/vendor/mustache/mustache.js"'. Physical path: '"D:\NetCore\NetCoreApp\NetCoreApp\wwwroot\vendor\mustache\mustache.js"' (27b0a520)
+2018-10-19T23:51:21.8555683+07:00 0HLHLSC5I04ET:00000001 [INF] Sending file. Request path: '"/vendor/bootstrap-daterangepicker/daterangepicker.js"'. Physical path: '"D:\NetCore\NetCoreApp\NetCoreApp\wwwroot\vendor\bootstrap-daterangepicker\daterangepicker.js"' (27b0a520)
+2018-10-19T23:51:21.8649382+07:00 0HLHLSC5I04F1:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44383/admin-side/js/custom.js   (ca22a1cb)
+2018-10-19T23:51:21.9674313+07:00 0HLHLSC5I04EU:00000001 [INF] Request finished in 563.7371ms 200 application/javascript (791a596a)
+2018-10-19T23:51:22.1227016+07:00 0HLHLSC5I04EP:00000001 [INF] Request finished in 1291.2684ms 200 application/javascript (791a596a)
+2018-10-19T23:51:22.1314336+07:00 0HLHLSC5I04EI:00000003 [INF] Sending file. Request path: '"/vendor/fastclick/fastclick.js"'. Physical path: '"D:\NetCore\NetCoreApp\NetCoreApp\wwwroot\vendor\fastclick\fastclick.js"' (27b0a520)
+2018-10-19T23:51:22.1592896+07:00 0HLHLSC5I04F1:00000001 [INF] Sending file. Request path: '"/admin-side/js/custom.js"'. Physical path: '"D:\NetCore\NetCoreApp\NetCoreApp\wwwroot\admin-side\js\custom.js"' (27b0a520)
+2018-10-19T23:51:22.2235646+07:00 0HLHLSC5I04EE:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44383/lib/bootstrap/dist/js/bootstrap.js   (ca22a1cb)
+2018-10-19T23:51:22.2887486+07:00 0HLHLSC5I04EM:00000002 [INF] Request finished in 2775.6685ms 200 text/css (791a596a)
+2018-10-19T23:51:22.3255458+07:00 0HLHLSC5I04ET:00000001 [INF] Request finished in 1039.5295ms 200 application/javascript (791a596a)
+2018-10-19T23:51:22.3368459+07:00 0HLHLSC5I04EL:00000002 [INF] Request finished in 1162.6455ms 200 application/javascript (791a596a)
+2018-10-19T23:51:22.3621080+07:00 0HLHLSC5I04F0:00000001 [INF] Request finished in 779.5461ms 200 application/javascript (791a596a)
+2018-10-19T23:51:22.3904270+07:00 0HLHLSC5I04EB:00000005 [INF] Request finished in 1953.2076ms 200 application/javascript (791a596a)
+2018-10-19T23:51:22.4072098+07:00 0HLHLSC5I04EV:00000001 [INF] Request finished in 780.8874ms 200 application/javascript (791a596a)
+2018-10-19T23:51:22.4267083+07:00 0HLHLSC5I04EG:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44383/vendor/flot/jquery.flot.stack.js   (ca22a1cb)
+2018-10-19T23:51:22.5464481+07:00 0HLHLSC5I04EE:00000003 [INF] Sending file. Request path: '"/lib/bootstrap/dist/js/bootstrap.js"'. Physical path: '"D:\NetCore\NetCoreApp\NetCoreApp\wwwroot\lib\bootstrap\dist\js\bootstrap.js"' (27b0a520)
+2018-10-19T23:51:22.6913173+07:00 0HLHLSC5I04EG:00000004 [INF] Sending file. Request path: '"/vendor/flot/jquery.flot.stack.js"'. Physical path: '"D:\NetCore\NetCoreApp\NetCoreApp\wwwroot\vendor\flot\jquery.flot.stack.js"' (27b0a520)
+2018-10-19T23:51:22.7094228+07:00 0HLHLSC5I04ES:00000001 [INF] Request finished in 1440.226ms 200 application/javascript (791a596a)
+2018-10-19T23:51:22.8390535+07:00 0HLHLSC5I04EC:00000004 [INF] Request finished in 3437.4261ms 200 text/css (791a596a)
+2018-10-19T23:51:22.8629103+07:00 0HLHLSC5I04F1:00000001 [INF] Request finished in 1221.548ms 200 application/javascript (791a596a)
+2018-10-19T23:51:22.8680740+07:00 0HLHLSC5I04EG:00000004 [INF] Request finished in 560.8934ms 200 application/javascript (791a596a)
+2018-10-19T23:51:22.9036471+07:00 0HLHLSC5I04EE:00000003 [INF] Request finished in 2555.744ms 200 application/javascript (791a596a)
+2018-10-19T23:51:23.0456134+07:00 0HLHLSC5I04EN:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44383/vendor/bootstrap/fonts/glyphicons-halflings-regular.woff2   (ca22a1cb)
+2018-10-19T23:51:23.0725784+07:00 0HLHLSC5I04EF:00000003 [INF] Request finished in 2834.1527ms 200 application/javascript (791a596a)
+2018-10-19T23:51:23.0849385+07:00 0HLHLSC5I04EJ:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44383/vendor/font-awesome/fonts/fontawesome-webfont.woff2?v=4.7.0   (ca22a1cb)
+2018-10-19T23:51:23.0968157+07:00 0HLHLSC5I04EN:00000004 [INF] Sending file. Request path: '"/vendor/bootstrap/fonts/glyphicons-halflings-regular.woff2"'. Physical path: '"D:\NetCore\NetCoreApp\NetCoreApp\wwwroot\vendor\bootstrap\fonts\glyphicons-halflings-regular.woff2"' (27b0a520)
+2018-10-19T23:51:23.1117125+07:00 0HLHLSC5I04EI:00000003 [INF] Request finished in 2098.1021ms 200 application/javascript (791a596a)
+2018-10-19T23:51:23.2011674+07:00 0HLHLSC5I04EA:00000005 [INF] Request finished in 2096.7813ms 200 application/javascript (791a596a)
+2018-10-19T23:51:23.2873702+07:00 0HLHLSC5I04EN:00000004 [INF] Request finished in 320.8952ms 200 font/woff2 (791a596a)
+2018-10-19T23:51:23.3113079+07:00 0HLHLSC5I04EJ:00000003 [INF] Sending file. Request path: '"/vendor/font-awesome/fonts/fontawesome-webfont.woff2"'. Physical path: '"D:\NetCore\NetCoreApp\NetCoreApp\wwwroot\vendor\font-awesome\fonts\fontawesome-webfont.woff2"' (27b0a520)
+2018-10-19T23:51:23.3922381+07:00 0HLHLSC5I04EJ:00000003 [INF] Request finished in 451.0036ms 200 font/woff2 (791a596a)
+2018-10-19T23:51:28.6265580+07:00 0HLHLSC5I04EK:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44383/admin/product/index   (ca22a1cb)
+2018-10-19T23:51:28.6377722+07:00 0HLHLSC5I04EK:00000003 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-10-19T23:51:28.6521876+07:00 0HLHLSC5I04EK:00000003 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-10-19T23:51:28.7049129+07:00 0HLHLSC5I04EK:00000003 [INF] Executing action method "NetCoreApp.Areas.Admin.Controllers.ProductController.Index (NetCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-10-19T23:51:29.0967913+07:00 0HLHLSC5I04EK:00000003 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Product/Index.cshtml". (9707eebe)
+2018-10-19T23:51:29.1304807+07:00 0HLHLSC5I04EK:00000003 [INF] Entity Framework Core "2.0.0-rtm-26452" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=NetCoreApp.Data.EF " (9958f5bb)
+2018-10-19T23:51:29.2061167+07:00 0HLHLSC5I04EK:00000003 [INF] Executed DbCommand ("63"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[Url], [dto].[ParentId], [dto].[IconCss], [dto].[SortOrder], [dto].[Status]
+FROM [Functions] AS [dto]" (0723d8ff)
+2018-10-19T23:51:29.2315284+07:00 0HLHLSC5I04EK:00000003 [INF] Executed action "NetCoreApp.Areas.Admin.Controllers.ProductController.Index (NetCoreApp)" in 578.254ms (afa2e885)
+2018-10-19T23:51:29.2486292+07:00 0HLHLSC5I04EK:00000003 [INF] Request finished in 617.2088ms 200 text/html; charset=utf-8 (791a596a)
+2018-10-19T23:51:29.5208986+07:00 0HLHLSC5I04EH:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:44383/vendor/bootstrap/css/bootstrap.css   (ca22a1cb)
+2018-10-19T23:51:29.5604716+07:00 0HLHLSC5I04EO:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44383/vendor/font-awesome/css/font-awesome.css   (ca22a1cb)
+2018-10-19T23:51:29.6400996+07:00 0HLHLSC5I04ED:00000006 [INF] Request starting HTTP/1.1 GET http://localhost:44383/vendor/nprogress/nprogress.css   (ca22a1cb)
+2018-10-19T23:51:29.7107693+07:00 0HLHLSC5I04EU:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44383/admin-side/images/img.jpg   (ca22a1cb)
+2018-10-19T23:51:30.0911153+07:00 0HLHLSC5I04EH:00000005 [INF] Sending file. Request path: '"/vendor/bootstrap/css/bootstrap.css"'. Physical path: '"D:\NetCore\NetCoreApp\NetCoreApp\wwwroot\vendor\bootstrap\css\bootstrap.css"' (27b0a520)
+2018-10-19T23:51:30.1352325+07:00 0HLHLSC5I04EQ:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44383/admin-side/css/custom.css   (ca22a1cb)
+2018-10-19T23:51:30.3224719+07:00 0HLHLSC5I04ER:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44383/vendor/bootstrap-daterangepicker/daterangepicker.css   (ca22a1cb)
+2018-10-19T23:51:30.3955981+07:00 0HLHLSC5I04ED:00000006 [INF] Sending file. Request path: '"/vendor/nprogress/nprogress.css"'. Physical path: '"D:\NetCore\NetCoreApp\NetCoreApp\wwwroot\vendor\nprogress\nprogress.css"' (27b0a520)
+2018-10-19T23:51:30.4221131+07:00 0HLHLSC5I04EU:00000002 [INF] Sending file. Request path: '"/admin-side/images/img.jpg"'. Physical path: '"D:\NetCore\NetCoreApp\NetCoreApp\wwwroot\admin-side\images\img.jpg"' (27b0a520)
+2018-10-19T23:51:30.4639144+07:00 0HLHLSC5I04EO:00000002 [INF] Sending file. Request path: '"/vendor/font-awesome/css/font-awesome.css"'. Physical path: '"D:\NetCore\NetCoreApp\NetCoreApp\wwwroot\vendor\font-awesome\css\font-awesome.css"' (27b0a520)
+2018-10-19T23:51:30.5576681+07:00 0HLHLSC5I04EB:00000006 [INF] Request starting HTTP/1.1 GET http://localhost:44383/vendor/fastclick/fastclick.js   (ca22a1cb)
+2018-10-19T23:51:30.6206243+07:00 0HLHLSC5I04ED:00000006 [INF] Request finished in 955.4505ms 200 text/css (791a596a)
+2018-10-19T23:51:30.6883070+07:00 0HLHLSC5I04EC:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:44383/vendor/flot/jquery.flot.time.js   (ca22a1cb)
+2018-10-19T23:51:30.6954143+07:00 0HLHLSC5I04EQ:00000002 [INF] Sending file. Request path: '"/admin-side/css/custom.css"'. Physical path: '"D:\NetCore\NetCoreApp\NetCoreApp\wwwroot\admin-side\css\custom.css"' (27b0a520)
+2018-10-19T23:51:30.7062033+07:00 0HLHLSC5I04EM:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44383/lib/bootstrap/dist/js/bootstrap.js   (ca22a1cb)
+2018-10-19T23:51:30.7194957+07:00 0HLHLSC5I04EB:00000006 [INF] Sending file. Request path: '"/vendor/fastclick/fastclick.js"'. Physical path: '"D:\NetCore\NetCoreApp\NetCoreApp\wwwroot\vendor\fastclick\fastclick.js"' (27b0a520)
+2018-10-19T23:51:30.7447721+07:00 0HLHLSC5I04EU:00000002 [INF] Request finished in 1005.6049ms 200 image/jpeg (791a596a)
+2018-10-19T23:51:30.7585836+07:00 0HLHLSC5I04ET:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44383/vendor/nprogress/nprogress.js   (ca22a1cb)
+2018-10-19T23:51:30.8107729+07:00 0HLHLSC5I04ER:00000002 [INF] Sending file. Request path: '"/vendor/bootstrap-daterangepicker/daterangepicker.css"'. Physical path: '"D:\NetCore\NetCoreApp\NetCoreApp\wwwroot\vendor\bootstrap-daterangepicker\daterangepicker.css"' (27b0a520)
+2018-10-19T23:51:30.8869519+07:00 0HLHLSC5I04EE:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44383/vendor/flot/jquery.flot.stack.js   (ca22a1cb)
+2018-10-19T23:51:30.9114751+07:00 0HLHLSC5I04EC:00000005 [INF] Sending file. Request path: '"/vendor/flot/jquery.flot.time.js"'. Physical path: '"D:\NetCore\NetCoreApp\NetCoreApp\wwwroot\vendor\flot\jquery.flot.time.js"' (27b0a520)
+2018-10-19T23:51:30.9241893+07:00 0HLHLSC5I04EB:00000006 [INF] Request finished in 464.8636ms 200 application/javascript (791a596a)
+2018-10-19T23:51:30.9336018+07:00 0HLHLSC5I04EM:00000003 [INF] Sending file. Request path: '"/lib/bootstrap/dist/js/bootstrap.js"'. Physical path: '"D:\NetCore\NetCoreApp\NetCoreApp\wwwroot\lib\bootstrap\dist\js\bootstrap.js"' (27b0a520)
+2018-10-19T23:51:30.9402236+07:00 0HLHLSC5I04EL:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44383/vendor/jquery-sparkline/jquery.sparkline.js   (ca22a1cb)
+2018-10-19T23:51:30.9591995+07:00 0HLHLSC5I04EF:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44383/vendor/flot.curvedlines/curvedLines.js   (ca22a1cb)
+2018-10-19T23:51:30.9665271+07:00 0HLHLSC5I04ET:00000002 [INF] Sending file. Request path: '"/vendor/nprogress/nprogress.js"'. Physical path: '"D:\NetCore\NetCoreApp\NetCoreApp\wwwroot\vendor\nprogress\nprogress.js"' (27b0a520)
+2018-10-19T23:51:31.0780159+07:00 0HLHLSC5I04EV:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44383/vendor/flot/jquery.flot.js   (ca22a1cb)
+2018-10-19T23:51:31.1301937+07:00 0HLHLSC5I04EL:00000003 [INF] Sending file. Request path: '"/vendor/jquery-sparkline/jquery.sparkline.js"'. Physical path: '"D:\NetCore\NetCoreApp\NetCoreApp\wwwroot\vendor\jquery-sparkline\jquery.sparkline.js"' (27b0a520)
+2018-10-19T23:51:31.2711835+07:00 0HLHLSC5I04EJ:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44383/vendor/mustache/mustache.js   (ca22a1cb)
+2018-10-19T23:51:31.2870327+07:00 0HLHLSC5I04EV:00000002 [INF] Sending file. Request path: '"/vendor/flot/jquery.flot.js"'. Physical path: '"D:\NetCore\NetCoreApp\NetCoreApp\wwwroot\vendor\flot\jquery.flot.js"' (27b0a520)
+2018-10-19T23:51:31.3164344+07:00 0HLHLSC5I04ER:00000002 [INF] Request finished in 1501.9525ms 200 text/css (791a596a)
+2018-10-19T23:51:31.3346058+07:00 0HLHLSC5I04EC:00000005 [INF] Request finished in 598.9964ms 200 application/javascript (791a596a)
+2018-10-19T23:51:31.3535162+07:00 0HLHLSC5I04EK:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44383/vendor/bootstrap-daterangepicker/moment.min.js   (ca22a1cb)
+2018-10-19T23:51:31.3681200+07:00 0HLHLSC5I04ET:00000002 [INF] Request finished in 664.4141ms 200 application/javascript (791a596a)
+2018-10-19T23:51:31.3820629+07:00 0HLHLSC5I04EF:00000004 [INF] Sending file. Request path: '"/vendor/flot.curvedlines/curvedLines.js"'. Physical path: '"D:\NetCore\NetCoreApp\NetCoreApp\wwwroot\vendor\flot.curvedlines\curvedLines.js"' (27b0a520)
+2018-10-19T23:51:31.3916634+07:00 0HLHLSC5I04ES:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44383/vendor/flot/jquery.flot.pie.js   (ca22a1cb)
+2018-10-19T23:51:31.3982713+07:00 0HLHLSC5I04EJ:00000004 [INF] Sending file. Request path: '"/vendor/mustache/mustache.js"'. Physical path: '"D:\NetCore\NetCoreApp\NetCoreApp\wwwroot\vendor\mustache\mustache.js"' (27b0a520)
+2018-10-19T23:51:31.4809817+07:00 0HLHLSC5I04EE:00000004 [INF] Sending file. Request path: '"/vendor/flot/jquery.flot.stack.js"'. Physical path: '"D:\NetCore\NetCoreApp\NetCoreApp\wwwroot\vendor\flot\jquery.flot.stack.js"' (27b0a520)
+2018-10-19T23:51:31.5042975+07:00 0HLHLSC5I04EK:00000004 [INF] Sending file. Request path: '"/vendor/bootstrap-daterangepicker/moment.min.js"'. Physical path: '"D:\NetCore\NetCoreApp\NetCoreApp\wwwroot\vendor\bootstrap-daterangepicker\moment.min.js"' (27b0a520)
+2018-10-19T23:51:31.5164060+07:00 0HLHLSC5I04EO:00000002 [INF] Request finished in 1193.5401ms 200 text/css (791a596a)
+2018-10-19T23:51:31.5322702+07:00 0HLHLSC5I04EP:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44383/lib/jquery/dist/jquery.js   (ca22a1cb)
+2018-10-19T23:51:31.7326896+07:00 0HLHLSC5I04EA:00000006 [INF] Request starting HTTP/1.1 GET http://localhost:44383/vendor/datejs/date.js   (ca22a1cb)
+2018-10-19T23:51:31.7485754+07:00 0HLHLSC5I04ES:00000002 [INF] Sending file. Request path: '"/vendor/flot/jquery.flot.pie.js"'. Physical path: '"D:\NetCore\NetCoreApp\NetCoreApp\wwwroot\vendor\flot\jquery.flot.pie.js"' (27b0a520)
+2018-10-19T23:51:31.7592389+07:00 0HLHLSC5I04EJ:00000004 [INF] Request finished in 510.653ms 200 application/javascript (791a596a)
+2018-10-19T23:51:31.7851617+07:00 0HLHLSC5I04EK:00000004 [INF] Request finished in 311.5051ms 200 application/javascript (791a596a)
+2018-10-19T23:51:31.8001172+07:00 0HLHLSC5I04F1:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44383/vendor/flot-spline/jquery.flot.spline.js   (ca22a1cb)
+2018-10-19T23:51:31.8280253+07:00 0HLHLSC5I04EG:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:44383/vendor/flot/jquery.flot.resize.js   (ca22a1cb)
+2018-10-19T23:51:31.8885407+07:00 0HLHLSC5I04EA:00000006 [INF] Sending file. Request path: '"/vendor/datejs/date.js"'. Physical path: '"D:\NetCore\NetCoreApp\NetCoreApp\wwwroot\vendor\datejs\date.js"' (27b0a520)
+2018-10-19T23:51:31.9360962+07:00 0HLHLSC5I04EF:00000004 [INF] Request finished in 934.8708ms 200 application/javascript (791a596a)
+2018-10-19T23:51:31.9528146+07:00 0HLHLSC5I04EI:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44383/vendor/flot-orderbars/jquery.flot.orderBars.js   (ca22a1cb)
+2018-10-19T23:51:32.0015684+07:00 0HLHLSC5I04F3:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44383/vendor/bootstrap-daterangepicker/daterangepicker.js   (ca22a1cb)
+2018-10-19T23:51:32.0133896+07:00 0HLHLSC5I04EG:00000005 [INF] Sending file. Request path: '"/vendor/flot/jquery.flot.resize.js"'. Physical path: '"D:\NetCore\NetCoreApp\NetCoreApp\wwwroot\vendor\flot\jquery.flot.resize.js"' (27b0a520)
+2018-10-19T23:51:32.0231069+07:00 0HLHLSC5I04F2:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44383/app/Shared/app.js   (ca22a1cb)
+2018-10-19T23:51:32.0449826+07:00 0HLHLSC5I04F1:00000002 [INF] Sending file. Request path: '"/vendor/flot-spline/jquery.flot.spline.js"'. Physical path: '"D:\NetCore\NetCoreApp\NetCoreApp\wwwroot\vendor\flot-spline\jquery.flot.spline.js"' (27b0a520)
+2018-10-19T23:51:32.0837689+07:00 0HLHLSC5I04ES:00000002 [INF] Request finished in 780.4974ms 200 application/javascript (791a596a)
+2018-10-19T23:51:32.1092162+07:00 0HLHLSC5I04EE:00000004 [INF] Request finished in 1166.8522ms 200 application/javascript (791a596a)
+2018-10-19T23:51:32.1428901+07:00 0HLHLSC5I04F3:00000001 [INF] Sending file. Request path: '"/vendor/bootstrap-daterangepicker/daterangepicker.js"'. Physical path: '"D:\NetCore\NetCoreApp\NetCoreApp\wwwroot\vendor\bootstrap-daterangepicker\daterangepicker.js"' (27b0a520)
+2018-10-19T23:51:32.1575093+07:00 0HLHLSC5I04EN:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:44383/vendor/twbs-pagination/jquery.twbsPagination.js   (ca22a1cb)
+2018-10-19T23:51:32.1743607+07:00 0HLHLSC5I04F2:00000001 [INF] Sending file. Request path: '"/app/Shared/app.js"'. Physical path: '"D:\NetCore\NetCoreApp\NetCoreApp\wwwroot\app\Shared\app.js"' (27b0a520)
+2018-10-19T23:51:32.2511915+07:00 0HLHLSC5I04F0:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44383/vendor/chart.js/Chart.js   (ca22a1cb)
+2018-10-19T23:51:32.2668421+07:00 0HLHLSC5I04EI:00000004 [INF] Sending file. Request path: '"/vendor/flot-orderbars/jquery.flot.orderBars.js"'. Physical path: '"D:\NetCore\NetCoreApp\NetCoreApp\wwwroot\vendor\flot-orderbars\jquery.flot.orderBars.js"' (27b0a520)
+2018-10-19T23:51:32.2947155+07:00 0HLHLSC5I04EN:00000005 [INF] Sending file. Request path: '"/vendor/twbs-pagination/jquery.twbsPagination.js"'. Physical path: '"D:\NetCore\NetCoreApp\NetCoreApp\wwwroot\vendor\twbs-pagination\jquery.twbsPagination.js"' (27b0a520)
+2018-10-19T23:51:32.3036457+07:00 0HLHLSC5I04EP:00000002 [INF] Sending file. Request path: '"/lib/jquery/dist/jquery.js"'. Physical path: '"D:\NetCore\NetCoreApp\NetCoreApp\wwwroot\lib\jquery\dist\jquery.js"' (27b0a520)
+2018-10-19T23:51:32.3177319+07:00 0HLHLSC5I04F4:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44383/vendor/notifyjs/notify.js   (ca22a1cb)
+2018-10-19T23:51:32.3256942+07:00 0HLHLSC5I04F2:00000001 [INF] Request finished in 299.5986ms 200 application/javascript (791a596a)
+2018-10-19T23:51:32.3395570+07:00 0HLHLSC5I04F5:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44383/admin-side/js/custom.js   (ca22a1cb)
+2018-10-19T23:51:32.3495605+07:00 0HLHLSC5I04F0:00000002 [INF] Sending file. Request path: '"/vendor/chart.js/Chart.js"'. Physical path: '"D:\NetCore\NetCoreApp\NetCoreApp\wwwroot\vendor\chart.js\Chart.js"' (27b0a520)
+2018-10-19T23:51:32.4747137+07:00 0HLHLSC5I04F4:00000001 [INF] Sending file. Request path: '"/vendor/notifyjs/notify.js"'. Physical path: '"D:\NetCore\NetCoreApp\NetCoreApp\wwwroot\vendor\notifyjs\notify.js"' (27b0a520)
+2018-10-19T23:51:32.5008743+07:00 0HLHLSC5I04F5:00000001 [INF] Sending file. Request path: '"/admin-side/js/custom.js"'. Physical path: '"D:\NetCore\NetCoreApp\NetCoreApp\wwwroot\admin-side\js\custom.js"' (27b0a520)
+2018-10-19T23:51:32.5093998+07:00 0HLHLSC5I04EV:00000002 [INF] Request finished in 1535.2914ms 200 application/javascript (791a596a)
+2018-10-19T23:51:32.5204304+07:00 0HLHLSC5I04EN:00000005 [INF] Request finished in 730.0774ms 200 application/javascript (791a596a)
+2018-10-19T23:51:32.5278022+07:00 0HLHLSC5I04EL:00000003 [INF] Request finished in 1667.0454ms 200 application/javascript (791a596a)
+2018-10-19T23:51:32.5837458+07:00 0HLHLSC5I04F6:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44383/app/controllers/product/index.js?v=9VyzwBKFaYuhKQ-GYxMfWb7jvq_dataAvwUu6tfv87I   (ca22a1cb)
+2018-10-19T23:51:32.8613066+07:00 0HLHLSC5I04EI:00000004 [INF] Request finished in 1009.4737ms 200 application/javascript (791a596a)
+2018-10-19T23:51:32.8704278+07:00 0HLHLSC5I04EH:00000005 [INF] Request finished in 3018.0873ms 200 text/css (791a596a)
+2018-10-19T23:51:32.8833918+07:00 0HLHLSC5I04EQ:00000002 [INF] Request finished in 3158.3164ms 200 text/css (791a596a)
+2018-10-19T23:51:32.8915175+07:00 0HLHLSC5I04F4:00000001 [INF] Request finished in 461.4653ms 200 application/javascript (791a596a)
+2018-10-19T23:51:32.9163896+07:00 0HLHLSC5I04EM:00000003 [INF] Request finished in 2413.3253ms 200 application/javascript (791a596a)
+2018-10-19T23:51:32.9443502+07:00 0HLHLSC5I04F6:00000001 [INF] Sending file. Request path: '"/app/controllers/product/index.js"'. Physical path: '"D:\NetCore\NetCoreApp\NetCoreApp\wwwroot\app\controllers\product\index.js"' (27b0a520)
+2018-10-19T23:51:32.9647381+07:00 0HLHLSC5I04F1:00000002 [INF] Request finished in 1165.9494ms 200 application/javascript (791a596a)
+2018-10-19T23:51:33.0726609+07:00 0HLHLSC5I04F5:00000001 [INF] Request finished in 728.2963ms 200 application/javascript (791a596a)
+2018-10-19T23:51:33.0954382+07:00 0HLHLSC5I04EU:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44383/vendor/font-awesome/fonts/fontawesome-webfont.woff2?v=4.7.0   (ca22a1cb)
+2018-10-19T23:51:33.1062734+07:00 0HLHLSC5I04ED:00000007 [INF] Request starting HTTP/1.1 GET http://localhost:44383/vendor/bootstrap/fonts/glyphicons-halflings-regular.woff2   (ca22a1cb)
+2018-10-19T23:51:33.1279209+07:00 0HLHLSC5I04EA:00000006 [INF] Request finished in 1460.0206ms 200 application/javascript (791a596a)
+2018-10-19T23:51:33.1450261+07:00 0HLHLSC5I04F3:00000001 [INF] Request finished in 681.511ms 200 application/javascript (791a596a)
+2018-10-19T23:51:33.1796229+07:00 0HLHLSC5I04EU:00000003 [INF] Sending file. Request path: '"/vendor/font-awesome/fonts/fontawesome-webfont.woff2"'. Physical path: '"D:\NetCore\NetCoreApp\NetCoreApp\wwwroot\vendor\font-awesome\fonts\fontawesome-webfont.woff2"' (27b0a520)
+2018-10-19T23:51:33.1880925+07:00 0HLHLSC5I04ED:00000007 [INF] Sending file. Request path: '"/vendor/bootstrap/fonts/glyphicons-halflings-regular.woff2"'. Physical path: '"D:\NetCore\NetCoreApp\NetCoreApp\wwwroot\vendor\bootstrap\fonts\glyphicons-halflings-regular.woff2"' (27b0a520)
+2018-10-19T23:51:33.1943432+07:00 0HLHLSC5I04F6:00000001 [INF] Request finished in 696.684ms 200 application/javascript (791a596a)
+2018-10-19T23:51:33.3374519+07:00 0HLHLSC5I04ED:00000007 [INF] Request finished in 224.5299ms 200 font/woff2 (791a596a)
+2018-10-19T23:51:33.3715573+07:00 0HLHLSC5I04EG:00000005 [INF] Request finished in 1702.6035ms 200 application/javascript (791a596a)
+2018-10-19T23:51:33.4598068+07:00 0HLHLSC5I04EP:00000002 [INF] Request finished in 3814.1525ms 200 application/javascript (791a596a)
+2018-10-19T23:51:33.6682523+07:00 0HLHLSC5I04EU:00000003 [INF] Request finished in 409.5761ms 200 font/woff2 (791a596a)
+2018-10-19T23:51:33.7016168+07:00 0HLHLSC5I04F0:00000002 [INF] Request finished in 2908.7304ms 200 application/javascript (791a596a)
+2018-10-19T23:51:33.8135676+07:00 0HLHLSC5I04EO:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44383/admin/productCategory/GetAll   (ca22a1cb)
+2018-10-19T23:51:33.8584913+07:00 0HLHLSC5I04EB:00000007 [INF] Request starting HTTP/1.1 GET http://localhost:44383/admin/product/GetAllPaging?categoryId=--Search+Category--&keyword=&page=1&pageSize=10   (ca22a1cb)
+2018-10-19T23:51:33.8697516+07:00 0HLHLSC5I04EO:00000003 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-10-19T23:51:34.0062129+07:00 0HLHLSC5I04EB:00000007 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-10-19T23:51:34.0789227+07:00 0HLHLSC5I04EO:00000003 [INF] Request finished in 154.1906ms 404  (791a596a)
+2018-10-19T23:51:34.1047141+07:00 0HLHLSC5I04EB:00000007 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-10-19T23:51:34.2147982+07:00 0HLHLSC5I04EB:00000007 [INF] Executing action method "NetCoreApp.Areas.Admin.Controllers.ProductController.GetAllPaging (NetCoreApp)" with arguments (["", "", "1", "10"]) - ModelState is Invalid (ba7f4ac2)
+2018-10-19T23:51:34.2555344+07:00 0HLHLSC5I04EB:00000007 [INF] Entity Framework Core "2.0.0-rtm-26452" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=NetCoreApp.Data.EF " (9958f5bb)
+2018-10-19T23:51:34.4136299+07:00 0HLHLSC5I04EB:00000007 [INF] Executed DbCommand ("112"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Products] AS [p]" (0723d8ff)
+2018-10-19T23:51:34.6497426+07:00 0HLHLSC5I04EB:00000007 [INF] Executed DbCommand ("82"ms) [Parameters=["@__p_0='?', @__p_1='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id] AS [Id1], [x].[Name], [x].[CategoryId] AS [Id0], [x].[Image], [x].[Price], [x].[PromotionPrice], [x].[OriginalPrice], [x].[Description], [x].[Content], [x].[HomeFlag], [x].[HotFlag], [x].[ViewCount], [x].[Tags], [x].[Unit], CASE
+    WHEN [x].[CategoryId] IS NOT NULL
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END, [x.ProductCategory].[Name] AS [Name0], [x.ProductCategory].[Description] AS [Description0], [x.ProductCategory].[ParentId], [x.ProductCategory].[HomeOrder], [x.ProductCategory].[Image] AS [Image0], [x.ProductCategory].[HomeFlag] AS [HomeFlag0], [x.ProductCategory].[DateCreated], [x.ProductCategory].[DateModified], [x.ProductCategory].[Status], [x.ProductCategory].[SortOrder], [x.ProductCategory].[SeoPageTitle], [x.ProductCategory].[SeoAlias], [x.ProductCategory].[SeoKeywords], [x.ProductCategory].[SeoDescription], [x.ProductCategory].[Id], [x].[SeoPageTitle] AS [SeoPageTitle0], [x].[SeoAlias] AS [SeoAlias0], [x].[SeoKeywords] AS [SeoKeywords0], [x].[SeoDescription] AS [SeoDescription0], [x].[DateCreated] AS [DateCreated0], [x].[DateModified] AS [DateModified0], [x].[Status] AS [Status0]
+FROM [Products] AS [x]
+INNER JOIN [ProductCategories] AS [x.ProductCategory] ON [x].[CategoryId] = [x.ProductCategory].[Id]
+ORDER BY [DateCreated0] DESC
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY" (0723d8ff)
+2018-10-19T23:51:34.7661326+07:00 0HLHLSC5I04EB:00000007 [INF] Executed DbCommand ("77"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-10-19T23:51:34.8611897+07:00 0HLHLSC5I04EB:00000007 [INF] Executed DbCommand ("77"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-10-19T23:51:34.9412143+07:00 0HLHLSC5I04EB:00000007 [INF] Executed DbCommand ("68"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-10-19T23:51:35.0094809+07:00 0HLHLSC5I04EB:00000007 [INF] Executed DbCommand ("57"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-10-19T23:51:35.0735621+07:00 0HLHLSC5I04EB:00000007 [INF] Executed DbCommand ("54"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-10-19T23:51:35.1603921+07:00 0HLHLSC5I04EB:00000007 [INF] Executed DbCommand ("63"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-10-19T23:51:35.2395633+07:00 0HLHLSC5I04EB:00000007 [INF] Executed DbCommand ("64"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-10-19T23:51:35.3373611+07:00 0HLHLSC5I04EB:00000007 [INF] Executed DbCommand ("80"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-10-19T23:51:35.4107517+07:00 0HLHLSC5I04EB:00000007 [INF] Executed DbCommand ("60"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-10-19T23:51:35.4898768+07:00 0HLHLSC5I04EB:00000007 [INF] Executed DbCommand ("67"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-10-19T23:51:35.5021631+07:00 0HLHLSC5I04EB:00000007 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-10-19T23:51:35.6542051+07:00 0HLHLSC5I04EB:00000007 [INF] Executed action "NetCoreApp.Areas.Admin.Controllers.ProductController.GetAllPaging (NetCoreApp)" in 1572.7723ms (afa2e885)
+2018-10-19T23:51:35.7111778+07:00 0HLHLSC5I04EB:00000007 [INF] Request finished in 1840.81ms 200 application/json; charset=utf-8 (791a596a)
+2018-10-19T23:51:35.7346309+07:00 0HLHLSC5I04ER:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44383/vendor/gentelella/production/user.png   (ca22a1cb)
+2018-10-19T23:51:35.7511111+07:00 0HLHLSC5I04ER:00000003 [INF] Sending file. Request path: '"/vendor/gentelella/production/user.png"'. Physical path: '"D:\NetCore\NetCoreApp\NetCoreApp\wwwroot\vendor\gentelella\production\user.png"' (27b0a520)
+2018-10-19T23:51:35.8429094+07:00 0HLHLSC5I04ER:00000003 [INF] Request finished in 114.7395ms 200 image/png (791a596a)
+2018-10-19T23:51:58.8591114+07:00 0HLHLSC5I04EC:00000006 [INF] Request starting HTTP/1.1 GET http://localhost:44383/admin/product/index   (ca22a1cb)
+2018-10-19T23:51:58.8665349+07:00 0HLHLSC5I04EC:00000006 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-10-19T23:51:58.8756490+07:00 0HLHLSC5I04EC:00000006 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-10-19T23:51:58.9217470+07:00 0HLHLSC5I04EC:00000006 [INF] Executing action method "NetCoreApp.Areas.Admin.Controllers.ProductController.Index (NetCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-10-19T23:51:59.2438190+07:00 0HLHLSC5I04EC:00000006 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Product/Index.cshtml". (9707eebe)
+2018-10-19T23:51:59.2657653+07:00 0HLHLSC5I04EC:00000006 [INF] Entity Framework Core "2.0.0-rtm-26452" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=NetCoreApp.Data.EF " (9958f5bb)
+2018-10-19T23:51:59.3545827+07:00 0HLHLSC5I04EC:00000006 [INF] Executed DbCommand ("77"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[Url], [dto].[ParentId], [dto].[IconCss], [dto].[SortOrder], [dto].[Status]
+FROM [Functions] AS [dto]" (0723d8ff)
+2018-10-19T23:51:59.3791119+07:00 0HLHLSC5I04EC:00000006 [INF] Executed action "NetCoreApp.Areas.Admin.Controllers.ProductController.Index (NetCoreApp)" in 501.8606ms (afa2e885)
+2018-10-19T23:51:59.5107648+07:00 0HLHLSC5I04EC:00000006 [INF] Request finished in 535.91ms 200 text/html; charset=utf-8 (791a596a)
+2018-10-19T23:51:59.8241868+07:00 0HLHLSC5I04EE:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:44383/vendor/font-awesome/css/font-awesome.css   (ca22a1cb)
+2018-10-19T23:51:59.8307391+07:00 0HLHLSC5I04ET:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44383/vendor/nprogress/nprogress.css   (ca22a1cb)
+2018-10-19T23:51:59.8547196+07:00 0HLHLSC5I04ES:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44383/admin-side/images/img.jpg   (ca22a1cb)
+2018-10-19T23:51:59.8794938+07:00 0HLHLSC5I04EJ:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:44383/admin-side/css/custom.css   (ca22a1cb)
+2018-10-19T23:51:59.8851686+07:00 0HLHLSC5I04EK:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:44383/vendor/bootstrap/css/bootstrap.css   (ca22a1cb)
+2018-10-19T23:51:59.8963397+07:00 0HLHLSC5I04EE:00000005 [INF] Sending file. Request path: '"/vendor/font-awesome/css/font-awesome.css"'. Physical path: '"D:\NetCore\NetCoreApp\NetCoreApp\wwwroot\vendor\font-awesome\css\font-awesome.css"' (27b0a520)
+2018-10-19T23:51:59.9008223+07:00 0HLHLSC5I04ET:00000003 [INF] Sending file. Request path: '"/vendor/nprogress/nprogress.css"'. Physical path: '"D:\NetCore\NetCoreApp\NetCoreApp\wwwroot\vendor\nprogress\nprogress.css"' (27b0a520)
+2018-10-19T23:51:59.9548542+07:00 0HLHLSC5I04ES:00000003 [INF] Sending file. Request path: '"/admin-side/images/img.jpg"'. Physical path: '"D:\NetCore\NetCoreApp\NetCoreApp\wwwroot\admin-side\images\img.jpg"' (27b0a520)
+2018-10-19T23:51:59.9852716+07:00 0HLHLSC5I04EJ:00000005 [INF] Sending file. Request path: '"/admin-side/css/custom.css"'. Physical path: '"D:\NetCore\NetCoreApp\NetCoreApp\wwwroot\admin-side\css\custom.css"' (27b0a520)
+2018-10-19T23:52:00.0258665+07:00 0HLHLSC5I04EK:00000005 [INF] Sending file. Request path: '"/vendor/bootstrap/css/bootstrap.css"'. Physical path: '"D:\NetCore\NetCoreApp\NetCoreApp\wwwroot\vendor\bootstrap\css\bootstrap.css"' (27b0a520)
+2018-10-19T23:52:00.0674531+07:00 0HLHLSC5I04F2:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44383/vendor/bootstrap-daterangepicker/daterangepicker.css   (ca22a1cb)
+2018-10-19T23:52:00.1322456+07:00 0HLHLSC5I04ET:00000003 [INF] Request finished in 416.5788ms 200 text/css (791a596a)
+2018-10-19T23:52:00.3057918+07:00 0HLHLSC5I04EF:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:44383/lib/jquery/dist/jquery.js   (ca22a1cb)
+2018-10-19T23:52:00.3144260+07:00 0HLHLSC5I04F2:00000002 [INF] Sending file. Request path: '"/vendor/bootstrap-daterangepicker/daterangepicker.css"'. Physical path: '"D:\NetCore\NetCoreApp\NetCoreApp\wwwroot\vendor\bootstrap-daterangepicker\daterangepicker.css"' (27b0a520)
+2018-10-19T23:52:00.3888402+07:00 0HLHLSC5I04EE:00000005 [INF] Request finished in 556.9077ms 200 text/css (791a596a)
+2018-10-19T23:52:00.6091863+07:00 0HLHLSC5I04ES:00000003 [INF] Request finished in 716.3515ms 200 image/jpeg (791a596a)
+2018-10-19T23:52:00.6372191+07:00 0HLHLSC5I04EJ:00000005 [INF] Request finished in 508.6323ms 200 text/css (791a596a)
+2018-10-19T23:52:00.6992354+07:00 0HLHLSC5I04EK:00000005 [INF] Request finished in 608.4054ms 200 text/css (791a596a)
+2018-10-19T23:52:00.7224682+07:00 0HLHLSC5I04EH:00000006 [INF] Request starting HTTP/1.1 GET http://localhost:44383/vendor/fastclick/fastclick.js   (ca22a1cb)
+2018-10-19T23:52:00.7486485+07:00 0HLHLSC5I04F2:00000002 [INF] Request finished in 558.5932ms 200 text/css (791a596a)
+2018-10-19T23:52:00.7809214+07:00 0HLHLSC5I04F3:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44383/vendor/nprogress/nprogress.js   (ca22a1cb)
+2018-10-19T23:52:00.7868947+07:00 0HLHLSC5I04EH:00000006 [INF] Sending file. Request path: '"/vendor/fastclick/fastclick.js"'. Physical path: '"D:\NetCore\NetCoreApp\NetCoreApp\wwwroot\vendor\fastclick\fastclick.js"' (27b0a520)
+2018-10-19T23:52:00.8217343+07:00 0HLHLSC5I04EL:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44383/vendor/flot/jquery.flot.js   (ca22a1cb)
+2018-10-19T23:52:00.8332737+07:00 0HLHLSC5I04EV:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44383/lib/bootstrap/dist/js/bootstrap.js   (ca22a1cb)
+2018-10-19T23:52:00.8794172+07:00 0HLHLSC5I04EI:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:44383/vendor/flot/jquery.flot.stack.js   (ca22a1cb)
+2018-10-19T23:52:00.9059199+07:00 0HLHLSC5I04F3:00000002 [INF] Sending file. Request path: '"/vendor/nprogress/nprogress.js"'. Physical path: '"D:\NetCore\NetCoreApp\NetCoreApp\wwwroot\vendor\nprogress\nprogress.js"' (27b0a520)
+2018-10-19T23:52:00.9260560+07:00 0HLHLSC5I04EL:00000004 [INF] Sending file. Request path: '"/vendor/flot/jquery.flot.js"'. Physical path: '"D:\NetCore\NetCoreApp\NetCoreApp\wwwroot\vendor\flot\jquery.flot.js"' (27b0a520)
+2018-10-19T23:52:00.9318042+07:00 0HLHLSC5I04EV:00000003 [INF] Sending file. Request path: '"/lib/bootstrap/dist/js/bootstrap.js"'. Physical path: '"D:\NetCore\NetCoreApp\NetCoreApp\wwwroot\lib\bootstrap\dist\js\bootstrap.js"' (27b0a520)
+2018-10-19T23:52:00.9370933+07:00 0HLHLSC5I04EH:00000006 [INF] Request finished in 236.8272ms 200 application/javascript (791a596a)
+2018-10-19T23:52:00.9431277+07:00 0HLHLSC5I04EI:00000005 [INF] Sending file. Request path: '"/vendor/flot/jquery.flot.stack.js"'. Physical path: '"D:\NetCore\NetCoreApp\NetCoreApp\wwwroot\vendor\flot\jquery.flot.stack.js"' (27b0a520)
+2018-10-19T23:52:00.9770728+07:00 0HLHLSC5I04EN:00000006 [INF] Request starting HTTP/1.1 GET http://localhost:44383/vendor/chart.js/Chart.js   (ca22a1cb)
+2018-10-19T23:52:01.0021546+07:00 0HLHLSC5I04EF:00000005 [INF] Sending file. Request path: '"/lib/jquery/dist/jquery.js"'. Physical path: '"D:\NetCore\NetCoreApp\NetCoreApp\wwwroot\lib\jquery\dist\jquery.js"' (27b0a520)
+2018-10-19T23:52:01.0380261+07:00 0HLHLSC5I04F1:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44383/vendor/flot/jquery.flot.pie.js   (ca22a1cb)
+2018-10-19T23:52:01.1227233+07:00 0HLHLSC5I04F3:00000002 [INF] Request finished in 377.8805ms 200 application/javascript (791a596a)
+2018-10-19T23:52:01.1397547+07:00 0HLHLSC5I04EQ:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44383/vendor/jquery-sparkline/jquery.sparkline.js   (ca22a1cb)
+2018-10-19T23:52:01.1479862+07:00 0HLHLSC5I04F6:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44383/vendor/datejs/date.js   (ca22a1cb)
+2018-10-19T23:52:01.1656433+07:00 0HLHLSC5I04F4:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44383/vendor/flot/jquery.flot.time.js   (ca22a1cb)
+2018-10-19T23:52:01.1722669+07:00 0HLHLSC5I04EI:00000005 [INF] Request finished in 233.9689ms 200 application/javascript (791a596a)
+2018-10-19T23:52:01.2165255+07:00 0HLHLSC5I04F1:00000003 [INF] Sending file. Request path: '"/vendor/flot/jquery.flot.pie.js"'. Physical path: '"D:\NetCore\NetCoreApp\NetCoreApp\wwwroot\vendor\flot\jquery.flot.pie.js"' (27b0a520)
+2018-10-19T23:52:01.2294607+07:00 0HLHLSC5I04EQ:00000003 [INF] Sending file. Request path: '"/vendor/jquery-sparkline/jquery.sparkline.js"'. Physical path: '"D:\NetCore\NetCoreApp\NetCoreApp\wwwroot\vendor\jquery-sparkline\jquery.sparkline.js"' (27b0a520)
+2018-10-19T23:52:01.2360114+07:00 0HLHLSC5I04F6:00000002 [INF] Sending file. Request path: '"/vendor/datejs/date.js"'. Physical path: '"D:\NetCore\NetCoreApp\NetCoreApp\wwwroot\vendor\datejs\date.js"' (27b0a520)
+2018-10-19T23:52:01.2428590+07:00 0HLHLSC5I04F4:00000002 [INF] Sending file. Request path: '"/vendor/flot/jquery.flot.time.js"'. Physical path: '"D:\NetCore\NetCoreApp\NetCoreApp\wwwroot\vendor\flot\jquery.flot.time.js"' (27b0a520)
+2018-10-19T23:52:01.3238993+07:00 0HLHLSC5I04EN:00000006 [INF] Sending file. Request path: '"/vendor/chart.js/Chart.js"'. Physical path: '"D:\NetCore\NetCoreApp\NetCoreApp\wwwroot\vendor\chart.js\Chart.js"' (27b0a520)
+2018-10-19T23:52:01.4315051+07:00 0HLHLSC5I04EG:00000006 [INF] Request starting HTTP/1.1 GET http://localhost:44383/vendor/flot-orderbars/jquery.flot.orderBars.js   (ca22a1cb)
+2018-10-19T23:52:01.5683881+07:00 0HLHLSC5I04ED:00000008 [INF] Request starting HTTP/1.1 GET http://localhost:44383/vendor/twbs-pagination/jquery.twbsPagination.js   (ca22a1cb)
+2018-10-19T23:52:01.6644363+07:00 0HLHLSC5I04F4:00000002 [INF] Request finished in 351.1831ms 200 application/javascript (791a596a)
+2018-10-19T23:52:01.6904560+07:00 0HLHLSC5I04EM:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44383/vendor/flot.curvedlines/curvedLines.js   (ca22a1cb)
+2018-10-19T23:52:01.7076891+07:00 0HLHLSC5I04EU:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44383/vendor/bootstrap-daterangepicker/moment.min.js   (ca22a1cb)
+2018-10-19T23:52:01.7226627+07:00 0HLHLSC5I04ED:00000008 [INF] Sending file. Request path: '"/vendor/twbs-pagination/jquery.twbsPagination.js"'. Physical path: '"D:\NetCore\NetCoreApp\NetCoreApp\wwwroot\vendor\twbs-pagination\jquery.twbsPagination.js"' (27b0a520)
+2018-10-19T23:52:01.7382226+07:00 0HLHLSC5I04EG:00000006 [INF] Sending file. Request path: '"/vendor/flot-orderbars/jquery.flot.orderBars.js"'. Physical path: '"D:\NetCore\NetCoreApp\NetCoreApp\wwwroot\vendor\flot-orderbars\jquery.flot.orderBars.js"' (27b0a520)
+2018-10-19T23:52:01.7448645+07:00 0HLHLSC5I04F1:00000003 [INF] Request finished in 321.873ms 200 application/javascript (791a596a)
+2018-10-19T23:52:01.7810707+07:00 0HLHLSC5I04EM:00000004 [INF] Sending file. Request path: '"/vendor/flot.curvedlines/curvedLines.js"'. Physical path: '"D:\NetCore\NetCoreApp\NetCoreApp\wwwroot\vendor\flot.curvedlines\curvedLines.js"' (27b0a520)
+2018-10-19T23:52:01.7940264+07:00 0HLHLSC5I04EA:00000007 [INF] Request starting HTTP/1.1 GET http://localhost:44383/vendor/flot-spline/jquery.flot.spline.js   (ca22a1cb)
+2018-10-19T23:52:01.8504618+07:00 0HLHLSC5I04EU:00000004 [INF] Sending file. Request path: '"/vendor/bootstrap-daterangepicker/moment.min.js"'. Physical path: '"D:\NetCore\NetCoreApp\NetCoreApp\wwwroot\vendor\bootstrap-daterangepicker\moment.min.js"' (27b0a520)
+2018-10-19T23:52:01.8612868+07:00 0HLHLSC5I04F5:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44383/vendor/flot/jquery.flot.resize.js   (ca22a1cb)
+2018-10-19T23:52:01.8684427+07:00 0HLHLSC5I04F0:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44383/vendor/bootstrap-daterangepicker/daterangepicker.js   (ca22a1cb)
+2018-10-19T23:52:01.9261985+07:00 0HLHLSC5I04ED:00000008 [INF] Request finished in 572.7075ms 200 application/javascript (791a596a)
+2018-10-19T23:52:01.9528426+07:00 0HLHLSC5I04EG:00000006 [INF] Request finished in 622.7407ms 200 application/javascript (791a596a)
+2018-10-19T23:52:01.9902125+07:00 0HLHLSC5I04F5:00000002 [INF] Sending file. Request path: '"/vendor/flot/jquery.flot.resize.js"'. Physical path: '"D:\NetCore\NetCoreApp\NetCoreApp\wwwroot\vendor\flot\jquery.flot.resize.js"' (27b0a520)
+2018-10-19T23:52:02.0070119+07:00 0HLHLSC5I04EP:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44383/vendor/mustache/mustache.js   (ca22a1cb)
+2018-10-19T23:52:02.0154983+07:00 0HLHLSC5I04EM:00000004 [INF] Request finished in 454.6592ms 200 application/javascript (791a596a)
+2018-10-19T23:52:02.0779109+07:00 0HLHLSC5I04EU:00000004 [INF] Request finished in 555.2147ms 200 application/javascript (791a596a)
+2018-10-19T23:52:02.0946451+07:00 0HLHLSC5I04EP:00000003 [INF] Sending file. Request path: '"/vendor/mustache/mustache.js"'. Physical path: '"D:\NetCore\NetCoreApp\NetCoreApp\wwwroot\vendor\mustache\mustache.js"' (27b0a520)
+2018-10-19T23:52:02.1099724+07:00 0HLHLSC5I04EA:00000007 [INF] Sending file. Request path: '"/vendor/flot-spline/jquery.flot.spline.js"'. Physical path: '"D:\NetCore\NetCoreApp\NetCoreApp\wwwroot\vendor\flot-spline\jquery.flot.spline.js"' (27b0a520)
+2018-10-19T23:52:02.1242971+07:00 0HLHLSC5I04F5:00000002 [INF] Request finished in 314.009ms 200 application/javascript (791a596a)
+2018-10-19T23:52:02.1751482+07:00 0HLHLSC5I04EO:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44383/vendor/notifyjs/notify.js   (ca22a1cb)
+2018-10-19T23:52:02.1933090+07:00 0HLHLSC5I04EB:00000008 [INF] Request starting HTTP/1.1 GET http://localhost:44383/admin-side/js/custom.js   (ca22a1cb)
+2018-10-19T23:52:02.2292247+07:00 0HLHLSC5I04F0:00000003 [INF] Sending file. Request path: '"/vendor/bootstrap-daterangepicker/daterangepicker.js"'. Physical path: '"D:\NetCore\NetCoreApp\NetCoreApp\wwwroot\vendor\bootstrap-daterangepicker\daterangepicker.js"' (27b0a520)
+2018-10-19T23:52:02.2904846+07:00 0HLHLSC5I04ER:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44383/app/Shared/app.js   (ca22a1cb)
+2018-10-19T23:52:02.3496486+07:00 0HLHLSC5I04EO:00000004 [INF] Sending file. Request path: '"/vendor/notifyjs/notify.js"'. Physical path: '"D:\NetCore\NetCoreApp\NetCoreApp\wwwroot\vendor\notifyjs\notify.js"' (27b0a520)
+2018-10-19T23:52:02.3567400+07:00 0HLHLSC5I04EB:00000008 [INF] Sending file. Request path: '"/admin-side/js/custom.js"'. Physical path: '"D:\NetCore\NetCoreApp\NetCoreApp\wwwroot\admin-side\js\custom.js"' (27b0a520)
+2018-10-19T23:52:02.3637691+07:00 0HLHLSC5I04EP:00000003 [INF] Request finished in 381.0372ms 200 application/javascript (791a596a)
+2018-10-19T23:52:02.3818233+07:00 0HLHLSC5I04EC:00000007 [INF] Request starting HTTP/1.1 GET http://localhost:44383/app/controllers/product/index.js?v=9VyzwBKFaYuhKQ-GYxMfWb7jvq_dataAvwUu6tfv87I   (ca22a1cb)
+2018-10-19T23:52:02.3924572+07:00 0HLHLSC5I04ER:00000004 [INF] Sending file. Request path: '"/app/Shared/app.js"'. Physical path: '"D:\NetCore\NetCoreApp\NetCoreApp\wwwroot\app\Shared\app.js"' (27b0a520)
+2018-10-19T23:52:02.3994626+07:00 0HLHLSC5I04EE:00000006 [INF] Request starting HTTP/1.1 GET http://localhost:44383/vendor/bootstrap/fonts/glyphicons-halflings-regular.woff2   (ca22a1cb)
+2018-10-19T23:52:02.4340769+07:00 0HLHLSC5I04EA:00000007 [INF] Request finished in 1089.5623ms 200 application/javascript (791a596a)
+2018-10-19T23:52:02.5367355+07:00 0HLHLSC5I04EC:00000007 [INF] Sending file. Request path: '"/app/controllers/product/index.js"'. Physical path: '"D:\NetCore\NetCoreApp\NetCoreApp\wwwroot\app\controllers\product\index.js"' (27b0a520)
+2018-10-19T23:52:02.5507878+07:00 0HLHLSC5I04EE:00000006 [INF] Sending file. Request path: '"/vendor/bootstrap/fonts/glyphicons-halflings-regular.woff2"'. Physical path: '"D:\NetCore\NetCoreApp\NetCoreApp\wwwroot\vendor\bootstrap\fonts\glyphicons-halflings-regular.woff2"' (27b0a520)
+2018-10-19T23:52:02.5804256+07:00 0HLHLSC5I04ET:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44383/vendor/font-awesome/fonts/fontawesome-webfont.woff2?v=4.7.0   (ca22a1cb)
+2018-10-19T23:52:02.5975179+07:00 0HLHLSC5I04ER:00000004 [INF] Request finished in 376.6635ms 200 application/javascript (791a596a)
+2018-10-19T23:52:02.6319608+07:00 0HLHLSC5I04ET:00000004 [INF] Sending file. Request path: '"/vendor/font-awesome/fonts/fontawesome-webfont.woff2"'. Physical path: '"D:\NetCore\NetCoreApp\NetCoreApp\wwwroot\vendor\font-awesome\fonts\fontawesome-webfont.woff2"' (27b0a520)
+2018-10-19T23:52:02.6412249+07:00 0HLHLSC5I04EE:00000006 [INF] Request finished in 1492.448ms 200 font/woff2 (791a596a)
+2018-10-19T23:52:02.7406486+07:00 0HLHLSC5I04EC:00000007 [INF] Request finished in 367.8577ms 200 application/javascript (791a596a)
+2018-10-19T23:52:02.7609394+07:00 0HLHLSC5I04EL:00000004 [INF] Request finished in 1931.5332ms 200 application/javascript (791a596a)
+2018-10-19T23:52:02.7694432+07:00 0HLHLSC5I04ET:00000004 [INF] Request finished in 146.6017ms 200 font/woff2 (791a596a)
+2018-10-19T23:52:02.8078648+07:00 0HLHLSC5I04F6:00000002 [INF] Request finished in 1658ms 200 application/javascript (791a596a)
+2018-10-19T23:52:02.8469487+07:00 0HLHLSC5I04EQ:00000003 [INF] Request finished in 1819.6026ms 200 application/javascript (791a596a)
+2018-10-19T23:52:02.8721192+07:00 0HLHLSC5I04F0:00000003 [INF] Request finished in 1452.0086ms 200 application/javascript (791a596a)
+2018-10-19T23:52:02.8822604+07:00 0HLHLSC5I04EV:00000003 [INF] Request finished in 2059.5886ms 200 application/javascript (791a596a)
+2018-10-19T23:52:02.9805581+07:00 0HLHLSC5I04EF:00000005 [INF] Request finished in 3141.2818ms 200 application/javascript (791a596a)
+2018-10-19T23:52:03.1387935+07:00 0HLHLSC5I04EO:00000004 [INF] Request finished in 864.6562ms 200 application/javascript (791a596a)
+2018-10-19T23:52:03.1953932+07:00 0HLHLSC5I04EN:00000006 [INF] Request finished in 2378.6755ms 200 application/javascript (791a596a)
+2018-10-19T23:52:03.2095367+07:00 0HLHLSC5I04EB:00000008 [INF] Request finished in 929.8221ms 200 application/javascript (791a596a)
+2018-10-19T23:52:03.4859978+07:00 0HLHLSC5I04ES:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44383/admin/productCategory/GetAll   (ca22a1cb)
+2018-10-19T23:52:03.5201237+07:00 0HLHLSC5I04EJ:00000006 [INF] Request starting HTTP/1.1 GET http://localhost:44383/admin/product/GetAllPaging?categoryId=--Search+Category--&keyword=&page=1&pageSize=10   (ca22a1cb)
+2018-10-19T23:52:03.5275780+07:00 0HLHLSC5I04ES:00000004 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-10-19T23:52:03.5672911+07:00 0HLHLSC5I04EJ:00000006 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-10-19T23:52:03.6135869+07:00 0HLHLSC5I04ES:00000004 [INF] Request finished in 101.9701ms 404  (791a596a)
+2018-10-19T23:52:03.6654544+07:00 0HLHLSC5I04EJ:00000006 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-10-19T23:52:03.7453914+07:00 0HLHLSC5I04EJ:00000006 [INF] Executing action method "NetCoreApp.Areas.Admin.Controllers.ProductController.GetAllPaging (NetCoreApp)" with arguments (["", "", "1", "10"]) - ModelState is Invalid (ba7f4ac2)
+2018-10-19T23:52:03.7661508+07:00 0HLHLSC5I04EJ:00000006 [INF] Entity Framework Core "2.0.0-rtm-26452" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=NetCoreApp.Data.EF " (9958f5bb)
+2018-10-19T23:52:03.9319478+07:00 0HLHLSC5I04EJ:00000006 [INF] Executed DbCommand ("81"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Products] AS [p]" (0723d8ff)
+2018-10-19T23:52:04.1534738+07:00 0HLHLSC5I04EJ:00000006 [INF] Executed DbCommand ("126"ms) [Parameters=["@__p_0='?', @__p_1='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id] AS [Id1], [x].[Name], [x].[CategoryId] AS [Id0], [x].[Image], [x].[Price], [x].[PromotionPrice], [x].[OriginalPrice], [x].[Description], [x].[Content], [x].[HomeFlag], [x].[HotFlag], [x].[ViewCount], [x].[Tags], [x].[Unit], CASE
+    WHEN [x].[CategoryId] IS NOT NULL
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END, [x.ProductCategory].[Name] AS [Name0], [x.ProductCategory].[Description] AS [Description0], [x.ProductCategory].[ParentId], [x.ProductCategory].[HomeOrder], [x.ProductCategory].[Image] AS [Image0], [x.ProductCategory].[HomeFlag] AS [HomeFlag0], [x.ProductCategory].[DateCreated], [x.ProductCategory].[DateModified], [x.ProductCategory].[Status], [x.ProductCategory].[SortOrder], [x.ProductCategory].[SeoPageTitle], [x.ProductCategory].[SeoAlias], [x.ProductCategory].[SeoKeywords], [x.ProductCategory].[SeoDescription], [x.ProductCategory].[Id], [x].[SeoPageTitle] AS [SeoPageTitle0], [x].[SeoAlias] AS [SeoAlias0], [x].[SeoKeywords] AS [SeoKeywords0], [x].[SeoDescription] AS [SeoDescription0], [x].[DateCreated] AS [DateCreated0], [x].[DateModified] AS [DateModified0], [x].[Status] AS [Status0]
+FROM [Products] AS [x]
+INNER JOIN [ProductCategories] AS [x.ProductCategory] ON [x].[CategoryId] = [x.ProductCategory].[Id]
+ORDER BY [DateCreated0] DESC
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY" (0723d8ff)
+2018-10-19T23:52:04.2321386+07:00 0HLHLSC5I04EK:00000006 [INF] Request starting HTTP/1.1 GET http://localhost:44383/favicon.ico   (ca22a1cb)
+2018-10-19T23:52:04.2552649+07:00 0HLHLSC5I04EK:00000006 [INF] Sending file. Request path: '"/favicon.ico"'. Physical path: '"D:\NetCore\NetCoreApp\NetCoreApp\wwwroot\favicon.ico"' (27b0a520)
+2018-10-19T23:52:04.2635974+07:00 0HLHLSC5I04EJ:00000006 [INF] Executed DbCommand ("69"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-10-19T23:52:04.3737959+07:00 0HLHLSC5I04EK:00000006 [INF] Request finished in 176.1542ms 200 image/x-icon (791a596a)
+2018-10-19T23:52:04.4348529+07:00 0HLHLSC5I04EJ:00000006 [INF] Executed DbCommand ("83"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-10-19T23:52:04.5247615+07:00 0HLHLSC5I04EJ:00000006 [INF] Executed DbCommand ("69"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-10-19T23:52:04.6065948+07:00 0HLHLSC5I04EJ:00000006 [INF] Executed DbCommand ("69"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-10-19T23:52:04.7839171+07:00 0HLHLSC5I04EJ:00000006 [INF] Executed DbCommand ("155"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-10-19T23:52:04.8702001+07:00 0HLHLSC5I04EJ:00000006 [INF] Executed DbCommand ("66"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-10-19T23:52:04.9471098+07:00 0HLHLSC5I04EJ:00000006 [INF] Executed DbCommand ("68"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-10-19T23:52:05.0326667+07:00 0HLHLSC5I04EJ:00000006 [INF] Executed DbCommand ("52"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-10-19T23:52:05.2156828+07:00 0HLHLSC5I04EJ:00000006 [INF] Executed DbCommand ("114"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-10-19T23:52:05.2801681+07:00 0HLHLSC5I04EJ:00000006 [INF] Executed DbCommand ("55"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-10-19T23:52:05.2889460+07:00 0HLHLSC5I04EJ:00000006 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-10-19T23:52:05.5552705+07:00 0HLHLSC5I04EJ:00000006 [INF] Executed action "NetCoreApp.Areas.Admin.Controllers.ProductController.GetAllPaging (NetCoreApp)" in 1721.388ms (afa2e885)
+2018-10-19T23:52:05.6875949+07:00 0HLHLSC5I04EJ:00000006 [INF] Request finished in 2111.5737ms 200 application/json; charset=utf-8 (791a596a)
+2018-10-19T23:52:05.7362110+07:00 0HLHLSC5I04F2:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44383/vendor/gentelella/production/user.png   (ca22a1cb)
+2018-10-19T23:52:05.7810909+07:00 0HLHLSC5I04F2:00000003 [INF] Sending file. Request path: '"/vendor/gentelella/production/user.png"'. Physical path: '"D:\NetCore\NetCoreApp\NetCoreApp\wwwroot\vendor\gentelella\production\user.png"' (27b0a520)
+2018-10-19T23:52:05.8329110+07:00 0HLHLSC5I04F2:00000003 [INF] Request finished in 114.9381ms 200 image/png (791a596a)

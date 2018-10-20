@@ -1,0 +1,44 @@
+{
+  "_from": "centit.easyui@1.5.3",
+  "_id": "centit.easyui@1.5.3",
+  "_inBundle": false,
+  "_integrity": "sha512-ujea7X+hx8+acJUTJg4g/icuZSCClxgho0pVWqWm0WxDotkvnoFukLPQdWuZQ6noVdrg0sSCglwBt/yQ2+uDsw==",
+  "_location": "/centit.easyui",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "centit.easyui@1.5.3",
+    "name": "centit.easyui",
+    "escapedName": "centit.easyui",
+    "rawSpec": "1.5.3",
+    "saveSpec": null,
+    "fetchSpec": "1.5.3"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/centit.easyui/-/centit.easyui-1.5.3.tgz",
+  "_shasum": "d9badde223f45b8b699d6cab5d46a726ec75d210",
+  "_spec": "centit.easyui@1.5.3",
+  "_where": "D:\\NetCore\\NetCoreApp\\NetCoreApp",
+  "author": "",
+  "bundleDependencies": false,
+  "dependencies": {
+    "jquery": "^3.2.1"
+  },
+  "deprecated": false,
+  "description": "jQuery EasyUI framework helps you build your web pages easily.",
+  "keywords": [],
+  "license": "MIT",
+  "main": "jquery.easyui.min.js",
+  "name": "centit.easyui",
+  "repository": {
+    "type": "git",
+    "url": "git@gitlab.centit.com:open-source/easyui.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "1.5.3"
+}

@@ -71,6 +71,9 @@ var nodeLibs = {
     },
     "twbs-pagination": {
         "*.js":""
+    },
+    "centit.easyui": {
+        "**/*":""
     }
 };
 var templates = {

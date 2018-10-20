@@ -10,10 +10,12 @@ namespace NetCoreApp.Areas.Admin.Controllers
     public class ProductController : BaseController
     {
         private readonly IProductService _productService;
+        private readonly IProductCategoryService _productCategoryService;
 
-        public ProductController(IProductService productService)
+        public ProductController(IProductService productService, IProductCategoryService productCategoryService)
         {
             _productService = productService;
+            _productCategoryService = productCategoryService;
         }
 
         public IActionResult Index()
@@ -26,6 +28,12 @@ namespace NetCoreApp.Areas.Admin.Controllers
         public IActionResult GetAll()
         {
             return new OkObjectResult(_productService.GetAll());
+        }
+
+        [HttpGet]
+        public IActionResult GetAllCategories()
+        {
+            return new OkObjectResult(_productCategoryService.GetAll());
         }
 
         [HttpGet]

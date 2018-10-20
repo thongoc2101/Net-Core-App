@@ -14,6 +14,7 @@ using NetCoreApp.Data.EF.Repositories;
 using NetCoreApp.Data.Entities;
 using NetCoreApp.Data.IRepositories;
 using NetCoreApp.Helpers;
+using NetCoreApp.Infrastructure.Interfaces;
 using NetCoreApp.Services;
 using Newtonsoft.Json.Serialization;
 
@@ -83,6 +84,10 @@ namespace NetCoreApp
             services.AddTransient<IProductService, ProductService>();
 
             services.AddMvc().AddJsonOptions(options => options.SerializerSettings.ContractResolver = new DefaultContractResolver());
+
+            //UnitOfWork
+            services.AddTransient(typeof(IUnitOfWork), typeof(EfUnitOfWork));
+            services.AddTransient(typeof(IRepository<,>), typeof(EfRepository<,>));
 
             services.AddScoped<IUserClaimsPrincipalFactory<AppUser>, CustomClaimPrincipalFactory>();
         }
