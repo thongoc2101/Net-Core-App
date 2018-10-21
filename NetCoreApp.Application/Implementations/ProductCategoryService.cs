@@ -77,12 +77,30 @@ namespace NetCoreApp.Application.Implementations
 
         public void UpdateParentId(int sourceId, int targetId, Dictionary<int, int> items)
         {
-            throw new NotImplementedException();
+            var sourceCategory = _productCategoryRepository.FindById(sourceId);
+            sourceCategory.ParentId = targetId;
+            _productCategoryRepository.Update(sourceCategory);
+
+            //Get all sibling ( lay ho hang anh em ra)
+            var sibling = _productCategoryRepository.FindAll(x => items.ContainsKey(x.Id));
+            foreach (var child in sibling)
+            {
+                child.SortOrder = items[child.Id];
+                _productCategoryRepository.Update(child);
+            }
         }
 
         public void ReOrder(int sourceId, int targetId)
         {
-            throw new NotImplementedException();
+            var source = _productCategoryRepository.FindById(sourceId);
+            var target = _productCategoryRepository.FindById(targetId);
+
+            var tempOrder = source.SortOrder;
+            source.SortOrder = target.SortOrder;
+            target.SortOrder = tempOrder;
+
+            _productCategoryRepository.Update(source);
+            _productCategoryRepository.Update(target);
         }
 
         public List<ProductCategoryViewModel> GetHomeCategories(int top)
@@ -90,13 +108,13 @@ namespace NetCoreApp.Application.Implementations
             var query = _productCategoryRepository.FindAll(x => x.HomeFlag == true
                                                            ,c => c.Products)
                 .OrderBy(x => x.HomeOrder).Take(top).ProjectTo<ProductCategoryViewModel>().ToList();
-            var categogies = query.ToList();
-            foreach (var category in categogies)
+            var categories = query.ToList();
+            foreach (var category in categories)
             {
                 //category.Prod
             }
 
-            return categogies;
+            return categories;
         }
 
         public void Save()
