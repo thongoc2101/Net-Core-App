@@ -14,9 +14,9 @@ namespace NetCoreApp.Application.Implementations
 {
     public class ProductCategoryService : IProductCategoryService
     {
-        private IProductCategoryRepository _productCategoryRepository;
+        private readonly IProductCategoryRepository _productCategoryRepository;
 
-        private IUnitOfWork _unitOfWork;
+        private readonly IUnitOfWork _unitOfWork;
 
         public ProductCategoryService(IProductCategoryRepository productCategoryRepository, IUnitOfWork unitOfWork)
         {
@@ -33,7 +33,8 @@ namespace NetCoreApp.Application.Implementations
 
         public void Update(ProductCategoryViewModel productCategoryVm)
         {
-            throw new NotImplementedException();
+            var productCategory = Mapper.Map<ProductCategoryViewModel, ProductCategory>(productCategoryVm);
+            _productCategoryRepository.Update(productCategory);
         }
 
         public void Delete(int id)

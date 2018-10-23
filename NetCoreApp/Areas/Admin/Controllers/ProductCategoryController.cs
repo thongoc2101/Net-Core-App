@@ -1,9 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.ModelBinding;
 using NetCoreApp.Application.Interfaces;
+using NetCoreApp.Application.ViewModels;
+using NetCoreApp.Utilities.Helpers;
 
 namespace NetCoreApp.Areas.Admin.Controllers
 {
@@ -27,6 +28,54 @@ namespace NetCoreApp.Areas.Admin.Controllers
         {
             var model = _productCategoryService.GetAll();
             return new OkObjectResult(model);
+        }
+
+        [HttpGet]
+        public IActionResult GetById(int id)
+        {
+            var model = _productCategoryService.GetById(id);
+            return new OkObjectResult(model);
+        }
+
+        [HttpPost]
+        public IActionResult SaveEntity(ProductCategoryViewModel productCategoryViewModel)
+        {
+            if (!ModelState.IsValid)
+            {
+                IEnumerable<ModelError> allErrors = ModelState.Values.SelectMany(v => v.Errors);
+                return new BadRequestResult();
+            }
+            else
+            {
+                productCategoryViewModel.SeoAlias = TextHelper.ToUnsignString(productCategoryViewModel.Name);
+                if (productCategoryViewModel.Id == 0)
+                {
+                    _productCategoryService.Add(productCategoryViewModel);
+                }
+                else
+                {
+                    _productCategoryService.Update(productCategoryViewModel);
+                }
+                    
+                _productCategoryService.Save();
+                return new OkObjectResult(productCategoryViewModel);
+            }
+        }
+
+        [HttpPost]
+        public IActionResult Delete(int id)
+        {
+            if (id == 0)
+            {
+                return new BadRequestResult();
+            }
+            else
+            {
+                _productCategoryService.Delete(id);
+                _productCategoryService.Save();
+                return new OkResult();
+            }
+          
         }
 
         [HttpPost]
