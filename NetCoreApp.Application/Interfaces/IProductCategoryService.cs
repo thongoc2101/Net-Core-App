@@ -25,7 +25,5 @@ namespace NetCoreApp.Application.Interfaces
         void ReOrder(int sourceId, int targetId);
 
         List<ProductCategoryViewModel> GetHomeCategories(int top);
-
-        void Save();
     }
 }

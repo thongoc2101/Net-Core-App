@@ -1,0 +1,1008 @@
+2018-10-24T20:50:49.0459959+07:00  [INF] Entity Framework Core "2.0.0-rtm-26452" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=NetCoreApp.Data.EF " (9958f5bb)
+2018-10-24T20:50:49.9035406+07:00  [INF] Executed DbCommand ("151"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppRoles] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-10-24T20:50:49.9738183+07:00  [INF] Executed DbCommand ("28"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppUsers] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-10-24T20:50:50.0368450+07:00  [INF] Executed DbCommand ("29"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Functions] AS [f]" (0723d8ff)
+2018-10-24T20:50:50.1223731+07:00  [INF] Executed DbCommand ("30"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Footers] AS [x]
+WHERE [x].[Id] = 'DefaultFooterId'" (0723d8ff)
+2018-10-24T20:50:50.1667328+07:00  [INF] Executed DbCommand ("30"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Colors] AS [c]" (0723d8ff)
+2018-10-24T20:50:50.2054001+07:00  [INF] Executed DbCommand ("26"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [AdvertisementPages] AS [a]" (0723d8ff)
+2018-10-24T20:50:50.2430671+07:00  [INF] Executed DbCommand ("24"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Slides] AS [s]" (0723d8ff)
+2018-10-24T20:50:50.2773795+07:00  [INF] Executed DbCommand ("22"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Sizes] AS [s]" (0723d8ff)
+2018-10-24T20:50:50.3227368+07:00  [INF] Executed DbCommand ("24"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [ProductCategories] AS [p]" (0723d8ff)
+2018-10-24T20:50:50.3664666+07:00  [INF] Executed DbCommand ("29"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeTitle')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-10-24T20:50:50.4036291+07:00  [INF] Executed DbCommand ("24"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaKeyword')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-10-24T20:50:50.4500502+07:00  [INF] Executed DbCommand ("32"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaDescription')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-10-24T20:50:51.0264665+07:00 0HLHPMUQPIBSA:00000001 [INF] Request starting HTTP/1.1 DEBUG http://localhost:15649/  0 (ca22a1cb)
+2018-10-24T20:50:51.0264665+07:00 0HLHPMUQPIBS9:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44383/   (ca22a1cb)
+2018-10-24T20:50:51.0899787+07:00 0HLHPMUQPIBSA:00000001 [INF] Request finished in 113.4516ms 200  (791a596a)
+2018-10-24T20:50:51.8566924+07:00 0HLHPMUQPIBS9:00000001 [INF] Executing action method "NetCoreApp.Controllers.HomeController.Index (NetCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-10-24T20:50:58.1467152+07:00 0HLHPMUQPIBS9:00000001 [INF] Executing ViewResult, running view at path "/Views/Home/Index.cshtml". (9707eebe)
+2018-10-24T20:50:59.5597274+07:00 0HLHPMUQPIBS9:00000001 [INF] Executed action "NetCoreApp.Controllers.HomeController.Index (NetCoreApp)" in 7923.9646ms (afa2e885)
+2018-10-24T20:50:59.5750007+07:00 0HLHPMUQPIBS9:00000001 [INF] Request finished in 8609.0913ms 200 text/html; charset=utf-8 (791a596a)
+2018-10-24T20:57:22.2534705+07:00 0HLHPMUQPIBSB:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44383/admin   (ca22a1cb)
+2018-10-24T20:57:22.3627880+07:00 0HLHPMUQPIBSB:00000001 [INF] Executing action method "NetCoreApp.Areas.Admin.Controllers.LoginController.Index (NetCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-10-24T20:57:23.0007160+07:00 0HLHPMUQPIBSB:00000001 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Login/Index.cshtml". (9707eebe)
+2018-10-24T20:57:23.0670770+07:00 0HLHPMUQPIBSB:00000001 [INF] Executed action "NetCoreApp.Areas.Admin.Controllers.LoginController.Index (NetCoreApp)" in 765.595ms (afa2e885)
+2018-10-24T20:57:23.0814645+07:00 0HLHPMUQPIBSB:00000001 [INF] Request finished in 824.6817ms 200 text/html; charset=utf-8 (791a596a)
+2018-10-24T20:57:23.2220538+07:00 0HLHPMUQPIBSF:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44383/admin-side/css/custom.css   (ca22a1cb)
+2018-10-24T20:57:23.2270007+07:00 0HLHPMUQPIBSE:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44383/vendor/notifyjs/notify.js   (ca22a1cb)
+2018-10-24T20:57:23.2317996+07:00 0HLHPMUQPIBSD:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44383/vendor/font-awesome/css/font-awesome.css   (ca22a1cb)
+2018-10-24T20:57:23.2356653+07:00 0HLHPMUQPIBSI:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44383/vendor/jquery-validation/localization/messages_vi.js   (ca22a1cb)
+2018-10-24T20:57:23.2395345+07:00 0HLHPMUQPIBSC:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44383/vendor/nprogress/nprogress.css   (ca22a1cb)
+2018-10-24T20:57:23.2454193+07:00 0HLHPMUQPIBSH:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44383/app/controllers/login/index.js   (ca22a1cb)
+2018-10-24T20:57:23.2713862+07:00 0HLHPMUQPIBSG:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44383/app/Shared/app.js   (ca22a1cb)
+2018-10-24T20:57:23.3044520+07:00 0HLHPMUQPIBSF:00000001 [INF] The file "/admin-side/css/custom.css" was not modified (f1f8d725)
+2018-10-24T20:57:23.3311772+07:00 0HLHPMUQPIBSI:00000001 [INF] The file "/vendor/jquery-validation/localization/messages_vi.js" was not modified (f1f8d725)
+2018-10-24T20:57:23.3405953+07:00 0HLHPMUQPIBSH:00000001 [INF] The file "/app/controllers/login/index.js" was not modified (f1f8d725)
+2018-10-24T20:57:23.3608869+07:00 0HLHPMUQPIBSE:00000001 [INF] The file "/vendor/notifyjs/notify.js" was not modified (f1f8d725)
+2018-10-24T20:57:23.3858092+07:00 0HLHPMUQPIBSG:00000001 [INF] The file "/app/Shared/app.js" was not modified (f1f8d725)
+2018-10-24T20:57:23.3947470+07:00 0HLHPMUQPIBSD:00000001 [INF] The file "/vendor/font-awesome/css/font-awesome.css" was not modified (f1f8d725)
+2018-10-24T20:57:23.4126923+07:00 0HLHPMUQPIBSH:00000001 [INF] Request finished in 175.6896ms 304 application/javascript (791a596a)
+2018-10-24T20:57:23.4290772+07:00 0HLHPMUQPIBSC:00000001 [INF] The file "/vendor/nprogress/nprogress.css" was not modified (f1f8d725)
+2018-10-24T20:57:23.4772159+07:00 0HLHPMUQPIBSF:00000001 [INF] Request finished in 153.4085ms 304 text/css (791a596a)
+2018-10-24T20:57:23.4980507+07:00 0HLHPMUQPIBSB:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44383/vendor/animate.css/animate.css   (ca22a1cb)
+2018-10-24T20:57:23.5095889+07:00 0HLHPMUQPIBSI:00000001 [INF] Request finished in 166.3035ms 304 application/javascript (791a596a)
+2018-10-24T20:57:23.5162782+07:00 0HLHPMUQPIBSE:00000001 [INF] Request finished in 197.0652ms 304 application/javascript (791a596a)
+2018-10-24T20:57:23.5362083+07:00 0HLHPMUQPIBSG:00000001 [INF] Request finished in 221.7369ms 304 application/javascript (791a596a)
+2018-10-24T20:57:23.5469559+07:00 0HLHPMUQPIBSD:00000001 [INF] Request finished in 230.6888ms 304 text/css (791a596a)
+2018-10-24T20:57:23.5685265+07:00 0HLHPMUQPIBSC:00000001 [INF] Request finished in 272.5377ms 304 text/css (791a596a)
+2018-10-24T20:57:23.5930434+07:00 0HLHPMUQPIBSB:00000002 [INF] The file "/vendor/animate.css/animate.css" was not modified (f1f8d725)
+2018-10-24T20:57:23.6114719+07:00 0HLHPMUQPIBSB:00000002 [INF] Request finished in 419.4444ms 304 text/css (791a596a)
+2018-10-24T20:57:23.7970400+07:00 0HLHPMUQPIBSF:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44383/vendor/font-awesome/fonts/fontawesome-webfont.woff2?v=4.7.0   (ca22a1cb)
+2018-10-24T20:57:23.8134324+07:00 0HLHPMUQPIBSF:00000002 [INF] The file "/vendor/font-awesome/fonts/fontawesome-webfont.woff2" was not modified (f1f8d725)
+2018-10-24T20:57:23.8491991+07:00 0HLHPMUQPIBSF:00000002 [INF] Request finished in 32.3178ms 304 font/woff2 (791a596a)
+2018-10-24T20:57:25.8164352+07:00 0HLHPMUQPIBSI:00000002 [INF] Request starting HTTP/1.1 POST http://localhost:44383/admin/login/Authen application/x-www-form-urlencoded; charset=UTF-8 33 (ca22a1cb)
+2018-10-24T20:57:26.0912016+07:00 0HLHPMUQPIBSI:00000002 [INF] Executing action method "NetCoreApp.Areas.Admin.Controllers.LoginController.Authen (NetCoreApp)" with arguments (["NetCoreApp.Models.AccountViewModels.LoginViewModel"]) - ModelState is Valid (ba7f4ac2)
+2018-10-24T20:57:26.1231965+07:00 0HLHPMUQPIBSI:00000002 [INF] Entity Framework Core "2.0.0-rtm-26452" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=NetCoreApp.Data.EF " (9958f5bb)
+2018-10-24T20:57:26.3330032+07:00 0HLHPMUQPIBSI:00000002 [INF] Executed DbCommand ("119"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[Avatar], [u].[Balance], [u].[BirthDay], [u].[ConcurrencyStamp], [u].[DateCreated], [u].[DateModified], [u].[Email], [u].[EmailConfirmed], [u].[FullName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Status], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AppUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2018-10-24T20:57:26.6998374+07:00 0HLHPMUQPIBSI:00000002 [INF] Executed DbCommand ("157"ms) [Parameters=["@__user_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AppUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0" (0723d8ff)
+2018-10-24T20:57:26.8200467+07:00 0HLHPMUQPIBSI:00000002 [INF] Executed DbCommand ("50"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2018-10-24T20:57:26.9093880+07:00 0HLHPMUQPIBSI:00000002 [INF] Executed DbCommand ("66"ms) [Parameters=["@__normalizedName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Description], [r].[Name], [r].[NormalizedName]
+FROM [AppRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2018-10-24T20:57:26.9960355+07:00 0HLHPMUQPIBSI:00000002 [INF] Executed DbCommand ("52"ms) [Parameters=["@__role_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AppRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0" (0723d8ff)
+2018-10-24T20:57:27.0619407+07:00 0HLHPMUQPIBSI:00000002 [INF] Executed DbCommand ("52"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2018-10-24T20:57:27.0828753+07:00 0HLHPMUQPIBSI:00000002 [INF] AuthenticationScheme: "Identity.Application" signed in. (c66dd7e7)
+2018-10-24T20:57:27.0924715+07:00 0HLHPMUQPIBSI:00000002 [INF] User logged in. (fdce0db4)
+2018-10-24T20:57:27.1079907+07:00 0HLHPMUQPIBSI:00000002 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-10-24T20:57:27.1759023+07:00 0HLHPMUQPIBSI:00000002 [INF] Executed action "NetCoreApp.Areas.Admin.Controllers.LoginController.Authen (NetCoreApp)" in 1237.3564ms (afa2e885)
+2018-10-24T20:57:27.1922936+07:00 0HLHPMUQPIBSI:00000002 [INF] Request finished in 1381.0511ms 200 application/json; charset=utf-8 (791a596a)
+2018-10-24T20:57:27.2287983+07:00 0HLHPMUQPIBSH:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44383/Admin/Home/Index   (ca22a1cb)
+2018-10-24T20:57:27.2476398+07:00 0HLHPMUQPIBSH:00000002 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-10-24T20:57:27.2703228+07:00 0HLHPMUQPIBSH:00000002 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-10-24T20:57:27.3146434+07:00 0HLHPMUQPIBSH:00000002 [INF] Executing action method "NetCoreApp.Areas.Admin.Controllers.HomeController.Index (NetCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-10-24T20:57:27.5608642+07:00 0HLHPMUQPIBSH:00000002 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Home/Index.cshtml". (9707eebe)
+2018-10-24T20:57:28.0700708+07:00 0HLHPMUQPIBSH:00000002 [INF] Entity Framework Core "2.0.0-rtm-26452" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=NetCoreApp.Data.EF " (9958f5bb)
+2018-10-24T20:57:28.3110916+07:00 0HLHPMUQPIBSH:00000002 [INF] Executed DbCommand ("178"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[Url], [dto].[ParentId], [dto].[IconCss], [dto].[SortOrder], [dto].[Status]
+FROM [Functions] AS [dto]" (0723d8ff)
+2018-10-24T20:57:28.9233085+07:00 0HLHPMUQPIBSH:00000002 [INF] Executed action "NetCoreApp.Areas.Admin.Controllers.HomeController.Index (NetCoreApp)" in 1662.8222ms (afa2e885)
+2018-10-24T20:57:29.0425996+07:00 0HLHPMUQPIBSH:00000002 [INF] Request finished in 1705.7479ms 200 text/html; charset=utf-8 (791a596a)
+2018-10-24T20:57:29.1173263+07:00 0HLHPMUQPIBSD:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44383/admin-side/images/img.jpg   (ca22a1cb)
+2018-10-24T20:57:29.1195321+07:00 0HLHPMUQPIBSE:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44383/vendor/bootstrap/css/bootstrap.css   (ca22a1cb)
+2018-10-24T20:57:29.1286593+07:00 0HLHPMUQPIBSG:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44383/vendor/bootstrap-daterangepicker/daterangepicker.css   (ca22a1cb)
+2018-10-24T20:57:29.1333642+07:00 0HLHPMUQPIBSD:00000002 [INF] The file "/admin-side/images/img.jpg" was not modified (f1f8d725)
+2018-10-24T20:57:29.1541603+07:00 0HLHPMUQPIBSG:00000002 [INF] The file "/vendor/bootstrap-daterangepicker/daterangepicker.css" was not modified (f1f8d725)
+2018-10-24T20:57:29.2071741+07:00 0HLHPMUQPIBSE:00000002 [INF] The file "/vendor/bootstrap/css/bootstrap.css" was not modified (f1f8d725)
+2018-10-24T20:57:29.2845480+07:00 0HLHPMUQPIBSD:00000002 [INF] Request finished in 109.2883ms 304 image/jpeg (791a596a)
+2018-10-24T20:57:29.3551036+07:00 0HLHPMUQPIBSG:00000002 [INF] Request finished in 128.0527ms 304 text/css (791a596a)
+2018-10-24T20:57:29.3738210+07:00 0HLHPMUQPIBSI:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44383/vendor/flot/jquery.flot.js   (ca22a1cb)
+2018-10-24T20:57:29.4032241+07:00 0HLHPMUQPIBSE:00000002 [INF] Request finished in 179.6832ms 304 text/css (791a596a)
+2018-10-24T20:57:29.4279301+07:00 0HLHPMUQPIBSC:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44383/vendor/fastclick/fastclick.js   (ca22a1cb)
+2018-10-24T20:57:29.4332145+07:00 0HLHPMUQPIBSD:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44383/vendor/nprogress/nprogress.js   (ca22a1cb)
+2018-10-24T20:57:29.4471726+07:00 0HLHPMUQPIBSF:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44383/vendor/chart.js/Chart.js   (ca22a1cb)
+2018-10-24T20:57:29.4667481+07:00 0HLHPMUQPIBSI:00000003 [INF] The file "/vendor/flot/jquery.flot.js" was not modified (f1f8d725)
+2018-10-24T20:57:29.5182914+07:00 0HLHPMUQPIBSM:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44383/vendor/flot/jquery.flot.resize.js   (ca22a1cb)
+2018-10-24T20:57:29.5525904+07:00 0HLHPMUQPIBSG:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44383/vendor/flot/jquery.flot.time.js   (ca22a1cb)
+2018-10-24T20:57:29.5710280+07:00 0HLHPMUQPIBSD:00000003 [INF] The file "/vendor/nprogress/nprogress.js" was not modified (f1f8d725)
+2018-10-24T20:57:29.5803367+07:00 0HLHPMUQPIBSB:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44383/vendor/flot/jquery.flot.pie.js   (ca22a1cb)
+2018-10-24T20:57:29.5859634+07:00 0HLHPMUQPIBSE:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44383/vendor/bootstrap/fonts/glyphicons-halflings-regular.woff2   (ca22a1cb)
+2018-10-24T20:57:29.5983113+07:00 0HLHPMUQPIBSI:00000003 [INF] Request finished in 272.3975ms 304 application/javascript (791a596a)
+2018-10-24T20:57:29.6026723+07:00 0HLHPMUQPIBSC:00000002 [INF] The file "/vendor/fastclick/fastclick.js" was not modified (f1f8d725)
+2018-10-24T20:57:29.6094982+07:00 0HLHPMUQPIBSF:00000003 [INF] The file "/vendor/chart.js/Chart.js" was not modified (f1f8d725)
+2018-10-24T20:57:29.6184632+07:00 0HLHPMUQPIBSH:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44383/vendor/jquery-sparkline/jquery.sparkline.js   (ca22a1cb)
+2018-10-24T20:57:29.6543123+07:00 0HLHPMUQPIBSG:00000003 [INF] The file "/vendor/flot/jquery.flot.time.js" was not modified (f1f8d725)
+2018-10-24T20:57:29.6851180+07:00 0HLHPMUQPIBSD:00000003 [INF] Request finished in 227.2305ms 304 application/javascript (791a596a)
+2018-10-24T20:57:29.7155774+07:00 0HLHPMUQPIBSE:00000003 [INF] The file "/vendor/bootstrap/fonts/glyphicons-halflings-regular.woff2" was not modified (f1f8d725)
+2018-10-24T20:57:29.7386558+07:00 0HLHPMUQPIBSC:00000002 [INF] Request finished in 405.2961ms 304 application/javascript (791a596a)
+2018-10-24T20:57:29.7569576+07:00 0HLHPMUQPIBSF:00000003 [INF] Request finished in 403.2229ms 304 application/javascript (791a596a)
+2018-10-24T20:57:29.7627599+07:00 0HLHPMUQPIBSM:00000001 [INF] The file "/vendor/flot/jquery.flot.resize.js" was not modified (f1f8d725)
+2018-10-24T20:57:29.7759292+07:00 0HLHPMUQPIBSG:00000003 [INF] Request finished in 242.4375ms 304 application/javascript (791a596a)
+2018-10-24T20:57:29.7890556+07:00 0HLHPMUQPIBSS:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44383/vendor/bootstrap-daterangepicker/daterangepicker.js   (ca22a1cb)
+2018-10-24T20:57:29.8395682+07:00 0HLHPMUQPIBSE:00000003 [INF] Request finished in 276.1859ms 304 font/woff2 (791a596a)
+2018-10-24T20:57:29.8530932+07:00 0HLHPMUQPIBSP:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44383/vendor/bootstrap-daterangepicker/moment.min.js   (ca22a1cb)
+2018-10-24T20:57:29.8746448+07:00 0HLHPMUQPIBSS:00000001 [INF] The file "/vendor/bootstrap-daterangepicker/daterangepicker.js" was not modified (f1f8d725)
+2018-10-24T20:57:29.9377465+07:00 0HLHPMUQPIBSH:00000003 [INF] The file "/vendor/jquery-sparkline/jquery.sparkline.js" was not modified (f1f8d725)
+2018-10-24T20:57:29.9907471+07:00 0HLHPMUQPIBSR:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44383/admin-side/js/custom.js   (ca22a1cb)
+2018-10-24T20:57:30.0034306+07:00 0HLHPMUQPIBST:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44383/vendor/flot-spline/jquery.flot.spline.js   (ca22a1cb)
+2018-10-24T20:57:30.0093718+07:00 0HLHPMUQPIBSP:00000001 [INF] The file "/vendor/bootstrap-daterangepicker/moment.min.js" was not modified (f1f8d725)
+2018-10-24T20:57:30.0225160+07:00 0HLHPMUQPIBSM:00000001 [INF] Request finished in 490.9264ms 304 application/javascript (791a596a)
+2018-10-24T20:57:30.0405354+07:00 0HLHPMUQPIBSL:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44383/vendor/flot.curvedlines/curvedLines.js   (ca22a1cb)
+2018-10-24T20:57:30.0692339+07:00 0HLHPMUQPIBSB:00000003 [INF] The file "/vendor/flot/jquery.flot.pie.js" was not modified (f1f8d725)
+2018-10-24T20:57:30.0875861+07:00 0HLHPMUQPIBSS:00000001 [INF] Request finished in 206.5382ms 304 application/javascript (791a596a)
+2018-10-24T20:57:30.1065511+07:00 0HLHPMUQPIBSH:00000003 [INF] Request finished in 731.4637ms 304 application/javascript (791a596a)
+2018-10-24T20:57:30.1355370+07:00 0HLHPMUQPIBSR:00000001 [INF] The file "/admin-side/js/custom.js" was not modified (f1f8d725)
+2018-10-24T20:57:30.1517458+07:00 0HLHPMUQPIBSP:00000001 [INF] Request finished in 252.3388ms 304 application/javascript (791a596a)
+2018-10-24T20:57:30.1561479+07:00 0HLHPMUQPIBST:00000001 [INF] The file "/vendor/flot-spline/jquery.flot.spline.js" was not modified (f1f8d725)
+2018-10-24T20:57:30.1762872+07:00 0HLHPMUQPIBSL:00000001 [INF] The file "/vendor/flot.curvedlines/curvedLines.js" was not modified (f1f8d725)
+2018-10-24T20:57:30.1851527+07:00 0HLHPMUQPIBSK:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44383/vendor/flot/jquery.flot.stack.js   (ca22a1cb)
+2018-10-24T20:57:30.2213105+07:00 0HLHPMUQPIBSJ:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44383/vendor/flot-orderbars/jquery.flot.orderBars.js   (ca22a1cb)
+2018-10-24T20:57:30.2310744+07:00 0HLHPMUQPIBSR:00000001 [INF] Request finished in 316.6377ms 304 application/javascript (791a596a)
+2018-10-24T20:57:30.2355942+07:00 0HLHPMUQPIBST:00000001 [INF] Request finished in 333.0901ms 304 application/javascript (791a596a)
+2018-10-24T20:57:30.2430296+07:00 0HLHPMUQPIBSL:00000001 [INF] Request finished in 897.4068ms 304 application/javascript (791a596a)
+2018-10-24T20:57:30.2512745+07:00 0HLHPMUQPIBSK:00000001 [INF] The file "/vendor/flot/jquery.flot.stack.js" was not modified (f1f8d725)
+2018-10-24T20:57:30.2718867+07:00 0HLHPMUQPIBSQ:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44383/vendor/mustache/mustache.js   (ca22a1cb)
+2018-10-24T20:57:30.2769820+07:00 0HLHPMUQPIBSN:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44383/vendor/twbs-pagination/jquery.twbsPagination.js   (ca22a1cb)
+2018-10-24T20:57:30.3205200+07:00 0HLHPMUQPIBSJ:00000001 [INF] The file "/vendor/flot-orderbars/jquery.flot.orderBars.js" was not modified (f1f8d725)
+2018-10-24T20:57:30.3276979+07:00 0HLHPMUQPIBSB:00000003 [INF] Request finished in 871.8485ms 304 application/javascript (791a596a)
+2018-10-24T20:57:30.3539494+07:00 0HLHPMUQPIBSK:00000001 [INF] Request finished in 1026.8107ms 304 application/javascript (791a596a)
+2018-10-24T20:57:30.3591149+07:00 0HLHPMUQPIBSQ:00000001 [INF] The file "/vendor/mustache/mustache.js" was not modified (f1f8d725)
+2018-10-24T20:57:30.3679168+07:00 0HLHPMUQPIBSN:00000001 [INF] The file "/vendor/twbs-pagination/jquery.twbsPagination.js" was not modified (f1f8d725)
+2018-10-24T20:57:30.3846152+07:00 0HLHPMUQPIBSO:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44383/vendor/datejs/date.js   (ca22a1cb)
+2018-10-24T20:57:30.3902967+07:00 0HLHPMUQPIBSJ:00000001 [INF] Request finished in 1097.1137ms 304 application/javascript (791a596a)
+2018-10-24T20:57:30.4565144+07:00 0HLHPMUQPIBSQ:00000001 [INF] Request finished in 1034.9598ms 304 application/javascript (791a596a)
+2018-10-24T20:57:30.5068009+07:00 0HLHPMUQPIBSN:00000001 [INF] Request finished in 1083.4624ms 304 application/javascript (791a596a)
+2018-10-24T20:57:30.5203437+07:00 0HLHPMUQPIBSO:00000001 [INF] The file "/vendor/datejs/date.js" was not modified (f1f8d725)
+2018-10-24T20:57:30.5426351+07:00 0HLHPMUQPIBSO:00000001 [INF] Request finished in 1191.3355ms 304 application/javascript (791a596a)
+2018-10-24T20:57:32.2562470+07:00 0HLHPMUQPIBSI:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44383/admin/product/index   (ca22a1cb)
+2018-10-24T20:57:32.2696311+07:00 0HLHPMUQPIBSI:00000004 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-10-24T20:57:32.2864696+07:00 0HLHPMUQPIBSI:00000004 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-10-24T20:57:32.3456042+07:00 0HLHPMUQPIBSI:00000004 [INF] Executing action method "NetCoreApp.Areas.Admin.Controllers.ProductController.Index (NetCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-10-24T20:57:32.6172885+07:00 0HLHPMUQPIBSI:00000004 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Product/Index.cshtml". (9707eebe)
+2018-10-24T20:57:32.6612112+07:00 0HLHPMUQPIBSI:00000004 [INF] Entity Framework Core "2.0.0-rtm-26452" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=NetCoreApp.Data.EF " (9958f5bb)
+2018-10-24T20:57:32.7223183+07:00 0HLHPMUQPIBSI:00000004 [INF] Executed DbCommand ("50"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[Url], [dto].[ParentId], [dto].[IconCss], [dto].[SortOrder], [dto].[Status]
+FROM [Functions] AS [dto]" (0723d8ff)
+2018-10-24T20:57:32.7974785+07:00 0HLHPMUQPIBSI:00000004 [INF] Executed action "NetCoreApp.Areas.Admin.Controllers.ProductController.Index (NetCoreApp)" in 512.1327ms (afa2e885)
+2018-10-24T20:57:32.8128331+07:00 0HLHPMUQPIBSI:00000004 [INF] Request finished in 554.2855ms 200 text/html; charset=utf-8 (791a596a)
+2018-10-24T20:57:32.8665231+07:00 0HLHPMUQPIBSD:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44383/app/controllers/product/index.js?v=xpKVERpUcCE9xOchDYm2mLlJ4aTUJ32nUoBQJfDlD-E   (ca22a1cb)
+2018-10-24T20:57:32.8769019+07:00 0HLHPMUQPIBSD:00000004 [INF] The file "/app/controllers/product/index.js" was not modified (f1f8d725)
+2018-10-24T20:57:32.8961685+07:00 0HLHPMUQPIBSD:00000004 [INF] Request finished in 21.2642ms 304 application/javascript (791a596a)
+2018-10-24T20:57:33.0814898+07:00 0HLHPMUQPIBSC:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44383/admin/product/GetAllCategories   (ca22a1cb)
+2018-10-24T20:57:33.0902499+07:00 0HLHPMUQPIBSF:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44383/admin/product/GetAllPaging?keyword=&page=1&pageSize=10   (ca22a1cb)
+2018-10-24T20:57:33.1020854+07:00 0HLHPMUQPIBSC:00000003 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-10-24T20:57:33.1072881+07:00 0HLHPMUQPIBSF:00000004 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-10-24T20:57:33.1400002+07:00 0HLHPMUQPIBSC:00000003 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-10-24T20:57:33.1943035+07:00 0HLHPMUQPIBSF:00000004 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-10-24T20:57:33.2241444+07:00 0HLHPMUQPIBSC:00000003 [INF] Executing action method "NetCoreApp.Areas.Admin.Controllers.ProductController.GetAllCategories (NetCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-10-24T20:57:33.2908051+07:00 0HLHPMUQPIBSF:00000004 [INF] Executing action method "NetCoreApp.Areas.Admin.Controllers.ProductController.GetAllPaging (NetCoreApp)" with arguments (["", "", "1", "10"]) - ModelState is Valid (ba7f4ac2)
+2018-10-24T20:57:33.3017196+07:00 0HLHPMUQPIBSC:00000003 [INF] Entity Framework Core "2.0.0-rtm-26452" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=NetCoreApp.Data.EF " (9958f5bb)
+2018-10-24T20:57:33.3137036+07:00 0HLHPMUQPIBSF:00000004 [INF] Entity Framework Core "2.0.0-rtm-26452" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=NetCoreApp.Data.EF " (9958f5bb)
+2018-10-24T20:57:33.4156813+07:00 0HLHPMUQPIBSF:00000004 [INF] Executed DbCommand ("80"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Products] AS [p]" (0723d8ff)
+2018-10-24T20:57:33.5091054+07:00 0HLHPMUQPIBSC:00000003 [INF] Executed DbCommand ("55"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Name], [x].[Description], [x].[ParentId], [x].[HomeOrder], [x].[Image], [x].[HomeFlag], [x].[DateCreated], [x].[DateModified], [x].[Status], [x].[SortOrder], [x].[SeoPageTitle], [x].[SeoAlias], [x].[SeoKeywords], [x].[SeoDescription]
+FROM [ProductCategories] AS [x]
+ORDER BY [x].[ParentId]" (0723d8ff)
+2018-10-24T20:57:33.6155800+07:00 0HLHPMUQPIBSC:00000003 [INF] Executed DbCommand ("57"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-10-24T20:57:33.7297036+07:00 0HLHPMUQPIBSC:00000003 [INF] Executed DbCommand ("94"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-10-24T20:57:33.8031853+07:00 0HLHPMUQPIBSF:00000004 [INF] Executed DbCommand ("103"ms) [Parameters=["@__p_0='?', @__p_1='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id] AS [Id1], [x].[Name], [x].[CategoryId] AS [Id0], [x].[Image], [x].[Price], [x].[PromotionPrice], [x].[OriginalPrice], [x].[Description], [x].[Content], [x].[HomeFlag], [x].[HotFlag], [x].[ViewCount], [x].[Tags], [x].[Unit], CASE
+    WHEN [x].[CategoryId] IS NOT NULL
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END, [x.ProductCategory].[Name] AS [Name0], [x.ProductCategory].[Description] AS [Description0], [x.ProductCategory].[ParentId], [x.ProductCategory].[HomeOrder], [x.ProductCategory].[Image] AS [Image0], [x.ProductCategory].[HomeFlag] AS [HomeFlag0], [x.ProductCategory].[DateCreated], [x.ProductCategory].[DateModified], [x.ProductCategory].[Status], [x.ProductCategory].[SortOrder], [x.ProductCategory].[SeoPageTitle], [x.ProductCategory].[SeoAlias], [x.ProductCategory].[SeoKeywords], [x.ProductCategory].[SeoDescription], [x.ProductCategory].[Id], [x].[SeoPageTitle] AS [SeoPageTitle0], [x].[SeoAlias] AS [SeoAlias0], [x].[SeoKeywords] AS [SeoKeywords0], [x].[SeoDescription] AS [SeoDescription0], [x].[DateCreated] AS [DateCreated0], [x].[DateModified] AS [DateModified0], [x].[Status] AS [Status0]
+FROM [Products] AS [x]
+INNER JOIN [ProductCategories] AS [x.ProductCategory] ON [x].[CategoryId] = [x.ProductCategory].[Id]
+ORDER BY [DateCreated0] DESC
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY" (0723d8ff)
+2018-10-24T20:57:33.8254819+07:00 0HLHPMUQPIBSC:00000003 [INF] Executed DbCommand ("57"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-10-24T20:57:33.9880183+07:00 0HLHPMUQPIBSC:00000003 [INF] Executed DbCommand ("129"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-10-24T20:57:33.9923933+07:00 0HLHPMUQPIBSF:00000004 [INF] Executed DbCommand ("133"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-10-24T20:57:34.1066521+07:00 0HLHPMUQPIBSC:00000003 [INF] Executed DbCommand ("46"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-10-24T20:57:34.1777635+07:00 0HLHPMUQPIBSF:00000004 [INF] Executed DbCommand ("47"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-10-24T20:57:34.2284159+07:00 0HLHPMUQPIBSC:00000003 [INF] Executed DbCommand ("70"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-10-24T20:57:34.3021365+07:00 0HLHPMUQPIBSF:00000004 [INF] Executed DbCommand ("50"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-10-24T20:57:34.3057041+07:00 0HLHPMUQPIBSC:00000003 [INF] Executed DbCommand ("43"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-10-24T20:57:34.4000460+07:00 0HLHPMUQPIBSF:00000004 [INF] Executed DbCommand ("81"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-10-24T20:57:34.4038213+07:00 0HLHPMUQPIBSC:00000003 [INF] Executed DbCommand ("82"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-10-24T20:57:34.5425158+07:00 0HLHPMUQPIBSC:00000003 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-10-24T20:57:34.5468517+07:00 0HLHPMUQPIBSF:00000004 [INF] Executed DbCommand ("88"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-10-24T20:57:34.5575673+07:00 0HLHPMUQPIBSF:00000004 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-10-24T20:57:34.5975395+07:00 0HLHPMUQPIBSC:00000003 [INF] Executed action "NetCoreApp.Areas.Admin.Controllers.ProductController.GetAllCategories (NetCoreApp)" in 1477.4255ms (afa2e885)
+2018-10-24T20:57:34.6299530+07:00 0HLHPMUQPIBSC:00000003 [INF] Request finished in 1529.8431ms 200 application/json; charset=utf-8 (791a596a)
+2018-10-24T20:57:34.6425451+07:00 0HLHPMUQPIBSF:00000004 [INF] Executed action "NetCoreApp.Areas.Admin.Controllers.ProductController.GetAllPaging (NetCoreApp)" in 1493.1425ms (afa2e885)
+2018-10-24T20:57:34.6624642+07:00 0HLHPMUQPIBSF:00000004 [INF] Request finished in 1567.8381ms 200 application/json; charset=utf-8 (791a596a)
+2018-10-24T20:57:34.6907201+07:00 0HLHPMUQPIBSG:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44383/vendor/gentelella/production/user.png   (ca22a1cb)
+2018-10-24T20:57:34.6997166+07:00 0HLHPMUQPIBSG:00000004 [INF] The file "/vendor/gentelella/production/user.png" was not modified (f1f8d725)
+2018-10-24T20:57:34.7149023+07:00 0HLHPMUQPIBSG:00000004 [INF] Request finished in 19.5637ms 304 image/png (791a596a)
+2018-10-24T22:22:16.5025164+07:00  [INF] Entity Framework Core "2.0.0-rtm-26452" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=NetCoreApp.Data.EF " (9958f5bb)
+2018-10-24T22:22:17.0421969+07:00  [INF] Executed DbCommand ("135"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppRoles] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-10-24T22:22:17.1154675+07:00  [INF] Executed DbCommand ("31"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppUsers] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-10-24T22:22:17.1823330+07:00  [INF] Executed DbCommand ("33"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Functions] AS [f]" (0723d8ff)
+2018-10-24T22:22:17.2486061+07:00  [INF] Executed DbCommand ("23"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Footers] AS [x]
+WHERE [x].[Id] = 'DefaultFooterId'" (0723d8ff)
+2018-10-24T22:22:17.2861960+07:00  [INF] Executed DbCommand ("26"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Colors] AS [c]" (0723d8ff)
+2018-10-24T22:22:17.3314673+07:00  [INF] Executed DbCommand ("27"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [AdvertisementPages] AS [a]" (0723d8ff)
+2018-10-24T22:22:17.3970282+07:00  [INF] Executed DbCommand ("48"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Slides] AS [s]" (0723d8ff)
+2018-10-24T22:22:17.5844831+07:00  [INF] Executed DbCommand ("79"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Sizes] AS [s]" (0723d8ff)
+2018-10-24T22:22:17.6514323+07:00  [INF] Executed DbCommand ("48"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [ProductCategories] AS [p]" (0723d8ff)
+2018-10-24T22:22:17.6936668+07:00  [INF] Executed DbCommand ("26"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeTitle')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-10-24T22:22:17.7293286+07:00  [INF] Executed DbCommand ("24"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaKeyword')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-10-24T22:22:17.7822237+07:00  [INF] Executed DbCommand ("30"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaDescription')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-10-24T22:22:18.5566535+07:00 0HLHPOHU70FQH:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44383/   (ca22a1cb)
+2018-10-24T22:22:18.5566539+07:00 0HLHPOHU70FQG:00000001 [INF] Request starting HTTP/1.1 DEBUG http://localhost:15649/  0 (ca22a1cb)
+2018-10-24T22:22:18.5970359+07:00 0HLHPOHU70FQG:00000001 [INF] Request finished in 74.2992ms 200  (791a596a)
+2018-10-24T22:22:19.3447973+07:00 0HLHPOHU70FQH:00000001 [INF] Executing action method "NetCoreApp.Controllers.HomeController.Index (NetCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-10-24T22:22:25.1740048+07:00 0HLHPOHU70FQH:00000001 [INF] Executing ViewResult, running view at path "/Views/Home/Index.cshtml". (9707eebe)
+2018-10-24T22:22:26.4510114+07:00 0HLHPOHU70FQH:00000001 [INF] Executed action "NetCoreApp.Controllers.HomeController.Index (NetCoreApp)" in 7194.2929ms (afa2e885)
+2018-10-24T22:22:26.4768412+07:00 0HLHPOHU70FQH:00000001 [INF] Request finished in 7946.406ms 200 text/html; charset=utf-8 (791a596a)
+2018-10-24T22:22:35.8066046+07:00 0HLHPOHU70FQG:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44383/admin   (ca22a1cb)
+2018-10-24T22:22:35.8792665+07:00 0HLHPOHU70FQG:00000002 [INF] Executing action method "NetCoreApp.Areas.Admin.Controllers.LoginController.Index (NetCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-10-24T22:22:36.3488280+07:00 0HLHPOHU70FQG:00000002 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Login/Index.cshtml". (9707eebe)
+2018-10-24T22:22:36.4498094+07:00 0HLHPOHU70FQG:00000002 [INF] Executed action "NetCoreApp.Areas.Admin.Controllers.LoginController.Index (NetCoreApp)" in 608.4262ms (afa2e885)
+2018-10-24T22:22:36.5728280+07:00 0HLHPOHU70FQG:00000002 [INF] Request finished in 666.8818ms 200 text/html; charset=utf-8 (791a596a)
+2018-10-24T22:22:39.8544029+07:00 0HLHPOHU70FQH:00000002 [INF] Request starting HTTP/1.1 POST http://localhost:44383/admin/login/Authen application/x-www-form-urlencoded; charset=UTF-8 33 (ca22a1cb)
+2018-10-24T22:22:40.0124354+07:00 0HLHPOHU70FQH:00000002 [INF] Executing action method "NetCoreApp.Areas.Admin.Controllers.LoginController.Authen (NetCoreApp)" with arguments (["NetCoreApp.Models.AccountViewModels.LoginViewModel"]) - ModelState is Valid (ba7f4ac2)
+2018-10-24T22:22:40.0418156+07:00 0HLHPOHU70FQH:00000002 [INF] Entity Framework Core "2.0.0-rtm-26452" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=NetCoreApp.Data.EF " (9958f5bb)
+2018-10-24T22:22:40.2644115+07:00 0HLHPOHU70FQH:00000002 [INF] Executed DbCommand ("154"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[Avatar], [u].[Balance], [u].[BirthDay], [u].[ConcurrencyStamp], [u].[DateCreated], [u].[DateModified], [u].[Email], [u].[EmailConfirmed], [u].[FullName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Status], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AppUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2018-10-24T22:22:40.5774421+07:00 0HLHPOHU70FQH:00000002 [INF] Executed DbCommand ("135"ms) [Parameters=["@__user_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AppUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0" (0723d8ff)
+2018-10-24T22:22:40.7239127+07:00 0HLHPOHU70FQH:00000002 [INF] Executed DbCommand ("46"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2018-10-24T22:22:40.8414791+07:00 0HLHPOHU70FQH:00000002 [INF] Executed DbCommand ("86"ms) [Parameters=["@__normalizedName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Description], [r].[Name], [r].[NormalizedName]
+FROM [AppRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2018-10-24T22:22:40.9519473+07:00 0HLHPOHU70FQH:00000002 [INF] Executed DbCommand ("60"ms) [Parameters=["@__role_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AppRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0" (0723d8ff)
+2018-10-24T22:22:41.0105438+07:00 0HLHPOHU70FQH:00000002 [INF] Executed DbCommand ("49"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2018-10-24T22:22:41.0258622+07:00 0HLHPOHU70FQH:00000002 [INF] AuthenticationScheme: "Identity.Application" signed in. (c66dd7e7)
+2018-10-24T22:22:41.0366378+07:00 0HLHPOHU70FQH:00000002 [INF] User logged in. (fdce0db4)
+2018-10-24T22:22:41.0556015+07:00 0HLHPOHU70FQH:00000002 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-10-24T22:22:41.1469856+07:00 0HLHPOHU70FQH:00000002 [INF] Executed action "NetCoreApp.Areas.Admin.Controllers.LoginController.Authen (NetCoreApp)" in 1238.8588ms (afa2e885)
+2018-10-24T22:22:41.1637996+07:00 0HLHPOHU70FQH:00000002 [INF] Request finished in 1303.3401ms 200 application/json; charset=utf-8 (791a596a)
+2018-10-24T22:22:41.2042242+07:00 0HLHPOHU70FQG:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44383/Admin/Home/Index   (ca22a1cb)
+2018-10-24T22:22:41.2193340+07:00 0HLHPOHU70FQG:00000003 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-10-24T22:22:41.2386013+07:00 0HLHPOHU70FQG:00000003 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-10-24T22:22:41.3303715+07:00 0HLHPOHU70FQG:00000003 [INF] Executing action method "NetCoreApp.Areas.Admin.Controllers.HomeController.Index (NetCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-10-24T22:22:41.8737341+07:00 0HLHPOHU70FQG:00000003 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Home/Index.cshtml". (9707eebe)
+2018-10-24T22:22:42.7285272+07:00 0HLHPOHU70FQG:00000003 [INF] Executed action "NetCoreApp.Areas.Admin.Controllers.HomeController.Index (NetCoreApp)" in 1498.2228ms (afa2e885)
+2018-10-24T22:22:42.9929289+07:00 0HLHPOHU70FQG:00000003 [ERR] An unhandled exception has occurred while executing the request (cf926119)
+System.InvalidOperationException: Unable to resolve service for type 'NetCoreApp.Application.Interfaces.IFunctionService' while attempting to activate 'NetCoreApp.Areas.Admin.Components.SideBarViewComponent'.
+   at Microsoft.Extensions.Internal.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Internal.TypeActivatorCache.CreateInstance[TInstance](IServiceProvider serviceProvider, Type implementationType)
+   at Microsoft.AspNetCore.Mvc.ViewComponents.DefaultViewComponentActivator.Create(ViewComponentContext context)
+   at Microsoft.AspNetCore.Mvc.ViewComponents.DefaultViewComponentFactory.CreateViewComponent(ViewComponentContext context)
+   at Microsoft.AspNetCore.Mvc.ViewComponents.DefaultViewComponentInvoker.<InvokeAsyncCore>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Microsoft.AspNetCore.Mvc.ViewComponents.DefaultViewComponentInvoker.<InvokeAsync>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.ViewComponents.DefaultViewComponentHelper.<InvokeCoreAsync>d__12.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at AspNetCore._Areas_Admin_Views_Shared__Layout_cshtml.<<ExecuteAsync>b__45_6>d.MoveNext() in D:\NetCore\NetCoreApp\NetCoreApp\Areas\Admin\Views\Shared\_Layout.cshtml:line 54
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperExecutionContext.<SetOutputContentAsync>d__30.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at AspNetCore._Areas_Admin_Views_Shared__Layout_cshtml.<ExecuteAsync>d__45.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.<RenderPageCoreAsync>d__16.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.<RenderPageAsync>d__15.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.<RenderLayoutAsync>d__18.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.<RenderAsync>d__14.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.<ExecuteAsync>d__22.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.<ExecuteAsync>d__21.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.ViewResult.<ExecuteResultAsync>d__26.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeResultAsync>d__19.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextResultFilterAsync>d__24.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResultExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextResourceFilter>d__22.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeFilterPipelineAsync>d__17.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeAsync>d__15.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.MigrationsEndPointMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+2018-10-24T22:22:43.3542501+07:00 0HLHPOHU70FQG:00000003 [INF] Request finished in 2122.2678ms 500 text/html; charset=utf-8 (791a596a)
+2018-10-24T22:23:39.2477265+07:00  [INF] Entity Framework Core "2.0.0-rtm-26452" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=NetCoreApp.Data.EF " (9958f5bb)
+2018-10-24T22:23:39.4518799+07:00  [INF] Executed DbCommand ("7"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppRoles] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-10-24T22:23:39.4705791+07:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppUsers] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-10-24T22:23:39.4888567+07:00  [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Functions] AS [f]" (0723d8ff)
+2018-10-24T22:23:39.5122333+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Footers] AS [x]
+WHERE [x].[Id] = 'DefaultFooterId'" (0723d8ff)
+2018-10-24T22:23:39.5172441+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Colors] AS [c]" (0723d8ff)
+2018-10-24T22:23:39.5221693+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [AdvertisementPages] AS [a]" (0723d8ff)
+2018-10-24T22:23:39.5270728+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Slides] AS [s]" (0723d8ff)
+2018-10-24T22:23:39.5326336+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Sizes] AS [s]" (0723d8ff)
+2018-10-24T22:23:39.5370617+07:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [ProductCategories] AS [p]" (0723d8ff)
+2018-10-24T22:23:39.5437108+07:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeTitle')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-10-24T22:23:39.5498241+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaKeyword')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-10-24T22:23:39.5558884+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaDescription')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-10-24T22:23:39.9120556+07:00 0HLHPOIMG08EA:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44383/   (ca22a1cb)
+2018-10-24T22:23:39.9590250+07:00 0HLHPOIMG08EA:00000001 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-10-24T22:23:40.0863317+07:00 0HLHPOIMG08EA:00000001 [INF] Executing action method "NetCoreApp.Controllers.HomeController.Index (NetCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-10-24T22:23:40.5598746+07:00 0HLHPOIMG08EB:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44383/admin   (ca22a1cb)
+2018-10-24T22:23:40.5618214+07:00 0HLHPOIMG08EB:00000001 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-10-24T22:23:40.5698501+07:00 0HLHPOIMG08EB:00000001 [INF] Executing action method "NetCoreApp.Areas.Admin.Controllers.LoginController.Index (NetCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-10-24T22:23:44.0596535+07:00 0HLHPOIMG08EB:00000001 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Login/Index.cshtml". (9707eebe)
+2018-10-24T22:23:44.1079406+07:00 0HLHPOIMG08EA:00000001 [INF] Executing ViewResult, running view at path "/Views/Home/Index.cshtml". (9707eebe)
+2018-10-24T22:23:44.3186414+07:00 0HLHPOIMG08EB:00000001 [INF] Executed action "NetCoreApp.Areas.Admin.Controllers.LoginController.Index (NetCoreApp)" in 3742.593ms (afa2e885)
+2018-10-24T22:23:44.3240323+07:00 0HLHPOIMG08EB:00000001 [INF] Request finished in 3763.9923ms 200 text/html; charset=utf-8 (791a596a)
+2018-10-24T22:23:44.3686767+07:00 0HLHPOIMG08EB:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44383/admin   (ca22a1cb)
+2018-10-24T22:23:44.3696679+07:00 0HLHPOIMG08EB:00000002 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-10-24T22:23:44.3706489+07:00 0HLHPOIMG08EB:00000002 [INF] Executing action method "NetCoreApp.Areas.Admin.Controllers.LoginController.Index (NetCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-10-24T22:23:44.3710787+07:00 0HLHPOIMG08EB:00000002 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Login/Index.cshtml". (9707eebe)
+2018-10-24T22:23:44.3735664+07:00 0HLHPOIMG08EB:00000002 [INF] Executed action "NetCoreApp.Areas.Admin.Controllers.LoginController.Index (NetCoreApp)" in 3.1176ms (afa2e885)
+2018-10-24T22:23:44.3738293+07:00 0HLHPOIMG08EB:00000002 [INF] Request finished in 5.5895ms 200 text/html; charset=utf-8 (791a596a)
+2018-10-24T22:23:45.6976012+07:00 0HLHPOIMG08EA:00000001 [INF] Executed action "NetCoreApp.Controllers.HomeController.Index (NetCoreApp)" in 5623.6667ms (afa2e885)
+2018-10-24T22:23:45.6978218+07:00 0HLHPOIMG08EA:00000001 [INF] Request finished in 5797.2998ms 200 text/html; charset=utf-8 (791a596a)
+2018-10-24T22:23:54.9306834+07:00 0HLHPOIMG08EB:00000003 [INF] Request starting HTTP/1.1 POST http://localhost:44383/admin/login/Authen application/x-www-form-urlencoded; charset=UTF-8 33 (ca22a1cb)
+2018-10-24T22:23:54.9317844+07:00 0HLHPOIMG08EB:00000003 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-10-24T22:23:55.0311161+07:00 0HLHPOIMG08EB:00000003 [INF] Executing action method "NetCoreApp.Areas.Admin.Controllers.LoginController.Authen (NetCoreApp)" with arguments (["NetCoreApp.Models.AccountViewModels.LoginViewModel"]) - ModelState is Valid (ba7f4ac2)
+2018-10-24T22:23:55.0372516+07:00 0HLHPOIMG08EB:00000003 [INF] Entity Framework Core "2.0.0-rtm-26452" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=NetCoreApp.Data.EF " (9958f5bb)
+2018-10-24T22:23:55.1133616+07:00 0HLHPOIMG08EB:00000003 [INF] Executed DbCommand ("36"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[Avatar], [u].[Balance], [u].[BirthDay], [u].[ConcurrencyStamp], [u].[DateCreated], [u].[DateModified], [u].[Email], [u].[EmailConfirmed], [u].[FullName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Status], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AppUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2018-10-24T22:23:55.2339549+07:00 0HLHPOIMG08EB:00000003 [INF] Executed DbCommand ("2"ms) [Parameters=["@__user_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AppUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0" (0723d8ff)
+2018-10-24T22:23:55.2784181+07:00 0HLHPOIMG08EB:00000003 [INF] Executed DbCommand ("2"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2018-10-24T22:23:55.2942527+07:00 0HLHPOIMG08EB:00000003 [INF] Executed DbCommand ("1"ms) [Parameters=["@__normalizedName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Description], [r].[Name], [r].[NormalizedName]
+FROM [AppRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2018-10-24T22:23:55.3199326+07:00 0HLHPOIMG08EB:00000003 [INF] Executed DbCommand ("1"ms) [Parameters=["@__role_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AppRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0" (0723d8ff)
+2018-10-24T22:23:55.3234580+07:00 0HLHPOIMG08EB:00000003 [INF] Executed DbCommand ("0"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2018-10-24T22:23:55.3297920+07:00 0HLHPOIMG08EB:00000003 [INF] AuthenticationScheme: "Identity.Application" signed in. (c66dd7e7)
+2018-10-24T22:23:55.3303767+07:00 0HLHPOIMG08EB:00000003 [INF] User logged in. (fdce0db4)
+2018-10-24T22:23:55.3351771+07:00 0HLHPOIMG08EB:00000003 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-10-24T22:23:55.3804851+07:00 0HLHPOIMG08EB:00000003 [INF] Executed action "NetCoreApp.Areas.Admin.Controllers.LoginController.Authen (NetCoreApp)" in 398.3668ms (afa2e885)
+2018-10-24T22:23:55.3839864+07:00 0HLHPOIMG08EB:00000003 [INF] Request finished in 451.8957ms 200 application/json; charset=utf-8 (791a596a)
+2018-10-24T22:23:55.4149293+07:00 0HLHPOIMG08EB:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44383/Admin/Home/Index   (ca22a1cb)
+2018-10-24T22:23:55.4161250+07:00 0HLHPOIMG08EB:00000004 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-10-24T22:23:55.4356142+07:00 0HLHPOIMG08EB:00000004 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-10-24T22:23:55.4530763+07:00 0HLHPOIMG08EB:00000004 [INF] Executing action method "NetCoreApp.Areas.Admin.Controllers.HomeController.Index (NetCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-10-24T22:23:55.6177866+07:00 0HLHPOIMG08EB:00000004 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Home/Index.cshtml". (9707eebe)
+2018-10-24T22:23:55.9627624+07:00 0HLHPOIMG08EB:00000004 [INF] Executed action "NetCoreApp.Areas.Admin.Controllers.HomeController.Index (NetCoreApp)" in 542.6738ms (afa2e885)
+2018-10-24T22:23:56.0773371+07:00 0HLHPOIMG08EB:00000004 [ERR] An unhandled exception has occurred while executing the request (cf926119)
+System.InvalidOperationException: Unable to resolve service for type 'NetCoreApp.Application.Interfaces.IFunctionService' while attempting to activate 'NetCoreApp.Areas.Admin.Components.SideBarViewComponent'.
+   at Microsoft.Extensions.Internal.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Internal.TypeActivatorCache.CreateInstance[TInstance](IServiceProvider serviceProvider, Type implementationType)
+   at Microsoft.AspNetCore.Mvc.ViewComponents.DefaultViewComponentActivator.Create(ViewComponentContext context)
+   at Microsoft.AspNetCore.Mvc.ViewComponents.DefaultViewComponentFactory.CreateViewComponent(ViewComponentContext context)
+   at Microsoft.AspNetCore.Mvc.ViewComponents.DefaultViewComponentInvoker.<InvokeAsyncCore>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Microsoft.AspNetCore.Mvc.ViewComponents.DefaultViewComponentInvoker.<InvokeAsync>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.ViewComponents.DefaultViewComponentHelper.<InvokeCoreAsync>d__12.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at AspNetCore._Areas_Admin_Views_Shared__Layout_cshtml.<<ExecuteAsync>b__45_6>d.MoveNext() in D:\NetCore\NetCoreApp\NetCoreApp\Areas\Admin\Views\Shared\_Layout.cshtml:line 54
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperExecutionContext.<SetOutputContentAsync>d__30.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at AspNetCore._Areas_Admin_Views_Shared__Layout_cshtml.<ExecuteAsync>d__45.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.<RenderPageCoreAsync>d__16.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.<RenderPageAsync>d__15.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.<RenderLayoutAsync>d__18.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.<RenderAsync>d__14.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.<ExecuteAsync>d__22.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.<ExecuteAsync>d__21.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.ViewResult.<ExecuteResultAsync>d__26.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeResultAsync>d__19.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextResultFilterAsync>d__24.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResultExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextResourceFilter>d__22.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeFilterPipelineAsync>d__17.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeAsync>d__15.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.MigrationsEndPointMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+2018-10-24T22:23:56.2768205+07:00 0HLHPOIMG08EB:00000004 [INF] Request finished in 862.1095ms 500 text/html; charset=utf-8 (791a596a)
+2018-10-24T22:29:50.2503197+07:00  [INF] Entity Framework Core "2.0.0-rtm-26452" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=NetCoreApp.Data.EF " (9958f5bb)
+2018-10-24T22:29:50.5111430+07:00  [INF] Executed DbCommand ("9"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppRoles] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-10-24T22:29:50.5318934+07:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppUsers] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-10-24T22:29:50.5499824+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Functions] AS [f]" (0723d8ff)
+2018-10-24T22:29:50.5734292+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Footers] AS [x]
+WHERE [x].[Id] = 'DefaultFooterId'" (0723d8ff)
+2018-10-24T22:29:50.5795607+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Colors] AS [c]" (0723d8ff)
+2018-10-24T22:29:50.5849220+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [AdvertisementPages] AS [a]" (0723d8ff)
+2018-10-24T22:29:50.5899318+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Slides] AS [s]" (0723d8ff)
+2018-10-24T22:29:50.5959551+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Sizes] AS [s]" (0723d8ff)
+2018-10-24T22:29:50.6017660+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [ProductCategories] AS [p]" (0723d8ff)
+2018-10-24T22:29:50.6092535+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeTitle')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-10-24T22:29:50.6159554+07:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaKeyword')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-10-24T22:29:50.6218492+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaDescription')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-10-24T22:29:50.9498674+07:00 0HLHPOM526V9U:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44383/Admin/Home/Index   (ca22a1cb)
+2018-10-24T22:29:50.9902549+07:00 0HLHPOM526V9U:00000001 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-10-24T22:29:51.1647872+07:00 0HLHPOM526V9U:00000001 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-10-24T22:29:51.1952419+07:00 0HLHPOM526V9U:00000001 [INF] Executing action method "NetCoreApp.Areas.Admin.Controllers.HomeController.Index (NetCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-10-24T22:29:54.4837516+07:00 0HLHPOM526V9U:00000001 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Home/Index.cshtml". (9707eebe)
+2018-10-24T22:29:55.6441371+07:00 0HLHPOM526V9U:00000001 [INF] Entity Framework Core "2.0.0-rtm-26452" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=NetCoreApp.Data.EF " (9958f5bb)
+2018-10-24T22:29:55.7398641+07:00 0HLHPOM526V9U:00000001 [INF] Executed DbCommand ("13"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[Url], [dto].[ParentId], [dto].[IconCss], [dto].[SortOrder], [dto].[Status]
+FROM [Functions] AS [dto]" (0723d8ff)
+2018-10-24T22:29:56.6785317+07:00 0HLHPOM526V9U:00000001 [INF] Executed action "NetCoreApp.Areas.Admin.Controllers.HomeController.Index (NetCoreApp)" in 5516.5684ms (afa2e885)
+2018-10-24T22:29:56.6862240+07:00 0HLHPOM526V9U:00000001 [INF] Request finished in 5748.6851ms 200 text/html; charset=utf-8 (791a596a)
+2018-10-24T22:29:58.3732854+07:00 0HLHPOM526V9U:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44383/favicon.ico   (ca22a1cb)
+2018-10-24T22:29:58.3773378+07:00 0HLHPOM526V9U:00000002 [INF] Sending file. Request path: '"/favicon.ico"'. Physical path: '"D:\NetCore\NetCoreApp\NetCoreApp\wwwroot\favicon.ico"' (27b0a520)
+2018-10-24T22:29:58.4292237+07:00 0HLHPOM526V9U:00000002 [INF] Request finished in 56.1242ms 200 image/x-icon (791a596a)
+2018-10-24T22:30:01.0000307+07:00 0HLHPOM526V9U:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44383/admin/productcategory/index   (ca22a1cb)
+2018-10-24T22:30:01.0020549+07:00 0HLHPOM526V9U:00000003 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-10-24T22:30:01.0063063+07:00 0HLHPOM526V9U:00000003 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-10-24T22:30:01.0383774+07:00 0HLHPOM526V9U:00000003 [INF] Executing action method "NetCoreApp.Areas.Admin.Controllers.ProductCategoryController.Index (NetCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-10-24T22:30:01.3331004+07:00 0HLHPOM526V9U:00000003 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/ProductCategory/Index.cshtml". (9707eebe)
+2018-10-24T22:30:01.5645526+07:00 0HLHPOM526V9U:00000003 [INF] Entity Framework Core "2.0.0-rtm-26452" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=NetCoreApp.Data.EF " (9958f5bb)
+2018-10-24T22:30:01.5691020+07:00 0HLHPOM526V9U:00000003 [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[Url], [dto].[ParentId], [dto].[IconCss], [dto].[SortOrder], [dto].[Status]
+FROM [Functions] AS [dto]" (0723d8ff)
+2018-10-24T22:30:01.5929180+07:00 0HLHPOM526V9U:00000003 [INF] Executed action "NetCoreApp.Areas.Admin.Controllers.ProductCategoryController.Index (NetCoreApp)" in 586.9333ms (afa2e885)
+2018-10-24T22:30:01.5934445+07:00 0HLHPOM526V9U:00000003 [INF] Request finished in 593.4975ms 200 text/html; charset=utf-8 (791a596a)
+2018-10-24T22:30:01.6690741+07:00 0HLHPOM526V9U:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44383/vendor/centit.easyui/themes/icon.css   (ca22a1cb)
+2018-10-24T22:30:01.6725178+07:00 0HLHPOM526V9U:00000004 [INF] The file "/vendor/centit.easyui/themes/icon.css" was not modified (f1f8d725)
+2018-10-24T22:30:01.6755818+07:00 0HLHPOM526V9V:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44383/vendor/centit.easyui/themes/bootstrap/easyui.css   (ca22a1cb)
+2018-10-24T22:30:01.6755751+07:00 0HLHPOM526VA0:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44383/vendor/centit.easyui/jquery.easyui.min.js   (ca22a1cb)
+2018-10-24T22:30:01.6760571+07:00 0HLHPOM526VA0:00000001 [INF] The file "/vendor/centit.easyui/jquery.easyui.min.js" was not modified (f1f8d725)
+2018-10-24T22:30:01.6760515+07:00 0HLHPOM526V9U:00000004 [INF] Request finished in 9.8918ms 304 text/css (791a596a)
+2018-10-24T22:30:01.6762935+07:00 0HLHPOM526VA0:00000001 [INF] Request finished in 0.7788ms 304 application/javascript (791a596a)
+2018-10-24T22:30:01.7159196+07:00 0HLHPOM526V9V:00000001 [INF] The file "/vendor/centit.easyui/themes/bootstrap/easyui.css" was not modified (f1f8d725)
+2018-10-24T22:30:01.7163787+07:00 0HLHPOM526V9V:00000001 [INF] Request finished in 40.6733ms 304 text/css (791a596a)
+2018-10-24T22:30:01.7753320+07:00 0HLHPOM526V9U:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:44383/app/controllers/product-category/index.js?v=kceV0Q2AXhTMpl4nF-u5En6KjHOJJ37XMBUR3TkhdUQ   (ca22a1cb)
+2018-10-24T22:30:01.7758507+07:00 0HLHPOM526V9U:00000005 [INF] The file "/app/controllers/product-category/index.js" was not modified (f1f8d725)
+2018-10-24T22:30:01.7760350+07:00 0HLHPOM526V9U:00000005 [INF] Request finished in 0.8234ms 304 application/javascript (791a596a)
+2018-10-24T22:30:01.7765092+07:00 0HLHPOM526VA0:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44383/vendor/bootbox/bootbox.js   (ca22a1cb)
+2018-10-24T22:30:01.7769181+07:00 0HLHPOM526VA0:00000002 [INF] The file "/vendor/bootbox/bootbox.js" was not modified (f1f8d725)
+2018-10-24T22:30:01.7772461+07:00 0HLHPOM526VA0:00000002 [INF] Request finished in 0.6813ms 304 application/javascript (791a596a)
+2018-10-24T22:30:01.9913302+07:00 0HLHPOM526V9V:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44383/admin/productcategory/GetAll   (ca22a1cb)
+2018-10-24T22:30:01.9923088+07:00 0HLHPOM526V9V:00000002 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-10-24T22:30:02.0039718+07:00 0HLHPOM526V9V:00000002 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-10-24T22:30:02.0055958+07:00 0HLHPOM526V9V:00000002 [INF] Executing action method "NetCoreApp.Areas.Admin.Controllers.ProductCategoryController.GetAll (NetCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-10-24T22:30:02.0768844+07:00 0HLHPOM526V9U:00000006 [INF] Request starting HTTP/1.1 GET http://localhost:44383/vendor/centit.easyui/themes/icons/edit_remove.png   (ca22a1cb)
+2018-10-24T22:30:02.0768998+07:00 0HLHPOM526VA0:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44383/vendor/centit.easyui/themes/icons/pencil.png   (ca22a1cb)
+2018-10-24T22:30:02.0776793+07:00 0HLHPOM526V9U:00000006 [INF] The file "/vendor/centit.easyui/themes/icons/edit_remove.png" was not modified (f1f8d725)
+2018-10-24T22:30:02.0779533+07:00 0HLHPOM526V9U:00000006 [INF] Request finished in 1.1309ms 304 image/png (791a596a)
+2018-10-24T22:30:02.0790444+07:00 0HLHPOM526VA0:00000003 [INF] The file "/vendor/centit.easyui/themes/icons/pencil.png" was not modified (f1f8d725)
+2018-10-24T22:30:02.0792765+07:00 0HLHPOM526VA0:00000003 [INF] Request finished in 2.5117ms 304 image/png (791a596a)
+2018-10-24T22:30:02.3343686+07:00 0HLHPOM526V9V:00000002 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-10-24T22:30:02.4367226+07:00 0HLHPOM526V9V:00000002 [INF] Executed action "NetCoreApp.Areas.Admin.Controllers.ProductCategoryController.GetAll (NetCoreApp)" in 433.3247ms (afa2e885)
+2018-10-24T22:30:02.4371864+07:00 0HLHPOM526V9V:00000002 [INF] Request finished in 445.911ms 200 application/json; charset=utf-8 (791a596a)
+2018-10-24T22:30:02.4657837+07:00 0HLHPOM526V9U:00000007 [INF] Request starting HTTP/1.1 GET http://localhost:44383/vendor/centit.easyui/themes/bootstrap/images/tree_icons.png   (ca22a1cb)
+2018-10-24T22:30:02.4666376+07:00 0HLHPOM526V9U:00000007 [INF] The file "/vendor/centit.easyui/themes/bootstrap/images/tree_icons.png" was not modified (f1f8d725)
+2018-10-24T22:30:02.4668515+07:00 0HLHPOM526V9U:00000007 [INF] Request finished in 1.2967ms 304 image/png (791a596a)
+2018-10-24T22:30:05.4181295+07:00 0HLHPOM526VA0:00000004 [INF] Request starting HTTP/1.1 POST http://localhost:44383/admin/ProductCategory/UpdateParentId application/x-www-form-urlencoded; charset=UTF-8 71 (ca22a1cb)
+2018-10-24T22:30:05.4193184+07:00 0HLHPOM526VA0:00000004 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-10-24T22:30:05.4465117+07:00 0HLHPOM526VA0:00000004 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-10-24T22:30:05.5380016+07:00 0HLHPOM526VA0:00000004 [INF] Executing action method "NetCoreApp.Areas.Admin.Controllers.ProductCategoryController.UpdateParentId (NetCoreApp)" with arguments (["1", "6", "System.Collections.Generic.Dictionary`2[System.Int32,System.Int32]"]) - ModelState is Valid (ba7f4ac2)
+2018-10-24T22:30:05.6797723+07:00 0HLHPOM526VA0:00000004 [INF] Executing HttpStatusCodeResult, setting HTTP status code 200 (e28ccfae)
+2018-10-24T22:30:05.6801202+07:00 0HLHPOM526VA0:00000004 [INF] Executed action "NetCoreApp.Areas.Admin.Controllers.ProductCategoryController.UpdateParentId (NetCoreApp)" in 233.6391ms (afa2e885)
+2018-10-24T22:30:05.6817097+07:00 0HLHPOM526VA0:00000004 [INF] Request finished in 263.6043ms 200  (791a596a)
+2018-10-24T22:30:05.6915802+07:00 0HLHPOM526V9V:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44383/admin/productcategory/GetAll   (ca22a1cb)
+2018-10-24T22:30:05.6926828+07:00 0HLHPOM526V9V:00000003 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-10-24T22:30:05.6933357+07:00 0HLHPOM526V9V:00000003 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-10-24T22:30:05.6948277+07:00 0HLHPOM526V9V:00000003 [INF] Executing action method "NetCoreApp.Areas.Admin.Controllers.ProductCategoryController.GetAll (NetCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-10-24T22:30:05.7016868+07:00 0HLHPOM526V9V:00000003 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-10-24T22:30:05.7027617+07:00 0HLHPOM526V9V:00000003 [INF] Executed action "NetCoreApp.Areas.Admin.Controllers.ProductCategoryController.GetAll (NetCoreApp)" in 9.4236ms (afa2e885)
+2018-10-24T22:30:05.7030613+07:00 0HLHPOM526V9V:00000003 [INF] Request finished in 11.5552ms 200 application/json; charset=utf-8 (791a596a)
+2018-10-24T22:30:07.7350736+07:00 0HLHPOM526V9U:00000008 [INF] Request starting HTTP/1.1 GET http://localhost:44383/admin/productcategory/index   (ca22a1cb)
+2018-10-24T22:30:07.7367438+07:00 0HLHPOM526V9U:00000008 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-10-24T22:30:07.7375122+07:00 0HLHPOM526V9U:00000008 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-10-24T22:30:07.7403480+07:00 0HLHPOM526V9U:00000008 [INF] Executing action method "NetCoreApp.Areas.Admin.Controllers.ProductCategoryController.Index (NetCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-10-24T22:30:07.7410665+07:00 0HLHPOM526V9U:00000008 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/ProductCategory/Index.cshtml". (9707eebe)
+2018-10-24T22:30:07.7431046+07:00 0HLHPOM526V9U:00000008 [INF] Entity Framework Core "2.0.0-rtm-26452" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=NetCoreApp.Data.EF " (9958f5bb)
+2018-10-24T22:30:07.7448063+07:00 0HLHPOM526V9U:00000008 [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[Url], [dto].[ParentId], [dto].[IconCss], [dto].[SortOrder], [dto].[Status]
+FROM [Functions] AS [dto]" (0723d8ff)
+2018-10-24T22:30:07.7488283+07:00 0HLHPOM526V9U:00000008 [INF] Executed action "NetCoreApp.Areas.Admin.Controllers.ProductCategoryController.Index (NetCoreApp)" in 11.1605ms (afa2e885)
+2018-10-24T22:30:07.7500698+07:00 0HLHPOM526V9U:00000008 [INF] Request finished in 14.9373ms 200 text/html; charset=utf-8 (791a596a)
+2018-10-24T22:30:08.2193846+07:00 0HLHPOM526VA0:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:44383/admin/productcategory/GetAll   (ca22a1cb)
+2018-10-24T22:30:08.2205755+07:00 0HLHPOM526VA0:00000005 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-10-24T22:30:08.2210875+07:00 0HLHPOM526VA0:00000005 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-10-24T22:30:08.2231066+07:00 0HLHPOM526VA0:00000005 [INF] Executing action method "NetCoreApp.Areas.Admin.Controllers.ProductCategoryController.GetAll (NetCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-10-24T22:30:08.2287321+07:00 0HLHPOM526VA0:00000005 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-10-24T22:30:08.2296514+07:00 0HLHPOM526VA0:00000005 [INF] Executed action "NetCoreApp.Areas.Admin.Controllers.ProductCategoryController.GetAll (NetCoreApp)" in 8.4494ms (afa2e885)
+2018-10-24T22:30:08.2300422+07:00 0HLHPOM526VA0:00000005 [INF] Request finished in 10.6986ms 200 application/json; charset=utf-8 (791a596a)
+2018-10-24T22:30:08.4135911+07:00 0HLHPOM526V9V:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44383/favicon.ico   (ca22a1cb)
+2018-10-24T22:30:08.4140104+07:00 0HLHPOM526V9V:00000004 [INF] Sending file. Request path: '"/favicon.ico"'. Physical path: '"D:\NetCore\NetCoreApp\NetCoreApp\wwwroot\favicon.ico"' (27b0a520)
+2018-10-24T22:30:08.4197527+07:00 0HLHPOM526V9V:00000004 [INF] Request finished in 5.9534ms 200 image/x-icon (791a596a)
+2018-10-24T22:30:14.2979123+07:00 0HLHPOM526V9U:00000009 [INF] Request starting HTTP/1.1 GET http://localhost:44383/Admin/ProductCategory/GetAll   (ca22a1cb)
+2018-10-24T22:30:14.2990666+07:00 0HLHPOM526V9U:00000009 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-10-24T22:30:14.2994637+07:00 0HLHPOM526V9U:00000009 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-10-24T22:30:14.3005307+07:00 0HLHPOM526V9U:00000009 [INF] Executing action method "NetCoreApp.Areas.Admin.Controllers.ProductCategoryController.GetAll (NetCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-10-24T22:30:14.3050876+07:00 0HLHPOM526V9U:00000009 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-10-24T22:30:14.3056785+07:00 0HLHPOM526V9U:00000009 [INF] Executed action "NetCoreApp.Areas.Admin.Controllers.ProductCategoryController.GetAll (NetCoreApp)" in 6.2274ms (afa2e885)
+2018-10-24T22:30:14.3058806+07:00 0HLHPOM526V9U:00000009 [INF] Request finished in 8.1304ms 200 application/json; charset=utf-8 (791a596a)
+2018-10-24T22:30:14.3330912+07:00 0HLHPOM526VA0:00000006 [INF] Request starting HTTP/1.1 GET http://localhost:44383/vendor/centit.easyui/themes/bootstrap/images/combo_arrow.png   (ca22a1cb)
+2018-10-24T22:30:14.3695480+07:00 0HLHPOM526VA0:00000006 [INF] Sending file. Request path: '"/vendor/centit.easyui/themes/bootstrap/images/combo_arrow.png"'. Physical path: '"D:\NetCore\NetCoreApp\NetCoreApp\wwwroot\vendor\centit.easyui\themes\bootstrap\images\combo_arrow.png"' (27b0a520)
+2018-10-24T22:30:14.3719717+07:00 0HLHPOM526VA0:00000006 [INF] Request finished in 38.9376ms 200 image/png (791a596a)
+2018-10-24T22:30:19.5865428+07:00 0HLHPOM526V9V:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:44383/Admin/ProductCategory/GetById?id=1   (ca22a1cb)
+2018-10-24T22:30:19.5875597+07:00 0HLHPOM526V9V:00000005 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-10-24T22:30:19.5909147+07:00 0HLHPOM526V9V:00000005 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-10-24T22:30:19.5931413+07:00 0HLHPOM526V9V:00000005 [INF] Executing action method "NetCoreApp.Areas.Admin.Controllers.ProductCategoryController.GetById (NetCoreApp)" with arguments (["1"]) - ModelState is Valid (ba7f4ac2)
+2018-10-24T22:30:19.6491026+07:00 0HLHPOM526V9V:00000005 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-10-24T22:30:19.6496098+07:00 0HLHPOM526V9V:00000005 [INF] Executed action "NetCoreApp.Areas.Admin.Controllers.ProductCategoryController.GetById (NetCoreApp)" in 58.7469ms (afa2e885)
+2018-10-24T22:30:19.6499955+07:00 0HLHPOM526V9V:00000005 [INF] Request finished in 63.6855ms 200 application/json; charset=utf-8 (791a596a)
+2018-10-24T22:30:19.6586656+07:00 0HLHPOM526V9U:0000000A [INF] Request starting HTTP/1.1 GET http://localhost:44383/Admin/ProductCategory/GetAll   (ca22a1cb)
+2018-10-24T22:30:19.6595565+07:00 0HLHPOM526V9U:0000000A [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-10-24T22:30:19.6599347+07:00 0HLHPOM526V9U:0000000A [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-10-24T22:30:19.6609543+07:00 0HLHPOM526V9U:0000000A [INF] Executing action method "NetCoreApp.Areas.Admin.Controllers.ProductCategoryController.GetAll (NetCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-10-24T22:30:19.6692545+07:00 0HLHPOM526V9U:0000000A [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-10-24T22:30:19.6698817+07:00 0HLHPOM526V9U:0000000A [INF] Executed action "NetCoreApp.Areas.Admin.Controllers.ProductCategoryController.GetAll (NetCoreApp)" in 9.9529ms (afa2e885)
+2018-10-24T22:30:19.6701663+07:00 0HLHPOM526V9U:0000000A [INF] Request finished in 11.6022ms 200 application/json; charset=utf-8 (791a596a)
+2018-10-24T22:30:25.0851392+07:00 0HLHPOM526VA0:00000007 [INF] Request starting HTTP/1.1 POST http://localhost:44383/Admin/ProductCategory/SaveEntity application/x-www-form-urlencoded; charset=UTF-8 169 (ca22a1cb)
+2018-10-24T22:30:25.0860711+07:00 0HLHPOM526VA0:00000007 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-10-24T22:30:25.1042170+07:00 0HLHPOM526VA0:00000007 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-10-24T22:30:25.1169379+07:00 0HLHPOM526VA0:00000007 [INF] Executing action method "NetCoreApp.Areas.Admin.Controllers.ProductCategoryController.SaveEntity (NetCoreApp)" with arguments (["NetCoreApp.Application.ViewModels.ProductCategoryViewModel"]) - ModelState is Valid (ba7f4ac2)
+2018-10-24T22:30:25.1567298+07:00 0HLHPOM526VA0:00000007 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-10-24T22:30:25.1570499+07:00 0HLHPOM526VA0:00000007 [INF] Executed action "NetCoreApp.Areas.Admin.Controllers.ProductCategoryController.SaveEntity (NetCoreApp)" in 52.9067ms (afa2e885)
+2018-10-24T22:30:25.1572808+07:00 0HLHPOM526VA0:00000007 [INF] Request finished in 72.2119ms 200 application/json; charset=utf-8 (791a596a)
+2018-10-24T22:30:25.1731510+07:00 0HLHPOM526V9V:00000006 [INF] Request starting HTTP/1.1 GET http://localhost:44383/Admin/ProductCategory/GetAll   (ca22a1cb)
+2018-10-24T22:30:25.1741264+07:00 0HLHPOM526V9V:00000006 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-10-24T22:30:25.1745156+07:00 0HLHPOM526V9V:00000006 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-10-24T22:30:25.1754973+07:00 0HLHPOM526V9V:00000006 [INF] Executing action method "NetCoreApp.Areas.Admin.Controllers.ProductCategoryController.GetAll (NetCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-10-24T22:30:25.1822908+07:00 0HLHPOM526V9V:00000006 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-10-24T22:30:25.1828920+07:00 0HLHPOM526V9V:00000006 [INF] Executed action "NetCoreApp.Areas.Admin.Controllers.ProductCategoryController.GetAll (NetCoreApp)" in 8.402ms (afa2e885)
+2018-10-24T22:30:25.1831888+07:00 0HLHPOM526V9V:00000006 [INF] Request finished in 10.1326ms 200 application/json; charset=utf-8 (791a596a)
+2018-10-24T22:30:25.2049387+07:00 0HLHPOM526V9U:0000000B [INF] Request starting HTTP/1.1 GET http://localhost:44383/admin/productcategory/GetAll   (ca22a1cb)
+2018-10-24T22:30:25.2060384+07:00 0HLHPOM526V9U:0000000B [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-10-24T22:30:25.2065073+07:00 0HLHPOM526V9U:0000000B [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-10-24T22:30:25.2083816+07:00 0HLHPOM526V9U:0000000B [INF] Executing action method "NetCoreApp.Areas.Admin.Controllers.ProductCategoryController.GetAll (NetCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-10-24T22:30:25.2135061+07:00 0HLHPOM526V9U:0000000B [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-10-24T22:30:25.2142340+07:00 0HLHPOM526V9U:0000000B [INF] Executed action "NetCoreApp.Areas.Admin.Controllers.ProductCategoryController.GetAll (NetCoreApp)" in 7.6942ms (afa2e885)
+2018-10-24T22:30:25.2144503+07:00 0HLHPOM526V9U:0000000B [INF] Request finished in 9.57ms 200 application/json; charset=utf-8 (791a596a)
+2018-10-24T22:30:30.4363989+07:00 0HLHPOM526VA0:00000008 [INF] Request starting HTTP/1.1 GET http://localhost:44383/admin/productcategory/index   (ca22a1cb)
+2018-10-24T22:30:30.4376877+07:00 0HLHPOM526VA0:00000008 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-10-24T22:30:30.4382542+07:00 0HLHPOM526VA0:00000008 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-10-24T22:30:30.4416465+07:00 0HLHPOM526VA0:00000008 [INF] Executing action method "NetCoreApp.Areas.Admin.Controllers.ProductCategoryController.Index (NetCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-10-24T22:30:30.4422454+07:00 0HLHPOM526VA0:00000008 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/ProductCategory/Index.cshtml". (9707eebe)
+2018-10-24T22:30:30.4440446+07:00 0HLHPOM526VA0:00000008 [INF] Entity Framework Core "2.0.0-rtm-26452" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=NetCoreApp.Data.EF " (9958f5bb)
+2018-10-24T22:30:30.4479083+07:00 0HLHPOM526VA0:00000008 [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[Url], [dto].[ParentId], [dto].[IconCss], [dto].[SortOrder], [dto].[Status]
+FROM [Functions] AS [dto]" (0723d8ff)
+2018-10-24T22:30:30.4511752+07:00 0HLHPOM526VA0:00000008 [INF] Executed action "NetCoreApp.Areas.Admin.Controllers.ProductCategoryController.Index (NetCoreApp)" in 12.9561ms (afa2e885)
+2018-10-24T22:30:30.4514997+07:00 0HLHPOM526VA0:00000008 [INF] Request finished in 15.788ms 200 text/html; charset=utf-8 (791a596a)
+2018-10-24T22:30:30.9610239+07:00 0HLHPOM526V9V:00000007 [INF] Request starting HTTP/1.1 GET http://localhost:44383/admin/productcategory/GetAll   (ca22a1cb)
+2018-10-24T22:30:30.9619730+07:00 0HLHPOM526V9V:00000007 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-10-24T22:30:30.9624198+07:00 0HLHPOM526V9V:00000007 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-10-24T22:30:30.9639968+07:00 0HLHPOM526V9V:00000007 [INF] Executing action method "NetCoreApp.Areas.Admin.Controllers.ProductCategoryController.GetAll (NetCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-10-24T22:30:30.9712683+07:00 0HLHPOM526V9V:00000007 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-10-24T22:30:30.9718502+07:00 0HLHPOM526V9V:00000007 [INF] Executed action "NetCoreApp.Areas.Admin.Controllers.ProductCategoryController.GetAll (NetCoreApp)" in 9.4639ms (afa2e885)
+2018-10-24T22:30:30.9721395+07:00 0HLHPOM526V9V:00000007 [INF] Request finished in 11.2524ms 200 application/json; charset=utf-8 (791a596a)
+2018-10-24T22:30:31.2858672+07:00 0HLHPOM526V9U:0000000C [INF] Request starting HTTP/1.1 GET http://localhost:44383/favicon.ico   (ca22a1cb)
+2018-10-24T22:30:31.2866840+07:00 0HLHPOM526V9U:0000000C [INF] Sending file. Request path: '"/favicon.ico"'. Physical path: '"D:\NetCore\NetCoreApp\NetCoreApp\wwwroot\favicon.ico"' (27b0a520)
+2018-10-24T22:30:31.2889521+07:00 0HLHPOM526V9U:0000000C [INF] Request finished in 3.0987ms 200 image/x-icon (791a596a)
+2018-10-24T22:30:36.1646656+07:00 0HLHPOM526VA0:00000009 [INF] Request starting HTTP/1.1 POST http://localhost:44383/Admin/ProductCategory/Delete application/x-www-form-urlencoded; charset=UTF-8 4 (ca22a1cb)
+2018-10-24T22:30:36.1662019+07:00 0HLHPOM526VA0:00000009 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-10-24T22:30:36.1690098+07:00 0HLHPOM526VA0:00000009 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-10-24T22:30:36.1703570+07:00 0HLHPOM526VA0:00000009 [INF] Executing action method "NetCoreApp.Areas.Admin.Controllers.ProductCategoryController.Delete (NetCoreApp)" with arguments (["1"]) - ModelState is Valid (ba7f4ac2)
+2018-10-24T22:30:36.2027116+07:00 0HLHPOM526VA0:00000009 [INF] Executing HttpStatusCodeResult, setting HTTP status code 200 (e28ccfae)
+2018-10-24T22:30:36.2029488+07:00 0HLHPOM526VA0:00000009 [INF] Executed action "NetCoreApp.Areas.Admin.Controllers.ProductCategoryController.Delete (NetCoreApp)" in 33.9907ms (afa2e885)
+2018-10-24T22:30:36.2031469+07:00 0HLHPOM526VA0:00000009 [INF] Request finished in 38.6415ms 200  (791a596a)
+2018-10-24T22:30:36.2190684+07:00 0HLHPOM526V9V:00000008 [INF] Request starting HTTP/1.1 GET http://localhost:44383/admin/productcategory/GetAll   (ca22a1cb)
+2018-10-24T22:30:36.2199479+07:00 0HLHPOM526V9V:00000008 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-10-24T22:30:36.2203466+07:00 0HLHPOM526V9V:00000008 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-10-24T22:30:36.2215955+07:00 0HLHPOM526V9V:00000008 [INF] Executing action method "NetCoreApp.Areas.Admin.Controllers.ProductCategoryController.GetAll (NetCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-10-24T22:30:36.2260498+07:00 0HLHPOM526V9V:00000008 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-10-24T22:30:36.2265223+07:00 0HLHPOM526V9V:00000008 [INF] Executed action "NetCoreApp.Areas.Admin.Controllers.ProductCategoryController.GetAll (NetCoreApp)" in 6.1413ms (afa2e885)
+2018-10-24T22:30:36.2267532+07:00 0HLHPOM526V9V:00000008 [INF] Request finished in 7.6962ms 200 application/json; charset=utf-8 (791a596a)
+2018-10-24T22:30:38.2337670+07:00 0HLHPOM526V9U:0000000D [INF] Request starting HTTP/1.1 GET http://localhost:44383/admin/productcategory/index   (ca22a1cb)
+2018-10-24T22:30:38.2350013+07:00 0HLHPOM526V9U:0000000D [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-10-24T22:30:38.2354778+07:00 0HLHPOM526V9U:0000000D [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-10-24T22:30:38.2368282+07:00 0HLHPOM526V9U:0000000D [INF] Executing action method "NetCoreApp.Areas.Admin.Controllers.ProductCategoryController.Index (NetCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-10-24T22:30:38.2372455+07:00 0HLHPOM526V9U:0000000D [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/ProductCategory/Index.cshtml". (9707eebe)
+2018-10-24T22:30:38.2394192+07:00 0HLHPOM526V9U:0000000D [INF] Entity Framework Core "2.0.0-rtm-26452" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=NetCoreApp.Data.EF " (9958f5bb)
+2018-10-24T22:30:38.2412493+07:00 0HLHPOM526V9U:0000000D [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[Url], [dto].[ParentId], [dto].[IconCss], [dto].[SortOrder], [dto].[Status]
+FROM [Functions] AS [dto]" (0723d8ff)
+2018-10-24T22:30:38.2440254+07:00 0HLHPOM526V9U:0000000D [INF] Executed action "NetCoreApp.Areas.Admin.Controllers.ProductCategoryController.Index (NetCoreApp)" in 8.526ms (afa2e885)
+2018-10-24T22:30:38.2444791+07:00 0HLHPOM526V9U:0000000D [INF] Request finished in 10.8695ms 200 text/html; charset=utf-8 (791a596a)
+2018-10-24T22:30:38.5505753+07:00 0HLHPOM526VA0:0000000A [INF] Request starting HTTP/1.1 GET http://localhost:44383/admin/productcategory/GetAll   (ca22a1cb)
+2018-10-24T22:30:38.5516103+07:00 0HLHPOM526VA0:0000000A [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-10-24T22:30:38.5520015+07:00 0HLHPOM526VA0:0000000A [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-10-24T22:30:38.5540778+07:00 0HLHPOM526VA0:0000000A [INF] Executing action method "NetCoreApp.Areas.Admin.Controllers.ProductCategoryController.GetAll (NetCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-10-24T22:30:38.5602315+07:00 0HLHPOM526VA0:0000000A [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-10-24T22:30:38.5607536+07:00 0HLHPOM526VA0:0000000A [INF] Executed action "NetCoreApp.Areas.Admin.Controllers.ProductCategoryController.GetAll (NetCoreApp)" in 8.7916ms (afa2e885)
+2018-10-24T22:30:38.5609680+07:00 0HLHPOM526VA0:0000000A [INF] Request finished in 10.4918ms 200 application/json; charset=utf-8 (791a596a)
+2018-10-24T22:30:38.7557367+07:00 0HLHPOM526V9V:00000009 [INF] Request starting HTTP/1.1 GET http://localhost:44383/favicon.ico   (ca22a1cb)
+2018-10-24T22:30:38.7562680+07:00 0HLHPOM526V9V:00000009 [INF] Sending file. Request path: '"/favicon.ico"'. Physical path: '"D:\NetCore\NetCoreApp\NetCoreApp\wwwroot\favicon.ico"' (27b0a520)
+2018-10-24T22:30:38.7569370+07:00 0HLHPOM526V9V:00000009 [INF] Request finished in 1.2683ms 200 image/x-icon (791a596a)

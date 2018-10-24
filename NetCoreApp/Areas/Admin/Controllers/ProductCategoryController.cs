@@ -2,7 +2,6 @@
 using System.Linq;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.ModelBinding;
-using NetCoreApp.Application.Interfaces;
 using NetCoreApp.Application.ViewModels;
 using NetCoreApp.Utilities.Helpers;
 
@@ -10,13 +9,6 @@ namespace NetCoreApp.Areas.Admin.Controllers
 {
     public class ProductCategoryController : BaseController
     {
-        private readonly IProductCategoryService _productCategoryService;
-
-        public ProductCategoryController(IProductCategoryService productCategoryService)
-        {
-            _productCategoryService = productCategoryService;
-        }
-
         public IActionResult Index()
         {
             return View();
@@ -26,14 +18,14 @@ namespace NetCoreApp.Areas.Admin.Controllers
         [HttpGet]
         public IActionResult GetAll()
         {
-            var model = _productCategoryService.GetAll();
+            var model = ServiceRegistration.ProductCategoryService.GetAll();
             return new OkObjectResult(model);
         }
 
         [HttpGet]
         public IActionResult GetById(int id)
         {
-            var model = _productCategoryService.GetById(id);
+            var model = ServiceRegistration.ProductCategoryService.GetById(id);
             return new OkObjectResult(model);
         }
 
@@ -50,14 +42,13 @@ namespace NetCoreApp.Areas.Admin.Controllers
                 productCategoryViewModel.SeoAlias = TextHelper.ToUnsignString(productCategoryViewModel.Name);
                 if (productCategoryViewModel.Id == 0)
                 {
-                    _productCategoryService.Add(productCategoryViewModel);
+                    ServiceRegistration.ProductCategoryService.Add(productCategoryViewModel);
                 }
                 else
                 {
-                    _productCategoryService.Update(productCategoryViewModel);
+                    ServiceRegistration.ProductCategoryService.Update(productCategoryViewModel);
                 }
                     
-                _productCategoryService.Save();
                 return new OkObjectResult(productCategoryViewModel);
             }
         }
@@ -71,8 +62,7 @@ namespace NetCoreApp.Areas.Admin.Controllers
             }
             else
             {
-                _productCategoryService.Delete(id);
-                _productCategoryService.Save();
+                ServiceRegistration.ProductCategoryService.Delete(id);
                 return new OkResult();
             }
           
@@ -93,8 +83,7 @@ namespace NetCoreApp.Areas.Admin.Controllers
                 }
                 else
                 {
-                    _productCategoryService.UpdateParentId(sourceId, targetId, items);
-                    _productCategoryService.Save();
+                    ServiceRegistration.ProductCategoryService.UpdateParentId(sourceId, targetId, items);
                     return new OkResult();
                 }
             }
@@ -115,8 +104,7 @@ namespace NetCoreApp.Areas.Admin.Controllers
                 }
                 else
                 {
-                    _productCategoryService.ReOrder(sourceId, targetId);
-                    _productCategoryService.Save();
+                    ServiceRegistration.ProductCategoryService.ReOrder(sourceId, targetId);
                     return new OkResult();
                 }
             }

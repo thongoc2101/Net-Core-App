@@ -7,12 +7,10 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
-using NetCoreApp.Application.Implementations;
-using NetCoreApp.Application.Interfaces;
+using NetCoreApp.Application.Singleton;
 using NetCoreApp.Data.EF;
-using NetCoreApp.Data.EF.Repositories;
+using NetCoreApp.Data.EF.Registration;
 using NetCoreApp.Data.Entities;
-using NetCoreApp.Data.IRepositories;
 using NetCoreApp.Helpers;
 using NetCoreApp.Infrastructure.Interfaces;
 using NetCoreApp.Services;
@@ -73,20 +71,13 @@ namespace NetCoreApp
             // Created Seeding database
             services.AddTransient<DbInitializer>();
 
-            //Repository
-            services.AddTransient<IProductCategoryRepository, ProductCategoryRepository>();
-            services.AddTransient<IFunctionRepository, FunctionRepository>();
-            services.AddTransient<IProductRepository, ProductRepository>();
-
-            //Service
-            services.AddTransient<IProductCategoryService, ProductCategoryService>();
-            services.AddTransient<IFunctionService, FunctionService>();
-            services.AddTransient<IProductService, ProductService>();
+            
+            services.AddTransient<IUnitOfWork, UnitOfWork>();
+            services.AddTransient<IServiceRegistration, ServiceRegistration>();
 
             services.AddMvc().AddJsonOptions(options => options.SerializerSettings.ContractResolver = new DefaultContractResolver());
 
             //UnitOfWork
-            services.AddTransient(typeof(IUnitOfWork), typeof(EfUnitOfWork));
             services.AddTransient(typeof(IRepository<,>), typeof(EfRepository<,>));
 
             services.AddScoped<IUserClaimsPrincipalFactory<AppUser>, CustomClaimPrincipalFactory>();

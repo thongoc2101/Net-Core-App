@@ -1,22 +1,20 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
 using AutoMapper.QueryableExtensions;
 using Microsoft.EntityFrameworkCore;
 using NetCoreApp.Application.Interfaces;
 using NetCoreApp.Application.ViewModels;
-using NetCoreApp.Data.IRepositories;
+using NetCoreApp.Data.EF.Registration;
 
 namespace NetCoreApp.Application.Implementations
 {
     public class FunctionService : IFunctionService
     {
-        private IFunctionRepository _functionRepository;
-
-        public FunctionService(IFunctionRepository functionRepository)
+        private readonly IUnitOfWork _unitOfWork;
+        public FunctionService(IUnitOfWork unitOfWork)
         {
-            _functionRepository = functionRepository;
+            _unitOfWork = unitOfWork;
         }
 
         public void Dispose()
@@ -26,7 +24,7 @@ namespace NetCoreApp.Application.Implementations
 
         public Task<List<FunctionViewModel>> GetAll()
         {
-            return _functionRepository.FindAll()
+            return _unitOfWork.FunctionRepository.FindAll()
                 .ProjectTo<FunctionViewModel>().ToListAsync();
         }
 
