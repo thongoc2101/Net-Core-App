@@ -1,11 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
 using System.Security.Claims;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.WebSockets.Internal;
-using NetCoreApp.Application.Interfaces;
+using NetCoreApp.Application.Singleton;
 using NetCoreApp.Application.ViewModels;
 using NetCoreApp.Extensions;
 using NetCoreApp.Utilities.Constants;
@@ -14,11 +12,11 @@ namespace NetCoreApp.Areas.Admin.Components
 {
     public class SideBarViewComponent : ViewComponent
     {
-        private IFunctionService _functionService;
+        private readonly IServiceRegistration _serviceRegistration;
 
-        public SideBarViewComponent(IFunctionService functionService)
+        public SideBarViewComponent(IServiceRegistration serviceRegistration)
         {
-            _functionService = functionService;
+            _serviceRegistration = serviceRegistration;
         }
 
         public async Task<IViewComponentResult> InvokeAsync()
@@ -27,7 +25,7 @@ namespace NetCoreApp.Areas.Admin.Components
             List<FunctionViewModel> function;
             if (roles.Split(";").Contains(CommonConstants.AdminRole))
             {
-                function = await _functionService.GetAll();
+                function = await _serviceRegistration.FunctionService.GetAll();
             }
             else
             {

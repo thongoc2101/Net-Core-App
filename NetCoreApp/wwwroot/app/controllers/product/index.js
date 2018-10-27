@@ -1,5 +1,6 @@
 ﻿var productController = function() {
     this.initialize = function() {
+        loadCategories();
         loadData();
         registerEvents();
     }
@@ -10,6 +11,37 @@
             app.configs.pageIndex = 1;
             loadData(true);
         });
+        $('#btnSearch').on('click',
+            function() {
+                loadData();
+            });
+        $('#txtKeyword').on('keypress',
+            function(e) {
+                if (e.which === 13) {
+                    loadData();
+                }
+            });
+
+    }
+
+    function loadCategories() {
+        $.ajax({
+            type: 'GET',
+            url: "/admin/product/GetAllCategories",
+            dataType: 'json',
+            success: function(response) {
+                var render = "<option value=''>--Select Category--</option>";
+                $.each(response,
+                    function(i, item) {
+                        render += "<option value='" + item.Id + "'>"+item.Name+"</option>";
+                    });
+                $('#ddlCategorySearch').html(render);
+            },
+            error: function(status) {
+                console.log(status);
+                app.notify('Cannot loading product category data ', 'error');
+            }
+        });
     }
 
     function loadData(isPageChanged) {
@@ -19,15 +51,19 @@
             type: 'GET',
             url: "/admin/product/GetAllPaging",
             data: {
-                categoryId: null,
+                categoryId: $('#ddlCategorySearch').val(),
                 keyword: $('#txtKeyword').val(),
                 page: app.configs.pageIndex,
                 pageSize: app.configs.pageSize
             },
             dataType: 'json',
             success: function(response) {
-                if (response.length === 0) {
+                if (response.RowCount === 0) {
+                    $('#table-content').html(render);
+                    $('#lblTotalRecords').text(response.RowCount);
+                    $('#paginationUL').css('display','none');
                     app.notify('No data', 'error');
+                    
                 } else {
                     $.each(response.Results,
                         function(i, item) {

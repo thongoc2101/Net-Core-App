@@ -3,7 +3,6 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
-using NetCoreApp.Controllers;
 using NetCoreApp.Data.Entities;
 using NetCoreApp.Models.AccountViewModels;
 using NetCoreApp.Utilities.Dtos;

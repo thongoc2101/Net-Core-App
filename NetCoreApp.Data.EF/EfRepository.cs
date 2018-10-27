@@ -71,7 +71,8 @@ namespace NetCoreApp.Data.EF
 
         public void Remove(K id)
         {
-            Remove(FindById(id));
+            var entity = FindById(id);
+            Remove(entity);
         }
 
         public void RemoveMultiple(List<T> entities)
