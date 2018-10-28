@@ -2924,3 +2924,409 @@ FROM [Functions] AS [dto]" (0723d8ff)
 2018-10-28T14:48:19.2899639+07:00 0HLHSL6EB1POQ:00000006 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
 2018-10-28T14:48:19.3029800+07:00 0HLHSL6EB1POQ:00000006 [INF] Executed action "NetCoreApp.Areas.Admin.Controllers.ProductController.GetAllPaging (NetCoreApp)" in 1205.8439ms (afa2e885)
 2018-10-28T14:48:19.3975161+07:00 0HLHSL6EB1POQ:00000006 [INF] Request finished in 1250.6963ms 200 application/json; charset=utf-8 (791a596a)
+2018-10-28T15:40:13.2107859+07:00  [INF] Entity Framework Core "2.0.0-rtm-26452" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=NetCoreApp.Data.EF " (9958f5bb)
+2018-10-28T15:40:14.7204014+07:00  [INF] Executed DbCommand ("192"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppRoles] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-10-28T15:40:16.6381595+07:00  [INF] Executed DbCommand ("247"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppUsers] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-10-28T15:40:16.9069406+07:00  [INF] Executed DbCommand ("159"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Functions] AS [f]" (0723d8ff)
+2018-10-28T15:40:17.1123522+07:00  [INF] Executed DbCommand ("74"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Footers] AS [x]
+WHERE [x].[Id] = 'DefaultFooterId'" (0723d8ff)
+2018-10-28T15:40:17.1919998+07:00  [INF] Executed DbCommand ("43"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Colors] AS [c]" (0723d8ff)
+2018-10-28T15:40:17.3973716+07:00  [INF] Executed DbCommand ("98"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [AdvertisementPages] AS [a]" (0723d8ff)
+2018-10-28T15:40:17.8757675+07:00  [INF] Executed DbCommand ("293"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Slides] AS [s]" (0723d8ff)
+2018-10-28T15:40:18.1588570+07:00  [INF] Executed DbCommand ("177"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Sizes] AS [s]" (0723d8ff)
+2018-10-28T15:40:18.2357608+07:00  [INF] Executed DbCommand ("42"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [ProductCategories] AS [p]" (0723d8ff)
+2018-10-28T15:40:18.3533557+07:00  [INF] Executed DbCommand ("74"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeTitle')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-10-28T15:40:18.4492986+07:00  [INF] Executed DbCommand ("78"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaKeyword')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-10-28T15:40:18.9862061+07:00  [INF] Executed DbCommand ("276"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaDescription')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-10-28T15:40:20.3116501+07:00 0HLHSM3V3O5KJ:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44383/admin   (ca22a1cb)
+2018-10-28T15:40:20.3018483+07:00 0HLHSM3V3O5KH:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44383/   (ca22a1cb)
+2018-10-28T15:40:20.3244768+07:00 0HLHSM3V3O5KI:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44383/admin   (ca22a1cb)
+2018-10-28T15:40:20.3294489+07:00 0HLHSM3V3O5KG:00000001 [INF] Request starting HTTP/1.1 DEBUG http://localhost:15649/  0 (ca22a1cb)
+2018-10-28T15:40:20.3941529+07:00 0HLHSM3V3O5KG:00000001 [INF] Request finished in 112.5046ms 200  (791a596a)
+2018-10-28T15:40:20.5211943+07:00 0HLHSM3V3O5KJ:00000001 [INF] Entity Framework Core "2.0.0-rtm-26452" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=NetCoreApp.Data.EF " (9958f5bb)
+2018-10-28T15:40:20.5488732+07:00 0HLHSM3V3O5KI:00000001 [INF] Entity Framework Core "2.0.0-rtm-26452" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=NetCoreApp.Data.EF " (9958f5bb)
+2018-10-28T15:40:20.7835181+07:00 0HLHSM3V3O5KH:00000001 [INF] Entity Framework Core "2.0.0-rtm-26452" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=NetCoreApp.Data.EF " (9958f5bb)
+2018-10-28T15:40:21.7188584+07:00 0HLHSM3V3O5KH:00000001 [INF] Executed DbCommand ("273"ms) [Parameters=["@__get_Item_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [e].[Id], [e].[AccessFailedCount], [e].[Avatar], [e].[Balance], [e].[BirthDay], [e].[ConcurrencyStamp], [e].[DateCreated], [e].[DateModified], [e].[Email], [e].[EmailConfirmed], [e].[FullName], [e].[LockoutEnabled], [e].[LockoutEnd], [e].[NormalizedEmail], [e].[NormalizedUserName], [e].[PasswordHash], [e].[PhoneNumber], [e].[PhoneNumberConfirmed], [e].[SecurityStamp], [e].[Status], [e].[TwoFactorEnabled], [e].[UserName]
+FROM [AppUsers] AS [e]
+WHERE [e].[Id] = @__get_Item_0" (0723d8ff)
+2018-10-28T15:40:21.8686128+07:00 0HLHSM3V3O5KI:00000001 [INF] Executed DbCommand ("991"ms) [Parameters=["@__get_Item_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [e].[Id], [e].[AccessFailedCount], [e].[Avatar], [e].[Balance], [e].[BirthDay], [e].[ConcurrencyStamp], [e].[DateCreated], [e].[DateModified], [e].[Email], [e].[EmailConfirmed], [e].[FullName], [e].[LockoutEnabled], [e].[LockoutEnd], [e].[NormalizedEmail], [e].[NormalizedUserName], [e].[PasswordHash], [e].[PhoneNumber], [e].[PhoneNumberConfirmed], [e].[SecurityStamp], [e].[Status], [e].[TwoFactorEnabled], [e].[UserName]
+FROM [AppUsers] AS [e]
+WHERE [e].[Id] = @__get_Item_0" (0723d8ff)
+2018-10-28T15:40:22.0811748+07:00 0HLHSM3V3O5KJ:00000001 [INF] Executed DbCommand ("605"ms) [Parameters=["@__get_Item_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [e].[Id], [e].[AccessFailedCount], [e].[Avatar], [e].[Balance], [e].[BirthDay], [e].[ConcurrencyStamp], [e].[DateCreated], [e].[DateModified], [e].[Email], [e].[EmailConfirmed], [e].[FullName], [e].[LockoutEnabled], [e].[LockoutEnd], [e].[NormalizedEmail], [e].[NormalizedUserName], [e].[PasswordHash], [e].[PhoneNumber], [e].[PhoneNumberConfirmed], [e].[SecurityStamp], [e].[Status], [e].[TwoFactorEnabled], [e].[UserName]
+FROM [AppUsers] AS [e]
+WHERE [e].[Id] = @__get_Item_0" (0723d8ff)
+2018-10-28T15:40:22.9257717+07:00 0HLHSM3V3O5KI:00000001 [INF] Executed DbCommand ("752"ms) [Parameters=["@__user_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AppUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0" (0723d8ff)
+2018-10-28T15:40:22.9428260+07:00 0HLHSM3V3O5KH:00000001 [INF] Executed DbCommand ("720"ms) [Parameters=["@__user_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AppUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0" (0723d8ff)
+2018-10-28T15:40:22.9751628+07:00 0HLHSM3V3O5KJ:00000001 [INF] Executed DbCommand ("786"ms) [Parameters=["@__user_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AppUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0" (0723d8ff)
+2018-10-28T15:40:24.4120450+07:00 0HLHSM3V3O5KH:00000001 [INF] Executed DbCommand ("183"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2018-10-28T15:40:24.4764437+07:00 0HLHSM3V3O5KJ:00000001 [INF] Executed DbCommand ("331"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2018-10-28T15:40:25.1010824+07:00 0HLHSM3V3O5KI:00000001 [INF] Executed DbCommand ("329"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2018-10-28T15:40:25.4384417+07:00 0HLHSM3V3O5KH:00000001 [INF] Executed DbCommand ("571"ms) [Parameters=["@__normalizedName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Description], [r].[Name], [r].[NormalizedName]
+FROM [AppRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2018-10-28T15:40:25.4469112+07:00 0HLHSM3V3O5KI:00000001 [INF] Executed DbCommand ("291"ms) [Parameters=["@__normalizedName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Description], [r].[Name], [r].[NormalizedName]
+FROM [AppRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2018-10-28T15:40:25.4668504+07:00 0HLHSM3V3O5KJ:00000001 [INF] Executed DbCommand ("570"ms) [Parameters=["@__normalizedName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Description], [r].[Name], [r].[NormalizedName]
+FROM [AppRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2018-10-28T15:40:26.1396284+07:00 0HLHSM3V3O5KH:00000001 [INF] Executed DbCommand ("467"ms) [Parameters=["@__role_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AppRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0" (0723d8ff)
+2018-10-28T15:40:26.3756364+07:00 0HLHSM3V3O5KH:00000001 [INF] Executed DbCommand ("222"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2018-10-28T15:40:26.4259682+07:00 0HLHSM3V3O5KJ:00000001 [INF] Executed DbCommand ("616"ms) [Parameters=["@__role_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AppRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0" (0723d8ff)
+2018-10-28T15:40:26.6865046+07:00 0HLHSM3V3O5KH:00000001 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-10-28T15:40:26.7764973+07:00 0HLHSM3V3O5KJ:00000001 [INF] Executed DbCommand ("241"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2018-10-28T15:40:26.8146920+07:00 0HLHSM3V3O5KI:00000001 [INF] Executed DbCommand ("590"ms) [Parameters=["@__role_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AppRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0" (0723d8ff)
+2018-10-28T15:40:26.9885769+07:00 0HLHSM3V3O5KJ:00000001 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-10-28T15:40:27.0398743+07:00 0HLHSM3V3O5KI:00000001 [INF] Executed DbCommand ("162"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2018-10-28T15:40:27.2705896+07:00 0HLHSM3V3O5KI:00000001 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-10-28T15:40:28.0662382+07:00 0HLHSM3V3O5KH:00000001 [INF] Executing action method "NetCoreApp.Controllers.HomeController.Index (NetCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-10-28T15:40:28.0986287+07:00 0HLHSM3V3O5KI:00000001 [INF] Executing action method "NetCoreApp.Areas.Admin.Controllers.LoginController.Index (NetCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-10-28T15:40:28.1053207+07:00 0HLHSM3V3O5KJ:00000001 [INF] Executing action method "NetCoreApp.Areas.Admin.Controllers.LoginController.Index (NetCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-10-28T15:40:36.8829056+07:00 0HLHSM3V3O5KJ:00000001 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Login/Index.cshtml". (9707eebe)
+2018-10-28T15:40:36.9363191+07:00 0HLHSM3V3O5KI:00000001 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Login/Index.cshtml". (9707eebe)
+2018-10-28T15:40:36.9694861+07:00 0HLHSM3V3O5KH:00000001 [INF] Executing ViewResult, running view at path "/Views/Home/Index.cshtml". (9707eebe)
+2018-10-28T15:40:38.0353924+07:00 0HLHSM3V3O5KJ:00000001 [INF] Executed action "NetCoreApp.Areas.Admin.Controllers.LoginController.Index (NetCoreApp)" in 9381.0192ms (afa2e885)
+2018-10-28T15:40:38.5658936+07:00 0HLHSM3V3O5KK:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44383/app/Shared/app.js   (ca22a1cb)
+2018-10-28T15:40:38.5988990+07:00 0HLHSM3V3O5KG:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44383/vendor/animate.css/animate.css   (ca22a1cb)
+2018-10-28T15:40:39.5212366+07:00 0HLHSM3V3O5KJ:00000001 [INF] Request finished in 17812.0054ms 200 text/html; charset=utf-8 (791a596a)
+2018-10-28T15:40:39.6574545+07:00 0HLHSM3V3O5KI:00000001 [INF] Executed action "NetCoreApp.Areas.Admin.Controllers.LoginController.Index (NetCoreApp)" in 9381.0164ms (afa2e885)
+2018-10-28T15:40:39.6858652+07:00 0HLHSM3V3O5KK:00000001 [INF] The file "/app/Shared/app.js" was not modified (f1f8d725)
+2018-10-28T15:40:39.7595314+07:00 0HLHSM3V3O5KG:00000002 [INF] Sending file. Request path: '"/vendor/animate.css/animate.css"'. Physical path: '"D:\NetCore\NetCoreApp\NetCoreApp\wwwroot\vendor\animate.css\animate.css"' (27b0a520)
+2018-10-28T15:40:39.7915456+07:00 0HLHSM3V3O5KK:00000001 [INF] Request finished in 2107.354ms 304 application/javascript (791a596a)
+2018-10-28T15:40:40.0818569+07:00 0HLHSM3V3O5KG:00000002 [INF] Request finished in 2481.1045ms 200 text/css (791a596a)
+2018-10-28T15:40:40.5501864+07:00 0HLHSM3V3O5KI:00000001 [INF] Request finished in 19430.2291ms 200 text/html; charset=utf-8 (791a596a)
+2018-10-28T15:40:41.9736202+07:00 0HLHSM3V3O5KH:00000001 [INF] Executed action "NetCoreApp.Controllers.HomeController.Index (NetCoreApp)" in 14108.9413ms (afa2e885)
+2018-10-28T15:40:42.0284074+07:00 0HLHSM3V3O5KH:00000001 [INF] Request finished in 21746.4129ms 200 text/html; charset=utf-8 (791a596a)
+2018-10-28T15:40:42.2937329+07:00 0HLHSM3V3O5KJ:00000002 [INF] Request starting HTTP/1.1 POST http://localhost:44383/admin/login/Authen application/x-www-form-urlencoded; charset=UTF-8 33 (ca22a1cb)
+2018-10-28T15:40:42.3158004+07:00 0HLHSM3V3O5KJ:00000002 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-10-28T15:40:43.0639870+07:00 0HLHSM3V3O5KJ:00000002 [INF] Executing action method "NetCoreApp.Areas.Admin.Controllers.LoginController.Authen (NetCoreApp)" with arguments (["NetCoreApp.Models.AccountViewModels.LoginViewModel"]) - ModelState is Valid (ba7f4ac2)
+2018-10-28T15:40:43.1191370+07:00 0HLHSM3V3O5KJ:00000002 [INF] Entity Framework Core "2.0.0-rtm-26452" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=NetCoreApp.Data.EF " (9958f5bb)
+2018-10-28T15:40:43.2799126+07:00 0HLHSM3V3O5KJ:00000002 [INF] Executed DbCommand ("130"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[Avatar], [u].[Balance], [u].[BirthDay], [u].[ConcurrencyStamp], [u].[DateCreated], [u].[DateModified], [u].[Email], [u].[EmailConfirmed], [u].[FullName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Status], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AppUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2018-10-28T15:40:43.5650149+07:00 0HLHSM3V3O5KJ:00000002 [INF] Executed DbCommand ("179"ms) [Parameters=["@__user_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AppUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0" (0723d8ff)
+2018-10-28T15:40:43.8305100+07:00 0HLHSM3V3O5KJ:00000002 [INF] Executed DbCommand ("245"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2018-10-28T15:40:44.2279406+07:00 0HLHSM3V3O5KJ:00000002 [INF] Executed DbCommand ("232"ms) [Parameters=["@__normalizedName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Description], [r].[Name], [r].[NormalizedName]
+FROM [AppRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2018-10-28T15:40:44.5243696+07:00 0HLHSM3V3O5KJ:00000002 [INF] Executed DbCommand ("220"ms) [Parameters=["@__role_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AppRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0" (0723d8ff)
+2018-10-28T15:40:44.7470595+07:00 0HLHSM3V3O5KJ:00000002 [INF] Executed DbCommand ("143"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2018-10-28T15:40:44.7670914+07:00 0HLHSM3V3O5KJ:00000002 [INF] AuthenticationScheme: "Identity.Application" signed in. (c66dd7e7)
+2018-10-28T15:40:44.7850671+07:00 0HLHSM3V3O5KJ:00000002 [INF] User logged in. (fdce0db4)
+2018-10-28T15:40:44.8252963+07:00 0HLHSM3V3O5KJ:00000002 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-10-28T15:40:45.0998599+07:00 0HLHSM3V3O5KJ:00000002 [INF] Executed action "NetCoreApp.Areas.Admin.Controllers.LoginController.Authen (NetCoreApp)" in 2601.4515ms (afa2e885)
+2018-10-28T15:40:45.2948938+07:00 0HLHSM3V3O5KJ:00000002 [INF] Request finished in 2889.6529ms 200 application/json; charset=utf-8 (791a596a)
+2018-10-28T15:40:45.3167750+07:00 0HLHSM3V3O5KK:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44383/Admin/Home/Index   (ca22a1cb)
+2018-10-28T15:40:45.3565495+07:00 0HLHSM3V3O5KK:00000002 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-10-28T15:40:45.3956908+07:00 0HLHSM3V3O5KK:00000002 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-10-28T15:40:45.5082886+07:00 0HLHSM3V3O5KK:00000002 [INF] Executing action method "NetCoreApp.Areas.Admin.Controllers.HomeController.Index (NetCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-10-28T15:40:45.9738155+07:00 0HLHSM3V3O5KK:00000002 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Home/Index.cshtml". (9707eebe)
+2018-10-28T15:40:48.0743702+07:00 0HLHSM3V3O5KK:00000002 [INF] Entity Framework Core "2.0.0-rtm-26452" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=NetCoreApp.Data.EF " (9958f5bb)
+2018-10-28T15:40:49.0452727+07:00 0HLHSM3V3O5KK:00000002 [INF] Executed DbCommand ("561"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[Url], [dto].[ParentId], [dto].[IconCss], [dto].[SortOrder], [dto].[Status]
+FROM [Functions] AS [dto]" (0723d8ff)
+2018-10-28T15:40:51.3226314+07:00 0HLHSM3V3O5KK:00000002 [INF] Executed action "NetCoreApp.Areas.Admin.Controllers.HomeController.Index (NetCoreApp)" in 5541.7588ms (afa2e885)
+2018-10-28T15:40:51.4582336+07:00 0HLHSM3V3O5KK:00000002 [INF] Request finished in 6028.82ms 200 text/html; charset=utf-8 (791a596a)
+2018-10-28T15:40:51.5170756+07:00 0HLHSM3V3O5KJ:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44383/vendor/ckeditor/ckeditor.js   (ca22a1cb)
+2018-10-28T15:40:51.6108372+07:00 0HLHSM3V3O5KG:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44383/vendor/ckeditor/skins/moono/editor.css   (ca22a1cb)
+2018-10-28T15:40:51.6200086+07:00 0HLHSM3V3O5KJ:00000003 [INF] Sending file. Request path: '"/vendor/ckeditor/ckeditor.js"'. Physical path: '"D:\NetCore\NetCoreApp\NetCoreApp\wwwroot\vendor\ckeditor\ckeditor.js"' (27b0a520)
+2018-10-28T15:40:51.6779329+07:00 0HLHSM3V3O5KG:00000003 [INF] Sending file. Request path: '"/vendor/ckeditor/skins/moono/editor.css"'. Physical path: '"D:\NetCore\NetCoreApp\NetCoreApp\wwwroot\vendor\ckeditor\skins\moono\editor.css"' (27b0a520)
+2018-10-28T15:40:51.8135595+07:00 0HLHSM3V3O5KG:00000003 [INF] Request finished in 678.5894ms 200 text/css (791a596a)
+2018-10-28T15:40:52.1603460+07:00 0HLHSM3V3O5KJ:00000003 [INF] Request finished in 274.8453ms 200 application/javascript (791a596a)
+2018-10-28T15:40:55.1161007+07:00 0HLHSM3V3O5KK:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44383/admin/product/index   (ca22a1cb)
+2018-10-28T15:40:55.1268321+07:00 0HLHSM3V3O5KK:00000003 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-10-28T15:40:55.1437124+07:00 0HLHSM3V3O5KK:00000003 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-10-28T15:40:55.2138030+07:00 0HLHSM3V3O5KK:00000003 [INF] Executing action method "NetCoreApp.Areas.Admin.Controllers.ProductController.Index (NetCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-10-28T15:40:56.2213126+07:00 0HLHSM3V3O5KK:00000003 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Product/Index.cshtml". (9707eebe)
+2018-10-28T15:40:56.9213956+07:00 0HLHSM3V3O5KK:00000003 [INF] Entity Framework Core "2.0.0-rtm-26452" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=NetCoreApp.Data.EF " (9958f5bb)
+2018-10-28T15:40:57.1718870+07:00 0HLHSM3V3O5KK:00000003 [INF] Executed DbCommand ("237"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[Url], [dto].[ParentId], [dto].[IconCss], [dto].[SortOrder], [dto].[Status]
+FROM [Functions] AS [dto]" (0723d8ff)
+2018-10-28T15:40:57.2141401+07:00 0HLHSM3V3O5KK:00000003 [INF] Executed action "NetCoreApp.Areas.Admin.Controllers.ProductController.Index (NetCoreApp)" in 2068.3552ms (afa2e885)
+2018-10-28T15:40:57.3843507+07:00 0HLHSM3V3O5KK:00000003 [INF] Request finished in 2113.079ms 200 text/html; charset=utf-8 (791a596a)
+2018-10-28T15:40:57.4921643+07:00 0HLHSM3V3O5KG:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44383/app/controllers/product/index.js?v=xUnUwMnJ_YVYCNtRm2QVotKv0K3gdwe6GB2yQwB4jHM   (ca22a1cb)
+2018-10-28T15:40:57.5076780+07:00 0HLHSM3V3O5KG:00000004 [INF] Sending file. Request path: '"/app/controllers/product/index.js"'. Physical path: '"D:\NetCore\NetCoreApp\NetCoreApp\wwwroot\app\controllers\product\index.js"' (27b0a520)
+2018-10-28T15:40:57.6348149+07:00 0HLHSM3V3O5KG:00000004 [INF] Request finished in 64.4623ms 200 application/javascript (791a596a)
+2018-10-28T15:40:58.3395370+07:00 0HLHSM3V3O5KJ:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44383/admin/product/GetAllPaging?categoryId=--Select+Category--&keyword=&page=1&pageSize=10   (ca22a1cb)
+2018-10-28T15:40:58.5461001+07:00 0HLHSM3V3O5KK:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44383/admin/product/GetAllCategories   (ca22a1cb)
+2018-10-28T15:40:58.6281493+07:00 0HLHSM3V3O5KG:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:44383/vendor/ckeditor/config.js?t=I8BH   (ca22a1cb)
+2018-10-28T15:40:58.7647656+07:00 0HLHSM3V3O5KK:00000004 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-10-28T15:40:58.8253480+07:00 0HLHSM3V3O5KG:00000005 [INF] Sending file. Request path: '"/vendor/ckeditor/config.js"'. Physical path: '"D:\NetCore\NetCoreApp\NetCoreApp\wwwroot\vendor\ckeditor\config.js"' (27b0a520)
+2018-10-28T15:40:58.9094507+07:00 0HLHSM3V3O5KK:00000004 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-10-28T15:40:59.4672640+07:00 0HLHSM3V3O5KG:00000005 [INF] Request finished in 513.9402ms 200 application/javascript (791a596a)
+2018-10-28T15:40:59.4755650+07:00 0HLHSM3V3O5KJ:00000004 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-10-28T15:40:59.5665177+07:00 0HLHSM3V3O5KK:00000004 [INF] Executing action method "NetCoreApp.Areas.Admin.Controllers.ProductController.GetAllCategories (NetCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-10-28T15:40:59.5934761+07:00 0HLHSM3V3O5KJ:00000004 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-10-28T15:40:59.6007630+07:00 0HLHSM3V3O5KG:00000006 [INF] Request starting HTTP/1.1 GET http://localhost:44383/vendor/ckeditor/lang/vi.js?t=I8BH   (ca22a1cb)
+2018-10-28T15:40:59.6043883+07:00 0HLHSM3V3O5KL:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44383/vendor/ckeditor/skins/moono-lisa/editor.css?t=I8BH   (ca22a1cb)
+2018-10-28T15:40:59.6230019+07:00 0HLHSM3V3O5KL:00000001 [INF] Sending file. Request path: '"/vendor/ckeditor/skins/moono-lisa/editor.css"'. Physical path: '"D:\NetCore\NetCoreApp\NetCoreApp\wwwroot\vendor\ckeditor\skins\moono-lisa\editor.css"' (27b0a520)
+2018-10-28T15:40:59.6801798+07:00 0HLHSM3V3O5KG:00000006 [INF] Sending file. Request path: '"/vendor/ckeditor/lang/vi.js"'. Physical path: '"D:\NetCore\NetCoreApp\NetCoreApp\wwwroot\vendor\ckeditor\lang\vi.js"' (27b0a520)
+2018-10-28T15:40:59.7141910+07:00 0HLHSM3V3O5KG:00000006 [INF] Request finished in 142.9885ms 200 application/javascript (791a596a)
+2018-10-28T15:40:59.7243267+07:00 0HLHSM3V3O5KL:00000001 [INF] Request finished in 295.6849ms 200 text/css (791a596a)
+2018-10-28T15:40:59.7395704+07:00 0HLHSM3V3O5KJ:00000004 [INF] Executing action method "NetCoreApp.Areas.Admin.Controllers.ProductController.GetAllPaging (NetCoreApp)" with arguments (["", "", "1", "10"]) - ModelState is Invalid (ba7f4ac2)
+2018-10-28T15:40:59.9626574+07:00 0HLHSM3V3O5KL:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44383/vendor/ckeditor/styles.js?t=I8BH   (ca22a1cb)
+2018-10-28T15:41:00.0642787+07:00 0HLHSM3V3O5KL:00000002 [INF] Sending file. Request path: '"/vendor/ckeditor/styles.js"'. Physical path: '"D:\NetCore\NetCoreApp\NetCoreApp\wwwroot\vendor\ckeditor\styles.js"' (27b0a520)
+2018-10-28T15:41:00.3474535+07:00 0HLHSM3V3O5KL:00000002 [INF] Request finished in 256.2779ms 200 application/javascript (791a596a)
+2018-10-28T15:41:00.5283565+07:00 0HLHSM3V3O5KG:00000007 [INF] Request starting HTTP/1.1 GET http://localhost:44383/vendor/ckeditor/plugins/colorbutton/plugin.js?t=I8BH   (ca22a1cb)
+2018-10-28T15:41:00.9754514+07:00 0HLHSM3V3O5KG:00000007 [INF] Sending file. Request path: '"/vendor/ckeditor/plugins/colorbutton/plugin.js"'. Physical path: '"D:\NetCore\NetCoreApp\NetCoreApp\wwwroot\vendor\ckeditor\plugins\colorbutton\plugin.js"' (27b0a520)
+2018-10-28T15:41:01.3161976+07:00 0HLHSM3V3O5KG:00000007 [INF] Request finished in 699.5213ms 200 application/javascript (791a596a)
+2018-10-28T15:41:01.5771903+07:00 0HLHSM3V3O5KK:00000004 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-10-28T15:41:01.6060561+07:00 0HLHSM3V3O5KL:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44383/vendor/ckeditor/plugins/panelbutton/plugin.js?t=I8BH   (ca22a1cb)
+2018-10-28T15:41:02.3254266+07:00 0HLHSM3V3O5KL:00000003 [INF] Sending file. Request path: '"/vendor/ckeditor/plugins/panelbutton/plugin.js"'. Physical path: '"D:\NetCore\NetCoreApp\NetCoreApp\wwwroot\vendor\ckeditor\plugins\panelbutton\plugin.js"' (27b0a520)
+2018-10-28T15:41:02.7239921+07:00 0HLHSM3V3O5KK:00000004 [INF] Executed action "NetCoreApp.Areas.Admin.Controllers.ProductController.GetAllCategories (NetCoreApp)" in 2924.9116ms (afa2e885)
+2018-10-28T15:41:03.4057390+07:00 0HLHSM3V3O5KL:00000003 [INF] Request finished in 876.4181ms 200 application/javascript (791a596a)
+2018-10-28T15:41:03.5252613+07:00 0HLHSM3V3O5KK:00000004 [INF] Request finished in 4642.066ms 200 application/json; charset=utf-8 (791a596a)
+2018-10-28T15:41:03.6900929+07:00 0HLHSM3V3O5KG:00000008 [INF] Request starting HTTP/1.1 GET http://localhost:44383/vendor/ckeditor/plugins/scayt/skins/moono-lisa/scayt.css   (ca22a1cb)
+2018-10-28T15:41:03.9585778+07:00 0HLHSM3V3O5KM:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44383/vendor/ckeditor/plugins/colorbutton/lang/vi.js?t=I8BH   (ca22a1cb)
+2018-10-28T15:41:04.2746479+07:00 0HLHSM3V3O5KN:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44383/vendor/ckeditor/plugins/scayt/dialogs/dialog.css   (ca22a1cb)
+2018-10-28T15:41:04.2873128+07:00 0HLHSM3V3O5KG:00000008 [INF] Sending file. Request path: '"/vendor/ckeditor/plugins/scayt/skins/moono-lisa/scayt.css"'. Physical path: '"D:\NetCore\NetCoreApp\NetCoreApp\wwwroot\vendor\ckeditor\plugins\scayt\skins\moono-lisa\scayt.css"' (27b0a520)
+2018-10-28T15:41:04.3418687+07:00 0HLHSM3V3O5KM:00000001 [INF] Sending file. Request path: '"/vendor/ckeditor/plugins/colorbutton/lang/vi.js"'. Physical path: '"D:\NetCore\NetCoreApp\NetCoreApp\wwwroot\vendor\ckeditor\plugins\colorbutton\lang\vi.js"' (27b0a520)
+2018-10-28T15:41:04.3899683+07:00 0HLHSM3V3O5KO:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44383/vendor/ckeditor/plugins/wsc/skins/moono-lisa/wsc.css   (ca22a1cb)
+2018-10-28T15:41:04.4523531+07:00 0HLHSM3V3O5KN:00000001 [INF] Sending file. Request path: '"/vendor/ckeditor/plugins/scayt/dialogs/dialog.css"'. Physical path: '"D:\NetCore\NetCoreApp\NetCoreApp\wwwroot\vendor\ckeditor\plugins\scayt\dialogs\dialog.css"' (27b0a520)
+2018-10-28T15:41:04.4988927+07:00 0HLHSM3V3O5KJ:00000004 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-10-28T15:41:04.5282077+07:00 0HLHSM3V3O5KG:00000008 [INF] Request finished in 1692.6828ms 200 text/css (791a596a)
+2018-10-28T15:41:04.7200087+07:00 0HLHSM3V3O5KL:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44383/vendor/ckeditor/plugins/tableselection/styles/tableselection.css   (ca22a1cb)
+2018-10-28T15:41:04.7560765+07:00 0HLHSM3V3O5KM:00000001 [INF] Request finished in 1734.521ms 200 application/javascript (791a596a)
+2018-10-28T15:41:04.7653304+07:00 0HLHSM3V3O5KN:00000001 [INF] Request finished in 1810.52ms 200 text/css (791a596a)
+2018-10-28T15:41:04.7761792+07:00 0HLHSM3V3O5KK:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:44383/vendor/ckeditor/skins/moono-lisa/icons.png?t=I8BH   (ca22a1cb)
+2018-10-28T15:41:04.8136183+07:00 0HLHSM3V3O5KO:00000001 [INF] Sending file. Request path: '"/vendor/ckeditor/plugins/wsc/skins/moono-lisa/wsc.css"'. Physical path: '"D:\NetCore\NetCoreApp\NetCoreApp\wwwroot\vendor\ckeditor\plugins\wsc\skins\moono-lisa\wsc.css"' (27b0a520)
+2018-10-28T15:41:04.8186319+07:00 0HLHSM3V3O5KG:00000009 [INF] Request starting HTTP/1.1 GET http://localhost:44383/vendor/ckeditor/contents.css?t=I8BH   (ca22a1cb)
+2018-10-28T15:41:04.8501673+07:00 0HLHSM3V3O5KJ:00000004 [INF] Executed action "NetCoreApp.Areas.Admin.Controllers.ProductController.GetAllPaging (NetCoreApp)" in 5002.4426ms (afa2e885)
+2018-10-28T15:41:04.9918844+07:00 0HLHSM3V3O5KK:00000005 [INF] Sending file. Request path: '"/vendor/ckeditor/skins/moono-lisa/icons.png"'. Physical path: '"D:\NetCore\NetCoreApp\NetCoreApp\wwwroot\vendor\ckeditor\skins\moono-lisa\icons.png"' (27b0a520)
+2018-10-28T15:41:05.0893601+07:00 0HLHSM3V3O5KG:00000009 [INF] Sending file. Request path: '"/vendor/ckeditor/contents.css"'. Physical path: '"D:\NetCore\NetCoreApp\NetCoreApp\wwwroot\vendor\ckeditor\contents.css"' (27b0a520)
+2018-10-28T15:41:05.1914314+07:00 0HLHSM3V3O5KL:00000004 [INF] Sending file. Request path: '"/vendor/ckeditor/plugins/tableselection/styles/tableselection.css"'. Physical path: '"D:\NetCore\NetCoreApp\NetCoreApp\wwwroot\vendor\ckeditor\plugins\tableselection\styles\tableselection.css"' (27b0a520)
+2018-10-28T15:41:05.6502841+07:00 0HLHSM3V3O5KK:00000005 [INF] Request finished in 416.4389ms 200 image/png (791a596a)
+2018-10-28T15:41:05.6746624+07:00 0HLHSM3V3O5KL:00000004 [INF] Request finished in 939.288ms 200 text/css (791a596a)
+2018-10-28T15:41:05.6802061+07:00 0HLHSM3V3O5KG:00000009 [INF] Request finished in 438.2956ms 200 text/css (791a596a)
+2018-10-28T15:41:05.6839554+07:00 0HLHSM3V3O5KJ:00000004 [INF] Request finished in 6781.1746ms 200 application/json; charset=utf-8 (791a596a)
+2018-10-28T15:41:05.7091438+07:00 0HLHSM3V3O5KO:00000001 [INF] Request finished in 2085.3832ms 200 text/css (791a596a)
+2018-10-28T15:41:07.1750319+07:00 0HLHSM3V3O5KM:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44383/Admin/ProductCategory/GetAll   (ca22a1cb)
+2018-10-28T15:41:07.2242455+07:00 0HLHSM3V3O5KM:00000002 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-10-28T15:41:07.2399052+07:00 0HLHSM3V3O5KM:00000002 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-10-28T15:41:07.3641045+07:00 0HLHSM3V3O5KM:00000002 [INF] Executing action method "NetCoreApp.Areas.Admin.Controllers.ProductCategoryController.GetAll (NetCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-10-28T15:41:08.2391248+07:00 0HLHSM3V3O5KM:00000002 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-10-28T15:41:08.2643621+07:00 0HLHSM3V3O5KM:00000002 [INF] Executed action "NetCoreApp.Areas.Admin.Controllers.ProductCategoryController.GetAll (NetCoreApp)" in 1010.7124ms (afa2e885)
+2018-10-28T15:41:08.3468693+07:00 0HLHSM3V3O5KM:00000002 [INF] Request finished in 1099.6542ms 200 application/json; charset=utf-8 (791a596a)
+2018-10-28T15:41:08.3783171+07:00 0HLHSM3V3O5KN:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44383/Admin/ProductCategory/GetAll   (ca22a1cb)
+2018-10-28T15:41:08.3957544+07:00 0HLHSM3V3O5KN:00000002 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-10-28T15:41:08.4072275+07:00 0HLHSM3V3O5KN:00000002 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-10-28T15:41:08.6521334+07:00 0HLHSM3V3O5KN:00000002 [INF] Executing action method "NetCoreApp.Areas.Admin.Controllers.ProductCategoryController.GetAll (NetCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-10-28T15:41:09.3393688+07:00 0HLHSM3V3O5KN:00000002 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-10-28T15:41:09.3952096+07:00 0HLHSM3V3O5KN:00000002 [INF] Executed action "NetCoreApp.Areas.Admin.Controllers.ProductCategoryController.GetAll (NetCoreApp)" in 943.85ms (afa2e885)
+2018-10-28T15:41:10.5544868+07:00 0HLHSM3V3O5KN:00000002 [INF] Request finished in 1066.6346ms 200 application/json; charset=utf-8 (791a596a)
+2018-10-28T15:41:47.3841230+07:00 0HLHSM3V3O5KO:00000002 [INF] Request starting HTTP/1.1 POST http://localhost:44383/Admin/Product/SaveEntity application/x-www-form-urlencoded; charset=UTF-8 320 (ca22a1cb)
+2018-10-28T15:41:47.3928436+07:00 0HLHSM3V3O5KO:00000002 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-10-28T15:41:47.4215602+07:00 0HLHSM3V3O5KO:00000002 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-10-28T15:41:47.5214193+07:00 0HLHSM3V3O5KO:00000002 [INF] Executing action method "NetCoreApp.Areas.Admin.Controllers.ProductController.SaveEntity (NetCoreApp)" with arguments (["NetCoreApp.Application.ViewModels.ProductViewModel"]) - ModelState is Valid (ba7f4ac2)
+2018-10-28T15:41:47.5465490+07:00 0HLHSM3V3O5KO:00000002 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-10-28T15:41:47.5991114+07:00 0HLHSM3V3O5KO:00000002 [INF] Executed action "NetCoreApp.Areas.Admin.Controllers.ProductController.SaveEntity (NetCoreApp)" in 134.8051ms (afa2e885)
+2018-10-28T15:41:47.6220921+07:00 0HLHSM3V3O5KO:00000002 [INF] Request finished in 280.0895ms 200 application/json; charset=utf-8 (791a596a)
+2018-10-28T15:41:47.6572919+07:00 0HLHSM3V3O5KJ:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:44383/Admin/ProductCategory/GetAll   (ca22a1cb)
+2018-10-28T15:41:47.6800036+07:00 0HLHSM3V3O5KJ:00000005 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-10-28T15:41:47.6925679+07:00 0HLHSM3V3O5KJ:00000005 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-10-28T15:41:47.7778547+07:00 0HLHSM3V3O5KJ:00000005 [INF] Executing action method "NetCoreApp.Areas.Admin.Controllers.ProductCategoryController.GetAll (NetCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-10-28T15:41:48.2127679+07:00 0HLHSM3V3O5KJ:00000005 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-10-28T15:41:48.2232057+07:00 0HLHSM3V3O5KJ:00000005 [INF] Executed action "NetCoreApp.Areas.Admin.Controllers.ProductCategoryController.GetAll (NetCoreApp)" in 533.5304ms (afa2e885)
+2018-10-28T15:41:48.2409394+07:00 0HLHSM3V3O5KJ:00000005 [INF] Request finished in 581.9773ms 200 application/json; charset=utf-8 (791a596a)
+2018-10-28T15:41:48.3138820+07:00 0HLHSM3V3O5KK:00000006 [INF] Request starting HTTP/1.1 GET http://localhost:44383/admin/product/GetAllPaging?categoryId=&keyword=&page=1&pageSize=10   (ca22a1cb)
+2018-10-28T15:41:48.3351009+07:00 0HLHSM3V3O5KK:00000006 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-10-28T15:41:48.3526250+07:00 0HLHSM3V3O5KK:00000006 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-10-28T15:41:48.4718399+07:00 0HLHSM3V3O5KK:00000006 [INF] Executing action method "NetCoreApp.Areas.Admin.Controllers.ProductController.GetAllPaging (NetCoreApp)" with arguments (["", "", "1", "10"]) - ModelState is Valid (ba7f4ac2)
+2018-10-28T15:41:49.4630620+07:00 0HLHSM3V3O5KK:00000006 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-10-28T15:41:49.4876050+07:00 0HLHSM3V3O5KK:00000006 [INF] Executed action "NetCoreApp.Areas.Admin.Controllers.ProductController.GetAllPaging (NetCoreApp)" in 1130.2115ms (afa2e885)
+2018-10-28T15:41:49.7715516+07:00 0HLHSM3V3O5KK:00000006 [INF] Request finished in 1218.2348ms 200 application/json; charset=utf-8 (791a596a)
+2018-10-28T15:41:55.7492570+07:00 0HLHSM3V3O5KG:0000000A [INF] Request starting HTTP/1.1 GET http://localhost:44383/admin/product/GetAllPaging?categoryId=&keyword=&page=3&pageSize=10   (ca22a1cb)
+2018-10-28T15:41:55.7834167+07:00 0HLHSM3V3O5KG:0000000A [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-10-28T15:41:55.7972211+07:00 0HLHSM3V3O5KG:0000000A [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-10-28T15:41:55.8954714+07:00 0HLHSM3V3O5KG:0000000A [INF] Executing action method "NetCoreApp.Areas.Admin.Controllers.ProductController.GetAllPaging (NetCoreApp)" with arguments (["", "", "3", "10"]) - ModelState is Valid (ba7f4ac2)
+2018-10-28T15:41:56.0372247+07:00 0HLHSM3V3O5KG:0000000A [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-10-28T15:41:56.0447351+07:00 0HLHSM3V3O5KG:0000000A [INF] Executed action "NetCoreApp.Areas.Admin.Controllers.ProductController.GetAllPaging (NetCoreApp)" in 253.911ms (afa2e885)
+2018-10-28T15:41:56.0537557+07:00 0HLHSM3V3O5KG:0000000A [INF] Request finished in 328.1669ms 200 application/json; charset=utf-8 (791a596a)
+2018-10-28T15:41:59.5937871+07:00 0HLHSM3V3O5KL:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:44383/admin/product/GetAllPaging?categoryId=&keyword=&page=2&pageSize=10   (ca22a1cb)
+2018-10-28T15:41:59.6070034+07:00 0HLHSM3V3O5KL:00000005 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-10-28T15:41:59.6163971+07:00 0HLHSM3V3O5KL:00000005 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-10-28T15:41:59.6833246+07:00 0HLHSM3V3O5KL:00000005 [INF] Executing action method "NetCoreApp.Areas.Admin.Controllers.ProductController.GetAllPaging (NetCoreApp)" with arguments (["", "", "2", "10"]) - ModelState is Valid (ba7f4ac2)
+2018-10-28T15:42:00.5345022+07:00 0HLHSM3V3O5KL:00000005 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-10-28T15:42:00.5449218+07:00 0HLHSM3V3O5KL:00000005 [INF] Executed action "NetCoreApp.Areas.Admin.Controllers.ProductController.GetAllPaging (NetCoreApp)" in 929.0346ms (afa2e885)
+2018-10-28T15:42:00.5726034+07:00 0HLHSM3V3O5KL:00000005 [INF] Request finished in 972.7119ms 200 application/json; charset=utf-8 (791a596a)
+2018-10-28T15:42:04.1274317+07:00 0HLHSM3V3O5KM:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44383/admin/product/GetAllPaging?categoryId=&keyword=&page=1&pageSize=10   (ca22a1cb)
+2018-10-28T15:42:04.1365139+07:00 0HLHSM3V3O5KM:00000003 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-10-28T15:42:04.1438869+07:00 0HLHSM3V3O5KM:00000003 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-10-28T15:42:04.1922370+07:00 0HLHSM3V3O5KM:00000003 [INF] Executing action method "NetCoreApp.Areas.Admin.Controllers.ProductController.GetAllPaging (NetCoreApp)" with arguments (["", "", "1", "10"]) - ModelState is Valid (ba7f4ac2)
+2018-10-28T15:42:04.8153536+07:00 0HLHSM3V3O5KM:00000003 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-10-28T15:42:04.8261683+07:00 0HLHSM3V3O5KM:00000003 [INF] Executed action "NetCoreApp.Areas.Admin.Controllers.ProductController.GetAllPaging (NetCoreApp)" in 680.2007ms (afa2e885)
+2018-10-28T15:42:04.8425062+07:00 0HLHSM3V3O5KM:00000003 [INF] Request finished in 707.0391ms 200 application/json; charset=utf-8 (791a596a)
+2018-10-28T15:42:12.7915179+07:00 0HLHSM3V3O5KO:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44383/Admin/Product/GetProductById?id=24   (ca22a1cb)
+2018-10-28T15:42:12.8135997+07:00 0HLHSM3V3O5KO:00000003 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-10-28T15:42:12.8235397+07:00 0HLHSM3V3O5KO:00000003 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-10-28T15:42:12.8621754+07:00 0HLHSM3V3O5KO:00000003 [INF] Executing action method "NetCoreApp.Areas.Admin.Controllers.ProductController.GetProductById (NetCoreApp)" with arguments (["24"]) - ModelState is Valid (ba7f4ac2)
+2018-10-28T15:42:13.3590762+07:00 0HLHSM3V3O5KO:00000003 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-10-28T15:42:13.4137277+07:00 0HLHSM3V3O5KO:00000003 [INF] Executed action "NetCoreApp.Areas.Admin.Controllers.ProductController.GetProductById (NetCoreApp)" in 542.8933ms (afa2e885)
+2018-10-28T15:42:13.5020660+07:00 0HLHSM3V3O5KJ:00000006 [INF] Request starting HTTP/1.1 GET http://localhost:44383/Admin/ProductCategory/GetAll   (ca22a1cb)
+2018-10-28T15:42:13.5397428+07:00 0HLHSM3V3O5KJ:00000006 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-10-28T15:42:13.5891647+07:00 0HLHSM3V3O5KO:00000003 [INF] Request finished in 655.0581ms 200 application/json; charset=utf-8 (791a596a)
+2018-10-28T15:42:13.5964229+07:00 0HLHSM3V3O5KJ:00000006 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-10-28T15:42:13.6735896+07:00 0HLHSM3V3O5KJ:00000006 [INF] Executing action method "NetCoreApp.Areas.Admin.Controllers.ProductCategoryController.GetAll (NetCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-10-28T15:42:14.1846225+07:00 0HLHSM3V3O5KJ:00000006 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-10-28T15:42:14.2051822+07:00 0HLHSM3V3O5KJ:00000006 [INF] Executed action "NetCoreApp.Areas.Admin.Controllers.ProductCategoryController.GetAll (NetCoreApp)" in 645.1446ms (afa2e885)
+2018-10-28T15:42:14.2569572+07:00 0HLHSM3V3O5KJ:00000006 [INF] Request finished in 725.8888ms 200 application/json; charset=utf-8 (791a596a)
+2018-10-28T15:42:20.0493204+07:00 0HLHSM3V3O5KK:00000007 [INF] Request starting HTTP/1.1 POST http://localhost:44383/Admin/Product/SaveEntity application/x-www-form-urlencoded; charset=UTF-8 243 (ca22a1cb)
+2018-10-28T15:42:20.0638840+07:00 0HLHSM3V3O5KK:00000007 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-10-28T15:42:20.0771947+07:00 0HLHSM3V3O5KK:00000007 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-10-28T15:42:20.1698919+07:00 0HLHSM3V3O5KK:00000007 [INF] Executing action method "NetCoreApp.Areas.Admin.Controllers.ProductController.SaveEntity (NetCoreApp)" with arguments (["NetCoreApp.Application.ViewModels.ProductViewModel"]) - ModelState is Valid (ba7f4ac2)
+2018-10-28T15:42:20.8850297+07:00 0HLHSM3V3O5KK:00000007 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-10-28T15:42:20.8944920+07:00 0HLHSM3V3O5KK:00000007 [INF] Executed action "NetCoreApp.Areas.Admin.Controllers.ProductController.SaveEntity (NetCoreApp)" in 821.3253ms (afa2e885)
+2018-10-28T15:42:20.9107198+07:00 0HLHSM3V3O5KK:00000007 [INF] Request finished in 862.0732ms 200 application/json; charset=utf-8 (791a596a)
+2018-10-28T15:42:20.9265647+07:00 0HLHSM3V3O5KG:0000000B [INF] Request starting HTTP/1.1 GET http://localhost:44383/Admin/ProductCategory/GetAll   (ca22a1cb)
+2018-10-28T15:42:20.9351321+07:00 0HLHSM3V3O5KG:0000000B [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-10-28T15:42:20.9431714+07:00 0HLHSM3V3O5KG:0000000B [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-10-28T15:42:20.9801614+07:00 0HLHSM3V3O5KG:0000000B [INF] Executing action method "NetCoreApp.Areas.Admin.Controllers.ProductCategoryController.GetAll (NetCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-10-28T15:42:21.4704713+07:00 0HLHSM3V3O5KG:0000000B [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-10-28T15:42:21.4873094+07:00 0HLHSM3V3O5KG:0000000B [INF] Executed action "NetCoreApp.Areas.Admin.Controllers.ProductCategoryController.GetAll (NetCoreApp)" in 536.2624ms (afa2e885)
+2018-10-28T15:42:21.6550351+07:00 0HLHSM3V3O5KG:0000000B [INF] Request finished in 573.1869ms 200 application/json; charset=utf-8 (791a596a)
+2018-10-28T15:42:21.7359704+07:00 0HLHSM3V3O5KL:00000006 [INF] Request starting HTTP/1.1 GET http://localhost:44383/admin/product/GetAllPaging?categoryId=&keyword=&page=1&pageSize=10   (ca22a1cb)
+2018-10-28T15:42:21.7506386+07:00 0HLHSM3V3O5KL:00000006 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-10-28T15:42:21.7612026+07:00 0HLHSM3V3O5KL:00000006 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-10-28T15:42:21.8314681+07:00 0HLHSM3V3O5KL:00000006 [INF] Executing action method "NetCoreApp.Areas.Admin.Controllers.ProductController.GetAllPaging (NetCoreApp)" with arguments (["", "", "1", "10"]) - ModelState is Valid (ba7f4ac2)
+2018-10-28T15:42:22.6688956+07:00 0HLHSM3V3O5KL:00000006 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-10-28T15:42:22.6839247+07:00 0HLHSM3V3O5KL:00000006 [INF] Executed action "NetCoreApp.Areas.Admin.Controllers.ProductController.GetAllPaging (NetCoreApp)" in 920.3507ms (afa2e885)
+2018-10-28T15:42:22.7211719+07:00 0HLHSM3V3O5KL:00000006 [INF] Request finished in 1041.6581ms 200 application/json; charset=utf-8 (791a596a)
+2018-10-28T15:42:24.2490213+07:00 0HLHSM3V3O5KM:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44383/Admin/Product/GetProductById?id=24   (ca22a1cb)
+2018-10-28T15:42:24.3068327+07:00 0HLHSM3V3O5KM:00000004 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-10-28T15:42:24.3616472+07:00 0HLHSM3V3O5KM:00000004 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-10-28T15:42:24.4453023+07:00 0HLHSM3V3O5KM:00000004 [INF] Executing action method "NetCoreApp.Areas.Admin.Controllers.ProductController.GetProductById (NetCoreApp)" with arguments (["24"]) - ModelState is Valid (ba7f4ac2)
+2018-10-28T15:42:24.5173973+07:00 0HLHSM3V3O5KM:00000004 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-10-28T15:42:24.5256130+07:00 0HLHSM3V3O5KM:00000004 [INF] Executed action "NetCoreApp.Areas.Admin.Controllers.ProductController.GetProductById (NetCoreApp)" in 210.4876ms (afa2e885)
+2018-10-28T15:42:24.5582774+07:00 0HLHSM3V3O5KM:00000004 [INF] Request finished in 483.3952ms 200 application/json; charset=utf-8 (791a596a)
+2018-10-28T15:42:24.5692868+07:00 0HLHSM3V3O5KO:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44383/Admin/ProductCategory/GetAll   (ca22a1cb)
+2018-10-28T15:42:24.5793491+07:00 0HLHSM3V3O5KO:00000004 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-10-28T15:42:24.5884080+07:00 0HLHSM3V3O5KO:00000004 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-10-28T15:42:24.6640466+07:00 0HLHSM3V3O5KO:00000004 [INF] Executing action method "NetCoreApp.Areas.Admin.Controllers.ProductCategoryController.GetAll (NetCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-10-28T15:42:25.1746885+07:00 0HLHSM3V3O5KO:00000004 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-10-28T15:42:25.1906553+07:00 0HLHSM3V3O5KO:00000004 [INF] Executed action "NetCoreApp.Areas.Admin.Controllers.ProductCategoryController.GetAll (NetCoreApp)" in 597.6513ms (afa2e885)
+2018-10-28T15:42:25.2465056+07:00 0HLHSM3V3O5KO:00000004 [INF] Request finished in 655.9984ms 200 application/json; charset=utf-8 (791a596a)
+2018-10-28T15:42:33.2389491+07:00 0HLHSM3V3O5KJ:00000007 [INF] Request starting HTTP/1.1 GET http://localhost:44383/admin/product/GetAllPaging?categoryId=&keyword=&page=2&pageSize=10   (ca22a1cb)
+2018-10-28T15:42:33.2489783+07:00 0HLHSM3V3O5KJ:00000007 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-10-28T15:42:33.2557201+07:00 0HLHSM3V3O5KJ:00000007 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-10-28T15:42:33.3305661+07:00 0HLHSM3V3O5KJ:00000007 [INF] Executing action method "NetCoreApp.Areas.Admin.Controllers.ProductController.GetAllPaging (NetCoreApp)" with arguments (["", "", "2", "10"]) - ModelState is Valid (ba7f4ac2)
+2018-10-28T15:42:34.0724155+07:00 0HLHSM3V3O5KJ:00000007 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-10-28T15:42:34.0848624+07:00 0HLHSM3V3O5KJ:00000007 [INF] Executed action "NetCoreApp.Areas.Admin.Controllers.ProductController.GetAllPaging (NetCoreApp)" in 825.6631ms (afa2e885)
+2018-10-28T15:42:34.1020459+07:00 0HLHSM3V3O5KJ:00000007 [INF] Request finished in 854.0422ms 200 application/json; charset=utf-8 (791a596a)
+2018-10-28T15:42:39.2186879+07:00 0HLHSM3V3O5KK:00000008 [INF] Request starting HTTP/1.1 GET http://localhost:44383/admin/product/GetAllPaging?categoryId=&keyword=&page=3&pageSize=10   (ca22a1cb)
+2018-10-28T15:42:39.2308577+07:00 0HLHSM3V3O5KK:00000008 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-10-28T15:42:39.2395231+07:00 0HLHSM3V3O5KK:00000008 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-10-28T15:42:39.3331394+07:00 0HLHSM3V3O5KK:00000008 [INF] Executing action method "NetCoreApp.Areas.Admin.Controllers.ProductController.GetAllPaging (NetCoreApp)" with arguments (["", "", "3", "10"]) - ModelState is Valid (ba7f4ac2)
+2018-10-28T15:42:39.4767615+07:00 0HLHSM3V3O5KK:00000008 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-10-28T15:42:39.4867962+07:00 0HLHSM3V3O5KK:00000008 [INF] Executed action "NetCoreApp.Areas.Admin.Controllers.ProductController.GetAllPaging (NetCoreApp)" in 246.0016ms (afa2e885)
+2018-10-28T15:42:39.4991177+07:00 0HLHSM3V3O5KK:00000008 [INF] Request finished in 303.5461ms 200 application/json; charset=utf-8 (791a596a)

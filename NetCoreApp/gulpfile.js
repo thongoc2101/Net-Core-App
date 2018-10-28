@@ -74,6 +74,9 @@ var nodeLibs = {
     },
     "centit.easyui": {
         "**/*":""
+    },
+    "ckeditor": {
+        "**/*":""
     }
 };
 var templates = {
