@@ -8,7 +8,7 @@ namespace NetCoreApp.Utilities.Helpers
     //Remove redundant characters
     public static class TextHelper
     {
-        public static string ToUnsignString(string input)
+        public static string ToUnSignString(string input)
         {
             input = input.Trim();
             for (int i = 0x20; i < 0x30; i++)

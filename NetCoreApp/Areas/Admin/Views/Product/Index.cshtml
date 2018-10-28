@@ -3,8 +3,16 @@
     ViewData["Title"] = "Index";
 }
 
+@section Styles
+    {
+
+    <link href="~/vendor/centit.easyui/themes/bootstrap/easyui.css" rel="stylesheet" />
+    <link href="~/vendor/centit.easyui/themes/icon.css" rel="stylesheet" />
+}
 @section Scrips{
     <script src="~/app/Shared/app.js"></script>
+    <script src="~/vendor/bootbox/bootbox.js"></script>
+    <script src="~/vendor/centit.easyui/jquery.easyui.min.js"></script>
     <script src="~/app/controllers/product/index.js" asp-append-version="true"></script>
     <script>
         var productController = new productController();
@@ -13,17 +21,25 @@
 }
 <div class="page-title">
     <div class="title_left">
-        <h3>Product<small>List Products</small></h3>
+        <h3>List Products</h3>
     </div>
 
     <div class="title_right">
-        <div class="col-md-5 col-sm-5 col-xs-12 form-group pull-right top_search">
+        <div class="col-md-5 col-sm-5 col-xs-12 form-group pull-right">
             <div class="input-group">
                 <input type="text" id="txtKeyword" class="form-control" placeholder="Search for...">
                 <span class="input-group-btn">
-                    <button class="btn btn-default" id="btnSearch" type="button">Go!</button>
+                    <button class="btn btn-primary" id="btnSearch" type="button">Go!</button>
                 </span>
             </div>
+        </div>
+        <div class="col-md-4 col-xs-12 form-group pull-right">
+            <select class="form-control" id="ddlCategorySearch">
+                <option>--Select Category--</option>
+            </select>
+        </div>
+        <div class="col-md-2 col-xs-12 form-group pull-right">
+            <button id="btnCreate" class="btn btn-success">Create</button>
         </div>
     </div>
 </div>
@@ -78,8 +94,8 @@
 <script id="table-template" type="x-template-mustache">
     <tr>
         <th scope="row">
-            <button class="btn btn-default btn-sm"><i class="fa fa-pencil"></i></button>
-            <button class="btn btn-danger btn-sm"><i class="fa fa-trash"></i></button>
+            <button class="btn btn-default btn-sm btn-edit" data-id="{{Id}}"><i class="fa fa-pencil"></i></button>
+            <button class="btn btn-danger btn-sm btn-delete" data-id="{{Id}}"><i class="fa fa-trash"></i></button>
         </th>
         <td>{{Name}}</td>
         <td>{{Category}}</td>
@@ -89,3 +105,4 @@
         <td>{{{Status}}}</td>
     </tr>
 </script>
+@Html.Partial("_AddEditModal.cshtml")

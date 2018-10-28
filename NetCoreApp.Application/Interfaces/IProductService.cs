@@ -10,5 +10,13 @@ namespace NetCoreApp.Application.Interfaces
         List<ProductViewModel> GetAll();
 
         PagedResult<ProductViewModel> GetAllPaging(int? categoryId, string keyword, int page, int pageSize);
+
+        ProductViewModel Add(ProductViewModel productViewModel);
+
+        void Update(ProductViewModel productViewModel);
+
+        void Delete(int id);
+
+        ProductViewModel GetProductById(int id);
     }
 }

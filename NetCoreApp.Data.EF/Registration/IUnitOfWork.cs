@@ -11,6 +11,10 @@ namespace NetCoreApp.Data.EF.Registration
 
         IFunctionRepository FunctionRepository { get; }
 
+        ITagRepository TagRepository { get; }
+
+        IProductTagRepository ProductTagRepository { get; }
+
         void Commit();
     }
 }

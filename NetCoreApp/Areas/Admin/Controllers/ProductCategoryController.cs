@@ -39,7 +39,7 @@ namespace NetCoreApp.Areas.Admin.Controllers
             }
             else
             {
-                productCategoryViewModel.SeoAlias = TextHelper.ToUnsignString(productCategoryViewModel.Name);
+                productCategoryViewModel.SeoAlias = TextHelper.ToUnSignString(productCategoryViewModel.Name);
                 if (productCategoryViewModel.Id == 0)
                 {
                     ServiceRegistration.ProductCategoryService.Add(productCategoryViewModel);

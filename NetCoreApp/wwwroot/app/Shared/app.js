@@ -58,14 +58,14 @@
         });
     },
     dateFormatJson: function(datetime) {
-        if (datetime == null || datetime == '')
+        if (datetime == null || datetime === '')
             return '';
-        var newdate = new Date(parseInt(datetime.substr(6)));
-        var month = newdate.getMonth() + 1;
-        var day = newdate.getDate();
-        var year = newdate.getFullYear();
-        var hh = newdate.getHours();
-        var mm = newdate.getMinutes();
+        var newDate = new Date(datetime);
+        var month = newDate.getMonth() + 1;
+        var day = newDate.getDate();
+        var year = newDate.getFullYear();
+        var hh = newDate.getHours();
+        var mm = newDate.getMinutes();
         if (month < 10)
             month = "0" + month;
         if (day < 10)
@@ -79,13 +79,13 @@
     dateTimeFormatJson: function(datetime) {
         if (datetime == null || datetime === '')
             return '';
-        var newdate = new Date(parseInt(datetime.substr(6)));
-        var month = newdate.getMonth() + 1;
-        var day = newdate.getDate();
-        var year = newdate.getFullYear();
-        var hh = newdate.getHours();
-        var mm = newdate.getMinutes();
-        var ss = newdate.getSeconds();
+        var newDate = new Date(datetime);
+        var month = newDate.getMonth() + 1;
+        var day = newDate.getDate();
+        var year = newDate.getFullYear();
+        var hh = newDate.getHours();
+        var mm = newDate.getMinutes();
+        var ss = newDate.getSeconds();
         if (month < 10)
             month = "0" + month;
         if (day < 10)
