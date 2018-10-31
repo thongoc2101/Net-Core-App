@@ -15,6 +15,8 @@ namespace NetCoreApp.Data.EF.Registration
 
         IProductTagRepository ProductTagRepository { get; }
 
+        IPermissionRepository PermissionRepository { get; }
+
         void Commit();
     }
 }

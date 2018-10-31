@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using AutoMapper;
+﻿using AutoMapper;
 using NetCoreApp.Application.ViewModels;
 using NetCoreApp.Data.Entities;
 
@@ -17,6 +14,8 @@ namespace NetCoreApp.Application.AutoMapper
             CreateMap<ProductCategory, ProductCategoryViewModel>();
             CreateMap<Function, FunctionViewModel>();
             CreateMap<Product, ProductViewModel>();
+            CreateMap<AppUser, AppUserViewModel>();
+            CreateMap<AppRole, AppRoleViewModel>();
         }
     }
 }

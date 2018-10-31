@@ -15,6 +15,7 @@ namespace NetCoreApp.Data.EF.Registration
         private IFunctionRepository _functionRepository;
         private ITagRepository _tagRepository;
         private IProductTagRepository _productTagRepository;
+        private IPermissionRepository _permissionRepository;
 
         public UnitOfWork()
         {
@@ -44,6 +45,9 @@ namespace NetCoreApp.Data.EF.Registration
 
         public IProductTagRepository ProductTagRepository =>
             _productTagRepository ?? (_productTagRepository = new ProductTagRepository(_context));
+
+        public IPermissionRepository PermissionRepository =>
+            _permissionRepository ?? (_permissionRepository = new PermissionRepository(_context));
 
         public void Commit()
         {

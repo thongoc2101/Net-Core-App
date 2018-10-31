@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 using AutoMapper;
 using NetCoreApp.Application.ViewModels;
 using NetCoreApp.Data.Entities;
@@ -21,6 +19,9 @@ namespace NetCoreApp.Application.AutoMapper
                 .ConstructUsing(c => new Product(c.Name, c.CategoryId, c.Image, c.Price, c.PromotionPrice,c.OriginalPrice, c.Description, c.Content,
                     c.HotFlag, c.HomeFlag, c.ViewCount, c.Tags, c.Unit, c.SeoAlias, c.SeoPageTitle, c.SeoDescription, c.SeoKeywords,
                     c.DateCreated, c.DateModified, c.Status));
+            CreateMap<AppUserViewModel, AppUser>()
+                .ConstructUsing(c =>
+                    new AppUser(c.Id.GetValueOrDefault(Guid.Empty), c.FullName, c.UserName, c.Email, c.PhoneNumber, c.Avatar, c.Status));
         }
     }
 }
