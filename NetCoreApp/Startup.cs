@@ -1,5 +1,6 @@
 ﻿using System;
 using AutoMapper;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
@@ -10,6 +11,7 @@ using Microsoft.Extensions.Logging;
 using NetCoreApp.Application.Implementations;
 using NetCoreApp.Application.Interfaces;
 using NetCoreApp.Application.Singleton;
+using NetCoreApp.Authorization;
 using NetCoreApp.Data.EF;
 using NetCoreApp.Data.EF.Registration;
 using NetCoreApp.Data.Entities;
@@ -87,6 +89,9 @@ namespace NetCoreApp
             services.AddTransient(typeof(IRepository<,>), typeof(EfRepository<,>));
 
             services.AddScoped<IUserClaimsPrincipalFactory<AppUser>, CustomClaimPrincipalFactory>();
+
+            // Grant
+            services.AddTransient<IAuthorizationHandler, BaseResourceAuthorizationHandler>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

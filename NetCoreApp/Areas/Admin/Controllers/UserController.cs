@@ -1,23 +1,34 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.JsonPatch.Operations;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.ModelBinding;
 using NetCoreApp.Application.Interfaces;
 using NetCoreApp.Application.ViewModels;
+using NetCoreApp.Authorization;
 
 namespace NetCoreApp.Areas.Admin.Controllers
 {
     public class UserController : BaseController
     {
         private readonly IUserService _userService;
+        private readonly IAuthorizationService _authorizationService;
 
-        public UserController(IUserService userService)
+        public UserController(IUserService userService, IAuthorizationService authorizationService)
         {
             _userService = userService;
+            _authorizationService = authorizationService;
         }
-        public IActionResult Index()
+        public async Task<IActionResult> Index()
         {
+            // Check grant
+            var result = await _authorizationService.AuthorizeAsync(User, "USER", Operations.Read);
+            if (result.Succeeded == false)
+            {
+                return new RedirectResult("/Admin/Login/Index");
+            }
             return View();
         }
 
