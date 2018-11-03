@@ -16,6 +16,7 @@ namespace NetCoreApp.Application.AutoMapper
             CreateMap<Product, ProductViewModel>();
             CreateMap<AppUser, AppUserViewModel>();
             CreateMap<AppRole, AppRoleViewModel>();
+            CreateMap<Permission, PermissionViewModel>();
         }
     }
 }
