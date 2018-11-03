@@ -1,0 +1,598 @@
+2018-11-03T19:12:45.5418955+07:00  [INF] Entity Framework Core "2.0.0-rtm-26452" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=NetCoreApp.Data.EF " (9958f5bb)
+2018-11-03T19:12:47.8519910+07:00  [INF] Executed DbCommand ("819"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppRoles] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-11-03T19:12:48.1305278+07:00  [INF] Executed DbCommand ("184"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppUsers] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-11-03T19:12:48.2743091+07:00  [INF] Executed DbCommand ("96"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Functions] AS [f]" (0723d8ff)
+2018-11-03T19:12:48.3853658+07:00  [INF] Executed DbCommand ("54"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Footers] AS [x]
+WHERE [x].[Id] = 'DefaultFooterId'" (0723d8ff)
+2018-11-03T19:12:48.4467765+07:00  [INF] Executed DbCommand ("40"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Colors] AS [c]" (0723d8ff)
+2018-11-03T19:12:48.5246509+07:00  [INF] Executed DbCommand ("53"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [AdvertisementPages] AS [a]" (0723d8ff)
+2018-11-03T19:12:48.6129868+07:00  [INF] Executed DbCommand ("73"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Slides] AS [s]" (0723d8ff)
+2018-11-03T19:12:48.8244891+07:00  [INF] Executed DbCommand ("71"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Sizes] AS [s]" (0723d8ff)
+2018-11-03T19:12:48.9027607+07:00  [INF] Executed DbCommand ("50"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [ProductCategories] AS [p]" (0723d8ff)
+2018-11-03T19:12:49.6146408+07:00  [INF] Executed DbCommand ("556"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeTitle')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-11-03T19:12:49.7066260+07:00  [INF] Executed DbCommand ("71"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaKeyword')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-11-03T19:12:50.0861220+07:00  [INF] Executed DbCommand ("194"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaDescription')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-11-03T19:12:52.0891245+07:00 0HLI1GMMFVI0O:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44383/   (ca22a1cb)
+2018-11-03T19:12:52.2192730+07:00 0HLI1GMMFVI0P:00000001 [INF] Request starting HTTP/1.1 DEBUG http://localhost:15649/  0 (ca22a1cb)
+2018-11-03T19:12:52.3382552+07:00 0HLI1GMMFVI0N:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44383/admin   (ca22a1cb)
+2018-11-03T19:12:52.3911369+07:00 0HLI1GMMFVI0P:00000001 [INF] Request finished in 383.5496ms 200  (791a596a)
+2018-11-03T19:12:53.5989310+07:00 0HLI1GMMFVI0N:00000001 [INF] Executing action method "NetCoreApp.Areas.Admin.Controllers.LoginController.Index (NetCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-11-03T19:12:53.6154745+07:00 0HLI1GMMFVI0O:00000001 [INF] Executing action method "NetCoreApp.Controllers.HomeController.Index (NetCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-11-03T19:12:55.9122858+07:00 0HLI1GMMFVI0P:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44383/admin   (ca22a1cb)
+2018-11-03T19:12:56.1098597+07:00 0HLI1GMMFVI0P:00000002 [INF] Executing action method "NetCoreApp.Areas.Admin.Controllers.LoginController.Index (NetCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-11-03T19:13:02.7745495+07:00 0HLI1GMMFVI0N:00000001 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Login/Index.cshtml". (9707eebe)
+2018-11-03T19:13:02.7855481+07:00 0HLI1GMMFVI0O:00000001 [INF] Executing ViewResult, running view at path "/Views/Home/Index.cshtml". (9707eebe)
+2018-11-03T19:13:02.8184966+07:00 0HLI1GMMFVI0P:00000002 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Login/Index.cshtml". (9707eebe)
+2018-11-03T19:13:03.2681520+07:00 0HLI1GMMFVI0N:00000001 [INF] Executed action "NetCoreApp.Areas.Admin.Controllers.LoginController.Index (NetCoreApp)" in 9888.468ms (afa2e885)
+2018-11-03T19:13:03.2932601+07:00 0HLI1GMMFVI0Q:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44383/vendor/font-awesome/css/font-awesome.css   (ca22a1cb)
+2018-11-03T19:13:03.6473397+07:00 0HLI1GMMFVI0P:00000002 [INF] Executed action "NetCoreApp.Areas.Admin.Controllers.LoginController.Index (NetCoreApp)" in 7192.7036ms (afa2e885)
+2018-11-03T19:13:03.7336700+07:00 0HLI1GMMFVI0Q:00000001 [INF] The file "/vendor/font-awesome/css/font-awesome.css" was not modified (f1f8d725)
+2018-11-03T19:13:03.8009197+07:00 0HLI1GMMFVI0N:00000001 [INF] Request finished in 11344.7961ms 200 text/html; charset=utf-8 (791a596a)
+2018-11-03T19:13:03.8305954+07:00 0HLI1GMMFVI0P:00000002 [INF] Request finished in 7793.5977ms 200 text/html; charset=utf-8 (791a596a)
+2018-11-03T19:13:03.8516665+07:00 0HLI1GMMFVI0Q:00000001 [INF] Request finished in 486.4817ms 304 text/css (791a596a)
+2018-11-03T19:13:03.8972095+07:00 0HLI1GMMFVI0R:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44383/vendor/nprogress/nprogress.css   (ca22a1cb)
+2018-11-03T19:13:03.9711879+07:00 0HLI1GMMFVI0S:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44383/vendor/jquery-validation/localization/messages_vi.js   (ca22a1cb)
+2018-11-03T19:13:04.8474688+07:00 0HLI1GMMFVI0R:00000001 [INF] The file "/vendor/nprogress/nprogress.css" was not modified (f1f8d725)
+2018-11-03T19:13:04.9093525+07:00 0HLI1GMMFVI0T:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44383/admin-side/css/custom.css   (ca22a1cb)
+2018-11-03T19:13:04.9276711+07:00 0HLI1GMMFVI0R:00000001 [INF] Request finished in 1005.5796ms 304 text/css (791a596a)
+2018-11-03T19:13:04.9866771+07:00 0HLI1GMMFVI0V:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44383/app/Shared/app.js   (ca22a1cb)
+2018-11-03T19:13:04.9932941+07:00 0HLI1GMMFVI0S:00000001 [INF] The file "/vendor/jquery-validation/localization/messages_vi.js" was not modified (f1f8d725)
+2018-11-03T19:13:05.0150355+07:00 0HLI1GMMFVI0T:00000001 [INF] The file "/admin-side/css/custom.css" was not modified (f1f8d725)
+2018-11-03T19:13:05.0345767+07:00 0HLI1GMMFVI0V:00000001 [INF] The file "/app/Shared/app.js" was not modified (f1f8d725)
+2018-11-03T19:13:05.0461386+07:00 0HLI1GMMFVI0U:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44383/vendor/animate.css/animate.css   (ca22a1cb)
+2018-11-03T19:13:05.0730100+07:00 0HLI1GMMFVI0V:00000001 [INF] Request finished in 88.6919ms 304 application/javascript (791a596a)
+2018-11-03T19:13:05.1523143+07:00 0HLI1GMMFVI0S:00000001 [INF] Request finished in 1151.0709ms 304 application/javascript (791a596a)
+2018-11-03T19:13:05.3563374+07:00 0HLI1GMMFVI10:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44383/vendor/notifyjs/notify.js   (ca22a1cb)
+2018-11-03T19:13:05.4216434+07:00 0HLI1GMMFVI0U:00000001 [INF] The file "/vendor/animate.css/animate.css" was not modified (f1f8d725)
+2018-11-03T19:13:05.4583028+07:00 0HLI1GMMFVI0T:00000001 [INF] Request finished in 1137.1619ms 304 text/css (791a596a)
+2018-11-03T19:13:05.5037898+07:00 0HLI1GMMFVI10:00000001 [INF] The file "/vendor/notifyjs/notify.js" was not modified (f1f8d725)
+2018-11-03T19:13:05.5489906+07:00 0HLI1GMMFVI0U:00000001 [INF] Request finished in 583.5303ms 304 text/css (791a596a)
+2018-11-03T19:13:05.6315703+07:00 0HLI1GMMFVI10:00000001 [INF] Request finished in 409.9363ms 304 application/javascript (791a596a)
+2018-11-03T19:13:05.8155412+07:00 0HLI1GMMFVI11:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44383/app/controllers/login/index.js   (ca22a1cb)
+2018-11-03T19:13:06.0953806+07:00 0HLI1GMMFVI0P:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44383/vendor/font-awesome/fonts/fontawesome-webfont.woff2?v=4.7.0   (ca22a1cb)
+2018-11-03T19:13:06.1289935+07:00 0HLI1GMMFVI11:00000001 [INF] The file "/app/controllers/login/index.js" was not modified (f1f8d725)
+2018-11-03T19:13:06.2110384+07:00 0HLI1GMMFVI0P:00000003 [INF] The file "/vendor/font-awesome/fonts/fontawesome-webfont.woff2" was not modified (f1f8d725)
+2018-11-03T19:13:06.5083826+07:00 0HLI1GMMFVI0P:00000003 [INF] Request finished in 615.1402ms 304 font/woff2 (791a596a)
+2018-11-03T19:13:06.6159505+07:00 0HLI1GMMFVI11:00000001 [INF] Request finished in 672.6816ms 304 application/javascript (791a596a)
+2018-11-03T19:13:06.9810287+07:00 0HLI1GMMFVI0O:00000001 [INF] Executed action "NetCoreApp.Controllers.HomeController.Index (NetCoreApp)" in 13742.346ms (afa2e885)
+2018-11-03T19:13:06.9912012+07:00 0HLI1GMMFVI0O:00000001 [INF] Request finished in 15050.6975ms 200 text/html; charset=utf-8 (791a596a)
+2018-11-03T19:13:08.0422011+07:00 0HLI1GMMFVI0Q:00000002 [INF] Request starting HTTP/1.1 POST http://localhost:44383/admin/login/Authen application/x-www-form-urlencoded; charset=UTF-8 33 (ca22a1cb)
+2018-11-03T19:13:08.7233522+07:00 0HLI1GMMFVI0Q:00000002 [INF] Executing action method "NetCoreApp.Areas.Admin.Controllers.LoginController.Authen (NetCoreApp)" with arguments (["NetCoreApp.Models.AccountViewModels.LoginViewModel"]) - ModelState is Valid (ba7f4ac2)
+2018-11-03T19:13:08.8230539+07:00 0HLI1GMMFVI0Q:00000002 [INF] Entity Framework Core "2.0.0-rtm-26452" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=NetCoreApp.Data.EF " (9958f5bb)
+2018-11-03T19:13:09.1993363+07:00 0HLI1GMMFVI0Q:00000002 [INF] Executed DbCommand ("252"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[Avatar], [u].[Balance], [u].[BirthDay], [u].[ConcurrencyStamp], [u].[DateCreated], [u].[DateModified], [u].[Email], [u].[EmailConfirmed], [u].[FullName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Status], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AppUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2018-11-03T19:13:09.8245203+07:00 0HLI1GMMFVI0Q:00000002 [INF] Executed DbCommand ("224"ms) [Parameters=["@__user_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AppUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0" (0723d8ff)
+2018-11-03T19:13:10.2124878+07:00 0HLI1GMMFVI0Q:00000002 [INF] Executed DbCommand ("117"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2018-11-03T19:13:10.3056040+07:00 0HLI1GMMFVI0Q:00000002 [INF] Executed DbCommand ("59"ms) [Parameters=["@__normalizedName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Description], [r].[Name], [r].[NormalizedName]
+FROM [AppRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2018-11-03T19:13:10.4553782+07:00 0HLI1GMMFVI0Q:00000002 [INF] Executed DbCommand ("89"ms) [Parameters=["@__role_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AppRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0" (0723d8ff)
+2018-11-03T19:13:10.6376284+07:00 0HLI1GMMFVI0Q:00000002 [INF] Executed DbCommand ("83"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2018-11-03T19:13:10.7249664+07:00 0HLI1GMMFVI0Q:00000002 [INF] AuthenticationScheme: "Identity.Application" signed in. (c66dd7e7)
+2018-11-03T19:13:10.7564259+07:00 0HLI1GMMFVI0Q:00000002 [INF] User logged in. (fdce0db4)
+2018-11-03T19:13:10.7819280+07:00 0HLI1GMMFVI0Q:00000002 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-11-03T19:13:10.9115799+07:00 0HLI1GMMFVI0Q:00000002 [INF] Executed action "NetCoreApp.Areas.Admin.Controllers.LoginController.Authen (NetCoreApp)" in 2717.7869ms (afa2e885)
+2018-11-03T19:13:10.9561104+07:00 0HLI1GMMFVI0Q:00000002 [INF] Request finished in 2886.5496ms 200 application/json; charset=utf-8 (791a596a)
+2018-11-03T19:13:10.9828390+07:00 0HLI1GMMFVI0R:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44383/Admin/Home/Index   (ca22a1cb)
+2018-11-03T19:13:11.0304292+07:00 0HLI1GMMFVI0R:00000002 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-11-03T19:13:11.1851151+07:00 0HLI1GMMFVI0R:00000002 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-11-03T19:13:11.2859922+07:00 0HLI1GMMFVI0R:00000002 [INF] Executing action method "NetCoreApp.Areas.Admin.Controllers.HomeController.Index (NetCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-11-03T19:13:12.5568245+07:00 0HLI1GMMFVI0R:00000002 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Home/Index.cshtml". (9707eebe)
+2018-11-03T19:13:13.8088156+07:00 0HLI1GMMFVI0R:00000002 [INF] Entity Framework Core "2.0.0-rtm-26452" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=NetCoreApp.Data.EF " (9958f5bb)
+2018-11-03T19:13:14.2861615+07:00 0HLI1GMMFVI0R:00000002 [INF] Executed DbCommand ("356"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[Url], [dto].[ParentId], [dto].[IconCss], [dto].[SortOrder], [dto].[Status]
+FROM [Functions] AS [dto]" (0723d8ff)
+2018-11-03T19:13:16.1925757+07:00 0HLI1GMMFVI0R:00000002 [INF] Executed action "NetCoreApp.Areas.Admin.Controllers.HomeController.Index (NetCoreApp)" in 5143.6103ms (afa2e885)
+2018-11-03T19:13:16.3092246+07:00 0HLI1GMMFVI0R:00000002 [INF] Request finished in 5221.289ms 200 text/html; charset=utf-8 (791a596a)
+2018-11-03T19:13:16.3489759+07:00 0HLI1GMMFVI0U:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44383/vendor/bootstrap/css/bootstrap.css   (ca22a1cb)
+2018-11-03T19:13:17.1270917+07:00 0HLI1GMMFVI0S:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44383/vendor/bootstrap-daterangepicker/daterangepicker.css   (ca22a1cb)
+2018-11-03T19:13:17.3721364+07:00 0HLI1GMMFVI0T:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44383/admin-side/images/img.jpg   (ca22a1cb)
+2018-11-03T19:13:17.4191790+07:00 0HLI1GMMFVI0V:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44383/vendor/ckeditor/skins/moono/editor.css   (ca22a1cb)
+2018-11-03T19:13:17.4390814+07:00 0HLI1GMMFVI0U:00000002 [INF] The file "/vendor/bootstrap/css/bootstrap.css" was not modified (f1f8d725)
+2018-11-03T19:13:17.5340358+07:00 0HLI1GMMFVI13:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44383/vendor/flot/jquery.flot.pie.js   (ca22a1cb)
+2018-11-03T19:13:17.5736739+07:00 0HLI1GMMFVI0Q:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44383/vendor/chart.js/Chart.js   (ca22a1cb)
+2018-11-03T19:13:17.5871082+07:00 0HLI1GMMFVI0U:00000002 [INF] Request finished in 1132.8316ms 304 text/css (791a596a)
+2018-11-03T19:13:17.5996438+07:00 0HLI1GMMFVI0S:00000002 [INF] The file "/vendor/bootstrap-daterangepicker/daterangepicker.css" was not modified (f1f8d725)
+2018-11-03T19:13:17.6932349+07:00 0HLI1GMMFVI12:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44383/vendor/bootstrap-daterangepicker/moment.min.js   (ca22a1cb)
+2018-11-03T19:13:17.7024212+07:00 0HLI1GMMFVI0T:00000002 [INF] The file "/admin-side/images/img.jpg" was not modified (f1f8d725)
+2018-11-03T19:13:17.7185917+07:00 0HLI1GMMFVI0V:00000002 [INF] The file "/vendor/ckeditor/skins/moono/editor.css" was not modified (f1f8d725)
+2018-11-03T19:13:17.9147596+07:00 0HLI1GMMFVI13:00000001 [INF] The file "/vendor/flot/jquery.flot.pie.js" was not modified (f1f8d725)
+2018-11-03T19:13:17.9556210+07:00 0HLI1GMMFVI0Q:00000003 [INF] The file "/vendor/chart.js/Chart.js" was not modified (f1f8d725)
+2018-11-03T19:13:17.9956961+07:00 0HLI1GMMFVI0R:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44383/admin-side/js/custom.js   (ca22a1cb)
+2018-11-03T19:13:18.0646857+07:00 0HLI1GMMFVI12:00000001 [INF] The file "/vendor/bootstrap-daterangepicker/moment.min.js" was not modified (f1f8d725)
+2018-11-03T19:13:18.0784108+07:00 0HLI1GMMFVI16:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44383/vendor/twbs-pagination/jquery.twbsPagination.js   (ca22a1cb)
+2018-11-03T19:13:18.0878811+07:00 0HLI1GMMFVI13:00000001 [INF] Request finished in 795.1312ms 304 application/javascript (791a596a)
+2018-11-03T19:13:18.0940523+07:00 0HLI1GMMFVI0Q:00000003 [INF] Request finished in 1080.308ms 304 application/javascript (791a596a)
+2018-11-03T19:13:18.1270308+07:00 0HLI1GMMFVI0S:00000002 [INF] Request finished in 1305.1296ms 304 text/css (791a596a)
+2018-11-03T19:13:18.1713000+07:00 0HLI1GMMFVI0T:00000002 [INF] Request finished in 1408.1189ms 304 image/jpeg (791a596a)
+2018-11-03T19:13:18.1805791+07:00 0HLI1GMMFVI0V:00000002 [INF] Request finished in 1420.7739ms 304 text/css (791a596a)
+2018-11-03T19:13:18.2749466+07:00 0HLI1GMMFVI16:00000001 [INF] The file "/vendor/twbs-pagination/jquery.twbsPagination.js" was not modified (f1f8d725)
+2018-11-03T19:13:18.3147272+07:00 0HLI1GMMFVI0R:00000003 [INF] The file "/admin-side/js/custom.js" was not modified (f1f8d725)
+2018-11-03T19:13:18.3582029+07:00 0HLI1GMMFVI16:00000001 [INF] Request finished in 374.4844ms 304 application/javascript (791a596a)
+2018-11-03T19:13:18.3637285+07:00 0HLI1GMMFVI17:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44383/vendor/flot.curvedlines/curvedLines.js   (ca22a1cb)
+2018-11-03T19:13:18.3865674+07:00 0HLI1GMMFVI18:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44383/vendor/ckeditor/ckeditor.js   (ca22a1cb)
+2018-11-03T19:13:18.4095072+07:00 0HLI1GMMFVI12:00000001 [INF] Request finished in 946.8491ms 304 application/javascript (791a596a)
+2018-11-03T19:13:18.4225032+07:00 0HLI1GMMFVI0P:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44383/vendor/mustache/mustache.js   (ca22a1cb)
+2018-11-03T19:13:18.4297316+07:00 0HLI1GMMFVI15:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44383/vendor/flot/jquery.flot.resize.js   (ca22a1cb)
+2018-11-03T19:13:18.4385690+07:00 0HLI1GMMFVI10:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44383/vendor/fastclick/fastclick.js   (ca22a1cb)
+2018-11-03T19:13:18.4460565+07:00 0HLI1GMMFVI11:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44383/vendor/jquery-sparkline/jquery.sparkline.js   (ca22a1cb)
+2018-11-03T19:13:18.4624729+07:00 0HLI1GMMFVI17:00000001 [INF] The file "/vendor/flot.curvedlines/curvedLines.js" was not modified (f1f8d725)
+2018-11-03T19:13:18.5189564+07:00 0HLI1GMMFVI18:00000001 [INF] The file "/vendor/ckeditor/ckeditor.js" was not modified (f1f8d725)
+2018-11-03T19:13:18.5668631+07:00 0HLI1GMMFVI0R:00000003 [INF] Request finished in 953.283ms 304 application/javascript (791a596a)
+2018-11-03T19:13:18.6593355+07:00 0HLI1GMMFVI19:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44383/vendor/bootstrap-daterangepicker/daterangepicker.js   (ca22a1cb)
+2018-11-03T19:13:18.7051189+07:00 0HLI1GMMFVI0P:00000004 [INF] The file "/vendor/mustache/mustache.js" was not modified (f1f8d725)
+2018-11-03T19:13:18.7614434+07:00 0HLI1GMMFVI17:00000001 [INF] Request finished in 207.4049ms 304 application/javascript (791a596a)
+2018-11-03T19:13:18.7745617+07:00 0HLI1GMMFVI19:00000001 [INF] The file "/vendor/bootstrap-daterangepicker/daterangepicker.js" was not modified (f1f8d725)
+2018-11-03T19:13:18.7881403+07:00 0HLI1GMMFVI11:00000002 [INF] The file "/vendor/jquery-sparkline/jquery.sparkline.js" was not modified (f1f8d725)
+2018-11-03T19:13:18.8822055+07:00 0HLI1GMMFVI10:00000002 [INF] The file "/vendor/fastclick/fastclick.js" was not modified (f1f8d725)
+2018-11-03T19:13:19.0259350+07:00 0HLI1GMMFVI18:00000001 [INF] Request finished in 247.341ms 304 application/javascript (791a596a)
+2018-11-03T19:13:19.0340122+07:00 0HLI1GMMFVI15:00000001 [INF] The file "/vendor/flot/jquery.flot.resize.js" was not modified (f1f8d725)
+2018-11-03T19:13:19.0602501+07:00 0HLI1GMMFVI19:00000001 [INF] Request finished in 371.1536ms 304 application/javascript (791a596a)
+2018-11-03T19:13:19.0729500+07:00 0HLI1GMMFVI0P:00000004 [INF] Request finished in 383.5883ms 304 application/javascript (791a596a)
+2018-11-03T19:13:19.0929439+07:00 0HLI1GMMFVI1B:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44383/vendor/flot/jquery.flot.time.js   (ca22a1cb)
+2018-11-03T19:13:19.1140048+07:00 0HLI1GMMFVI11:00000002 [INF] Request finished in 479.4526ms 304 application/javascript (791a596a)
+2018-11-03T19:13:19.1376264+07:00 0HLI1GMMFVI15:00000001 [INF] Request finished in 1682.2991ms 304 application/javascript (791a596a)
+2018-11-03T19:13:19.1448308+07:00 0HLI1GMMFVI1A:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44383/vendor/flot/jquery.flot.js   (ca22a1cb)
+2018-11-03T19:13:19.1520434+07:00 0HLI1GMMFVI10:00000002 [INF] Request finished in 579.6587ms 304 application/javascript (791a596a)
+2018-11-03T19:13:19.1632982+07:00 0HLI1GMMFVI1B:00000001 [INF] The file "/vendor/flot/jquery.flot.time.js" was not modified (f1f8d725)
+2018-11-03T19:13:19.1800099+07:00 0HLI1GMMFVI1C:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44383/vendor/flot-orderbars/jquery.flot.orderBars.js   (ca22a1cb)
+2018-11-03T19:13:19.2281049+07:00 0HLI1GMMFVI1D:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44383/vendor/flot-spline/jquery.flot.spline.js   (ca22a1cb)
+2018-11-03T19:13:19.5654516+07:00 0HLI1GMMFVI1E:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44383/vendor/nprogress/nprogress.js   (ca22a1cb)
+2018-11-03T19:13:19.5847784+07:00 0HLI1GMMFVI1B:00000001 [INF] Request finished in 169.0153ms 304 application/javascript (791a596a)
+2018-11-03T19:13:19.6071045+07:00 0HLI1GMMFVI1D:00000001 [INF] The file "/vendor/flot-spline/jquery.flot.spline.js" was not modified (f1f8d725)
+2018-11-03T19:13:19.6410859+07:00 0HLI1GMMFVI1C:00000001 [INF] The file "/vendor/flot-orderbars/jquery.flot.orderBars.js" was not modified (f1f8d725)
+2018-11-03T19:13:19.7466580+07:00 0HLI1GMMFVI1A:00000001 [INF] The file "/vendor/flot/jquery.flot.js" was not modified (f1f8d725)
+2018-11-03T19:13:20.5423815+07:00 0HLI1GMMFVI0U:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44383/vendor/bootstrap/fonts/glyphicons-halflings-regular.woff2   (ca22a1cb)
+2018-11-03T19:13:20.5735769+07:00 0HLI1GMMFVI1D:00000001 [INF] Request finished in 502.6029ms 304 application/javascript (791a596a)
+2018-11-03T19:13:20.6120209+07:00 0HLI1GMMFVI1C:00000001 [INF] Request finished in 559.5751ms 304 application/javascript (791a596a)
+2018-11-03T19:13:20.7062316+07:00 0HLI1GMMFVI1E:00000001 [INF] The file "/vendor/nprogress/nprogress.js" was not modified (f1f8d725)
+2018-11-03T19:13:20.8049633+07:00 0HLI1GMMFVI1F:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44383/vendor/datejs/date.js   (ca22a1cb)
+2018-11-03T19:13:20.8236254+07:00 0HLI1GMMFVI14:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44383/vendor/flot/jquery.flot.stack.js   (ca22a1cb)
+2018-11-03T19:13:21.0381854+07:00 0HLI1GMMFVI0U:00000003 [INF] The file "/vendor/bootstrap/fonts/glyphicons-halflings-regular.woff2" was not modified (f1f8d725)
+2018-11-03T19:13:21.0729306+07:00 0HLI1GMMFVI1F:00000001 [INF] The file "/vendor/datejs/date.js" was not modified (f1f8d725)
+2018-11-03T19:13:21.0973856+07:00 0HLI1GMMFVI1A:00000001 [INF] Request finished in 958.4718ms 304 application/javascript (791a596a)
+2018-11-03T19:13:21.1330183+07:00 0HLI1GMMFVI14:00000001 [INF] The file "/vendor/flot/jquery.flot.stack.js" was not modified (f1f8d725)
+2018-11-03T19:13:21.4752762+07:00 0HLI1GMMFVI1E:00000001 [INF] Request finished in 1568.7003ms 304 application/javascript (791a596a)
+2018-11-03T19:13:21.6007977+07:00 0HLI1GMMFVI1F:00000001 [INF] Request finished in 1874.9727ms 304 application/javascript (791a596a)
+2018-11-03T19:13:21.6166736+07:00 0HLI1GMMFVI14:00000001 [INF] Request finished in 3916.6279ms 304 application/javascript (791a596a)
+2018-11-03T19:13:21.6619061+07:00 0HLI1GMMFVI0U:00000003 [INF] Request finished in 1812.7105ms 304 font/woff2 (791a596a)
+2018-11-03T19:13:26.1697194+07:00 0HLI1GMMFVI0S:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44383/admin/role/index   (ca22a1cb)
+2018-11-03T19:13:26.1845340+07:00 0HLI1GMMFVI0S:00000003 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-11-03T19:13:26.2297249+07:00 0HLI1GMMFVI0S:00000003 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-11-03T19:13:26.2978643+07:00 0HLI1GMMFVI0S:00000003 [INF] Executing action method "NetCoreApp.Areas.Admin.Controllers.RoleController.Index (NetCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-11-03T19:13:27.0265575+07:00 0HLI1GMMFVI0S:00000003 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Role/Index.cshtml". (9707eebe)
+2018-11-03T19:13:28.2495476+07:00 0HLI1GMMFVI0S:00000003 [INF] Entity Framework Core "2.0.0-rtm-26452" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=NetCoreApp.Data.EF " (9958f5bb)
+2018-11-03T19:13:28.4255431+07:00 0HLI1GMMFVI0S:00000003 [INF] Executed DbCommand ("85"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[Url], [dto].[ParentId], [dto].[IconCss], [dto].[SortOrder], [dto].[Status]
+FROM [Functions] AS [dto]" (0723d8ff)
+2018-11-03T19:13:28.8809597+07:00 0HLI1GMMFVI0S:00000003 [INF] Executed action "NetCoreApp.Areas.Admin.Controllers.RoleController.Index (NetCoreApp)" in 2258.156ms (afa2e885)
+2018-11-03T19:13:28.9233693+07:00 0HLI1GMMFVI0S:00000003 [INF] Request finished in 2724.1398ms 200 text/html; charset=utf-8 (791a596a)
+2018-11-03T19:13:29.0908072+07:00 0HLI1GMMFVI0T:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44383/app/controllers/role/index.js   (ca22a1cb)
+2018-11-03T19:13:29.1105193+07:00 0HLI1GMMFVI0T:00000003 [INF] Sending file. Request path: '"/app/controllers/role/index.js"'. Physical path: '"D:\NetCore\NetCoreApp\NetCoreApp\wwwroot\app\controllers\role\index.js"' (27b0a520)
+2018-11-03T19:13:29.1454363+07:00 0HLI1GMMFVI0T:00000003 [INF] Request finished in 114.1225ms 200 application/javascript (791a596a)
+2018-11-03T19:13:29.3899605+07:00 0HLI1GMMFVI0V:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44383/admin/role/GetAllPaging?keyword=&page=1&pageSize=10   (ca22a1cb)
+2018-11-03T19:13:29.4188435+07:00 0HLI1GMMFVI0V:00000003 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-11-03T19:13:29.7515441+07:00 0HLI1GMMFVI0V:00000003 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-11-03T19:13:30.1211492+07:00 0HLI1GMMFVI0V:00000003 [INF] Executing action method "NetCoreApp.Areas.Admin.Controllers.RoleController.GetAllPaging (NetCoreApp)" with arguments (["", "1", "10"]) - ModelState is Valid (ba7f4ac2)
+2018-11-03T19:13:30.1507468+07:00 0HLI1GMMFVI0V:00000003 [INF] Entity Framework Core "2.0.0-rtm-26452" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=NetCoreApp.Data.EF " (9958f5bb)
+2018-11-03T19:13:30.2732243+07:00 0HLI1GMMFVI0V:00000003 [INF] Executed DbCommand ("110"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [AppRoles] AS [a]" (0723d8ff)
+2018-11-03T19:13:30.3794829+07:00 0HLI1GMMFVI0V:00000003 [WRN] Query: '"(from AppRole dto in DbSet<AppRole> select new AppRoleViewModel{ { 
+    Id = (Nullable<Guid>)[dto]...."' uses a row limiting operation (Skip/Take) without OrderBy which may lead to unpredictable results. (32148ccc)
+2018-11-03T19:13:30.4900540+07:00 0HLI1GMMFVI0V:00000003 [INF] Executed DbCommand ("82"ms) [Parameters=["@__p_0='?', @__p_1='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[Description]
+FROM [AppRoles] AS [dto]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY" (0723d8ff)
+2018-11-03T19:13:30.5032423+07:00 0HLI1GMMFVI0V:00000003 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-11-03T19:13:30.5459242+07:00 0HLI1GMMFVI0V:00000003 [INF] Executed action "NetCoreApp.Areas.Admin.Controllers.RoleController.GetAllPaging (NetCoreApp)" in 1106.3663ms (afa2e885)
+2018-11-03T19:13:30.6078256+07:00 0HLI1GMMFVI0V:00000003 [INF] Request finished in 1170.3282ms 200 application/json; charset=utf-8 (791a596a)
+2018-11-03T19:13:30.6241635+07:00 0HLI1GMMFVI13:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44383/admin/role/GetAllPaging?keyword=&page=1&pageSize=10   (ca22a1cb)
+2018-11-03T19:13:30.6351589+07:00 0HLI1GMMFVI13:00000002 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-11-03T19:13:30.6481237+07:00 0HLI1GMMFVI13:00000002 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-11-03T19:13:30.7108754+07:00 0HLI1GMMFVI13:00000002 [INF] Executing action method "NetCoreApp.Areas.Admin.Controllers.RoleController.GetAllPaging (NetCoreApp)" with arguments (["", "1", "10"]) - ModelState is Valid (ba7f4ac2)
+2018-11-03T19:13:30.7198296+07:00 0HLI1GMMFVI13:00000002 [INF] Entity Framework Core "2.0.0-rtm-26452" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=NetCoreApp.Data.EF " (9958f5bb)
+2018-11-03T19:13:30.9648441+07:00 0HLI1GMMFVI13:00000002 [INF] Executed DbCommand ("161"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [AppRoles] AS [a]" (0723d8ff)
+2018-11-03T19:13:31.0356595+07:00 0HLI1GMMFVI13:00000002 [INF] Executed DbCommand ("59"ms) [Parameters=["@__p_0='?', @__p_1='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[Description]
+FROM [AppRoles] AS [dto]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY" (0723d8ff)
+2018-11-03T19:13:31.0500963+07:00 0HLI1GMMFVI13:00000002 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-11-03T19:13:31.0795966+07:00 0HLI1GMMFVI13:00000002 [INF] Executed action "NetCoreApp.Areas.Admin.Controllers.RoleController.GetAllPaging (NetCoreApp)" in 414.4131ms (afa2e885)
+2018-11-03T19:13:31.2271607+07:00 0HLI1GMMFVI13:00000002 [INF] Request finished in 494.086ms 200 application/json; charset=utf-8 (791a596a)
+2018-11-03T19:13:33.8485216+07:00 0HLI1GMMFVI0Q:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44383/vendor/bootstrap/css/bootstrap.css.map   (ca22a1cb)
+2018-11-03T19:13:33.8750611+07:00 0HLI1GMMFVI0Q:00000004 [INF] The file "/vendor/bootstrap/css/bootstrap.css.map" was not modified (f1f8d725)
+2018-11-03T19:13:33.9333636+07:00 0HLI1GMMFVI0Q:00000004 [INF] Request finished in 144.4681ms 304 text/plain (791a596a)
+2018-11-03T19:13:49.8223812+07:00 0HLI1GMMFVI12:00000002 [INF] Request starting HTTP/1.1 POST http://localhost:44383/Admin/Role/SaveEntity application/x-www-form-urlencoded; charset=UTF-8 30 (ca22a1cb)
+2018-11-03T19:13:49.8321001+07:00 0HLI1GMMFVI12:00000002 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-11-03T19:13:49.8493407+07:00 0HLI1GMMFVI12:00000002 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-11-03T19:13:49.9170763+07:00 0HLI1GMMFVI12:00000002 [INF] Executing action method "NetCoreApp.Areas.Admin.Controllers.RoleController.SaveEntity (NetCoreApp)" with arguments (["NetCoreApp.Application.ViewModels.AppRoleViewModel"]) - ModelState is Valid (ba7f4ac2)
+2018-11-03T19:13:49.9414546+07:00 0HLI1GMMFVI12:00000002 [INF] Entity Framework Core "2.0.0-rtm-26452" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=NetCoreApp.Data.EF " (9958f5bb)
+2018-11-03T19:13:50.1667834+07:00 0HLI1GMMFVI12:00000002 [INF] Executed DbCommand ("211"ms) [Parameters=["@__normalizedName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Description], [r].[Name], [r].[NormalizedName]
+FROM [AppRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2018-11-03T19:13:50.4106504+07:00 0HLI1GMMFVI12:00000002 [INF] Executed DbCommand ("84"ms) [Parameters=["@p0='?', @p1='?' (Size = 4000), @p2='?' (Size = 250), @p3='?' (Size = 4000), @p4='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [AppRoles] ([Id], [ConcurrencyStamp], [Description], [Name], [NormalizedName])
+VALUES (@p0, @p1, @p2, @p3, @p4);" (0723d8ff)
+2018-11-03T19:13:50.4330656+07:00 0HLI1GMMFVI12:00000002 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-11-03T19:13:50.4447960+07:00 0HLI1GMMFVI12:00000002 [INF] Executed action "NetCoreApp.Areas.Admin.Controllers.RoleController.SaveEntity (NetCoreApp)" in 592.3081ms (afa2e885)
+2018-11-03T19:13:50.4948845+07:00 0HLI1GMMFVI12:00000002 [INF] Request finished in 631.6556ms 200 application/json; charset=utf-8 (791a596a)
+2018-11-03T19:13:50.5260937+07:00 0HLI1GMMFVI16:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44383/admin/role/GetAllPaging?keyword=&page=1&pageSize=10   (ca22a1cb)
+2018-11-03T19:13:50.5525219+07:00 0HLI1GMMFVI16:00000002 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-11-03T19:13:50.5717918+07:00 0HLI1GMMFVI16:00000002 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-11-03T19:13:50.6433782+07:00 0HLI1GMMFVI16:00000002 [INF] Executing action method "NetCoreApp.Areas.Admin.Controllers.RoleController.GetAllPaging (NetCoreApp)" with arguments (["", "1", "10"]) - ModelState is Valid (ba7f4ac2)
+2018-11-03T19:13:50.6545106+07:00 0HLI1GMMFVI16:00000002 [INF] Entity Framework Core "2.0.0-rtm-26452" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=NetCoreApp.Data.EF " (9958f5bb)
+2018-11-03T19:13:50.7188191+07:00 0HLI1GMMFVI16:00000002 [INF] Executed DbCommand ("51"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [AppRoles] AS [a]" (0723d8ff)
+2018-11-03T19:13:50.8014147+07:00 0HLI1GMMFVI16:00000002 [INF] Executed DbCommand ("68"ms) [Parameters=["@__p_0='?', @__p_1='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[Description]
+FROM [AppRoles] AS [dto]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY" (0723d8ff)
+2018-11-03T19:13:50.8153367+07:00 0HLI1GMMFVI16:00000002 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-11-03T19:13:50.8275451+07:00 0HLI1GMMFVI16:00000002 [INF] Executed action "NetCoreApp.Areas.Admin.Controllers.RoleController.GetAllPaging (NetCoreApp)" in 262.808ms (afa2e885)
+2018-11-03T19:13:50.8673834+07:00 0HLI1GMMFVI16:00000002 [INF] Request finished in 332.9492ms 200 application/json; charset=utf-8 (791a596a)
+2018-11-03T19:13:50.8957912+07:00 0HLI1GMMFVI0R:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44383/admin/role/GetAllPaging?keyword=&page=1&pageSize=10   (ca22a1cb)
+2018-11-03T19:13:50.9133066+07:00 0HLI1GMMFVI0R:00000004 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-11-03T19:13:50.9253161+07:00 0HLI1GMMFVI0R:00000004 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-11-03T19:13:51.0028053+07:00 0HLI1GMMFVI0R:00000004 [INF] Executing action method "NetCoreApp.Areas.Admin.Controllers.RoleController.GetAllPaging (NetCoreApp)" with arguments (["", "1", "10"]) - ModelState is Valid (ba7f4ac2)
+2018-11-03T19:13:51.0163670+07:00 0HLI1GMMFVI0R:00000004 [INF] Entity Framework Core "2.0.0-rtm-26452" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=NetCoreApp.Data.EF " (9958f5bb)
+2018-11-03T19:13:51.0891379+07:00 0HLI1GMMFVI0R:00000004 [INF] Executed DbCommand ("61"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [AppRoles] AS [a]" (0723d8ff)
+2018-11-03T19:13:51.4036599+07:00 0HLI1GMMFVI0R:00000004 [INF] Executed DbCommand ("204"ms) [Parameters=["@__p_0='?', @__p_1='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[Description]
+FROM [AppRoles] AS [dto]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY" (0723d8ff)
+2018-11-03T19:13:51.4176976+07:00 0HLI1GMMFVI0R:00000004 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-11-03T19:13:51.4432344+07:00 0HLI1GMMFVI0R:00000004 [INF] Executed action "NetCoreApp.Areas.Admin.Controllers.RoleController.GetAllPaging (NetCoreApp)" in 504.5098ms (afa2e885)
+2018-11-03T19:13:51.4993529+07:00 0HLI1GMMFVI0R:00000004 [INF] Request finished in 591.187ms 200 application/json; charset=utf-8 (791a596a)
+2018-11-03T19:13:53.3997066+07:00 0HLI1GMMFVI17:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44383/Admin/Role/GetById?id=6d1f77b3-2518-455a-2761-08d64185d063   (ca22a1cb)
+2018-11-03T19:13:53.4086419+07:00 0HLI1GMMFVI17:00000002 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-11-03T19:13:53.4249876+07:00 0HLI1GMMFVI17:00000002 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-11-03T19:13:53.4851040+07:00 0HLI1GMMFVI17:00000002 [INF] Executing action method "NetCoreApp.Areas.Admin.Controllers.RoleController.GetById (NetCoreApp)" with arguments (["6d1f77b3-2518-455a-2761-08d64185d063"]) - ModelState is Valid (ba7f4ac2)
+2018-11-03T19:13:53.5015800+07:00 0HLI1GMMFVI17:00000002 [INF] Entity Framework Core "2.0.0-rtm-26452" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=NetCoreApp.Data.EF " (9958f5bb)
+2018-11-03T19:13:53.7499190+07:00 0HLI1GMMFVI17:00000002 [INF] Executed DbCommand ("177"ms) [Parameters=["@__roleId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[ConcurrencyStamp], [u].[Description], [u].[Name], [u].[NormalizedName]
+FROM [AppRoles] AS [u]
+WHERE [u].[Id] = @__roleId_0" (0723d8ff)
+2018-11-03T19:13:53.8376568+07:00 0HLI1GMMFVI17:00000002 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-11-03T19:13:53.8534732+07:00 0HLI1GMMFVI17:00000002 [INF] Executed action "NetCoreApp.Areas.Admin.Controllers.RoleController.GetById (NetCoreApp)" in 421.3518ms (afa2e885)
+2018-11-03T19:13:53.9154409+07:00 0HLI1GMMFVI17:00000002 [INF] Request finished in 463.7515ms 200 application/json; charset=utf-8 (791a596a)
+2018-11-03T19:13:58.6161747+07:00 0HLI1GMMFVI18:00000002 [INF] Request starting HTTP/1.1 POST http://localhost:44383/Admin/Role/SaveEntity application/x-www-form-urlencoded; charset=UTF-8 69 (ca22a1cb)
+2018-11-03T19:13:58.6246257+07:00 0HLI1GMMFVI18:00000002 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-11-03T19:13:58.6317310+07:00 0HLI1GMMFVI18:00000002 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-11-03T19:13:58.6784124+07:00 0HLI1GMMFVI18:00000002 [INF] Executing action method "NetCoreApp.Areas.Admin.Controllers.RoleController.SaveEntity (NetCoreApp)" with arguments (["NetCoreApp.Application.ViewModels.AppRoleViewModel"]) - ModelState is Valid (ba7f4ac2)
+2018-11-03T19:13:58.6880153+07:00 0HLI1GMMFVI18:00000002 [INF] Entity Framework Core "2.0.0-rtm-26452" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=NetCoreApp.Data.EF " (9958f5bb)
+2018-11-03T19:13:58.7497374+07:00 0HLI1GMMFVI18:00000002 [INF] Executed DbCommand ("53"ms) [Parameters=["@__roleId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[ConcurrencyStamp], [u].[Description], [u].[Name], [u].[NormalizedName]
+FROM [AppRoles] AS [u]
+WHERE [u].[Id] = @__roleId_0" (0723d8ff)
+2018-11-03T19:13:58.8286019+07:00 0HLI1GMMFVI18:00000002 [INF] Executed DbCommand ("67"ms) [Parameters=["@__normalizedName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Description], [r].[Name], [r].[NormalizedName]
+FROM [AppRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2018-11-03T19:13:59.0911830+07:00 0HLI1GMMFVI18:00000002 [INF] Executed DbCommand ("236"ms) [Parameters=["@p4='?', @p0='?' (Size = 4000), @p1='?' (Size = 250), @p2='?' (Size = 4000), @p3='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+UPDATE [AppRoles] SET [ConcurrencyStamp] = @p0, [Description] = @p1, [Name] = @p2, [NormalizedName] = @p3
+WHERE [Id] = @p4;
+SELECT @@ROWCOUNT;" (0723d8ff)
+2018-11-03T19:13:59.1049400+07:00 0HLI1GMMFVI18:00000002 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-11-03T19:13:59.1156481+07:00 0HLI1GMMFVI18:00000002 [INF] Executed action "NetCoreApp.Areas.Admin.Controllers.RoleController.SaveEntity (NetCoreApp)" in 480.3877ms (afa2e885)
+2018-11-03T19:13:59.1635272+07:00 0HLI1GMMFVI18:00000002 [INF] Request finished in 507.1483ms 200 application/json; charset=utf-8 (791a596a)
+2018-11-03T19:13:59.2128573+07:00 0HLI1GMMFVI0P:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:44383/admin/role/GetAllPaging?keyword=&page=1&pageSize=10   (ca22a1cb)
+2018-11-03T19:13:59.2270095+07:00 0HLI1GMMFVI0P:00000005 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-11-03T19:13:59.2384691+07:00 0HLI1GMMFVI0P:00000005 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-11-03T19:13:59.3150489+07:00 0HLI1GMMFVI0P:00000005 [INF] Executing action method "NetCoreApp.Areas.Admin.Controllers.RoleController.GetAllPaging (NetCoreApp)" with arguments (["", "1", "10"]) - ModelState is Valid (ba7f4ac2)
+2018-11-03T19:13:59.3512350+07:00 0HLI1GMMFVI0P:00000005 [INF] Entity Framework Core "2.0.0-rtm-26452" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=NetCoreApp.Data.EF " (9958f5bb)
+2018-11-03T19:13:59.5878254+07:00 0HLI1GMMFVI0P:00000005 [INF] Executed DbCommand ("149"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [AppRoles] AS [a]" (0723d8ff)
+2018-11-03T19:13:59.7305812+07:00 0HLI1GMMFVI0P:00000005 [INF] Executed DbCommand ("118"ms) [Parameters=["@__p_0='?', @__p_1='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[Description]
+FROM [AppRoles] AS [dto]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY" (0723d8ff)
+2018-11-03T19:13:59.7529324+07:00 0HLI1GMMFVI0P:00000005 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-11-03T19:13:59.7930612+07:00 0HLI1GMMFVI0P:00000005 [INF] Executed action "NetCoreApp.Areas.Admin.Controllers.RoleController.GetAllPaging (NetCoreApp)" in 525.7871ms (afa2e885)
+2018-11-03T19:13:59.8752557+07:00 0HLI1GMMFVI0P:00000005 [INF] Request finished in 634.3158ms 200 application/json; charset=utf-8 (791a596a)
+2018-11-03T19:13:59.9586415+07:00 0HLI1GMMFVI19:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44383/admin/role/GetAllPaging?keyword=&page=1&pageSize=10   (ca22a1cb)
+2018-11-03T19:14:00.0938897+07:00 0HLI1GMMFVI19:00000002 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-11-03T19:14:00.1091792+07:00 0HLI1GMMFVI19:00000002 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-11-03T19:14:00.1762367+07:00 0HLI1GMMFVI19:00000002 [INF] Executing action method "NetCoreApp.Areas.Admin.Controllers.RoleController.GetAllPaging (NetCoreApp)" with arguments (["", "1", "10"]) - ModelState is Valid (ba7f4ac2)
+2018-11-03T19:14:00.1913851+07:00 0HLI1GMMFVI19:00000002 [INF] Entity Framework Core "2.0.0-rtm-26452" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=NetCoreApp.Data.EF " (9958f5bb)
+2018-11-03T19:14:00.2764155+07:00 0HLI1GMMFVI19:00000002 [INF] Executed DbCommand ("67"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [AppRoles] AS [a]" (0723d8ff)
+2018-11-03T19:14:00.3591417+07:00 0HLI1GMMFVI19:00000002 [INF] Executed DbCommand ("71"ms) [Parameters=["@__p_0='?', @__p_1='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[Description]
+FROM [AppRoles] AS [dto]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY" (0723d8ff)
+2018-11-03T19:14:00.3708725+07:00 0HLI1GMMFVI19:00000002 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-11-03T19:14:00.3817780+07:00 0HLI1GMMFVI19:00000002 [INF] Executed action "NetCoreApp.Areas.Admin.Controllers.RoleController.GetAllPaging (NetCoreApp)" in 276.7301ms (afa2e885)
+2018-11-03T19:14:00.4060276+07:00 0HLI1GMMFVI19:00000002 [INF] Request finished in 531.197ms 200 application/json; charset=utf-8 (791a596a)
+2018-11-03T19:14:27.7177154+07:00 0HLI1GMMFVI0S:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44383/admin/role/index   (ca22a1cb)
+2018-11-03T19:14:27.7249281+07:00 0HLI1GMMFVI0S:00000004 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-11-03T19:14:27.7311164+07:00 0HLI1GMMFVI0S:00000004 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-11-03T19:14:27.7715772+07:00 0HLI1GMMFVI0S:00000004 [INF] Executing action method "NetCoreApp.Areas.Admin.Controllers.RoleController.Index (NetCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-11-03T19:14:28.0604423+07:00 0HLI1GMMFVI0S:00000004 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Role/Index.cshtml". (9707eebe)
+2018-11-03T19:14:28.0804058+07:00 0HLI1GMMFVI0S:00000004 [INF] Entity Framework Core "2.0.0-rtm-26452" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=NetCoreApp.Data.EF " (9958f5bb)
+2018-11-03T19:14:28.2224763+07:00 0HLI1GMMFVI0S:00000004 [INF] Executed DbCommand ("122"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[Url], [dto].[ParentId], [dto].[IconCss], [dto].[SortOrder], [dto].[Status]
+FROM [Functions] AS [dto]" (0723d8ff)
+2018-11-03T19:14:28.2580056+07:00 0HLI1GMMFVI0S:00000004 [INF] Executed action "NetCoreApp.Areas.Admin.Controllers.RoleController.Index (NetCoreApp)" in 514.9759ms (afa2e885)
+2018-11-03T19:14:28.6045027+07:00 0HLI1GMMFVI13:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44383/vendor/nprogress/nprogress.css   (ca22a1cb)
+2018-11-03T19:14:28.6145453+07:00 0HLI1GMMFVI0T:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44383/vendor/font-awesome/css/font-awesome.css   (ca22a1cb)
+2018-11-03T19:14:28.6302843+07:00 0HLI1GMMFVI0V:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44383/vendor/bootstrap/css/bootstrap.css   (ca22a1cb)
+2018-11-03T19:14:28.6358900+07:00 0HLI1GMMFVI0S:00000004 [INF] Request finished in 561.6061ms 200 text/html; charset=utf-8 (791a596a)
+2018-11-03T19:14:28.6622628+07:00 0HLI1GMMFVI13:00000003 [INF] Sending file. Request path: '"/vendor/nprogress/nprogress.css"'. Physical path: '"D:\NetCore\NetCoreApp\NetCoreApp\wwwroot\vendor\nprogress\nprogress.css"' (27b0a520)
+2018-11-03T19:14:28.6684334+07:00 0HLI1GMMFVI0T:00000004 [INF] Sending file. Request path: '"/vendor/font-awesome/css/font-awesome.css"'. Physical path: '"D:\NetCore\NetCoreApp\NetCoreApp\wwwroot\vendor\font-awesome\css\font-awesome.css"' (27b0a520)
+2018-11-03T19:14:28.6763969+07:00 0HLI1GMMFVI0V:00000004 [INF] Sending file. Request path: '"/vendor/bootstrap/css/bootstrap.css"'. Physical path: '"D:\NetCore\NetCoreApp\NetCoreApp\wwwroot\vendor\bootstrap\css\bootstrap.css"' (27b0a520)
+2018-11-03T19:14:28.6925666+07:00 0HLI1GMMFVI0Q:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:44383/vendor/ckeditor/skins/moono/editor.css   (ca22a1cb)
+2018-11-03T19:14:28.7035134+07:00 0HLI1GMMFVI0Q:00000005 [INF] Sending file. Request path: '"/vendor/ckeditor/skins/moono/editor.css"'. Physical path: '"D:\NetCore\NetCoreApp\NetCoreApp\wwwroot\vendor\ckeditor\skins\moono\editor.css"' (27b0a520)
+2018-11-03T19:14:28.9713683+07:00 0HLI1GMMFVI13:00000003 [INF] Request finished in 213.1819ms 200 text/css (791a596a)
+2018-11-03T19:14:29.0488402+07:00 0HLI1GMMFVI0T:00000004 [INF] Request finished in 446.0861ms 200 text/css (791a596a)
+2018-11-03T19:14:29.1015508+07:00 0HLI1GMMFVI12:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44383/admin-side/css/custom.css   (ca22a1cb)
+2018-11-03T19:14:29.1238212+07:00 0HLI1GMMFVI0R:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:44383/lib/jquery/dist/jquery.js   (ca22a1cb)
+2018-11-03T19:14:29.1316414+07:00 0HLI1GMMFVI16:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44383/admin-side/images/img.jpg   (ca22a1cb)
+2018-11-03T19:14:29.7603586+07:00 0HLI1GMMFVI16:00000003 [INF] Sending file. Request path: '"/admin-side/images/img.jpg"'. Physical path: '"D:\NetCore\NetCoreApp\NetCoreApp\wwwroot\admin-side\images\img.jpg"' (27b0a520)
+2018-11-03T19:14:29.7738473+07:00 0HLI1GMMFVI0Q:00000005 [INF] Request finished in 208.6732ms 200 text/css (791a596a)
+2018-11-03T19:14:29.7959764+07:00 0HLI1GMMFVI0R:00000005 [INF] Sending file. Request path: '"/lib/jquery/dist/jquery.js"'. Physical path: '"D:\NetCore\NetCoreApp\NetCoreApp\wwwroot\lib\jquery\dist\jquery.js"' (27b0a520)
+2018-11-03T19:14:29.8360885+07:00 0HLI1GMMFVI12:00000003 [INF] Sending file. Request path: '"/admin-side/css/custom.css"'. Physical path: '"D:\NetCore\NetCoreApp\NetCoreApp\wwwroot\admin-side\css\custom.css"' (27b0a520)
+2018-11-03T19:14:30.1403544+07:00 0HLI1GMMFVI17:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44383/vendor/bootstrap-daterangepicker/daterangepicker.css   (ca22a1cb)
+2018-11-03T19:14:30.9394185+07:00 0HLI1GMMFVI16:00000003 [INF] Request finished in 759.2736ms 200 image/jpeg (791a596a)
+2018-11-03T19:14:30.9595537+07:00 0HLI1GMMFVI17:00000003 [INF] Sending file. Request path: '"/vendor/bootstrap-daterangepicker/daterangepicker.css"'. Physical path: '"D:\NetCore\NetCoreApp\NetCoreApp\wwwroot\vendor\bootstrap-daterangepicker\daterangepicker.css"' (27b0a520)
+2018-11-03T19:14:30.9652179+07:00 0HLI1GMMFVI18:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44383/lib/bootstrap/dist/js/bootstrap.js   (ca22a1cb)
+2018-11-03T19:14:30.9798611+07:00 0HLI1GMMFVI0T:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:44383/vendor/flot/jquery.flot.time.js   (ca22a1cb)
+2018-11-03T19:14:31.0789007+07:00 0HLI1GMMFVI13:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44383/vendor/flot/jquery.flot.pie.js   (ca22a1cb)
+2018-11-03T19:14:31.0930841+07:00 0HLI1GMMFVI0S:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:44383/vendor/jquery-sparkline/jquery.sparkline.js   (ca22a1cb)
+2018-11-03T19:14:31.2504696+07:00 0HLI1GMMFVI1N:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44383/vendor/flot-spline/jquery.flot.spline.js   (ca22a1cb)
+2018-11-03T19:14:31.2561073+07:00 0HLI1GMMFVI18:00000003 [INF] Sending file. Request path: '"/lib/bootstrap/dist/js/bootstrap.js"'. Physical path: '"D:\NetCore\NetCoreApp\NetCoreApp\wwwroot\lib\bootstrap\dist\js\bootstrap.js"' (27b0a520)
+2018-11-03T19:14:31.2665608+07:00 0HLI1GMMFVI0T:00000005 [INF] Sending file. Request path: '"/vendor/flot/jquery.flot.time.js"'. Physical path: '"D:\NetCore\NetCoreApp\NetCoreApp\wwwroot\vendor\flot\jquery.flot.time.js"' (27b0a520)
+2018-11-03T19:14:31.2726125+07:00 0HLI1GMMFVI1G:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44383/vendor/flot/jquery.flot.js   (ca22a1cb)
+2018-11-03T19:14:31.2943871+07:00 0HLI1GMMFVI0P:00000006 [INF] Request starting HTTP/1.1 GET http://localhost:44383/vendor/nprogress/nprogress.js   (ca22a1cb)
+2018-11-03T19:14:31.3187859+07:00 0HLI1GMMFVI1N:00000001 [INF] Sending file. Request path: '"/vendor/flot-spline/jquery.flot.spline.js"'. Physical path: '"D:\NetCore\NetCoreApp\NetCoreApp\wwwroot\vendor\flot-spline\jquery.flot.spline.js"' (27b0a520)
+2018-11-03T19:14:31.3641754+07:00 0HLI1GMMFVI13:00000004 [INF] Sending file. Request path: '"/vendor/flot/jquery.flot.pie.js"'. Physical path: '"D:\NetCore\NetCoreApp\NetCoreApp\wwwroot\vendor\flot\jquery.flot.pie.js"' (27b0a520)
+2018-11-03T19:14:31.4337209+07:00 0HLI1GMMFVI0Q:00000006 [INF] Request starting HTTP/1.1 GET http://localhost:44383/vendor/chart.js/Chart.js   (ca22a1cb)
+2018-11-03T19:14:31.4502999+07:00 0HLI1GMMFVI1G:00000001 [INF] Sending file. Request path: '"/vendor/flot/jquery.flot.js"'. Physical path: '"D:\NetCore\NetCoreApp\NetCoreApp\wwwroot\vendor\flot\jquery.flot.js"' (27b0a520)
+2018-11-03T19:14:31.5343714+07:00 0HLI1GMMFVI0T:00000005 [INF] Request finished in 1303.3063ms 200 application/javascript (791a596a)
+2018-11-03T19:14:31.5447017+07:00 0HLI1GMMFVI1N:00000001 [INF] Request finished in 392.7269ms 200 application/javascript (791a596a)
+2018-11-03T19:14:31.5546689+07:00 0HLI1GMMFVI0S:00000005 [INF] Sending file. Request path: '"/vendor/jquery-sparkline/jquery.sparkline.js"'. Physical path: '"D:\NetCore\NetCoreApp\NetCoreApp\wwwroot\vendor\jquery-sparkline\jquery.sparkline.js"' (27b0a520)
+2018-11-03T19:14:31.5655226+07:00 0HLI1GMMFVI1H:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44383/vendor/flot/jquery.flot.resize.js   (ca22a1cb)
+2018-11-03T19:14:31.5951817+07:00 0HLI1GMMFVI1I:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44383/vendor/flot.curvedlines/curvedLines.js   (ca22a1cb)
+2018-11-03T19:14:31.8026304+07:00 0HLI1GMMFVI1H:00000001 [INF] Sending file. Request path: '"/vendor/flot/jquery.flot.resize.js"'. Physical path: '"D:\NetCore\NetCoreApp\NetCoreApp\wwwroot\vendor\flot\jquery.flot.resize.js"' (27b0a520)
+2018-11-03T19:14:32.0020680+07:00 0HLI1GMMFVI0P:00000006 [INF] Sending file. Request path: '"/vendor/nprogress/nprogress.js"'. Physical path: '"D:\NetCore\NetCoreApp\NetCoreApp\wwwroot\vendor\nprogress\nprogress.js"' (27b0a520)
+2018-11-03T19:14:32.1317365+07:00 0HLI1GMMFVI1J:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44383/vendor/datejs/date.js   (ca22a1cb)
+2018-11-03T19:14:32.2094539+07:00 0HLI1GMMFVI1L:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44383/vendor/bootstrap-daterangepicker/moment.min.js   (ca22a1cb)
+2018-11-03T19:14:32.2350567+07:00 0HLI1GMMFVI0Q:00000006 [INF] Sending file. Request path: '"/vendor/chart.js/Chart.js"'. Physical path: '"D:\NetCore\NetCoreApp\NetCoreApp\wwwroot\vendor\chart.js\Chart.js"' (27b0a520)
+2018-11-03T19:14:32.2975178+07:00 0HLI1GMMFVI1M:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44383/vendor/jquery-validation/localization/messages_vi.js   (ca22a1cb)
+2018-11-03T19:14:32.3317317+07:00 0HLI1GMMFVI1I:00000001 [INF] Sending file. Request path: '"/vendor/flot.curvedlines/curvedLines.js"'. Physical path: '"D:\NetCore\NetCoreApp\NetCoreApp\wwwroot\vendor\flot.curvedlines\curvedLines.js"' (27b0a520)
+2018-11-03T19:14:32.4016093+07:00 0HLI1GMMFVI1L:00000001 [INF] Sending file. Request path: '"/vendor/bootstrap-daterangepicker/moment.min.js"'. Physical path: '"D:\NetCore\NetCoreApp\NetCoreApp\wwwroot\vendor\bootstrap-daterangepicker\moment.min.js"' (27b0a520)
+2018-11-03T19:14:32.4253946+07:00 0HLI1GMMFVI1J:00000001 [INF] Sending file. Request path: '"/vendor/datejs/date.js"'. Physical path: '"D:\NetCore\NetCoreApp\NetCoreApp\wwwroot\vendor\datejs\date.js"' (27b0a520)
+2018-11-03T19:14:32.4944846+07:00 0HLI1GMMFVI1O:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44383/vendor/flot/jquery.flot.stack.js   (ca22a1cb)
+2018-11-03T19:14:32.5306138+07:00 0HLI1GMMFVI1K:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44383/vendor/mustache/mustache.js   (ca22a1cb)
+2018-11-03T19:14:32.5532897+07:00 0HLI1GMMFVI1M:00000001 [INF] Sending file. Request path: '"/vendor/jquery-validation/localization/messages_vi.js"'. Physical path: '"D:\NetCore\NetCoreApp\NetCoreApp\wwwroot\vendor\jquery-validation\localization\messages_vi.js"' (27b0a520)
+2018-11-03T19:14:32.5705626+07:00 0HLI1GMMFVI1T:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44383/vendor/bootstrap-daterangepicker/daterangepicker.js   (ca22a1cb)
+2018-11-03T19:14:32.5795596+07:00 0HLI1GMMFVI1S:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44383/vendor/flot-orderbars/jquery.flot.orderBars.js   (ca22a1cb)
+2018-11-03T19:14:32.5897410+07:00 0HLI1GMMFVI1O:00000001 [INF] Sending file. Request path: '"/vendor/flot/jquery.flot.stack.js"'. Physical path: '"D:\NetCore\NetCoreApp\NetCoreApp\wwwroot\vendor\flot\jquery.flot.stack.js"' (27b0a520)
+2018-11-03T19:14:32.5971656+07:00 0HLI1GMMFVI1I:00000001 [INF] Request finished in 1011.8757ms 200 application/javascript (791a596a)
+2018-11-03T19:14:32.6126856+07:00 0HLI1GMMFVI0P:00000006 [INF] Request finished in 1389.5631ms 200 application/javascript (791a596a)
+2018-11-03T19:14:32.6462780+07:00 0HLI1GMMFVI1T:00000001 [INF] Sending file. Request path: '"/vendor/bootstrap-daterangepicker/daterangepicker.js"'. Physical path: '"D:\NetCore\NetCoreApp\NetCoreApp\wwwroot\vendor\bootstrap-daterangepicker\daterangepicker.js"' (27b0a520)
+2018-11-03T19:14:32.6618744+07:00 0HLI1GMMFVI19:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44383/vendor/fastclick/fastclick.js   (ca22a1cb)
+2018-11-03T19:14:32.6870216+07:00 0HLI1GMMFVI1S:00000001 [INF] Sending file. Request path: '"/vendor/flot-orderbars/jquery.flot.orderBars.js"'. Physical path: '"D:\NetCore\NetCoreApp\NetCoreApp\wwwroot\vendor\flot-orderbars\jquery.flot.orderBars.js"' (27b0a520)
+2018-11-03T19:14:32.7120213+07:00 0HLI1GMMFVI1V:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44383/lib/jquery-validation/dist/additional-methods.js   (ca22a1cb)
+2018-11-03T19:14:32.8108134+07:00 0HLI1GMMFVI1K:00000001 [INF] Sending file. Request path: '"/vendor/mustache/mustache.js"'. Physical path: '"D:\NetCore\NetCoreApp\NetCoreApp\wwwroot\vendor\mustache\mustache.js"' (27b0a520)
+2018-11-03T19:14:32.8221732+07:00 0HLI1GMMFVI21:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44383/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js   (ca22a1cb)
+2018-11-03T19:14:32.8560386+07:00 0HLI1GMMFVI20:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44383/lib/jquery-validation/dist/jquery.validate.js   (ca22a1cb)
+2018-11-03T19:14:32.8667574+07:00 0HLI1GMMFVI1P:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44383/vendor/notifyjs/notify.js   (ca22a1cb)
+2018-11-03T19:14:32.9023841+07:00 0HLI1GMMFVI1Q:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44383/vendor/twbs-pagination/jquery.twbsPagination.js   (ca22a1cb)
+2018-11-03T19:14:32.9124160+07:00 0HLI1GMMFVI1V:00000001 [INF] Sending file. Request path: '"/lib/jquery-validation/dist/additional-methods.js"'. Physical path: '"D:\NetCore\NetCoreApp\NetCoreApp\wwwroot\lib\jquery-validation\dist\additional-methods.js"' (27b0a520)
+2018-11-03T19:14:32.9251301+07:00 0HLI1GMMFVI21:00000001 [INF] Sending file. Request path: '"/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"'. Physical path: '"D:\NetCore\NetCoreApp\NetCoreApp\wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.js"' (27b0a520)
+2018-11-03T19:14:33.1970777+07:00 0HLI1GMMFVI20:00000001 [INF] Sending file. Request path: '"/lib/jquery-validation/dist/jquery.validate.js"'. Physical path: '"D:\NetCore\NetCoreApp\NetCoreApp\wwwroot\lib\jquery-validation\dist\jquery.validate.js"' (27b0a520)
+2018-11-03T19:14:33.2919121+07:00 0HLI1GMMFVI1R:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44383/vendor/ckeditor/ckeditor.js   (ca22a1cb)
+2018-11-03T19:14:33.3194456+07:00 0HLI1GMMFVI1U:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44383/app/Shared/app.js   (ca22a1cb)
+2018-11-03T19:14:33.3407736+07:00 0HLI1GMMFVI21:00000001 [INF] Request finished in 539.7565ms 200 application/javascript (791a596a)
+2018-11-03T19:14:33.3464441+07:00 0HLI1GMMFVI1V:00000001 [INF] Request finished in 599.6431ms 200 application/javascript (791a596a)
+2018-11-03T19:14:33.3563836+07:00 0HLI1GMMFVI20:00000001 [INF] Request finished in 609.9257ms 200 application/javascript (791a596a)
+2018-11-03T19:14:33.3624468+07:00 0HLI1GMMFVI1P:00000001 [INF] Sending file. Request path: '"/vendor/notifyjs/notify.js"'. Physical path: '"D:\NetCore\NetCoreApp\NetCoreApp\wwwroot\vendor\notifyjs\notify.js"' (27b0a520)
+2018-11-03T19:14:33.3695679+07:00 0HLI1GMMFVI1R:00000001 [INF] Sending file. Request path: '"/vendor/ckeditor/ckeditor.js"'. Physical path: '"D:\NetCore\NetCoreApp\NetCoreApp\wwwroot\vendor\ckeditor\ckeditor.js"' (27b0a520)
+2018-11-03T19:14:33.3904788+07:00 0HLI1GMMFVI1U:00000001 [INF] Sending file. Request path: '"/app/Shared/app.js"'. Physical path: '"D:\NetCore\NetCoreApp\NetCoreApp\wwwroot\app\Shared\app.js"' (27b0a520)
+2018-11-03T19:14:33.4385315+07:00 0HLI1GMMFVI1K:00000001 [INF] Request finished in 1317.3191ms 200 application/javascript (791a596a)
+2018-11-03T19:14:33.7009480+07:00 0HLI1GMMFVI1Q:00000001 [INF] Sending file. Request path: '"/vendor/twbs-pagination/jquery.twbsPagination.js"'. Physical path: '"D:\NetCore\NetCoreApp\NetCoreApp\wwwroot\vendor\twbs-pagination\jquery.twbsPagination.js"' (27b0a520)
+2018-11-03T19:14:33.8103737+07:00 0HLI1GMMFVI23:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44383/admin-side/js/custom.js   (ca22a1cb)
+2018-11-03T19:14:33.8222983+07:00 0HLI1GMMFVI22:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44383/vendor/bootbox/bootbox.js   (ca22a1cb)
+2018-11-03T19:14:33.8450392+07:00 0HLI1GMMFVI1U:00000001 [INF] Request finished in 513.1554ms 200 application/javascript (791a596a)
+2018-11-03T19:14:33.8510392+07:00 0HLI1GMMFVI13:00000004 [INF] Request finished in 3465.0075ms 200 application/javascript (791a596a)
+2018-11-03T19:14:33.8805954+07:00 0HLI1GMMFVI24:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44383/app/controllers/role/index.js   (ca22a1cb)
+2018-11-03T19:14:34.0500859+07:00 0HLI1GMMFVI23:00000001 [INF] Sending file. Request path: '"/admin-side/js/custom.js"'. Physical path: '"D:\NetCore\NetCoreApp\NetCoreApp\wwwroot\admin-side\js\custom.js"' (27b0a520)
+2018-11-03T19:14:34.0761032+07:00 0HLI1GMMFVI22:00000001 [INF] Sending file. Request path: '"/vendor/bootbox/bootbox.js"'. Physical path: '"D:\NetCore\NetCoreApp\NetCoreApp\wwwroot\vendor\bootbox\bootbox.js"' (27b0a520)
+2018-11-03T19:14:34.1456550+07:00 0HLI1GMMFVI24:00000001 [INF] Sending file. Request path: '"/app/controllers/role/index.js"'. Physical path: '"D:\NetCore\NetCoreApp\NetCoreApp\wwwroot\app\controllers\role\index.js"' (27b0a520)
+2018-11-03T19:14:34.1646183+07:00 0HLI1GMMFVI17:00000003 [INF] Request finished in 3705.0534ms 200 text/css (791a596a)
+2018-11-03T19:14:34.2294257+07:00 0HLI1GMMFVI19:00000003 [INF] Sending file. Request path: '"/vendor/fastclick/fastclick.js"'. Physical path: '"D:\NetCore\NetCoreApp\NetCoreApp\wwwroot\vendor\fastclick\fastclick.js"' (27b0a520)
+2018-11-03T19:14:34.2759193+07:00 0HLI1GMMFVI1G:00000001 [INF] Request finished in 2903.0394ms 200 application/javascript (791a596a)
+2018-11-03T19:14:34.3201209+07:00 0HLI1GMMFVI1J:00000001 [INF] Request finished in 2433.2247ms 200 application/javascript (791a596a)
+2018-11-03T19:14:34.4560110+07:00 0HLI1GMMFVI1L:00000001 [INF] Request finished in 2602.7371ms 200 application/javascript (791a596a)
+2018-11-03T19:14:34.4867623+07:00 0HLI1GMMFVI22:00000001 [INF] Request finished in 750.2692ms 200 application/javascript (791a596a)
+2018-11-03T19:14:34.4948134+07:00 0HLI1GMMFVI24:00000001 [INF] Request finished in 822.2241ms 200 application/javascript (791a596a)
+2018-11-03T19:14:34.5019846+07:00 0HLI1GMMFVI18:00000003 [INF] Request finished in 3799.439ms 200 application/javascript (791a596a)
+2018-11-03T19:14:34.5903540+07:00 0HLI1GMMFVI1M:00000001 [INF] Request finished in 2722.9197ms 200 application/javascript (791a596a)
+2018-11-03T19:14:34.6519029+07:00 0HLI1GMMFVI1H:00000001 [INF] Request finished in 3058.3803ms 200 application/javascript (791a596a)
+2018-11-03T19:14:34.7588614+07:00 0HLI1GMMFVI1Q:00000001 [INF] Request finished in 1344.6224ms 200 application/javascript (791a596a)
+2018-11-03T19:14:34.8471531+07:00 0HLI1GMMFVI1O:00000001 [INF] Request finished in 2592.1482ms 200 application/javascript (791a596a)
+2018-11-03T19:14:34.9820499+07:00 0HLI1GMMFVI1T:00000001 [INF] Request finished in 2044.6141ms 200 application/javascript (791a596a)
+2018-11-03T19:14:34.9988627+07:00 0HLI1GMMFVI1P:00000001 [INF] Request finished in 2117.7016ms 200 application/javascript (791a596a)
+2018-11-03T19:14:35.0707585+07:00 0HLI1GMMFVI1S:00000001 [INF] Request finished in 2085.0445ms 200 application/javascript (791a596a)
+2018-11-03T19:14:35.6240296+07:00 0HLI1GMMFVI0V:00000004 [INF] Request finished in 6364.0049ms 200 text/css (791a596a)
+2018-11-03T19:14:35.8047747+07:00 0HLI1GMMFVI12:00000003 [INF] Request finished in 6022.823ms 200 text/css (791a596a)
+2018-11-03T19:14:35.9354976+07:00 0HLI1GMMFVI0S:00000005 [INF] Request finished in 5510.2904ms 200 application/javascript (791a596a)
+2018-11-03T19:14:35.9568257+07:00 0HLI1GMMFVI23:00000001 [INF] Request finished in 2389.9084ms 200 application/javascript (791a596a)
+2018-11-03T19:14:36.0426393+07:00 0HLI1GMMFVI19:00000003 [INF] Request finished in 3525.8139ms 200 application/javascript (791a596a)
+2018-11-03T19:14:36.1562490+07:00 0HLI1GMMFVI1N:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44383/vendor/bootstrap/fonts/glyphicons-halflings-regular.woff2   (ca22a1cb)
+2018-11-03T19:14:36.3768505+07:00 0HLI1GMMFVI0R:00000005 [INF] Request finished in 6927.5496ms 200 application/javascript (791a596a)
+2018-11-03T19:14:36.4717607+07:00 0HLI1GMMFVI16:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44383/vendor/font-awesome/fonts/fontawesome-webfont.woff2?v=4.7.0   (ca22a1cb)
+2018-11-03T19:14:36.5856045+07:00 0HLI1GMMFVI0Q:00000006 [INF] Request finished in 5219.8904ms 200 application/javascript (791a596a)
+2018-11-03T19:14:37.2632019+07:00 0HLI1GMMFVI1N:00000002 [INF] Sending file. Request path: '"/vendor/bootstrap/fonts/glyphicons-halflings-regular.woff2"'. Physical path: '"D:\NetCore\NetCoreApp\NetCoreApp\wwwroot\vendor\bootstrap\fonts\glyphicons-halflings-regular.woff2"' (27b0a520)
+2018-11-03T19:14:37.5741638+07:00 0HLI1GMMFVI1R:00000001 [INF] Request finished in 4216.3686ms 200 application/javascript (791a596a)
+2018-11-03T19:14:37.7238943+07:00 0HLI1GMMFVI0T:00000006 [INF] Request starting HTTP/1.1 GET http://localhost:44383/admin/role/GetAllPaging?keyword=&page=1&pageSize=10   (ca22a1cb)
+2018-11-03T19:14:38.7505999+07:00 0HLI1GMMFVI1N:00000002 [INF] Request finished in 2177.2342ms 200 font/woff2 (791a596a)
+2018-11-03T19:14:38.7544411+07:00 0HLI1GMMFVI0T:00000006 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-11-03T19:14:38.9491725+07:00 0HLI1GMMFVI0T:00000006 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-11-03T19:14:39.0214887+07:00 0HLI1GMMFVI16:00000004 [INF] Sending file. Request path: '"/vendor/font-awesome/fonts/fontawesome-webfont.woff2"'. Physical path: '"D:\NetCore\NetCoreApp\NetCoreApp\wwwroot\vendor\font-awesome\fonts\fontawesome-webfont.woff2"' (27b0a520)
+2018-11-03T19:14:39.3939205+07:00 0HLI1GMMFVI0T:00000006 [INF] Executing action method "NetCoreApp.Areas.Admin.Controllers.RoleController.GetAllPaging (NetCoreApp)" with arguments (["", "1", "10"]) - ModelState is Valid (ba7f4ac2)
+2018-11-03T19:14:39.5732497+07:00 0HLI1GMMFVI0T:00000006 [INF] Entity Framework Core "2.0.0-rtm-26452" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=NetCoreApp.Data.EF " (9958f5bb)
+2018-11-03T19:14:39.6422421+07:00 0HLI1GMMFVI0P:00000007 [INF] Request starting HTTP/1.1 GET http://localhost:44383/favicon.ico   (ca22a1cb)
+2018-11-03T19:14:39.6658613+07:00 0HLI1GMMFVI0P:00000007 [INF] Sending file. Request path: '"/favicon.ico"'. Physical path: '"D:\NetCore\NetCoreApp\NetCoreApp\wwwroot\favicon.ico"' (27b0a520)
+2018-11-03T19:14:39.7565301+07:00 0HLI1GMMFVI0T:00000006 [INF] Executed DbCommand ("71"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [AppRoles] AS [a]" (0723d8ff)
+2018-11-03T19:14:40.0340730+07:00 0HLI1GMMFVI0P:00000007 [INF] Request finished in 385.9808ms 200 image/x-icon (791a596a)
+2018-11-03T19:14:40.0799859+07:00 0HLI1GMMFVI16:00000004 [INF] Request finished in 4087.7804ms 200 font/woff2 (791a596a)
+2018-11-03T19:14:40.3665047+07:00 0HLI1GMMFVI0T:00000006 [INF] Executed DbCommand ("222"ms) [Parameters=["@__p_0='?', @__p_1='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[Description]
+FROM [AppRoles] AS [dto]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY" (0723d8ff)
+2018-11-03T19:14:40.4112721+07:00 0HLI1GMMFVI0T:00000006 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-11-03T19:14:40.4322434+07:00 0HLI1GMMFVI0T:00000006 [INF] Executed action "NetCoreApp.Areas.Admin.Controllers.RoleController.GetAllPaging (NetCoreApp)" in 1656.8889ms (afa2e885)
+2018-11-03T19:14:40.5777792+07:00 0HLI1GMMFVI0T:00000006 [INF] Request finished in 2862.1725ms 200 application/json; charset=utf-8 (791a596a)
+2018-11-03T19:14:40.7487750+07:00 0HLI1GMMFVI1I:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44383/admin/role/GetAllPaging?keyword=&page=1&pageSize=10   (ca22a1cb)
+2018-11-03T19:14:40.7980728+07:00 0HLI1GMMFVI1I:00000002 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-11-03T19:14:40.8209949+07:00 0HLI1GMMFVI1I:00000002 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-11-03T19:14:40.9461046+07:00 0HLI1GMMFVI1I:00000002 [INF] Executing action method "NetCoreApp.Areas.Admin.Controllers.RoleController.GetAllPaging (NetCoreApp)" with arguments (["", "1", "10"]) - ModelState is Valid (ba7f4ac2)
+2018-11-03T19:14:41.0215776+07:00 0HLI1GMMFVI1I:00000002 [INF] Entity Framework Core "2.0.0-rtm-26452" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=NetCoreApp.Data.EF " (9958f5bb)
+2018-11-03T19:14:41.1387162+07:00 0HLI1GMMFVI1I:00000002 [INF] Executed DbCommand ("107"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [AppRoles] AS [a]" (0723d8ff)
+2018-11-03T19:14:41.2062537+07:00 0HLI1GMMFVI1I:00000002 [INF] Executed DbCommand ("55"ms) [Parameters=["@__p_0='?', @__p_1='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[Description]
+FROM [AppRoles] AS [dto]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY" (0723d8ff)
+2018-11-03T19:14:41.2144351+07:00 0HLI1GMMFVI1I:00000002 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-11-03T19:14:41.2248246+07:00 0HLI1GMMFVI1I:00000002 [INF] Executed action "NetCoreApp.Areas.Admin.Controllers.RoleController.GetAllPaging (NetCoreApp)" in 416.365ms (afa2e885)
+2018-11-03T19:14:41.2588168+07:00 0HLI1GMMFVI1I:00000002 [INF] Request finished in 731.9509ms 200 application/json; charset=utf-8 (791a596a)
+2018-11-03T19:14:44.4782664+07:00 0HLI1GMMFVI1T:00000002 [INF] Request starting HTTP/1.1 POST http://localhost:44383/Admin/Role/Delete application/x-www-form-urlencoded; charset=UTF-8 39 (ca22a1cb)
+2018-11-03T19:14:44.4888639+07:00 0HLI1GMMFVI1T:00000002 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-11-03T19:14:44.5184532+07:00 0HLI1GMMFVI1T:00000002 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-11-03T19:14:44.5820570+07:00 0HLI1GMMFVI1T:00000002 [INF] Executing action method "NetCoreApp.Areas.Admin.Controllers.RoleController.Delete (NetCoreApp)" with arguments (["6d1f77b3-2518-455a-2761-08d64185d063"]) - ModelState is Valid (ba7f4ac2)
+2018-11-03T19:14:44.6045323+07:00 0HLI1GMMFVI1T:00000002 [INF] Entity Framework Core "2.0.0-rtm-26452" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=NetCoreApp.Data.EF " (9958f5bb)
+2018-11-03T19:14:44.7144931+07:00 0HLI1GMMFVI1T:00000002 [INF] Executed DbCommand ("94"ms) [Parameters=["@__roleId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[ConcurrencyStamp], [u].[Description], [u].[Name], [u].[NormalizedName]
+FROM [AppRoles] AS [u]
+WHERE [u].[Id] = @__roleId_0" (0723d8ff)
+2018-11-03T19:14:45.4352276+07:00 0HLI1GMMFVI1T:00000002 [INF] Executed DbCommand ("684"ms) [Parameters=["@p0='?'"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+DELETE FROM [AppRoles]
+WHERE [Id] = @p0;
+SELECT @@ROWCOUNT;" (0723d8ff)
+2018-11-03T19:14:45.4504622+07:00 0HLI1GMMFVI1T:00000002 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-11-03T19:14:45.4664538+07:00 0HLI1GMMFVI1T:00000002 [INF] Executed action "NetCoreApp.Areas.Admin.Controllers.RoleController.Delete (NetCoreApp)" in 947.8932ms (afa2e885)
+2018-11-03T19:14:45.5117083+07:00 0HLI1GMMFVI1T:00000002 [INF] Request finished in 1010.1408ms 200 application/json; charset=utf-8 (791a596a)
+2018-11-03T19:14:45.5419350+07:00 0HLI1GMMFVI1K:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44383/admin/role/GetAllPaging?keyword=&page=1&pageSize=10   (ca22a1cb)
+2018-11-03T19:14:45.5621787+07:00 0HLI1GMMFVI1K:00000002 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-11-03T19:14:45.5768777+07:00 0HLI1GMMFVI1K:00000002 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-11-03T19:14:45.6541534+07:00 0HLI1GMMFVI1K:00000002 [INF] Executing action method "NetCoreApp.Areas.Admin.Controllers.RoleController.GetAllPaging (NetCoreApp)" with arguments (["", "1", "10"]) - ModelState is Valid (ba7f4ac2)
+2018-11-03T19:14:45.6719202+07:00 0HLI1GMMFVI1K:00000002 [INF] Entity Framework Core "2.0.0-rtm-26452" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=NetCoreApp.Data.EF " (9958f5bb)
+2018-11-03T19:14:45.9350894+07:00 0HLI1GMMFVI1K:00000002 [INF] Executed DbCommand ("65"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [AppRoles] AS [a]" (0723d8ff)
+2018-11-03T19:14:46.0742306+07:00 0HLI1GMMFVI1K:00000002 [INF] Executed DbCommand ("125"ms) [Parameters=["@__p_0='?', @__p_1='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[Description]
+FROM [AppRoles] AS [dto]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY" (0723d8ff)
+2018-11-03T19:14:46.1362073+07:00 0HLI1GMMFVI1K:00000002 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-11-03T19:14:46.1625242+07:00 0HLI1GMMFVI1K:00000002 [INF] Executed action "NetCoreApp.Areas.Admin.Controllers.RoleController.GetAllPaging (NetCoreApp)" in 574.1177ms (afa2e885)
+2018-11-03T19:14:46.8287898+07:00 0HLI1GMMFVI1K:00000002 [INF] Request finished in 698.2892ms 200 application/json; charset=utf-8 (791a596a)
+2018-11-03T19:14:52.5443587+07:00 0HLI1GMMFVI1V:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44383/admin/role/GetAllPaging?keyword=ad&page=1&pageSize=10   (ca22a1cb)
+2018-11-03T19:14:52.5522116+07:00 0HLI1GMMFVI1V:00000002 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-11-03T19:14:52.5597259+07:00 0HLI1GMMFVI1V:00000002 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-11-03T19:14:52.6101482+07:00 0HLI1GMMFVI1V:00000002 [INF] Executing action method "NetCoreApp.Areas.Admin.Controllers.RoleController.GetAllPaging (NetCoreApp)" with arguments (["ad", "1", "10"]) - ModelState is Valid (ba7f4ac2)
+2018-11-03T19:14:52.6276276+07:00 0HLI1GMMFVI1V:00000002 [INF] Entity Framework Core "2.0.0-rtm-26452" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=NetCoreApp.Data.EF " (9958f5bb)
+2018-11-03T19:14:52.7220749+07:00 0HLI1GMMFVI1V:00000002 [INF] Executed DbCommand ("73"ms) [Parameters=["@__keyword_0='?' (Size = 4000), @__keyword_1='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [AppRoles] AS [x]
+WHERE ((CHARINDEX(@__keyword_0, [x].[Name]) > 0) OR (@__keyword_0 = N'')) OR ((CHARINDEX(@__keyword_1, [x].[Description]) > 0) OR (@__keyword_1 = N''))" (0723d8ff)
+2018-11-03T19:14:52.7391786+07:00 0HLI1GMMFVI1V:00000002 [WRN] Query: '"(from AppRole x in DbSet<AppRole> where bool [x].Name.Contains(__keyword_0) || bool [x].Description...."' uses a row limiting operation (Skip/Take) without OrderBy which may lead to unpredictable results. (32148ccc)
+2018-11-03T19:14:52.8124322+07:00 0HLI1GMMFVI1V:00000002 [INF] Executed DbCommand ("58"ms) [Parameters=["@__keyword_0='?' (Size = 4000), @__keyword_1='?' (Size = 4000), @__p_2='?', @__p_3='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Name], [x].[Description]
+FROM [AppRoles] AS [x]
+WHERE ((CHARINDEX(@__keyword_0, [x].[Name]) > 0) OR (@__keyword_0 = N'')) OR ((CHARINDEX(@__keyword_1, [x].[Description]) > 0) OR (@__keyword_1 = N''))
+ORDER BY (SELECT 1)
+OFFSET @__p_2 ROWS FETCH NEXT @__p_3 ROWS ONLY" (0723d8ff)
+2018-11-03T19:14:52.8196615+07:00 0HLI1GMMFVI1V:00000002 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-11-03T19:14:52.8288368+07:00 0HLI1GMMFVI1V:00000002 [INF] Executed action "NetCoreApp.Areas.Admin.Controllers.RoleController.GetAllPaging (NetCoreApp)" in 267.5496ms (afa2e885)
+2018-11-03T19:14:52.8439766+07:00 0HLI1GMMFVI1V:00000002 [INF] Request finished in 291.8442ms 200 application/json; charset=utf-8 (791a596a)

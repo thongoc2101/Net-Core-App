@@ -6,7 +6,7 @@ namespace NetCoreApp.Application.ViewModels
 {
     public class AppRoleViewModel
     {
-        public string Id { get; set; }
+        public Guid? Id { get; set; }
 
         public string Name { get; set; }
 
