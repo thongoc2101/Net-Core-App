@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Deployment.Application;
+using System.IO;
 using System.Linq;
 using AutoMapper;
 using AutoMapper.QueryableExtensions;
@@ -8,9 +10,11 @@ using NetCoreApp.Application.Interfaces;
 using NetCoreApp.Application.ViewModels;
 using NetCoreApp.Data.EF.Registration;
 using NetCoreApp.Data.Entities;
+using NetCoreApp.Data.Enums;
 using NetCoreApp.Utilities.Constants;
 using NetCoreApp.Utilities.Dtos;
 using NetCoreApp.Utilities.Helpers;
+using OfficeOpenXml;
 
 namespace NetCoreApp.Application.Implementations
 {
@@ -146,6 +150,47 @@ namespace NetCoreApp.Application.Implementations
         public ProductViewModel GetProductById(int id)
         {
             return Mapper.Map<Product, ProductViewModel>(_unitOfWork.ProductRepository.FindById(id));
+        }
+
+        public void ImportExcel(string filePath, int categoryId)
+        {
+            using (var package = new ExcelPackage(new FileInfo(filePath)))
+            {
+                ExcelWorksheet worksheet = package.Workbook.Worksheets[1];
+                Product product;
+                for(int i= worksheet.Dimension.Start.Row + 1; i <= worksheet.Dimension.End.Row; i++)
+                {
+                    product = new Product();
+                    product.CategoryId = categoryId;
+                    product.Name = worksheet.Cells[i, 1].Value.ToString();
+                    product.Description = worksheet.Cells[i, 2].Value.ToString();
+
+                    decimal.TryParse(worksheet.Cells[i, 3].Value.ToString(), out var originalPrice);
+                    product.OriginalPrice = originalPrice;
+
+                    decimal.TryParse(worksheet.Cells[i, 4].Value.ToString(), out var price);
+                    product.Price = price;
+
+                    decimal.TryParse(worksheet.Cells[i, 5].Value.ToString(), out var promotionPrice);
+                    product.PromotionPrice = promotionPrice;
+
+                    product.Content = worksheet.Cells[i, 6].Value.ToString();
+                    product.SeoKeywords = worksheet.Cells[i, 7].Value.ToString();
+                    product.SeoDescription = worksheet.Cells[i, 8].Value.ToString();
+
+                    bool.TryParse(worksheet.Cells[i, 9].Value.ToString(), out var hotFlag);
+                    product.HotFlag = hotFlag;
+
+                    bool.TryParse(worksheet.Cells[i, 10].Value.ToString(), out var homeFlag);
+                    product.HomeFlag = homeFlag;
+
+                    product.Status = Status.Active;
+
+                    _unitOfWork.ProductRepository.Add(product);
+                    _unitOfWork.Commit();
+                }
+            }
+           
         }
     }
 }

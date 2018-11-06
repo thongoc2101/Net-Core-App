@@ -1,5 +1,10 @@
-﻿using System.Collections.Generic;
+﻿using System.Collections;
+using System.Collections.Generic;
+using System.IO;
 using System.Linq;
+using System.Net.Http.Headers;
+using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.ModelBinding;
 using NetCoreApp.Application.ViewModels;
@@ -9,6 +14,13 @@ namespace NetCoreApp.Areas.Admin.Controllers
 {
     public class ProductController : BaseController
     {
+        private readonly IHostingEnvironment _hostingEnvironment;
+
+        public ProductController(IHostingEnvironment hostingEnvironment)
+        {
+            _hostingEnvironment = hostingEnvironment;
+        }
+
         public IActionResult Index()
         {
             return View();
@@ -92,6 +104,34 @@ namespace NetCoreApp.Areas.Admin.Controllers
 
                 return new OkObjectResult(productViewModel);
             }
+        }
+
+        [HttpPost]
+        public IActionResult ImportExcel(IList<IFormFile> files, int categoryId)
+        {
+            if (files != null && files.Count > 0)
+            {
+                var file = files[0];
+                var fileName = ContentDispositionHeaderValue.Parse(file.ContentDisposition).FileName.Trim('"');
+                string folder = _hostingEnvironment.WebRootPath + $@"\uploaded\excels";
+                if (!Directory.Exists(folder))
+                {
+                    Directory.CreateDirectory(folder);
+                }
+
+                string filePath = Path.Combine(folder, fileName);
+
+                using (FileStream fs = System.IO.File.Create(filePath))
+                {
+                    file.CopyTo(fs);
+                    fs.Flush();
+                }
+
+                ServiceRegistration.ProductService.ImportExcel(filePath, categoryId);
+
+                return new OkObjectResult(filePath);
+            }
+            return new NoContentResult();
         }
 
         #endregion

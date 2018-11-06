@@ -18,5 +18,7 @@ namespace NetCoreApp.Application.Interfaces
         void Delete(int id);
 
         ProductViewModel GetProductById(int id);
+
+        void ImportExcel(string filePath, int categoryId);
     }
 }

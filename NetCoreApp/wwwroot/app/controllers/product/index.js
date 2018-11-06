@@ -208,6 +208,39 @@
                     }
                 });
             });
+
+        $('#btn-import').on('click', function () {
+            initTreeDropDownCategory();
+            $('#modal-import-excel').modal('show');
+        });
+
+        $('#btnImportExcel').on('click', function () {
+            var fileUpload = $("#fileInputExcel").get(0);
+            var files = fileUpload.files;
+
+            // Create FormData object  
+            var fileData = new FormData();
+            // Looping over all files and add it to FormData object  
+            for (var i = 0; i < files.length; i++) {
+                fileData.append("files", files[i]);
+            }
+            // Adding one more key to FormData object  
+            fileData.append('categoryId', $('#ddlCategoryIdImportExcel').combotree('getValue'));
+            $.ajax({
+                url: '/Admin/Product/ImportExcel',
+                type: 'POST',
+                data: fileData,
+                processData: false,  // tell jQuery not to process the data
+                contentType: false,  // tell jQuery not to set contentType
+                success: function (data) {
+                    $('#modal-import-excel').modal('hide');
+                    loadData();
+
+                }
+            });
+            return false;
+        });
+    
     }
 
     function registerControls() {
@@ -370,6 +403,9 @@
                 });
                 var arr = app.unflattern(data);
                 $('#ddlCategoryIdM').combotree({
+                    data: arr
+                });
+                $('#ddlCategoryIdImportExcel').combotree({
                     data: arr
                 });
                 if (selectedId !== undefined) {
