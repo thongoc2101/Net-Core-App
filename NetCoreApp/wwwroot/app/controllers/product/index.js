@@ -240,6 +240,26 @@
             });
             return false;
         });
+
+        $('#btnExport').on('click',
+            function () {
+                $.ajax({
+                    type: 'POST',
+                    url: '/Admin/Product/ExportExcel',
+                    beforeSend: function () {
+                        app.startLoading();
+                    },
+                    success: function (response) {
+                        // return file, redirect to file => download
+                        window.location.href = response;
+                        app.stopLoading();
+                    },
+                    error: function () {
+                        app.notify('Has an error', 'error');
+                        app.stopLoading();
+                    }
+                });
+            });
     
     }
 
