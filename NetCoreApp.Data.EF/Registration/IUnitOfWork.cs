@@ -17,6 +17,14 @@ namespace NetCoreApp.Data.EF.Registration
 
         IPermissionRepository PermissionRepository { get; }
 
+        IBillRepository BillRepository { get; }
+
+        IBillDetailRepository BillDetailRepository { get; }
+
+        ISizeRepository SizeRepository { get; }
+
+        IColorRepository ColorRepository { get; }
+
         void Commit();
     }
 }

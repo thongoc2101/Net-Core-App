@@ -80,6 +80,9 @@ var nodeLibs = {
     },
     "jquery-treegrid": {
         "**/*":""
+    },
+    "bootstrap-datepicker": {
+        "**/*": ""
     }
 };
 var templates = {

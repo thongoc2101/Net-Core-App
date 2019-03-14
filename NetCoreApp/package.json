@@ -31,6 +31,7 @@
     "twbs-pagination": "1.4.1",
     "centit.easyui": "1.5.3",
     "ckeditor": "4.10.1",
-    "jquery-treegrid": "0.3.0"
+    "jquery-treegrid": "0.3.0",
+    "bootstrap-datepicker": "1.8.0"
   }
 }

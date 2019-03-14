@@ -10,6 +10,7 @@ namespace NetCoreApp.Application.Singleton
         private  IProductService _productService;
         private  IProductCategoryService _productCategoryService;
         private  IFunctionService _functionService;
+        private IBillService _billService;
 
         public ServiceRegistration()
         {
@@ -28,5 +29,7 @@ namespace NetCoreApp.Application.Singleton
 
         public IFunctionService FunctionService =>
             _functionService ?? (_functionService = new FunctionService(_unitOfWork));
+
+        public IBillService BillService => _billService ?? (_billService = new BillService(_unitOfWork));
     }
 }

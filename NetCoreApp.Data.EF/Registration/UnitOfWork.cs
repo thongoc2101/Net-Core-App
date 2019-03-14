@@ -16,6 +16,10 @@ namespace NetCoreApp.Data.EF.Registration
         private ITagRepository _tagRepository;
         private IProductTagRepository _productTagRepository;
         private IPermissionRepository _permissionRepository;
+        private IBillRepository _billRepository;
+        private IBillDetailRepository _billDetailRepository;
+        private ISizeRepository _sizeRepository;
+        private IColorRepository _colorRepository;
 
         public UnitOfWork()
         {
@@ -48,6 +52,17 @@ namespace NetCoreApp.Data.EF.Registration
 
         public IPermissionRepository PermissionRepository =>
             _permissionRepository ?? (_permissionRepository = new PermissionRepository(_context));
+
+        public IBillRepository BillRepository =>
+            _billRepository ?? (_billRepository = new BillRepository(_context));
+
+        public IBillDetailRepository BillDetailRepository =>
+            _billDetailRepository ?? (_billDetailRepository = new BillDetailRepository(_context));
+
+        public ISizeRepository SizeRepository => _sizeRepository ?? (_sizeRepository = new SizeRepository(_context));
+
+        public IColorRepository ColorRepository =>
+            _colorRepository ?? (_colorRepository = new ColorRepository(_context));
 
         public void Commit()
         {

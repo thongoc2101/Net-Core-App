@@ -25,6 +25,18 @@ namespace NetCoreApp.Application.AutoMapper
             CreateMap<PermissionViewModel, Permission>()
                 .ConstructUsing(c =>
                     new Permission(c.RoleId, c.FunctionId, c.CanCreate, c.CanDelete, c.CanRead, c.CanUpdate));
+            CreateMap<BillViewModel, Bill>()
+                .ConstructUsing(c => new Bill(c.Id, c.CustomerName, c.CustomerAddress, c.CustomerMobile,
+                    c.CustomerMessage, c.BillStatus, c.PaymentMethod, c.Status, c.CustomerId));
+            CreateMap<BillDetailViewModel, BillDetail>()
+                .ConstructUsing(c =>
+                    new BillDetail(c.Id, c.ProductId, c.Quantity, c.Price, c.ColorId, c.SizeId));
+            //CreateMap<ProductQuantityViewModel, ProductQuantity>()
+            //    .ConstructUsing(c => new ProductQuantity(c.Id, c.ProductId, c.SizeId, c.ColorId, c.Quantity));
+            //CreateMap<ProductImageViewModel, ProductImage>()
+            //    .ConstructUsing(c => new ProductImage(c.Id, c.ProductId, c.Path, c.Caption));
+            //CreateMap<WholePriceViewModel, WholePrice>()
+            //    .ConstructUsing(c => new WholePrice(c.Id, c.ProductId, c.FromQuantity, c.ToQuantity, c.Price));
         }
     }
 }
