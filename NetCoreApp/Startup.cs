@@ -19,6 +19,7 @@ using NetCoreApp.Helpers;
 using NetCoreApp.Infrastructure.Interfaces;
 using NetCoreApp.Services;
 using Newtonsoft.Json.Serialization;
+using PaulMiami.AspNetCore.Mvc.Recaptcha;
 
 namespace NetCoreApp
 {
@@ -42,7 +43,7 @@ namespace NetCoreApp
                 .AddEntityFrameworkStores<AppDbContext>()
                 .AddDefaultTokenProviders();
 
-            // Configure Identity
+            // Configure Identity password
             services.Configure<IdentityOptions>(options =>
             {
                 options.Password.RequireDigit = true;
@@ -77,7 +78,6 @@ namespace NetCoreApp
 
             //Repository
             services.AddTransient<IUnitOfWork, UnitOfWork>();
-
             //Service
             services.AddTransient<IServiceRegistration, ServiceRegistration>();
             services.AddTransient<IUserService, UserService>();
@@ -85,12 +85,26 @@ namespace NetCoreApp
 
             services.AddMvc().AddJsonOptions(options => options.SerializerSettings.ContractResolver = new DefaultContractResolver());
 
+            // config Recaptcha
+            services.AddRecaptcha(new RecaptchaOptions
+            {
+                SiteKey = Configuration["Recaptcha:SiteKey"],
+                SecretKey = Configuration["Recaptcha:SecretKey"]
+            });
+
+            // config session
+            services.AddSession(options =>
+            {
+                options.IdleTimeout = TimeSpan.FromHours(2); // 2 hours time out
+                options.Cookie.HttpOnly = true;
+            });
+
             //UnitOfWork
             services.AddTransient(typeof(IRepository<,>), typeof(EfRepository<,>));
 
             services.AddScoped<IUserClaimsPrincipalFactory<AppUser>, CustomClaimPrincipalFactory>();
 
-            // Grant
+            //Authorization
             services.AddTransient<IAuthorizationHandler, BaseResourceAuthorizationHandler>();
         }
 
@@ -112,6 +126,8 @@ namespace NetCoreApp
             app.UseStaticFiles();
 
             app.UseAuthentication();
+            // add session
+            app.UseSession();
 
             app.UseMvc(routes =>
             {

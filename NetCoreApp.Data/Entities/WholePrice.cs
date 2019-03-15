@@ -6,7 +6,17 @@ namespace NetCoreApp.Data.Entities
     [Table("WholePrices")]
     public class WholePrice : DomainEntity<int>
     {
-        
+        public WholePrice(){ }
+
+        public WholePrice(int id, int productId, int fromQuantity, int toQuantity, decimal price)
+        {
+            Id = id;
+            ProductId = productId;
+            FromQuantity = fromQuantity;
+            ToQuantity = toQuantity;
+            Price = price;
+        }
+
         public int ProductId { get; set; }
 
         public int FromQuantity { get; set; }

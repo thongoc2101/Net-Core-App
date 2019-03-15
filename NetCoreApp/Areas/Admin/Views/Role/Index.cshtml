@@ -1,23 +1,24 @@
-﻿
-@{
-    ViewData["Title"] = "Role List";
+﻿@{
+    ViewData["Title"] = "Index";
 }
 @section Styles
     {
-
     <link href="~/vendor/jquery-treegrid/css/jquery.treegrid.css" rel="stylesheet" />
 }
-@section Scrips
-    {
-    <script src="~/vendor/jquery-treegrid/js/jquery.treegrid.js"></script>
-    <script src="~/vendor/bootbox/bootbox.js"></script>
+
+@section Scrips{
     <script src="~/app/Shared/app.js"></script>
     <script src="~/app/controllers/role/index.js"></script>
+    <script src="~/vendor/bootbox/bootbox.js"></script>
+    <script src="~/vendor/jquery-treegrid/js/jquery.treegrid.js"></script>
+    <script src="~/lib/jquery-validation/dist/jquery.validate.js"></script>
+    <script src="~/lib/jquery-validation/dist/additional-methods.js"></script>
+    <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"></script>
+    <script src="~/vendor/jquery-validation/localization/messages_vi.js"></script>
     <script>
         var roleObj = new RoleController();
         roleObj.initialize();
     </script>
-
 }
 <div class="">
     <div class="page-title">
@@ -31,7 +32,7 @@
             </div>
             <div class="col-md-5 col-sm-5 col-xs-12 form-group pull-right top_search">
                 <div class="input-group">
-                    <input type="text" id="txt-search-keyword" class="form-control" placeholder="Search...">
+                    <input type="text" id="txt-search-keyword" class="form-control" placeholder="Search role...">
                     <span class="input-group-btn">
                         <button class="btn btn-default" id="btn-search" type="button">Search!</button>
                     </span>
@@ -53,7 +54,7 @@
                             <tr>
                                 <th>Name</th>
                                 <th>Description</th>
-                                <th width="15%"></th>
+                                <th width="15%">Action</th>
                             </tr>
                         </thead>
                         <tbody id="tbl-content"></tbody>
@@ -91,6 +92,7 @@
             <td>{{Name}}</td>
             <td>{{Description}}</td>
             <td>
+                @*phan quyen*@
                 <a href="#" data-id="{{Id}}" class="btn  btn-xs btn-primary btn-grant"><i class="fa fa-eye-slash"></i></a>
                 <a href="#" data-id="{{Id}}" class="btn  btn-xs btn-info btn-edit"><i class="fa fa-pencil-square-o"></i></a>
                 <a href="#" data-id="{{Id}}" class="btn btn-xs  btn-danger btn-delete"><i class="fa fa-trash-o"></i></a>

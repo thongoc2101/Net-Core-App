@@ -3,15 +3,19 @@
 @inject IAuthorizationService AuthorizationService
 
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "User List";
 }
 @section Scrips{
     <script src="~/app/Shared/app.js"></script>
-    <script src="~/app/controllers/user/index.js" asp-append-version="true"></script>
+    <script src="~/vendor/bootbox/bootbox.js"></script>
+    <script src="~/app/controllers/user/index.js"></script>
     <script>
         var userObj = new UserController();
         userObj.initialize();
     </script>
+}
+@section Styles{
+
 }
 <input type="hidden" id="hid-category-id" value="0" />
 <div class="">
@@ -22,8 +26,9 @@
 
         <div class="title_right">
             <div class="col-md-2 col-sm-2 col-xs-12 form-group pull-right top_search">
+                @*check permission USer user*@
                 @{
-                    var result = await AuthorizationService.AuthorizeAsync(User, "USER", Operations.Create);
+                    var result = await AuthorizationService.AuthorizeAsync(User, "USER", Operations.Read);
                 }
                 @if (result.Succeeded)
                 {
@@ -31,11 +36,11 @@
                 }
 
             </div>
-            <div class="col-md-5 col-sm-5 col-xs-12 form-group pull-right top_search">
+            <div class="col-md-5 col-sm-5 col-xs-12 form-group pull-right ">
                 <div class="input-group">
                     <input type="text" id="txt-search-keyword" class="form-control" placeholder="Search...">
                     <span class="input-group-btn">
-                        <button class="btn btn-default" id="btn-search" type="button">Search!</button>
+                        <button class="btn btn-info" id="btn-search" type="button">Search!</button>
                     </span>
                 </div>
 
@@ -54,17 +59,18 @@
                         <thead>
                             <tr>
                                 <th>Account</th>
-                                <th>NAme</th>
+                                <th>Name</th>
                                 <th>Avatar</th>
                                 <th>Created Date</th>
                                 <th>Status</th>
-                                <th></th>
-                                <th></th>
+                                <th>Edit</th>
+                                <th>Delete</th>
                             </tr>
                         </thead>
                         <tbody id="tbl-content"></tbody>
                     </table>
 
+                    <!--Paging-->
                     <div class="row">
                         <div class="col-sm-5">
                             <div class="dataTables_info" id="datatable-checkbox_info" role="status" aria-live="polite">
@@ -100,14 +106,14 @@
             <td>{{{DateCreated}}}</td>
             <td>{{{Status}}}</td>
             <td>
-                 @{
-                     var resultEdit = await AuthorizationService.AuthorizeAsync(User, "USER", Operations.Update);
-                 }
+                @{
+                    var resultEdit = await AuthorizationService.AuthorizeAsync(User, "USER", Operations.Update);
+                }
                 @if (resultEdit.Succeeded)
                 {
                     <a href="#" data-id="{{Id}}" class="btn-edit"><i class="fa fa-pencil-square-o"></i></a>
                 }
-                
+
             </td>
             <td>
                 @{
@@ -115,9 +121,9 @@
                 }
                 @if (resultDelete.Succeeded)
                 {
-                    <a href="#" data-id="{{Id}}" class="btn-delete"><i class="fa fa-trash-o"></i></a>
-                }     
-
+                <a href="#" data-id="{{Id}}" class="btn-delete"><i class="fa fa-trash-o"></i></a>
+                }
+                
             </td>
         </tr>
     </script>

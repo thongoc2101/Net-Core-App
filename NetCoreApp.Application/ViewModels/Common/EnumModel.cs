@@ -1,4 +1,8 @@
-﻿namespace NetCoreApp.Application.ViewModels.Common
+﻿using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace NetCoreApp.Application.ViewModels.Common
 {
     public class EnumModel
     {

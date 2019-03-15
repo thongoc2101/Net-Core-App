@@ -172,46 +172,46 @@ namespace NetCoreApp.Data.EF
                 _context.Sizes.AddRange(listSize);
             }
 
-            if (_context.ProductCategories.Count() == 0)
+            if (!_context.ProductCategories.Any())
             {
                 List<ProductCategory> listProductCategory = new List<ProductCategory>()
                 {
                     new ProductCategory() { Name="Men shirt",SeoAlias="men-shirt",ParentId = null,Status=Status.Active,SortOrder=1,
                         Products = new List<Product>()
                         {
-                            new Product(){Name = "Product 1",Image="/client-side/images/products/product-1.jpg",SeoAlias = "san-pham-1",Price = 1000,Status = Status.Active,OriginalPrice = 1000},
-                            new Product(){Name = "Product 2",Image="/client-side/images/products/product-1.jpg",SeoAlias = "san-pham-2",Price = 1000,Status = Status.Active,OriginalPrice = 1000},
-                            new Product(){Name = "Product 3",Image="/client-side/images/products/product-1.jpg",SeoAlias = "san-pham-3",Price = 1000,Status = Status.Active,OriginalPrice = 1000},
-                            new Product(){Name = "Product 4",Image="/client-side/images/products/product-1.jpg",SeoAlias = "san-pham-4",Price = 1000,Status = Status.Active,OriginalPrice = 1000},
-                            new Product(){Name = "Product 5",Image="/client-side/images/products/product-1.jpg",SeoAlias = "san-pham-5",Price = 1000,Status = Status.Active,OriginalPrice = 1000},
+                            new Product(){Name = "Product 1",Image="/client-side/images/products/product-1.jpg",DateCreated = DateTime.Now,SeoAlias = "san-pham-1",Price = 1000,Status = Status.Active,OriginalPrice = 1000},
+                            new Product(){Name = "Product 2",Image="/client-side/images/products/product-1.jpg",DateCreated = DateTime.Now,SeoAlias = "san-pham-2",Price = 1000,Status = Status.Active,OriginalPrice = 1000},
+                            new Product(){Name = "Product 3",Image="/client-side/images/products/product-1.jpg",DateCreated = DateTime.Now,SeoAlias = "san-pham-3",Price = 1000,Status = Status.Active,OriginalPrice = 1000},
+                            new Product(){Name = "Product 4",Image="/client-side/images/products/product-1.jpg",DateCreated = DateTime.Now,SeoAlias = "san-pham-4",Price = 1000,Status = Status.Active,OriginalPrice = 1000},
+                            new Product(){Name = "Product 5",Image="/client-side/images/products/product-1.jpg",DateCreated = DateTime.Now,SeoAlias = "san-pham-5",Price = 1000,Status = Status.Active,OriginalPrice = 1000},
                         }
                     },
                     new ProductCategory() { Name="Women shirt",SeoAlias="women-shirt",ParentId = null,Status=Status.Active ,SortOrder=2,
                         Products = new List<Product>()
                         {
-                            new Product(){Name = "Product 6",Image="/client-side/images/products/product-1.jpg",SeoAlias = "san-pham-6",Price = 1000,Status = Status.Active,OriginalPrice = 1000},
-                            new Product(){Name = "Product 7",Image="/client-side/images/products/product-1.jpg",SeoAlias = "san-pham-7",Price = 1000,Status = Status.Active,OriginalPrice = 1000},
-                            new Product(){Name = "Product 8",Image="/client-side/images/products/product-1.jpg",SeoAlias = "san-pham-8",Price = 1000,Status = Status.Active,OriginalPrice = 1000},
-                            new Product(){Name = "Product 9",Image="/client-side/images/products/product-1.jpg",SeoAlias = "san-pham-9",Price = 1000,Status = Status.Active,OriginalPrice = 1000},
-                            new Product(){Name = "Product 10",Image="/client-side/images/products/product-1.jpg",SeoAlias = "san-pham-10",Price = 1000,Status = Status.Active,OriginalPrice = 1000},
+                            new Product(){Name = "Product 6",Image="/client-side/images/products/product-1.jpg",DateCreated = DateTime.Now,SeoAlias = "san-pham-6",Price = 1000,Status = Status.Active,OriginalPrice = 1000},
+                            new Product(){Name = "Product 7",Image="/client-side/images/products/product-1.jpg",DateCreated = DateTime.Now,SeoAlias = "san-pham-7",Price = 1000,Status = Status.Active,OriginalPrice = 1000},
+                            new Product(){Name = "Product 8",Image="/client-side/images/products/product-1.jpg",DateCreated = DateTime.Now,SeoAlias = "san-pham-8",Price = 1000,Status = Status.Active,OriginalPrice = 1000},
+                            new Product(){Name = "Product 9",Image="/client-side/images/products/product-1.jpg",DateCreated = DateTime.Now,SeoAlias = "san-pham-9",Price = 1000,Status = Status.Active,OriginalPrice = 1000},
+                            new Product(){Name = "Product 10",Image="/client-side/images/products/product-1.jpg",DateCreated = DateTime.Now,SeoAlias = "san-pham-10",Price = 1000,Status = Status.Active,OriginalPrice = 1000},
                         }},
                     new ProductCategory() { Name="Men shoes",SeoAlias="men-shoes",ParentId = null,Status=Status.Active ,SortOrder=3,
                         Products = new List<Product>()
                         {
-                            new Product(){Name = "Product 11",Image="/client-side/images/products/product-1.jpg",SeoAlias = "san-pham-11",Price = 1000,Status = Status.Active,OriginalPrice = 1000},
-                            new Product(){Name = "Product 12",Image="/client-side/images/products/product-1.jpg",SeoAlias = "san-pham-12",Price = 1000,Status = Status.Active,OriginalPrice = 1000},
-                            new Product(){Name = "Product 13",Image="/client-side/images/products/product-1.jpg",SeoAlias = "san-pham-13",Price = 1000,Status = Status.Active,OriginalPrice = 1000},
-                            new Product(){Name = "Product 14",Image="/client-side/images/products/product-1.jpg",SeoAlias = "san-pham-14",Price = 1000,Status = Status.Active,OriginalPrice = 1000},
-                            new Product(){Name = "Product 15",Image="/client-side/images/products/product-1.jpg",SeoAlias = "san-pham-15",Price = 1000,Status = Status.Active,OriginalPrice = 1000},
+                            new Product(){Name = "Product 11",Image="/client-side/images/products/product-1.jpg",DateCreated = DateTime.Now,SeoAlias = "san-pham-11",Price = 1000,Status = Status.Active,OriginalPrice = 1000},
+                            new Product(){Name = "Product 12",Image="/client-side/images/products/product-1.jpg",DateCreated = DateTime.Now,SeoAlias = "san-pham-12",Price = 1000,Status = Status.Active,OriginalPrice = 1000},
+                            new Product(){Name = "Product 13",Image="/client-side/images/products/product-1.jpg",DateCreated = DateTime.Now,SeoAlias = "san-pham-13",Price = 1000,Status = Status.Active,OriginalPrice = 1000},
+                            new Product(){Name = "Product 14",Image="/client-side/images/products/product-1.jpg",DateCreated = DateTime.Now,SeoAlias = "san-pham-14",Price = 1000,Status = Status.Active,OriginalPrice = 1000},
+                            new Product(){Name = "Product 15",Image="/client-side/images/products/product-1.jpg",DateCreated = DateTime.Now,SeoAlias = "san-pham-15",Price = 1000,Status = Status.Active,OriginalPrice = 1000},
                         }},
                     new ProductCategory() { Name="Women shoes",SeoAlias="women-shoes",ParentId = null,Status=Status.Active,SortOrder=4,
                         Products = new List<Product>()
                         {
-                            new Product(){Name = "Product 16",Image="/client-side/images/products/product-1.jpg",SeoAlias = "san-pham-16",Price = 1000,Status = Status.Active,OriginalPrice = 1000},
-                            new Product(){Name = "Product 17",Image="/client-side/images/products/product-1.jpg",SeoAlias = "san-pham-17",Price = 1000,Status = Status.Active,OriginalPrice = 1000},
-                            new Product(){Name = "Product 18",Image="/client-side/images/products/product-1.jpg",SeoAlias = "san-pham-18",Price = 1000,Status = Status.Active,OriginalPrice = 1000},
-                            new Product(){Name = "Product 19",Image="/client-side/images/products/product-1.jpg",SeoAlias = "san-pham-19",Price = 1000,Status = Status.Active,OriginalPrice = 1000},
-                            new Product(){Name = "Product 20",Image="/client-side/images/products/product-1.jpg",SeoAlias = "san-pham-20",Price = 1000,Status = Status.Active,OriginalPrice = 1000},
+                            new Product(){Name = "Product 16",Image="/client-side/images/products/product-1.jpg",DateCreated = DateTime.Now,SeoAlias = "san-pham-16",Price = 1000,Status = Status.Active,OriginalPrice = 1000},
+                            new Product(){Name = "Product 17",Image="/client-side/images/products/product-1.jpg",DateCreated = DateTime.Now,SeoAlias = "san-pham-17",Price = 1000,Status = Status.Active,OriginalPrice = 1000},
+                            new Product(){Name = "Product 18",Image="/client-side/images/products/product-1.jpg",DateCreated = DateTime.Now,SeoAlias = "san-pham-18",Price = 1000,Status = Status.Active,OriginalPrice = 1000},
+                            new Product(){Name = "Product 19",Image="/client-side/images/products/product-1.jpg",DateCreated = DateTime.Now,SeoAlias = "san-pham-19",Price = 1000,Status = Status.Active,OriginalPrice = 1000},
+                            new Product(){Name = "Product 20",Image="/client-side/images/products/product-1.jpg",DateCreated = DateTime.Now,SeoAlias = "san-pham-20",Price = 1000,Status = Status.Active,OriginalPrice = 1000},
                         }}
                 };
                 _context.ProductCategories.AddRange(listProductCategory);

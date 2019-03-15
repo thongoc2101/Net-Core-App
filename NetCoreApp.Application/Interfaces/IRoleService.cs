@@ -8,7 +8,7 @@ namespace NetCoreApp.Application.Interfaces
 {
     public interface IRoleService
     {
-        Task<bool> AddAsync(AppRoleViewModel roleVm);
+        Task<bool> AddAsync(AppRoleViewModel roleViewModel);
 
         Task DeleteAsync(Guid id);
 
@@ -16,14 +16,13 @@ namespace NetCoreApp.Application.Interfaces
 
         PagedResult<AppRoleViewModel> GetAllPagingAsync(string keyword, int page, int pageSize);
 
-        Task<AppRoleViewModel> GetById(Guid id);
+        Task<AppRoleViewModel> GetByIdAsync(Guid id);
 
+        Task UpdateAsync(AppRoleViewModel roleViewModel);
 
-        Task UpdateAsync(AppRoleViewModel roleVm);
-
-        List<PermissionViewModel> GetListFunctionWithRole(Guid roleId);
-
-        void SavePermission(List<PermissionViewModel> permissionVm, Guid roleId);
+        List<PermissionViewModel> GetListFunctionWithRoles(Guid roleId);
+        
+        void SavePermission(List<PermissionViewModel> permissions, Guid roleId);
 
         Task<bool> CheckPermission(string functionId, string action, string[] roles);
     }

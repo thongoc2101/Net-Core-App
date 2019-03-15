@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Text;
 
 namespace NetCoreApp.Application.ViewModels
 {
@@ -6,18 +8,13 @@ namespace NetCoreApp.Application.ViewModels
     {
         public int Id { get; set; }
 
-
         public Guid RoleId { get; set; }
 
         public string FunctionId { get; set; }
-
-        public bool CanCreate { set; get; }
-
-        public bool CanRead { set; get; }
-
-        public bool CanUpdate { set; get; }
-
-        public bool CanDelete { set; get; }
+        public bool CanCreate { get; set; }
+        public bool CanRead { get; set; }
+        public bool CanUpdate { get; set; }
+        public bool CanDelete { get; set; }
 
         public AppRoleViewModel AppRole { get; set; }
 

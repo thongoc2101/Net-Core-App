@@ -4,12 +4,16 @@ namespace NetCoreApp.Application.Singleton
 {
     public interface IServiceRegistration
     {
-        IProductService ProductService { get; }
-
         IProductCategoryService ProductCategoryService { get; }
 
         IFunctionService FunctionService { get; }
 
+        IProductService ProductService { get; }
+
         IBillService BillService { get; }
+
+        IBlogService BlogService { get; }
+
+        ICommonService CommonService { get; }
     }
 }

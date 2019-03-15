@@ -13,27 +13,25 @@ namespace NetCoreApp.Areas.Admin.Controllers
     public class UploadController : BaseController
     {
         private readonly IHostingEnvironment _hostingEnvironment;
-
         public UploadController(IHostingEnvironment hostingEnvironment)
         {
             _hostingEnvironment = hostingEnvironment;
         }
 
         /// <summary>
-        /// upload image for form
+        /// upload image bowers
         /// </summary>
         /// <returns></returns>
         [HttpPost]
         public IActionResult UploadImage()
         {
-            //update in form
-            DateTime now = DateTime.Now;
+            // update in form
+            DateTime now= DateTime.Now;
             var files = Request.Form.Files;
             if (files.Count == 0)
             {
                 return new BadRequestObjectResult(files);
             }
-
             var file = files[0];
             var fileName = ContentDispositionHeaderValue.Parse(file.ContentDisposition).FileName.Trim('"');
             var imageFolder = $@"\uploaded\images\{now:yyyyMMdd}";

@@ -1,21 +1,32 @@
-﻿var productController = function() {
+﻿var ProductController = function() {
+    var quantityManagement = new QuantityManagement();
+    var imageManagement = new ImageManagement();
+    var wholePriceManagement = new WholePriceManagement();
+
     this.initialize = function() {
         loadCategories();
         loadData();
         registerEvents();
         registerControls();
+        quantityManagement.initialize();
+        imageManagement.initialize();
+        wholePriceManagement.initialize();
     }
 
     function registerEvents() {
-        // Init validation
+
+        //validate field in form
         $('#frmMaintenance').validate({
             errorClass: 'red',
             ignore: [],
-            lang: 'en',
             rules: {
-                txtNameM: {required: true},
-                ddlCategoryIdM: {required: true},
+                txtNameM: { required: true },
+                ddlCategoryIdM: { required: true },
                 txtPriceM: {
+                    required: true,
+                    number: true
+                },
+                txtOriginalPriceM: {
                     required: true,
                     number: true
                 }
@@ -27,21 +38,54 @@
             app.configs.pageIndex = 1;
             loadData(true);
         });
+
         $('#btnSearch').on('click',
             function() {
                 loadData();
             });
+
         $('#txtKeyword').on('keypress',
             function(e) {
                 if (e.which === 13) {
                     loadData();
                 }
             });
-        $('#btnCreate').on('click',
+
+        $('#btnCreate').off('click').on('click', function () {
+            resetFormMaintenance();
+            initTreeDropDownCategory();
+            $('#modal-add-edit').modal('show');
+        });
+
+        // event upload image
+        $('#btnSelectImg').on('click',
             function() {
-                resetFormMaintenance();
-                initTreeDropDownCategory();
-                $('#modal-add-edit').modal('show');
+                $('#fileInputImage').click();
+            });
+
+        // event onchange fileInputImage
+        $('#fileInputImage').on('change',
+            function() {
+                var fileUpload = $(this).get(0);
+                var files = fileUpload.files;
+                var data = new FormData();
+                for (var i = 0; i < files.length; i++) {
+                    data.append(files[i].name, files[i]);
+                }
+                $.ajax({
+                    type: "POST",
+                    url: "/Admin/Upload/UploadImage",
+                    contentType: false,
+                    processData: false,
+                    data: data,
+                    success: function (path) {
+                        $('#txtImageM').val(path);
+                        app.notify('Upload image success', 'success');
+                    },
+                    error: function (status) {
+                        app.notify('Has an error in uploading image progress', 'error');
+                    }
+                });
             });
 
         $('#btnSave').on('click', function (e) {
@@ -61,7 +105,7 @@
                 var seoMetaDescription = $('#txtMetaDescriptionM').val();
                 var seoPageTitle = $('#txtSeoPageTitleM').val();
                 var seoAlias = $('#txtSeoAliasM').val();
-                var content = CKEDITOR.instances.txtContent.getData();
+                var content = CKEDITOR.instances.txtContentM.getData();
                 var status = $('#ckStatusM').prop('checked') === true ? 1 : 0;
                 var hot = $('#ckHotM').prop('checked');
                 var showHome = $('#ckShowHomeM').prop('checked');
@@ -137,7 +181,7 @@
                     $('#txtMetaDescriptionM').val(data.SeoDescription);
                     $('#txtSeoPageTitleM').val(data.SeoPageTitle);
                     $('#txtSeoAliasM').val(data.SeoAlias);
-                    CKEDITOR.instances.txtContent.setData(data.Content);
+                    CKEDITOR.instances.txtContentM.setData(data.Content);
                     $('#ckStatusM').prop('checked', data.Status === 1);
                     $('#ckHotM').prop('checked', data.HotFlag);
                     $('#ckShowHomeM').prop('checked', data.HomeFlag);
@@ -178,71 +222,42 @@
             });
         });
 
-        // event upload image
-        $('#btnSelectImg').on('click',
+        // Import excel
+        $('#btnImport').on('click',
             function() {
-                $('#fileInputImage').click();
+                initTreeDropDownCategory();
+                $('#modal-import-excel').modal('show');
             });
 
-        // event onchange fileInputImage
-        $('#fileInputImage').on('change',
+        // Save import excel
+        $('#btnImportExcel').on('click',
             function() {
-                var fileUpload = $(this).get(0);
+                var fileUpload = $("#fileInputExcel").get(0);
                 var files = fileUpload.files;
-                var data = new FormData();
+
+                // Create FormData object  
+                var fileData = new FormData();
+                // Looping over all files and add it to FormData object  
                 for (var i = 0; i < files.length; i++) {
-                    data.append(files[i].name, files[i]);
+                    fileData.append("files", files[i]);
                 }
+                // Adding one more key to FormData object  
+                fileData.append('categoryId', $('#ddlCategoryIdImportExcel').combotree('getValue'));
                 $.ajax({
-                    type: "POST",
-                    url: "/Admin/Upload/UploadImage",
-                    contentType: false,
-                    processData: false,
-                    data: data,
-                    success: function (path) {
-                        $('#txtImageM').val(path);
-                        app.notify('Upload image success', 'success');
-                    },
-                    error: function (status) {
-                        app.notify('Has an error in uploading image progress', 'error');
+                    url: '/Admin/Product/ImportExcel',
+                    type: 'POST',
+                    data: fileData,
+                    processData: false,  // tell jQuery not to process the data
+                    contentType: false,  // tell jQuery not to set contentType
+                    success: function (data) {
+                        $('#modal-import-excel').modal('hide');
+                        loadData();
                     }
                 });
+                return false;
             });
-
-        $('#btn-import').on('click', function () {
-            initTreeDropDownCategory();
-            $('#modal-import-excel').modal('show');
-        });
-
-        $('#btnImportExcel').on('click', function () {
-            var fileUpload = $("#fileInputExcel").get(0);
-            var files = fileUpload.files;
-
-            // Create FormData object  
-            var fileData = new FormData();
-            // Looping over all files and add it to FormData object  
-            for (var i = 0; i < files.length; i++) {
-                fileData.append("files", files[i]);
-            }
-            // Adding one more key to FormData object  
-            fileData.append('categoryId', $('#ddlCategoryIdImportExcel').combotree('getValue'));
-            $.ajax({
-                url: '/Admin/Product/ImportExcel',
-                type: 'POST',
-                data: fileData,
-                processData: false,  // tell jQuery not to process the data
-                contentType: false,  // tell jQuery not to set contentType
-                success: function (data) {
-                    $('#modal-import-excel').modal('hide');
-                    loadData();
-
-                }
-            });
-            return false;
-        });
-
         $('#btnExport').on('click',
-            function () {
+            function() {
                 $.ajax({
                     type: 'POST',
                     url: '/Admin/Product/ExportExcel',
@@ -260,11 +275,11 @@
                     }
                 });
             });
-    
+
     }
 
     function registerControls() {
-        CKEDITOR.replace('txtContent', {});
+        CKEDITOR.replace('txtContentM', {});
 
         //Fix: cannot click on element ck in modal
         $.fn.modal.Constructor.prototype.enforceFocus = function () {
@@ -341,14 +356,15 @@
                                     CreatedDate: app.dateFormatJson(item.DateCreated),
                                     Status: app.getStatus(item.Status)
                                 });
-                            if (render !== '') {
-                                $('#lblTotalRecords').text(response.RowCount);
-                                $('#table-content').html(render);
-                            }
-                            wrapPaging(response.RowCount, function () {
-                                loadData();
-                            }, isPageChanged);
+                            
                         });
+                    if (render !== '') {
+                        $('#lblTotalRecords').text(response.RowCount);
+                        $('#table-content').html(render);
+                    }
+                    wrapPaging(response.RowCount, function () {
+                        loadData();
+                    }, isPageChanged);
                 }
             },
             error: function(status) {
@@ -384,6 +400,7 @@
         });
     }
 
+    // Reset field => empty
     function resetFormMaintenance() {
         $('#hidIdM').val(0);
         $('#txtNameM').val('');

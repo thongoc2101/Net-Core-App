@@ -1,7 +1,10 @@
-﻿namespace NetCoreApp.Infrastructure.SharedKernel
+﻿using System.ComponentModel.DataAnnotations.Schema;
+
+namespace NetCoreApp.Infrastructure.SharedKernel
 {
     public abstract class DomainEntity<T>
     {
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public T Id { get; set; }
 
         /// <summary>

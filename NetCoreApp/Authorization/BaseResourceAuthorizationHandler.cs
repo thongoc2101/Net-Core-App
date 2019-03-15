@@ -8,7 +8,7 @@ using NetCoreApp.Utilities.Constants;
 
 namespace NetCoreApp.Authorization
 {
-    public class BaseResourceAuthorizationHandler: AuthorizationHandler<OperationAuthorizationRequirement, string>
+    public class BaseResourceAuthorizationHandler : AuthorizationHandler<OperationAuthorizationRequirement, string>
     {
         private readonly IRoleService _roleService;
 
@@ -17,13 +17,12 @@ namespace NetCoreApp.Authorization
             _roleService = roleService;
         }
 
-        protected override async Task HandleRequirementAsync(AuthorizationHandlerContext context, OperationAuthorizationRequirement requirement,
-            string resource)
+        protected override async Task HandleRequirementAsync(AuthorizationHandlerContext context, OperationAuthorizationRequirement requirement, string resource)
         {
             var roles = ((ClaimsIdentity)context.User.Identity).Claims.FirstOrDefault(x => x.Type == CommonConstants.UserClaims.Roles);
             if (roles != null)
             {
-                var listRole = roles.Value.Split(";");
+                var listRole = roles.Value.Split(",");
                 var hasPermission = await _roleService.CheckPermission(resource, requirement.Name, listRole);
                 if (hasPermission || listRole.Contains(CommonConstants.AppRole.AdminRole))
                 {

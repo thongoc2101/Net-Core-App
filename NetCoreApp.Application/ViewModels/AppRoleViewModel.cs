@@ -6,10 +6,10 @@ namespace NetCoreApp.Application.ViewModels
 {
     public class AppRoleViewModel
     {
-        public Guid? Id { get; set; }
+        public Guid? Id { set; get; }
 
-        public string Name { get; set; }
+        public string Name { set; get; }
 
-        public string Description { get; set; }
+        public string Description { set; get; }
     }
 }

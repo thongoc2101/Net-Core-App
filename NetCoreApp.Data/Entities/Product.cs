@@ -10,6 +10,7 @@ using NetCoreApp.Infrastructure.SharedKernel;
 namespace NetCoreApp.Data.Entities
 {
     [Table("Products")]
+
     public class Product : DomainEntity<int>, ISwitchable, IDateTracking, IHasSeoMetaData
     {
         public Product()
@@ -17,12 +18,12 @@ namespace NetCoreApp.Data.Entities
             ProductTags = new List<ProductTag>();
         }
 
-        public Product(int id, string name, int categoryId, string image, decimal price, decimal? promotionPrice,
+        // dung cho add, khong can co id
+        public Product(string name, int categoryId, string image, decimal price, decimal? promotionPrice,
             decimal originalPrice, string description, string content, bool? hotFlag, bool? homeFlag,
             int? viewCount, string tags, string unit, string seoAlias, string seoPageTitle, string seoDescription,
             string seoKeywords, DateTime dateCreated, DateTime dateModified, Status status)
         {
-            Id = id;
             Name = name;
             CategoryId = categoryId;
             Image = image;
@@ -46,11 +47,13 @@ namespace NetCoreApp.Data.Entities
             ProductTags = new List<ProductTag>();
         }
 
-        public Product(string name, int categoryId, string image, decimal price, decimal? promotionPrice,
+        // DUng cho Update, can co id
+        public Product( int id, string name, int categoryId, string image, decimal price, decimal? promotionPrice,
             decimal originalPrice, string description, string content, bool? hotFlag, bool? homeFlag,
             int? viewCount, string tags, string unit, string seoAlias, string seoPageTitle, string seoDescription,
             string seoKeywords, DateTime dateCreated, DateTime dateModified, Status status)
         {
+            Id = id;
             Name = name;
             CategoryId = categoryId;
             Image = image;

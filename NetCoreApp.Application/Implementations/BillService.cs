@@ -78,7 +78,22 @@ namespace NetCoreApp.Application.Implementations
             _unitOfWork.Commit();
         }
 
-        public PagedResult<BillViewModel> GetAllPaging(string startDate, string endDate, string keyword, int pageIndex, int pageSize)
+        public void UpdateStatus(int billId, BillStatus status)
+        {
+            var order = _unitOfWork.BillRepository.FindById(billId);
+            order.BillStatus = status;
+            _unitOfWork.BillRepository.Update(order);
+
+            _unitOfWork.Commit();
+        }
+
+        public List<SizeViewModel> GetSizes()
+        {
+            return _unitOfWork.SizeRepository.FindAll().ProjectTo<SizeViewModel>().ToList();
+        }
+
+        public PagedResult<BillViewModel> GetAllPaging(string startDate, string endDate, string keyword
+            , int pageIndex, int pageSize)
         {
             var query = _unitOfWork.BillRepository.FindAll();
             if (!string.IsNullOrEmpty(startDate))
@@ -119,31 +134,6 @@ namespace NetCoreApp.Application.Implementations
             return billVm;
         }
 
-        public BillDetailViewModel CreateDetail(BillDetailViewModel billDetailVm)
-        {
-            var billDetail = Mapper.Map<BillDetailViewModel, BillDetail>(billDetailVm);
-            _unitOfWork.BillDetailRepository.Add(billDetail);
-            _unitOfWork.Commit();
-            return billDetailVm;
-        }
-
-        public void DeleteDetail(int productId, int billId, int colorId, int sizeId)
-        {
-            var detail = _unitOfWork.BillDetailRepository.FindSingle(x => x.ProductId == productId
-                                                                          && x.BillId == billId && x.ColorId == colorId && x.SizeId == sizeId);
-            _unitOfWork.BillDetailRepository.Remove(detail);
-            _unitOfWork.Commit();
-        }
-
-        public void UpdateStatus(int billId, BillStatus status)
-        {
-            var order = _unitOfWork.BillRepository.FindById(billId);
-            order.BillStatus = status;
-            _unitOfWork.BillRepository.Update(order);
-
-            _unitOfWork.Commit();
-        }
-
         public List<BillDetailViewModel> GetBillDetails(int billId)
         {
             return _unitOfWork.BillDetailRepository
@@ -156,9 +146,20 @@ namespace NetCoreApp.Application.Implementations
             return _unitOfWork.ColorRepository.FindAll().ProjectTo<ColorViewModel>().ToList();
         }
 
-        public List<SizeViewModel> GetSizes()
+        public BillDetailViewModel CreateDetail(BillDetailViewModel billDetailVm)
         {
-            return _unitOfWork.SizeRepository.FindAll().ProjectTo<SizeViewModel>().ToList();
+            var billDetail = Mapper.Map<BillDetailViewModel, BillDetail>(billDetailVm);
+            _unitOfWork.BillDetailRepository.Add(billDetail);
+            _unitOfWork.Commit();
+            return billDetailVm;
+        }
+
+        public void DeleteDetail(int productId, int billId, int colorId, int sizeId)
+        {
+            var detail = _unitOfWork.BillDetailRepository.FindSingle(x => x.ProductId == productId
+           && x.BillId == billId && x.ColorId == colorId && x.SizeId == sizeId);
+            _unitOfWork.BillDetailRepository.Remove(detail);
+            _unitOfWork.Commit();
         }
     }
 }

@@ -8,17 +8,20 @@ namespace NetCoreApp.Data.Entities
     [Table("Permissions")]
     public class Permission : DomainEntity<int>
     {
-        public Permission(){}
+        public Permission()
+        {
+
+        }
 
         public Permission(Guid roleId, string functionId, bool canCreate,
             bool canDelete, bool canRead, bool canUpdate)
         {
             RoleId = roleId;
             FunctionId = functionId;
-            CanCreate = canCreate;
-            CanDelete = canDelete;
             CanRead = canRead;
+            CanCreate = canCreate;
             CanUpdate = canUpdate;
+            CanDelete = canDelete;
         }
 
         [Required]

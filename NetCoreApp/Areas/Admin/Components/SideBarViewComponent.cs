@@ -29,7 +29,8 @@ namespace NetCoreApp.Areas.Admin.Components
             }
             else
             {
-                function = new List<FunctionViewModel>();
+                //function = new List<FunctionViewModel>();
+                function = await _serviceRegistration.FunctionService.GetAll(string.Empty);
             }
             return View(function);
         }

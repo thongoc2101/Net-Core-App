@@ -1,15 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using System.Collections.Generic;
 using System.Threading.Tasks;
 using NetCoreApp.Application.ViewModels;
 using NetCoreApp.Utilities.Dtos;
 
+// using System.Threading.Tasks; support dang bat dong bo async await
 namespace NetCoreApp.Application.Interfaces
 {
     public interface IUserService
     {
-        Task<bool> AddAsync(AppUserViewModel userVm);
+        Task<bool> AddAsync(AppUserViewModel userViewModel);
 
         Task DeleteAsync(string id);
 
@@ -19,6 +18,6 @@ namespace NetCoreApp.Application.Interfaces
 
         Task<AppUserViewModel> GetById(string id);
 
-        Task UpdateAsync(AppUserViewModel userVm);
+        Task UpdateAsync(AppUserViewModel userViewModel);
     }
 }

@@ -1,10 +1,12 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.ComponentModel;
 using System.Globalization;
+using System.Text;
 
 namespace NetCoreApp.Utilities.Extensions
 {
-    public static class EnumExtension
+    public  static class EnumExtension
     {
         public static string GetDescription<T>(this T e) where T : IConvertible
         {

@@ -21,27 +21,27 @@ namespace NetCoreApp.Application.Implementations
         {
             _userManager = userManager;
         }
-
-        public async Task<bool> AddAsync(AppUserViewModel userVm)
+        public async Task<bool> AddAsync(AppUserViewModel userViewModel)
         {
             var user = new AppUser()
             {
-                UserName = userVm.UserName,
-                Avatar = userVm.Avatar,
-                Email = userVm.Email,
-                FullName = userVm.FullName,
+                UserName = userViewModel.UserName,
+                Avatar = userViewModel.Avatar,
+                Email = userViewModel.Email,
+                FullName = userViewModel.FullName,
                 DateCreated = DateTime.Now,
-                PhoneNumber = userVm.PhoneNumber,
-                Status = userVm.Status
+                PhoneNumber = userViewModel.PhoneNumber
             };
-            var result = await _userManager.CreateAsync(user, userVm.Password);
-            if (result.Succeeded && userVm.Roles.Count > 0)
+            var result = await _userManager.CreateAsync(user, userViewModel.Password);
+            if (result.Succeeded && userViewModel.Roles.Count > 0)
             {
-                var appUser = await _userManager.FindByNameAsync(user.UserName);
+                var appUser = await _userManager.FindByNameAsync(user.FullName);
                 if (appUser != null)
-                    await _userManager.AddToRolesAsync(appUser, userVm.Roles);
-
+                {
+                    await _userManager.AddToRolesAsync(appUser, userViewModel.Roles);
+                }
             }
+
             return true;
         }
 
@@ -60,15 +60,13 @@ namespace NetCoreApp.Application.Implementations
         {
             var query = _userManager.Users;
             if (!string.IsNullOrEmpty(keyword))
-                query = query.Where(x => x.FullName.Contains(keyword)
-                                         || x.UserName.Contains(keyword)
-                                         || x.Email.Contains(keyword));
-
+                query = query.Where(x =>
+                    x.FullName.Contains(keyword) || x.Email.Contains(keyword) || x.UserName.Contains(keyword));
+            
             int totalRow = query.Count();
-            query = query.Skip((page - 1) * pageSize)
-                .Take(pageSize);
 
-            var data = query.Select(x => new AppUserViewModel
+            query = query.Skip((page - 1) * pageSize).Take(pageSize);
+            var data = query.Select(x => new AppUserViewModel()
             {
                 UserName = x.UserName,
                 Avatar = x.Avatar,
@@ -79,9 +77,9 @@ namespace NetCoreApp.Application.Implementations
                 PhoneNumber = x.PhoneNumber,
                 Status = x.Status,
                 DateCreated = x.DateCreated
-
             }).ToList();
-            var paginationSet = new PagedResult<AppUserViewModel>
+
+            var paging = new PagedResult<AppUserViewModel>()
             {
                 Results = data,
                 CurrentPage = page,
@@ -89,7 +87,7 @@ namespace NetCoreApp.Application.Implementations
                 PageSize = pageSize
             };
 
-            return paginationSet;
+            return paging;
         }
 
         public async Task<AppUserViewModel> GetById(string id)
@@ -101,28 +99,26 @@ namespace NetCoreApp.Application.Implementations
             return userVm;
         }
 
-        public async Task UpdateAsync(AppUserViewModel userVm)
+        public async Task UpdateAsync(AppUserViewModel userViewModel)
         {
-            var user = await _userManager.FindByIdAsync(userVm.Id.ToString());
-            //Remove current roles in db
-            var currentRoles = await _userManager.GetRolesAsync(user);
+            var user = await _userManager.FindByIdAsync(userViewModel.Id.ToString());
 
-            var result = await _userManager.AddToRolesAsync(user,
-                userVm.Roles.Except(currentRoles).ToArray());
+            // Remove current roles in db
+            var currentRoles = await _userManager.GetRolesAsync(user); // get danh sach roles hien tai
 
+            var result = await _userManager.AddToRolesAsync(user, userViewModel.Roles.Except(currentRoles).ToArray()); // add tat ca roles tru roles hien tai
             if (result.Succeeded)
             {
-                string[] needRemoveRoles = currentRoles.Except(userVm.Roles).ToArray();
+                string[] needRemoveRoles = currentRoles.Except(userViewModel.Roles).ToArray();
                 await _userManager.RemoveFromRolesAsync(user, needRemoveRoles);
 
-                //Update user detail
-                user.FullName = userVm.FullName;
-                user.Status = userVm.Status;
-                user.Email = userVm.Email;
-                user.PhoneNumber = userVm.PhoneNumber;
+                // Update user detail
+                user.FullName = userViewModel.FullName;
+                user.Status = userViewModel.Status;
+                user.Email = userViewModel.Email;
+                user.PhoneNumber = userViewModel.PhoneNumber;
                 await _userManager.UpdateAsync(user);
             }
-
         }
     }
 }

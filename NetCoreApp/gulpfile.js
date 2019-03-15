@@ -20,9 +20,7 @@ var nodeLibs = {
         "*.css":""
     },
     "bootstrap-daterangepicker": {
-        "daterangepicker.js": "",
-        "daterangepicker.css":"",
-        "moment.min.js":""
+        "**/*":""
     },
     "fastclick": {
         "lib/**/*":""
@@ -82,7 +80,7 @@ var nodeLibs = {
         "**/*":""
     },
     "bootstrap-datepicker": {
-        "**/*": ""
+        "**/*":""
     }
 };
 var templates = {

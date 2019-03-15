@@ -2,44 +2,98 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.ModelBinding;
 using NetCoreApp.Application.Interfaces;
 using NetCoreApp.Application.ViewModels;
-using NetCoreApp.Data.Entities;
 
 namespace NetCoreApp.Areas.Admin.Controllers
 {
     public class RoleController : BaseController
     {
-
         private readonly IRoleService _roleService;
 
         public RoleController(IRoleService roleService)
         {
             _roleService = roleService;
         }
-
         public IActionResult Index()
         {
             return View();
         }
 
+        /// <summary>
+        /// Get all role
+        /// </summary>
+        /// <returns></returns>
         [HttpGet]
         public async Task<IActionResult> GetAll()
         {
-            var roles = await _roleService.GetAllAsync();
-            return new OkObjectResult(roles);
+            var model = await _roleService.GetAllAsync();
+            return new ObjectResult(model);
         }
 
+        /// <summary>
+        /// get by id role
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
         [HttpGet]
         public async Task<IActionResult> GetById(Guid id)
         {
-            var model = await _roleService.GetById(id);
+            var model = await _roleService.GetByIdAsync(id);
             return new OkObjectResult(model);
         }
 
+        /// <summary>
+        /// get list all function
+        /// </summary>
+        /// <param name="roleId"></param>
+        /// <returns></returns>
+        [HttpPost]
+        public IActionResult ListAllFunction(Guid roleId)
+        {
+            var functions = _roleService.GetListFunctionWithRoles(roleId);
+            return new ObjectResult(functions);
+        }
+
+        /// <summary>
+        /// Save permission
+        /// </summary>
+        /// <param name="listPermission"></param>
+        /// <param name="roleId"></param>
+        /// <returns></returns>
+        [HttpPost]
+        public IActionResult SavePermission(List<PermissionViewModel> listPermission, Guid roleId)
+        {
+            _roleService.SavePermission(listPermission, roleId);
+            return new OkResult();
+        }
+
+        /// <summary>
+        /// Delete role
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
+        [HttpPost]
+        public async Task<IActionResult> DeleteAsync(Guid id)
+        {
+            if (!ModelState.IsValid)
+            {
+                return new BadRequestObjectResult(ModelState);
+            }
+
+            await _roleService.DeleteAsync(id);
+            return new OkObjectResult(id);
+        }
+
+        /// <summary>
+        /// get all paging role
+        /// </summary>
+        /// <param name="keyword"></param>
+        /// <param name="page"></param>
+        /// <param name="pageSize"></param>
+        /// <returns></returns>
         [HttpGet]
         public IActionResult GetAllPaging(string keyword, int page, int pageSize)
         {
@@ -47,6 +101,11 @@ namespace NetCoreApp.Areas.Admin.Controllers
             return new OkObjectResult(model);
         }
 
+        /// <summary>
+        /// save update or add role
+        /// </summary>
+        /// <param name="roleViewModel"></param>
+        /// <returns></returns>
         [HttpPost]
         public async Task<IActionResult> SaveEntity(AppRoleViewModel roleViewModel)
         {
@@ -57,7 +116,7 @@ namespace NetCoreApp.Areas.Admin.Controllers
             }
             else
             {
-                if (!roleViewModel.Id.HasValue)
+                if (roleViewModel.Id == null)
                 {
                     await _roleService.AddAsync(roleViewModel);
                 }
@@ -65,33 +124,9 @@ namespace NetCoreApp.Areas.Admin.Controllers
                 {
                     await _roleService.UpdateAsync(roleViewModel);
                 }
+
+                return new ObjectResult(roleViewModel);
             }
-            return new OkObjectResult(roleViewModel);
-        }
-
-        [HttpPost]
-        public async Task<IActionResult> Delete(Guid id)
-        {
-            if (!ModelState.IsValid)
-            {
-                return new BadRequestObjectResult(ModelState);
-            }
-            await _roleService.DeleteAsync(id);
-            return new OkObjectResult(id);
-        }
-
-        [HttpPost]
-        public IActionResult ListAllFunction(Guid roleId)
-        {
-            var functions = _roleService.GetListFunctionWithRole(roleId);
-            return new OkObjectResult(functions);
-        }
-
-        [HttpPost]
-        public IActionResult SavePermission(List<PermissionViewModel> permissionViewModels, Guid roleId)
-        {
-            _roleService.SavePermission(permissionViewModels, roleId);
-            return new OkResult();
         }
     }
 }

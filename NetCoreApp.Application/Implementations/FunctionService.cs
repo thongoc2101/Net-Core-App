@@ -16,26 +16,25 @@ namespace NetCoreApp.Application.Implementations
     public class FunctionService : IFunctionService
     {
         private readonly IUnitOfWork _unitOfWork;
+        //private readonly IMapper _mapper;
+
         public FunctionService(IUnitOfWork unitOfWork)
         {
             _unitOfWork = unitOfWork;
+            //_mapper = mapper;
         }
 
-        public void Dispose()
+        public void Add(FunctionViewModel functionViewModel)
         {
-            GC.SuppressFinalize(this);
+            //var function = _mapper.Map<Function>(functionViewModel);
+            var function = Mapper.Map<FunctionViewModel, Function>(functionViewModel);
+            _unitOfWork.FunctionRepository.Add(function);
+            _unitOfWork.Commit();
         }
 
         public bool CheckExistedId(string id)
         {
             return _unitOfWork.FunctionRepository.FindById(id) != null;
-        }
-
-        public void Add(FunctionViewModel functionVm)
-        {
-            var function = Mapper.Map<FunctionViewModel, Function>(functionVm);
-            _unitOfWork.FunctionRepository.Add(function);
-            _unitOfWork.Commit();
         }
 
         public void Delete(string id)
@@ -44,18 +43,20 @@ namespace NetCoreApp.Application.Implementations
             _unitOfWork.Commit();
         }
 
-        public FunctionViewModel GetById(string id)
+        public void Dispose()
         {
-            var function = _unitOfWork.FunctionRepository.FindSingle(x => x.Id == id);
-            return Mapper.Map<Function, FunctionViewModel>(function);
+            GC.SuppressFinalize(this);
         }
 
         public Task<List<FunctionViewModel>> GetAll(string filter)
         {
-            var query = _unitOfWork.FunctionRepository.FindAll(x => x.Status == Status.Active);
+            var query = _unitOfWork.FunctionRepository.FindAll(x=> x.Status == Status.Active);
             if (!string.IsNullOrEmpty(filter))
-                query = query.Where(x => x.Name.Contains(filter));
-            return query.OrderBy(x => x.ParentId).ProjectTo<FunctionViewModel>().ToListAsync();
+            {
+                query = query.Where(x => x.Name.Contains(filter) || x.Id.Contains(filter));
+            }
+
+            return query.OrderBy(x=> x.ParentId).ProjectTo<FunctionViewModel>().ToListAsync();
         }
 
         public IEnumerable<FunctionViewModel> GetAllWithParentId(string parentId)
@@ -63,22 +64,17 @@ namespace NetCoreApp.Application.Implementations
             return _unitOfWork.FunctionRepository.FindAll(x => x.ParentId == parentId).ProjectTo<FunctionViewModel>();
         }
 
-        public void Update(FunctionViewModel functionVm)
+        public FunctionViewModel GetById(string id)
         {
-
-            var functionDb = _unitOfWork.FunctionRepository.FindById(functionVm.Id);
-            var function = Mapper.Map<FunctionViewModel, Function>(functionVm);
-
-            _unitOfWork.Commit();
+            return Mapper.Map<Function, FunctionViewModel>(_unitOfWork.FunctionRepository.FindSingle(x=> x.Id == id));
         }
 
         public void ReOrder(string sourceId, string targetId)
         {
-
             var source = _unitOfWork.FunctionRepository.FindById(sourceId);
             var target = _unitOfWork.FunctionRepository.FindById(targetId);
-            int tempOrder = source.SortOrder;
 
+            var tempOrder = source.SortOrder;
             source.SortOrder = target.SortOrder;
             target.SortOrder = tempOrder;
 
@@ -86,17 +82,23 @@ namespace NetCoreApp.Application.Implementations
             _unitOfWork.FunctionRepository.Update(target);
 
             _unitOfWork.Commit();
+        }
 
+        public void Update(FunctionViewModel functionViewModel)
+        {
+            var functionDb = _unitOfWork.FunctionRepository.FindById(functionViewModel.Id);
+            var function = Mapper.Map<Function>(functionViewModel);
+
+            _unitOfWork.Commit();
         }
 
         public void UpdateParentId(string sourceId, string targetId, Dictionary<string, int> items)
         {
-            //Update parent id for source
-            var category = _unitOfWork.FunctionRepository.FindById(sourceId);
-            category.ParentId = targetId;
-            _unitOfWork.FunctionRepository.Update(category);
+            var sourceCategory = _unitOfWork.FunctionRepository.FindById(sourceId);
+            sourceCategory.ParentId = targetId;
+            _unitOfWork.FunctionRepository.Update(sourceCategory);
 
-            //Get all sibling
+            //Get all sibling ( lay ho hang anh em ra)
             var sibling = _unitOfWork.FunctionRepository.FindAll(x => items.ContainsKey(x.Id));
             foreach (var child in sibling)
             {

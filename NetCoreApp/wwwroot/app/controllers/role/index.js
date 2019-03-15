@@ -1,12 +1,13 @@
-﻿var RoleController = function() {
+﻿var RoleController = function () {
     var self = this;
-    this.initialize = function() {
+
+    this.initialize = function () {
         loadData();
         registerEvents();
     }
 
     function registerEvents() {
-        // Init validate
+        //Init validation
         $('#frmMaintenance').validate({
             errorClass: 'red',
             ignore: [],
@@ -16,134 +17,125 @@
             }
         });
 
-        $('#txt-search-keyword').keypress(function(e) {
+        $('#txt-search-keyword').keypress(function (e) {
             if (e.which === 13) {
                 e.preventDefault();
                 loadData();
             }
         });
+        $("#btn-search").on('click', function () {
+            loadData();
+        });
 
-        $("#btn-search").on('click',
-            function() {
-                loadData();
-            });
+        $("#ddl-show-page").on('change', function () {
+            app.configs.pageSize = $(this).val();
+            app.configs.pageIndex = 1;
+            loadData(true);
+        });
 
-        $("#ddl-show-page").on('change',
-            function() {
-                app.configs.pageSize = $(this).val();
-                app.configs.pageIndex = 1;
-                loadData(true);
-            });
+        $("#btn-create").on('click', function () {
+            resetFormMaintenance();
+            $('#modal-add-edit').modal('show');
 
-        $("#btn-create").on('click',
-            function() {
-                resetFormMaintenance();
-                $('#modal-add-edit').modal('show');
+        });
 
-            });
-
+        // Grant permission 
         $('body').on('click',
             '.btn-grant',
             function() {
-                // set roleId bang role hien tai
+                // get data lay id day vao hidROleId
                 $('#hidRoleId').val($(this).data('id'));
                 $.when(loadFunctionList())
                     .done(fillPermission($('#hidRoleId').val()));
                 $('#modal-grantpermission').modal('show');
             });
 
-        $('body').on('click',
-            '.btn-edit',
-            function(e) {
+        $('body').on('click', '.btn-edit', function (e) {
+            e.preventDefault();
+            var that = $(this).data('id');
+            $.ajax({
+                type: "GET",
+                url: "/Admin/Role/GetById",
+                data: { id: that },
+                dataType: "json",
+                beforeSend: function () {
+                    app.startLoading();
+                },
+                success: function (response) {
+                    var data = response;
+                    $('#hidId').val(data.Id);
+                    $('#txtName').val(data.Name);
+                    $('#txtDescription').val(data.Description);
+                    $('#modal-add-edit').modal('show');
+                    app.stopLoading();
+
+                },
+                error: function (status) {
+                    app.notify('Có lỗi xảy ra', 'error');
+                    app.stopLoading();
+                }
+            });
+        });
+
+        $('#btnSave').on('click', function (e) {
+            if ($('#frmMaintainance').valid()) {
                 e.preventDefault();
-                var that = $(this).data('id');
+                var id = $('#hidId').val();
+                var name = $('#txtName').val();
+                var description = $('#txtDescription').val();
+
                 $.ajax({
-                    type: "GET",
-                    url: "/Admin/Role/GetById",
-                    data: { id: that },
+                    type: "POST",
+                    url: "/Admin/Role/SaveEntity",
+                    data: {
+                        Id: id,
+                        Name: name,
+                        Description: description,
+                    },
                     dataType: "json",
-                    beforeSend: function() {
+                    beforeSend: function () {
                         app.startLoading();
                     },
-                    success: function(response) {
-                        var data = response;
-                        $('#hidId').val(data.Id);
-                        $('#txtName').val(data.Name);
-                        $('#txtDescription').val(data.Description);
-                        $('#modal-add-edit').modal('show');
+                    success: function (response) {
+                        app.notify('Update role successful', 'success');
+                        $('#modal-add-edit').modal('hide');
+                        resetFormMaintenance();
                         app.stopLoading();
-
+                        loadData(true);
                     },
-                    error: function(status) {
-                        app.notify('Có lỗi xảy ra', 'error');
+                    error: function () {
+                        app.notify('Has an error', 'error');
+                        app.stopLoading();
+                    }
+                });
+                return false;
+            }
+
+        });
+
+        $('body').on('click', '.btn-delete', function (e) {
+            e.preventDefault();
+            var that = $(this).data('id');
+            app.confirm('Are you sure to delete?', function () {
+                $.ajax({
+                    type: "POST",
+                    url: "/Admin/Role/Delete",
+                    data: { id: that },
+                    beforeSend: function () {
+                        app.startLoading();
+                    },
+                    success: function (response) {
+                        app.notify('Delete successful', 'success');
+                        app.stopLoading();
+                        loadData();
+                    },
+                    error: function (status) {
+                        app.notify('Has an error in deleting progress', 'error');
                         app.stopLoading();
                     }
                 });
             });
-
-        $('#btnSave').on('click',
-            function(e) {
-                if ($('#frmMaintenance').valid()) {
-                    e.preventDefault();
-                    var id = $('#hidId').val();
-                    var name = $('#txtName').val();
-                    var description = $('#txtDescription').val();
-
-                    $.ajax({
-                        type: "POST",
-                        url: "/Admin/Role/SaveEntity",
-                        data: {
-                            Id: id,
-                            Name: name,
-                            Description: description,
-                        },
-                        dataType: "json",
-                        beforeSend: function() {
-                            app.startLoading();
-                        },
-                        success: function(response) {
-                            app.notify('Update role successful', 'success');
-                            $('#modal-add-edit').modal('hide');
-                            resetFormMaintenance();
-                            app.stopLoading();
-                            loadData(true);
-                        },
-                        error: function() {
-                            app.notify('Has an error', 'error');
-                            app.stopLoading();
-                        }
-                    });
-                    return false;
-                }
-
-            });
-
-        $('body').on('click',
-            '.btn-delete',
-            function(e) {
-                e.preventDefault();
-                var that = $(this).data('id');
-                app.confirm('Are you sure to delete?',
-                    function() {
-                        $.ajax({
-                            type: "POST",
-                            url: "/Admin/Role/Delete",
-                            data: { id: that },
-                            beforeSend: function() {
-                                app.startLoading();
-                            },
-                            success: function(response) {
-                                app.notify('Delete successful', 'success');
-                                app.stopLoading();
-                                loadData();
-                            },
-                            error: function(status) {
-                                app.notify('Has an error in deleting progress', 'error');
-                                app.stopLoading();
-                            }
-                        });
-                    });
-            });
+        });
 
         $("#btnSavePermission").off('click').on('click', function () {
             var listPermission = [];
@@ -154,7 +146,7 @@
                     CanRead: $(item).find('.ckView').first().prop('checked'),
                     CanCreate: $(item).find('.ckAdd').first().prop('checked'),
                     CanUpdate: $(item).find('.ckEdit').first().prop('checked'),
-                    CanDelete: $(item).find('.ckDelete').first().prop('checked'),
+                    CanDelete: $(item).find('.ckDelete').first().prop('checked')
                 });
             });
             $.ajax({
@@ -180,7 +172,6 @@
         });
     };
 
-
     function resetFormMaintenance() {
         $('#hidId').val('');
         $('#txtName').val('');
@@ -197,67 +188,41 @@
                 pageSize: app.configs.pageSize
             },
             dataType: "json",
-            beforeSend: function() {
+            beforeSend: function () {
                 app.startLoading();
             },
-            success: function(response) {
+            success: function (response) {
                 var template = $('#table-template').html();
                 var render = "";
                 if (response.RowCount > 0) {
-                    $.each(response.Results,
-                        function(i, item) {
-                            render += Mustache.render(template,
-                                {
-                                    Name: item.Name,
-                                    Id: item.Id,
-                                    Description: item.Description
-                                });
+                    $.each(response.Results, function (i, item) {
+                        render += Mustache.render(template, {
+                            Name: item.Name,
+                            Id: item.Id,
+                            Description: item.Description
                         });
+                    });
                     $("#lbl-total-records").text(response.RowCount);
                     if (render != undefined) {
                         $('#tbl-content').html(render);
 
                     }
-                    wrapPaging(response.RowCount,
-                        function() {
-                            loadData();
-                        },
-                        isPageChanged);
+                    wrapPaging(response.RowCount, function () {
+                        loadData();
+                    }, isPageChanged);
 
 
-                } else {
+                }
+                else {
                     $('#tbl-content').html('');
                 }
                 app.stopLoading();
             },
-            error: function(status) {
+            error: function (status) {
                 console.log(status);
             }
         });
     };
-
-    function wrapPaging(recordCount, callBack, changePageSize) {
-        var totalSize = Math.ceil(recordCount / app.configs.pageSize);
-        //Unbind pagination if it existed or click change pageSize
-        if ($('#paginationUL a').length === 0 || changePageSize === true) {
-            $('#paginationUL').empty();
-            $('#paginationUL').removeData("twbs-pagination");
-            $('#paginationUL').unbind("page");
-        }
-        //Bind Pagination Event
-        $('#paginationUL').twbsPagination({
-            totalPages: totalSize,
-            visiblePages: 7,
-            first: 'First',
-            prev: 'Prev',
-            next: 'Next',
-            last: 'Last',
-            onPageClick: function(event, p) {
-                app.configs.pageIndex = p;
-                setTimeout(callBack(), 200);
-            }
-        });
-    }
 
     function loadFunctionList(callback) {
         var strUrl = "/admin/Function/GetAll";
@@ -280,7 +245,7 @@
                         AllowEdit: item.AllowEdit ? "checked" : "",
                         AllowView: item.AllowView ? "checked" : "",
                         AllowDelete: item.AllowDelete ? "checked" : "",
-                        Status: app.getStatus(item.Status),
+                        Status: app.getStatus(item.Status)
                     });
                 });
                 if (render != undefined) {
@@ -354,10 +319,10 @@
                 app.stopLoading();
             },
             success: function (response) {
-                var listPermission = response;
+                var litsPermission = response;
                 $.each($('#tblFunction tbody tr'), function (i, item) {
-                    $.each(listPermission, function (j, jitem) {
-                        if (jitem.FunctionId == $(item).data('id')) {
+                    $.each(litsPermission, function (j, jitem) {
+                        if (jitem.FunctionId === $(item).data('id')) {
                             $(item).find('.ckView').first().prop('checked', jitem.CanRead);
                             $(item).find('.ckAdd').first().prop('checked', jitem.CanCreate);
                             $(item).find('.ckEdit').first().prop('checked', jitem.CanUpdate);
@@ -390,6 +355,32 @@
             },
             error: function (status) {
                 console.log(status);
+            }
+        });
+    }
+
+    function wrapPaging(recordCount, callBack, changePageSize) {
+        var totalSize = Math.ceil(recordCount / app.configs.pageSize);
+        //Unbind pagination if it existed or click change pageSize
+        if ($('#paginationUL a').length === 0 || changePageSize === true) {
+            $('#paginationUL').empty();
+            $('#paginationUL').removeData("twbs-pagination");
+            $('#paginationUL').unbind("page");
+        }
+        //Bind Pagination Event
+        $('#paginationUL').twbsPagination({
+            totalPages: totalSize,
+            visiblePages: 7,
+            first: 'First',
+            prev: 'Previous',
+            next: 'Next',
+            last: 'Last',
+            onPageClick: function (event, p) {
+                //Assign if p!==CurrentPage
+                if (app.configs.pageIndex !== p) {
+                    app.configs.pageIndex = p;
+                    setTimeout(callBack(), 200);
+                }
             }
         });
     }

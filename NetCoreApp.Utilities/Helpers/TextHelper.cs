@@ -1,14 +1,13 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Text;
 using System.Text.RegularExpressions;
 
 namespace NetCoreApp.Utilities.Helpers
 {
     //Remove redundant characters
-    public static class TextHelper
+    public class TextHelper
     {
-        public static string ToUnSignString(string input)
+        public static string ToUnsignString(string input)
         {
             input = input.Trim();
             for (int i = 0x20; i < 0x30; i++)

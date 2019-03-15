@@ -6,7 +6,7 @@
 
     function registerEvents() {
         //Init validation
-        $('#frmMaintenance').validate({
+        $('#frmMaintainance').validate({
             errorClass: 'red',
             ignore: [],
             lang: 'en',
@@ -43,7 +43,7 @@
         });
 
         $("#btn-create").on('click', function () {
-            resetFormMaintenance();
+            resetFormMaintainance();
             initRoleList();
             $('#modal-add-edit').modal('show');
 
@@ -84,7 +84,7 @@
         });
 
         $('#btnSave').on('click', function (e) {
-            if ($('#frmMaintenance').valid()) {
+            if ($('#frmMaintainance').valid()) {
                 e.preventDefault();
 
                 var id = $('#hidId').val();
@@ -120,7 +120,7 @@
                     success: function () {
                         app.notify('Save user successful', 'success');
                         $('#modal-add-edit').modal('hide');
-                        resetFormMaintenance();
+                        resetFormMaintainance();
 
                         app.stopLoading();
                         loadData(true);
@@ -167,7 +167,7 @@
         $('#txtConfirmPassword').prop('disabled', disabled);
 
     }
-    function resetFormMaintenance() {
+    function resetFormMaintainance() {
         disableFieldEdit(false);
         $('#hidId').val('');
         initRoleList();
@@ -244,8 +244,6 @@
                     wrapPaging(response.RowCount, function () {
                         loadData();
                     }, isPageChanged);
-
-
                 }
                 else {
                     $('#tbl-content').html('');
@@ -271,12 +269,15 @@
             totalPages: totalSize,
             visiblePages: 7,
             first: 'First',
-            prev: 'Prev',
+            prev: 'Previous',
             next: 'Next',
             last: 'Last',
             onPageClick: function (event, p) {
-                app.configs.pageIndex = p;
-                setTimeout(callBack(), 200);
+                //Assign if p!==CurrentPage
+                if (app.configs.pageIndex !== p) {
+                    app.configs.pageIndex = p;
+                    setTimeout(callBack(), 200);
+                }
             }
         });
     }

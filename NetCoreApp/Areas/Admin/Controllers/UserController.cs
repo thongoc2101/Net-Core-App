@@ -2,7 +2,6 @@
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.JsonPatch.Operations;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.ModelBinding;
 using NetCoreApp.Application.Interfaces;
@@ -13,17 +12,20 @@ namespace NetCoreApp.Areas.Admin.Controllers
 {
     public class UserController : BaseController
     {
+
         private readonly IUserService _userService;
         private readonly IAuthorizationService _authorizationService;
 
-        public UserController(IUserService userService, IAuthorizationService authorizationService)
+        public UserController(IUserService userService,
+            IAuthorizationService authorizationService)
         {
             _userService = userService;
             _authorizationService = authorizationService;
         }
+
         public async Task<IActionResult> Index()
         {
-            // Check grant
+            // check authorization permission user
             var result = await _authorizationService.AuthorizeAsync(User, "USER", Operations.Read);
             if (result.Succeeded == false)
             {
@@ -33,7 +35,7 @@ namespace NetCoreApp.Areas.Admin.Controllers
         }
 
         [HttpGet]
-        public IActionResult GetAll()
+        public IActionResult GetAllAsync()
         {
             var model = _userService.GetAllAsync();
             return new OkObjectResult(model);
@@ -71,7 +73,8 @@ namespace NetCoreApp.Areas.Admin.Controllers
                 {
                     await _userService.UpdateAsync(userViewModel);
                 }
-                return new OkObjectResult(userViewModel);
+
+                return new ObjectResult(userViewModel);
             }
         }
 
@@ -84,11 +87,9 @@ namespace NetCoreApp.Areas.Admin.Controllers
             }
             else
             {
-                await _userService.DeleteAsync(id);    
-
-                return new OkObjectResult(id);
+                await _userService.DeleteAsync(id);
+                return new ObjectResult(id);
             }
-            
         }
     }
 }

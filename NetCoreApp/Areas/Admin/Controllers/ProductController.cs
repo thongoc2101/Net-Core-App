@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -17,31 +16,50 @@ namespace NetCoreApp.Areas.Admin.Controllers
 {
     public class ProductController : BaseController
     {
+
         private readonly IHostingEnvironment _hostingEnvironment;
 
         public ProductController(IHostingEnvironment hostingEnvironment)
         {
             _hostingEnvironment = hostingEnvironment;
         }
-
+       
         public IActionResult Index()
         {
             return View();
         }
 
         #region Ajax api
+        /// <summary>
+        /// Get all product
+        /// </summary>
+        /// <returns></returns>
         [HttpGet]
         public IActionResult GetAll()
         {
             return new OkObjectResult(ServiceRegistration.ProductService.GetAll());
         }
 
+
+        /// <summary>
+        /// Get all product category
+        /// </summary>
+        /// <returns></returns>
         [HttpGet]
         public IActionResult GetAllCategories()
         {
             return new OkObjectResult(ServiceRegistration.ProductCategoryService.GetAll());
         }
 
+
+        /// <summary>
+        /// Get all product has paging
+        /// </summary>
+        /// <param name="categoryId"></param>
+        /// <param name="keyword"></param>
+        /// <param name="page"></param>
+        /// <param name="pageSize"></param>
+        /// <returns></returns>
         [HttpGet]
         public IActionResult GetAllPaging(int? categoryId, string keyword, int page, int pageSize)
         {
@@ -95,7 +113,7 @@ namespace NetCoreApp.Areas.Admin.Controllers
             }
             else
             {
-                productViewModel.SeoAlias = TextHelper.ToUnSignString(productViewModel.Name);
+                productViewModel.SeoAlias = TextHelper.ToUnsignString(productViewModel.Name);
                 if (productViewModel.Id == 0)
                 {
                     ServiceRegistration.ProductService.Add(productViewModel);
@@ -104,7 +122,6 @@ namespace NetCoreApp.Areas.Admin.Controllers
                 {
                     ServiceRegistration.ProductService.Update(productViewModel);
                 }
-
                 return new OkObjectResult(productViewModel);
             }
         }
@@ -115,21 +132,23 @@ namespace NetCoreApp.Areas.Admin.Controllers
             if (files != null && files.Count > 0)
             {
                 var file = files[0];
-                var fileName = ContentDispositionHeaderValue.Parse(file.ContentDisposition).FileName.Trim('"');
+                var filename = ContentDispositionHeaderValue
+                    .Parse(file.ContentDisposition)
+                    .FileName
+                    .Trim('"');
+
                 string folder = _hostingEnvironment.WebRootPath + $@"\uploaded\excels";
                 if (!Directory.Exists(folder))
                 {
                     Directory.CreateDirectory(folder);
                 }
-
-                string filePath = Path.Combine(folder, fileName);
+                string filePath = Path.Combine(folder, filename);
 
                 using (FileStream fs = System.IO.File.Create(filePath))
                 {
                     file.CopyTo(fs);
                     fs.Flush();
                 }
-
                 ServiceRegistration.ProductService.ImportExcel(filePath, categoryId);
 
                 return new OkObjectResult(filePath);
@@ -173,6 +192,59 @@ namespace NetCoreApp.Areas.Admin.Controllers
             return new OkObjectResult(fileUrl);
         }
 
+        #region Product Quantities
+
+        [HttpPost]
+        public IActionResult SaveQuantities(int productId, List<ProductQuantityViewModel> quantities)
+        {
+            ServiceRegistration.ProductService.AddQuantities(productId, quantities);
+            return new OkObjectResult(quantities);
+        }
+
+        [HttpGet]
+        public IActionResult GetQuantities(int productId)
+        {
+            var quantity = ServiceRegistration.ProductService.GetQuantities(productId);
+            return new ObjectResult(quantity);
+        }
+
+        #endregion
+
+        #region Upload Images
+
+        [HttpPost]
+        public IActionResult SaveImages(int productId, string[] images)
+        {
+            ServiceRegistration.ProductService.AddImages(productId, images);
+            return new OkObjectResult(images);
+        }
+
+        [HttpGet]
+        public IActionResult GetImages(int productId)
+        {
+            var images = ServiceRegistration.ProductService.GetImages(productId);
+            return new ObjectResult(images);
+        }
+
+        #endregion
+
+        #region whole price management
+
+        [HttpPost]
+        public IActionResult SaveWholePrice(int productId, List<WholePriceViewModel> wholePrices)
+        {
+            ServiceRegistration.ProductService.AddWholePrice(productId, wholePrices);
+            return new OkObjectResult(wholePrices);
+        }
+
+        [HttpGet]
+        public IActionResult GetWholePrices(int productId)
+        {
+            var wholePrice = ServiceRegistration.ProductService.GetWholePrices(productId);
+            return new ObjectResult(wholePrice);
+        }
+
+        #endregion
         #endregion
     }
 }
