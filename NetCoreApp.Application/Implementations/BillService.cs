@@ -92,6 +92,16 @@ namespace NetCoreApp.Application.Implementations
             return _unitOfWork.SizeRepository.FindAll().ProjectTo<SizeViewModel>().ToList();
         }
 
+        public ColorViewModel GetColors(int id)
+        {
+            return Mapper.Map<Color, ColorViewModel>(_unitOfWork.ColorRepository.FindById(id));
+        }
+
+        public SizeViewModel GetSizes(int id)
+        {
+            return Mapper.Map<Size, SizeViewModel>(_unitOfWork.SizeRepository.FindById(id));
+        }
+
         public PagedResult<BillViewModel> GetAllPaging(string startDate, string endDate, string keyword
             , int pageIndex, int pageSize)
         {

@@ -9,5 +9,9 @@ namespace NetCoreApp.Models
         public int Quantity { get; set; }
 
         public decimal Price { get; set; }
+
+        public ColorViewModel Color { get; set; }
+
+        public SizeViewModel Size { get; set; }
     }
 }

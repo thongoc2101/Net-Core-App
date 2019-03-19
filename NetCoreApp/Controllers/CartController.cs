@@ -55,8 +55,10 @@ namespace NetCoreApp.Controllers
         /// </summary>
         /// <param name="productId"></param>
         /// <param name="quantity"></param>
+        /// <param name="colorId"></param>
+        /// <param name="sizeId"></param>
         /// <returns></returns>
-        public IActionResult AddCart(int productId, int quantity)
+        public IActionResult AddCart(int productId, int quantity, int colorId, int sizeId)
         {
             //Get product detail
             var product = _serviceRegistration.ProductService.GetProductById(productId);
@@ -88,6 +90,8 @@ namespace NetCoreApp.Controllers
                     {
                         Product = product,
                         Quantity = quantity,
+                        Color = _serviceRegistration.BillService.GetColors(colorId),
+                        Size = _serviceRegistration.BillService.GetSizes(sizeId),
                         Price = product.PromotionPrice ?? product.Price
                     });
                     hasChanged = true;
@@ -106,7 +110,11 @@ namespace NetCoreApp.Controllers
                 {
                     new ShoppingCartViewModel
                     {
-                        Product = product, Quantity = quantity, Price = product.PromotionPrice ?? product.Price
+                        Product = product,
+                        Quantity = quantity,
+                        Price = product.PromotionPrice ?? product.Price,
+                        Color = _serviceRegistration.BillService.GetColors(colorId),
+                        Size = _serviceRegistration.BillService.GetSizes(sizeId),
                     }
                 };
                 HttpContext.Session.Set(CommonConstants.CartSession, cart);
@@ -154,8 +162,10 @@ namespace NetCoreApp.Controllers
         /// </summary>
         /// <param name="productId"></param>
         /// <param name="quantity"></param>
+        /// <param name="color"></param>
+        /// <param name="size"></param>
         /// <returns></returns>
-        public IActionResult UpdateCart(int productId, int quantity)
+        public IActionResult UpdateCart(int productId, int quantity, int color, int size)
         {
             //Get session with item list for cart
             var session = HttpContext.Session.Get<List<ShoppingCartViewModel>>(CommonConstants.CartSession);
@@ -170,6 +180,8 @@ namespace NetCoreApp.Controllers
                         var product = _serviceRegistration.ProductService.GetProductById(productId);
                         item.Product = product;
                         item.Quantity = quantity;
+                        item.Color = _serviceRegistration.BillService.GetColors(color);
+                        item.Size = _serviceRegistration.BillService.GetSizes(size);
                         item.Price = product.PromotionPrice ?? product.Price;
                         hasChanged = true;
                     }
@@ -184,6 +196,20 @@ namespace NetCoreApp.Controllers
                 return new OkObjectResult(productId);
             }
             return new EmptyResult();
+        }
+
+        [HttpGet]
+        public IActionResult GetColors()
+        {
+            var colors = _serviceRegistration.BillService.GetColors();
+            return new OkObjectResult(colors);
+        }
+
+        [HttpGet]
+        public IActionResult GetSizes()
+        {
+            var sizes = _serviceRegistration.BillService.GetSizes();
+            return new OkObjectResult(sizes);
         }
         #endregion
     }

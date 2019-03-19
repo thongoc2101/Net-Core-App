@@ -28,5 +28,9 @@ namespace NetCoreApp.Application.Interfaces
         List<ColorViewModel> GetColors();
 
         List<SizeViewModel> GetSizes();
+
+        ColorViewModel GetColors(int id);
+
+        SizeViewModel GetSizes(int id);
     }
 }

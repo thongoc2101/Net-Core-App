@@ -313,5 +313,17 @@ namespace NetCoreApp.Application.Implementations
                 };
             return query.ToList();
         }
+
+        public bool CheckAvailable(int productId, int size, int color)
+        {
+            var checkAvailable = _unitOfWork.ProductQuantityRepository.FindSingle(x =>
+                x.ColorId.Equals(color) && x.SizeId.Equals(size) && x.ProductId.Equals(productId));
+            if (checkAvailable == null)
+            {
+                return false;
+            }
+
+            return checkAvailable.Quantity > 0;
+        }
     }
 }

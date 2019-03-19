@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using NetCoreApp.Application.ViewModels;
 
 namespace NetCoreApp.Models.ProductViewModels
@@ -18,5 +19,11 @@ namespace NetCoreApp.Models.ProductViewModels
         public List<ProductViewModel> LastestProduct { set; get; }
 
         public List<TagViewModel> Tags { get; set; }
+
+        public List<SelectListItem> Colors { set; get; }
+
+        public List<SelectListItem> Sizes { set; get; }
+
+        public bool Available { set; get; }
     }
 }

@@ -1,5 +1,7 @@
 ﻿using System;
+using System.Linq;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.Extensions.Configuration;
 using NetCoreApp.Application.Singleton;
 using NetCoreApp.Models.ProductViewModels;
@@ -18,10 +20,11 @@ namespace NetCoreApp.Controllers
             _configuration = configuration;
         }
 
-        [Route("products.html")]
+        [Route("product.html")]
         public IActionResult Index()
         {
-            return View();
+            var categories = _serviceRegistration.ProductCategoryService.GetAll();
+            return View(categories);
         }
 
         [Route("{alias}-c.{id}.html")]
@@ -78,9 +81,18 @@ namespace NetCoreApp.Controllers
                 ProductImage = _serviceRegistration.ProductService.GetImages(id),
                 RelatedProduct = _serviceRegistration.ProductService.GetRelatedProducts(id, 9),
                 UpSellProduct = _serviceRegistration.ProductService.GetUpSellProducts(6),
-                Tags = _serviceRegistration.ProductService.GetTags(id)
+                Tags = _serviceRegistration.ProductService.GetTags(id),
+                Colors = _serviceRegistration.BillService.GetColors().Select(x=> new SelectListItem
+                {
+                    Text = x.Name,
+                    Value = x.Id.ToString()
+                }).ToList(),
+                Sizes = _serviceRegistration.BillService.GetSizes().Select(x=> new SelectListItem
+                {
+                    Text = x.Name,
+                    Value = x.Id.ToString()
+                }).ToList()
             };
-
 
             return View(details);
         }

@@ -75,11 +75,11 @@
                                                     <div class="item-content">
                                                         <div class="rating"> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star-o"></i> <i class="fa fa-star-o"></i> </div>
                                                         <div class="item-price">
-                                                            <div class="price-box"> <span class="regular-price"> <span class="price">@item.Price.ToString("NO")</span> </span> </div>
+                                                            <div class="price-box"> <span class="regular-price"> <span class="price">@item.Price.ToString("N")</span> </span> </div>
                                                             @*cho ra số thập phân có dấu phẩy ở hàng nghìn nhưng ko có dấu phẩy ở phần thập phân*@
                                                         </div>
                                                         <div class="pro-action">
-                                                            <button type="button" class="add-to-cart"><span> Add to Cart</span> </button>
+                                                            <button type="button" class="add-to-cart" data-id="@item.Id"><span> Add to Cart</span> </button>
                                                         </div>
                                                     </div>
                                                 </div>

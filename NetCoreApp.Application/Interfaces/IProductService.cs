@@ -44,5 +44,7 @@ namespace NetCoreApp.Application.Interfaces
         List<ProductViewModel> GetUpSellProducts(int top);
 
         List<TagViewModel> GetTags(int productId);
+
+        bool CheckAvailable(int productId, int size, int color);
     }
 }

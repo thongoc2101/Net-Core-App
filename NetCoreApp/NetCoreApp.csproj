@@ -5,6 +5,11 @@
     <UserSecretsId>aspnet-NetCoreApp-5C631F95-36FF-4ED6-B29E-48E2312D41B1</UserSecretsId>
   </PropertyGroup>
 
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile></DocumentationFile>
+    <NoWarn>1701;1702</NoWarn>
+  </PropertyGroup>
+
 
   <ItemGroup>
     <PackageReference Include="AutoMapper" Version="6.1.1" />
@@ -66,7 +71,14 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Folder Include="wwwroot\export-files\" />
     <Folder Include="wwwroot\template\" />
+    <Folder Include="wwwroot\vendor\bootstrap-datepicker\build\" />
+    <Folder Include="wwwroot\vendor\bootstrap-datepicker\dist\css\" />
+    <Folder Include="wwwroot\vendor\bootstrap-datepicker\dist\js\" />
+    <Folder Include="wwwroot\vendor\bootstrap-datepicker\dist\locales\" />
+    <Folder Include="wwwroot\vendor\bootstrap-datepicker\js\locales\" />
+    <Folder Include="wwwroot\vendor\bootstrap-datepicker\less\" />
   </ItemGroup>
 
 </Project>
