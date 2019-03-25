@@ -25,7 +25,7 @@
                 },
                 success: function () {
                     app.notify('Removing product is successful.', 'success');
-                    //loadHeaderCart();
+                    loadHeaderCart();
                     loadData();
                 }
             });
@@ -44,7 +44,7 @@
                     },
                     success: function () {
                         app.notify('Update quantity is successful', 'success');
-                        //loadHeaderCart();
+                        loadHeaderCart();
                         loadData();
                     }
                 });
@@ -73,7 +73,7 @@
                     },
                     success: function () {
                         app.notify('Update quantity is successful', 'success');
-                        //loadHeaderCart();
+                        loadHeaderCart();
                         loadData();
                     }
                 });
@@ -101,7 +101,7 @@
                     },
                     success: function () {
                         app.notify('Update quantity is successful', 'success');
-                        //loadHeaderCart();
+                        loadHeaderCart();
                         loadData();
                     }
                 });
@@ -117,7 +117,7 @@
                 type: 'post',
                 success: function () {
                     app.notify('Clear cart is successful', 'success');
-                    // loadHeaderCart();
+                    loadHeaderCart();
                     loadData();
                 }
             });
@@ -173,9 +173,9 @@
         sizes += "</select>";
         return sizes;
     }
-    //function loadHeaderCart() {
-    //    $("#headerCart").load("/AjaxContent/HeaderCart");
-    //}
+    function loadHeaderCart() {
+        $("#headerCart").load("/AjaxContent/HeaderCart");
+    }
     function loadData() {
         $.ajax({
             url: '/Cart/GetCart',

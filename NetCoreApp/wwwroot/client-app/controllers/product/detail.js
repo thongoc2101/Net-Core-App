@@ -20,9 +20,14 @@
                     size: sizeId
                 },
                 success: function () {
-                    alert(1);
+                    app.notify('Add product is successful', 'success');
+                    loadHeaderCart();
                 }
             });
         });
+    }
+
+    function loadHeaderCart() {
+        $("#headerCart").load("/AjaxContent/HeaderCart");
     }
 }
