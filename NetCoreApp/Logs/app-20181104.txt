@@ -1,0 +1,1427 @@
+2018-11-04T00:31:40.8747564+07:00  [INF] Entity Framework Core "2.0.0-rtm-26452" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=NetCoreApp.Data.EF " (9958f5bb)
+2018-11-04T00:31:43.2057268+07:00  [INF] Executed DbCommand ("564"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppRoles] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-11-04T00:31:43.2937437+07:00  [INF] Executed DbCommand ("39"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppUsers] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-11-04T00:31:43.3832030+07:00  [INF] Executed DbCommand ("47"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Functions] AS [f]" (0723d8ff)
+2018-11-04T00:31:43.4633216+07:00  [INF] Executed DbCommand ("27"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Footers] AS [x]
+WHERE [x].[Id] = 'DefaultFooterId'" (0723d8ff)
+2018-11-04T00:31:43.5083699+07:00  [INF] Executed DbCommand ("24"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Colors] AS [c]" (0723d8ff)
+2018-11-04T00:31:43.5498006+07:00  [INF] Executed DbCommand ("29"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [AdvertisementPages] AS [a]" (0723d8ff)
+2018-11-04T00:31:43.6054501+07:00  [INF] Executed DbCommand ("34"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Slides] AS [s]" (0723d8ff)
+2018-11-04T00:31:43.6431066+07:00  [INF] Executed DbCommand ("23"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Sizes] AS [s]" (0723d8ff)
+2018-11-04T00:31:43.6807497+07:00  [INF] Executed DbCommand ("25"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [ProductCategories] AS [p]" (0723d8ff)
+2018-11-04T00:31:43.7389678+07:00  [INF] Executed DbCommand ("33"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeTitle')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-11-04T00:31:43.7959203+07:00  [INF] Executed DbCommand ("31"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaKeyword')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-11-04T00:31:43.8433592+07:00  [INF] Executed DbCommand ("29"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaDescription')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-11-04T00:31:44.6207758+07:00 0HLI1M8SMPCAB:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44383/admin   (ca22a1cb)
+2018-11-04T00:31:44.6162418+07:00 0HLI1M8SMPCAC:00000001 [INF] Request starting HTTP/1.1 DEBUG http://localhost:15649/  0 (ca22a1cb)
+2018-11-04T00:31:44.6463175+07:00 0HLI1M8SMPCA9:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44383/admin   (ca22a1cb)
+2018-11-04T00:31:44.6553037+07:00 0HLI1M8SMPCAA:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44383/   (ca22a1cb)
+2018-11-04T00:31:44.7174126+07:00 0HLI1M8SMPCAC:00000001 [INF] Request finished in 144.6662ms 200  (791a596a)
+2018-11-04T00:31:44.8233954+07:00 0HLI1M8SMPCAB:00000001 [INF] "Identity.Application" was not authenticated. Failure message: "Unprotect ticket failed" (48071232)
+2018-11-04T00:31:44.8426614+07:00 0HLI1M8SMPCA9:00000001 [INF] "Identity.Application" was not authenticated. Failure message: "Unprotect ticket failed" (48071232)
+2018-11-04T00:31:44.8625597+07:00 0HLI1M8SMPCAA:00000001 [INF] "Identity.Application" was not authenticated. Failure message: "Unprotect ticket failed" (48071232)
+2018-11-04T00:31:46.0228214+07:00 0HLI1M8SMPCAA:00000001 [INF] Executing action method "NetCoreApp.Controllers.HomeController.Index (NetCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-11-04T00:31:46.0384933+07:00 0HLI1M8SMPCA9:00000001 [INF] Executing action method "NetCoreApp.Areas.Admin.Controllers.LoginController.Index (NetCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-11-04T00:31:46.0937982+07:00 0HLI1M8SMPCAB:00000001 [INF] Executing action method "NetCoreApp.Areas.Admin.Controllers.LoginController.Index (NetCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-11-04T00:31:54.8355971+07:00 0HLI1M8SMPCAB:00000001 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Login/Index.cshtml". (9707eebe)
+2018-11-04T00:31:54.8591089+07:00 0HLI1M8SMPCAA:00000001 [INF] Executing ViewResult, running view at path "/Views/Home/Index.cshtml". (9707eebe)
+2018-11-04T00:31:54.8690453+07:00 0HLI1M8SMPCA9:00000001 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Login/Index.cshtml". (9707eebe)
+2018-11-04T00:31:55.3335409+07:00 0HLI1M8SMPCAB:00000001 [INF] Executed action "NetCoreApp.Areas.Admin.Controllers.LoginController.Index (NetCoreApp)" in 9387.8878ms (afa2e885)
+2018-11-04T00:31:55.4055204+07:00 0HLI1M8SMPCA9:00000001 [INF] Executed action "NetCoreApp.Areas.Admin.Controllers.LoginController.Index (NetCoreApp)" in 9469.0485ms (afa2e885)
+2018-11-04T00:31:55.4493001+07:00 0HLI1M8SMPCAB:00000001 [INF] Request finished in 10810.4057ms 200 text/html; charset=utf-8 (791a596a)
+2018-11-04T00:31:55.4896436+07:00 0HLI1M8SMPCA9:00000001 [INF] Request finished in 10883.6479ms 200 text/html; charset=utf-8 (791a596a)
+2018-11-04T00:31:57.1809593+07:00 0HLI1M8SMPCAA:00000001 [INF] Executed action "NetCoreApp.Controllers.HomeController.Index (NetCoreApp)" in 11504.8462ms (afa2e885)
+2018-11-04T00:31:57.1919346+07:00 0HLI1M8SMPCAA:00000001 [INF] Request finished in 12650.8739ms 200 text/html; charset=utf-8 (791a596a)
+2018-11-04T00:33:45.1716711+07:00 0HLI1M8SMPCAD:00000001 [INF] Request starting HTTP/1.1 POST http://localhost:44383/admin/login/Authen application/x-www-form-urlencoded; charset=UTF-8 33 (ca22a1cb)
+2018-11-04T00:33:45.1807797+07:00 0HLI1M8SMPCAD:00000001 [INF] "Identity.Application" was not authenticated. Failure message: "Unprotect ticket failed" (48071232)
+2018-11-04T00:33:45.3817365+07:00 0HLI1M8SMPCAD:00000001 [INF] Executing action method "NetCoreApp.Areas.Admin.Controllers.LoginController.Authen (NetCoreApp)" with arguments (["NetCoreApp.Models.AccountViewModels.LoginViewModel"]) - ModelState is Valid (ba7f4ac2)
+2018-11-04T00:33:45.7914625+07:00 0HLI1M8SMPCAD:00000001 [INF] Entity Framework Core "2.0.0-rtm-26452" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=NetCoreApp.Data.EF " (9958f5bb)
+2018-11-04T00:33:46.1355600+07:00 0HLI1M8SMPCAD:00000001 [INF] Executed DbCommand ("231"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[Avatar], [u].[Balance], [u].[BirthDay], [u].[ConcurrencyStamp], [u].[DateCreated], [u].[DateModified], [u].[Email], [u].[EmailConfirmed], [u].[FullName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Status], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AppUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2018-11-04T00:33:46.5895070+07:00 0HLI1M8SMPCAD:00000001 [INF] Executed DbCommand ("177"ms) [Parameters=["@__user_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AppUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0" (0723d8ff)
+2018-11-04T00:33:46.7049069+07:00 0HLI1M8SMPCAD:00000001 [INF] Executed DbCommand ("28"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2018-11-04T00:33:47.0266361+07:00 0HLI1M8SMPCAD:00000001 [INF] Executed DbCommand ("166"ms) [Parameters=["@__normalizedName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Description], [r].[Name], [r].[NormalizedName]
+FROM [AppRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2018-11-04T00:33:47.2014672+07:00 0HLI1M8SMPCAD:00000001 [INF] Executed DbCommand ("107"ms) [Parameters=["@__role_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AppRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0" (0723d8ff)
+2018-11-04T00:33:47.2866104+07:00 0HLI1M8SMPCAD:00000001 [INF] Executed DbCommand ("71"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2018-11-04T00:33:47.3441254+07:00 0HLI1M8SMPCAD:00000001 [INF] AuthenticationScheme: "Identity.Application" signed in. (c66dd7e7)
+2018-11-04T00:33:47.3711142+07:00 0HLI1M8SMPCAD:00000001 [INF] User logged in. (fdce0db4)
+2018-11-04T00:33:47.4037519+07:00 0HLI1M8SMPCAD:00000001 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-11-04T00:33:47.5250413+07:00 0HLI1M8SMPCAD:00000001 [INF] Executed action "NetCoreApp.Areas.Admin.Controllers.LoginController.Authen (NetCoreApp)" in 2266.7444ms (afa2e885)
+2018-11-04T00:33:47.5413441+07:00 0HLI1M8SMPCAD:00000001 [INF] Request finished in 2365.1875ms 200 application/json; charset=utf-8 (791a596a)
+2018-11-04T00:33:47.5954352+07:00 0HLI1M8SMPCAD:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44383/Admin/Home/Index   (ca22a1cb)
+2018-11-04T00:33:47.6274718+07:00 0HLI1M8SMPCAD:00000002 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-11-04T00:33:47.6645026+07:00 0HLI1M8SMPCAD:00000002 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-11-04T00:33:47.7323354+07:00 0HLI1M8SMPCAD:00000002 [INF] Executing action method "NetCoreApp.Areas.Admin.Controllers.HomeController.Index (NetCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-11-04T00:33:48.0591725+07:00 0HLI1M8SMPCAD:00000002 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Home/Index.cshtml". (9707eebe)
+2018-11-04T00:33:48.6046895+07:00 0HLI1M8SMPCAD:00000002 [INF] Entity Framework Core "2.0.0-rtm-26452" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=NetCoreApp.Data.EF " (9958f5bb)
+2018-11-04T00:33:48.9817255+07:00 0HLI1M8SMPCAD:00000002 [INF] Executed DbCommand ("262"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Name], [x].[Url], [x].[ParentId], [x].[IconCss], [x].[SortOrder], [x].[Status]
+FROM [Functions] AS [x]
+WHERE [x].[Status] = 1
+ORDER BY [x].[ParentId]" (0723d8ff)
+2018-11-04T00:33:49.8949284+07:00 0HLI1M8SMPCAD:00000002 [INF] Executed action "NetCoreApp.Areas.Admin.Controllers.HomeController.Index (NetCoreApp)" in 2252.3775ms (afa2e885)
+2018-11-04T00:33:49.9784274+07:00 0HLI1M8SMPCAD:00000002 [INF] Request finished in 2310.6725ms 200 text/html; charset=utf-8 (791a596a)
+2018-11-04T00:33:55.5383931+07:00 0HLI1M8SMPCAD:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44383/admin/user/index   (ca22a1cb)
+2018-11-04T00:33:55.5506536+07:00 0HLI1M8SMPCAD:00000003 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-11-04T00:33:55.5716056+07:00 0HLI1M8SMPCAD:00000003 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-11-04T00:33:55.6766681+07:00 0HLI1M8SMPCAD:00000003 [INF] Executing action method "NetCoreApp.Areas.Admin.Controllers.UserController.Index (NetCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-11-04T00:33:55.7061271+07:00 0HLI1M8SMPCAD:00000003 [INF] Entity Framework Core "2.0.0-rtm-26452" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=NetCoreApp.Data.EF " (9958f5bb)
+2018-11-04T00:33:56.0198545+07:00 0HLI1M8SMPCAD:00000003 [INF] Executed DbCommand ("195"ms) [Parameters=["@__functionId_1='?' (Size = 128)"], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Functions] AS [f]
+        INNER JOIN [Permissions] AS [p] ON [f].[Id] = [p].[FunctionId]
+        INNER JOIN [AppRoles] AS [r] ON [p].[RoleId] = [r].[Id]
+        WHERE ([r].[Name] IN (N'Admin') AND ([f].[Id] = @__functionId_1)) AND ([p].[CanRead] = 1))
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-11-04T00:33:56.0320863+07:00 0HLI1M8SMPCAD:00000003 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-11-04T00:33:56.0442561+07:00 0HLI1M8SMPCAD:00000003 [INF] Executing RedirectResult, redirecting to "/Admin/Login/Index". (d98d540e)
+2018-11-04T00:33:56.0559581+07:00 0HLI1M8SMPCAD:00000003 [INF] Executed action "NetCoreApp.Areas.Admin.Controllers.UserController.Index (NetCoreApp)" in 486.5733ms (afa2e885)
+2018-11-04T00:33:56.0852884+07:00 0HLI1M8SMPCAD:00000003 [INF] Request finished in 548.2667ms 302  (791a596a)
+2018-11-04T00:33:56.1018564+07:00 0HLI1M8SMPCAD:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44383/Admin/Login/Index   (ca22a1cb)
+2018-11-04T00:33:56.1172642+07:00 0HLI1M8SMPCAD:00000004 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-11-04T00:33:56.2430628+07:00 0HLI1M8SMPCAD:00000004 [INF] Executing action method "NetCoreApp.Areas.Admin.Controllers.LoginController.Index (NetCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-11-04T00:33:56.2508470+07:00 0HLI1M8SMPCAD:00000004 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Login/Index.cshtml". (9707eebe)
+2018-11-04T00:33:56.2694266+07:00 0HLI1M8SMPCAD:00000004 [INF] Executed action "NetCoreApp.Areas.Admin.Controllers.LoginController.Index (NetCoreApp)" in 135.3946ms (afa2e885)
+2018-11-04T00:33:56.2972301+07:00 0HLI1M8SMPCAD:00000004 [INF] Request finished in 179.5398ms 200 text/html; charset=utf-8 (791a596a)
+2018-11-04T00:34:04.3199007+07:00 0HLI1M8SMPCAD:00000005 [INF] Request starting HTTP/1.1 POST http://localhost:44383/admin/login/Authen application/x-www-form-urlencoded; charset=UTF-8 33 (ca22a1cb)
+2018-11-04T00:34:04.3300672+07:00 0HLI1M8SMPCAD:00000005 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-11-04T00:34:04.4102280+07:00 0HLI1M8SMPCAD:00000005 [INF] Executing action method "NetCoreApp.Areas.Admin.Controllers.LoginController.Authen (NetCoreApp)" with arguments (["NetCoreApp.Models.AccountViewModels.LoginViewModel"]) - ModelState is Valid (ba7f4ac2)
+2018-11-04T00:34:04.4171671+07:00 0HLI1M8SMPCAD:00000005 [INF] Entity Framework Core "2.0.0-rtm-26452" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=NetCoreApp.Data.EF " (9958f5bb)
+2018-11-04T00:34:04.4773893+07:00 0HLI1M8SMPCAD:00000005 [INF] Executed DbCommand ("51"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[Avatar], [u].[Balance], [u].[BirthDay], [u].[ConcurrencyStamp], [u].[DateCreated], [u].[DateModified], [u].[Email], [u].[EmailConfirmed], [u].[FullName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Status], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AppUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2018-11-04T00:34:04.5540949+07:00 0HLI1M8SMPCAD:00000005 [INF] Executed DbCommand ("59"ms) [Parameters=["@__user_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AppUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0" (0723d8ff)
+2018-11-04T00:34:04.6140949+07:00 0HLI1M8SMPCAD:00000005 [INF] Executed DbCommand ("49"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2018-11-04T00:34:04.6862669+07:00 0HLI1M8SMPCAD:00000005 [INF] Executed DbCommand ("64"ms) [Parameters=["@__normalizedName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Description], [r].[Name], [r].[NormalizedName]
+FROM [AppRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2018-11-04T00:34:04.7533047+07:00 0HLI1M8SMPCAD:00000005 [INF] Executed DbCommand ("57"ms) [Parameters=["@__role_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AppRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0" (0723d8ff)
+2018-11-04T00:34:04.9696054+07:00 0HLI1M8SMPCAD:00000005 [INF] Executed DbCommand ("202"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2018-11-04T00:34:04.9786636+07:00 0HLI1M8SMPCAD:00000005 [INF] AuthenticationScheme: "Identity.Application" signed in. (c66dd7e7)
+2018-11-04T00:34:04.9855896+07:00 0HLI1M8SMPCAD:00000005 [INF] User logged in. (fdce0db4)
+2018-11-04T00:34:04.9937536+07:00 0HLI1M8SMPCAD:00000005 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-11-04T00:34:05.0114872+07:00 0HLI1M8SMPCAD:00000005 [INF] Executed action "NetCoreApp.Areas.Admin.Controllers.LoginController.Authen (NetCoreApp)" in 664.2919ms (afa2e885)
+2018-11-04T00:34:05.0521683+07:00 0HLI1M8SMPCAD:00000005 [INF] Request finished in 698.4415ms 200 application/json; charset=utf-8 (791a596a)
+2018-11-04T00:34:05.0719217+07:00 0HLI1M8SMPCAD:00000006 [INF] Request starting HTTP/1.1 GET http://localhost:44383/Admin/Home/Index   (ca22a1cb)
+2018-11-04T00:34:05.1059075+07:00 0HLI1M8SMPCAD:00000006 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-11-04T00:34:05.1376825+07:00 0HLI1M8SMPCAD:00000006 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-11-04T00:34:05.4535952+07:00 0HLI1M8SMPCAD:00000006 [INF] Executing action method "NetCoreApp.Areas.Admin.Controllers.HomeController.Index (NetCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-11-04T00:34:05.4898480+07:00 0HLI1M8SMPCAD:00000006 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Home/Index.cshtml". (9707eebe)
+2018-11-04T00:34:05.5351609+07:00 0HLI1M8SMPCAD:00000006 [INF] Entity Framework Core "2.0.0-rtm-26452" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=NetCoreApp.Data.EF " (9958f5bb)
+2018-11-04T00:34:05.7871788+07:00 0HLI1M8SMPCAD:00000006 [INF] Executed DbCommand ("237"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Name], [x].[Url], [x].[ParentId], [x].[IconCss], [x].[SortOrder], [x].[Status]
+FROM [Functions] AS [x]
+WHERE [x].[Status] = 1
+ORDER BY [x].[ParentId]" (0723d8ff)
+2018-11-04T00:34:05.8077807+07:00 0HLI1M8SMPCAD:00000006 [INF] Executed action "NetCoreApp.Areas.Admin.Controllers.HomeController.Index (NetCoreApp)" in 685.3307ms (afa2e885)
+2018-11-04T00:34:05.8828869+07:00 0HLI1M8SMPCAD:00000006 [INF] Request finished in 750.3627ms 200 text/html; charset=utf-8 (791a596a)
+2018-11-04T00:34:14.9183865+07:00 0HLI1M8SMPCAD:00000007 [INF] Request starting HTTP/1.1 GET http://localhost:44383/admin/role/index   (ca22a1cb)
+2018-11-04T00:34:14.9310591+07:00 0HLI1M8SMPCAD:00000007 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-11-04T00:34:14.9405282+07:00 0HLI1M8SMPCAD:00000007 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-11-04T00:34:14.9829224+07:00 0HLI1M8SMPCAD:00000007 [INF] Executing action method "NetCoreApp.Areas.Admin.Controllers.RoleController.Index (NetCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-11-04T00:34:15.2257235+07:00 0HLI1M8SMPCAD:00000007 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Role/Index.cshtml". (9707eebe)
+2018-11-04T00:34:15.7765572+07:00 0HLI1M8SMPCAD:00000007 [INF] Entity Framework Core "2.0.0-rtm-26452" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=NetCoreApp.Data.EF " (9958f5bb)
+2018-11-04T00:34:15.8553928+07:00 0HLI1M8SMPCAD:00000007 [INF] Executed DbCommand ("67"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Name], [x].[Url], [x].[ParentId], [x].[IconCss], [x].[SortOrder], [x].[Status]
+FROM [Functions] AS [x]
+WHERE [x].[Status] = 1
+ORDER BY [x].[ParentId]" (0723d8ff)
+2018-11-04T00:34:15.8876912+07:00 0HLI1M8SMPCAD:00000007 [INF] Executed action "NetCoreApp.Areas.Admin.Controllers.RoleController.Index (NetCoreApp)" in 939.3823ms (afa2e885)
+2018-11-04T00:34:15.9130003+07:00 0HLI1M8SMPCAD:00000007 [INF] Request finished in 988.0804ms 200 text/html; charset=utf-8 (791a596a)
+2018-11-04T00:34:17.0848964+07:00 0HLI1M8SMPCAD:00000008 [INF] Request starting HTTP/1.1 GET http://localhost:44383/admin/role/GetAllPaging?keyword=&page=1&pageSize=10   (ca22a1cb)
+2018-11-04T00:34:17.0998512+07:00 0HLI1M8SMPCAD:00000008 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-11-04T00:34:17.1167621+07:00 0HLI1M8SMPCAD:00000008 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-11-04T00:34:17.1994611+07:00 0HLI1M8SMPCAD:00000008 [INF] Executing action method "NetCoreApp.Areas.Admin.Controllers.RoleController.GetAllPaging (NetCoreApp)" with arguments (["", "1", "10"]) - ModelState is Valid (ba7f4ac2)
+2018-11-04T00:34:17.2169314+07:00 0HLI1M8SMPCAD:00000008 [INF] Entity Framework Core "2.0.0-rtm-26452" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=NetCoreApp.Data.EF " (9958f5bb)
+2018-11-04T00:34:17.3511775+07:00 0HLI1M8SMPCAD:00000008 [INF] Executed DbCommand ("106"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [AppRoles] AS [a]" (0723d8ff)
+2018-11-04T00:34:17.4001207+07:00 0HLI1M8SMPCAD:00000008 [WRN] Query: '"(from AppRole dto in DbSet<AppRole> select new AppRoleViewModel{ { 
+    Id = (Nullable<Guid>)[dto]...."' uses a row limiting operation (Skip/Take) without OrderBy which may lead to unpredictable results. (32148ccc)
+2018-11-04T00:34:17.5500351+07:00 0HLI1M8SMPCAD:00000008 [INF] Executed DbCommand ("98"ms) [Parameters=["@__p_0='?', @__p_1='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[Description]
+FROM [AppRoles] AS [dto]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY" (0723d8ff)
+2018-11-04T00:34:17.5687690+07:00 0HLI1M8SMPCAD:00000008 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-11-04T00:34:17.6481533+07:00 0HLI1M8SMPCAD:00000008 [INF] Executed action "NetCoreApp.Areas.Admin.Controllers.RoleController.GetAllPaging (NetCoreApp)" in 510.5107ms (afa2e885)
+2018-11-04T00:34:17.6810584+07:00 0HLI1M8SMPCAD:00000008 [INF] Request finished in 579.631ms 200 application/json; charset=utf-8 (791a596a)
+2018-11-04T00:34:38.5674671+07:00 0HLI1M8SMPCAD:00000009 [INF] Request starting HTTP/1.1 GET http://localhost:44383/admin/role/index   (ca22a1cb)
+2018-11-04T00:34:38.5757322+07:00 0HLI1M8SMPCAD:00000009 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-11-04T00:34:38.5816481+07:00 0HLI1M8SMPCAD:00000009 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-11-04T00:34:38.6220055+07:00 0HLI1M8SMPCAD:00000009 [INF] Executing action method "NetCoreApp.Areas.Admin.Controllers.RoleController.Index (NetCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-11-04T00:34:38.6289162+07:00 0HLI1M8SMPCAD:00000009 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Role/Index.cshtml". (9707eebe)
+2018-11-04T00:34:38.6377169+07:00 0HLI1M8SMPCAD:00000009 [INF] Entity Framework Core "2.0.0-rtm-26452" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=NetCoreApp.Data.EF " (9958f5bb)
+2018-11-04T00:34:38.7093154+07:00 0HLI1M8SMPCAD:00000009 [INF] Executed DbCommand ("64"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Name], [x].[Url], [x].[ParentId], [x].[IconCss], [x].[SortOrder], [x].[Status]
+FROM [Functions] AS [x]
+WHERE [x].[Status] = 1
+ORDER BY [x].[ParentId]" (0723d8ff)
+2018-11-04T00:34:38.7463076+07:00 0HLI1M8SMPCAD:00000009 [INF] Executed action "NetCoreApp.Areas.Admin.Controllers.RoleController.Index (NetCoreApp)" in 136.3661ms (afa2e885)
+2018-11-04T00:34:38.8454913+07:00 0HLI1M8SMPCAD:00000009 [INF] Request finished in 185.8943ms 200 text/html; charset=utf-8 (791a596a)
+2018-11-04T00:34:46.7589763+07:00 0HLI1M8SMPCAD:0000000A [INF] Request starting HTTP/1.1 GET http://localhost:44383/admin/role/index   (ca22a1cb)
+2018-11-04T00:34:46.7665360+07:00 0HLI1M8SMPCAD:0000000A [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-11-04T00:34:46.7748946+07:00 0HLI1M8SMPCAD:0000000A [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-11-04T00:34:46.8198241+07:00 0HLI1M8SMPCAD:0000000A [INF] Executing action method "NetCoreApp.Areas.Admin.Controllers.RoleController.Index (NetCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-11-04T00:34:46.8327166+07:00 0HLI1M8SMPCAD:0000000A [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Role/Index.cshtml". (9707eebe)
+2018-11-04T00:34:46.8435301+07:00 0HLI1M8SMPCAD:0000000A [INF] Entity Framework Core "2.0.0-rtm-26452" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=NetCoreApp.Data.EF " (9958f5bb)
+2018-11-04T00:34:46.9411286+07:00 0HLI1M8SMPCAD:0000000A [INF] Executed DbCommand ("81"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Name], [x].[Url], [x].[ParentId], [x].[IconCss], [x].[SortOrder], [x].[Status]
+FROM [Functions] AS [x]
+WHERE [x].[Status] = 1
+ORDER BY [x].[ParentId]" (0723d8ff)
+2018-11-04T00:34:47.0951825+07:00 0HLI1M8SMPCAD:0000000A [INF] Executed action "NetCoreApp.Areas.Admin.Controllers.RoleController.Index (NetCoreApp)" in 182.0772ms (afa2e885)
+2018-11-04T00:34:47.2548327+07:00 0HLI1M8SMPCAD:0000000A [INF] Request finished in 344.3437ms 200 text/html; charset=utf-8 (791a596a)
+2018-11-04T00:34:47.3022365+07:00 0HLI1M8SMPCAE:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44383/admin/role/GetAllPaging?keyword=&page=1&pageSize=10   (ca22a1cb)
+2018-11-04T00:34:47.3372183+07:00 0HLI1M8SMPCAE:00000001 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-11-04T00:34:47.3544952+07:00 0HLI1M8SMPCAE:00000001 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-11-04T00:34:47.4349465+07:00 0HLI1M8SMPCAE:00000001 [INF] Executing action method "NetCoreApp.Areas.Admin.Controllers.RoleController.GetAllPaging (NetCoreApp)" with arguments (["", "1", "10"]) - ModelState is Valid (ba7f4ac2)
+2018-11-04T00:34:47.4518212+07:00 0HLI1M8SMPCAE:00000001 [INF] Entity Framework Core "2.0.0-rtm-26452" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=NetCoreApp.Data.EF " (9958f5bb)
+2018-11-04T00:34:47.5857420+07:00 0HLI1M8SMPCAE:00000001 [INF] Executed DbCommand ("72"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [AppRoles] AS [a]" (0723d8ff)
+2018-11-04T00:34:47.6840478+07:00 0HLI1M8SMPCAE:00000001 [INF] Executed DbCommand ("69"ms) [Parameters=["@__p_0='?', @__p_1='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[Description]
+FROM [AppRoles] AS [dto]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY" (0723d8ff)
+2018-11-04T00:34:47.7014814+07:00 0HLI1M8SMPCAE:00000001 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-11-04T00:34:47.7265130+07:00 0HLI1M8SMPCAE:00000001 [INF] Executed action "NetCoreApp.Areas.Admin.Controllers.RoleController.GetAllPaging (NetCoreApp)" in 368.7481ms (afa2e885)
+2018-11-04T00:34:47.7406229+07:00 0HLI1M8SMPCAE:00000001 [INF] Request finished in 509.9418ms 200 application/json; charset=utf-8 (791a596a)
+2018-11-04T00:34:48.4033197+07:00 0HLI1M8SMPCAD:0000000B [INF] Request starting HTTP/1.1 GET http://localhost:44383/admin/role/GetAllPaging?keyword=&page=1&pageSize=10   (ca22a1cb)
+2018-11-04T00:34:48.4392141+07:00 0HLI1M8SMPCAD:0000000B [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-11-04T00:34:48.5793247+07:00 0HLI1M8SMPCAD:0000000B [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-11-04T00:34:49.2247580+07:00 0HLI1M8SMPCAD:0000000B [INF] Executing action method "NetCoreApp.Areas.Admin.Controllers.RoleController.GetAllPaging (NetCoreApp)" with arguments (["", "1", "10"]) - ModelState is Valid (ba7f4ac2)
+2018-11-04T00:34:49.2603402+07:00 0HLI1M8SMPCAD:0000000B [INF] Entity Framework Core "2.0.0-rtm-26452" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=NetCoreApp.Data.EF " (9958f5bb)
+2018-11-04T00:34:49.3661823+07:00 0HLI1M8SMPCAF:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44383/favicon.ico   (ca22a1cb)
+2018-11-04T00:34:49.3743241+07:00 0HLI1M8SMPCAD:0000000B [INF] Executed DbCommand ("71"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [AppRoles] AS [a]" (0723d8ff)
+2018-11-04T00:34:49.4546926+07:00 0HLI1M8SMPCAF:00000001 [INF] Sending file. Request path: '"/favicon.ico"'. Physical path: '"D:\NetCore\NetCoreApp\NetCoreApp\wwwroot\favicon.ico"' (27b0a520)
+2018-11-04T00:34:49.4673925+07:00 0HLI1M8SMPCAD:0000000B [INF] Executed DbCommand ("78"ms) [Parameters=["@__p_0='?', @__p_1='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[Description]
+FROM [AppRoles] AS [dto]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY" (0723d8ff)
+2018-11-04T00:34:49.5046200+07:00 0HLI1M8SMPCAD:0000000B [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-11-04T00:34:49.5202292+07:00 0HLI1M8SMPCAD:0000000B [INF] Executed action "NetCoreApp.Areas.Admin.Controllers.RoleController.GetAllPaging (NetCoreApp)" in 1065.4125ms (afa2e885)
+2018-11-04T00:34:49.5408641+07:00 0HLI1M8SMPCAD:0000000B [INF] Request finished in 1221.4264ms 200 application/json; charset=utf-8 (791a596a)
+2018-11-04T00:34:49.6051683+07:00 0HLI1M8SMPCAF:00000001 [INF] Request finished in 240.7946ms 200 image/x-icon (791a596a)
+2018-11-04T00:35:52.2864959+07:00  [INF] Entity Framework Core "2.0.0-rtm-26452" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=NetCoreApp.Data.EF " (9958f5bb)
+2018-11-04T00:35:53.5371847+07:00  [INF] Executed DbCommand ("143"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppRoles] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-11-04T00:35:53.6299460+07:00  [INF] Executed DbCommand ("29"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppUsers] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-11-04T00:35:53.6832844+07:00  [INF] Executed DbCommand ("24"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Functions] AS [f]" (0723d8ff)
+2018-11-04T00:35:53.7732540+07:00  [INF] Executed DbCommand ("40"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Footers] AS [x]
+WHERE [x].[Id] = 'DefaultFooterId'" (0723d8ff)
+2018-11-04T00:35:53.8151010+07:00  [INF] Executed DbCommand ("24"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Colors] AS [c]" (0723d8ff)
+2018-11-04T00:35:53.8611631+07:00  [INF] Executed DbCommand ("30"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [AdvertisementPages] AS [a]" (0723d8ff)
+2018-11-04T00:35:53.9062747+07:00  [INF] Executed DbCommand ("31"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Slides] AS [s]" (0723d8ff)
+2018-11-04T00:35:53.9522452+07:00  [INF] Executed DbCommand ("30"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Sizes] AS [s]" (0723d8ff)
+2018-11-04T00:35:53.9971558+07:00  [INF] Executed DbCommand ("27"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [ProductCategories] AS [p]" (0723d8ff)
+2018-11-04T00:35:54.0507085+07:00  [INF] Executed DbCommand ("34"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeTitle')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-11-04T00:35:54.0939170+07:00  [INF] Executed DbCommand ("28"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaKeyword')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-11-04T00:35:54.1488994+07:00  [INF] Executed DbCommand ("28"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaDescription')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-11-04T00:35:54.6484103+07:00 0HLI1MB787T1M:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44383/   (ca22a1cb)
+2018-11-04T00:35:54.6484103+07:00 0HLI1MB787T1L:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44383/admin   (ca22a1cb)
+2018-11-04T00:35:54.6555412+07:00 0HLI1MB787T1K:00000001 [INF] Request starting HTTP/1.1 DEBUG http://localhost:15649/  0 (ca22a1cb)
+2018-11-04T00:35:54.6593569+07:00 0HLI1MB787T1N:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44383/admin   (ca22a1cb)
+2018-11-04T00:35:54.7403798+07:00 0HLI1MB787T1K:00000001 [INF] Request finished in 131.1397ms 200  (791a596a)
+2018-11-04T00:35:54.8853010+07:00 0HLI1MB787T1N:00000001 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-11-04T00:35:54.9084466+07:00 0HLI1MB787T1M:00000001 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-11-04T00:35:54.9284310+07:00 0HLI1MB787T1L:00000001 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-11-04T00:35:55.7817626+07:00 0HLI1MB787T1L:00000001 [INF] Executing action method "NetCoreApp.Areas.Admin.Controllers.LoginController.Index (NetCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-11-04T00:35:55.7928366+07:00 0HLI1MB787T1N:00000001 [INF] Executing action method "NetCoreApp.Areas.Admin.Controllers.LoginController.Index (NetCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-11-04T00:35:55.8004097+07:00 0HLI1MB787T1M:00000001 [INF] Executing action method "NetCoreApp.Controllers.HomeController.Index (NetCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-11-04T00:36:02.2865820+07:00 0HLI1MB787T1L:00000001 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Login/Index.cshtml". (9707eebe)
+2018-11-04T00:36:02.3038621+07:00 0HLI1MB787T1N:00000001 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Login/Index.cshtml". (9707eebe)
+2018-11-04T00:36:02.3388517+07:00 0HLI1MB787T1M:00000001 [INF] Executing ViewResult, running view at path "/Views/Home/Index.cshtml". (9707eebe)
+2018-11-04T00:36:02.6728893+07:00 0HLI1MB787T1N:00000001 [INF] Executed action "NetCoreApp.Areas.Admin.Controllers.LoginController.Index (NetCoreApp)" in 6922.2419ms (afa2e885)
+2018-11-04T00:36:02.8569619+07:00 0HLI1MB787T1N:00000001 [INF] Request finished in 8102.9996ms 200 text/html; charset=utf-8 (791a596a)
+2018-11-04T00:36:03.1656035+07:00 0HLI1MB787T1L:00000001 [INF] Executed action "NetCoreApp.Areas.Admin.Controllers.LoginController.Index (NetCoreApp)" in 6908.7707ms (afa2e885)
+2018-11-04T00:36:03.3807280+07:00 0HLI1MB787T1L:00000001 [INF] Request finished in 8594.1187ms 200 text/html; charset=utf-8 (791a596a)
+2018-11-04T00:36:04.6828529+07:00 0HLI1MB787T1M:00000001 [INF] Executed action "NetCoreApp.Controllers.HomeController.Index (NetCoreApp)" in 9114.4158ms (afa2e885)
+2018-11-04T00:36:04.6947475+07:00 0HLI1MB787T1M:00000001 [INF] Request finished in 10110.279ms 200 text/html; charset=utf-8 (791a596a)
+2018-11-04T00:36:07.8017624+07:00 0HLI1MB787T1K:00000002 [INF] Request starting HTTP/1.1 POST http://localhost:44383/admin/login/Authen application/x-www-form-urlencoded; charset=UTF-8 33 (ca22a1cb)
+2018-11-04T00:36:07.8971203+07:00 0HLI1MB787T1K:00000002 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-11-04T00:36:08.2025266+07:00 0HLI1MB787T1K:00000002 [INF] Executing action method "NetCoreApp.Areas.Admin.Controllers.LoginController.Authen (NetCoreApp)" with arguments (["NetCoreApp.Models.AccountViewModels.LoginViewModel"]) - ModelState is Valid (ba7f4ac2)
+2018-11-04T00:36:08.2734131+07:00 0HLI1MB787T1K:00000002 [INF] Entity Framework Core "2.0.0-rtm-26452" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=NetCoreApp.Data.EF " (9958f5bb)
+2018-11-04T00:36:08.5584576+07:00 0HLI1MB787T1K:00000002 [INF] Executed DbCommand ("166"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[Avatar], [u].[Balance], [u].[BirthDay], [u].[ConcurrencyStamp], [u].[DateCreated], [u].[DateModified], [u].[Email], [u].[EmailConfirmed], [u].[FullName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Status], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AppUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2018-11-04T00:36:09.0792686+07:00 0HLI1MB787T1K:00000002 [INF] Executed DbCommand ("223"ms) [Parameters=["@__user_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AppUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0" (0723d8ff)
+2018-11-04T00:36:09.2524974+07:00 0HLI1MB787T1K:00000002 [INF] Executed DbCommand ("64"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2018-11-04T00:36:09.3953630+07:00 0HLI1MB787T1K:00000002 [INF] Executed DbCommand ("94"ms) [Parameters=["@__normalizedName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Description], [r].[Name], [r].[NormalizedName]
+FROM [AppRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2018-11-04T00:36:09.5394130+07:00 0HLI1MB787T1K:00000002 [INF] Executed DbCommand ("81"ms) [Parameters=["@__role_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AppRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0" (0723d8ff)
+2018-11-04T00:36:09.6243624+07:00 0HLI1MB787T1K:00000002 [INF] Executed DbCommand ("72"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2018-11-04T00:36:09.6497126+07:00 0HLI1MB787T1K:00000002 [INF] AuthenticationScheme: "Identity.Application" signed in. (c66dd7e7)
+2018-11-04T00:36:09.6620150+07:00 0HLI1MB787T1K:00000002 [INF] User logged in. (fdce0db4)
+2018-11-04T00:36:09.6826661+07:00 0HLI1MB787T1K:00000002 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-11-04T00:36:09.7969877+07:00 0HLI1MB787T1K:00000002 [INF] Executed action "NetCoreApp.Areas.Admin.Controllers.LoginController.Authen (NetCoreApp)" in 1779.7037ms (afa2e885)
+2018-11-04T00:36:09.8215586+07:00 0HLI1MB787T1K:00000002 [INF] Request finished in 2095.5891ms 200 application/json; charset=utf-8 (791a596a)
+2018-11-04T00:36:09.8813904+07:00 0HLI1MB787T1L:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44383/Admin/Home/Index   (ca22a1cb)
+2018-11-04T00:36:09.9120790+07:00 0HLI1MB787T1L:00000002 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-11-04T00:36:09.9557616+07:00 0HLI1MB787T1L:00000002 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-11-04T00:36:10.0478139+07:00 0HLI1MB787T1L:00000002 [INF] Executing action method "NetCoreApp.Areas.Admin.Controllers.HomeController.Index (NetCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-11-04T00:36:10.5033710+07:00 0HLI1MB787T1L:00000002 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Home/Index.cshtml". (9707eebe)
+2018-11-04T00:36:11.5376071+07:00 0HLI1MB787T1L:00000002 [INF] Entity Framework Core "2.0.0-rtm-26452" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=NetCoreApp.Data.EF " (9958f5bb)
+2018-11-04T00:36:11.9276653+07:00 0HLI1MB787T1L:00000002 [INF] Executed DbCommand ("242"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Name], [x].[Url], [x].[ParentId], [x].[IconCss], [x].[SortOrder], [x].[Status]
+FROM [Functions] AS [x]
+WHERE [x].[Status] = 1
+ORDER BY [x].[ParentId]" (0723d8ff)
+2018-11-04T00:36:13.3164889+07:00 0HLI1MB787T1L:00000002 [INF] Executed action "NetCoreApp.Areas.Admin.Controllers.HomeController.Index (NetCoreApp)" in 3376.38ms (afa2e885)
+2018-11-04T00:36:13.4696591+07:00 0HLI1MB787T1L:00000002 [INF] Request finished in 3477.4497ms 200 text/html; charset=utf-8 (791a596a)
+2018-11-04T00:36:17.2488379+07:00 0HLI1MB787T1K:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44383/admin/role/index   (ca22a1cb)
+2018-11-04T00:36:17.2604893+07:00 0HLI1MB787T1K:00000003 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-11-04T00:36:17.2794132+07:00 0HLI1MB787T1K:00000003 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-11-04T00:36:17.3361210+07:00 0HLI1MB787T1K:00000003 [INF] Executing action method "NetCoreApp.Areas.Admin.Controllers.RoleController.Index (NetCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-11-04T00:36:17.9106524+07:00 0HLI1MB787T1K:00000003 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Role/Index.cshtml". (9707eebe)
+2018-11-04T00:36:18.8268142+07:00 0HLI1MB787T1K:00000003 [INF] Entity Framework Core "2.0.0-rtm-26452" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=NetCoreApp.Data.EF " (9958f5bb)
+2018-11-04T00:36:19.0859066+07:00 0HLI1MB787T1K:00000003 [INF] Executed DbCommand ("242"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Name], [x].[Url], [x].[ParentId], [x].[IconCss], [x].[SortOrder], [x].[Status]
+FROM [Functions] AS [x]
+WHERE [x].[Status] = 1
+ORDER BY [x].[ParentId]" (0723d8ff)
+2018-11-04T00:36:19.3323247+07:00 0HLI1MB787T1K:00000003 [INF] Executed action "NetCoreApp.Areas.Admin.Controllers.RoleController.Index (NetCoreApp)" in 1847.2609ms (afa2e885)
+2018-11-04T00:36:19.4964256+07:00 0HLI1MB787T1K:00000003 [INF] Request finished in 2096.4876ms 200 text/html; charset=utf-8 (791a596a)
+2018-11-04T00:36:19.6726126+07:00 0HLI1MB787T1L:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44383/admin/role/GetAllPaging?keyword=&page=1&pageSize=10   (ca22a1cb)
+2018-11-04T00:36:19.7010136+07:00 0HLI1MB787T1L:00000003 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-11-04T00:36:19.7570578+07:00 0HLI1MB787T1L:00000003 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-11-04T00:36:19.8791597+07:00 0HLI1MB787T1L:00000003 [INF] Executing action method "NetCoreApp.Areas.Admin.Controllers.RoleController.GetAllPaging (NetCoreApp)" with arguments (["", "1", "10"]) - ModelState is Valid (ba7f4ac2)
+2018-11-04T00:36:19.9072663+07:00 0HLI1MB787T1L:00000003 [INF] Entity Framework Core "2.0.0-rtm-26452" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=NetCoreApp.Data.EF " (9958f5bb)
+2018-11-04T00:36:20.1340115+07:00 0HLI1MB787T1L:00000003 [INF] Executed DbCommand ("124"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [AppRoles] AS [a]" (0723d8ff)
+2018-11-04T00:36:20.2057213+07:00 0HLI1MB787T1L:00000003 [WRN] Query: '"(from AppRole dto in DbSet<AppRole> select new AppRoleViewModel{ { 
+    Id = (Nullable<Guid>)[dto]...."' uses a row limiting operation (Skip/Take) without OrderBy which may lead to unpredictable results. (32148ccc)
+2018-11-04T00:36:20.3609776+07:00 0HLI1MB787T1L:00000003 [INF] Executed DbCommand ("107"ms) [Parameters=["@__p_0='?', @__p_1='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[Description]
+FROM [AppRoles] AS [dto]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY" (0723d8ff)
+2018-11-04T00:36:20.3813939+07:00 0HLI1MB787T1L:00000003 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-11-04T00:36:20.4890558+07:00 0HLI1MB787T1L:00000003 [INF] Executed action "NetCoreApp.Areas.Admin.Controllers.RoleController.GetAllPaging (NetCoreApp)" in 702.576ms (afa2e885)
+2018-11-04T00:36:20.5390254+07:00 0HLI1MB787T1L:00000003 [INF] Request finished in 854.6823ms 200 application/json; charset=utf-8 (791a596a)
+2018-11-04T00:36:28.4359836+07:00 0HLI1MB787T1K:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44383/admin/user/index   (ca22a1cb)
+2018-11-04T00:36:28.4468851+07:00 0HLI1MB787T1K:00000004 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-11-04T00:36:28.4750718+07:00 0HLI1MB787T1K:00000004 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-11-04T00:36:28.5312909+07:00 0HLI1MB787T1K:00000004 [INF] Executing action method "NetCoreApp.Areas.Admin.Controllers.UserController.Index (NetCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-11-04T00:36:28.5679227+07:00 0HLI1MB787T1K:00000004 [INF] Entity Framework Core "2.0.0-rtm-26452" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=NetCoreApp.Data.EF " (9958f5bb)
+2018-11-04T00:36:28.7970501+07:00 0HLI1MB787T1K:00000004 [INF] Executed DbCommand ("129"ms) [Parameters=["@__functionId_1='?' (Size = 128)"], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Functions] AS [f]
+        INNER JOIN [Permissions] AS [p] ON [f].[Id] = [p].[FunctionId]
+        INNER JOIN [AppRoles] AS [r] ON [p].[RoleId] = [r].[Id]
+        WHERE ([r].[Name] IN (N'Admin') AND ([f].[Id] = @__functionId_1)) AND ([p].[CanRead] = 1))
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-11-04T00:36:28.8709476+07:00 0HLI1MB787T1K:00000004 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-11-04T00:36:28.9436430+07:00 0HLI1MB787T1K:00000004 [INF] Executing RedirectResult, redirecting to "/Admin/Login/Index". (d98d540e)
+2018-11-04T00:36:28.9662142+07:00 0HLI1MB787T1K:00000004 [INF] Executed action "NetCoreApp.Areas.Admin.Controllers.UserController.Index (NetCoreApp)" in 482.1984ms (afa2e885)
+2018-11-04T00:36:29.0039245+07:00 0HLI1MB787T1K:00000004 [INF] Request finished in 539.417ms 302  (791a596a)
+2018-11-04T00:36:29.0157283+07:00 0HLI1MB787T1L:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44383/Admin/Login/Index   (ca22a1cb)
+2018-11-04T00:36:29.0329555+07:00 0HLI1MB787T1L:00000004 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-11-04T00:36:29.0939960+07:00 0HLI1MB787T1L:00000004 [INF] Executing action method "NetCoreApp.Areas.Admin.Controllers.LoginController.Index (NetCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-11-04T00:36:29.1046342+07:00 0HLI1MB787T1L:00000004 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Login/Index.cshtml". (9707eebe)
+2018-11-04T00:36:29.2069209+07:00 0HLI1MB787T1L:00000004 [INF] Executed action "NetCoreApp.Areas.Admin.Controllers.LoginController.Index (NetCoreApp)" in 72.3884ms (afa2e885)
+2018-11-04T00:36:29.2578039+07:00 0HLI1MB787T1L:00000004 [INF] Request finished in 215.7121ms 200 text/html; charset=utf-8 (791a596a)
+2018-11-04T00:37:44.5140491+07:00  [INF] Entity Framework Core "2.0.0-rtm-26452" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=NetCoreApp.Data.EF " (9958f5bb)
+2018-11-04T00:37:45.2382249+07:00  [INF] Executed DbCommand ("163"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppRoles] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-11-04T00:37:45.4773116+07:00  [INF] Executed DbCommand ("165"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppUsers] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-11-04T00:37:45.5540787+07:00  [INF] Executed DbCommand ("31"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Functions] AS [f]" (0723d8ff)
+2018-11-04T00:37:45.6290579+07:00  [INF] Executed DbCommand ("27"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Footers] AS [x]
+WHERE [x].[Id] = 'DefaultFooterId'" (0723d8ff)
+2018-11-04T00:37:45.6688187+07:00  [INF] Executed DbCommand ("24"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Colors] AS [c]" (0723d8ff)
+2018-11-04T00:37:45.7071684+07:00  [INF] Executed DbCommand ("25"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [AdvertisementPages] AS [a]" (0723d8ff)
+2018-11-04T00:37:45.7453136+07:00  [INF] Executed DbCommand ("24"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Slides] AS [s]" (0723d8ff)
+2018-11-04T00:37:45.8109200+07:00  [INF] Executed DbCommand ("45"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Sizes] AS [s]" (0723d8ff)
+2018-11-04T00:37:45.8659762+07:00  [INF] Executed DbCommand ("28"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [ProductCategories] AS [p]" (0723d8ff)
+2018-11-04T00:37:45.9392650+07:00  [INF] Executed DbCommand ("36"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeTitle')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-11-04T00:37:46.0002506+07:00  [INF] Executed DbCommand ("41"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaKeyword')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-11-04T00:37:46.0407614+07:00  [INF] Executed DbCommand ("26"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaDescription')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-11-04T00:37:46.8377962+07:00 0HLI1MC8IH3PL:00000001 [INF] Request starting HTTP/1.1 DEBUG http://localhost:15649/  0 (ca22a1cb)
+2018-11-04T00:37:46.8331805+07:00 0HLI1MC8IH3PI:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44383/admin   (ca22a1cb)
+2018-11-04T00:37:46.8609449+07:00 0HLI1MC8IH3PJ:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44383/admin   (ca22a1cb)
+2018-11-04T00:37:46.8676080+07:00 0HLI1MC8IH3PK:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44383/   (ca22a1cb)
+2018-11-04T00:37:46.9548781+07:00 0HLI1MC8IH3PL:00000001 [INF] Request finished in 129.8075ms 200  (791a596a)
+2018-11-04T00:37:47.4035546+07:00 0HLI1MC8IH3PJ:00000001 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-11-04T00:37:47.5036157+07:00 0HLI1MC8IH3PK:00000001 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-11-04T00:37:47.5367734+07:00 0HLI1MC8IH3PI:00000001 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-11-04T00:37:48.5344275+07:00 0HLI1MC8IH3PI:00000001 [INF] Executing action method "NetCoreApp.Areas.Admin.Controllers.LoginController.Index (NetCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-11-04T00:37:48.6740123+07:00 0HLI1MC8IH3PK:00000001 [INF] Executing action method "NetCoreApp.Controllers.HomeController.Index (NetCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-11-04T00:37:48.6868184+07:00 0HLI1MC8IH3PJ:00000001 [INF] Executing action method "NetCoreApp.Areas.Admin.Controllers.LoginController.Index (NetCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-11-04T00:37:55.0008925+07:00 0HLI1MC8IH3PK:00000001 [INF] Executing ViewResult, running view at path "/Views/Home/Index.cshtml". (9707eebe)
+2018-11-04T00:37:55.0027335+07:00 0HLI1MC8IH3PI:00000001 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Login/Index.cshtml". (9707eebe)
+2018-11-04T00:37:55.0076741+07:00 0HLI1MC8IH3PJ:00000001 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Login/Index.cshtml". (9707eebe)
+2018-11-04T00:37:55.6379268+07:00 0HLI1MC8IH3PI:00000001 [INF] Executed action "NetCoreApp.Areas.Admin.Controllers.LoginController.Index (NetCoreApp)" in 7159.5589ms (afa2e885)
+2018-11-04T00:37:55.7131929+07:00 0HLI1MC8IH3PI:00000001 [INF] Request finished in 8879.6062ms 200 text/html; charset=utf-8 (791a596a)
+2018-11-04T00:37:55.7411633+07:00 0HLI1MC8IH3PJ:00000001 [INF] Executed action "NetCoreApp.Areas.Admin.Controllers.LoginController.Index (NetCoreApp)" in 7087.0284ms (afa2e885)
+2018-11-04T00:37:55.8037468+07:00 0HLI1MC8IH3PJ:00000001 [INF] Request finished in 8981.6639ms 200 text/html; charset=utf-8 (791a596a)
+2018-11-04T00:37:56.9662166+07:00 0HLI1MC8IH3PK:00000001 [INF] Executed action "NetCoreApp.Controllers.HomeController.Index (NetCoreApp)" in 8881.857ms (afa2e885)
+2018-11-04T00:37:56.9756777+07:00 0HLI1MC8IH3PK:00000001 [INF] Request finished in 10205.3159ms 200 text/html; charset=utf-8 (791a596a)
+2018-11-04T00:37:57.6629904+07:00 0HLI1MC8IH3PL:00000002 [INF] Request starting HTTP/1.1 POST http://localhost:44383/admin/login/Authen application/x-www-form-urlencoded; charset=UTF-8 33 (ca22a1cb)
+2018-11-04T00:37:57.6988296+07:00 0HLI1MC8IH3PL:00000002 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-11-04T00:37:58.0259824+07:00 0HLI1MC8IH3PL:00000002 [INF] Executing action method "NetCoreApp.Areas.Admin.Controllers.LoginController.Authen (NetCoreApp)" with arguments (["NetCoreApp.Models.AccountViewModels.LoginViewModel"]) - ModelState is Valid (ba7f4ac2)
+2018-11-04T00:37:58.0968835+07:00 0HLI1MC8IH3PL:00000002 [INF] Entity Framework Core "2.0.0-rtm-26452" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=NetCoreApp.Data.EF " (9958f5bb)
+2018-11-04T00:37:58.3784591+07:00 0HLI1MC8IH3PL:00000002 [INF] Executed DbCommand ("177"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[Avatar], [u].[Balance], [u].[BirthDay], [u].[ConcurrencyStamp], [u].[DateCreated], [u].[DateModified], [u].[Email], [u].[EmailConfirmed], [u].[FullName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Status], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AppUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2018-11-04T00:37:58.7416654+07:00 0HLI1MC8IH3PL:00000002 [INF] Executed DbCommand ("152"ms) [Parameters=["@__user_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AppUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0" (0723d8ff)
+2018-11-04T00:37:58.8731328+07:00 0HLI1MC8IH3PL:00000002 [INF] Executed DbCommand ("39"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2018-11-04T00:37:59.4599486+07:00 0HLI1MC8IH3PL:00000002 [INF] Executed DbCommand ("424"ms) [Parameters=["@__normalizedName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Description], [r].[Name], [r].[NormalizedName]
+FROM [AppRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2018-11-04T00:37:59.6202023+07:00 0HLI1MC8IH3PL:00000002 [INF] Executed DbCommand ("92"ms) [Parameters=["@__role_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AppRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0" (0723d8ff)
+2018-11-04T00:37:59.7171391+07:00 0HLI1MC8IH3PL:00000002 [INF] Executed DbCommand ("83"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2018-11-04T00:37:59.7403407+07:00 0HLI1MC8IH3PL:00000002 [INF] AuthenticationScheme: "Identity.Application" signed in. (c66dd7e7)
+2018-11-04T00:37:59.7511533+07:00 0HLI1MC8IH3PL:00000002 [INF] User logged in. (fdce0db4)
+2018-11-04T00:37:59.7707695+07:00 0HLI1MC8IH3PL:00000002 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-11-04T00:37:59.8779135+07:00 0HLI1MC8IH3PL:00000002 [INF] Executed action "NetCoreApp.Areas.Admin.Controllers.LoginController.Authen (NetCoreApp)" in 2063.847ms (afa2e885)
+2018-11-04T00:37:59.9890175+07:00 0HLI1MC8IH3PL:00000002 [INF] Request finished in 2253.0197ms 200 application/json; charset=utf-8 (791a596a)
+2018-11-04T00:37:59.9934307+07:00 0HLI1MC8IH3PJ:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44383/Admin/Home/Index   (ca22a1cb)
+2018-11-04T00:38:00.0451032+07:00 0HLI1MC8IH3PJ:00000002 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-11-04T00:38:00.0898271+07:00 0HLI1MC8IH3PJ:00000002 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-11-04T00:38:00.2034006+07:00 0HLI1MC8IH3PJ:00000002 [INF] Executing action method "NetCoreApp.Areas.Admin.Controllers.HomeController.Index (NetCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-11-04T00:38:00.5325635+07:00 0HLI1MC8IH3PJ:00000002 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Home/Index.cshtml". (9707eebe)
+2018-11-04T00:38:01.2115030+07:00 0HLI1MC8IH3PJ:00000002 [INF] Entity Framework Core "2.0.0-rtm-26452" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=NetCoreApp.Data.EF " (9958f5bb)
+2018-11-04T00:38:01.6414140+07:00 0HLI1MC8IH3PJ:00000002 [INF] Executed DbCommand ("313"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Name], [x].[Url], [x].[ParentId], [x].[IconCss], [x].[SortOrder], [x].[Status]
+FROM [Functions] AS [x]
+WHERE [x].[Status] = 1
+ORDER BY [x].[ParentId]" (0723d8ff)
+2018-11-04T00:38:02.6955970+07:00 0HLI1MC8IH3PJ:00000002 [INF] Executed action "NetCoreApp.Areas.Admin.Controllers.HomeController.Index (NetCoreApp)" in 2638.4337ms (afa2e885)
+2018-11-04T00:38:02.8264921+07:00 0HLI1MC8IH3PJ:00000002 [INF] Request finished in 2742.3381ms 200 text/html; charset=utf-8 (791a596a)
+2018-11-04T00:38:07.8095906+07:00 0HLI1MC8IH3PL:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44383/admin/role/index   (ca22a1cb)
+2018-11-04T00:38:07.8208279+07:00 0HLI1MC8IH3PL:00000003 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-11-04T00:38:07.8373493+07:00 0HLI1MC8IH3PL:00000003 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-11-04T00:38:07.9055050+07:00 0HLI1MC8IH3PL:00000003 [INF] Executing action method "NetCoreApp.Areas.Admin.Controllers.RoleController.Index (NetCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-11-04T00:38:08.2610759+07:00 0HLI1MC8IH3PL:00000003 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Role/Index.cshtml". (9707eebe)
+2018-11-04T00:38:09.0236626+07:00 0HLI1MC8IH3PL:00000003 [INF] Entity Framework Core "2.0.0-rtm-26452" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=NetCoreApp.Data.EF " (9958f5bb)
+2018-11-04T00:38:09.1070622+07:00 0HLI1MC8IH3PL:00000003 [INF] Executed DbCommand ("67"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Name], [x].[Url], [x].[ParentId], [x].[IconCss], [x].[SortOrder], [x].[Status]
+FROM [Functions] AS [x]
+WHERE [x].[Status] = 1
+ORDER BY [x].[ParentId]" (0723d8ff)
+2018-11-04T00:38:09.2485090+07:00 0HLI1MC8IH3PL:00000003 [INF] Executed action "NetCoreApp.Areas.Admin.Controllers.RoleController.Index (NetCoreApp)" in 1302.1769ms (afa2e885)
+2018-11-04T00:38:09.4756425+07:00 0HLI1MC8IH3PL:00000003 [INF] Request finished in 1462.4713ms 200 text/html; charset=utf-8 (791a596a)
+2018-11-04T00:38:09.6316777+07:00 0HLI1MC8IH3PJ:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44383/admin/role/GetAllPaging?keyword=&page=1&pageSize=10   (ca22a1cb)
+2018-11-04T00:38:09.6517561+07:00 0HLI1MC8IH3PJ:00000003 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-11-04T00:38:09.6689411+07:00 0HLI1MC8IH3PJ:00000003 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-11-04T00:38:09.7627473+07:00 0HLI1MC8IH3PJ:00000003 [INF] Executing action method "NetCoreApp.Areas.Admin.Controllers.RoleController.GetAllPaging (NetCoreApp)" with arguments (["", "1", "10"]) - ModelState is Valid (ba7f4ac2)
+2018-11-04T00:38:09.7780462+07:00 0HLI1MC8IH3PJ:00000003 [INF] Entity Framework Core "2.0.0-rtm-26452" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=NetCoreApp.Data.EF " (9958f5bb)
+2018-11-04T00:38:09.9648153+07:00 0HLI1MC8IH3PJ:00000003 [INF] Executed DbCommand ("115"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [AppRoles] AS [a]" (0723d8ff)
+2018-11-04T00:38:10.0274801+07:00 0HLI1MC8IH3PJ:00000003 [WRN] Query: '"(from AppRole dto in DbSet<AppRole> select new AppRoleViewModel{ { 
+    Id = (Nullable<Guid>)[dto]...."' uses a row limiting operation (Skip/Take) without OrderBy which may lead to unpredictable results. (32148ccc)
+2018-11-04T00:38:10.1455998+07:00 0HLI1MC8IH3PJ:00000003 [INF] Executed DbCommand ("73"ms) [Parameters=["@__p_0='?', @__p_1='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[Description]
+FROM [AppRoles] AS [dto]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY" (0723d8ff)
+2018-11-04T00:38:10.1577598+07:00 0HLI1MC8IH3PJ:00000003 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-11-04T00:38:10.2340841+07:00 0HLI1MC8IH3PJ:00000003 [INF] Executed action "NetCoreApp.Areas.Admin.Controllers.RoleController.GetAllPaging (NetCoreApp)" in 536.2765ms (afa2e885)
+2018-11-04T00:38:10.2806238+07:00 0HLI1MC8IH3PJ:00000003 [INF] Request finished in 626.5623ms 200 application/json; charset=utf-8 (791a596a)
+2018-11-04T00:39:31.9698115+07:00 0HLI1MC8IH3PM:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44383/admin/role/index   (ca22a1cb)
+2018-11-04T00:39:31.9807292+07:00 0HLI1MC8IH3PM:00000001 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-11-04T00:39:31.9912079+07:00 0HLI1MC8IH3PM:00000001 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-11-04T00:39:32.0553250+07:00 0HLI1MC8IH3PM:00000001 [INF] Executing action method "NetCoreApp.Areas.Admin.Controllers.RoleController.Index (NetCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-11-04T00:39:32.0669520+07:00 0HLI1MC8IH3PM:00000001 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Role/Index.cshtml". (9707eebe)
+2018-11-04T00:39:32.0801852+07:00 0HLI1MC8IH3PM:00000001 [INF] Entity Framework Core "2.0.0-rtm-26452" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=NetCoreApp.Data.EF " (9958f5bb)
+2018-11-04T00:39:32.1897036+07:00 0HLI1MC8IH3PM:00000001 [INF] Executed DbCommand ("69"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Name], [x].[Url], [x].[ParentId], [x].[IconCss], [x].[SortOrder], [x].[Status]
+FROM [Functions] AS [x]
+WHERE [x].[Status] = 1
+ORDER BY [x].[ParentId]" (0723d8ff)
+2018-11-04T00:39:32.4764671+07:00 0HLI1MC8IH3PM:00000001 [INF] Executed action "NetCoreApp.Areas.Admin.Controllers.RoleController.Index (NetCoreApp)" in 212.9111ms (afa2e885)
+2018-11-04T00:39:32.7570010+07:00 0HLI1MC8IH3PM:00000001 [INF] Request finished in 539.3696ms 200 text/html; charset=utf-8 (791a596a)
+2018-11-04T00:39:32.7856338+07:00 0HLI1MC8IH3PS:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44383/vendor/font-awesome/css/font-awesome.css   (ca22a1cb)
+2018-11-04T00:39:32.7944388+07:00 0HLI1MC8IH3PO:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44383/vendor/nprogress/nprogress.css   (ca22a1cb)
+2018-11-04T00:39:32.8110613+07:00 0HLI1MC8IH3PR:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44383/vendor/bootstrap/css/bootstrap.css   (ca22a1cb)
+2018-11-04T00:39:32.8669054+07:00 0HLI1MC8IH3PS:00000001 [INF] Sending file. Request path: '"/vendor/font-awesome/css/font-awesome.css"'. Physical path: '"D:\NetCore\NetCoreApp\NetCoreApp\wwwroot\vendor\font-awesome\css\font-awesome.css"' (27b0a520)
+2018-11-04T00:39:32.8940583+07:00 0HLI1MC8IH3PR:00000001 [INF] Sending file. Request path: '"/vendor/bootstrap/css/bootstrap.css"'. Physical path: '"D:\NetCore\NetCoreApp\NetCoreApp\wwwroot\vendor\bootstrap\css\bootstrap.css"' (27b0a520)
+2018-11-04T00:39:33.0098518+07:00 0HLI1MC8IH3PO:00000001 [INF] Sending file. Request path: '"/vendor/nprogress/nprogress.css"'. Physical path: '"D:\NetCore\NetCoreApp\NetCoreApp\wwwroot\vendor\nprogress\nprogress.css"' (27b0a520)
+2018-11-04T00:39:33.1619273+07:00 0HLI1MC8IH3PN:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44383/vendor/ckeditor/skins/moono/editor.css   (ca22a1cb)
+2018-11-04T00:39:33.2134984+07:00 0HLI1MC8IH3PP:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44383/admin-side/css/custom.css   (ca22a1cb)
+2018-11-04T00:39:33.2347101+07:00 0HLI1MC8IH3PQ:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44383/admin-side/images/img.jpg   (ca22a1cb)
+2018-11-04T00:39:33.2603674+07:00 0HLI1MC8IH3PU:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44383/vendor/jquery-treegrid/css/jquery.treegrid.css   (ca22a1cb)
+2018-11-04T00:39:33.2786386+07:00 0HLI1MC8IH3PT:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44383/vendor/bootstrap-daterangepicker/daterangepicker.css   (ca22a1cb)
+2018-11-04T00:39:33.6116917+07:00 0HLI1MC8IH3PQ:00000001 [INF] Sending file. Request path: '"/admin-side/images/img.jpg"'. Physical path: '"D:\NetCore\NetCoreApp\NetCoreApp\wwwroot\admin-side\images\img.jpg"' (27b0a520)
+2018-11-04T00:39:33.6270762+07:00 0HLI1MC8IH3PU:00000001 [INF] Sending file. Request path: '"/vendor/jquery-treegrid/css/jquery.treegrid.css"'. Physical path: '"D:\NetCore\NetCoreApp\NetCoreApp\wwwroot\vendor\jquery-treegrid\css\jquery.treegrid.css"' (27b0a520)
+2018-11-04T00:39:33.6559348+07:00 0HLI1MC8IH3PT:00000001 [INF] Sending file. Request path: '"/vendor/bootstrap-daterangepicker/daterangepicker.css"'. Physical path: '"D:\NetCore\NetCoreApp\NetCoreApp\wwwroot\vendor\bootstrap-daterangepicker\daterangepicker.css"' (27b0a520)
+2018-11-04T00:39:33.9266464+07:00 0HLI1MC8IH3PP:00000001 [INF] Sending file. Request path: '"/admin-side/css/custom.css"'. Physical path: '"D:\NetCore\NetCoreApp\NetCoreApp\wwwroot\admin-side\css\custom.css"' (27b0a520)
+2018-11-04T00:39:33.9331608+07:00 0HLI1MC8IH3PT:00000001 [INF] Request finished in 736.6842ms 200 text/css (791a596a)
+2018-11-04T00:39:33.9400793+07:00 0HLI1MC8IH3PV:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44383/lib/jquery/dist/jquery.js   (ca22a1cb)
+2018-11-04T00:39:33.9471921+07:00 0HLI1MC8IH3PS:00000001 [INF] Request finished in 917.1557ms 200 text/css (791a596a)
+2018-11-04T00:39:33.9897758+07:00 0HLI1MC8IH3PN:00000001 [INF] Sending file. Request path: '"/vendor/ckeditor/skins/moono/editor.css"'. Physical path: '"D:\NetCore\NetCoreApp\NetCoreApp\wwwroot\vendor\ckeditor\skins\moono\editor.css"' (27b0a520)
+2018-11-04T00:39:34.0359807+07:00 0HLI1MC8IH3PV:00000001 [INF] Sending file. Request path: '"/lib/jquery/dist/jquery.js"'. Physical path: '"D:\NetCore\NetCoreApp\NetCoreApp\wwwroot\lib\jquery\dist\jquery.js"' (27b0a520)
+2018-11-04T00:39:34.0521070+07:00 0HLI1MC8IH3PS:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44383/vendor/flot/jquery.flot.stack.js   (ca22a1cb)
+2018-11-04T00:39:34.0827597+07:00 0HLI1MC8IH3PS:00000002 [INF] Sending file. Request path: '"/vendor/flot/jquery.flot.stack.js"'. Physical path: '"D:\NetCore\NetCoreApp\NetCoreApp\wwwroot\vendor\flot\jquery.flot.stack.js"' (27b0a520)
+2018-11-04T00:39:34.0939896+07:00 0HLI1MC8IH3PO:00000001 [INF] Request finished in 1580.4927ms 200 text/css (791a596a)
+2018-11-04T00:39:34.3249399+07:00 0HLI1MC8IH3Q1:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44383/vendor/nprogress/nprogress.js   (ca22a1cb)
+2018-11-04T00:39:34.3320512+07:00 0HLI1MC8IH3Q0:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44383/vendor/chart.js/Chart.js   (ca22a1cb)
+2018-11-04T00:39:34.3374445+07:00 0HLI1MC8IH3Q2:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44383/vendor/flot/jquery.flot.time.js   (ca22a1cb)
+2018-11-04T00:39:34.3622660+07:00 0HLI1MC8IH3PN:00000001 [INF] Request finished in 1551.2193ms 200 text/css (791a596a)
+2018-11-04T00:39:34.3686107+07:00 0HLI1MC8IH3Q1:00000001 [INF] Sending file. Request path: '"/vendor/nprogress/nprogress.js"'. Physical path: '"D:\NetCore\NetCoreApp\NetCoreApp\wwwroot\vendor\nprogress\nprogress.js"' (27b0a520)
+2018-11-04T00:39:34.4015642+07:00 0HLI1MC8IH3Q0:00000001 [INF] Sending file. Request path: '"/vendor/chart.js/Chart.js"'. Physical path: '"D:\NetCore\NetCoreApp\NetCoreApp\wwwroot\vendor\chart.js\Chart.js"' (27b0a520)
+2018-11-04T00:39:34.4036529+07:00 0HLI1MC8IH3Q2:00000001 [INF] Sending file. Request path: '"/vendor/flot/jquery.flot.time.js"'. Physical path: '"D:\NetCore\NetCoreApp\NetCoreApp\wwwroot\vendor\flot\jquery.flot.time.js"' (27b0a520)
+2018-11-04T00:39:34.4518733+07:00 0HLI1MC8IH3PM:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44383/lib/bootstrap/dist/js/bootstrap.js   (ca22a1cb)
+2018-11-04T00:39:34.4871390+07:00 0HLI1MC8IH3Q3:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44383/vendor/jquery-sparkline/jquery.sparkline.js   (ca22a1cb)
+2018-11-04T00:39:34.5114682+07:00 0HLI1MC8IH3Q3:00000001 [INF] Sending file. Request path: '"/vendor/jquery-sparkline/jquery.sparkline.js"'. Physical path: '"D:\NetCore\NetCoreApp\NetCoreApp\wwwroot\vendor\jquery-sparkline\jquery.sparkline.js"' (27b0a520)
+2018-11-04T00:39:34.5185700+07:00 0HLI1MC8IH3PM:00000002 [INF] Sending file. Request path: '"/lib/bootstrap/dist/js/bootstrap.js"'. Physical path: '"D:\NetCore\NetCoreApp\NetCoreApp\wwwroot\lib\bootstrap\dist\js\bootstrap.js"' (27b0a520)
+2018-11-04T00:39:34.5317615+07:00 0HLI1MC8IH3Q4:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44383/vendor/flot/jquery.flot.js   (ca22a1cb)
+2018-11-04T00:39:34.5552125+07:00 0HLI1MC8IH3Q4:00000001 [INF] Sending file. Request path: '"/vendor/flot/jquery.flot.js"'. Physical path: '"D:\NetCore\NetCoreApp\NetCoreApp\wwwroot\vendor\flot\jquery.flot.js"' (27b0a520)
+2018-11-04T00:39:34.5767360+07:00 0HLI1MC8IH3Q6:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44383/vendor/fastclick/fastclick.js   (ca22a1cb)
+2018-11-04T00:39:34.6637585+07:00 0HLI1MC8IH3Q6:00000001 [INF] Sending file. Request path: '"/vendor/fastclick/fastclick.js"'. Physical path: '"D:\NetCore\NetCoreApp\NetCoreApp\wwwroot\vendor\fastclick\fastclick.js"' (27b0a520)
+2018-11-04T00:39:34.9194203+07:00 0HLI1MC8IH3PU:00000001 [INF] Request finished in 1531.5321ms 200 text/css (791a596a)
+2018-11-04T00:39:35.0712223+07:00 0HLI1MC8IH3Q5:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44383/vendor/flot/jquery.flot.pie.js   (ca22a1cb)
+2018-11-04T00:39:35.0880737+07:00 0HLI1MC8IH3Q6:00000001 [INF] Request finished in 230.6206ms 200 application/javascript (791a596a)
+2018-11-04T00:39:35.1882960+07:00 0HLI1MC8IH3PQ:00000001 [INF] Request finished in 1636.269ms 200 image/jpeg (791a596a)
+2018-11-04T00:39:35.1916208+07:00 0HLI1MC8IH3PS:00000002 [INF] Request finished in 1019.6931ms 200 application/javascript (791a596a)
+2018-11-04T00:39:35.2544372+07:00 0HLI1MC8IH3Q1:00000001 [INF] Request finished in 888.2182ms 200 application/javascript (791a596a)
+2018-11-04T00:39:35.5407701+07:00 0HLI1MC8IH3PP:00000001 [INF] Request finished in 2604.5272ms 200 text/css (791a596a)
+2018-11-04T00:39:35.5529206+07:00 0HLI1MC8IH3Q5:00000001 [INF] Sending file. Request path: '"/vendor/flot/jquery.flot.pie.js"'. Physical path: '"D:\NetCore\NetCoreApp\NetCoreApp\wwwroot\vendor\flot\jquery.flot.pie.js"' (27b0a520)
+2018-11-04T00:39:35.5685827+07:00 0HLI1MC8IH3PT:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44383/vendor/flot/jquery.flot.resize.js   (ca22a1cb)
+2018-11-04T00:39:35.6153304+07:00 0HLI1MC8IH3PT:00000002 [INF] Sending file. Request path: '"/vendor/flot/jquery.flot.resize.js"'. Physical path: '"D:\NetCore\NetCoreApp\NetCoreApp\wwwroot\vendor\flot\jquery.flot.resize.js"' (27b0a520)
+2018-11-04T00:39:35.6398173+07:00 0HLI1MC8IH3PO:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44383/vendor/flot-spline/jquery.flot.spline.js   (ca22a1cb)
+2018-11-04T00:39:35.6788992+07:00 0HLI1MC8IH3PN:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44383/vendor/flot-orderbars/jquery.flot.orderBars.js   (ca22a1cb)
+2018-11-04T00:39:35.6874630+07:00 0HLI1MC8IH3PO:00000002 [INF] Sending file. Request path: '"/vendor/flot-spline/jquery.flot.spline.js"'. Physical path: '"D:\NetCore\NetCoreApp\NetCoreApp\wwwroot\vendor\flot-spline\jquery.flot.spline.js"' (27b0a520)
+2018-11-04T00:39:35.6944227+07:00 0HLI1MC8IH3Q2:00000001 [INF] Request finished in 984.7354ms 200 application/javascript (791a596a)
+2018-11-04T00:39:35.7133958+07:00 0HLI1MC8IH3Q5:00000001 [INF] Request finished in 1078.0027ms 200 application/javascript (791a596a)
+2018-11-04T00:39:35.7499242+07:00 0HLI1MC8IH3PN:00000002 [INF] Sending file. Request path: '"/vendor/flot-orderbars/jquery.flot.orderBars.js"'. Physical path: '"D:\NetCore\NetCoreApp\NetCoreApp\wwwroot\vendor\flot-orderbars\jquery.flot.orderBars.js"' (27b0a520)
+2018-11-04T00:39:35.7910070+07:00 0HLI1MC8IH3PO:00000002 [INF] Request finished in 172.2688ms 200 application/javascript (791a596a)
+2018-11-04T00:39:35.8794830+07:00 0HLI1MC8IH3PQ:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44383/vendor/datejs/date.js   (ca22a1cb)
+2018-11-04T00:39:35.9096244+07:00 0HLI1MC8IH3PN:00000002 [INF] Request finished in 135.6271ms 200 application/javascript (791a596a)
+2018-11-04T00:39:35.9197637+07:00 0HLI1MC8IH3PQ:00000002 [INF] Sending file. Request path: '"/vendor/datejs/date.js"'. Physical path: '"D:\NetCore\NetCoreApp\NetCoreApp\wwwroot\vendor\datejs\date.js"' (27b0a520)
+2018-11-04T00:39:35.9394355+07:00 0HLI1MC8IH3PU:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44383/vendor/flot.curvedlines/curvedLines.js   (ca22a1cb)
+2018-11-04T00:39:35.9516744+07:00 0HLI1MC8IH3PM:00000002 [INF] Request finished in 1416.0074ms 200 application/javascript (791a596a)
+2018-11-04T00:39:35.9685673+07:00 0HLI1MC8IH3PT:00000002 [INF] Request finished in 494.2679ms 200 application/javascript (791a596a)
+2018-11-04T00:39:35.9874788+07:00 0HLI1MC8IH3PU:00000002 [INF] Sending file. Request path: '"/vendor/flot.curvedlines/curvedLines.js"'. Physical path: '"D:\NetCore\NetCoreApp\NetCoreApp\wwwroot\vendor\flot.curvedlines\curvedLines.js"' (27b0a520)
+2018-11-04T00:39:36.0334264+07:00 0HLI1MC8IH3Q6:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44383/vendor/twbs-pagination/jquery.twbsPagination.js   (ca22a1cb)
+2018-11-04T00:39:36.0400190+07:00 0HLI1MC8IH3PS:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44383/vendor/mustache/mustache.js   (ca22a1cb)
+2018-11-04T00:39:36.2467639+07:00 0HLI1MC8IH3PS:00000003 [INF] Sending file. Request path: '"/vendor/mustache/mustache.js"'. Physical path: '"D:\NetCore\NetCoreApp\NetCoreApp\wwwroot\vendor\mustache\mustache.js"' (27b0a520)
+2018-11-04T00:39:36.3092103+07:00 0HLI1MC8IH3Q1:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44383/vendor/bootstrap-daterangepicker/moment.min.js   (ca22a1cb)
+2018-11-04T00:39:36.3264088+07:00 0HLI1MC8IH3Q6:00000002 [INF] Sending file. Request path: '"/vendor/twbs-pagination/jquery.twbsPagination.js"'. Physical path: '"D:\NetCore\NetCoreApp\NetCoreApp\wwwroot\vendor\twbs-pagination\jquery.twbsPagination.js"' (27b0a520)
+2018-11-04T00:39:36.3497959+07:00 0HLI1MC8IH3Q1:00000002 [INF] Sending file. Request path: '"/vendor/bootstrap-daterangepicker/moment.min.js"'. Physical path: '"D:\NetCore\NetCoreApp\NetCoreApp\wwwroot\vendor\bootstrap-daterangepicker\moment.min.js"' (27b0a520)
+2018-11-04T00:39:36.4484711+07:00 0HLI1MC8IH3PS:00000003 [INF] Request finished in 343.5282ms 200 application/javascript (791a596a)
+2018-11-04T00:39:36.5892488+07:00 0HLI1MC8IH3Q6:00000002 [INF] Request finished in 422.6706ms 200 application/javascript (791a596a)
+2018-11-04T00:39:36.7124540+07:00 0HLI1MC8IH3PU:00000002 [INF] Request finished in 278.6071ms 200 application/javascript (791a596a)
+2018-11-04T00:39:36.9536817+07:00 0HLI1MC8IH3Q2:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44383/vendor/bootstrap-daterangepicker/daterangepicker.js   (ca22a1cb)
+2018-11-04T00:39:36.9730621+07:00 0HLI1MC8IH3Q4:00000001 [INF] Request finished in 2276.1621ms 200 application/javascript (791a596a)
+2018-11-04T00:39:37.0263954+07:00 0HLI1MC8IH3PR:00000001 [INF] Request finished in 4043.7062ms 200 text/css (791a596a)
+2018-11-04T00:39:37.0357700+07:00 0HLI1MC8IH3Q2:00000002 [INF] Sending file. Request path: '"/vendor/bootstrap-daterangepicker/daterangepicker.js"'. Physical path: '"D:\NetCore\NetCoreApp\NetCoreApp\wwwroot\vendor\bootstrap-daterangepicker\daterangepicker.js"' (27b0a520)
+2018-11-04T00:39:37.0499127+07:00 0HLI1MC8IH3Q3:00000001 [INF] Request finished in 2558.156ms 200 application/javascript (791a596a)
+2018-11-04T00:39:37.0527525+07:00 0HLI1MC8IH3Q1:00000002 [INF] Request finished in 421.2886ms 200 application/javascript (791a596a)
+2018-11-04T00:39:37.1020609+07:00 0HLI1MC8IH3PP:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44383/lib/jquery-validation/dist/jquery.validate.js   (ca22a1cb)
+2018-11-04T00:39:37.1522444+07:00 0HLI1MC8IH3PP:00000002 [INF] Sending file. Request path: '"/lib/jquery-validation/dist/jquery.validate.js"'. Physical path: '"D:\NetCore\NetCoreApp\NetCoreApp\wwwroot\lib\jquery-validation\dist\jquery.validate.js"' (27b0a520)
+2018-11-04T00:39:37.1631077+07:00 0HLI1MC8IH3Q5:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44383/lib/jquery-validation/dist/additional-methods.js   (ca22a1cb)
+2018-11-04T00:39:37.1811906+07:00 0HLI1MC8IH3PQ:00000002 [INF] Request finished in 1254.1269ms 200 application/javascript (791a596a)
+2018-11-04T00:39:37.2812763+07:00 0HLI1MC8IH3Q5:00000002 [INF] Sending file. Request path: '"/lib/jquery-validation/dist/additional-methods.js"'. Physical path: '"D:\NetCore\NetCoreApp\NetCoreApp\wwwroot\lib\jquery-validation\dist\additional-methods.js"' (27b0a520)
+2018-11-04T00:39:37.3907335+07:00 0HLI1MC8IH3PN:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44383/vendor/jquery-validation/localization/messages_vi.js   (ca22a1cb)
+2018-11-04T00:39:37.4034791+07:00 0HLI1MC8IH3Q5:00000002 [INF] Request finished in 233.8974ms 200 application/javascript (791a596a)
+2018-11-04T00:39:37.4387968+07:00 0HLI1MC8IH3PN:00000003 [INF] Sending file. Request path: '"/vendor/jquery-validation/localization/messages_vi.js"'. Physical path: '"D:\NetCore\NetCoreApp\NetCoreApp\wwwroot\vendor\jquery-validation\localization\messages_vi.js"' (27b0a520)
+2018-11-04T00:39:37.5500804+07:00 0HLI1MC8IH3PU:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44383/admin-side/js/custom.js   (ca22a1cb)
+2018-11-04T00:39:37.5860538+07:00 0HLI1MC8IH3PM:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44383/vendor/notifyjs/notify.js   (ca22a1cb)
+2018-11-04T00:39:37.9324589+07:00 0HLI1MC8IH3PP:00000002 [INF] Request finished in 154.2923ms 200 application/javascript (791a596a)
+2018-11-04T00:39:37.9851842+07:00 0HLI1MC8IH3PO:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44383/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js   (ca22a1cb)
+2018-11-04T00:39:37.9957446+07:00 0HLI1MC8IH3PN:00000003 [INF] Request finished in 242.7387ms 200 application/javascript (791a596a)
+2018-11-04T00:39:38.5013358+07:00 0HLI1MC8IH3PT:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44383/vendor/ckeditor/ckeditor.js   (ca22a1cb)
+2018-11-04T00:39:38.6618950+07:00 0HLI1MC8IH3PM:00000003 [INF] Sending file. Request path: '"/vendor/notifyjs/notify.js"'. Physical path: '"D:\NetCore\NetCoreApp\NetCoreApp\wwwroot\vendor\notifyjs\notify.js"' (27b0a520)
+2018-11-04T00:39:38.7417984+07:00 0HLI1MC8IH3Q2:00000002 [INF] Request finished in 1068.5768ms 200 application/javascript (791a596a)
+2018-11-04T00:39:38.8424770+07:00 0HLI1MC8IH3PT:00000003 [INF] Sending file. Request path: '"/vendor/ckeditor/ckeditor.js"'. Physical path: '"D:\NetCore\NetCoreApp\NetCoreApp\wwwroot\vendor\ckeditor\ckeditor.js"' (27b0a520)
+2018-11-04T00:39:38.8498022+07:00 0HLI1MC8IH3PU:00000003 [INF] Sending file. Request path: '"/admin-side/js/custom.js"'. Physical path: '"D:\NetCore\NetCoreApp\NetCoreApp\wwwroot\admin-side\js\custom.js"' (27b0a520)
+2018-11-04T00:39:39.1596967+07:00 0HLI1MC8IH3Q4:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44383/app/controllers/role/index.js   (ca22a1cb)
+2018-11-04T00:39:39.2581860+07:00 0HLI1MC8IH3PS:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44383/vendor/jquery-treegrid/js/jquery.treegrid.js   (ca22a1cb)
+2018-11-04T00:39:39.2887463+07:00 0HLI1MC8IH3Q1:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44383/app/Shared/app.js   (ca22a1cb)
+2018-11-04T00:39:39.4750887+07:00 0HLI1MC8IH3Q4:00000002 [INF] Sending file. Request path: '"/app/controllers/role/index.js"'. Physical path: '"D:\NetCore\NetCoreApp\NetCoreApp\wwwroot\app\controllers\role\index.js"' (27b0a520)
+2018-11-04T00:39:39.4812992+07:00 0HLI1MC8IH3Q0:00000001 [INF] Request finished in 5167.3471ms 200 application/javascript (791a596a)
+2018-11-04T00:39:39.4870008+07:00 0HLI1MC8IH3PV:00000001 [INF] Request finished in 5201.8146ms 200 application/javascript (791a596a)
+2018-11-04T00:39:39.4938929+07:00 0HLI1MC8IH3PO:00000003 [INF] Sending file. Request path: '"/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"'. Physical path: '"D:\NetCore\NetCoreApp\NetCoreApp\wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.js"' (27b0a520)
+2018-11-04T00:39:39.5411388+07:00 0HLI1MC8IH3Q3:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44383/vendor/bootstrap/fonts/glyphicons-halflings-regular.woff2   (ca22a1cb)
+2018-11-04T00:39:39.6760523+07:00 0HLI1MC8IH3PR:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44383/vendor/font-awesome/fonts/fontawesome-webfont.woff2?v=4.7.0   (ca22a1cb)
+2018-11-04T00:39:39.7349154+07:00 0HLI1MC8IH3PU:00000003 [INF] Request finished in 1765.9892ms 200 application/javascript (791a596a)
+2018-11-04T00:39:39.7883508+07:00 0HLI1MC8IH3PS:00000004 [INF] Sending file. Request path: '"/vendor/jquery-treegrid/js/jquery.treegrid.js"'. Physical path: '"D:\NetCore\NetCoreApp\NetCoreApp\wwwroot\vendor\jquery-treegrid\js\jquery.treegrid.js"' (27b0a520)
+2018-11-04T00:39:39.8035502+07:00 0HLI1MC8IH3Q4:00000002 [INF] Request finished in 838.8837ms 200 application/javascript (791a596a)
+2018-11-04T00:39:39.8288683+07:00 0HLI1MC8IH3Q3:00000002 [INF] Sending file. Request path: '"/vendor/bootstrap/fonts/glyphicons-halflings-regular.woff2"'. Physical path: '"D:\NetCore\NetCoreApp\NetCoreApp\wwwroot\vendor\bootstrap\fonts\glyphicons-halflings-regular.woff2"' (27b0a520)
+2018-11-04T00:39:39.8711927+07:00 0HLI1MC8IH3Q1:00000003 [INF] Sending file. Request path: '"/app/Shared/app.js"'. Physical path: '"D:\NetCore\NetCoreApp\NetCoreApp\wwwroot\app\Shared\app.js"' (27b0a520)
+2018-11-04T00:39:39.9332342+07:00 0HLI1MC8IH3Q6:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44383/vendor/bootbox/bootbox.js   (ca22a1cb)
+2018-11-04T00:39:40.0087209+07:00 0HLI1MC8IH3PS:00000004 [INF] Request finished in 2377.9704ms 200 application/javascript (791a596a)
+2018-11-04T00:39:40.0294542+07:00 0HLI1MC8IH3PR:00000002 [INF] Sending file. Request path: '"/vendor/font-awesome/fonts/fontawesome-webfont.woff2"'. Physical path: '"D:\NetCore\NetCoreApp\NetCoreApp\wwwroot\vendor\font-awesome\fonts\fontawesome-webfont.woff2"' (27b0a520)
+2018-11-04T00:39:40.0401576+07:00 0HLI1MC8IH3Q1:00000003 [INF] Request finished in 2378.5289ms 200 application/javascript (791a596a)
+2018-11-04T00:39:40.0516961+07:00 0HLI1MC8IH3PO:00000003 [INF] Request finished in 2352.1201ms 200 application/javascript (791a596a)
+2018-11-04T00:39:40.0662904+07:00 0HLI1MC8IH3PT:00000003 [INF] Request finished in 2406.0142ms 200 application/javascript (791a596a)
+2018-11-04T00:39:40.2985481+07:00 0HLI1MC8IH3Q3:00000002 [INF] Request finished in 595.4447ms 200 font/woff2 (791a596a)
+2018-11-04T00:39:40.4029491+07:00 0HLI1MC8IH3Q6:00000003 [INF] Sending file. Request path: '"/vendor/bootbox/bootbox.js"'. Physical path: '"D:\NetCore\NetCoreApp\NetCoreApp\wwwroot\vendor\bootbox\bootbox.js"' (27b0a520)
+2018-11-04T00:39:40.5193911+07:00 0HLI1MC8IH3PM:00000003 [INF] Request finished in 2975.6469ms 200 application/javascript (791a596a)
+2018-11-04T00:39:40.5645457+07:00 0HLI1MC8IH3Q6:00000003 [INF] Request finished in 2912.7954ms 200 application/javascript (791a596a)
+2018-11-04T00:39:40.5971784+07:00 0HLI1MC8IH3PR:00000002 [INF] Request finished in 1405.0431ms 200 font/woff2 (791a596a)
+2018-11-04T00:39:40.6961714+07:00 0HLI1MC8IH3PQ:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44383/admin/role/GetAllPaging?keyword=&page=1&pageSize=10   (ca22a1cb)
+2018-11-04T00:39:40.7156987+07:00 0HLI1MC8IH3PQ:00000003 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-11-04T00:39:40.7630236+07:00 0HLI1MC8IH3PQ:00000003 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-11-04T00:39:40.9551233+07:00 0HLI1MC8IH3PQ:00000003 [INF] Executing action method "NetCoreApp.Areas.Admin.Controllers.RoleController.GetAllPaging (NetCoreApp)" with arguments (["", "1", "10"]) - ModelState is Valid (ba7f4ac2)
+2018-11-04T00:39:40.9797771+07:00 0HLI1MC8IH3PQ:00000003 [INF] Entity Framework Core "2.0.0-rtm-26452" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=NetCoreApp.Data.EF " (9958f5bb)
+2018-11-04T00:39:41.4842443+07:00 0HLI1MC8IH3PQ:00000003 [INF] Executed DbCommand ("130"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [AppRoles] AS [a]" (0723d8ff)
+2018-11-04T00:39:41.6684599+07:00 0HLI1MC8IH3PP:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44383/favicon.ico   (ca22a1cb)
+2018-11-04T00:39:41.7272756+07:00 0HLI1MC8IH3PQ:00000003 [INF] Executed DbCommand ("148"ms) [Parameters=["@__p_0='?', @__p_1='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[Description]
+FROM [AppRoles] AS [dto]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY" (0723d8ff)
+2018-11-04T00:39:41.7506240+07:00 0HLI1MC8IH3PQ:00000003 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-11-04T00:39:41.7605233+07:00 0HLI1MC8IH3PP:00000003 [INF] Sending file. Request path: '"/favicon.ico"'. Physical path: '"D:\NetCore\NetCoreApp\NetCoreApp\wwwroot\favicon.ico"' (27b0a520)
+2018-11-04T00:39:41.7944215+07:00 0HLI1MC8IH3PQ:00000003 [INF] Executed action "NetCoreApp.Areas.Admin.Controllers.RoleController.GetAllPaging (NetCoreApp)" in 1037.377ms (afa2e885)
+2018-11-04T00:39:41.8615350+07:00 0HLI1MC8IH3Q5:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44383/admin/role/GetAllPaging?keyword=&page=1&pageSize=10   (ca22a1cb)
+2018-11-04T00:39:41.8668988+07:00 0HLI1MC8IH3PQ:00000003 [INF] Request finished in 1110.5395ms 200 application/json; charset=utf-8 (791a596a)
+2018-11-04T00:39:41.8884672+07:00 0HLI1MC8IH3PP:00000003 [INF] Request finished in 276.6586ms 200 image/x-icon (791a596a)
+2018-11-04T00:39:41.8998420+07:00 0HLI1MC8IH3Q5:00000003 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-11-04T00:39:41.9444483+07:00 0HLI1MC8IH3Q5:00000003 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-11-04T00:39:42.1296105+07:00 0HLI1MC8IH3Q5:00000003 [INF] Executing action method "NetCoreApp.Areas.Admin.Controllers.RoleController.GetAllPaging (NetCoreApp)" with arguments (["", "1", "10"]) - ModelState is Valid (ba7f4ac2)
+2018-11-04T00:39:42.1583932+07:00 0HLI1MC8IH3Q5:00000003 [INF] Entity Framework Core "2.0.0-rtm-26452" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=NetCoreApp.Data.EF " (9958f5bb)
+2018-11-04T00:39:42.2430482+07:00 0HLI1MC8IH3Q5:00000003 [INF] Executed DbCommand ("70"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [AppRoles] AS [a]" (0723d8ff)
+2018-11-04T00:39:42.3191866+07:00 0HLI1MC8IH3Q5:00000003 [INF] Executed DbCommand ("58"ms) [Parameters=["@__p_0='?', @__p_1='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[Description]
+FROM [AppRoles] AS [dto]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY" (0723d8ff)
+2018-11-04T00:39:42.3619408+07:00 0HLI1MC8IH3Q5:00000003 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-11-04T00:39:42.3830945+07:00 0HLI1MC8IH3Q5:00000003 [INF] Executed action "NetCoreApp.Areas.Admin.Controllers.RoleController.GetAllPaging (NetCoreApp)" in 462.2925ms (afa2e885)
+2018-11-04T00:39:42.4225609+07:00 0HLI1MC8IH3Q5:00000003 [INF] Request finished in 559.7701ms 200 application/json; charset=utf-8 (791a596a)
+2018-11-04T00:39:43.0965306+07:00 0HLI1MC8IH3PN:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44383/admin/Function/GetAll   (ca22a1cb)
+2018-11-04T00:39:43.3563726+07:00 0HLI1MC8IH3PN:00000004 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-11-04T00:39:43.5483417+07:00 0HLI1MC8IH3Q2:00000003 [INF] Request starting HTTP/1.1 POST http://localhost:44383/Admin/Role/ListAllFunction application/x-www-form-urlencoded; charset=UTF-8 43 (ca22a1cb)
+2018-11-04T00:39:43.6291467+07:00 0HLI1MC8IH3Q2:00000003 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-11-04T00:39:43.7060232+07:00 0HLI1MC8IH3PN:00000004 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-11-04T00:39:43.8343548+07:00 0HLI1MC8IH3Q2:00000003 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-11-04T00:39:43.9098013+07:00 0HLI1MC8IH3Q2:00000003 [INF] Executing action method "NetCoreApp.Areas.Admin.Controllers.RoleController.ListAllFunction (NetCoreApp)" with arguments (["d7102c88-e71f-4b9f-a090-08d641a2bf3f"]) - ModelState is Valid (ba7f4ac2)
+2018-11-04T00:39:43.9149191+07:00 0HLI1MC8IH3PN:00000004 [INF] Executing action method "NetCoreApp.Areas.Admin.Controllers.FunctionController.GetAll (NetCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-11-04T00:39:43.9442387+07:00 0HLI1MC8IH3Q2:00000003 [INF] Entity Framework Core "2.0.0-rtm-26452" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=NetCoreApp.Data.EF " (9958f5bb)
+2018-11-04T00:39:44.1114698+07:00 0HLI1MC8IH3Q2:00000003 [INF] Executed DbCommand ("79"ms) [Parameters=["@__roleId_1='?', @__roleId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT @__roleId_1 AS [RoleId], [f].[Id] AS [FunctionId], CASE
+    WHEN [p].[Id] IS NOT NULL AND ([p].[CanCreate] = 1)
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END AS [CanCreate], CASE
+    WHEN [p].[Id] IS NOT NULL AND ([p].[CanDelete] = 1)
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END AS [CanDelete], CASE
+    WHEN [p].[Id] IS NOT NULL AND ([p].[CanRead] = 1)
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END AS [CanRead], CASE
+    WHEN [p].[Id] IS NOT NULL AND ([p].[CanUpdate] = 1)
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END AS [CanUpdate]
+FROM [Functions] AS [f]
+LEFT JOIN [Permissions] AS [p] ON [f].[Id] = [p].[FunctionId]
+WHERE [p].[Id] IS NOT NULL AND ([p].[RoleId] = @__roleId_0)" (0723d8ff)
+2018-11-04T00:39:44.1376635+07:00 0HLI1MC8IH3Q2:00000003 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-11-04T00:39:44.1567136+07:00 0HLI1MC8IH3Q2:00000003 [INF] Executed action "NetCoreApp.Areas.Admin.Controllers.RoleController.ListAllFunction (NetCoreApp)" in 501.4534ms (afa2e885)
+2018-11-04T00:39:44.1923278+07:00 0HLI1MC8IH3Q2:00000003 [INF] Request finished in 1127.709ms 200 application/json; charset=utf-8 (791a596a)
+2018-11-04T00:39:44.5196335+07:00 0HLI1MC8IH3PN:00000004 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-11-04T00:39:44.5510661+07:00 0HLI1MC8IH3PN:00000004 [INF] Executed action "NetCoreApp.Areas.Admin.Controllers.FunctionController.GetAll (NetCoreApp)" in 1057.031ms (afa2e885)
+2018-11-04T00:39:44.6525274+07:00 0HLI1MC8IH3PN:00000004 [INF] Request finished in 1525.4744ms 200 application/json; charset=utf-8 (791a596a)
+2018-11-04T00:39:44.6902301+07:00 0HLI1MC8IH3PV:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44383/vendor/jquery-treegrid/img/collapse.png   (ca22a1cb)
+2018-11-04T00:39:44.7289027+07:00 0HLI1MC8IH3PV:00000002 [INF] The file "/vendor/jquery-treegrid/img/collapse.png" was not modified (f1f8d725)
+2018-11-04T00:39:44.9026103+07:00 0HLI1MC8IH3PV:00000002 [INF] Request finished in 51.3038ms 304 image/png (791a596a)
+2018-11-04T00:39:56.2114071+07:00 0HLI1MC8IH3Q0:00000002 [INF] Request starting HTTP/1.1 POST http://localhost:44383/admin/role/SavePermission application/x-www-form-urlencoded; charset=UTF-8 6999 (ca22a1cb)
+2018-11-04T00:39:56.2194112+07:00 0HLI1MC8IH3Q0:00000002 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-11-04T00:39:56.3038072+07:00 0HLI1MC8IH3Q0:00000002 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-11-04T00:39:56.3882935+07:00 0HLI1MC8IH3Q0:00000002 [INF] Executing action method "NetCoreApp.Areas.Admin.Controllers.RoleController.SavePermission (NetCoreApp)" with arguments (["System.Collections.Generic.List`1[NetCoreApp.Application.ViewModels.PermissionViewModel]", "d7102c88-e71f-4b9f-a090-08d641a2bf3f"]) - ModelState is Valid (ba7f4ac2)
+2018-11-04T00:39:56.4568104+07:00 0HLI1MC8IH3Q0:00000002 [INF] Entity Framework Core "2.0.0-rtm-26452" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=NetCoreApp.Data.EF " (9958f5bb)
+2018-11-04T00:39:56.5416682+07:00 0HLI1MC8IH3Q0:00000002 [INF] Executed DbCommand ("63"ms) [Parameters=["@__roleId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[CanCreate], [x].[CanDelete], [x].[CanRead], [x].[CanUpdate], [x].[FunctionId], [x].[RoleId]
+FROM [Permissions] AS [x]
+WHERE [x].[RoleId] = @__roleId_0" (0723d8ff)
+2018-11-04T00:39:56.5660843+07:00 0HLI1MC8IH3Q0:00000002 [INF] Executing HttpStatusCodeResult, setting HTTP status code 200 (e28ccfae)
+2018-11-04T00:39:56.5855146+07:00 0HLI1MC8IH3Q0:00000002 [INF] Executed action "NetCoreApp.Areas.Admin.Controllers.RoleController.SavePermission (NetCoreApp)" in 319.2719ms (afa2e885)
+2018-11-04T00:39:56.7355877+07:00 0HLI1MC8IH3Q0:00000002 [INF] Request finished in 384.0095ms 200  (791a596a)
+2018-11-04T00:39:57.9774887+07:00 0HLI1MC8IH3PU:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44383/admin/Function/GetAll   (ca22a1cb)
+2018-11-04T00:39:58.0229398+07:00 0HLI1MC8IH3PU:00000004 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-11-04T00:39:58.0490214+07:00 0HLI1MC8IH3PO:00000004 [INF] Request starting HTTP/1.1 POST http://localhost:44383/Admin/Role/ListAllFunction application/x-www-form-urlencoded; charset=UTF-8 43 (ca22a1cb)
+2018-11-04T00:39:58.1168660+07:00 0HLI1MC8IH3PU:00000004 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-11-04T00:39:58.2210545+07:00 0HLI1MC8IH3PO:00000004 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-11-04T00:39:58.2455596+07:00 0HLI1MC8IH3PO:00000004 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-11-04T00:39:58.2561098+07:00 0HLI1MC8IH3PU:00000004 [INF] Executing action method "NetCoreApp.Areas.Admin.Controllers.FunctionController.GetAll (NetCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-11-04T00:39:58.5039292+07:00 0HLI1MC8IH3PO:00000004 [INF] Executing action method "NetCoreApp.Areas.Admin.Controllers.RoleController.ListAllFunction (NetCoreApp)" with arguments (["d7102c88-e71f-4b9f-a090-08d641a2bf3f"]) - ModelState is Valid (ba7f4ac2)
+2018-11-04T00:39:58.5337044+07:00 0HLI1MC8IH3PU:00000004 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-11-04T00:39:58.5424328+07:00 0HLI1MC8IH3PO:00000004 [INF] Entity Framework Core "2.0.0-rtm-26452" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=NetCoreApp.Data.EF " (9958f5bb)
+2018-11-04T00:39:58.5523447+07:00 0HLI1MC8IH3PU:00000004 [INF] Executed action "NetCoreApp.Areas.Admin.Controllers.FunctionController.GetAll (NetCoreApp)" in 512.7828ms (afa2e885)
+2018-11-04T00:39:58.6595037+07:00 0HLI1MC8IH3PU:00000004 [INF] Request finished in 694.9714ms 200 application/json; charset=utf-8 (791a596a)
+2018-11-04T00:39:58.7842882+07:00 0HLI1MC8IH3PO:00000004 [INF] Executed DbCommand ("162"ms) [Parameters=["@__roleId_1='?', @__roleId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT @__roleId_1 AS [RoleId], [f].[Id] AS [FunctionId], CASE
+    WHEN [p].[Id] IS NOT NULL AND ([p].[CanCreate] = 1)
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END AS [CanCreate], CASE
+    WHEN [p].[Id] IS NOT NULL AND ([p].[CanDelete] = 1)
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END AS [CanDelete], CASE
+    WHEN [p].[Id] IS NOT NULL AND ([p].[CanRead] = 1)
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END AS [CanRead], CASE
+    WHEN [p].[Id] IS NOT NULL AND ([p].[CanUpdate] = 1)
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END AS [CanUpdate]
+FROM [Functions] AS [f]
+LEFT JOIN [Permissions] AS [p] ON [f].[Id] = [p].[FunctionId]
+WHERE [p].[Id] IS NOT NULL AND ([p].[RoleId] = @__roleId_0)" (0723d8ff)
+2018-11-04T00:39:58.7951790+07:00 0HLI1MC8IH3PO:00000004 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-11-04T00:39:58.8074818+07:00 0HLI1MC8IH3PO:00000004 [INF] Executed action "NetCoreApp.Areas.Admin.Controllers.RoleController.ListAllFunction (NetCoreApp)" in 574.3498ms (afa2e885)
+2018-11-04T00:39:58.8559747+07:00 0HLI1MC8IH3PO:00000004 [INF] Request finished in 916.4132ms 200 application/json; charset=utf-8 (791a596a)
+2018-11-04T00:40:00.0647256+07:00 0HLI1MC8IH3Q4:00000003 [INF] Request starting HTTP/1.1 POST http://localhost:44383/admin/role/SavePermission application/x-www-form-urlencoded; charset=UTF-8 7023 (ca22a1cb)
+2018-11-04T00:40:00.0757776+07:00 0HLI1MC8IH3Q4:00000003 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-11-04T00:40:00.0890814+07:00 0HLI1MC8IH3Q4:00000003 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-11-04T00:40:00.1534449+07:00 0HLI1MC8IH3Q4:00000003 [INF] Executing action method "NetCoreApp.Areas.Admin.Controllers.RoleController.SavePermission (NetCoreApp)" with arguments (["System.Collections.Generic.List`1[NetCoreApp.Application.ViewModels.PermissionViewModel]", "d7102c88-e71f-4b9f-a090-08d641a2bf3f"]) - ModelState is Valid (ba7f4ac2)
+2018-11-04T00:40:00.2110869+07:00 0HLI1MC8IH3Q4:00000003 [INF] Entity Framework Core "2.0.0-rtm-26452" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=NetCoreApp.Data.EF " (9958f5bb)
+2018-11-04T00:40:00.3298189+07:00 0HLI1MC8IH3Q4:00000003 [INF] Executed DbCommand ("51"ms) [Parameters=["@__roleId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[CanCreate], [x].[CanDelete], [x].[CanRead], [x].[CanUpdate], [x].[FunctionId], [x].[RoleId]
+FROM [Permissions] AS [x]
+WHERE [x].[RoleId] = @__roleId_0" (0723d8ff)
+2018-11-04T00:40:00.3511810+07:00 0HLI1MC8IH3Q4:00000003 [INF] Executing HttpStatusCodeResult, setting HTTP status code 200 (e28ccfae)
+2018-11-04T00:40:00.3667459+07:00 0HLI1MC8IH3Q4:00000003 [INF] Executed action "NetCoreApp.Areas.Admin.Controllers.RoleController.SavePermission (NetCoreApp)" in 275.3734ms (afa2e885)
+2018-11-04T00:40:00.3915312+07:00 0HLI1MC8IH3Q4:00000003 [INF] Request finished in 314.6602ms 200  (791a596a)
+2018-11-04T00:40:02.1375400+07:00 0HLI1MC8IH3Q3:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44383/admin/Function/GetAll   (ca22a1cb)
+2018-11-04T00:40:02.1651729+07:00 0HLI1MC8IH3PT:00000004 [INF] Request starting HTTP/1.1 POST http://localhost:44383/Admin/Role/ListAllFunction application/x-www-form-urlencoded; charset=UTF-8 43 (ca22a1cb)
+2018-11-04T00:40:02.1959898+07:00 0HLI1MC8IH3Q3:00000003 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-11-04T00:40:02.2354191+07:00 0HLI1MC8IH3PT:00000004 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-11-04T00:40:02.2485738+07:00 0HLI1MC8IH3Q3:00000003 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-11-04T00:40:02.2667120+07:00 0HLI1MC8IH3PT:00000004 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-11-04T00:40:02.3942731+07:00 0HLI1MC8IH3Q3:00000003 [INF] Executing action method "NetCoreApp.Areas.Admin.Controllers.FunctionController.GetAll (NetCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-11-04T00:40:02.5939134+07:00 0HLI1MC8IH3PT:00000004 [INF] Executing action method "NetCoreApp.Areas.Admin.Controllers.RoleController.ListAllFunction (NetCoreApp)" with arguments (["d7102c88-e71f-4b9f-a090-08d641a2bf3f"]) - ModelState is Valid (ba7f4ac2)
+2018-11-04T00:40:02.6189435+07:00 0HLI1MC8IH3Q3:00000003 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-11-04T00:40:02.6462428+07:00 0HLI1MC8IH3Q3:00000003 [INF] Executed action "NetCoreApp.Areas.Admin.Controllers.FunctionController.GetAll (NetCoreApp)" in 423.0164ms (afa2e885)
+2018-11-04T00:40:02.6463217+07:00 0HLI1MC8IH3PT:00000004 [INF] Entity Framework Core "2.0.0-rtm-26452" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=NetCoreApp.Data.EF " (9958f5bb)
+2018-11-04T00:40:02.8960234+07:00 0HLI1MC8IH3Q3:00000003 [INF] Request finished in 603.1125ms 200 application/json; charset=utf-8 (791a596a)
+2018-11-04T00:40:02.9340706+07:00 0HLI1MC8IH3PT:00000004 [INF] Executed DbCommand ("234"ms) [Parameters=["@__roleId_1='?', @__roleId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT @__roleId_1 AS [RoleId], [f].[Id] AS [FunctionId], CASE
+    WHEN [p].[Id] IS NOT NULL AND ([p].[CanCreate] = 1)
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END AS [CanCreate], CASE
+    WHEN [p].[Id] IS NOT NULL AND ([p].[CanDelete] = 1)
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END AS [CanDelete], CASE
+    WHEN [p].[Id] IS NOT NULL AND ([p].[CanRead] = 1)
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END AS [CanRead], CASE
+    WHEN [p].[Id] IS NOT NULL AND ([p].[CanUpdate] = 1)
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END AS [CanUpdate]
+FROM [Functions] AS [f]
+LEFT JOIN [Permissions] AS [p] ON [f].[Id] = [p].[FunctionId]
+WHERE [p].[Id] IS NOT NULL AND ([p].[RoleId] = @__roleId_0)" (0723d8ff)
+2018-11-04T00:40:02.9464141+07:00 0HLI1MC8IH3PT:00000004 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-11-04T00:40:02.9736017+07:00 0HLI1MC8IH3PT:00000004 [INF] Executed action "NetCoreApp.Areas.Admin.Controllers.RoleController.ListAllFunction (NetCoreApp)" in 710.9788ms (afa2e885)
+2018-11-04T00:40:03.0347911+07:00 0HLI1MC8IH3PT:00000004 [INF] Request finished in 872.4373ms 200 application/json; charset=utf-8 (791a596a)
+2018-11-04T00:40:07.1346572+07:00 0HLI1MC8IH3PS:00000005 [INF] Request starting HTTP/1.1 POST http://localhost:44383/admin/role/SavePermission application/x-www-form-urlencoded; charset=UTF-8 6999 (ca22a1cb)
+2018-11-04T00:40:07.1416291+07:00 0HLI1MC8IH3PS:00000005 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-11-04T00:40:07.1482796+07:00 0HLI1MC8IH3PS:00000005 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-11-04T00:40:07.1841800+07:00 0HLI1MC8IH3PS:00000005 [INF] Executing action method "NetCoreApp.Areas.Admin.Controllers.RoleController.SavePermission (NetCoreApp)" with arguments (["System.Collections.Generic.List`1[NetCoreApp.Application.ViewModels.PermissionViewModel]", "d7102c88-e71f-4b9f-a090-08d641a2bf3f"]) - ModelState is Valid (ba7f4ac2)
+2018-11-04T00:40:07.1919543+07:00 0HLI1MC8IH3PS:00000005 [INF] Entity Framework Core "2.0.0-rtm-26452" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=NetCoreApp.Data.EF " (9958f5bb)
+2018-11-04T00:40:07.2385707+07:00 0HLI1MC8IH3PS:00000005 [INF] Executed DbCommand ("39"ms) [Parameters=["@__roleId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[CanCreate], [x].[CanDelete], [x].[CanRead], [x].[CanUpdate], [x].[FunctionId], [x].[RoleId]
+FROM [Permissions] AS [x]
+WHERE [x].[RoleId] = @__roleId_0" (0723d8ff)
+2018-11-04T00:40:07.2557935+07:00 0HLI1MC8IH3PS:00000005 [INF] Executing HttpStatusCodeResult, setting HTTP status code 200 (e28ccfae)
+2018-11-04T00:40:07.2934075+07:00 0HLI1MC8IH3PS:00000005 [INF] Executed action "NetCoreApp.Areas.Admin.Controllers.RoleController.SavePermission (NetCoreApp)" in 113.9453ms (afa2e885)
+2018-11-04T00:40:07.3086760+07:00 0HLI1MC8IH3PS:00000005 [INF] Request finished in 170.6531ms 200  (791a596a)
+2018-11-04T00:40:09.8578375+07:00 0HLI1MC8IH3Q1:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44383/admin/Function/GetAll   (ca22a1cb)
+2018-11-04T00:40:09.8716127+07:00 0HLI1MC8IH3PR:00000003 [INF] Request starting HTTP/1.1 POST http://localhost:44383/Admin/Role/ListAllFunction application/x-www-form-urlencoded; charset=UTF-8 43 (ca22a1cb)
+2018-11-04T00:40:09.8949939+07:00 0HLI1MC8IH3Q1:00000004 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-11-04T00:40:09.9269263+07:00 0HLI1MC8IH3PR:00000003 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-11-04T00:40:09.9839321+07:00 0HLI1MC8IH3PR:00000003 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-11-04T00:40:09.9880752+07:00 0HLI1MC8IH3Q1:00000004 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-11-04T00:40:10.1977208+07:00 0HLI1MC8IH3PR:00000003 [INF] Executing action method "NetCoreApp.Areas.Admin.Controllers.RoleController.ListAllFunction (NetCoreApp)" with arguments (["d7102c88-e71f-4b9f-a090-08d641a2bf3f"]) - ModelState is Valid (ba7f4ac2)
+2018-11-04T00:40:10.2773167+07:00 0HLI1MC8IH3PR:00000003 [INF] Entity Framework Core "2.0.0-rtm-26452" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=NetCoreApp.Data.EF " (9958f5bb)
+2018-11-04T00:40:10.2816071+07:00 0HLI1MC8IH3Q1:00000004 [INF] Executing action method "NetCoreApp.Areas.Admin.Controllers.FunctionController.GetAll (NetCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-11-04T00:40:10.3536027+07:00 0HLI1MC8IH3Q1:00000004 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-11-04T00:40:10.4191815+07:00 0HLI1MC8IH3Q1:00000004 [INF] Executed action "NetCoreApp.Areas.Admin.Controllers.FunctionController.GetAll (NetCoreApp)" in 458.4221ms (afa2e885)
+2018-11-04T00:40:10.4626907+07:00 0HLI1MC8IH3Q1:00000004 [INF] Request finished in 572.9216ms 200 application/json; charset=utf-8 (791a596a)
+2018-11-04T00:40:10.4967193+07:00 0HLI1MC8IH3PR:00000003 [INF] Executed DbCommand ("83"ms) [Parameters=["@__roleId_1='?', @__roleId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT @__roleId_1 AS [RoleId], [f].[Id] AS [FunctionId], CASE
+    WHEN [p].[Id] IS NOT NULL AND ([p].[CanCreate] = 1)
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END AS [CanCreate], CASE
+    WHEN [p].[Id] IS NOT NULL AND ([p].[CanDelete] = 1)
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END AS [CanDelete], CASE
+    WHEN [p].[Id] IS NOT NULL AND ([p].[CanRead] = 1)
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END AS [CanRead], CASE
+    WHEN [p].[Id] IS NOT NULL AND ([p].[CanUpdate] = 1)
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END AS [CanUpdate]
+FROM [Functions] AS [f]
+LEFT JOIN [Permissions] AS [p] ON [f].[Id] = [p].[FunctionId]
+WHERE [p].[Id] IS NOT NULL AND ([p].[RoleId] = @__roleId_0)" (0723d8ff)
+2018-11-04T00:40:10.5054773+07:00 0HLI1MC8IH3PR:00000003 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-11-04T00:40:10.5182937+07:00 0HLI1MC8IH3PR:00000003 [INF] Executed action "NetCoreApp.Areas.Admin.Controllers.RoleController.ListAllFunction (NetCoreApp)" in 578.5873ms (afa2e885)
+2018-11-04T00:40:10.5400916+07:00 0HLI1MC8IH3PR:00000003 [INF] Request finished in 675.0998ms 200 application/json; charset=utf-8 (791a596a)
+2018-11-04T00:40:15.8030142+07:00 0HLI1MC8IH3PM:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44383/admin/user/index   (ca22a1cb)
+2018-11-04T00:40:15.8177305+07:00 0HLI1MC8IH3PM:00000004 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-11-04T00:40:15.8348415+07:00 0HLI1MC8IH3PM:00000004 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-11-04T00:40:15.8860115+07:00 0HLI1MC8IH3PM:00000004 [INF] Executing action method "NetCoreApp.Areas.Admin.Controllers.UserController.Index (NetCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-11-04T00:40:15.9072623+07:00 0HLI1MC8IH3PM:00000004 [INF] Entity Framework Core "2.0.0-rtm-26452" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=NetCoreApp.Data.EF " (9958f5bb)
+2018-11-04T00:40:16.1487403+07:00 0HLI1MC8IH3PM:00000004 [INF] Executed DbCommand ("117"ms) [Parameters=["@__functionId_1='?' (Size = 128)"], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Functions] AS [f]
+        INNER JOIN [Permissions] AS [p] ON [f].[Id] = [p].[FunctionId]
+        INNER JOIN [AppRoles] AS [r] ON [p].[RoleId] = [r].[Id]
+        WHERE ([r].[Name] IN (N'Admin') AND ([f].[Id] = @__functionId_1)) AND ([p].[CanRead] = 1))
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-11-04T00:40:16.1623411+07:00 0HLI1MC8IH3PM:00000004 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-11-04T00:40:16.7158775+07:00 0HLI1MC8IH3PM:00000004 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/User/Index.cshtml". (9707eebe)
+2018-11-04T00:40:16.8431058+07:00 0HLI1MC8IH3PM:00000004 [INF] Executed DbCommand ("84"ms) [Parameters=["@__functionId_1='?' (Size = 128)"], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Functions] AS [f]
+        INNER JOIN [Permissions] AS [p] ON [f].[Id] = [p].[FunctionId]
+        INNER JOIN [AppRoles] AS [r] ON [p].[RoleId] = [r].[Id]
+        WHERE ([r].[Name] IN (N'Admin') AND ([f].[Id] = @__functionId_1)) AND ([p].[CanCreate] = 1))
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-11-04T00:40:16.8527145+07:00 0HLI1MC8IH3PM:00000004 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-11-04T00:40:16.9582153+07:00 0HLI1MC8IH3PM:00000004 [INF] Executed DbCommand ("82"ms) [Parameters=["@__functionId_1='?' (Size = 128)"], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Functions] AS [f]
+        INNER JOIN [Permissions] AS [p] ON [f].[Id] = [p].[FunctionId]
+        INNER JOIN [AppRoles] AS [r] ON [p].[RoleId] = [r].[Id]
+        WHERE ([r].[Name] IN (N'Admin') AND ([f].[Id] = @__functionId_1)) AND ([p].[CanUpdate] = 1))
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-11-04T00:40:16.9684405+07:00 0HLI1MC8IH3PM:00000004 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-11-04T00:40:17.0699461+07:00 0HLI1MC8IH3PM:00000004 [INF] Executed DbCommand ("75"ms) [Parameters=["@__functionId_1='?' (Size = 128)"], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Functions] AS [f]
+        INNER JOIN [Permissions] AS [p] ON [f].[Id] = [p].[FunctionId]
+        INNER JOIN [AppRoles] AS [r] ON [p].[RoleId] = [r].[Id]
+        WHERE ([r].[Name] IN (N'Admin') AND ([f].[Id] = @__functionId_1)) AND ([p].[CanDelete] = 1))
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-11-04T00:40:17.0790953+07:00 0HLI1MC8IH3PM:00000004 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-11-04T00:40:17.6649388+07:00 0HLI1MC8IH3PM:00000004 [INF] Executed DbCommand ("75"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Name], [x].[Url], [x].[ParentId], [x].[IconCss], [x].[SortOrder], [x].[Status]
+FROM [Functions] AS [x]
+WHERE [x].[Status] = 1
+ORDER BY [x].[ParentId]" (0723d8ff)
+2018-11-04T00:40:17.8191767+07:00 0HLI1MC8IH3PM:00000004 [INF] Executed action "NetCoreApp.Areas.Admin.Controllers.UserController.Index (NetCoreApp)" in 1972.502ms (afa2e885)
+2018-11-04T00:40:17.8944763+07:00 0HLI1MC8IH3PM:00000004 [INF] Request finished in 2022.881ms 200 text/html; charset=utf-8 (791a596a)
+2018-11-04T00:40:17.9057382+07:00 0HLI1MC8IH3Q6:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44383/app/controllers/user/index.js?v=vP8i6WzvOZe7qgz0wh6_sqXCkfiZy63NN7R0XJFVMPE   (ca22a1cb)
+2018-11-04T00:40:17.9158709+07:00 0HLI1MC8IH3Q6:00000004 [INF] The file "/app/controllers/user/index.js" was not modified (f1f8d725)
+2018-11-04T00:40:17.9257337+07:00 0HLI1MC8IH3Q6:00000004 [INF] Request finished in 22.2932ms 304 application/javascript (791a596a)
+2018-11-04T00:40:18.9739243+07:00 0HLI1MC8IH3PP:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44383/admin/user/GetAllPaging?keyword=&page=1&pageSize=10   (ca22a1cb)
+2018-11-04T00:40:18.9854917+07:00 0HLI1MC8IH3PP:00000004 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-11-04T00:40:19.0026758+07:00 0HLI1MC8IH3PP:00000004 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-11-04T00:40:19.0499896+07:00 0HLI1MC8IH3PP:00000004 [INF] Executing action method "NetCoreApp.Areas.Admin.Controllers.UserController.GetAllPaging (NetCoreApp)" with arguments (["", "1", "10"]) - ModelState is Valid (ba7f4ac2)
+2018-11-04T00:40:19.0670207+07:00 0HLI1MC8IH3PP:00000004 [INF] Entity Framework Core "2.0.0-rtm-26452" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=NetCoreApp.Data.EF " (9958f5bb)
+2018-11-04T00:40:19.1450772+07:00 0HLI1MC8IH3PP:00000004 [INF] Executed DbCommand ("54"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [AppUsers] AS [a]" (0723d8ff)
+2018-11-04T00:40:19.1678164+07:00 0HLI1MC8IH3PP:00000004 [WRN] Query: '"(from AppUser x in DbSet<AppUser> select new AppUserViewModel{ { 
+    UserName = [x].UserName, , 
+..."' uses a row limiting operation (Skip/Take) without OrderBy which may lead to unpredictable results. (32148ccc)
+2018-11-04T00:40:19.3102778+07:00 0HLI1MC8IH3PP:00000004 [INF] Executed DbCommand ("55"ms) [Parameters=["@__p_0='?', @__p_1='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[UserName], [x].[Avatar], CONVERT(VARCHAR(100), [x].[BirthDay]) AS [BirthDay], [x].[Email], [x].[FullName], [x].[Id], [x].[PhoneNumber], [x].[Status], [x].[DateCreated]
+FROM [AppUsers] AS [x]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY" (0723d8ff)
+2018-11-04T00:40:19.3869968+07:00 0HLI1MC8IH3PP:00000004 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-11-04T00:40:19.4539904+07:00 0HLI1MC8IH3PP:00000004 [INF] Executed action "NetCoreApp.Areas.Admin.Controllers.UserController.GetAllPaging (NetCoreApp)" in 431.5601ms (afa2e885)
+2018-11-04T00:40:19.6875590+07:00 0HLI1MC8IH3PQ:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44383/admin/user/GetAllPaging?keyword=&page=1&pageSize=10   (ca22a1cb)
+2018-11-04T00:40:19.7046515+07:00 0HLI1MC8IH3Q5:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44383/admin/user/null   (ca22a1cb)
+2018-11-04T00:40:19.7187896+07:00 0HLI1MC8IH3PQ:00000004 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-11-04T00:40:19.7274750+07:00 0HLI1MC8IH3PP:00000004 [INF] Request finished in 491.037ms 200 application/json; charset=utf-8 (791a596a)
+2018-11-04T00:40:19.7394221+07:00 0HLI1MC8IH3Q5:00000004 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-11-04T00:40:19.7709424+07:00 0HLI1MC8IH3PQ:00000004 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-11-04T00:40:19.7849197+07:00 0HLI1MC8IH3Q5:00000004 [INF] Request finished in 98.2722ms 404  (791a596a)
+2018-11-04T00:40:19.8459594+07:00 0HLI1MC8IH3PQ:00000004 [INF] Executing action method "NetCoreApp.Areas.Admin.Controllers.UserController.GetAllPaging (NetCoreApp)" with arguments (["", "1", "10"]) - ModelState is Valid (ba7f4ac2)
+2018-11-04T00:40:19.8575671+07:00 0HLI1MC8IH3PQ:00000004 [INF] Entity Framework Core "2.0.0-rtm-26452" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=NetCoreApp.Data.EF " (9958f5bb)
+2018-11-04T00:40:19.9550522+07:00 0HLI1MC8IH3PQ:00000004 [INF] Executed DbCommand ("73"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [AppUsers] AS [a]" (0723d8ff)
+2018-11-04T00:40:20.0808705+07:00 0HLI1MC8IH3PQ:00000004 [INF] Executed DbCommand ("99"ms) [Parameters=["@__p_0='?', @__p_1='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[UserName], [x].[Avatar], CONVERT(VARCHAR(100), [x].[BirthDay]) AS [BirthDay], [x].[Email], [x].[FullName], [x].[Id], [x].[PhoneNumber], [x].[Status], [x].[DateCreated]
+FROM [AppUsers] AS [x]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY" (0723d8ff)
+2018-11-04T00:40:20.1701636+07:00 0HLI1MC8IH3PQ:00000004 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-11-04T00:40:20.1869763+07:00 0HLI1MC8IH3PQ:00000004 [INF] Executed action "NetCoreApp.Areas.Admin.Controllers.UserController.GetAllPaging (NetCoreApp)" in 449.5373ms (afa2e885)
+2018-11-04T00:40:20.2305484+07:00 0HLI1MC8IH3PQ:00000004 [INF] Request finished in 552.6494ms 200 application/json; charset=utf-8 (791a596a)
+2018-11-04T00:40:20.2327988+07:00 0HLI1MC8IH3Q2:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44383/admin/user/null   (ca22a1cb)
+2018-11-04T00:40:20.2480160+07:00 0HLI1MC8IH3Q2:00000004 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-11-04T00:40:20.2778018+07:00 0HLI1MC8IH3Q2:00000004 [INF] Request finished in 31.9181ms 404  (791a596a)
+2018-11-04T00:40:23.3038668+07:00 0HLI1MC8IH3PN:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:44383/Admin/User/GetById?id=2c64e421-9d8f-4e18-5e68-08d63f4ecc47   (ca22a1cb)
+2018-11-04T00:40:23.3119933+07:00 0HLI1MC8IH3PN:00000005 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-11-04T00:40:23.3706195+07:00 0HLI1MC8IH3PN:00000005 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-11-04T00:40:23.4171608+07:00 0HLI1MC8IH3PN:00000005 [INF] Executing action method "NetCoreApp.Areas.Admin.Controllers.UserController.GetById (NetCoreApp)" with arguments (["2c64e421-9d8f-4e18-5e68-08d63f4ecc47"]) - ModelState is Valid (ba7f4ac2)
+2018-11-04T00:40:23.4810722+07:00 0HLI1MC8IH3PN:00000005 [INF] Entity Framework Core "2.0.0-rtm-26452" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=NetCoreApp.Data.EF " (9958f5bb)
+2018-11-04T00:40:23.5972584+07:00 0HLI1MC8IH3PN:00000005 [INF] Executed DbCommand ("85"ms) [Parameters=["@__get_Item_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [e].[Id], [e].[AccessFailedCount], [e].[Avatar], [e].[Balance], [e].[BirthDay], [e].[ConcurrencyStamp], [e].[DateCreated], [e].[DateModified], [e].[Email], [e].[EmailConfirmed], [e].[FullName], [e].[LockoutEnabled], [e].[LockoutEnd], [e].[NormalizedEmail], [e].[NormalizedUserName], [e].[PasswordHash], [e].[PhoneNumber], [e].[PhoneNumberConfirmed], [e].[SecurityStamp], [e].[Status], [e].[TwoFactorEnabled], [e].[UserName]
+FROM [AppUsers] AS [e]
+WHERE [e].[Id] = @__get_Item_0" (0723d8ff)
+2018-11-04T00:40:23.7131289+07:00 0HLI1MC8IH3PN:00000005 [INF] Executed DbCommand ("80"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2018-11-04T00:40:23.7409111+07:00 0HLI1MC8IH3PN:00000005 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-11-04T00:40:23.7501258+07:00 0HLI1MC8IH3PN:00000005 [INF] Executed action "NetCoreApp.Areas.Admin.Controllers.UserController.GetById (NetCoreApp)" in 387.662ms (afa2e885)
+2018-11-04T00:40:23.7635023+07:00 0HLI1MC8IH3PN:00000005 [INF] Request finished in 452.5413ms 200 application/json; charset=utf-8 (791a596a)
+2018-11-04T00:40:23.7773818+07:00 0HLI1MC8IH3PV:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44383/Admin/Role/GetAll   (ca22a1cb)
+2018-11-04T00:40:23.7853835+07:00 0HLI1MC8IH3PV:00000003 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-11-04T00:40:23.7981960+07:00 0HLI1MC8IH3PV:00000003 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-11-04T00:40:23.8419733+07:00 0HLI1MC8IH3PV:00000003 [INF] Executing action method "NetCoreApp.Areas.Admin.Controllers.RoleController.GetAll (NetCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-11-04T00:40:23.8546962+07:00 0HLI1MC8IH3PV:00000003 [INF] Entity Framework Core "2.0.0-rtm-26452" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=NetCoreApp.Data.EF " (9958f5bb)
+2018-11-04T00:40:23.9622120+07:00 0HLI1MC8IH3PV:00000003 [INF] Executed DbCommand ("81"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[Description]
+FROM [AppRoles] AS [dto]" (0723d8ff)
+2018-11-04T00:40:23.9721637+07:00 0HLI1MC8IH3PV:00000003 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-11-04T00:40:23.9830570+07:00 0HLI1MC8IH3PV:00000003 [INF] Executed action "NetCoreApp.Areas.Admin.Controllers.RoleController.GetAll (NetCoreApp)" in 180.6198ms (afa2e885)
+2018-11-04T00:40:24.0174975+07:00 0HLI1MC8IH3PV:00000003 [INF] Request finished in 215.4433ms 200 application/json; charset=utf-8 (791a596a)
+2018-11-04T00:40:29.2757859+07:00 0HLI1MC8IH3Q0:00000003 [INF] Request starting HTTP/1.1 POST http://localhost:44383/Admin/User/SaveEntity application/x-www-form-urlencoded; charset=UTF-8 138 (ca22a1cb)
+2018-11-04T00:40:29.2827956+07:00 0HLI1MC8IH3Q0:00000003 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-11-04T00:40:29.3463648+07:00 0HLI1MC8IH3Q0:00000003 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-11-04T00:40:29.4028796+07:00 0HLI1MC8IH3Q0:00000003 [INF] Executing action method "NetCoreApp.Areas.Admin.Controllers.UserController.SaveEntity (NetCoreApp)" with arguments (["NetCoreApp.Application.ViewModels.AppUserViewModel"]) - ModelState is Valid (ba7f4ac2)
+2018-11-04T00:40:29.4161353+07:00 0HLI1MC8IH3Q0:00000003 [INF] Entity Framework Core "2.0.0-rtm-26452" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=NetCoreApp.Data.EF " (9958f5bb)
+2018-11-04T00:40:29.4837202+07:00 0HLI1MC8IH3Q0:00000003 [INF] Executed DbCommand ("58"ms) [Parameters=["@__get_Item_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [e].[Id], [e].[AccessFailedCount], [e].[Avatar], [e].[Balance], [e].[BirthDay], [e].[ConcurrencyStamp], [e].[DateCreated], [e].[DateModified], [e].[Email], [e].[EmailConfirmed], [e].[FullName], [e].[LockoutEnabled], [e].[LockoutEnd], [e].[NormalizedEmail], [e].[NormalizedUserName], [e].[PasswordHash], [e].[PhoneNumber], [e].[PhoneNumberConfirmed], [e].[SecurityStamp], [e].[Status], [e].[TwoFactorEnabled], [e].[UserName]
+FROM [AppUsers] AS [e]
+WHERE [e].[Id] = @__get_Item_0" (0723d8ff)
+2018-11-04T00:40:29.5416982+07:00 0HLI1MC8IH3Q0:00000003 [INF] Executed DbCommand ("49"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2018-11-04T00:40:29.6426957+07:00 0HLI1MC8IH3Q0:00000003 [INF] Executed DbCommand ("68"ms) [Parameters=["@__normalizedRoleName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [r].[Id], [r].[ConcurrencyStamp], [r].[Description], [r].[Name], [r].[NormalizedName]
+FROM [AppRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedRoleName_0" (0723d8ff)
+2018-11-04T00:40:29.7344709+07:00 0HLI1MC8IH3Q0:00000003 [INF] Executed DbCommand ("61"ms) [Parameters=["@__get_Item_0='?', @__get_Item_1='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [e].[UserId], [e].[RoleId]
+FROM [AppUserRoles] AS [e]
+WHERE ([e].[UserId] = @__get_Item_0) AND ([e].[RoleId] = @__get_Item_1)" (0723d8ff)
+2018-11-04T00:40:29.8402246+07:00 0HLI1MC8IH3Q0:00000003 [INF] Executed DbCommand ("83"ms) [Parameters=["@__normalizedRoleName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [r].[Id], [r].[ConcurrencyStamp], [r].[Description], [r].[Name], [r].[NormalizedName]
+FROM [AppRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedRoleName_0" (0723d8ff)
+2018-11-04T00:40:29.9321905+07:00 0HLI1MC8IH3Q0:00000003 [INF] Executed DbCommand ("46"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[Avatar], [u].[Balance], [u].[BirthDay], [u].[ConcurrencyStamp], [u].[DateCreated], [u].[DateModified], [u].[Email], [u].[EmailConfirmed], [u].[FullName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Status], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AppUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2018-11-04T00:40:30.0686980+07:00 0HLI1MC8IH3Q0:00000003 [INF] Executed DbCommand ("107"ms) [Parameters=["@__normalizedEmail_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[Avatar], [u].[Balance], [u].[BirthDay], [u].[ConcurrencyStamp], [u].[DateCreated], [u].[DateModified], [u].[Email], [u].[EmailConfirmed], [u].[FullName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Status], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AppUsers] AS [u]
+WHERE [u].[NormalizedEmail] = @__normalizedEmail_0" (0723d8ff)
+2018-11-04T00:40:30.5557300+07:00 0HLI1MC8IH3Q0:00000003 [INF] Executed DbCommand ("252"ms) [Parameters=["@p0='?', @p1='?', @p23='?', @p2='?', @p3='?' (Size = 4000), @p4='?', @p5='?', @p6='?' (Size = 4000), @p7='?', @p8='?', @p9='?' (Size = 4000), @p10='?', @p11='?' (Size = 4000), @p12='?', @p13='?', @p14='?' (Size = 4000), @p15='?' (Size = 4000), @p16='?' (Size = 4000), @p17='?' (Size = 4000), @p18='?', @p19='?' (Size = 4000), @p20='?', @p21='?', @p22='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [AppUserRoles] ([UserId], [RoleId])
+VALUES (@p0, @p1);
+UPDATE [AppUsers] SET [AccessFailedCount] = @p2, [Avatar] = @p3, [Balance] = @p4, [BirthDay] = @p5, [ConcurrencyStamp] = @p6, [DateCreated] = @p7, [DateModified] = @p8, [Email] = @p9, [EmailConfirmed] = @p10, [FullName] = @p11, [LockoutEnabled] = @p12, [LockoutEnd] = @p13, [NormalizedEmail] = @p14, [NormalizedUserName] = @p15, [PasswordHash] = @p16, [PhoneNumber] = @p17, [PhoneNumberConfirmed] = @p18, [SecurityStamp] = @p19, [Status] = @p20, [TwoFactorEnabled] = @p21, [UserName] = @p22
+WHERE [Id] = @p23;
+SELECT @@ROWCOUNT;" (0723d8ff)
+2018-11-04T00:40:30.6368177+07:00 0HLI1MC8IH3Q0:00000003 [INF] Executed DbCommand ("60"ms) [Parameters=["@__normalizedRoleName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [r].[Id], [r].[ConcurrencyStamp], [r].[Description], [r].[Name], [r].[NormalizedName]
+FROM [AppRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedRoleName_0" (0723d8ff)
+2018-11-04T00:40:30.7188045+07:00 0HLI1MC8IH3Q0:00000003 [INF] Executed DbCommand ("63"ms) [Parameters=["@__get_Item_0='?', @__get_Item_1='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [e].[UserId], [e].[RoleId]
+FROM [AppUserRoles] AS [e]
+WHERE ([e].[UserId] = @__get_Item_0) AND ([e].[RoleId] = @__get_Item_1)" (0723d8ff)
+2018-11-04T00:40:30.8105394+07:00 0HLI1MC8IH3Q0:00000003 [INF] Executed DbCommand ("69"ms) [Parameters=["@__normalizedRoleName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [r].[Id], [r].[ConcurrencyStamp], [r].[Description], [r].[Name], [r].[NormalizedName]
+FROM [AppRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedRoleName_0" (0723d8ff)
+2018-11-04T00:40:30.8700605+07:00 0HLI1MC8IH3Q0:00000003 [INF] Executed DbCommand ("49"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[Avatar], [u].[Balance], [u].[BirthDay], [u].[ConcurrencyStamp], [u].[DateCreated], [u].[DateModified], [u].[Email], [u].[EmailConfirmed], [u].[FullName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Status], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AppUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2018-11-04T00:40:30.9415470+07:00 0HLI1MC8IH3Q0:00000003 [INF] Executed DbCommand ("63"ms) [Parameters=["@__normalizedEmail_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[Avatar], [u].[Balance], [u].[BirthDay], [u].[ConcurrencyStamp], [u].[DateCreated], [u].[DateModified], [u].[Email], [u].[EmailConfirmed], [u].[FullName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Status], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AppUsers] AS [u]
+WHERE [u].[NormalizedEmail] = @__normalizedEmail_0" (0723d8ff)
+2018-11-04T00:40:31.0208963+07:00 0HLI1MC8IH3Q0:00000003 [INF] Executed DbCommand ("65"ms) [Parameters=["@p0='?', @p1='?', @p23='?', @p2='?', @p3='?' (Size = 4000), @p4='?', @p5='?', @p6='?' (Size = 4000), @p7='?', @p8='?', @p9='?' (Size = 4000), @p10='?', @p11='?' (Size = 4000), @p12='?', @p13='?', @p14='?' (Size = 4000), @p15='?' (Size = 4000), @p16='?' (Size = 4000), @p17='?' (Size = 4000), @p18='?', @p19='?' (Size = 4000), @p20='?', @p21='?', @p22='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+DELETE FROM [AppUserRoles]
+WHERE [UserId] = @p0 AND [RoleId] = @p1;
+SELECT @@ROWCOUNT;
+
+UPDATE [AppUsers] SET [AccessFailedCount] = @p2, [Avatar] = @p3, [Balance] = @p4, [BirthDay] = @p5, [ConcurrencyStamp] = @p6, [DateCreated] = @p7, [DateModified] = @p8, [Email] = @p9, [EmailConfirmed] = @p10, [FullName] = @p11, [LockoutEnabled] = @p12, [LockoutEnd] = @p13, [NormalizedEmail] = @p14, [NormalizedUserName] = @p15, [PasswordHash] = @p16, [PhoneNumber] = @p17, [PhoneNumberConfirmed] = @p18, [SecurityStamp] = @p19, [Status] = @p20, [TwoFactorEnabled] = @p21, [UserName] = @p22
+WHERE [Id] = @p23;
+SELECT @@ROWCOUNT;" (0723d8ff)
+2018-11-04T00:40:31.0907615+07:00 0HLI1MC8IH3Q0:00000003 [INF] Executed DbCommand ("58"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[Avatar], [u].[Balance], [u].[BirthDay], [u].[ConcurrencyStamp], [u].[DateCreated], [u].[DateModified], [u].[Email], [u].[EmailConfirmed], [u].[FullName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Status], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AppUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2018-11-04T00:40:31.3221649+07:00 0HLI1MC8IH3Q0:00000003 [INF] Executed DbCommand ("129"ms) [Parameters=["@__normalizedEmail_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[Avatar], [u].[Balance], [u].[BirthDay], [u].[ConcurrencyStamp], [u].[DateCreated], [u].[DateModified], [u].[Email], [u].[EmailConfirmed], [u].[FullName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Status], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AppUsers] AS [u]
+WHERE [u].[NormalizedEmail] = @__normalizedEmail_0" (0723d8ff)
+2018-11-04T00:40:31.4880386+07:00 0HLI1MC8IH3Q0:00000003 [INF] Executed DbCommand ("145"ms) [Parameters=["@p21='?', @p0='?', @p1='?' (Size = 4000), @p2='?', @p3='?', @p4='?' (Size = 4000), @p5='?', @p6='?', @p7='?' (Size = 4000), @p8='?', @p9='?' (Size = 4000), @p10='?', @p11='?', @p12='?' (Size = 4000), @p13='?' (Size = 4000), @p14='?' (Size = 4000), @p15='?' (Size = 4000), @p16='?', @p17='?' (Size = 4000), @p18='?', @p19='?', @p20='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+UPDATE [AppUsers] SET [AccessFailedCount] = @p0, [Avatar] = @p1, [Balance] = @p2, [BirthDay] = @p3, [ConcurrencyStamp] = @p4, [DateCreated] = @p5, [DateModified] = @p6, [Email] = @p7, [EmailConfirmed] = @p8, [FullName] = @p9, [LockoutEnabled] = @p10, [LockoutEnd] = @p11, [NormalizedEmail] = @p12, [NormalizedUserName] = @p13, [PasswordHash] = @p14, [PhoneNumber] = @p15, [PhoneNumberConfirmed] = @p16, [SecurityStamp] = @p17, [Status] = @p18, [TwoFactorEnabled] = @p19, [UserName] = @p20
+WHERE [Id] = @p21;
+SELECT @@ROWCOUNT;" (0723d8ff)
+2018-11-04T00:40:31.5051229+07:00 0HLI1MC8IH3Q0:00000003 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-11-04T00:40:31.5816509+07:00 0HLI1MC8IH3Q0:00000003 [INF] Executed action "NetCoreApp.Areas.Admin.Controllers.UserController.SaveEntity (NetCoreApp)" in 2201.3942ms (afa2e885)
+2018-11-04T00:40:31.6441555+07:00 0HLI1MC8IH3Q0:00000003 [INF] Request finished in 2313.4854ms 200 application/json; charset=utf-8 (791a596a)
+2018-11-04T00:40:31.6462408+07:00 0HLI1MC8IH3PU:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:44383/Admin/Role/GetAll   (ca22a1cb)
+2018-11-04T00:40:31.6635979+07:00 0HLI1MC8IH3PU:00000005 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-11-04T00:40:31.6776044+07:00 0HLI1MC8IH3PU:00000005 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-11-04T00:40:31.7377662+07:00 0HLI1MC8IH3PU:00000005 [INF] Executing action method "NetCoreApp.Areas.Admin.Controllers.RoleController.GetAll (NetCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-11-04T00:40:31.7474838+07:00 0HLI1MC8IH3PU:00000005 [INF] Entity Framework Core "2.0.0-rtm-26452" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=NetCoreApp.Data.EF " (9958f5bb)
+2018-11-04T00:40:31.8205201+07:00 0HLI1MC8IH3PU:00000005 [INF] Executed DbCommand ("59"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[Description]
+FROM [AppRoles] AS [dto]" (0723d8ff)
+2018-11-04T00:40:31.8281527+07:00 0HLI1MC8IH3PU:00000005 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-11-04T00:40:31.8349691+07:00 0HLI1MC8IH3PU:00000005 [INF] Executed action "NetCoreApp.Areas.Admin.Controllers.RoleController.GetAll (NetCoreApp)" in 164.3448ms (afa2e885)
+2018-11-04T00:40:31.8484786+07:00 0HLI1MC8IH3PU:00000005 [INF] Request finished in 203.3773ms 200 application/json; charset=utf-8 (791a596a)
+2018-11-04T00:40:31.8623907+07:00 0HLI1MC8IH3PO:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:44383/admin/user/GetAllPaging?keyword=&page=1&pageSize=10   (ca22a1cb)
+2018-11-04T00:40:31.8709744+07:00 0HLI1MC8IH3PO:00000005 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-11-04T00:40:31.8801473+07:00 0HLI1MC8IH3PO:00000005 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-11-04T00:40:31.9313071+07:00 0HLI1MC8IH3PO:00000005 [INF] Executing action method "NetCoreApp.Areas.Admin.Controllers.UserController.GetAllPaging (NetCoreApp)" with arguments (["", "1", "10"]) - ModelState is Valid (ba7f4ac2)
+2018-11-04T00:40:31.9397094+07:00 0HLI1MC8IH3PO:00000005 [INF] Entity Framework Core "2.0.0-rtm-26452" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=NetCoreApp.Data.EF " (9958f5bb)
+2018-11-04T00:40:32.0104684+07:00 0HLI1MC8IH3PO:00000005 [INF] Executed DbCommand ("55"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [AppUsers] AS [a]" (0723d8ff)
+2018-11-04T00:40:32.0822244+07:00 0HLI1MC8IH3PO:00000005 [INF] Executed DbCommand ("62"ms) [Parameters=["@__p_0='?', @__p_1='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[UserName], [x].[Avatar], CONVERT(VARCHAR(100), [x].[BirthDay]) AS [BirthDay], [x].[Email], [x].[FullName], [x].[Id], [x].[PhoneNumber], [x].[Status], [x].[DateCreated]
+FROM [AppUsers] AS [x]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY" (0723d8ff)
+2018-11-04T00:40:32.0906292+07:00 0HLI1MC8IH3PO:00000005 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-11-04T00:40:32.0985548+07:00 0HLI1MC8IH3PO:00000005 [INF] Executed action "NetCoreApp.Areas.Admin.Controllers.UserController.GetAllPaging (NetCoreApp)" in 219.8719ms (afa2e885)
+2018-11-04T00:40:32.1087288+07:00 0HLI1MC8IH3PO:00000005 [INF] Request finished in 251.3721ms 200 application/json; charset=utf-8 (791a596a)
+2018-11-04T00:40:32.1500327+07:00 0HLI1MC8IH3Q3:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44383/admin/user/GetAllPaging?keyword=&page=1&pageSize=10   (ca22a1cb)
+2018-11-04T00:40:32.1754602+07:00 0HLI1MC8IH3Q4:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44383/admin/user/null   (ca22a1cb)
+2018-11-04T00:40:32.2060379+07:00 0HLI1MC8IH3Q3:00000004 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-11-04T00:40:32.2275520+07:00 0HLI1MC8IH3Q3:00000004 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-11-04T00:40:32.2917712+07:00 0HLI1MC8IH3Q4:00000004 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-11-04T00:40:32.3510728+07:00 0HLI1MC8IH3Q4:00000004 [INF] Request finished in 174.5642ms 404  (791a596a)
+2018-11-04T00:40:32.3552965+07:00 0HLI1MC8IH3Q3:00000004 [INF] Executing action method "NetCoreApp.Areas.Admin.Controllers.UserController.GetAllPaging (NetCoreApp)" with arguments (["", "1", "10"]) - ModelState is Valid (ba7f4ac2)
+2018-11-04T00:40:32.3832599+07:00 0HLI1MC8IH3Q3:00000004 [INF] Entity Framework Core "2.0.0-rtm-26452" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=NetCoreApp.Data.EF " (9958f5bb)
+2018-11-04T00:40:32.5076551+07:00 0HLI1MC8IH3Q3:00000004 [INF] Executed DbCommand ("103"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [AppUsers] AS [a]" (0723d8ff)
+2018-11-04T00:40:32.5943153+07:00 0HLI1MC8IH3Q3:00000004 [INF] Executed DbCommand ("75"ms) [Parameters=["@__p_0='?', @__p_1='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[UserName], [x].[Avatar], CONVERT(VARCHAR(100), [x].[BirthDay]) AS [BirthDay], [x].[Email], [x].[FullName], [x].[Id], [x].[PhoneNumber], [x].[Status], [x].[DateCreated]
+FROM [AppUsers] AS [x]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY" (0723d8ff)
+2018-11-04T00:40:32.6043543+07:00 0HLI1MC8IH3Q3:00000004 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-11-04T00:40:32.6146475+07:00 0HLI1MC8IH3Q3:00000004 [INF] Executed action "NetCoreApp.Areas.Admin.Controllers.UserController.GetAllPaging (NetCoreApp)" in 398.2745ms (afa2e885)
+2018-11-04T00:40:32.6356934+07:00 0HLI1MC8IH3Q3:00000004 [INF] Request finished in 497.3955ms 200 application/json; charset=utf-8 (791a596a)
+2018-11-04T00:40:32.6507622+07:00 0HLI1MC8IH3PT:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:44383/admin/user/null   (ca22a1cb)
+2018-11-04T00:40:32.6622223+07:00 0HLI1MC8IH3PT:00000005 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-11-04T00:40:32.6987762+07:00 0HLI1MC8IH3PT:00000005 [INF] Request finished in 26.5607ms 404  (791a596a)
+2018-11-04T00:40:39.3654859+07:00 0HLI1MC8IH3PS:00000006 [INF] Request starting HTTP/1.1 GET http://localhost:44383/Admin/Role/GetAll   (ca22a1cb)
+2018-11-04T00:40:39.3787314+07:00 0HLI1MC8IH3PS:00000006 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-11-04T00:40:39.3857325+07:00 0HLI1MC8IH3PS:00000006 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-11-04T00:40:39.4311716+07:00 0HLI1MC8IH3PS:00000006 [INF] Executing action method "NetCoreApp.Areas.Admin.Controllers.RoleController.GetAll (NetCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-11-04T00:40:39.4385494+07:00 0HLI1MC8IH3PS:00000006 [INF] Entity Framework Core "2.0.0-rtm-26452" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=NetCoreApp.Data.EF " (9958f5bb)
+2018-11-04T00:40:39.4999372+07:00 0HLI1MC8IH3PS:00000006 [INF] Executed DbCommand ("51"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[Description]
+FROM [AppRoles] AS [dto]" (0723d8ff)
+2018-11-04T00:40:39.5075588+07:00 0HLI1MC8IH3PS:00000006 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-11-04T00:40:39.5176136+07:00 0HLI1MC8IH3PS:00000006 [INF] Executed action "NetCoreApp.Areas.Admin.Controllers.RoleController.GetAll (NetCoreApp)" in 128.8763ms (afa2e885)
+2018-11-04T00:40:39.5298671+07:00 0HLI1MC8IH3PS:00000006 [INF] Request finished in 160.0457ms 200 application/json; charset=utf-8 (791a596a)
+2018-11-04T00:40:39.5626939+07:00 0HLI1MC8IH3Q1:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:44383/Admin/Role/GetAll   (ca22a1cb)
+2018-11-04T00:40:39.5711078+07:00 0HLI1MC8IH3Q1:00000005 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-11-04T00:40:39.5792737+07:00 0HLI1MC8IH3Q1:00000005 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-11-04T00:40:39.6218685+07:00 0HLI1MC8IH3Q1:00000005 [INF] Executing action method "NetCoreApp.Areas.Admin.Controllers.RoleController.GetAll (NetCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-11-04T00:40:39.6294601+07:00 0HLI1MC8IH3Q1:00000005 [INF] Entity Framework Core "2.0.0-rtm-26452" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=NetCoreApp.Data.EF " (9958f5bb)
+2018-11-04T00:40:39.6945880+07:00 0HLI1MC8IH3Q1:00000005 [INF] Executed DbCommand ("53"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[Description]
+FROM [AppRoles] AS [dto]" (0723d8ff)
+2018-11-04T00:40:39.7039912+07:00 0HLI1MC8IH3Q1:00000005 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-11-04T00:40:39.7126687+07:00 0HLI1MC8IH3Q1:00000005 [INF] Executed action "NetCoreApp.Areas.Admin.Controllers.RoleController.GetAll (NetCoreApp)" in 132.9756ms (afa2e885)
+2018-11-04T00:40:39.7452576+07:00 0HLI1MC8IH3Q1:00000005 [INF] Request finished in 183.0799ms 200 application/json; charset=utf-8 (791a596a)
+2018-11-04T00:41:05.3931393+07:00 0HLI1MC8IH3PR:00000004 [INF] Request starting HTTP/1.1 POST http://localhost:44383/Admin/User/SaveEntity application/x-www-form-urlencoded; charset=UTF-8 117 (ca22a1cb)
+2018-11-04T00:41:05.4008624+07:00 0HLI1MC8IH3PR:00000004 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-11-04T00:41:05.4076160+07:00 0HLI1MC8IH3PR:00000004 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-11-04T00:41:05.4441254+07:00 0HLI1MC8IH3PR:00000004 [INF] Executing action method "NetCoreApp.Areas.Admin.Controllers.UserController.SaveEntity (NetCoreApp)" with arguments (["NetCoreApp.Application.ViewModels.AppUserViewModel"]) - ModelState is Valid (ba7f4ac2)
+2018-11-04T00:41:05.4742696+07:00 0HLI1MC8IH3PR:00000004 [INF] Entity Framework Core "2.0.0-rtm-26452" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=NetCoreApp.Data.EF " (9958f5bb)
+2018-11-04T00:41:05.5436407+07:00 0HLI1MC8IH3PR:00000004 [INF] Executed DbCommand ("60"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[Avatar], [u].[Balance], [u].[BirthDay], [u].[ConcurrencyStamp], [u].[DateCreated], [u].[DateModified], [u].[Email], [u].[EmailConfirmed], [u].[FullName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Status], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AppUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2018-11-04T00:41:05.6031728+07:00 0HLI1MC8IH3PR:00000004 [INF] Executed DbCommand ("50"ms) [Parameters=["@__normalizedEmail_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[Avatar], [u].[Balance], [u].[BirthDay], [u].[ConcurrencyStamp], [u].[DateCreated], [u].[DateModified], [u].[Email], [u].[EmailConfirmed], [u].[FullName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Status], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AppUsers] AS [u]
+WHERE [u].[NormalizedEmail] = @__normalizedEmail_0" (0723d8ff)
+2018-11-04T00:41:05.6849694+07:00 0HLI1MC8IH3PR:00000004 [INF] Executed DbCommand ("54"ms) [Parameters=["@p0='?', @p1='?', @p2='?' (Size = 4000), @p3='?', @p4='?', @p5='?' (Size = 4000), @p6='?', @p7='?', @p8='?' (Size = 4000), @p9='?', @p10='?' (Size = 4000), @p11='?', @p12='?', @p13='?' (Size = 4000), @p14='?' (Size = 4000), @p15='?' (Size = 4000), @p16='?' (Size = 4000), @p17='?', @p18='?' (Size = 4000), @p19='?', @p20='?', @p21='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [AppUsers] ([Id], [AccessFailedCount], [Avatar], [Balance], [BirthDay], [ConcurrencyStamp], [DateCreated], [DateModified], [Email], [EmailConfirmed], [FullName], [LockoutEnabled], [LockoutEnd], [NormalizedEmail], [NormalizedUserName], [PasswordHash], [PhoneNumber], [PhoneNumberConfirmed], [SecurityStamp], [Status], [TwoFactorEnabled], [UserName])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15, @p16, @p17, @p18, @p19, @p20, @p21);" (0723d8ff)
+2018-11-04T00:41:05.7656351+07:00 0HLI1MC8IH3PR:00000004 [INF] Executed DbCommand ("70"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[Avatar], [u].[Balance], [u].[BirthDay], [u].[ConcurrencyStamp], [u].[DateCreated], [u].[DateModified], [u].[Email], [u].[EmailConfirmed], [u].[FullName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Status], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AppUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2018-11-04T00:41:05.8387743+07:00 0HLI1MC8IH3PR:00000004 [INF] Executed DbCommand ("62"ms) [Parameters=["@__normalizedRoleName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [r].[Id], [r].[ConcurrencyStamp], [r].[Description], [r].[Name], [r].[NormalizedName]
+FROM [AppRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedRoleName_0" (0723d8ff)
+2018-11-04T00:41:05.9068183+07:00 0HLI1MC8IH3PR:00000004 [INF] Executed DbCommand ("56"ms) [Parameters=["@__get_Item_0='?', @__get_Item_1='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [e].[UserId], [e].[RoleId]
+FROM [AppUserRoles] AS [e]
+WHERE ([e].[UserId] = @__get_Item_0) AND ([e].[RoleId] = @__get_Item_1)" (0723d8ff)
+2018-11-04T00:41:05.9974444+07:00 0HLI1MC8IH3PR:00000004 [INF] Executed DbCommand ("79"ms) [Parameters=["@__normalizedRoleName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [r].[Id], [r].[ConcurrencyStamp], [r].[Description], [r].[Name], [r].[NormalizedName]
+FROM [AppRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedRoleName_0" (0723d8ff)
+2018-11-04T00:41:06.0720193+07:00 0HLI1MC8IH3PR:00000004 [INF] Executed DbCommand ("65"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[Avatar], [u].[Balance], [u].[BirthDay], [u].[ConcurrencyStamp], [u].[DateCreated], [u].[DateModified], [u].[Email], [u].[EmailConfirmed], [u].[FullName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Status], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AppUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2018-11-04T00:41:06.1355493+07:00 0HLI1MC8IH3PR:00000004 [INF] Executed DbCommand ("52"ms) [Parameters=["@__normalizedEmail_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[Avatar], [u].[Balance], [u].[BirthDay], [u].[ConcurrencyStamp], [u].[DateCreated], [u].[DateModified], [u].[Email], [u].[EmailConfirmed], [u].[FullName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Status], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AppUsers] AS [u]
+WHERE [u].[NormalizedEmail] = @__normalizedEmail_0" (0723d8ff)
+2018-11-04T00:41:06.2215377+07:00 0HLI1MC8IH3PR:00000004 [INF] Executed DbCommand ("70"ms) [Parameters=["@p0='?', @p1='?', @p23='?', @p2='?', @p3='?' (Size = 4000), @p4='?', @p5='?', @p6='?' (Size = 4000), @p7='?', @p8='?', @p9='?' (Size = 4000), @p10='?', @p11='?' (Size = 4000), @p12='?', @p13='?', @p14='?' (Size = 4000), @p15='?' (Size = 4000), @p16='?' (Size = 4000), @p17='?' (Size = 4000), @p18='?', @p19='?' (Size = 4000), @p20='?', @p21='?', @p22='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [AppUserRoles] ([UserId], [RoleId])
+VALUES (@p0, @p1);
+UPDATE [AppUsers] SET [AccessFailedCount] = @p2, [Avatar] = @p3, [Balance] = @p4, [BirthDay] = @p5, [ConcurrencyStamp] = @p6, [DateCreated] = @p7, [DateModified] = @p8, [Email] = @p9, [EmailConfirmed] = @p10, [FullName] = @p11, [LockoutEnabled] = @p12, [LockoutEnd] = @p13, [NormalizedEmail] = @p14, [NormalizedUserName] = @p15, [PasswordHash] = @p16, [PhoneNumber] = @p17, [PhoneNumberConfirmed] = @p18, [SecurityStamp] = @p19, [Status] = @p20, [TwoFactorEnabled] = @p21, [UserName] = @p22
+WHERE [Id] = @p23;
+SELECT @@ROWCOUNT;" (0723d8ff)
+2018-11-04T00:41:06.2300862+07:00 0HLI1MC8IH3PR:00000004 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-11-04T00:41:06.2398990+07:00 0HLI1MC8IH3PR:00000004 [INF] Executed action "NetCoreApp.Areas.Admin.Controllers.UserController.SaveEntity (NetCoreApp)" in 829.5912ms (afa2e885)
+2018-11-04T00:41:06.2551351+07:00 0HLI1MC8IH3PR:00000004 [INF] Request finished in 853.9379ms 200 application/json; charset=utf-8 (791a596a)
+2018-11-04T00:41:06.2692004+07:00 0HLI1MC8IH3PM:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:44383/Admin/Role/GetAll   (ca22a1cb)
+2018-11-04T00:41:06.2775681+07:00 0HLI1MC8IH3PM:00000005 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-11-04T00:41:06.2851392+07:00 0HLI1MC8IH3PM:00000005 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-11-04T00:41:06.3253947+07:00 0HLI1MC8IH3PM:00000005 [INF] Executing action method "NetCoreApp.Areas.Admin.Controllers.RoleController.GetAll (NetCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-11-04T00:41:06.3334390+07:00 0HLI1MC8IH3PM:00000005 [INF] Entity Framework Core "2.0.0-rtm-26452" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=NetCoreApp.Data.EF " (9958f5bb)
+2018-11-04T00:41:06.3883650+07:00 0HLI1MC8IH3PM:00000005 [INF] Executed DbCommand ("46"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[Description]
+FROM [AppRoles] AS [dto]" (0723d8ff)
+2018-11-04T00:41:06.3951592+07:00 0HLI1MC8IH3PM:00000005 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-11-04T00:41:06.4037752+07:00 0HLI1MC8IH3PM:00000005 [INF] Executed action "NetCoreApp.Areas.Admin.Controllers.RoleController.GetAll (NetCoreApp)" in 117.3515ms (afa2e885)
+2018-11-04T00:41:06.4132837+07:00 0HLI1MC8IH3PM:00000005 [INF] Request finished in 144.4847ms 200 application/json; charset=utf-8 (791a596a)
+2018-11-04T00:41:06.4300621+07:00 0HLI1MC8IH3Q6:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:44383/admin/user/GetAllPaging?keyword=&page=1&pageSize=10   (ca22a1cb)
+2018-11-04T00:41:06.4413043+07:00 0HLI1MC8IH3Q6:00000005 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-11-04T00:41:06.4515102+07:00 0HLI1MC8IH3Q6:00000005 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-11-04T00:41:06.4933683+07:00 0HLI1MC8IH3Q6:00000005 [INF] Executing action method "NetCoreApp.Areas.Admin.Controllers.UserController.GetAllPaging (NetCoreApp)" with arguments (["", "1", "10"]) - ModelState is Valid (ba7f4ac2)
+2018-11-04T00:41:06.5063248+07:00 0HLI1MC8IH3Q6:00000005 [INF] Entity Framework Core "2.0.0-rtm-26452" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=NetCoreApp.Data.EF " (9958f5bb)
+2018-11-04T00:41:06.5642204+07:00 0HLI1MC8IH3Q6:00000005 [INF] Executed DbCommand ("46"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [AppUsers] AS [a]" (0723d8ff)
+2018-11-04T00:41:06.6742129+07:00 0HLI1MC8IH3Q6:00000005 [INF] Executed DbCommand ("92"ms) [Parameters=["@__p_0='?', @__p_1='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[UserName], [x].[Avatar], CONVERT(VARCHAR(100), [x].[BirthDay]) AS [BirthDay], [x].[Email], [x].[FullName], [x].[Id], [x].[PhoneNumber], [x].[Status], [x].[DateCreated]
+FROM [AppUsers] AS [x]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY" (0723d8ff)
+2018-11-04T00:41:06.6855355+07:00 0HLI1MC8IH3Q6:00000005 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-11-04T00:41:06.6962558+07:00 0HLI1MC8IH3Q6:00000005 [INF] Executed action "NetCoreApp.Areas.Admin.Controllers.UserController.GetAllPaging (NetCoreApp)" in 245.0835ms (afa2e885)
+2018-11-04T00:41:06.7269555+07:00 0HLI1MC8IH3Q6:00000005 [INF] Request finished in 276.6476ms 200 application/json; charset=utf-8 (791a596a)
+2018-11-04T00:41:06.7891541+07:00 0HLI1MC8IH3Q5:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:44383/admin/user/null   (ca22a1cb)
+2018-11-04T00:41:06.7909908+07:00 0HLI1MC8IH3PP:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:44383/admin/user/GetAllPaging?keyword=&page=1&pageSize=10   (ca22a1cb)
+2018-11-04T00:41:06.8056431+07:00 0HLI1MC8IH3PP:00000005 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-11-04T00:41:06.8380583+07:00 0HLI1MC8IH3Q5:00000005 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-11-04T00:41:06.8665411+07:00 0HLI1MC8IH3PP:00000005 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-11-04T00:41:06.8714809+07:00 0HLI1MC8IH3Q5:00000005 [INF] Request finished in 116.1211ms 404  (791a596a)
+2018-11-04T00:41:06.9091694+07:00 0HLI1MC8IH3PP:00000005 [INF] Executing action method "NetCoreApp.Areas.Admin.Controllers.UserController.GetAllPaging (NetCoreApp)" with arguments (["", "1", "10"]) - ModelState is Valid (ba7f4ac2)
+2018-11-04T00:41:06.9167842+07:00 0HLI1MC8IH3PP:00000005 [INF] Entity Framework Core "2.0.0-rtm-26452" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=NetCoreApp.Data.EF " (9958f5bb)
+2018-11-04T00:41:06.9554284+07:00 0HLI1MC8IH3PP:00000005 [INF] Executed DbCommand ("31"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [AppUsers] AS [a]" (0723d8ff)
+2018-11-04T00:41:06.9954639+07:00 0HLI1MC8IH3PP:00000005 [INF] Executed DbCommand ("31"ms) [Parameters=["@__p_0='?', @__p_1='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[UserName], [x].[Avatar], CONVERT(VARCHAR(100), [x].[BirthDay]) AS [BirthDay], [x].[Email], [x].[FullName], [x].[Id], [x].[PhoneNumber], [x].[Status], [x].[DateCreated]
+FROM [AppUsers] AS [x]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY" (0723d8ff)
+2018-11-04T00:41:07.0035404+07:00 0HLI1MC8IH3PP:00000005 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-11-04T00:41:07.0121078+07:00 0HLI1MC8IH3PP:00000005 [INF] Executed action "NetCoreApp.Areas.Admin.Controllers.UserController.GetAllPaging (NetCoreApp)" in 195.2765ms (afa2e885)
+2018-11-04T00:41:07.0266156+07:00 0HLI1MC8IH3PP:00000005 [INF] Request finished in 282.5414ms 200 application/json; charset=utf-8 (791a596a)
+2018-11-04T00:41:07.0459187+07:00 0HLI1MC8IH3PQ:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:44383/admin/user/null   (ca22a1cb)
+2018-11-04T00:41:07.0535842+07:00 0HLI1MC8IH3PQ:00000005 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-11-04T00:41:07.0696082+07:00 0HLI1MC8IH3PQ:00000005 [INF] Request finished in 22.2352ms 404  (791a596a)
+2018-11-04T00:41:13.1413338+07:00 0HLI1MC8IH3Q2:00000005 [INF] Request starting HTTP/1.1 POST http://localhost:44383/Admin/Account/Logout application/x-www-form-urlencoded 0 (ca22a1cb)
+2018-11-04T00:41:13.1495192+07:00 0HLI1MC8IH3Q2:00000005 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-11-04T00:41:13.1936324+07:00 0HLI1MC8IH3Q2:00000005 [INF] Executing action method "NetCoreApp.Areas.Admin.Controllers.AccountController.Logout (NetCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-11-04T00:41:13.2068226+07:00 0HLI1MC8IH3Q2:00000005 [INF] AuthenticationScheme: "Identity.Application" signed out. (d3f50c8d)
+2018-11-04T00:41:13.2148729+07:00 0HLI1MC8IH3Q2:00000005 [INF] AuthenticationScheme: "Identity.External" signed out. (d3f50c8d)
+2018-11-04T00:41:13.2245002+07:00 0HLI1MC8IH3Q2:00000005 [INF] AuthenticationScheme: "Identity.TwoFactorUserId" signed out. (d3f50c8d)
+2018-11-04T00:41:13.2319794+07:00 0HLI1MC8IH3Q2:00000005 [INF] Executing RedirectResult, redirecting to "/Admin/Login/Index". (d98d540e)
+2018-11-04T00:41:13.2390088+07:00 0HLI1MC8IH3Q2:00000005 [INF] Executed action "NetCoreApp.Areas.Admin.Controllers.AccountController.Logout (NetCoreApp)" in 74.5799ms (afa2e885)
+2018-11-04T00:41:13.2490920+07:00 0HLI1MC8IH3Q2:00000005 [INF] Request finished in 109.1141ms 302  (791a596a)
+2018-11-04T00:41:13.2614750+07:00 0HLI1MC8IH3PN:00000006 [INF] Request starting HTTP/1.1 GET http://localhost:44383/Admin/Login/Index   (ca22a1cb)
+2018-11-04T00:41:13.3139666+07:00 0HLI1MC8IH3PN:00000006 [INF] Executing action method "NetCoreApp.Areas.Admin.Controllers.LoginController.Index (NetCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-11-04T00:41:13.3214493+07:00 0HLI1MC8IH3PN:00000006 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Login/Index.cshtml". (9707eebe)
+2018-11-04T00:41:13.3313896+07:00 0HLI1MC8IH3PN:00000006 [INF] Executed action "NetCoreApp.Areas.Admin.Controllers.LoginController.Index (NetCoreApp)" in 60.0847ms (afa2e885)
+2018-11-04T00:41:13.3452666+07:00 0HLI1MC8IH3PN:00000006 [INF] Request finished in 77.6246ms 200 text/html; charset=utf-8 (791a596a)
+2018-11-04T00:41:20.5106239+07:00 0HLI1MC8IH3PV:00000004 [INF] Request starting HTTP/1.1 POST http://localhost:44383/admin/login/Authen application/x-www-form-urlencoded; charset=UTF-8 29 (ca22a1cb)
+2018-11-04T00:41:20.5583266+07:00 0HLI1MC8IH3PV:00000004 [INF] Executing action method "NetCoreApp.Areas.Admin.Controllers.LoginController.Authen (NetCoreApp)" with arguments (["NetCoreApp.Models.AccountViewModels.LoginViewModel"]) - ModelState is Valid (ba7f4ac2)
+2018-11-04T00:41:20.5670795+07:00 0HLI1MC8IH3PV:00000004 [INF] Entity Framework Core "2.0.0-rtm-26452" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=NetCoreApp.Data.EF " (9958f5bb)
+2018-11-04T00:41:20.6183206+07:00 0HLI1MC8IH3PV:00000004 [INF] Executed DbCommand ("43"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[Avatar], [u].[Balance], [u].[BirthDay], [u].[ConcurrencyStamp], [u].[DateCreated], [u].[DateModified], [u].[Email], [u].[EmailConfirmed], [u].[FullName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Status], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AppUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2018-11-04T00:41:20.6339933+07:00 0HLI1MC8IH3PV:00000004 [WRN] Invalid password for user "2c64e421-9d8f-4e18-5e68-08d63f4ecc47". (c2dce6c7)
+2018-11-04T00:41:20.6405021+07:00 0HLI1MC8IH3PV:00000004 [WRN] User "2c64e421-9d8f-4e18-5e68-08d63f4ecc47" failed to provide the correct password. (ec8d2479)
+2018-11-04T00:41:20.6463782+07:00 0HLI1MC8IH3PV:00000004 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-11-04T00:41:20.6540460+07:00 0HLI1MC8IH3PV:00000004 [INF] Executed action "NetCoreApp.Areas.Admin.Controllers.LoginController.Authen (NetCoreApp)" in 135.5336ms (afa2e885)
+2018-11-04T00:41:20.6628428+07:00 0HLI1MC8IH3PV:00000004 [INF] Request finished in 150.3225ms 200 application/json; charset=utf-8 (791a596a)
+2018-11-04T00:41:27.4281961+07:00 0HLI1MC8IH3Q0:00000004 [INF] Request starting HTTP/1.1 POST http://localhost:44383/admin/login/Authen application/x-www-form-urlencoded; charset=UTF-8 30 (ca22a1cb)
+2018-11-04T00:41:27.4679874+07:00 0HLI1MC8IH3Q0:00000004 [INF] Executing action method "NetCoreApp.Areas.Admin.Controllers.LoginController.Authen (NetCoreApp)" with arguments (["NetCoreApp.Models.AccountViewModels.LoginViewModel"]) - ModelState is Valid (ba7f4ac2)
+2018-11-04T00:41:27.4748630+07:00 0HLI1MC8IH3Q0:00000004 [INF] Entity Framework Core "2.0.0-rtm-26452" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=NetCoreApp.Data.EF " (9958f5bb)
+2018-11-04T00:41:27.5218397+07:00 0HLI1MC8IH3Q0:00000004 [INF] Executed DbCommand ("38"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[Avatar], [u].[Balance], [u].[BirthDay], [u].[ConcurrencyStamp], [u].[DateCreated], [u].[DateModified], [u].[Email], [u].[EmailConfirmed], [u].[FullName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Status], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AppUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2018-11-04T00:41:27.5948064+07:00 0HLI1MC8IH3Q0:00000004 [INF] Executed DbCommand ("54"ms) [Parameters=["@__user_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AppUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0" (0723d8ff)
+2018-11-04T00:41:27.6522034+07:00 0HLI1MC8IH3Q0:00000004 [INF] Executed DbCommand ("49"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2018-11-04T00:41:27.6995926+07:00 0HLI1MC8IH3Q0:00000004 [INF] Executed DbCommand ("40"ms) [Parameters=["@__normalizedName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Description], [r].[Name], [r].[NormalizedName]
+FROM [AppRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2018-11-04T00:41:27.7500955+07:00 0HLI1MC8IH3Q0:00000004 [INF] Executed DbCommand ("43"ms) [Parameters=["@__role_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AppRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0" (0723d8ff)
+2018-11-04T00:41:27.8131609+07:00 0HLI1MC8IH3Q0:00000004 [INF] Executed DbCommand ("49"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2018-11-04T00:41:27.8245819+07:00 0HLI1MC8IH3Q0:00000004 [INF] AuthenticationScheme: "Identity.Application" signed in. (c66dd7e7)
+2018-11-04T00:41:27.8330028+07:00 0HLI1MC8IH3Q0:00000004 [INF] User logged in. (fdce0db4)
+2018-11-04T00:41:27.8410856+07:00 0HLI1MC8IH3Q0:00000004 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-11-04T00:41:27.8495602+07:00 0HLI1MC8IH3Q0:00000004 [INF] Executed action "NetCoreApp.Areas.Admin.Controllers.LoginController.Authen (NetCoreApp)" in 412.6336ms (afa2e885)
+2018-11-04T00:41:27.8636618+07:00 0HLI1MC8IH3Q0:00000004 [INF] Request finished in 429.0681ms 200 application/json; charset=utf-8 (791a596a)
+2018-11-04T00:41:27.8900154+07:00 0HLI1MC8IH3PU:00000006 [INF] Request starting HTTP/1.1 GET http://localhost:44383/Admin/Home/Index   (ca22a1cb)
+2018-11-04T00:41:27.9015418+07:00 0HLI1MC8IH3PU:00000006 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-11-04T00:41:27.9100401+07:00 0HLI1MC8IH3PU:00000006 [INF] Authorization was successful for user: "test1". (d7eb274a)
+2018-11-04T00:41:27.9578253+07:00 0HLI1MC8IH3PU:00000006 [INF] Executing action method "NetCoreApp.Areas.Admin.Controllers.HomeController.Index (NetCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-11-04T00:41:27.9676487+07:00 0HLI1MC8IH3PU:00000006 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Home/Index.cshtml". (9707eebe)
+2018-11-04T00:41:27.9856515+07:00 0HLI1MC8IH3PU:00000006 [INF] Executed action "NetCoreApp.Areas.Admin.Controllers.HomeController.Index (NetCoreApp)" in 67.9471ms (afa2e885)
+2018-11-04T00:41:27.9989578+07:00 0HLI1MC8IH3PU:00000006 [INF] Request finished in 112.6355ms 200 text/html; charset=utf-8 (791a596a)

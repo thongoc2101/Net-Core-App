@@ -8,7 +8,7 @@ using NetCoreApp.Infrastructure.SharedKernel;
 
 namespace NetCoreApp.Data.EF
 {
-    public class EfRepository<T, K> : IRepository<T,K>, IDisposable where T:DomainEntity<K>
+    public class EfRepository<T, K> : IRepository<T, K>, IDisposable where T : DomainEntity<K>
     {
         private readonly AppDbContext _dbContext;
 

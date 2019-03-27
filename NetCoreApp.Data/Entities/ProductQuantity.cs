@@ -6,6 +6,16 @@ namespace NetCoreApp.Data.Entities
     [Table("ProductQuantities")]
     public class ProductQuantity : DomainEntity<int>
     {
+        public ProductQuantity(){}
+
+        public ProductQuantity(int id,int productId, int sizeId, int colorId, int quantity)
+        {
+            Id = id;
+            ProductId = productId;
+            SizeId = sizeId;
+            ColorId = colorId;
+            Quantity = quantity;
+        }
  
         [Column(Order = 1)]
         public int ProductId { get; set; }

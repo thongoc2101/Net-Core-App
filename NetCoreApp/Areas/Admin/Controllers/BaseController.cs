@@ -1,6 +1,8 @@
 ﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using NetCoreApp.Application.Singleton;
+using NetCoreApp.Data.Entities;
 
 namespace NetCoreApp.Areas.Admin.Controllers
 {

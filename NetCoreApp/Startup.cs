@@ -1,5 +1,6 @@
 ﻿using System;
 using AutoMapper;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
@@ -7,7 +8,10 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
+using NetCoreApp.Application.Implementations;
+using NetCoreApp.Application.Interfaces;
 using NetCoreApp.Application.Singleton;
+using NetCoreApp.Authorization;
 using NetCoreApp.Data.EF;
 using NetCoreApp.Data.EF.Registration;
 using NetCoreApp.Data.Entities;
@@ -15,6 +19,7 @@ using NetCoreApp.Helpers;
 using NetCoreApp.Infrastructure.Interfaces;
 using NetCoreApp.Services;
 using Newtonsoft.Json.Serialization;
+using PaulMiami.AspNetCore.Mvc.Recaptcha;
 
 namespace NetCoreApp
 {
@@ -38,7 +43,7 @@ namespace NetCoreApp
                 .AddEntityFrameworkStores<AppDbContext>()
                 .AddDefaultTokenProviders();
 
-            // Configure Identity
+            // Configure Identity password
             services.Configure<IdentityOptions>(options =>
             {
                 options.Password.RequireDigit = true;
@@ -71,16 +76,36 @@ namespace NetCoreApp
             // Created Seeding database
             services.AddTransient<DbInitializer>();
 
-            
+            //Repository
             services.AddTransient<IUnitOfWork, UnitOfWork>();
+            //Service
             services.AddTransient<IServiceRegistration, ServiceRegistration>();
+            services.AddTransient<IUserService, UserService>();
+            services.AddTransient<IRoleService, RoleService>();
 
             services.AddMvc().AddJsonOptions(options => options.SerializerSettings.ContractResolver = new DefaultContractResolver());
+
+            // config Recaptcha
+            services.AddRecaptcha(new RecaptchaOptions
+            {
+                SiteKey = Configuration["Recaptcha:SiteKey"],
+                SecretKey = Configuration["Recaptcha:SecretKey"]
+            });
+
+            // config session
+            services.AddSession(options =>
+            {
+                options.IdleTimeout = TimeSpan.FromHours(2); // 2 hours time out
+                options.Cookie.HttpOnly = true;
+            });
 
             //UnitOfWork
             services.AddTransient(typeof(IRepository<,>), typeof(EfRepository<,>));
 
             services.AddScoped<IUserClaimsPrincipalFactory<AppUser>, CustomClaimPrincipalFactory>();
+
+            //Authorization
+            services.AddTransient<IAuthorizationHandler, BaseResourceAuthorizationHandler>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -101,6 +126,8 @@ namespace NetCoreApp
             app.UseStaticFiles();
 
             app.UseAuthentication();
+            // add session
+            app.UseSession();
 
             app.UseMvc(routes =>
             {

@@ -1,15 +1,61 @@
-﻿var productCategoryController = function () {
-    this.initialize = function () {
-        getProductCategory();
-        registerEvent();
-    };
+﻿var ProductCategoryController = function() {
+    this.initialize = function() {
+        loadData();
+        registerEvents();
+    }
 
-    function registerEvent() {
+    function registerEvents() {
+
+        // Set cac field bat buoc 
+        $('#frmMaintainance').validate({
+            errorClass: 'red',
+            ignore: [],
+            lang: 'vi',
+            rules: {
+                txtNameM: {required: true},
+                txtOrderM: {number: true},
+                txtHomeOrderM: {number: true}
+            }
+        });
+
+        // event button btnCreate
         $('#btnCreate').off('click').on('click',
-            function () {
+            function() {
                 initTreeDropDownCategory();
                 $('#modal-add-edit').modal('show');
             });
+
+        // event upload image
+        $('#btnSelectImg').on('click',
+            function() {
+                $('#fileInputImage').click();
+            });
+
+        // event onchange fileInputImage
+        $('#fileInputImage').on('change',
+            function() {
+                var fileUpload = $(this).get(0);
+                var files = fileUpload.files;
+                var data = new FormData();
+                for (var i = 0; i < files.length; i++) {
+                    data.append(files[i].name, files[i]);
+                }
+                $.ajax({
+                    type: "POST",
+                    url: "/Admin/Upload/UploadImage",
+                    contentType: false,
+                    processData: false,
+                    data: data,
+                    success: function (path) {
+                        $('#txtImageM').val(path);
+                        app.notify('Upload image success', 'success');
+                    },
+                    error: function (status) {
+                        app.notify('Has an error in uploading image progress', 'error');
+                    }
+                });
+            });
+
         $('body').on('click', '#btnEdit', function (e) {
             e.preventDefault();
             var that = $('#hidIdM').val();
@@ -45,6 +91,8 @@
                 }
             });
         });
+
+        // Xu ly event button btnDelete
         $('body').on('click', '#btnDelete', function (e) {
             e.preventDefault();
             var that = $('#hidIdM').val();
@@ -59,7 +107,7 @@
                     success: function (response) {
                         app.notify('Deleted success', 'success');
                         app.stopLoading();
-                        getProductCategory();
+                        loadData();
                     },
                     error: function (status) {
                         app.notify('Has an error in deleting progress', 'error');
@@ -68,8 +116,11 @@
                 });
             });
         });
-        $('#btnSave').on('click', function (e) {
-            if ($('#frmMaintainance').valid()) {
+
+        // Xu ly su kien nut btnSave
+        $('#btnSave').on('click',
+            function(e) {
+                if ($('#frmMaintainance').valid()) {
                 e.preventDefault();
                 var id = parseInt($('#hidIdM').val());
                 var name = $('#txtNameM').val();
@@ -82,7 +133,7 @@
                 var seoMetaDescription = $('#txtSeoDescriptionM').val();
                 var seoPageTitle = $('#txtSeoPageTitleM').val();
                 var seoAlias = $('#txtSeoAliasM').val();
-                var status = $('#ckStatusM').prop('checked') == true ? 1 : 0;
+                var status = $('#ckStatusM').prop('checked') === true ? 1 : 0;
                 var showHome = $('#ckShowHomeM').prop('checked');
                 $.ajax({
                     type: "POST",
@@ -111,7 +162,7 @@
                         $('#modal-add-edit').modal('hide');
                         resetFormMaintainance();
                         app.stopLoading();
-                        getProductCategory(true);
+                        loadData(true);
                     },
                     error: function () {
                         app.notify('Has an error in update progress', 'error');
@@ -123,6 +174,7 @@
         });
     }
 
+    // Reset value form => " "
     function resetFormMaintainance() {
         $('#hidIdM').val(0);
         $('#txtNameM').val('');
@@ -138,6 +190,7 @@
         $('#ckStatusM').prop('checked', true);
         $('#ckShowHomeM').prop('checked', false);
     }
+
     //Get Dropdown Tree
     function initTreeDropDownCategory(selectedId) {
         $.ajax({
@@ -165,10 +218,12 @@
             }
         });
     }
-    function getProductCategory() {
+
+    // load data
+    function loadData() {
         $.ajax({
             type: 'GET',
-            url: '/admin/productcategory/GetAll',
+            url: '/admin/productCategory/GetAll',
             dataType: 'json',
             success: function (response) {
                 var data = [];
@@ -182,8 +237,7 @@
                         });
                     });
                 var treeArr = app.unflattern(data);
-
-                treeArr.sort(function (a, b) {
+                treeArr.sort(function(a, b) {
                     return a.sortOrder - b.sortOrder;
                 });
 
@@ -201,40 +255,43 @@
                                 top: e.pageY
                             });
                     },
-                    onDrop: function (target, source, point) {
+                    onDrop: function(target, source, point) {
                         var targetNode = $(this).tree('getNode', target);
-                        if (point == 'append') {
+                        if (point === 'append') {
                             var children = [];
                             $.each(targetNode.children,
-                                function (i, item) {
+                                function(i, item) {
                                     children.push({
                                         key: item.id,
                                         value: i
-                                    });
                                 });
-                            //Update Db
+                            });
+                            // Update to database
                             $.ajax({
-                                url: '/admin/ProductCategory/UpdateParentId',
-                                type: 'POST',
+                                url: '/Admin/ProductCategory/UpdateParentId',
+                                type:'POST',
+                                dataType: 'json',
                                 data: {
                                     sourceId: source.id,
                                     targetId: targetNode.id,
                                     items: children
                                 },
-                                success: function (response) {
-                                    getProductCategory();
+                                success: function(res) {
+                                    loadData();
                                 }
                             });
-                        } else if (point === 'top' || point === 'bottom') {
+                        }
+                        else if (point === 'top' || point === 'bottom') {
                             $.ajax({
-                                url: '/admin/ProductCategory/ReOrder',
-                                type: 'POST',
+                                url: '/Admin/ProductCategory/ReOrder',
+                                type:'POST',
+                                dataType: 'json',
                                 data: {
                                     sourceId: source.id,
                                     targetId: targetNode.id
                                 },
-                                success: function (response) {
-                                    getProductCategory();
+                                success: function(res) {
+                                    loadData();
                                 }
                             });
                         }

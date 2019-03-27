@@ -20,9 +20,7 @@ var nodeLibs = {
         "*.css":""
     },
     "bootstrap-daterangepicker": {
-        "daterangepicker.js": "",
-        "daterangepicker.css":"",
-        "moment.min.js":""
+        "**/*":""
     },
     "fastclick": {
         "lib/**/*":""
@@ -73,6 +71,15 @@ var nodeLibs = {
         "*.js":""
     },
     "centit.easyui": {
+        "**/*":""
+    },
+    "ckeditor": {
+        "**/*":""
+    },
+    "jquery-treegrid": {
+        "**/*":""
+    },
+    "bootstrap-datepicker": {
         "**/*":""
     }
 };

@@ -15,7 +15,7 @@
     <script src="~/vendor/bootbox/bootbox.js"></script>
     <script src="~/app/controllers/product-category/index.js" asp-append-version="true"></script>
     <script>
-        var productCategory = new productCategoryController();
+        var productCategory = new ProductCategoryController();
         productCategory.initialize();
     </script>
 }
@@ -38,10 +38,11 @@
     <div class="col-md-12 col-sm-12 col-xs-12">
         <div class="x_panel">
             <div class="x_content">
-                <ul id="treeProductCategory"></ul>
+                <ul id="treeProductCategory">
+                </ul>
                 <div id="contextMenu" class="easyui-menu" style="width: 120px">
-                    <div id="btnEdit" data-options="iconCls:'icon-edit'">Edit</div>
-                    <div id="btnDelete" data-options="iconCls:'icon-remove'">Delete</div>
+                    <div id="btnEdit" data-options="iconCls:'icon-edit' ">Edit</div>
+                    <div id="btnDelete" data-options="iconCls:'icon-remove' ">Delete</div>
                 </div>
             </div>
         </div>

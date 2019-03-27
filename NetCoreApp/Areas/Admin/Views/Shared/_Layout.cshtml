@@ -1,5 +1,4 @@
 ﻿@using NetCoreApp.Extensions
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,9 +7,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
     <title>Gentelella Alela! | </title>
-
     <!-- Bootstrap -->
     <link href="~/vendor/bootstrap/css/bootstrap.css" rel="stylesheet" />
     <!-- Font Awesome -->
@@ -19,12 +16,11 @@
     <link href="~/vendor/nprogress/nprogress.css" rel="stylesheet" />
     <!-- bootstrap-daterangepicker -->
     <link href="~/vendor/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet" />
-
+    <link href="~/vendor/ckeditor/skins/moono/editor.css" rel="stylesheet" />
     <!-- Custom Theme Style -->
     <link href="~/admin-side/css/custom.css" rel="stylesheet" />
     @RenderSection("Styles", required: false)
 </head>
-
 <body class="nav-md">
     <div class="container body">
         <div class="main_container">
@@ -33,9 +29,7 @@
                     <div class="navbar nav_title" style="border: 0;">
                         <a href="index.html" class="site_title"><i class="fa fa-paw"></i> <span>Gentelella Alela!</span></a>
                     </div>
-
                     <div class="clearfix"></div>
-
                     <!-- menu profile quick info -->
                     <div class="profile clearfix">
                         <div class="profile_pic">
@@ -47,9 +41,7 @@
                         </div>
                     </div>
                     <!-- /menu profile quick info -->
-
                     <br />
-
                     <!-- sidebar menu -->
                     @await Component.InvokeAsync("SideBar")
                     <!-- /sidebar menu -->
@@ -71,7 +63,6 @@
                     <!-- /menu footer buttons -->
                 </div>
             </div>
-
             <!-- top navigation -->
             <div class="top_nav">
                 <div class="nav_menu">
@@ -79,12 +70,10 @@
                         <div class="nav toggle">
                             <a id="menu_toggle"><i class="fa fa-bars"></i></a>
                         </div>
-
                         <ul class="nav navbar-nav navbar-right">
                             <li class="">
                                 @await Html.PartialAsync("_LoginPartial")
                             </li>
-
                             <li role="presentation" class="dropdown">
                                 <a href="javascript:;" class="dropdown-toggle info-number" data-toggle="dropdown" aria-expanded="false">
                                     <i class="fa fa-envelope-o"></i>
@@ -171,7 +160,6 @@
             <!-- /footer content -->
         </div>
     </div>
-
     <!-- jQuery -->
     <script src="~/lib/jquery/dist/jquery.js"></script>
     <!-- Bootstrap -->
@@ -194,6 +182,10 @@
     <script src="~/vendor/flot-spline/jquery.flot.spline.js"></script>
     <script src="~/vendor/flot-orderbars/jquery.flot.orderBars.js"></script>
     <script src="~/vendor/flot.curvedlines/curvedLines.js"></script>
+    <script src="~/lib/jquery-validation/dist/jquery.validate.js"></script>
+    <script src="~/lib/jquery-validation/dist/additional-methods.js"></script>
+    <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"></script>
+    <script src="~/vendor/jquery-validation/localization/messages_vi.js"></script>
     <!-- DateJS -->
     <script src="~/vendor/datejs/date.js"></script>
     <!--twbs-pagination-->
@@ -203,14 +195,8 @@
     <!-- bootstrap-daterangepicker -->
     <script src="~/vendor/bootstrap-daterangepicker/moment.min.js"></script>
     <script src="~/vendor/bootstrap-daterangepicker/daterangepicker.js"></script>
-
-    <script src="~/lib/jquery-validation/dist/jquery.validate.js"></script>
-    <script src="~/lib/jquery-validation/dist/additional-methods.js"></script>
-    <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"></script>
-    <script src="~/vendor/jquery-validation/localization/messages_vi.js"></script>
-
     <script src="~/vendor/notifyjs/notify.js"></script>
-
+    <script src="~/vendor/ckeditor/ckeditor.js"></script>
 
     <!-- Custom Theme Scripts -->
     <script src="~/admin-side/js/custom.js"></script>

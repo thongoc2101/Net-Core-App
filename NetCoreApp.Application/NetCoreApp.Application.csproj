@@ -6,12 +6,19 @@
 
   <ItemGroup>
     <PackageReference Include="AutoMapper" Version="6.1.1" />
+    <PackageReference Include="EPPlus.Core" Version="1.5.4" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\NetCoreApp.Data.EF\NetCoreApp.Data.EF.csproj" />
     <ProjectReference Include="..\NetCoreApp.Data\NetCoreApp.Data.csproj" />
     <ProjectReference Include="..\NetCoreApp.Utilities\NetCoreApp.Utilities.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="System.Deployment">
+      <HintPath>C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\System.Deployment.dll</HintPath>
+    </Reference>
   </ItemGroup>
 
 </Project>

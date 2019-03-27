@@ -23,13 +23,14 @@ namespace NetCoreApp.Areas.Admin.Components
         {
             var roles = ((ClaimsPrincipal) User).GetSpecificClaim("Roles");
             List<FunctionViewModel> function;
-            if (roles.Split(";").Contains(CommonConstants.AdminRole))
+            if (roles.Split(";").Contains(CommonConstants.AppRole.AdminRole))
             {
-                function = await _serviceRegistration.FunctionService.GetAll();
+                function = await _serviceRegistration.FunctionService.GetAll(string.Empty);
             }
             else
             {
-                function = new List<FunctionViewModel>();
+                //function = new List<FunctionViewModel>();
+                function = await _serviceRegistration.FunctionService.GetAll(string.Empty);
             }
             return View(function);
         }
