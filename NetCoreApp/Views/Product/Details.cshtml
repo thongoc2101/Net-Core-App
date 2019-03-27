@@ -58,12 +58,12 @@
                         <div class="price-box">
                             @if (product.PromotionPrice.HasValue)
                             {
-                                <p class="special-price"> <span class="price-label">Special Price</span> <span class="price">@product.Price.ToString("NO")</span> </p>
-                                <p class="old-price"> <span class="price-label">Regular Price:</span> <span class="price">@product.PromotionPrice.Value.ToString("NO")</span> </p>
+                                <p class="special-price"> <span class="price-label">Special Price</span> <span class="price">@product.Price.ToString("N0")</span> </p>
+                                <p class="old-price"> <span class="price-label">Regular Price:</span> <span class="price">@product.PromotionPrice.Value.ToString("N0")</span> </p>
                             }
                             else
                             {
-                                <p class="special-price"> <span class="price-label">Special Price</span> <span class="price">@product.Price.ToString("NO")</span> </p>
+                                <p class="special-price"> <span class="price-label">Special Price</span> <span class="price">@product.Price.ToString("N0")</span> </p>
                             }
                         </div>
                         <div class="ratings">
@@ -189,10 +189,10 @@
                                                     <div class="item-content">
                                                         <div class="rating"> <i class="fa fa-star-o"></i> <i class="fa fa-star-o"></i> <i class="fa fa-star-o"></i> <i class="fa fa-star-o"></i> <i class="fa fa-star-o"></i> </div>
                                                         <div class="item-price">
-                                                            <div class="price-box"> <span class="regular-price"> <span class="price">@item.Price.ToString("NO")</span> </span> </div>
+                                                            <div class="price-box"> <span class="regular-price"> <span class="price">@item.Price.ToString("N")</span> </span> </div>
                                                         </div>
                                                         <div class="pro-action">
-                                                            <button type="button" class="add-to-cart"><span>Add to Cart</span> </button>
+                                                            <button type="button" class="add-to-cart" id="btnAddToCart" title="Add to Cart" data-id="@Model.Product.Id"><span>Add to Cart</span> </button>
                                                         </div>
                                                     </div>
                                                 </div>
