@@ -1,0 +1,203 @@
+2019-04-04T13:22:14.9254559+07:00  [INF] Entity Framework Core "2.0.0-rtm-26452" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=NetCoreApp.Data.EF " (9958f5bb)
+2019-04-04T13:22:17.5838775+07:00  [INF] Executed DbCommand ("198"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppRoles] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2019-04-04T13:22:18.0794237+07:00  [INF] Executed DbCommand ("201"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppUsers] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2019-04-04T13:22:18.4839169+07:00  [INF] Executed DbCommand ("274"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Functions] AS [f]" (0723d8ff)
+2019-04-04T13:22:18.7874691+07:00  [INF] Executed DbCommand ("111"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Footers] AS [x]
+WHERE [x].[Id] = 'DefaultFooterId'" (0723d8ff)
+2019-04-04T13:22:18.8481659+07:00  [INF] Executed DbCommand ("27"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Colors] AS [c]" (0723d8ff)
+2019-04-04T13:22:18.9275275+07:00  [INF] Executed DbCommand ("27"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [AdvertisementPages] AS [a]" (0723d8ff)
+2019-04-04T13:22:19.6894504+07:00  [INF] Executed DbCommand ("76"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Slides] AS [s]" (0723d8ff)
+2019-04-04T13:22:20.3971030+07:00  [INF] Executed DbCommand ("666"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Sizes] AS [s]" (0723d8ff)
+2019-04-04T13:22:20.6152537+07:00  [INF] Executed DbCommand ("158"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [ProductCategories] AS [p])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2019-04-04T13:22:20.6606336+07:00  [INF] Executed DbCommand ("22"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeTitle')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2019-04-04T13:22:20.7231767+07:00  [INF] Executed DbCommand ("42"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaKeyword')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2019-04-04T13:22:20.7681107+07:00  [INF] Executed DbCommand ("25"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaDescription')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2019-04-04T13:22:22.6314611+07:00 0HLLOONIK153N:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44383/   (ca22a1cb)
+2019-04-04T13:22:22.6184249+07:00 0HLLOONIK153O:00000001 [INF] Request starting HTTP/1.1 DEBUG http://localhost:15649/  0 (ca22a1cb)
+2019-04-04T13:22:22.9657855+07:00 0HLLOONIK153O:00000001 [INF] Request finished in 394.7703ms 200  (791a596a)
+2019-04-04T13:22:24.5337594+07:00 0HLLOONIK153N:00000001 [INF] Executing action method "NetCoreApp.Controllers.HomeController.Index (NetCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2019-04-04T13:22:40.4179704+07:00 0HLLOONIK153N:00000001 [INF] Executing ViewResult, running view at path "/Views/Home/Index.cshtml". (9707eebe)
+2019-04-04T13:22:45.0594380+07:00 0HLLOONIK153N:00000001 [INF] Accessing expired session, Key:"59a94ecd-5fc8-d5e4-0778-5c68e6beb16c" (08c5a9e7)
+2019-04-04T13:22:49.0424993+07:00 0HLLOONIK153O:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44383/client-side/~/client-side/images/banner-left.jpg   (ca22a1cb)
+2019-04-04T13:22:49.6246809+07:00 0HLLOONIK153P:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44383/client-side/~/client-side/~/client-side/images/sub1.jpg   (ca22a1cb)
+2019-04-04T13:22:49.6980966+07:00 0HLLOONIK153O:00000002 [INF] Request finished in 191.425ms 404  (791a596a)
+2019-04-04T13:22:49.8309566+07:00 0HLLOONIK153P:00000001 [INF] Request finished in 650.8843ms 404  (791a596a)
+2019-04-04T13:22:49.8823274+07:00 0HLLOONIK153Q:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44383/client-app/controllers/base/index.js   (ca22a1cb)
+2019-04-04T13:22:50.0129935+07:00 0HLLOONIK153N:00000001 [INF] Executed action "NetCoreApp.Controllers.HomeController.Index (NetCoreApp)" in 25873.0961ms (afa2e885)
+2019-04-04T13:22:50.0323573+07:00 0HLLOONIK153Q:00000001 [INF] The file "/client-app/controllers/base/index.js" was not modified (f1f8d725)
+2019-04-04T13:22:50.1511711+07:00 0HLLOONIK153Q:00000001 [INF] Request finished in 441.8455ms 304 application/javascript (791a596a)
+2019-04-04T13:22:50.6320147+07:00 0HLLOONIK153O:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44383/   (ca22a1cb)
+2019-04-04T13:22:50.7603676+07:00 0HLLOONIK153N:00000001 [INF] Request finished in 27575.0815ms 200 text/html; charset=utf-8 (791a596a)
+2019-04-04T13:22:52.1643752+07:00 0HLLOONIK153O:00000003 [INF] Executing action method "NetCoreApp.Controllers.HomeController.Index (NetCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2019-04-04T13:22:52.8409299+07:00 0HLLOONIK153O:00000003 [INF] Executing ViewResult, running view at path "/Views/Home/Index.cshtml". (9707eebe)
+2019-04-04T13:22:53.1293525+07:00 0HLLOONIK153P:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44383/client-side/css/grabbing.png   (ca22a1cb)
+2019-04-04T13:22:53.4116807+07:00 0HLLOONIK153Q:00000002 [INF] Request starting HTTP/1.1 POST http://localhost:44383/Cart/AddCart application/x-www-form-urlencoded; charset=UTF-8 25 (ca22a1cb)
+2019-04-04T13:22:53.4172454+07:00 0HLLOONIK153P:00000002 [INF] Request finished in 148.1601ms 404  (791a596a)
+2019-04-04T13:22:53.4288353+07:00 0HLLOONIK153O:00000003 [INF] Accessing expired session, Key:"59a94ecd-5fc8-d5e4-0778-5c68e6beb16c" (08c5a9e7)
+2019-04-04T13:22:54.2673733+07:00 0HLLOONIK153O:00000003 [INF] Executed action "NetCoreApp.Controllers.HomeController.Index (NetCoreApp)" in 3589.5926ms (afa2e885)
+2019-04-04T13:22:54.2778088+07:00 0HLLOONIK153O:00000003 [INF] Request finished in 4118.8102ms 200 text/html; charset=utf-8 (791a596a)
+2019-04-04T13:22:54.5318751+07:00 0HLLOONIK153Q:00000002 [INF] Executing action method "NetCoreApp.Controllers.CartController.AddCart (NetCoreApp)" with arguments (["0", "1", "0", "0"]) - ModelState is Valid (ba7f4ac2)
+2019-04-04T13:22:54.8617880+07:00 0HLLOONIK153Q:00000002 [INF] Accessing expired session, Key:"59a94ecd-5fc8-d5e4-0778-5c68e6beb16c" (08c5a9e7)
+2019-04-04T13:24:47.6099827+07:00  [INF] Entity Framework Core "2.0.0-rtm-26452" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=NetCoreApp.Data.EF " (9958f5bb)
+2019-04-04T13:24:49.6190372+07:00  [INF] Executed DbCommand ("162"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppRoles] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2019-04-04T13:24:49.7664329+07:00  [INF] Executed DbCommand ("27"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppUsers] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2019-04-04T13:24:49.8275602+07:00  [INF] Executed DbCommand ("16"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Functions] AS [f]" (0723d8ff)
+2019-04-04T13:24:50.1424970+07:00  [INF] Executed DbCommand ("60"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Footers] AS [x]
+WHERE [x].[Id] = 'DefaultFooterId'" (0723d8ff)
+2019-04-04T13:24:50.1649110+07:00  [INF] Executed DbCommand ("14"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Colors] AS [c]" (0723d8ff)
+2019-04-04T13:24:50.1951585+07:00  [INF] Executed DbCommand ("15"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [AdvertisementPages] AS [a]" (0723d8ff)
+2019-04-04T13:24:50.2332593+07:00  [INF] Executed DbCommand ("29"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Slides] AS [s]" (0723d8ff)
+2019-04-04T13:24:50.3071994+07:00  [INF] Executed DbCommand ("56"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Sizes] AS [s]" (0723d8ff)
+2019-04-04T13:24:50.3489988+07:00  [INF] Executed DbCommand ("22"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [ProductCategories] AS [p])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2019-04-04T13:24:50.4100918+07:00  [INF] Executed DbCommand ("36"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeTitle')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2019-04-04T13:24:50.4413599+07:00  [INF] Executed DbCommand ("18"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaKeyword')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2019-04-04T13:24:50.5151047+07:00  [INF] Executed DbCommand ("50"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaDescription')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2019-04-04T13:24:51.5465686+07:00 0HLLOOOV76P5G:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44383/   (ca22a1cb)
+2019-04-04T13:24:51.5465686+07:00 0HLLOOOV76P5H:00000001 [INF] Request starting HTTP/1.1 DEBUG http://localhost:15649/  0 (ca22a1cb)
+2019-04-04T13:24:51.9037764+07:00 0HLLOOOV76P5H:00000001 [INF] Request finished in 433.4642ms 200  (791a596a)
+2019-04-04T13:24:52.9995861+07:00 0HLLOOOV76P5G:00000001 [INF] Executing action method "NetCoreApp.Controllers.HomeController.Index (NetCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2019-04-04T13:25:06.1001996+07:00 0HLLOOOV76P5G:00000001 [INF] Executing ViewResult, running view at path "/Views/Home/Index.cshtml". (9707eebe)
+2019-04-04T13:25:09.9448247+07:00 0HLLOOOV76P5G:00000001 [INF] Accessing expired session, Key:"59a94ecd-5fc8-d5e4-0778-5c68e6beb16c" (08c5a9e7)
+2019-04-04T13:25:14.0228498+07:00 0HLLOOOV76P5H:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44383/client-side/~/client-side/images/banner-left.jpg   (ca22a1cb)
+2019-04-04T13:25:14.1623587+07:00 0HLLOOOV76P5I:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44383/client-side/~/client-side/~/client-side/images/sub1.jpg   (ca22a1cb)
+2019-04-04T13:25:14.1659247+07:00 0HLLOOOV76P5G:00000001 [INF] Executed action "NetCoreApp.Controllers.HomeController.Index (NetCoreApp)" in 21321.7871ms (afa2e885)
+2019-04-04T13:25:14.3022315+07:00 0HLLOOOV76P5H:00000002 [INF] Request finished in 153.453ms 404  (791a596a)
+2019-04-04T13:25:14.3949018+07:00 0HLLOOOV76P5I:00000001 [INF] Request finished in 223.5743ms 404  (791a596a)
+2019-04-04T13:25:14.6026149+07:00 0HLLOOOV76P5G:00000001 [INF] Request finished in 22760.1791ms 200 text/html; charset=utf-8 (791a596a)
+2019-04-04T13:25:14.6804626+07:00 0HLLOOOV76P5H:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44383/client-app/controllers/base/index.js   (ca22a1cb)
+2019-04-04T13:25:14.7458391+07:00 0HLLOOOV76P5H:00000003 [INF] The file "/client-app/controllers/base/index.js" was not modified (f1f8d725)
+2019-04-04T13:25:14.7953489+07:00 0HLLOOOV76P5H:00000003 [INF] Request finished in 94.6384ms 304 application/javascript (791a596a)
+2019-04-04T13:25:14.8424363+07:00 0HLLOOOV76P5I:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44383/   (ca22a1cb)
+2019-04-04T13:25:15.2321027+07:00 0HLLOOOV76P5I:00000002 [INF] Executing action method "NetCoreApp.Controllers.HomeController.Index (NetCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2019-04-04T13:25:16.1980293+07:00 0HLLOOOV76P5I:00000002 [INF] Executing ViewResult, running view at path "/Views/Home/Index.cshtml". (9707eebe)
+2019-04-04T13:25:16.7351107+07:00 0HLLOOOV76P5I:00000002 [INF] Accessing expired session, Key:"59a94ecd-5fc8-d5e4-0778-5c68e6beb16c" (08c5a9e7)
+2019-04-04T13:25:16.8799990+07:00 0HLLOOOV76P5G:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44383/client-side/css/grabbing.png   (ca22a1cb)
+2019-04-04T13:25:17.1473294+07:00 0HLLOOOV76P5H:00000004 [INF] Request starting HTTP/1.1 POST http://localhost:44383/Cart/AddCart application/x-www-form-urlencoded; charset=UTF-8 38 (ca22a1cb)
+2019-04-04T13:25:17.2525381+07:00 0HLLOOOV76P5G:00000002 [INF] Request finished in 160.2791ms 404  (791a596a)
+2019-04-04T13:25:18.0022247+07:00 0HLLOOOV76P5I:00000002 [INF] Executed action "NetCoreApp.Controllers.HomeController.Index (NetCoreApp)" in 3069.0897ms (afa2e885)
+2019-04-04T13:25:18.0418091+07:00 0HLLOOOV76P5I:00000002 [INF] Request finished in 3179.3495ms 200 text/html; charset=utf-8 (791a596a)
+2019-04-04T13:25:18.1679118+07:00 0HLLOOOV76P5H:00000004 [INF] Executing action method "NetCoreApp.Controllers.CartController.AddCart (NetCoreApp)" with arguments (["20", "1", "0", "0"]) - ModelState is Valid (ba7f4ac2)
+2019-04-04T13:25:18.5802419+07:00 0HLLOOOV76P5H:00000004 [INF] Accessing expired session, Key:"59a94ecd-5fc8-d5e4-0778-5c68e6beb16c" (08c5a9e7)
+2019-04-04T13:25:19.7162962+07:00 0HLLOOOV76P5H:00000004 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2019-04-04T13:25:19.7679697+07:00 0HLLOOOV76P5H:00000004 [INF] Executed action "NetCoreApp.Controllers.CartController.AddCart (NetCoreApp)" in 2245.9341ms (afa2e885)
+2019-04-04T13:25:19.7926869+07:00 0HLLOOOV76P5H:00000004 [INF] Session started; Key:"59a94ecd-5fc8-d5e4-0778-5c68e6beb16c", Id:"2f4a316b-b4fb-1973-909d-8592ffbf3af8" (1d7cf8c0)
+2019-04-04T13:25:19.8669428+07:00 0HLLOOOV76P5H:00000004 [INF] Request finished in 2927.8116ms 200 application/json; charset=utf-8 (791a596a)
+2019-04-04T13:25:19.8938256+07:00 0HLLOOOV76P5G:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44383/AjaxContent/HeaderCart   (ca22a1cb)
+2019-04-04T13:25:20.1164527+07:00 0HLLOOOV76P5G:00000003 [INF] Executing action method "NetCoreApp.Controllers.AjaxContentController.HeaderCart (NetCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2019-04-04T13:25:20.2011108+07:00 0HLLOOOV76P5G:00000003 [INF] Executing ViewComponentResult, running "HeaderCart". (a906d40a)
+2019-04-04T13:25:20.3362960+07:00 0HLLOOOV76P5G:00000003 [INF] Executed action "NetCoreApp.Controllers.AjaxContentController.HeaderCart (NetCoreApp)" in 427.1767ms (afa2e885)
+2019-04-04T13:25:20.3488118+07:00 0HLLOOOV76P5G:00000003 [INF] Request finished in 472.3214ms 200 text/html; charset=utf-8 (791a596a)
+2019-04-04T13:25:23.1818578+07:00 0HLLOOOV76P5H:00000005 [INF] Request starting HTTP/1.1 POST http://localhost:44383/Cart/RemoveForProduct application/x-www-form-urlencoded; charset=UTF-8 12 (ca22a1cb)
+2019-04-04T13:25:23.2492618+07:00 0HLLOOOV76P5H:00000005 [INF] Executing action method "NetCoreApp.Controllers.CartController.RemoveForProduct (NetCoreApp)" with arguments (["20"]) - ModelState is Valid (ba7f4ac2)
+2019-04-04T13:25:23.2658196+07:00 0HLLOOOV76P5H:00000005 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2019-04-04T13:25:23.2819153+07:00 0HLLOOOV76P5H:00000005 [INF] Executed action "NetCoreApp.Controllers.CartController.RemoveForProduct (NetCoreApp)" in 79.7567ms (afa2e885)
+2019-04-04T13:25:23.3289307+07:00 0HLLOOOV76P5H:00000005 [INF] Request finished in 149.0911ms 200 application/json; charset=utf-8 (791a596a)
+2019-04-04T13:25:23.3861567+07:00 0HLLOOOV76P5G:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44383/AjaxContent/HeaderCart   (ca22a1cb)
+2019-04-04T13:25:23.4664146+07:00 0HLLOOOV76P5G:00000004 [INF] Executing action method "NetCoreApp.Controllers.AjaxContentController.HeaderCart (NetCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2019-04-04T13:25:23.5479943+07:00 0HLLOOOV76P5G:00000004 [INF] Executing ViewComponentResult, running "HeaderCart". (a906d40a)
+2019-04-04T13:25:23.6005985+07:00 0HLLOOOV76P5G:00000004 [INF] Executed action "NetCoreApp.Controllers.AjaxContentController.HeaderCart (NetCoreApp)" in 162.295ms (afa2e885)
+2019-04-04T13:25:23.6432088+07:00 0HLLOOOV76P5G:00000004 [INF] Request finished in 284.3604ms 200 text/html; charset=utf-8 (791a596a)
+2019-04-04T13:25:32.3316799+07:00 0HLLOOOV76P5H:00000006 [INF] Request starting HTTP/1.1 POST http://localhost:44383/Cart/AddCart application/x-www-form-urlencoded; charset=UTF-8 25 (ca22a1cb)
+2019-04-04T13:25:32.3768894+07:00 0HLLOOOV76P5H:00000006 [INF] Executing action method "NetCoreApp.Controllers.CartController.AddCart (NetCoreApp)" with arguments (["0", "1", "0", "0"]) - ModelState is Valid (ba7f4ac2)

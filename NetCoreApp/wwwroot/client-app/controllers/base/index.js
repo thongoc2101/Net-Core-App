@@ -27,7 +27,7 @@
             e.preventDefault();
             var id = $(this).data('id');
             $.ajax({
-                url: '/Cart/RemoveFromCart',
+                url: '/Cart/RemoveForProduct',
                 type: 'post',
                 data: {
                     productId: id
