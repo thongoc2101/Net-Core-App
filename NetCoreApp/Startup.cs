@@ -72,6 +72,7 @@ namespace NetCoreApp
                     serviceProvider.GetService));
 
             services.AddTransient<IEmailSender, EmailSender>();
+            services.AddTransient<IViewRenderService, ViewRenderService>();
 
             // Created Seeding database
             services.AddTransient<DbInitializer>();

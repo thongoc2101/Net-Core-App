@@ -1,9 +1,16 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
+using System.Security.Claims;
+using System.Threading.Tasks;
+using AutoMapper.Configuration;
 using Microsoft.AspNetCore.Mvc;
 using NetCoreApp.Application.Singleton;
+using NetCoreApp.Application.ViewModels;
+using NetCoreApp.Data.Enums;
 using NetCoreApp.Extensions;
 using NetCoreApp.Models;
+using NetCoreApp.Services;
 using NetCoreApp.Utilities.Constants;
 
 namespace NetCoreApp.Controllers
@@ -11,10 +18,16 @@ namespace NetCoreApp.Controllers
     public class CartController : Controller
     {
         private readonly IServiceRegistration _serviceRegistration;
+        //private readonly IViewRenderService _viewRenderService;
+        //readonly IConfiguration _configuration;
+        //private readonly IEmailSender _emailSender;
 
         public CartController(IServiceRegistration serviceRegistration)
         {
             _serviceRegistration = serviceRegistration;
+            //_viewRenderService = viewRenderService;
+            //_configuration = configuration;
+            //_emailSender = emailSender;
         }
 
         [Route("cart.html", Name = "Cart")]
@@ -24,9 +37,79 @@ namespace NetCoreApp.Controllers
         }
 
         [Route("checkout.html", Name = "Checkout")]
+        [HttpGet]
         public IActionResult CheckOut()
         {
-            return View();
+            var model = new CheckoutViewModel();
+            var session = HttpContext.Session.Get<List<ShoppingCartViewModel>>(CommonConstants.CartSession);
+            //fix bug if when add product => check out, size, color ==null => Redirect cart.html
+            if (session.Any(x => x.Color == null || x.Size == null))
+            {
+                return Redirect("/cart.html");
+            }
+            model.Carts = session;
+            return View(model);
+        }
+
+        [Route("checkout.html", Name = "Checkout")]
+        [ValidateAntiForgeryToken]
+        [HttpPost ]
+        public async Task<IActionResult> CheckOut(CheckoutViewModel model)
+        {
+            var session = HttpContext.Session.Get<List<ShoppingCartViewModel>>(CommonConstants.CartSession);
+
+            if (ModelState.IsValid)
+            {
+                if (session != null)
+                {
+                    var details = new List<BillDetailViewModel>();
+                    foreach (var item in session)
+                    {
+                        details.Add(new BillDetailViewModel
+                        {
+                            Price = item.Price,
+                            Product = item.Product,
+                            Quantity = item.Quantity,
+                            ProductId = item.Product.Id,
+                            ColorId = item.Color.Id,
+                            SizeId = item.Size.Id
+                        });
+                    }
+
+                    try
+                    {
+                        var billViewModel = new BillViewModel
+                        {
+                            CustomerAddress = model.CustomerAddress,
+                            BillStatus = BillStatus.New,
+                            CustomerMobile = model.CustomerMobile,
+                            CustomerName = model.CustomerName,
+                            CustomerMessage = model.CustomerMessage,
+                            BillDetails = details
+                        };
+
+                        if (User.Identity.IsAuthenticated == true)
+                        {
+                            billViewModel.CustomerId = Guid.Parse(User.GetSpecificClaim("UserId"));
+                        }
+
+                        _serviceRegistration.BillService.Create(billViewModel);
+
+                        //var content = await _viewRenderService.RenderToStringAsync("Cart/_BillMail", billViewModel);
+                        //Send mail
+                        //await _emailSender.SendEmailAsync(_configuration["MailSettings:AdminMail"], "New bill from Panda Shop", content);
+                        ViewData["Success"] = true;
+                    }
+                    catch (Exception e)
+                    {
+                        ViewData["Success"] = false;
+                        ModelState.AddModelError("", e.Message);
+                    }
+                }
+            }
+
+            model.Carts = session;
+            return View(model);
         }
 
         #region AJAX Request

@@ -26,7 +26,8 @@ namespace NetCoreApp.Helpers
                 new Claim("Email", appUser.Email), 
                 new Claim("FullName", appUser.FullName??String.Empty),
                 new Claim("Avatar", appUser.Avatar??string.Empty), 
-                new Claim("Roles", string.Join(";", role)), 
+                new Claim("Roles", string.Join(";", role)),
+                new Claim("UserId", appUser.Id.ToString()), 
             });
             return principal;
         }

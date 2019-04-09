@@ -1,0 +1,1406 @@
+2019-04-09T13:24:11.5477828+07:00  [INF] Entity Framework Core "2.0.0-rtm-26452" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=NetCoreApp.Data.EF " (9958f5bb)
+2019-04-09T13:24:19.5062627+07:00  [INF] Executed DbCommand ("516"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppRoles] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2019-04-09T13:24:22.3308455+07:00  [INF] Executed DbCommand ("519"ms) [Parameters=["@__normalizedName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Description], [r].[Name], [r].[NormalizedName]
+FROM [AppRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2019-04-09T13:24:24.4401286+07:00  [INF] Executed DbCommand ("973"ms) [Parameters=["@p0='?', @p1='?' (Size = 4000), @p2='?' (Size = 250), @p3='?' (Size = 4000), @p4='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [AppRoles] ([Id], [ConcurrencyStamp], [Description], [Name], [NormalizedName])
+VALUES (@p0, @p1, @p2, @p3, @p4);" (0723d8ff)
+2019-04-09T13:24:26.5996764+07:00  [INF] Executed DbCommand ("711"ms) [Parameters=["@__normalizedName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Description], [r].[Name], [r].[NormalizedName]
+FROM [AppRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2019-04-09T13:24:27.8246234+07:00  [INF] Executed DbCommand ("630"ms) [Parameters=["@p0='?', @p1='?' (Size = 4000), @p2='?' (Size = 250), @p3='?' (Size = 4000), @p4='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [AppRoles] ([Id], [ConcurrencyStamp], [Description], [Name], [NormalizedName])
+VALUES (@p0, @p1, @p2, @p3, @p4);" (0723d8ff)
+2019-04-09T13:24:28.6048459+07:00  [INF] Executed DbCommand ("735"ms) [Parameters=["@__normalizedName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Description], [r].[Name], [r].[NormalizedName]
+FROM [AppRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2019-04-09T13:24:28.9737103+07:00  [INF] Executed DbCommand ("332"ms) [Parameters=["@p0='?', @p1='?' (Size = 4000), @p2='?' (Size = 250), @p3='?' (Size = 4000), @p4='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [AppRoles] ([Id], [ConcurrencyStamp], [Description], [Name], [NormalizedName])
+VALUES (@p0, @p1, @p2, @p3, @p4);" (0723d8ff)
+2019-04-09T13:24:29.2817463+07:00  [INF] Executed DbCommand ("249"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppUsers] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2019-04-09T13:24:30.5094565+07:00  [INF] Executed DbCommand ("592"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[Avatar], [u].[Balance], [u].[BirthDay], [u].[ConcurrencyStamp], [u].[DateCreated], [u].[DateModified], [u].[Email], [u].[EmailConfirmed], [u].[FullName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Status], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AppUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2019-04-09T13:24:30.9436281+07:00  [INF] Executed DbCommand ("319"ms) [Parameters=["@__normalizedEmail_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[Avatar], [u].[Balance], [u].[BirthDay], [u].[ConcurrencyStamp], [u].[DateCreated], [u].[DateModified], [u].[Email], [u].[EmailConfirmed], [u].[FullName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Status], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AppUsers] AS [u]
+WHERE [u].[NormalizedEmail] = @__normalizedEmail_0" (0723d8ff)
+2019-04-09T13:24:33.8807020+07:00  [INF] Executed DbCommand ("291"ms) [Parameters=["@p0='?', @p1='?', @p2='?' (Size = 4000), @p3='?', @p4='?', @p5='?' (Size = 4000), @p6='?', @p7='?', @p8='?' (Size = 4000), @p9='?', @p10='?' (Size = 4000), @p11='?', @p12='?', @p13='?' (Size = 4000), @p14='?' (Size = 4000), @p15='?' (Size = 4000), @p16='?' (Size = 4000), @p17='?', @p18='?' (Size = 4000), @p19='?', @p20='?', @p21='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [AppUsers] ([Id], [AccessFailedCount], [Avatar], [Balance], [BirthDay], [ConcurrencyStamp], [DateCreated], [DateModified], [Email], [EmailConfirmed], [FullName], [LockoutEnabled], [LockoutEnd], [NormalizedEmail], [NormalizedUserName], [PasswordHash], [PhoneNumber], [PhoneNumberConfirmed], [SecurityStamp], [Status], [TwoFactorEnabled], [UserName])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15, @p16, @p17, @p18, @p19, @p20, @p21);" (0723d8ff)
+2019-04-09T13:24:35.1974661+07:00  [INF] Executed DbCommand ("157"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[Avatar], [u].[Balance], [u].[BirthDay], [u].[ConcurrencyStamp], [u].[DateCreated], [u].[DateModified], [u].[Email], [u].[EmailConfirmed], [u].[FullName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Status], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AppUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2019-04-09T13:24:36.5935426+07:00  [INF] Executed DbCommand ("939"ms) [Parameters=["@__normalizedRoleName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [r].[Id], [r].[ConcurrencyStamp], [r].[Description], [r].[Name], [r].[NormalizedName]
+FROM [AppRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedRoleName_0" (0723d8ff)
+2019-04-09T13:24:38.2325891+07:00  [INF] Executed DbCommand ("180"ms) [Parameters=["@__get_Item_0='?', @__get_Item_1='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [e].[UserId], [e].[RoleId]
+FROM [AppUserRoles] AS [e]
+WHERE ([e].[UserId] = @__get_Item_0) AND ([e].[RoleId] = @__get_Item_1)" (0723d8ff)
+2019-04-09T13:24:38.9446307+07:00  [INF] Executed DbCommand ("608"ms) [Parameters=["@__normalizedRoleName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [r].[Id], [r].[ConcurrencyStamp], [r].[Description], [r].[Name], [r].[NormalizedName]
+FROM [AppRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedRoleName_0" (0723d8ff)
+2019-04-09T13:24:39.4631828+07:00  [INF] Executed DbCommand ("335"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[Avatar], [u].[Balance], [u].[BirthDay], [u].[ConcurrencyStamp], [u].[DateCreated], [u].[DateModified], [u].[Email], [u].[EmailConfirmed], [u].[FullName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Status], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AppUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2019-04-09T13:24:40.0829555+07:00  [INF] Executed DbCommand ("432"ms) [Parameters=["@__normalizedEmail_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[Avatar], [u].[Balance], [u].[BirthDay], [u].[ConcurrencyStamp], [u].[DateCreated], [u].[DateModified], [u].[Email], [u].[EmailConfirmed], [u].[FullName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Status], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AppUsers] AS [u]
+WHERE [u].[NormalizedEmail] = @__normalizedEmail_0" (0723d8ff)
+2019-04-09T13:24:40.9307217+07:00  [INF] Executed DbCommand ("602"ms) [Parameters=["@p0='?', @p1='?', @p23='?', @p2='?', @p3='?' (Size = 4000), @p4='?', @p5='?', @p6='?' (Size = 4000), @p7='?', @p8='?', @p9='?' (Size = 4000), @p10='?', @p11='?' (Size = 4000), @p12='?', @p13='?', @p14='?' (Size = 4000), @p15='?' (Size = 4000), @p16='?' (Size = 4000), @p17='?' (Size = 4000), @p18='?', @p19='?' (Size = 4000), @p20='?', @p21='?', @p22='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [AppUserRoles] ([UserId], [RoleId])
+VALUES (@p0, @p1);
+UPDATE [AppUsers] SET [AccessFailedCount] = @p2, [Avatar] = @p3, [Balance] = @p4, [BirthDay] = @p5, [ConcurrencyStamp] = @p6, [DateCreated] = @p7, [DateModified] = @p8, [Email] = @p9, [EmailConfirmed] = @p10, [FullName] = @p11, [LockoutEnabled] = @p12, [LockoutEnd] = @p13, [NormalizedEmail] = @p14, [NormalizedUserName] = @p15, [PasswordHash] = @p16, [PhoneNumber] = @p17, [PhoneNumberConfirmed] = @p18, [SecurityStamp] = @p19, [Status] = @p20, [TwoFactorEnabled] = @p21, [UserName] = @p22
+WHERE [Id] = @p23;
+SELECT @@ROWCOUNT;" (0723d8ff)
+2019-04-09T13:24:41.4068126+07:00  [INF] Executed DbCommand ("248"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Functions] AS [f]" (0723d8ff)
+2019-04-09T13:24:42.0357490+07:00  [INF] Executed DbCommand ("398"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Footers] AS [x]
+WHERE [x].[Id] = 'DefaultFooterId'" (0723d8ff)
+2019-04-09T13:24:42.5240646+07:00  [INF] Executed DbCommand ("404"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Colors] AS [c]" (0723d8ff)
+2019-04-09T13:24:43.3379942+07:00  [INF] Executed DbCommand ("476"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [AdvertisementPages] AS [a]" (0723d8ff)
+2019-04-09T13:24:44.5067403+07:00  [INF] Executed DbCommand ("528"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Slides] AS [s]" (0723d8ff)
+2019-04-09T13:24:45.7308911+07:00  [INF] Executed DbCommand ("559"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Sizes] AS [s]" (0723d8ff)
+2019-04-09T13:24:47.2341748+07:00  [INF] Executed DbCommand ("85"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [ProductCategories] AS [p])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2019-04-09T13:24:48.0747544+07:00  [INF] Executed DbCommand ("297"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeTitle')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2019-04-09T13:24:49.6774112+07:00  [INF] Executed DbCommand ("836"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaKeyword')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2019-04-09T13:24:50.8585607+07:00  [INF] Executed DbCommand ("923"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaDescription')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2019-04-09T13:24:55.0471002+07:00  [INF] Executed DbCommand ("408"ms) [Parameters=["@p0='?' (Size = 450), @p1='?' (Size = 4000), @p2='?' (Size = 450), @p3='?' (Size = 4000), @p4='?' (Size = 450), @p5='?' (Size = 4000), @p6='?' (Size = 250), @p7='?' (Size = 250), @p8='?' (Size = 250), @p9='?' (Size = 250), @p10='?' (Size = 250), @p11='?' (Size = 250), @p12='?' (Size = 250), @p13='?' (Size = 250), @p14='?' (Size = 255), @p15='?' (Size = 4000), @p16='?' (Size = 128), @p17='?' (Size = 4000), @p18='?' (Size = 128), @p19='?' (Size = 128), @p20='?', @p21='?', @p22='?' (Size = 250), @p23='?' (Size = 128), @p24='?' (Size = 4000), @p25='?' (Size = 128), @p26='?' (Size = 128), @p27='?', @p28='?', @p29='?' (Size = 250), @p30='?' (Size = 128), @p31='?' (Size = 4000), @p32='?' (Size = 128), @p33='?' (Size = 128), @p34='?', @p35='?', @p36='?' (Size = 250), @p37='?' (Size = 128), @p38='?' (Size = 4000), @p39='?' (Size = 128), @p40='?' (Size = 128), @p41='?', @p42='?', @p43='?' (Size = 250), @p44='?' (Size = 128), @p45='?' (Size = 4000), @p46='?' (Size = 128), @p47='?' (Size = 128), @p48='?', @p49='?', @p50='?' (Size = 250), @p51='?' (Size = 128), @p52='?' (Size = 4000), @p53='?' (Size = 128), @p54='?' (Size = 128), @p55='?', @p56='?', @p57='?' (Size = 250), @p58='?' (Size = 128), @p59='?' (Size = 4000), @p60='?' (Size = 128), @p61='?' (Size = 128), @p62='?', @p63='?', @p64='?' (Size = 250), @p65='?' (Size = 128), @p66='?' (Size = 4000), @p67='?' (Size = 128), @p68='?' (Size = 128), @p69='?', @p70='?', @p71='?' (Size = 250), @p72='?' (Size = 128), @p73='?' (Size = 4000), @p74='?' (Size = 128), @p75='?' (Size = 128), @p76='?', @p77='?', @p78='?' (Size = 250), @p79='?' (Size = 128), @p80='?' (Size = 4000), @p81='?' (Size = 128), @p82='?' (Size = 128), @p83='?', @p84='?', @p85='?' (Size = 250), @p86='?' (Size = 128), @p87='?' (Size = 4000), @p88='?' (Size = 128), @p89='?' (Size = 128), @p90='?', @p91='?', @p92='?' (Size = 250), @p93='?' (Size = 128), @p94='?' (Size = 4000), @p95='?' (Size = 128), @p96='?' (Size = 128), @p97='?', @p98='?', @p99='?' (Size = 250), @p100='?' (Size = 128), @p101='?' (Size = 4000), @p102='?' (Size = 128), @p103='?' (Size = 128), @p104='?', @p105='?', @p106='?' (Size = 250), @p107='?' (Size = 128), @p108='?' (Size = 4000), @p109='?' (Size = 128), @p110='?' (Size = 128), @p111='?', @p112='?', @p113='?' (Size = 250), @p114='?' (Size = 128), @p115='?' (Size = 4000), @p116='?' (Size = 128), @p117='?' (Size = 128), @p118='?', @p119='?', @p120='?' (Size = 250), @p121='?' (Size = 128), @p122='?' (Size = 4000), @p123='?' (Size = 128), @p124='?' (Size = 128), @p125='?', @p126='?', @p127='?' (Size = 250), @p128='?' (Size = 128), @p129='?' (Size = 4000), @p130='?' (Size = 128), @p131='?' (Size = 128), @p132='?', @p133='?', @p134='?' (Size = 250), @p135='?' (Size = 128), @p136='?' (Size = 4000), @p137='?' (Size = 128), @p138='?' (Size = 128), @p139='?', @p140='?', @p141='?' (Size = 250), @p142='?' (Size = 128), @p143='?' (Size = 4000), @p144='?' (Size = 128), @p145='?' (Size = 128), @p146='?', @p147='?', @p148='?' (Size = 250), @p149='?' (Size = 128), @p150='?' (Size = 4000), @p151='?' (Size = 128), @p152='?' (Size = 128), @p153='?', @p154='?', @p155='?' (Size = 250), @p156='?' (Size = 128), @p157='?' (Size = 4000), @p158='?' (Size = 128), @p159='?' (Size = 128), @p160='?', @p161='?', @p162='?' (Size = 250), @p163='?' (Size = 128), @p164='?' (Size = 4000), @p165='?' (Size = 128), @p166='?' (Size = 128), @p167='?', @p168='?', @p169='?' (Size = 250), @p170='?' (Size = 128), @p171='?' (Size = 4000), @p172='?' (Size = 128), @p173='?' (Size = 128), @p174='?', @p175='?', @p176='?' (Size = 250), @p177='?' (Size = 128), @p178='?' (Size = 4000), @p179='?' (Size = 128), @p180='?' (Size = 128), @p181='?', @p182='?', @p183='?' (Size = 250), @p184='?', @p185='?', @p186='?' (Size = 4000), @p187='?', @p188='?', @p189='?' (Size = 4000), @p190='?' (Size = 4000), @p191='?', @p192='?' (Size = 4000), @p193='?' (Size = 4000), @p194='?' (Size = 4000), @p195='?' (Size = 4000), @p196='?', @p197='?', @p198='?', @p199='?', @p200='?' (Size = 4000), @p201='?', @p202='?', @p203='?' (Size = 4000), @p204='?' (Size = 4000), @p205='?', @p206='?' (Size = 4000), @p207='?' (Size = 4000), @p208='?' (Size = 4000), @p209='?' (Size = 4000), @p210='?', @p211='?', @p212='?', @p213='?', @p214='?' (Size = 4000), @p215='?', @p216='?', @p217='?' (Size = 4000), @p218='?' (Size = 4000), @p219='?', @p220='?' (Size = 4000), @p221='?' (Size = 4000), @p222='?' (Size = 4000), @p223='?' (Size = 4000), @p224='?', @p225='?', @p226='?', @p227='?', @p228='?' (Size = 4000), @p229='?', @p230='?', @p231='?' (Size = 4000), @p232='?' (Size = 4000), @p233='?', @p234='?' (Size = 4000), @p235='?' (Size = 4000), @p236='?' (Size = 4000), @p237='?' (Size = 4000), @p238='?', @p239='?', @p240='?' (Size = 250), @p241='?' (Size = 250), @p242='?' (Size = 250), @p243='?' (Size = 250), @p244='?' (Size = 250), @p245='?' (Size = 250), @p246='?' (Size = 4000), @p247='?' (Size = 250), @p248='?', @p249='?' (Size = 25), @p250='?' (Size = 250), @p251='?' (Size = 250), @p252='?', @p253='?' (Size = 250), @p254='?' (Size = 4000), @p255='?' (Size = 250), @p256='?', @p257='?' (Size = 25), @p258='?' (Size = 250), @p259='?' (Size = 250), @p260='?', @p261='?' (Size = 250), @p262='?' (Size = 4000), @p263='?' (Size = 250), @p264='?', @p265='?' (Size = 25), @p266='?' (Size = 250), @p267='?' (Size = 250), @p268='?', @p269='?' (Size = 250), @p270='?' (Size = 4000), @p271='?' (Size = 250), @p272='?', @p273='?' (Size = 25), @p274='?' (Size = 250), @p275='?' (Size = 250), @p276='?', @p277='?' (Size = 250), @p278='?' (Size = 4000), @p279='?' (Size = 250), @p280='?', @p281='?' (Size = 25), @p282='?' (Size = 250), @p283='?' (Size = 250), @p284='?', @p285='?' (Size = 250), @p286='?' (Size = 4000), @p287='?' (Size = 250), @p288='?', @p289='?' (Size = 25), @p290='?' (Size = 250), @p291='?' (Size = 250), @p292='?', @p293='?' (Size = 250), @p294='?' (Size = 4000), @p295='?' (Size = 250), @p296='?', @p297='?' (Size = 25), @p298='?' (Size = 250), @p299='?' (Size = 250), @p300='?', @p301='?' (Size = 250), @p302='?' (Size = 4000), @p303='?' (Size = 250), @p304='?', @p305='?' (Size = 25), @p306='?' (Size = 250), @p307='?' (Size = 250), @p308='?', @p309='?' (Size = 250), @p310='?' (Size = 4000), @p311='?' (Size = 250), @p312='?', @p313='?' (Size = 25), @p314='?' (Size = 250), @p315='?' (Size = 250), @p316='?', @p317='?' (Size = 250), @p318='?' (Size = 4000), @p319='?' (Size = 250), @p320='?', @p321='?' (Size = 25), @p322='?' (Size = 250), @p323='?' (Size = 250), @p324='?', @p325='?' (Size = 250), @p326='?' (Size = 4000), @p327='?' (Size = 250), @p328='?', @p329='?' (Size = 25), @p330='?' (Size = 250), @p331='?' (Size = 250), @p332='?', @p333='?' (Size = 250), @p334='?' (Size = 4000), @p335='?' (Size = 250), @p336='?', @p337='?' (Size = 25), @p338='?' (Size = 250), @p339='?' (Size = 250), @p340='?', @p341='?' (Size = 250), @p342='?' (Size = 4000), @p343='?' (Size = 250), @p344='?', @p345='?' (Size = 25), @p346='?' (Size = 250), @p347='?' (Size = 250), @p348='?', @p349='?' (Size = 250), @p350='?' (Size = 4000), @p351='?' (Size = 250), @p352='?', @p353='?' (Size = 25), @p354='?' (Size = 250), @p355='?' (Size = 250), @p356='?', @p357='?' (Size = 250), @p358='?' (Size = 255), @p359='?' (Size = 128), @p360='?', @p361='?' (Size = 4000), @p362='?', @p363='?', @p364='?', @p365='?', @p366='?' (Size = 255), @p367='?' (Size = 128), @p368='?', @p369='?' (Size = 4000), @p370='?', @p371='?', @p372='?', @p373='?', @p374='?' (Size = 255), @p375='?' (Size = 128), @p376='?', @p377='?' (Size = 4000), @p378='?', @p379='?', @p380='?', @p381='?'"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [AdvertisementPages] ([Id], [Name])
+VALUES (@p0, @p1),
+(@p2, @p3),
+(@p4, @p5);
+DECLARE @inserted3 TABLE ([Id] int, [_Position] [int]);
+MERGE [Colors] USING (
+VALUES (@p6, @p7, 0),
+(@p8, @p9, 1),
+(@p10, @p11, 2),
+(@p12, @p13, 3)) AS i ([Code], [Name], _Position) ON 1=0
+WHEN NOT MATCHED THEN
+INSERT ([Code], [Name])
+VALUES (i.[Code], i.[Name])
+OUTPUT INSERTED.[Id], i._Position
+INTO @inserted3;
+
+SELECT [t].[Id] FROM [Colors] t
+INNER JOIN @inserted3 i ON ([t].[Id] = [i].[Id])
+ORDER BY [i].[_Position];
+
+INSERT INTO [Footers] ([Id], [Content])
+VALUES (@p14, @p15);
+INSERT INTO [Functions] ([Id], [IconCss], [Name], [ParentId], [SortOrder], [Status], [Url])
+VALUES (@p16, @p17, @p18, @p19, @p20, @p21, @p22),
+(@p23, @p24, @p25, @p26, @p27, @p28, @p29),
+(@p30, @p31, @p32, @p33, @p34, @p35, @p36),
+(@p37, @p38, @p39, @p40, @p41, @p42, @p43),
+(@p44, @p45, @p46, @p47, @p48, @p49, @p50),
+(@p51, @p52, @p53, @p54, @p55, @p56, @p57),
+(@p58, @p59, @p60, @p61, @p62, @p63, @p64),
+(@p65, @p66, @p67, @p68, @p69, @p70, @p71),
+(@p72, @p73, @p74, @p75, @p76, @p77, @p78),
+(@p79, @p80, @p81, @p82, @p83, @p84, @p85),
+(@p86, @p87, @p88, @p89, @p90, @p91, @p92),
+(@p93, @p94, @p95, @p96, @p97, @p98, @p99),
+(@p100, @p101, @p102, @p103, @p104, @p105, @p106),
+(@p107, @p108, @p109, @p110, @p111, @p112, @p113),
+(@p114, @p115, @p116, @p117, @p118, @p119, @p120),
+(@p121, @p122, @p123, @p124, @p125, @p126, @p127),
+(@p128, @p129, @p130, @p131, @p132, @p133, @p134),
+(@p135, @p136, @p137, @p138, @p139, @p140, @p141),
+(@p142, @p143, @p144, @p145, @p146, @p147, @p148),
+(@p149, @p150, @p151, @p152, @p153, @p154, @p155),
+(@p156, @p157, @p158, @p159, @p160, @p161, @p162),
+(@p163, @p164, @p165, @p166, @p167, @p168, @p169),
+(@p170, @p171, @p172, @p173, @p174, @p175, @p176),
+(@p177, @p178, @p179, @p180, @p181, @p182, @p183);
+DECLARE @inserted32 TABLE ([Id] int, [_Position] [int]);
+MERGE [ProductCategories] USING (
+VALUES (@p184, @p185, @p186, @p187, @p188, @p189, @p190, @p191, @p192, @p193, @p194, @p195, @p196, @p197, 0),
+(@p198, @p199, @p200, @p201, @p202, @p203, @p204, @p205, @p206, @p207, @p208, @p209, @p210, @p211, 1),
+(@p212, @p213, @p214, @p215, @p216, @p217, @p218, @p219, @p220, @p221, @p222, @p223, @p224, @p225, 2),
+(@p226, @p227, @p228, @p229, @p230, @p231, @p232, @p233, @p234, @p235, @p236, @p237, @p238, @p239, 3)) AS i ([DateCreated], [DateModified], [Description], [HomeFlag], [HomeOrder], [Image], [Name], [ParentId], [SeoAlias], [SeoDescription], [SeoKeywords], [SeoPageTitle], [SortOrder], [Status], _Position) ON 1=0
+WHEN NOT MATCHED THEN
+INSERT ([DateCreated], [DateModified], [Description], [HomeFlag], [HomeOrder], [Image], [Name], [ParentId], [SeoAlias], [SeoDescription], [SeoKeywords], [SeoPageTitle], [SortOrder], [Status])
+VALUES (i.[DateCreated], i.[DateModified], i.[Description], i.[HomeFlag], i.[HomeOrder], i.[Image], i.[Name], i.[ParentId], i.[SeoAlias], i.[SeoDescription], i.[SeoKeywords], i.[SeoPageTitle], i.[SortOrder], i.[Status])
+OUTPUT INSERTED.[Id], i._Position
+INTO @inserted32;
+
+SELECT [t].[Id] FROM [ProductCategories] t
+INNER JOIN @inserted32 i ON ([t].[Id] = [i].[Id])
+ORDER BY [i].[_Position];
+
+DECLARE @inserted36 TABLE ([Id] int, [_Position] [int]);
+MERGE [Sizes] USING (
+VALUES (@p240, 0),
+(@p241, 1),
+(@p242, 2),
+(@p243, 3),
+(@p244, 4),
+(@p245, 5)) AS i ([Name], _Position) ON 1=0
+WHEN NOT MATCHED THEN
+INSERT ([Name])
+VALUES (i.[Name])
+OUTPUT INSERTED.[Id], i._Position
+INTO @inserted36;
+
+SELECT [t].[Id] FROM [Sizes] t
+INNER JOIN @inserted36 i ON ([t].[Id] = [i].[Id])
+ORDER BY [i].[_Position];
+
+DECLARE @inserted42 TABLE ([Id] int, [_Position] [int]);
+MERGE [Slides] USING (
+VALUES (@p246, @p247, @p248, @p249, @p250, @p251, @p252, @p253, 0),
+(@p254, @p255, @p256, @p257, @p258, @p259, @p260, @p261, 1),
+(@p262, @p263, @p264, @p265, @p266, @p267, @p268, @p269, 2),
+(@p270, @p271, @p272, @p273, @p274, @p275, @p276, @p277, 3),
+(@p278, @p279, @p280, @p281, @p282, @p283, @p284, @p285, 4),
+(@p286, @p287, @p288, @p289, @p290, @p291, @p292, @p293, 5),
+(@p294, @p295, @p296, @p297, @p298, @p299, @p300, @p301, 6),
+(@p302, @p303, @p304, @p305, @p306, @p307, @p308, @p309, 7),
+(@p310, @p311, @p312, @p313, @p314, @p315, @p316, @p317, 8),
+(@p318, @p319, @p320, @p321, @p322, @p323, @p324, @p325, 9),
+(@p326, @p327, @p328, @p329, @p330, @p331, @p332, @p333, 10),
+(@p334, @p335, @p336, @p337, @p338, @p339, @p340, @p341, 11),
+(@p342, @p343, @p344, @p345, @p346, @p347, @p348, @p349, 12),
+(@p350, @p351, @p352, @p353, @p354, @p355, @p356, @p357, 13)) AS i ([Content], [Description], [DisplayOrder], [GroupAlias], [Image], [Name], [Status], [Url], _Position) ON 1=0
+WHEN NOT MATCHED THEN
+INSERT ([Content], [Description], [DisplayOrder], [GroupAlias], [Image], [Name], [Status], [Url])
+VALUES (i.[Content], i.[Description], i.[DisplayOrder], i.[GroupAlias], i.[Image], i.[Name], i.[Status], i.[Url])
+OUTPUT INSERTED.[Id], i._Position
+INTO @inserted42;
+
+SELECT [t].[Id] FROM [Slides] t
+INNER JOIN @inserted42 i ON ([t].[Id] = [i].[Id])
+ORDER BY [i].[_Position];
+
+INSERT INTO [SystemConfigs] ([Id], [Name], [Status], [Value1], [Value2], [Value3], [Value4], [Value5])
+VALUES (@p358, @p359, @p360, @p361, @p362, @p363, @p364, @p365),
+(@p366, @p367, @p368, @p369, @p370, @p371, @p372, @p373),
+(@p374, @p375, @p376, @p377, @p378, @p379, @p380, @p381);" (0723d8ff)
+2019-04-09T13:24:56.5701828+07:00  [INF] Executed DbCommand ("23"ms) [Parameters=["@p382='?' (Size = 20), @p383='?' (Size = 450), @p384='?' (Size = 250), @p385='?' (Size = 20), @p386='?' (Size = 20), @p387='?' (Size = 450), @p388='?' (Size = 250), @p389='?' (Size = 20), @p390='?' (Size = 20), @p391='?' (Size = 450), @p392='?' (Size = 250), @p393='?' (Size = 20), @p394='?', @p395='?' (Size = 4000), @p396='?', @p397='?', @p398='?' (Size = 255), @p399='?', @p400='?', @p401='?' (Size = 255), @p402='?' (Size = 255), @p403='?', @p404='?', @p405='?', @p406='?' (Size = 255), @p407='?' (Size = 255), @p408='?' (Size = 255), @p409='?' (Size = 4000), @p410='?', @p411='?' (Size = 255), @p412='?' (Size = 255), @p413='?', @p414='?', @p415='?' (Size = 4000), @p416='?', @p417='?', @p418='?' (Size = 255), @p419='?', @p420='?', @p421='?' (Size = 255), @p422='?' (Size = 255), @p423='?', @p424='?', @p425='?', @p426='?' (Size = 255), @p427='?' (Size = 255), @p428='?' (Size = 255), @p429='?' (Size = 4000), @p430='?', @p431='?' (Size = 255), @p432='?' (Size = 255), @p433='?', @p434='?', @p435='?' (Size = 4000), @p436='?', @p437='?', @p438='?' (Size = 255), @p439='?', @p440='?', @p441='?' (Size = 255), @p442='?' (Size = 255), @p443='?', @p444='?', @p445='?', @p446='?' (Size = 255), @p447='?' (Size = 255), @p448='?' (Size = 255), @p449='?' (Size = 4000), @p450='?', @p451='?' (Size = 255), @p452='?' (Size = 255), @p453='?', @p454='?', @p455='?' (Size = 4000), @p456='?', @p457='?', @p458='?' (Size = 255), @p459='?', @p460='?', @p461='?' (Size = 255), @p462='?' (Size = 255), @p463='?', @p464='?', @p465='?', @p466='?' (Size = 255), @p467='?' (Size = 255), @p468='?' (Size = 255), @p469='?' (Size = 4000), @p470='?', @p471='?' (Size = 255), @p472='?' (Size = 255), @p473='?', @p474='?', @p475='?' (Size = 4000), @p476='?', @p477='?', @p478='?' (Size = 255), @p479='?', @p480='?', @p481='?' (Size = 255), @p482='?' (Size = 255), @p483='?', @p484='?', @p485='?', @p486='?' (Size = 255), @p487='?' (Size = 255), @p488='?' (Size = 255), @p489='?' (Size = 4000), @p490='?', @p491='?' (Size = 255), @p492='?' (Size = 255), @p493='?', @p494='?', @p495='?' (Size = 4000), @p496='?', @p497='?', @p498='?' (Size = 255), @p499='?', @p500='?', @p501='?' (Size = 255), @p502='?' (Size = 255), @p503='?', @p504='?', @p505='?', @p506='?' (Size = 255), @p507='?' (Size = 255), @p508='?' (Size = 255), @p509='?' (Size = 4000), @p510='?', @p511='?' (Size = 255), @p512='?' (Size = 255), @p513='?', @p514='?', @p515='?' (Size = 4000), @p516='?', @p517='?', @p518='?' (Size = 255), @p519='?', @p520='?', @p521='?' (Size = 255), @p522='?' (Size = 255), @p523='?', @p524='?', @p525='?', @p526='?' (Size = 255), @p527='?' (Size = 255), @p528='?' (Size = 255), @p529='?' (Size = 4000), @p530='?', @p531='?' (Size = 255), @p532='?' (Size = 255), @p533='?', @p534='?', @p535='?' (Size = 4000), @p536='?', @p537='?', @p538='?' (Size = 255), @p539='?', @p540='?', @p541='?' (Size = 255), @p542='?' (Size = 255), @p543='?', @p544='?', @p545='?', @p546='?' (Size = 255), @p547='?' (Size = 255), @p548='?' (Size = 255), @p549='?' (Size = 4000), @p550='?', @p551='?' (Size = 255), @p552='?' (Size = 255), @p553='?', @p554='?', @p555='?' (Size = 4000), @p556='?', @p557='?', @p558='?' (Size = 255), @p559='?', @p560='?', @p561='?' (Size = 255), @p562='?' (Size = 255), @p563='?', @p564='?', @p565='?', @p566='?' (Size = 255), @p567='?' (Size = 255), @p568='?' (Size = 255), @p569='?' (Size = 4000), @p570='?', @p571='?' (Size = 255), @p572='?' (Size = 255), @p573='?', @p574='?', @p575='?' (Size = 4000), @p576='?', @p577='?', @p578='?' (Size = 255), @p579='?', @p580='?', @p581='?' (Size = 255), @p582='?' (Size = 255), @p583='?', @p584='?', @p585='?', @p586='?' (Size = 255), @p587='?' (Size = 255), @p588='?' (Size = 255), @p589='?' (Size = 4000), @p590='?', @p591='?' (Size = 255), @p592='?' (Size = 255), @p593='?', @p594='?', @p595='?' (Size = 4000), @p596='?', @p597='?', @p598='?' (Size = 255), @p599='?', @p600='?', @p601='?' (Size = 255), @p602='?' (Size = 255), @p603='?', @p604='?', @p605='?', @p606='?' (Size = 255), @p607='?' (Size = 255), @p608='?' (Size = 255), @p609='?' (Size = 4000), @p610='?', @p611='?' (Size = 255), @p612='?' (Size = 255), @p613='?', @p614='?', @p615='?' (Size = 4000), @p616='?', @p617='?', @p618='?' (Size = 255), @p619='?', @p620='?', @p621='?' (Size = 255), @p622='?' (Size = 255), @p623='?', @p624='?', @p625='?', @p626='?' (Size = 255), @p627='?' (Size = 255), @p628='?' (Size = 255), @p629='?' (Size = 4000), @p630='?', @p631='?' (Size = 255), @p632='?' (Size = 255), @p633='?', @p634='?', @p635='?' (Size = 4000), @p636='?', @p637='?', @p638='?' (Size = 255), @p639='?', @p640='?', @p641='?' (Size = 255), @p642='?' (Size = 255), @p643='?', @p644='?', @p645='?', @p646='?' (Size = 255), @p647='?' (Size = 255), @p648='?' (Size = 255), @p649='?' (Size = 4000), @p650='?', @p651='?' (Size = 255), @p652='?' (Size = 255), @p653='?', @p654='?', @p655='?' (Size = 4000), @p656='?', @p657='?', @p658='?' (Size = 255), @p659='?', @p660='?', @p661='?' (Size = 255), @p662='?' (Size = 255), @p663='?', @p664='?', @p665='?', @p666='?' (Size = 255), @p667='?' (Size = 255), @p668='?' (Size = 255), @p669='?' (Size = 4000), @p670='?', @p671='?' (Size = 255), @p672='?' (Size = 255), @p673='?', @p674='?', @p675='?' (Size = 4000), @p676='?', @p677='?', @p678='?' (Size = 255), @p679='?', @p680='?', @p681='?' (Size = 255), @p682='?' (Size = 255), @p683='?', @p684='?', @p685='?', @p686='?' (Size = 255), @p687='?' (Size = 255), @p688='?' (Size = 255), @p689='?' (Size = 4000), @p690='?', @p691='?' (Size = 255), @p692='?' (Size = 255), @p693='?', @p694='?', @p695='?' (Size = 4000), @p696='?', @p697='?', @p698='?' (Size = 255), @p699='?', @p700='?', @p701='?' (Size = 255), @p702='?' (Size = 255), @p703='?', @p704='?', @p705='?', @p706='?' (Size = 255), @p707='?' (Size = 255), @p708='?' (Size = 255), @p709='?' (Size = 4000), @p710='?', @p711='?' (Size = 255), @p712='?' (Size = 255), @p713='?', @p714='?', @p715='?' (Size = 4000), @p716='?', @p717='?', @p718='?' (Size = 255), @p719='?', @p720='?', @p721='?' (Size = 255), @p722='?' (Size = 255), @p723='?', @p724='?', @p725='?', @p726='?' (Size = 255), @p727='?' (Size = 255), @p728='?' (Size = 255), @p729='?' (Size = 4000), @p730='?', @p731='?' (Size = 255), @p732='?' (Size = 255), @p733='?', @p734='?', @p735='?' (Size = 4000), @p736='?', @p737='?', @p738='?' (Size = 255), @p739='?', @p740='?', @p741='?' (Size = 255), @p742='?' (Size = 255), @p743='?', @p744='?', @p745='?', @p746='?' (Size = 255), @p747='?' (Size = 255), @p748='?' (Size = 255), @p749='?' (Size = 4000), @p750='?', @p751='?' (Size = 255), @p752='?' (Size = 255), @p753='?', @p754='?', @p755='?' (Size = 4000), @p756='?', @p757='?', @p758='?' (Size = 255), @p759='?', @p760='?', @p761='?' (Size = 255), @p762='?' (Size = 255), @p763='?', @p764='?', @p765='?', @p766='?' (Size = 255), @p767='?' (Size = 255), @p768='?' (Size = 255), @p769='?' (Size = 4000), @p770='?', @p771='?' (Size = 255), @p772='?' (Size = 255), @p773='?', @p774='?', @p775='?' (Size = 4000), @p776='?', @p777='?', @p778='?' (Size = 255), @p779='?', @p780='?', @p781='?' (Size = 255), @p782='?' (Size = 255), @p783='?', @p784='?', @p785='?', @p786='?' (Size = 255), @p787='?' (Size = 255), @p788='?' (Size = 255), @p789='?' (Size = 4000), @p790='?', @p791='?' (Size = 255), @p792='?' (Size = 255), @p793='?'"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [AdvertisementPositions] ([Id], [AdvertisementPageId], [Name], [PageId])
+VALUES (@p382, @p383, @p384, @p385),
+(@p386, @p387, @p388, @p389),
+(@p390, @p391, @p392, @p393);
+DECLARE @inserted3 TABLE ([Id] int, [_Position] [int]);
+MERGE [Products] USING (
+VALUES (@p394, @p395, @p396, @p397, @p398, @p399, @p400, @p401, @p402, @p403, @p404, @p405, @p406, @p407, @p408, @p409, @p410, @p411, @p412, @p413, 0),
+(@p414, @p415, @p416, @p417, @p418, @p419, @p420, @p421, @p422, @p423, @p424, @p425, @p426, @p427, @p428, @p429, @p430, @p431, @p432, @p433, 1),
+(@p434, @p435, @p436, @p437, @p438, @p439, @p440, @p441, @p442, @p443, @p444, @p445, @p446, @p447, @p448, @p449, @p450, @p451, @p452, @p453, 2),
+(@p454, @p455, @p456, @p457, @p458, @p459, @p460, @p461, @p462, @p463, @p464, @p465, @p466, @p467, @p468, @p469, @p470, @p471, @p472, @p473, 3),
+(@p474, @p475, @p476, @p477, @p478, @p479, @p480, @p481, @p482, @p483, @p484, @p485, @p486, @p487, @p488, @p489, @p490, @p491, @p492, @p493, 4),
+(@p494, @p495, @p496, @p497, @p498, @p499, @p500, @p501, @p502, @p503, @p504, @p505, @p506, @p507, @p508, @p509, @p510, @p511, @p512, @p513, 5),
+(@p514, @p515, @p516, @p517, @p518, @p519, @p520, @p521, @p522, @p523, @p524, @p525, @p526, @p527, @p528, @p529, @p530, @p531, @p532, @p533, 6),
+(@p534, @p535, @p536, @p537, @p538, @p539, @p540, @p541, @p542, @p543, @p544, @p545, @p546, @p547, @p548, @p549, @p550, @p551, @p552, @p553, 7),
+(@p554, @p555, @p556, @p557, @p558, @p559, @p560, @p561, @p562, @p563, @p564, @p565, @p566, @p567, @p568, @p569, @p570, @p571, @p572, @p573, 8),
+(@p574, @p575, @p576, @p577, @p578, @p579, @p580, @p581, @p582, @p583, @p584, @p585, @p586, @p587, @p588, @p589, @p590, @p591, @p592, @p593, 9),
+(@p594, @p595, @p596, @p597, @p598, @p599, @p600, @p601, @p602, @p603, @p604, @p605, @p606, @p607, @p608, @p609, @p610, @p611, @p612, @p613, 10),
+(@p614, @p615, @p616, @p617, @p618, @p619, @p620, @p621, @p622, @p623, @p624, @p625, @p626, @p627, @p628, @p629, @p630, @p631, @p632, @p633, 11),
+(@p634, @p635, @p636, @p637, @p638, @p639, @p640, @p641, @p642, @p643, @p644, @p645, @p646, @p647, @p648, @p649, @p650, @p651, @p652, @p653, 12),
+(@p654, @p655, @p656, @p657, @p658, @p659, @p660, @p661, @p662, @p663, @p664, @p665, @p666, @p667, @p668, @p669, @p670, @p671, @p672, @p673, 13),
+(@p674, @p675, @p676, @p677, @p678, @p679, @p680, @p681, @p682, @p683, @p684, @p685, @p686, @p687, @p688, @p689, @p690, @p691, @p692, @p693, 14),
+(@p694, @p695, @p696, @p697, @p698, @p699, @p700, @p701, @p702, @p703, @p704, @p705, @p706, @p707, @p708, @p709, @p710, @p711, @p712, @p713, 15),
+(@p714, @p715, @p716, @p717, @p718, @p719, @p720, @p721, @p722, @p723, @p724, @p725, @p726, @p727, @p728, @p729, @p730, @p731, @p732, @p733, 16),
+(@p734, @p735, @p736, @p737, @p738, @p739, @p740, @p741, @p742, @p743, @p744, @p745, @p746, @p747, @p748, @p749, @p750, @p751, @p752, @p753, 17),
+(@p754, @p755, @p756, @p757, @p758, @p759, @p760, @p761, @p762, @p763, @p764, @p765, @p766, @p767, @p768, @p769, @p770, @p771, @p772, @p773, 18),
+(@p774, @p775, @p776, @p777, @p778, @p779, @p780, @p781, @p782, @p783, @p784, @p785, @p786, @p787, @p788, @p789, @p790, @p791, @p792, @p793, 19)) AS i ([CategoryId], [Content], [DateCreated], [DateModified], [Description], [HomeFlag], [HotFlag], [Image], [Name], [OriginalPrice], [Price], [PromotionPrice], [SeoAlias], [SeoDescription], [SeoKeywords], [SeoPageTitle], [Status], [Tags], [Unit], [ViewCount], _Position) ON 1=0
+WHEN NOT MATCHED THEN
+INSERT ([CategoryId], [Content], [DateCreated], [DateModified], [Description], [HomeFlag], [HotFlag], [Image], [Name], [OriginalPrice], [Price], [PromotionPrice], [SeoAlias], [SeoDescription], [SeoKeywords], [SeoPageTitle], [Status], [Tags], [Unit], [ViewCount])
+VALUES (i.[CategoryId], i.[Content], i.[DateCreated], i.[DateModified], i.[Description], i.[HomeFlag], i.[HotFlag], i.[Image], i.[Name], i.[OriginalPrice], i.[Price], i.[PromotionPrice], i.[SeoAlias], i.[SeoDescription], i.[SeoKeywords], i.[SeoPageTitle], i.[Status], i.[Tags], i.[Unit], i.[ViewCount])
+OUTPUT INSERTED.[Id], i._Position
+INTO @inserted3;
+
+SELECT [t].[Id] FROM [Products] t
+INNER JOIN @inserted3 i ON ([t].[Id] = [i].[Id])
+ORDER BY [i].[_Position];" (0723d8ff)
+2019-04-09T13:25:01.7962587+07:00 0HLLSMGBJAPAQ:00000001 [INF] Request starting HTTP/1.1 DEBUG http://localhost:15649/  0 (ca22a1cb)
+2019-04-09T13:25:01.7921234+07:00 0HLLSMGBJAPAR:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44383/   (ca22a1cb)
+2019-04-09T13:25:02.2820349+07:00 0HLLSMGBJAPAQ:00000001 [INF] Request finished in 562.5355ms 200  (791a596a)
+2019-04-09T13:25:05.8423532+07:00 0HLLSMGBJAPAR:00000001 [INF] Executing action method "NetCoreApp.Controllers.HomeController.Index (NetCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2019-04-09T13:25:29.8348523+07:00 0HLLSMGBJAPAR:00000001 [INF] Executing ViewResult, running view at path "/Views/Home/Index.cshtml". (9707eebe)
+2019-04-09T13:25:43.4146588+07:00 0HLLSMGBJAPAR:00000001 [INF] Accessing expired session, Key:"969109a0-d837-7761-0fa8-8cb6de1051bb" (08c5a9e7)
+2019-04-09T13:25:52.6533656+07:00 0HLLSMGBJAPAR:00000001 [INF] Executed action "NetCoreApp.Controllers.HomeController.Index (NetCoreApp)" in 47746.5824ms (afa2e885)
+2019-04-09T13:25:52.9081924+07:00 0HLLSMGBJAPAR:00000001 [INF] Request finished in 51243.3793ms 200 text/html; charset=utf-8 (791a596a)
+2019-04-09T13:25:53.4788358+07:00 0HLLSMGBJAPAQ:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44383/client-side/style.css   (ca22a1cb)
+2019-04-09T13:25:53.5660190+07:00 0HLLSMGBJAPAQ:00000002 [INF] The file "/client-side/style.css" was not modified (f1f8d725)
+2019-04-09T13:25:53.5975799+07:00 0HLLSMGBJAPAR:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44383/client-side/images/flag-default.jpg   (ca22a1cb)
+2019-04-09T13:25:53.6504548+07:00 0HLLSMGBJAPAQ:00000002 [INF] Request finished in 147.504ms 304 text/css (791a596a)
+2019-04-09T13:25:53.7417752+07:00 0HLLSMGBJAPAR:00000002 [INF] The file "/client-side/images/flag-default.jpg" was not modified (f1f8d725)
+2019-04-09T13:25:53.7934956+07:00 0HLLSMGBJAPAR:00000002 [INF] Request finished in 223.835ms 304 image/jpeg (791a596a)
+2019-04-09T13:26:05.0981367+07:00 0HLLSMGBJAPAQ:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44383/client-side/js/jquery.min.js   (ca22a1cb)
+2019-04-09T13:26:05.1163981+07:00 0HLLSMGBJAPAR:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44383/client-side/js/bootstrap.min.js   (ca22a1cb)
+2019-04-09T13:26:05.1603080+07:00 0HLLSMGBJAPAR:00000003 [INF] The file "/client-side/js/bootstrap.min.js" was not modified (f1f8d725)
+2019-04-09T13:26:05.2221494+07:00 0HLLSMGBJAPAQ:00000003 [INF] The file "/client-side/js/jquery.min.js" was not modified (f1f8d725)
+2019-04-09T13:26:05.2953375+07:00 0HLLSMGBJAPAS:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44383/client-side/css/bootstrap.min.css   (ca22a1cb)
+2019-04-09T13:26:05.3048918+07:00 0HLLSMGBJAPAQ:00000003 [INF] Request finished in 163.6156ms 304 application/javascript (791a596a)
+2019-04-09T13:26:05.3145613+07:00 0HLLSMGBJAPAR:00000003 [INF] Request finished in 87.2854ms 304 application/javascript (791a596a)
+2019-04-09T13:26:05.3635698+07:00 0HLLSMGBJAPAS:00000001 [INF] The file "/client-side/css/bootstrap.min.css" was not modified (f1f8d725)
+2019-04-09T13:26:05.4232918+07:00 0HLLSMGBJAPAS:00000001 [INF] Request finished in 144.5079ms 304 text/css (791a596a)
+2019-04-09T13:26:06.2264801+07:00 0HLLSMGBJAPAR:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44383/client-side/css/animate.css   (ca22a1cb)
+2019-04-09T13:26:06.2611595+07:00 0HLLSMGBJAPAR:00000004 [INF] The file "/client-side/css/animate.css" was not modified (f1f8d725)
+2019-04-09T13:26:06.3566184+07:00 0HLLSMGBJAPAR:00000004 [INF] Request finished in 120.5741ms 304 text/css (791a596a)
+2019-04-09T13:26:07.3063919+07:00 0HLLSMGBJAPAQ:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44383/client-side/css/font-awesome.min.css   (ca22a1cb)
+2019-04-09T13:26:07.3371269+07:00 0HLLSMGBJAPAQ:00000004 [INF] The file "/client-side/css/font-awesome.min.css" was not modified (f1f8d725)
+2019-04-09T13:26:07.4026943+07:00 0HLLSMGBJAPAQ:00000004 [INF] Request finished in 58.6226ms 304 text/css (791a596a)
+2019-04-09T13:26:07.8972534+07:00 0HLLSMGBJAPAS:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44383/client-side/css/simple-line-icons.css   (ca22a1cb)
+2019-04-09T13:26:07.9252739+07:00 0HLLSMGBJAPAS:00000002 [INF] The file "/client-side/css/simple-line-icons.css" was not modified (f1f8d725)
+2019-04-09T13:26:07.9878882+07:00 0HLLSMGBJAPAS:00000002 [INF] Request finished in 78.3086ms 304 text/css (791a596a)
+2019-04-09T13:26:08.0899380+07:00 0HLLSMGBJAPAR:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:44383/client-side/css/pe-icon-7-stroke.min.css   (ca22a1cb)
+2019-04-09T13:26:08.1207710+07:00 0HLLSMGBJAPAR:00000005 [INF] The file "/client-side/css/pe-icon-7-stroke.min.css" was not modified (f1f8d725)
+2019-04-09T13:26:08.1584004+07:00 0HLLSMGBJAPAR:00000005 [INF] Request finished in 57.8023ms 304 text/css (791a596a)
+2019-04-09T13:26:08.2333056+07:00 0HLLSMGBJAPAQ:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:44383/client-side/css/owl.carousel.css   (ca22a1cb)
+2019-04-09T13:26:08.2921039+07:00 0HLLSMGBJAPAQ:00000005 [INF] The file "/client-side/css/owl.carousel.css" was not modified (f1f8d725)
+2019-04-09T13:26:08.5911331+07:00 0HLLSMGBJAPAS:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44383/client-side/css/owl.transitions.css   (ca22a1cb)
+2019-04-09T13:26:08.8341524+07:00 0HLLSMGBJAPAS:00000003 [INF] The file "/client-side/css/owl.transitions.css" was not modified (f1f8d725)
+2019-04-09T13:26:08.9183123+07:00 0HLLSMGBJAPAQ:00000005 [INF] Request finished in 175.7321ms 304 text/css (791a596a)
+2019-04-09T13:26:08.9679898+07:00 0HLLSMGBJAPAS:00000003 [INF] Request finished in 584.1585ms 304 text/css (791a596a)
+2019-04-09T13:26:09.0746557+07:00 0HLLSMGBJAPAR:00000006 [INF] Request starting HTTP/1.1 GET http://localhost:44383/client-side/css/flexslider.css   (ca22a1cb)
+2019-04-09T13:26:09.1204486+07:00 0HLLSMGBJAPAR:00000006 [INF] The file "/client-side/css/flexslider.css" was not modified (f1f8d725)
+2019-04-09T13:26:09.1609803+07:00 0HLLSMGBJAPAR:00000006 [INF] Request finished in 627.0906ms 304 text/css (791a596a)
+2019-04-09T13:26:09.2413113+07:00 0HLLSMGBJAPAQ:00000006 [INF] Request starting HTTP/1.1 GET http://localhost:44383/client-side/css/jquery-ui.css   (ca22a1cb)
+2019-04-09T13:26:09.2781190+07:00 0HLLSMGBJAPAQ:00000006 [INF] The file "/client-side/css/jquery-ui.css" was not modified (f1f8d725)
+2019-04-09T13:26:09.3292061+07:00 0HLLSMGBJAPAQ:00000006 [INF] Request finished in 66.9165ms 304 text/css (791a596a)
+2019-04-09T13:26:09.4531221+07:00 0HLLSMGBJAPAS:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44383/client-side/css/revolution-slider.css   (ca22a1cb)
+2019-04-09T13:26:09.5164742+07:00 0HLLSMGBJAPAS:00000004 [INF] The file "/client-side/css/revolution-slider.css" was not modified (f1f8d725)
+2019-04-09T13:26:09.6029441+07:00 0HLLSMGBJAPAS:00000004 [INF] Request finished in 96.2838ms 304 text/css (791a596a)
+2019-04-09T13:26:09.7508637+07:00 0HLLSMGBJAPAR:00000007 [INF] Request starting HTTP/1.1 GET http://localhost:44383/client-side/css/quick_view_popup.css   (ca22a1cb)
+2019-04-09T13:26:09.7895272+07:00 0HLLSMGBJAPAR:00000007 [INF] The file "/client-side/css/quick_view_popup.css" was not modified (f1f8d725)
+2019-04-09T13:26:09.8307715+07:00 0HLLSMGBJAPAR:00000007 [INF] Request finished in 107.0709ms 304 text/css (791a596a)
+2019-04-09T13:26:09.9267511+07:00 0HLLSMGBJAPAQ:00000007 [INF] Request starting HTTP/1.1 GET http://localhost:44383/client-side/css/blog.css   (ca22a1cb)
+2019-04-09T13:26:09.9930107+07:00 0HLLSMGBJAPAQ:00000007 [INF] The file "/client-side/css/blog.css" was not modified (f1f8d725)
+2019-04-09T13:26:10.1030986+07:00 0HLLSMGBJAPAQ:00000007 [INF] Request finished in 109.896ms 304 text/css (791a596a)
+2019-04-09T13:26:11.5920011+07:00 0HLLSMGBJAPAS:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:44383/client-side/css/shortcode.css   (ca22a1cb)
+2019-04-09T13:26:11.6250290+07:00 0HLLSMGBJAPAS:00000005 [INF] The file "/client-side/css/shortcode.css" was not modified (f1f8d725)
+2019-04-09T13:26:11.7282381+07:00 0HLLSMGBJAPAS:00000005 [INF] Request finished in 63.7925ms 304 text/css (791a596a)
+2019-04-09T13:26:11.7832765+07:00 0HLLSMGBJAPAR:00000008 [INF] Request starting HTTP/1.1 GET http://localhost:44383/client-side/css/shortcodes/shortcodes.css   (ca22a1cb)
+2019-04-09T13:26:11.8099281+07:00 0HLLSMGBJAPAR:00000008 [INF] The file "/client-side/css/shortcodes/shortcodes.css" was not modified (f1f8d725)
+2019-04-09T13:26:11.8476403+07:00 0HLLSMGBJAPAR:00000008 [INF] Request finished in 131.7736ms 304 text/css (791a596a)
+2019-04-09T13:26:11.9680921+07:00 0HLLSMGBJAPAQ:00000008 [INF] Request starting HTTP/1.1 GET http://localhost:44383/client-side/css/shortcodes/featured-box.css   (ca22a1cb)
+2019-04-09T13:26:12.0544241+07:00 0HLLSMGBJAPAQ:00000008 [INF] The file "/client-side/css/shortcodes/featured-box.css" was not modified (f1f8d725)
+2019-04-09T13:26:12.1085641+07:00 0HLLSMGBJAPAQ:00000008 [INF] Request finished in 127.5361ms 304 text/css (791a596a)
+2019-04-09T13:26:13.1403678+07:00 0HLLSMGBJAPAS:00000006 [INF] Request starting HTTP/1.1 GET http://localhost:44383/client-side/css/shortcodes/pricing-table.css   (ca22a1cb)
+2019-04-09T13:26:13.2442011+07:00 0HLLSMGBJAPAQ:00000009 [INF] Request starting HTTP/1.1 GET http://localhost:44383/client-side/css/shortcodes/tooltip.css   (ca22a1cb)
+2019-04-09T13:26:13.2998751+07:00 0HLLSMGBJAPAS:00000006 [INF] The file "/client-side/css/shortcodes/pricing-table.css" was not modified (f1f8d725)
+2019-04-09T13:26:13.3809083+07:00 0HLLSMGBJAPAR:00000009 [INF] Request starting HTTP/1.1 GET http://localhost:44383/client-side/css/shortcodes/post.css   (ca22a1cb)
+2019-04-09T13:26:13.3959600+07:00 0HLLSMGBJAPAQ:00000009 [INF] The file "/client-side/css/shortcodes/tooltip.css" was not modified (f1f8d725)
+2019-04-09T13:26:13.4175009+07:00 0HLLSMGBJAPAS:00000006 [INF] Request finished in 204.8031ms 304 text/css (791a596a)
+2019-04-09T13:26:13.5105610+07:00 0HLLSMGBJAPAQ:00000009 [INF] Request finished in 300.0788ms 304 text/css (791a596a)
+2019-04-09T13:26:13.5299142+07:00 0HLLSMGBJAPAR:00000009 [INF] The file "/client-side/css/shortcodes/post.css" was not modified (f1f8d725)
+2019-04-09T13:26:13.6068721+07:00 0HLLSMGBJAPAR:00000009 [INF] Request finished in 427.819ms 304 text/css (791a596a)
+2019-04-09T13:26:13.8362169+07:00 0HLLSMGBJAPAS:00000007 [INF] Request starting HTTP/1.1 GET http://localhost:44383/client-side/css/style.css   (ca22a1cb)
+2019-04-09T13:26:13.9119460+07:00 0HLLSMGBJAPAS:00000007 [INF] The file "/client-side/css/style.css" was not modified (f1f8d725)
+2019-04-09T13:26:13.9927822+07:00 0HLLSMGBJAPAS:00000007 [INF] Request finished in 128.4424ms 304 text/css (791a596a)
+2019-04-09T13:26:14.8628167+07:00 0HLLSMGBJAPAQ:0000000A [INF] Request starting HTTP/1.1 GET http://localhost:44383/client-side/css/responsive.css   (ca22a1cb)
+2019-04-09T13:26:14.9043184+07:00 0HLLSMGBJAPAQ:0000000A [INF] The file "/client-side/css/responsive.css" was not modified (f1f8d725)
+2019-04-09T13:26:14.9515643+07:00 0HLLSMGBJAPAR:0000000A [INF] Request starting HTTP/1.1 GET http://localhost:44383/client-side/js/owl.carousel.min.js   (ca22a1cb)
+2019-04-09T13:26:14.9958330+07:00 0HLLSMGBJAPAQ:0000000A [INF] Request finished in 87.9343ms 304 text/css (791a596a)
+2019-04-09T13:26:15.0493293+07:00 0HLLSMGBJAPAR:0000000A [INF] The file "/client-side/js/owl.carousel.min.js" was not modified (f1f8d725)
+2019-04-09T13:26:15.1253117+07:00 0HLLSMGBJAPAR:0000000A [INF] Request finished in 156.8407ms 304 application/javascript (791a596a)
+2019-04-09T13:26:15.1655818+07:00 0HLLSMGBJAPAS:00000008 [INF] Request starting HTTP/1.1 GET http://localhost:44383/client-side/js/mobile-menu.js   (ca22a1cb)
+2019-04-09T13:26:15.1947361+07:00 0HLLSMGBJAPAS:00000008 [INF] The file "/client-side/js/mobile-menu.js" was not modified (f1f8d725)
+2019-04-09T13:26:15.2478951+07:00 0HLLSMGBJAPAS:00000008 [INF] Request finished in 167.4406ms 304 application/javascript (791a596a)
+2019-04-09T13:26:15.2794935+07:00 0HLLSMGBJAPAQ:0000000B [INF] Request starting HTTP/1.1 GET http://localhost:44383/client-side/js/jquery-ui.js   (ca22a1cb)
+2019-04-09T13:26:15.3081291+07:00 0HLLSMGBJAPAQ:0000000B [INF] The file "/client-side/js/jquery-ui.js" was not modified (f1f8d725)
+2019-04-09T13:26:15.3712119+07:00 0HLLSMGBJAPAQ:0000000B [INF] Request finished in 97.1534ms 304 application/javascript (791a596a)
+2019-04-09T13:26:15.4418421+07:00 0HLLSMGBJAPAR:0000000B [INF] Request starting HTTP/1.1 GET http://localhost:44383/client-side/js/main.js   (ca22a1cb)
+2019-04-09T13:26:15.4885815+07:00 0HLLSMGBJAPAR:0000000B [INF] The file "/client-side/js/main.js" was not modified (f1f8d725)
+2019-04-09T13:26:15.6031328+07:00 0HLLSMGBJAPAR:0000000B [INF] Request finished in 90.5566ms 304 application/javascript (791a596a)
+2019-04-09T13:26:16.1319674+07:00 0HLLSMGBJAPAS:00000009 [INF] Request starting HTTP/1.1 GET http://localhost:44383/client-side/js/countdown.js   (ca22a1cb)
+2019-04-09T13:26:16.1723069+07:00 0HLLSMGBJAPAS:00000009 [INF] The file "/client-side/js/countdown.js" was not modified (f1f8d725)
+2019-04-09T13:26:16.2452764+07:00 0HLLSMGBJAPAS:00000009 [INF] Request finished in 89.8863ms 304 application/javascript (791a596a)
+2019-04-09T13:26:16.4447640+07:00 0HLLSMGBJAPAQ:0000000C [INF] Request starting HTTP/1.1 GET http://localhost:44383/client-side/js/revolution-slider.js   (ca22a1cb)
+2019-04-09T13:26:16.7674258+07:00 0HLLSMGBJAPAQ:0000000C [INF] The file "/client-side/js/revolution-slider.js" was not modified (f1f8d725)
+2019-04-09T13:26:16.8829891+07:00 0HLLSMGBJAPAQ:0000000C [INF] Request finished in 368.5079ms 304 application/javascript (791a596a)
+2019-04-09T13:26:17.4837661+07:00 0HLLSMGBJAPAR:0000000C [INF] Request starting HTTP/1.1 GET http://localhost:44383/client-app/Shared/app.js   (ca22a1cb)
+2019-04-09T13:26:17.6012364+07:00 0HLLSMGBJAPAS:0000000A [INF] Request starting HTTP/1.1 GET http://localhost:44383/client-app/controllers/base/index.js   (ca22a1cb)
+2019-04-09T13:26:17.6352910+07:00 0HLLSMGBJAPAR:0000000C [INF] The file "/client-app/Shared/app.js" was not modified (f1f8d725)
+2019-04-09T13:26:17.7275162+07:00 0HLLSMGBJAPAR:0000000C [INF] Request finished in 214.1505ms 304 application/javascript (791a596a)
+2019-04-09T13:26:17.7512861+07:00 0HLLSMGBJAPAS:0000000A [INF] The file "/client-app/controllers/base/index.js" was not modified (f1f8d725)
+2019-04-09T13:26:17.8762908+07:00 0HLLSMGBJAPAS:0000000A [INF] Request finished in 251.4201ms 304 application/javascript (791a596a)
+2019-04-09T13:26:19.4337934+07:00 0HLLSMGBJAPAQ:0000000D [INF] Request starting HTTP/1.1 GET http://localhost:44383/client-app/controllers/home/index.js   (ca22a1cb)
+2019-04-09T13:26:19.4632582+07:00 0HLLSMGBJAPAQ:0000000D [INF] The file "/client-app/controllers/home/index.js" was not modified (f1f8d725)
+2019-04-09T13:26:19.5160061+07:00 0HLLSMGBJAPAQ:0000000D [INF] Request finished in 66.4309ms 304 application/javascript (791a596a)
+2019-04-09T13:26:19.6489154+07:00 0HLLSMGBJAPAR:0000000D [INF] Request starting HTTP/1.1 GET http://localhost:44383/client-side/images/flag-english.jpg   (ca22a1cb)
+2019-04-09T13:26:19.7126526+07:00 0HLLSMGBJAPAR:0000000D [INF] The file "/client-side/images/flag-english.jpg" was not modified (f1f8d725)
+2019-04-09T13:26:19.7748839+07:00 0HLLSMGBJAPAS:0000000B [INF] Request starting HTTP/1.1 GET http://localhost:44383/client-side/images/flag-german.jpg   (ca22a1cb)
+2019-04-09T13:26:19.8165507+07:00 0HLLSMGBJAPAS:0000000B [INF] The file "/client-side/images/flag-german.jpg" was not modified (f1f8d725)
+2019-04-09T13:26:19.8874067+07:00 0HLLSMGBJAPAS:0000000B [INF] Request finished in 160.2082ms 304 image/jpeg (791a596a)
+2019-04-09T13:26:19.9190185+07:00 0HLLSMGBJAPAR:0000000D [INF] Request finished in 94.3504ms 304 image/jpeg (791a596a)
+2019-04-09T13:26:20.0282352+07:00 0HLLSMGBJAPAQ:0000000E [INF] Request starting HTTP/1.1 GET http://localhost:44383/client-side/images/flag-brazil.jpg   (ca22a1cb)
+2019-04-09T13:26:20.0683493+07:00 0HLLSMGBJAPAQ:0000000E [INF] The file "/client-side/images/flag-brazil.jpg" was not modified (f1f8d725)
+2019-04-09T13:26:20.1324537+07:00 0HLLSMGBJAPAQ:0000000E [INF] Request finished in 92.6503ms 304 image/jpeg (791a596a)
+2019-04-09T13:26:20.2941747+07:00 0HLLSMGBJAPAR:0000000E [INF] Request starting HTTP/1.1 GET http://localhost:44383/client-side/images/flag-chile.jpg   (ca22a1cb)
+2019-04-09T13:26:20.3397192+07:00 0HLLSMGBJAPAR:0000000E [INF] The file "/client-side/images/flag-chile.jpg" was not modified (f1f8d725)
+2019-04-09T13:26:20.4281762+07:00 0HLLSMGBJAPAR:0000000E [INF] Request finished in 87.5218ms 304 image/jpeg (791a596a)
+2019-04-09T13:26:21.4518132+07:00 0HLLSMGBJAPAS:0000000C [INF] Request starting HTTP/1.1 GET http://localhost:44383/client-side/images/flag-spain.jpg   (ca22a1cb)
+2019-04-09T13:26:21.5522994+07:00 0HLLSMGBJAPAS:0000000C [INF] The file "/client-side/images/flag-spain.jpg" was not modified (f1f8d725)
+2019-04-09T13:26:21.6530873+07:00 0HLLSMGBJAPAS:0000000C [INF] Request finished in 141.1068ms 304 image/jpeg (791a596a)
+2019-04-09T13:26:21.8724445+07:00 0HLLSMGBJAPAQ:0000000F [INF] Request starting HTTP/1.1 GET http://localhost:44383/client-side/images/logo.png   (ca22a1cb)
+2019-04-09T13:26:21.9057568+07:00 0HLLSMGBJAPAQ:0000000F [INF] The file "/client-side/images/logo.png" was not modified (f1f8d725)
+2019-04-09T13:26:21.9755833+07:00 0HLLSMGBJAPAQ:0000000F [INF] Request finished in 66.5004ms 304 image/png (791a596a)
+2019-04-09T13:26:22.0555405+07:00 0HLLSMGBJAPAR:0000000F [INF] Request starting HTTP/1.1 GET http://localhost:44383/client-side/images/products/product-1.jpg   (ca22a1cb)
+2019-04-09T13:26:22.0832579+07:00 0HLLSMGBJAPAR:0000000F [INF] The file "/client-side/images/products/product-1.jpg" was not modified (f1f8d725)
+2019-04-09T13:26:22.1310205+07:00 0HLLSMGBJAPAR:0000000F [INF] Request finished in 63.4578ms 304 image/jpeg (791a596a)
+2019-04-09T13:26:22.2081038+07:00 0HLLSMGBJAPAS:0000000D [INF] Request starting HTTP/1.1 GET http://localhost:44383/client-side/~/client-side/images/banner-left.jpg   (ca22a1cb)
+2019-04-09T13:26:22.2635303+07:00 0HLLSMGBJAPAS:0000000D [INF] Request finished in 103.2711ms 404  (791a596a)
+2019-04-09T13:26:22.4112376+07:00 0HLLSMGBJAPAQ:00000010 [INF] Request starting HTTP/1.1 GET http://localhost:44383/client-side/images/slider/slide-3.jpg   (ca22a1cb)
+2019-04-09T13:26:22.4846519+07:00 0HLLSMGBJAPAQ:00000010 [INF] The file "/client-side/images/slider/slide-3.jpg" was not modified (f1f8d725)
+2019-04-09T13:26:22.6390003+07:00 0HLLSMGBJAPAQ:00000010 [INF] Request finished in 103.4274ms 304 image/jpeg (791a596a)
+2019-04-09T13:26:22.8588117+07:00 0HLLSMGBJAPAR:00000010 [INF] Request starting HTTP/1.1 GET http://localhost:44383/client-side/images/slider/slide-2.jpg   (ca22a1cb)
+2019-04-09T13:26:22.9189154+07:00 0HLLSMGBJAPAR:00000010 [INF] The file "/client-side/images/slider/slide-2.jpg" was not modified (f1f8d725)
+2019-04-09T13:26:22.9852616+07:00 0HLLSMGBJAPAR:00000010 [INF] Request finished in 95.3988ms 304 image/jpeg (791a596a)
+2019-04-09T13:26:23.0659277+07:00 0HLLSMGBJAPAS:0000000E [INF] Request starting HTTP/1.1 GET http://localhost:44383/client-side/images/slider/slide-1.jpg   (ca22a1cb)
+2019-04-09T13:26:23.0914669+07:00 0HLLSMGBJAPAS:0000000E [INF] The file "/client-side/images/slider/slide-1.jpg" was not modified (f1f8d725)
+2019-04-09T13:26:23.1659355+07:00 0HLLSMGBJAPAS:0000000E [INF] Request finished in 54.2777ms 304 image/jpeg (791a596a)
+2019-04-09T13:26:23.5566803+07:00 0HLLSMGBJAPAQ:00000011 [INF] Request starting HTTP/1.1 GET http://localhost:44383/client-side/images/banner-sunglasses.jpg   (ca22a1cb)
+2019-04-09T13:26:23.5744672+07:00 0HLLSMGBJAPAS:0000000F [INF] Request starting HTTP/1.1 GET http://localhost:44383/client-side/~/client-side/~/client-side/images/sub1.jpg   (ca22a1cb)
+2019-04-09T13:26:23.6501817+07:00 0HLLSMGBJAPAR:00000011 [INF] Request starting HTTP/1.1 GET http://localhost:44383/client-side/images/sub1a.jpg   (ca22a1cb)
+2019-04-09T13:26:23.8467043+07:00 0HLLSMGBJAPAS:0000000F [INF] Request finished in 77.8345ms 404  (791a596a)
+2019-04-09T13:26:23.9147115+07:00 0HLLSMGBJAPAR:00000011 [INF] The file "/client-side/images/sub1a.jpg" was not modified (f1f8d725)
+2019-04-09T13:26:23.9736338+07:00 0HLLSMGBJAPAQ:00000011 [INF] The file "/client-side/images/banner-sunglasses.jpg" was not modified (f1f8d725)
+2019-04-09T13:26:24.0676069+07:00 0HLLSMGBJAPAQ:00000011 [INF] Request finished in 485.2543ms 304 image/jpeg (791a596a)
+2019-04-09T13:26:24.0931500+07:00 0HLLSMGBJAPAR:00000011 [INF] Request finished in 412.5454ms 304 image/jpeg (791a596a)
+2019-04-09T13:26:24.2410515+07:00 0HLLSMGBJAPAS:00000010 [INF] Request starting HTTP/1.1 GET http://localhost:44383/client-side/images/banner-kids.jpg   (ca22a1cb)
+2019-04-09T13:26:24.2879851+07:00 0HLLSMGBJAPAS:00000010 [INF] The file "/client-side/images/banner-kids.jpg" was not modified (f1f8d725)
+2019-04-09T13:26:24.3896663+07:00 0HLLSMGBJAPAS:00000010 [INF] Request finished in 71.2262ms 304 image/jpeg (791a596a)
+2019-04-09T13:26:24.8239689+07:00 0HLLSMGBJAPAR:00000012 [INF] Request starting HTTP/1.1 GET http://localhost:44383/client-side/images/banner-women.jpg   (ca22a1cb)
+2019-04-09T13:26:24.8638675+07:00 0HLLSMGBJAPAR:00000012 [INF] The file "/client-side/images/banner-women.jpg" was not modified (f1f8d725)
+2019-04-09T13:26:24.9383942+07:00 0HLLSMGBJAPAR:00000012 [INF] Request finished in 90.6355ms 304 image/jpeg (791a596a)
+2019-04-09T13:26:25.0188025+07:00 0HLLSMGBJAPAQ:00000012 [INF] Request starting HTTP/1.1 GET http://localhost:44383/client-side/images/banner-arrival.jpg   (ca22a1cb)
+2019-04-09T13:26:25.0453626+07:00 0HLLSMGBJAPAQ:00000012 [INF] The file "/client-side/images/banner-arrival.jpg" was not modified (f1f8d725)
+2019-04-09T13:26:25.0906064+07:00 0HLLSMGBJAPAQ:00000012 [INF] Request finished in 61.2827ms 304 image/jpeg (791a596a)
+2019-04-09T13:26:25.1471581+07:00 0HLLSMGBJAPAS:00000011 [INF] Request starting HTTP/1.1 GET http://localhost:44383/client-side/images/footer-logo.png   (ca22a1cb)
+2019-04-09T13:26:25.1771867+07:00 0HLLSMGBJAPAS:00000011 [INF] The file "/client-side/images/footer-logo.png" was not modified (f1f8d725)
+2019-04-09T13:26:25.2798038+07:00 0HLLSMGBJAPAS:00000011 [INF] Request finished in 56.671ms 304 image/png (791a596a)
+2019-04-09T13:26:26.1342845+07:00 0HLLSMGBJAPAR:00000013 [INF] Request starting HTTP/1.1 GET http://localhost:44383/client-side/images/visa.png   (ca22a1cb)
+2019-04-09T13:26:26.1792196+07:00 0HLLSMGBJAPAR:00000013 [INF] The file "/client-side/images/visa.png" was not modified (f1f8d725)
+2019-04-09T13:26:26.2349042+07:00 0HLLSMGBJAPAR:00000013 [INF] Request finished in 78.8506ms 304 image/png (791a596a)
+2019-04-09T13:26:26.5336481+07:00 0HLLSMGBJAPAQ:00000013 [INF] Request starting HTTP/1.1 GET http://localhost:44383/client-side/images/paypal.png   (ca22a1cb)
+2019-04-09T13:26:26.5711774+07:00 0HLLSMGBJAPAQ:00000013 [INF] The file "/client-side/images/paypal.png" was not modified (f1f8d725)
+2019-04-09T13:26:26.7563810+07:00 0HLLSMGBJAPAQ:00000013 [INF] Request finished in 80.5417ms 304 image/png (791a596a)
+2019-04-09T13:26:27.1468340+07:00 0HLLSMGBJAPAS:00000012 [INF] Request starting HTTP/1.1 GET http://localhost:44383/client-side/images/discover.png   (ca22a1cb)
+2019-04-09T13:26:27.1926751+07:00 0HLLSMGBJAPAS:00000012 [INF] The file "/client-side/images/discover.png" was not modified (f1f8d725)
+2019-04-09T13:26:27.2803845+07:00 0HLLSMGBJAPAR:00000014 [INF] Request starting HTTP/1.1 GET http://localhost:44383/client-side/images/master-card.png   (ca22a1cb)
+2019-04-09T13:26:27.3560661+07:00 0HLLSMGBJAPAS:00000012 [INF] Request finished in 90.7303ms 304 image/png (791a596a)
+2019-04-09T13:26:27.4008465+07:00 0HLLSMGBJAPAR:00000014 [INF] The file "/client-side/images/master-card.png" was not modified (f1f8d725)
+2019-04-09T13:26:27.4496749+07:00 0HLLSMGBJAPAR:00000014 [INF] Request finished in 244.5884ms 304 image/png (791a596a)
+2019-04-09T13:26:34.9296334+07:00 0HLLSMGBJAPAQ:00000014 [INF] Request starting HTTP/1.1 GET http://localhost:44383/client-side/fonts/font-awesome/fontawesome-webfont.woff2?v=4.7.0   (ca22a1cb)
+2019-04-09T13:26:34.9549085+07:00 0HLLSMGBJAPAQ:00000014 [INF] The file "/client-side/fonts/font-awesome/fontawesome-webfont.woff2" was not modified (f1f8d725)
+2019-04-09T13:26:34.9908605+07:00 0HLLSMGBJAPAQ:00000014 [INF] Request finished in 64.0214ms 304 font/woff2 (791a596a)
+2019-04-09T13:26:35.1163998+07:00 0HLLSMGBJAPAS:00000013 [INF] Request starting HTTP/1.1 GET http://localhost:44383/client-side/fonts/simple-line-icons/Simple-Line-Icons.woff2?v=2.4.0   (ca22a1cb)
+2019-04-09T13:26:35.1495531+07:00 0HLLSMGBJAPAS:00000013 [INF] The file "/client-side/fonts/simple-line-icons/Simple-Line-Icons.woff2" was not modified (f1f8d725)
+2019-04-09T13:26:35.1981497+07:00 0HLLSMGBJAPAS:00000013 [INF] Request finished in 65.8317ms 304 font/woff2 (791a596a)
+2019-04-09T13:26:38.4487180+07:00 0HLLSMGBJAPAR:00000015 [INF] Request starting HTTP/1.1 GET http://localhost:44383/client-side/images/bg_text_des.png   (ca22a1cb)
+2019-04-09T13:26:38.4764457+07:00 0HLLSMGBJAPAR:00000015 [INF] The file "/client-side/images/bg_text_des.png" was not modified (f1f8d725)
+2019-04-09T13:26:38.5361697+07:00 0HLLSMGBJAPAR:00000015 [INF] Request finished in 61.0281ms 304 image/png (791a596a)
+2019-04-09T13:26:38.6591107+07:00 0HLLSMGBJAPAQ:00000015 [INF] Request starting HTTP/1.1 GET http://localhost:44383/   (ca22a1cb)
+2019-04-09T13:26:38.8749787+07:00 0HLLSMGBJAPAQ:00000015 [INF] Executing action method "NetCoreApp.Controllers.HomeController.Index (NetCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2019-04-09T13:26:41.5921602+07:00 0HLLSMGBJAPAQ:00000015 [INF] Executing ViewResult, running view at path "/Views/Home/Index.cshtml". (9707eebe)
+2019-04-09T13:26:43.7132886+07:00 0HLLSMGBJAPAQ:00000015 [INF] Accessing expired session, Key:"969109a0-d837-7761-0fa8-8cb6de1051bb" (08c5a9e7)
+2019-04-09T13:26:47.9683936+07:00 0HLLSMGBJAPAQ:00000015 [INF] Executed action "NetCoreApp.Controllers.HomeController.Index (NetCoreApp)" in 9272.4336ms (afa2e885)
+2019-04-09T13:26:48.1568000+07:00 0HLLSMGBJAPAQ:00000015 [INF] Request finished in 9335.3976ms 200 text/html; charset=utf-8 (791a596a)
+2019-04-09T13:27:19.1177734+07:00 0HLLSMGBJAPAS:00000014 [INF] Request starting HTTP/1.1 GET http://localhost:44383/client-side/css/grabbing.png   (ca22a1cb)
+2019-04-09T13:27:19.1723863+07:00 0HLLSMGBJAPAS:00000014 [INF] Request finished in 44.279ms 404  (791a596a)
+2019-04-09T13:27:19.3679138+07:00 0HLLSMGBJAPAR:00000016 [INF] Request starting HTTP/1.1 POST http://localhost:44383/Cart/AddCart application/x-www-form-urlencoded; charset=UTF-8 38 (ca22a1cb)
+2019-04-09T13:27:20.1813268+07:00 0HLLSMGBJAPAR:00000016 [INF] Executing action method "NetCoreApp.Controllers.CartController.AddCart (NetCoreApp)" with arguments (["20", "1", "0", "0"]) - ModelState is Valid (ba7f4ac2)
+2019-04-09T13:27:21.6867052+07:00 0HLLSMGBJAPAR:00000016 [INF] Accessing expired session, Key:"969109a0-d837-7761-0fa8-8cb6de1051bb" (08c5a9e7)
+2019-04-09T13:27:22.8326169+07:00 0HLLSMGBJAPAR:00000016 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2019-04-09T13:27:23.0012087+07:00 0HLLSMGBJAPAR:00000016 [INF] Executed action "NetCoreApp.Controllers.CartController.AddCart (NetCoreApp)" in 3382.1272ms (afa2e885)
+2019-04-09T13:27:23.1039390+07:00 0HLLSMGBJAPAR:00000016 [INF] Session started; Key:"969109a0-d837-7761-0fa8-8cb6de1051bb", Id:"210860e9-839a-cbbf-b633-087fe03da131" (1d7cf8c0)
+2019-04-09T13:27:23.3659109+07:00 0HLLSMGBJAPAR:00000016 [INF] Request finished in 3924.6108ms 200 application/json; charset=utf-8 (791a596a)
+2019-04-09T13:27:23.4318947+07:00 0HLLSMGBJAPAQ:00000016 [INF] Request starting HTTP/1.1 GET http://localhost:44383/AjaxContent/HeaderCart   (ca22a1cb)
+2019-04-09T13:27:23.6544772+07:00 0HLLSMGBJAPAQ:00000016 [INF] Executing action method "NetCoreApp.Controllers.AjaxContentController.HeaderCart (NetCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2019-04-09T13:27:23.6991778+07:00 0HLLSMGBJAPAQ:00000016 [INF] Executing ViewComponentResult, running "HeaderCart". (a906d40a)
+2019-04-09T13:27:23.8929207+07:00 0HLLSMGBJAPAQ:00000016 [INF] Executed action "NetCoreApp.Controllers.AjaxContentController.HeaderCart (NetCoreApp)" in 413.0526ms (afa2e885)
+2019-04-09T13:27:23.9426369+07:00 0HLLSMGBJAPAQ:00000016 [INF] Request finished in 501.3971ms 200 text/html; charset=utf-8 (791a596a)
+2019-04-09T13:27:23.9887420+07:00 0HLLSMGBJAPAS:00000015 [INF] Request starting HTTP/1.1 GET http://localhost:44383/client-side/fonts/pe-icon-7-stroke/Pe-icon-7-stroke.woff?d7yf1v   (ca22a1cb)
+2019-04-09T13:27:24.0349738+07:00 0HLLSMGBJAPAS:00000015 [INF] The file "/client-side/fonts/pe-icon-7-stroke/Pe-icon-7-stroke.woff" was not modified (f1f8d725)
+2019-04-09T13:27:24.1259417+07:00 0HLLSMGBJAPAS:00000015 [INF] Request finished in 70.8445ms 304 application/font-woff (791a596a)
+2019-04-09T13:27:27.2941932+07:00 0HLLSMGBJAPAR:00000017 [INF] Request starting HTTP/1.1 GET http://localhost:44383/checkout.html   (ca22a1cb)
+2019-04-09T13:27:27.7632704+07:00 0HLLSMGBJAPAR:00000017 [INF] Executing action method "NetCoreApp.Controllers.CartController.CheckOut (NetCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2019-04-09T13:27:27.8081762+07:00 0HLLSMGBJAPAR:00000017 [INF] Executing RedirectResult, redirecting to "/cart.html". (d98d540e)
+2019-04-09T13:27:27.8441409+07:00 0HLLSMGBJAPAR:00000017 [INF] Executed action "NetCoreApp.Controllers.CartController.CheckOut (NetCoreApp)" in 410.9384ms (afa2e885)
+2019-04-09T13:27:27.9202675+07:00 0HLLSMGBJAPAR:00000017 [INF] Request finished in 584.8441ms 302  (791a596a)
+2019-04-09T13:27:27.9690501+07:00 0HLLSMGBJAPAQ:00000017 [INF] Request starting HTTP/1.1 GET http://localhost:44383/cart.html   (ca22a1cb)
+2019-04-09T13:27:29.3159240+07:00 0HLLSMGBJAPAQ:00000017 [INF] Executing action method "NetCoreApp.Controllers.CartController.Index (NetCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2019-04-09T13:27:31.5713207+07:00 0HLLSMGBJAPAQ:00000017 [INF] Executing ViewResult, running view at path "/Views/Cart/Index.cshtml". (9707eebe)
+2019-04-09T13:27:35.4168038+07:00 0HLLSMGBJAPAQ:00000017 [INF] Executed action "NetCoreApp.Controllers.CartController.Index (NetCoreApp)" in 7384.4897ms (afa2e885)
+2019-04-09T13:27:35.6496097+07:00 0HLLSMGBJAPAQ:00000017 [INF] Request finished in 7500.2437ms 200 text/html; charset=utf-8 (791a596a)
+2019-04-09T13:27:35.7282176+07:00 0HLLSMGBJAPAS:00000016 [INF] Request starting HTTP/1.1 GET http://localhost:44383/client-app/controllers/cart/index.js   (ca22a1cb)
+2019-04-09T13:27:35.7531272+07:00 0HLLSMGBJAPAS:00000016 [INF] The file "/client-app/controllers/cart/index.js" was not modified (f1f8d725)
+2019-04-09T13:27:35.7902184+07:00 0HLLSMGBJAPAS:00000016 [INF] Request finished in 81.1125ms 304 application/javascript (791a596a)
+2019-04-09T13:27:40.6103955+07:00 0HLLSMGBJAPAR:00000018 [INF] Request starting HTTP/1.1 GET http://localhost:44383/Cart/GetColors   (ca22a1cb)
+2019-04-09T13:27:40.6373013+07:00 0HLLSMGBJAPAQ:00000018 [INF] Request starting HTTP/1.1 GET http://localhost:44383/Cart/GetSizes   (ca22a1cb)
+2019-04-09T13:27:40.8196793+07:00 0HLLSMGBJAPAR:00000018 [INF] Executing action method "NetCoreApp.Controllers.CartController.GetColors (NetCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2019-04-09T13:27:40.9618335+07:00 0HLLSMGBJAPAQ:00000018 [INF] Executing action method "NetCoreApp.Controllers.CartController.GetSizes (NetCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2019-04-09T13:27:41.5015822+07:00 0HLLSMGBJAPAR:00000018 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2019-04-09T13:27:41.6302682+07:00 0HLLSMGBJAPAR:00000018 [INF] Executed action "NetCoreApp.Controllers.CartController.GetColors (NetCoreApp)" in 890.8176ms (afa2e885)
+2019-04-09T13:27:41.6630746+07:00 0HLLSMGBJAPAQ:00000018 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2019-04-09T13:27:41.6798960+07:00 0HLLSMGBJAPAR:00000018 [INF] Request finished in 1042.5409ms 200 application/json; charset=utf-8 (791a596a)
+2019-04-09T13:27:41.7190723+07:00 0HLLSMGBJAPAQ:00000018 [INF] Executed action "NetCoreApp.Controllers.CartController.GetSizes (NetCoreApp)" in 897.3197ms (afa2e885)
+2019-04-09T13:27:41.8067094+07:00 0HLLSMGBJAPAQ:00000018 [INF] Request finished in 1109.405ms 200 application/json; charset=utf-8 (791a596a)
+2019-04-09T13:27:43.4139522+07:00 0HLLSMGBJAPAS:00000017 [INF] Request starting HTTP/1.1 GET http://localhost:44383/Cart/GetCart   (ca22a1cb)
+2019-04-09T13:27:43.6184873+07:00 0HLLSMGBJAPAS:00000017 [INF] Executing action method "NetCoreApp.Controllers.CartController.GetCart (NetCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2019-04-09T13:27:43.6629581+07:00 0HLLSMGBJAPAS:00000017 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2019-04-09T13:27:43.7882222+07:00 0HLLSMGBJAPAS:00000017 [INF] Executed action "NetCoreApp.Controllers.CartController.GetCart (NetCoreApp)" in 324.1574ms (afa2e885)
+2019-04-09T13:27:43.8665451+07:00 0HLLSMGBJAPAS:00000017 [INF] Request finished in 406.8588ms 200 application/json; charset=utf-8 (791a596a)
+2019-04-09T13:27:48.2918793+07:00 0HLLSMGBJAPAR:00000019 [INF] Request starting HTTP/1.1 POST http://localhost:44383/Cart/UpdateCart application/x-www-form-urlencoded; charset=UTF-8 38 (ca22a1cb)
+2019-04-09T13:27:48.5242348+07:00 0HLLSMGBJAPAR:00000019 [INF] Executing action method "NetCoreApp.Controllers.CartController.UpdateCart (NetCoreApp)" with arguments (["20", "1", "3", "1"]) - ModelState is Valid (ba7f4ac2)
+2019-04-09T13:27:49.2028270+07:00 0HLLSMGBJAPAR:00000019 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2019-04-09T13:27:49.2296653+07:00 0HLLSMGBJAPAR:00000019 [INF] Executed action "NetCoreApp.Controllers.CartController.UpdateCart (NetCoreApp)" in 894.4993ms (afa2e885)
+2019-04-09T13:27:49.3430934+07:00 0HLLSMGBJAPAR:00000019 [INF] Request finished in 1001.541ms 200 application/json; charset=utf-8 (791a596a)
+2019-04-09T13:27:49.4130345+07:00 0HLLSMGBJAPAQ:00000019 [INF] Request starting HTTP/1.1 GET http://localhost:44383/AjaxContent/HeaderCart   (ca22a1cb)
+2019-04-09T13:27:49.4316199+07:00 0HLLSMGBJAPAS:00000018 [INF] Request starting HTTP/1.1 GET http://localhost:44383/Cart/GetCart   (ca22a1cb)
+2019-04-09T13:27:49.7718552+07:00 0HLLSMGBJAPAQ:00000019 [INF] Executing action method "NetCoreApp.Controllers.AjaxContentController.HeaderCart (NetCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2019-04-09T13:27:49.8346692+07:00 0HLLSMGBJAPAS:00000018 [INF] Executing action method "NetCoreApp.Controllers.CartController.GetCart (NetCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2019-04-09T13:27:49.8593482+07:00 0HLLSMGBJAPAQ:00000019 [INF] Executing ViewComponentResult, running "HeaderCart". (a906d40a)
+2019-04-09T13:27:49.9144660+07:00 0HLLSMGBJAPAS:00000018 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2019-04-09T13:27:49.9869397+07:00 0HLLSMGBJAPAQ:00000019 [INF] Executed action "NetCoreApp.Controllers.AjaxContentController.HeaderCart (NetCoreApp)" in 456.0819ms (afa2e885)
+2019-04-09T13:27:50.0752644+07:00 0HLLSMGBJAPAS:00000018 [INF] Executed action "NetCoreApp.Controllers.CartController.GetCart (NetCoreApp)" in 482.8002ms (afa2e885)
+2019-04-09T13:27:50.2884924+07:00 0HLLSMGBJAPAS:00000018 [INF] Request finished in 724.9503ms 200 application/json; charset=utf-8 (791a596a)
+2019-04-09T13:27:50.4020939+07:00 0HLLSMGBJAPAQ:00000019 [INF] Request finished in 652.2323ms 200 text/html; charset=utf-8 (791a596a)
+2019-04-09T13:27:52.1792698+07:00 0HLLSMGBJAPAR:0000001A [INF] Request starting HTTP/1.1 POST http://localhost:44383/Cart/UpdateCart application/x-www-form-urlencoded; charset=UTF-8 38 (ca22a1cb)
+2019-04-09T13:27:53.8370325+07:00 0HLLSMGBJAPAR:0000001A [INF] Executing action method "NetCoreApp.Controllers.CartController.UpdateCart (NetCoreApp)" with arguments (["20", "1", "3", "4"]) - ModelState is Valid (ba7f4ac2)
+2019-04-09T13:27:55.1976113+07:00 0HLLSMGBJAPAQ:0000001A [INF] Request starting HTTP/1.1 GET http://localhost:44383/checkout.html   (ca22a1cb)
+2019-04-09T13:27:56.3860308+07:00 0HLLSMGBJAPAQ:0000001A [INF] Executing action method "NetCoreApp.Controllers.CartController.CheckOut (NetCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2019-04-09T13:27:56.8868445+07:00 0HLLSMGBJAPAR:0000001A [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2019-04-09T13:27:57.1806707+07:00 0HLLSMGBJAPAR:0000001A [INF] Executed action "NetCoreApp.Controllers.CartController.UpdateCart (NetCoreApp)" in 4705.5213ms (afa2e885)
+2019-04-09T13:27:57.2301745+07:00 0HLLSMGBJAPAR:0000001A [INF] Request finished in 5242.4122ms 200 application/json; charset=utf-8 (791a596a)
+2019-04-09T13:27:59.9657831+07:00 0HLLSMGBJAPAQ:0000001A [INF] Executing ViewResult, running view at path "/Views/Cart/CheckOut.cshtml". (9707eebe)
+2019-04-09T13:28:03.5675313+07:00 0HLLSMGBJAPAS:00000019 [INF] Request starting HTTP/1.1 GET http://localhost:44383/AjaxContent/HeaderCart   (ca22a1cb)
+2019-04-09T13:28:04.0479994+07:00 0HLLSMGBJAPAR:0000001B [INF] Request starting HTTP/1.1 GET http://localhost:44383/Cart/GetCart   (ca22a1cb)
+2019-04-09T13:28:04.4106151+07:00 0HLLSMGBJAPAS:00000019 [INF] Executing action method "NetCoreApp.Controllers.AjaxContentController.HeaderCart (NetCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2019-04-09T13:28:04.8952086+07:00 0HLLSMGBJAPAR:0000001B [INF] Executing action method "NetCoreApp.Controllers.CartController.GetCart (NetCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2019-04-09T13:28:05.6017729+07:00 0HLLSMGBJAPAS:00000019 [INF] Executing ViewComponentResult, running "HeaderCart". (a906d40a)
+2019-04-09T13:28:05.7181040+07:00 0HLLSMGBJAPAS:00000019 [INF] Executed action "NetCoreApp.Controllers.AjaxContentController.HeaderCart (NetCoreApp)" in 2026.693ms (afa2e885)
+2019-04-09T13:28:05.8354452+07:00 0HLLSMGBJAPAR:0000001B [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2019-04-09T13:28:05.8908231+07:00 0HLLSMGBJAPAR:0000001B [INF] Executed action "NetCoreApp.Controllers.CartController.GetCart (NetCoreApp)" in 1781.3751ms (afa2e885)
+2019-04-09T13:28:05.9554829+07:00 0HLLSMGBJAPAS:00000019 [INF] Request finished in 2410.0984ms 200 text/html; charset=utf-8 (791a596a)
+2019-04-09T13:28:06.0213474+07:00 0HLLSMGBJAPAR:0000001B [INF] Request finished in 2555.2462ms 200 application/json; charset=utf-8 (791a596a)
+2019-04-09T13:28:08.6441213+07:00 0HLLSMGBJAPAQ:0000001A [INF] Executed action "NetCoreApp.Controllers.CartController.CheckOut (NetCoreApp)" in 13093.6691ms (afa2e885)
+2019-04-09T13:28:08.8887909+07:00 0HLLSMGBJAPAQ:0000001A [INF] Request finished in 14807.0331ms 200 text/html; charset=utf-8 (791a596a)
+2019-04-09T13:28:39.6296548+07:00 0HLLSMGBJAPAS:0000001A [INF] Request starting HTTP/1.1 POST http://localhost:44383/checkout.html application/x-www-form-urlencoded 663 (ca22a1cb)
+2019-04-09T13:28:39.9300021+07:00 0HLLSMGBJAPAS:0000001A [INF] Executing action method "NetCoreApp.Controllers.CartController.CheckOut (NetCoreApp)" with arguments (["NetCoreApp.Models.CheckoutViewModel"]) - ModelState is Valid (ba7f4ac2)
+2019-04-09T13:29:58.4721399+07:00 0HLLSMGBJAPAT:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44383/client-side/css/bootstrap.min.css.map   (ca22a1cb)
+2019-04-09T13:30:01.6085308+07:00 0HLLSMGBJAPAT:00000001 [INF] Request finished in 3287.9299ms 404  (791a596a)
+2019-04-09T13:31:02.5477087+07:00 0HLLSMGBJAPAS:0000001A [INF] Executing ViewResult, running view at path "/Views/Cart/CheckOut.cshtml". (9707eebe)
+2019-04-09T13:31:09.2743497+07:00 0HLLSMGBJAPAS:0000001A [INF] Executed action "NetCoreApp.Controllers.CartController.CheckOut (NetCoreApp)" in 147898.0239ms (afa2e885)
+2019-04-09T13:31:10.3429166+07:00 0HLLSMGBJAPAS:0000001A [INF] Request finished in 149672.9238ms 200 text/html; charset=utf-8 (791a596a)
+2019-04-09T13:31:15.3236691+07:00 0HLLSMGBJAPAS:0000001B [INF] Request starting HTTP/1.1 GET http://localhost:44383/client-side/css/bootstrap.min.css.map   (ca22a1cb)
+2019-04-09T13:31:15.3946653+07:00 0HLLSMGBJAPAS:0000001B [INF] Request finished in 133.1872ms 404  (791a596a)
+2019-04-09T13:41:09.4428976+07:00  [INF] Entity Framework Core "2.0.0-rtm-26452" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=NetCoreApp.Data.EF " (9958f5bb)
+2019-04-09T13:41:13.4747937+07:00  [INF] Executed DbCommand ("570"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppRoles] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2019-04-09T13:41:14.9584461+07:00  [INF] Executed DbCommand ("376"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppUsers] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2019-04-09T13:41:15.6800077+07:00  [INF] Executed DbCommand ("505"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Functions] AS [f]" (0723d8ff)
+2019-04-09T13:41:16.5893346+07:00  [INF] Executed DbCommand ("485"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Footers] AS [x]
+WHERE [x].[Id] = 'DefaultFooterId'" (0723d8ff)
+2019-04-09T13:41:17.2617105+07:00  [INF] Executed DbCommand ("359"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Colors] AS [c]" (0723d8ff)
+2019-04-09T13:41:17.9655862+07:00  [INF] Executed DbCommand ("599"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [AdvertisementPages] AS [a]" (0723d8ff)
+2019-04-09T13:41:18.1295268+07:00  [INF] Executed DbCommand ("96"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Slides] AS [s]" (0723d8ff)
+2019-04-09T13:41:18.4634403+07:00  [INF] Executed DbCommand ("240"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Sizes] AS [s]" (0723d8ff)
+2019-04-09T13:41:18.6197067+07:00  [INF] Executed DbCommand ("95"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [ProductCategories] AS [p])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2019-04-09T13:41:18.7941461+07:00  [INF] Executed DbCommand ("105"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeTitle')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2019-04-09T13:41:19.2043878+07:00  [INF] Executed DbCommand ("233"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaKeyword')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2019-04-09T13:41:19.7072084+07:00  [INF] Executed DbCommand ("365"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaDescription')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2019-04-09T13:41:22.5061873+07:00 0HLLSMPG6JVOJ:00000001 [INF] Request starting HTTP/1.1 DEBUG http://localhost:15649/  0 (ca22a1cb)
+2019-04-09T13:41:22.5424365+07:00 0HLLSMPG6JVOI:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44383/   (ca22a1cb)
+2019-04-09T13:41:22.8259217+07:00 0HLLSMPG6JVOJ:00000001 [INF] Request finished in 1167.852ms 200  (791a596a)
+2019-04-09T13:41:25.6206098+07:00 0HLLSMPG6JVOI:00000001 [INF] Executing action method "NetCoreApp.Controllers.HomeController.Index (NetCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2019-04-09T13:41:53.6421084+07:00 0HLLSMPG6JVOI:00000001 [INF] Executing ViewResult, running view at path "/Views/Home/Index.cshtml". (9707eebe)
+2019-04-09T13:42:05.6669352+07:00 0HLLSMPG6JVOI:00000001 [INF] Accessing expired session, Key:"969109a0-d837-7761-0fa8-8cb6de1051bb" (08c5a9e7)
+2019-04-09T13:42:14.7499992+07:00 0HLLSMPG6JVOI:00000001 [INF] Executed action "NetCoreApp.Controllers.HomeController.Index (NetCoreApp)" in 49797.1046ms (afa2e885)
+2019-04-09T13:42:14.8448277+07:00 0HLLSMPG6JVOI:00000001 [INF] Request finished in 53254.8484ms 200 text/html; charset=utf-8 (791a596a)
+2019-04-09T13:42:25.2273841+07:00 0HLLSMPG6JVOI:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44383/client-side/~/client-side/images/banner-left.jpg   (ca22a1cb)
+2019-04-09T13:42:25.2708938+07:00 0HLLSMPG6JVOI:00000002 [INF] Request finished in 66.5829ms 404  (791a596a)
+2019-04-09T13:42:25.6242509+07:00 0HLLSMPG6JVOI:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44383/client-side/~/client-side/~/client-side/images/sub1.jpg   (ca22a1cb)
+2019-04-09T13:42:25.9033486+07:00 0HLLSMPG6JVOI:00000003 [INF] Request finished in 130.857ms 404  (791a596a)
+2019-04-09T13:42:35.2749458+07:00 0HLLSMPG6JVOI:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44383/   (ca22a1cb)
+2019-04-09T13:42:35.4714952+07:00 0HLLSMPG6JVOI:00000004 [INF] Executing action method "NetCoreApp.Controllers.HomeController.Index (NetCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2019-04-09T13:42:37.5884544+07:00 0HLLSMPG6JVOI:00000004 [INF] Executing ViewResult, running view at path "/Views/Home/Index.cshtml". (9707eebe)
+2019-04-09T13:42:39.1077396+07:00 0HLLSMPG6JVOI:00000004 [INF] Accessing expired session, Key:"969109a0-d837-7761-0fa8-8cb6de1051bb" (08c5a9e7)
+2019-04-09T13:42:42.3130247+07:00 0HLLSMPG6JVOI:00000004 [INF] Executed action "NetCoreApp.Controllers.HomeController.Index (NetCoreApp)" in 7013.0634ms (afa2e885)
+2019-04-09T13:42:42.3980167+07:00 0HLLSMPG6JVOI:00000004 [INF] Request finished in 7105.8866ms 200 text/html; charset=utf-8 (791a596a)
+2019-04-09T13:42:58.4483237+07:00 0HLLSMPG6JVOI:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:44383/client-side/css/grabbing.png   (ca22a1cb)
+2019-04-09T13:42:58.5164300+07:00 0HLLSMPG6JVOI:00000005 [INF] Request finished in 77.3407ms 404  (791a596a)
+2019-04-09T13:42:58.6008007+07:00 0HLLSMPG6JVOI:00000006 [INF] Request starting HTTP/1.1 POST http://localhost:44383/Cart/AddCart application/x-www-form-urlencoded; charset=UTF-8 38 (ca22a1cb)
+2019-04-09T13:42:58.7122081+07:00 0HLLSMPG6JVOI:00000006 [INF] Executed action "NetCoreApp.Controllers.CartController.AddCart (NetCoreApp)" in 11.7261ms (afa2e885)
+2019-04-09T13:42:59.5045456+07:00 0HLLSMPG6JVOI:00000006 [ERR] An unhandled exception has occurred while executing the request (cf926119)
+System.InvalidOperationException: Unable to resolve service for type 'AutoMapper.Configuration.IConfiguration' while attempting to activate 'NetCoreApp.Controllers.CartController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass4_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeInnerFilterAsync>d__14.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextResourceFilter>d__22.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeFilterPipelineAsync>d__17.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeAsync>d__15.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.<Invoke>d__9.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Session.SessionMiddleware.<Invoke>d__9.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.MigrationsEndPointMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+2019-04-09T13:43:00.2322962+07:00 0HLLSMPG6JVOI:00000006 [INF] Request finished in 1599.3421ms 500 text/html; charset=utf-8 (791a596a)
+2019-04-09T13:43:10.8681987+07:00 0HLLSMPG6JVOI:00000007 [INF] Request starting HTTP/1.1 POST http://localhost:44383/Cart/AddCart application/x-www-form-urlencoded; charset=UTF-8 37 (ca22a1cb)
+2019-04-09T13:43:10.8952181+07:00 0HLLSMPG6JVOI:00000007 [INF] Executed action "NetCoreApp.Controllers.CartController.AddCart (NetCoreApp)" in 7.0389ms (afa2e885)
+2019-04-09T13:43:11.1367942+07:00 0HLLSMPG6JVOI:00000007 [ERR] An unhandled exception has occurred while executing the request (cf926119)
+System.InvalidOperationException: Unable to resolve service for type 'AutoMapper.Configuration.IConfiguration' while attempting to activate 'NetCoreApp.Controllers.CartController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass4_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeInnerFilterAsync>d__14.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextResourceFilter>d__22.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeFilterPipelineAsync>d__17.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeAsync>d__15.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.<Invoke>d__9.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Session.SessionMiddleware.<Invoke>d__9.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.MigrationsEndPointMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+2019-04-09T13:43:11.4514800+07:00 0HLLSMPG6JVOI:00000007 [INF] Request finished in 537.588ms 500 text/html; charset=utf-8 (791a596a)
+2019-04-09T13:43:19.0706021+07:00 0HLLSMPG6JVOI:00000008 [INF] Request starting HTTP/1.1 POST http://localhost:44383/Cart/AddCart application/x-www-form-urlencoded; charset=UTF-8 37 (ca22a1cb)
+2019-04-09T13:43:19.1048276+07:00 0HLLSMPG6JVOI:00000008 [INF] Executed action "NetCoreApp.Controllers.CartController.AddCart (NetCoreApp)" in 5.1616ms (afa2e885)
+2019-04-09T13:43:19.5058427+07:00 0HLLSMPG6JVOI:00000008 [ERR] An unhandled exception has occurred while executing the request (cf926119)
+System.InvalidOperationException: Unable to resolve service for type 'AutoMapper.Configuration.IConfiguration' while attempting to activate 'NetCoreApp.Controllers.CartController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass4_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeInnerFilterAsync>d__14.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextResourceFilter>d__22.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeFilterPipelineAsync>d__17.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeAsync>d__15.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.<Invoke>d__9.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Session.SessionMiddleware.<Invoke>d__9.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.MigrationsEndPointMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+2019-04-09T13:43:20.9294459+07:00 0HLLSMPG6JVOI:00000008 [INF] Request finished in 1764.0452ms 500 text/html; charset=utf-8 (791a596a)
+2019-04-09T13:43:22.5252737+07:00 0HLLSMPG6JVOI:00000009 [INF] Request starting HTTP/1.1 POST http://localhost:44383/Cart/AddCart application/x-www-form-urlencoded; charset=UTF-8 37 (ca22a1cb)
+2019-04-09T13:43:25.9058232+07:00 0HLLSMPG6JVOI:00000009 [INF] Executed action "NetCoreApp.Controllers.CartController.AddCart (NetCoreApp)" in 767.6903ms (afa2e885)
+2019-04-09T13:43:31.5547051+07:00 0HLLSMPG6JVOI:00000009 [ERR] An unhandled exception has occurred while executing the request (cf926119)
+System.InvalidOperationException: Unable to resolve service for type 'AutoMapper.Configuration.IConfiguration' while attempting to activate 'NetCoreApp.Controllers.CartController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass4_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeInnerFilterAsync>d__14.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextResourceFilter>d__22.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeFilterPipelineAsync>d__17.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeAsync>d__15.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.<Invoke>d__9.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Session.SessionMiddleware.<Invoke>d__9.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.MigrationsEndPointMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+2019-04-09T13:43:33.3120058+07:00 0HLLSMPG6JVOK:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44383/client-side/css/bootstrap.min.css.map   (ca22a1cb)
+2019-04-09T13:43:34.8671214+07:00 0HLLSMPG6JVOK:00000001 [INF] Request finished in 1023.522ms 404  (791a596a)
+2019-04-09T13:43:35.7448041+07:00 0HLLSMPG6JVOI:00000009 [INF] Request finished in 13458.0994ms 500 text/html; charset=utf-8 (791a596a)
+2019-04-09T13:43:54.7167484+07:00 0HLLSMPG6JVOK:00000002 [INF] Request starting HTTP/1.1 POST http://localhost:44383/Cart/AddCart application/x-www-form-urlencoded; charset=UTF-8 37 (ca22a1cb)
+2019-04-09T13:43:54.7477899+07:00 0HLLSMPG6JVOK:00000002 [INF] Executed action "NetCoreApp.Controllers.CartController.AddCart (NetCoreApp)" in 5.5302ms (afa2e885)
+2019-04-09T13:43:55.3014181+07:00 0HLLSMPG6JVOK:00000002 [ERR] An unhandled exception has occurred while executing the request (cf926119)
+System.InvalidOperationException: Unable to resolve service for type 'AutoMapper.Configuration.IConfiguration' while attempting to activate 'NetCoreApp.Controllers.CartController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass4_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeInnerFilterAsync>d__14.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextResourceFilter>d__22.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeFilterPipelineAsync>d__17.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeAsync>d__15.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.<Invoke>d__9.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Session.SessionMiddleware.<Invoke>d__9.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.MigrationsEndPointMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+2019-04-09T13:43:56.3924236+07:00 0HLLSMPG6JVOK:00000002 [INF] Request finished in 1535.3056ms 500 text/html; charset=utf-8 (791a596a)
+2019-04-09T13:44:01.1883515+07:00 0HLLSMPG6JVOI:0000000A [INF] Request starting HTTP/1.1 POST http://localhost:44383/Cart/AddCart application/x-www-form-urlencoded; charset=UTF-8 37 (ca22a1cb)
+2019-04-09T13:44:01.2303103+07:00 0HLLSMPG6JVOI:0000000A [INF] Executed action "NetCoreApp.Controllers.CartController.AddCart (NetCoreApp)" in 10.665ms (afa2e885)
+2019-04-09T13:44:03.3596421+07:00 0HLLSMPG6JVOI:0000000A [ERR] An unhandled exception has occurred while executing the request (cf926119)
+System.InvalidOperationException: Unable to resolve service for type 'AutoMapper.Configuration.IConfiguration' while attempting to activate 'NetCoreApp.Controllers.CartController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass4_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeInnerFilterAsync>d__14.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextResourceFilter>d__22.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeFilterPipelineAsync>d__17.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeAsync>d__15.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.<Invoke>d__9.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Session.SessionMiddleware.<Invoke>d__9.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.MigrationsEndPointMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+2019-04-09T13:44:04.4101075+07:00 0HLLSMPG6JVOI:0000000A [INF] Request finished in 3086.4252ms 500 text/html; charset=utf-8 (791a596a)
+2019-04-09T13:44:06.6418590+07:00 0HLLSMPG6JVOK:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44383/   (ca22a1cb)
+2019-04-09T13:44:08.1224897+07:00 0HLLSMPG6JVOK:00000003 [INF] Executing action method "NetCoreApp.Controllers.HomeController.Index (NetCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2019-04-09T13:44:15.9960226+07:00 0HLLSMPG6JVOK:00000003 [INF] Executing ViewResult, running view at path "/Views/Home/Index.cshtml". (9707eebe)
+2019-04-09T13:44:19.5136604+07:00 0HLLSMPG6JVOK:00000003 [INF] Accessing expired session, Key:"969109a0-d837-7761-0fa8-8cb6de1051bb" (08c5a9e7)
+2019-04-09T13:44:24.2755990+07:00 0HLLSMPG6JVOK:00000003 [INF] Executed action "NetCoreApp.Controllers.HomeController.Index (NetCoreApp)" in 17553.9507ms (afa2e885)
+2019-04-09T13:44:24.4096929+07:00 0HLLSMPG6JVOK:00000003 [INF] Request finished in 17745.9469ms 200 text/html; charset=utf-8 (791a596a)
+2019-04-09T13:44:25.0993956+07:00 0HLLSMPG6JVOI:0000000B [INF] Request starting HTTP/1.1 GET http://localhost:44383/client-side/~/client-side/images/banner-left.jpg   (ca22a1cb)
+2019-04-09T13:44:25.1836822+07:00 0HLLSMPG6JVOK:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44383/client-side/~/client-side/~/client-side/images/sub1.jpg   (ca22a1cb)
+2019-04-09T13:44:25.2941470+07:00 0HLLSMPG6JVOI:0000000B [INF] Request finished in 425.2623ms 404  (791a596a)
+2019-04-09T13:44:25.5220017+07:00 0HLLSMPG6JVOK:00000004 [INF] Request finished in 445.379ms 404  (791a596a)
+2019-04-09T13:44:30.0912205+07:00 0HLLSMPG6JVOI:0000000C [INF] Request starting HTTP/1.1 GET http://localhost:44383/client-side/css/bootstrap.min.css.map   (ca22a1cb)
+2019-04-09T13:44:30.2097211+07:00 0HLLSMPG6JVOI:0000000C [INF] Request finished in 46.2456ms 404  (791a596a)
+2019-04-09T13:44:30.8358076+07:00 0HLLSMPG6JVOK:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:44383/   (ca22a1cb)
+2019-04-09T13:44:33.7180085+07:00 0HLLSMPG6JVOK:00000005 [INF] Executing action method "NetCoreApp.Controllers.HomeController.Index (NetCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2019-04-09T13:44:40.2529067+07:00 0HLLSMPG6JVOI:0000000D [INF] Request starting HTTP/1.1 GET http://localhost:44383/client-side/css/grabbing.png   (ca22a1cb)
+2019-04-09T13:44:40.8306787+07:00 0HLLSMPG6JVOL:00000001 [INF] Request starting HTTP/1.1 POST http://localhost:44383/Cart/AddCart application/x-www-form-urlencoded; charset=UTF-8 37 (ca22a1cb)
+2019-04-09T13:44:41.3045520+07:00 0HLLSMPG6JVOI:0000000D [INF] Request finished in 163.6661ms 404  (791a596a)
+2019-04-09T13:44:42.0145157+07:00 0HLLSMPG6JVOL:00000001 [INF] Executed action "NetCoreApp.Controllers.CartController.AddCart (NetCoreApp)" in 437.4021ms (afa2e885)
+2019-04-09T13:44:42.7092563+07:00 0HLLSMPG6JVOK:00000005 [INF] Executing ViewResult, running view at path "/Views/Home/Index.cshtml". (9707eebe)
+2019-04-09T13:44:44.7764341+07:00 0HLLSMPG6JVOL:00000001 [ERR] An unhandled exception has occurred while executing the request (cf926119)
+System.InvalidOperationException: Unable to resolve service for type 'AutoMapper.Configuration.IConfiguration' while attempting to activate 'NetCoreApp.Controllers.CartController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass4_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeInnerFilterAsync>d__14.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextResourceFilter>d__22.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeFilterPipelineAsync>d__17.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeAsync>d__15.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.<Invoke>d__9.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Session.SessionMiddleware.<Invoke>d__9.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.MigrationsEndPointMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+2019-04-09T13:44:45.4094794+07:00 0HLLSMPG6JVOK:00000005 [INF] Accessing expired session, Key:"969109a0-d837-7761-0fa8-8cb6de1051bb" (08c5a9e7)
+2019-04-09T13:44:49.7849187+07:00 0HLLSMPG6JVOL:00000001 [INF] Request finished in 9554.7461ms 500 text/html; charset=utf-8 (791a596a)
+2019-04-09T13:44:50.8546279+07:00 0HLLSMPG6JVOK:00000005 [INF] Executed action "NetCoreApp.Controllers.HomeController.Index (NetCoreApp)" in 19940.5937ms (afa2e885)
+2019-04-09T13:44:50.9740337+07:00 0HLLSMPG6JVOK:00000005 [INF] Request finished in 20437.9752ms 200 text/html; charset=utf-8 (791a596a)
+2019-04-09T13:45:06.2984244+07:00 0HLLSMPG6JVOI:0000000E [INF] Request starting HTTP/1.1 GET http://localhost:44383/favicon.ico   (ca22a1cb)
+2019-04-09T13:45:06.6266793+07:00 0HLLSMPG6JVOI:0000000E [INF] Sending file. Request path: '"/favicon.ico"'. Physical path: '"D:\NetCore\NetCoreApp\NetCoreApp\wwwroot\favicon.ico"' (27b0a520)
+2019-04-09T13:45:06.9421569+07:00 0HLLSMPG6JVOI:0000000E [INF] Request finished in 482.1118ms 200 image/x-icon (791a596a)
+2019-04-09T13:45:15.5990563+07:00 0HLLSMPG6JVOL:00000002 [INF] Request starting HTTP/1.1 POST http://localhost:44383/Cart/AddCart application/x-www-form-urlencoded; charset=UTF-8 37 (ca22a1cb)
+2019-04-09T13:45:15.6280593+07:00 0HLLSMPG6JVOL:00000002 [INF] Executed action "NetCoreApp.Controllers.CartController.AddCart (NetCoreApp)" in 4.2837ms (afa2e885)
+2019-04-09T13:45:15.8949919+07:00 0HLLSMPG6JVOK:00000006 [INF] Request starting HTTP/1.1 POST http://localhost:44383/Cart/AddCart application/x-www-form-urlencoded; charset=UTF-8 37 (ca22a1cb)
+2019-04-09T13:45:16.1047944+07:00 0HLLSMPG6JVOK:00000006 [INF] Executed action "NetCoreApp.Controllers.CartController.AddCart (NetCoreApp)" in 6.8127ms (afa2e885)
+2019-04-09T13:45:16.2055893+07:00 0HLLSMPG6JVOL:00000002 [ERR] An unhandled exception has occurred while executing the request (cf926119)
+System.InvalidOperationException: Unable to resolve service for type 'AutoMapper.Configuration.IConfiguration' while attempting to activate 'NetCoreApp.Controllers.CartController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass4_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeInnerFilterAsync>d__14.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextResourceFilter>d__22.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeFilterPipelineAsync>d__17.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeAsync>d__15.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.<Invoke>d__9.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Session.SessionMiddleware.<Invoke>d__9.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.MigrationsEndPointMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+2019-04-09T13:45:17.2163713+07:00 0HLLSMPG6JVOK:00000006 [ERR] An unhandled exception has occurred while executing the request (cf926119)
+System.InvalidOperationException: Unable to resolve service for type 'AutoMapper.Configuration.IConfiguration' while attempting to activate 'NetCoreApp.Controllers.CartController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass4_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeInnerFilterAsync>d__14.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextResourceFilter>d__22.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeFilterPipelineAsync>d__17.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeAsync>d__15.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.<Invoke>d__9.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Session.SessionMiddleware.<Invoke>d__9.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.MigrationsEndPointMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+2019-04-09T13:45:17.4229096+07:00 0HLLSMPG6JVOL:00000002 [INF] Request finished in 1411.9829ms 500 text/html; charset=utf-8 (791a596a)
+2019-04-09T13:45:18.5647302+07:00 0HLLSMPG6JVOK:00000006 [INF] Request finished in 2265.1231ms 500 text/html; charset=utf-8 (791a596a)
+2019-04-09T13:45:21.2090560+07:00 0HLLSMPG6JVOI:0000000F [INF] Request starting HTTP/1.1 POST http://localhost:44383/Cart/AddCart application/x-www-form-urlencoded; charset=UTF-8 37 (ca22a1cb)
+2019-04-09T13:45:21.3389858+07:00 0HLLSMPG6JVOI:0000000F [INF] Executed action "NetCoreApp.Controllers.CartController.AddCart (NetCoreApp)" in 6.7527ms (afa2e885)
+2019-04-09T13:45:22.2307157+07:00 0HLLSMPG6JVOI:0000000F [ERR] An unhandled exception has occurred while executing the request (cf926119)
+System.InvalidOperationException: Unable to resolve service for type 'AutoMapper.Configuration.IConfiguration' while attempting to activate 'NetCoreApp.Controllers.CartController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass4_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeInnerFilterAsync>d__14.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextResourceFilter>d__22.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeFilterPipelineAsync>d__17.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeAsync>d__15.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.<Invoke>d__9.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Session.SessionMiddleware.<Invoke>d__9.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.MigrationsEndPointMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+2019-04-09T13:45:22.2991653+07:00 0HLLSMPG6JVOL:00000003 [INF] Request starting HTTP/1.1 POST http://localhost:44383/Cart/AddCart application/x-www-form-urlencoded; charset=UTF-8 37 (ca22a1cb)
+2019-04-09T13:45:22.8359359+07:00 0HLLSMPG6JVOK:00000007 [INF] Request starting HTTP/1.1 POST http://localhost:44383/Cart/AddCart application/x-www-form-urlencoded; charset=UTF-8 37 (ca22a1cb)
+2019-04-09T13:45:22.9006028+07:00 0HLLSMPG6JVOL:00000003 [INF] Executed action "NetCoreApp.Controllers.CartController.AddCart (NetCoreApp)" in 150.0255ms (afa2e885)
+2019-04-09T13:45:23.7177968+07:00 0HLLSMPG6JVOM:00000001 [INF] Request starting HTTP/1.1 POST http://localhost:44383/Cart/AddCart application/x-www-form-urlencoded; charset=UTF-8 37 (ca22a1cb)
+2019-04-09T13:45:26.5549568+07:00 0HLLSMPG6JVON:00000001 [INF] Request starting HTTP/1.1 POST http://localhost:44383/Cart/AddCart application/x-www-form-urlencoded; charset=UTF-8 37 (ca22a1cb)
+2019-04-09T13:45:26.7527150+07:00 0HLLSMPG6JVOK:00000007 [INF] Executed action "NetCoreApp.Controllers.CartController.AddCart (NetCoreApp)" in 331.6137ms (afa2e885)
+2019-04-09T13:45:27.4167790+07:00 0HLLSMPG6JVOM:00000001 [INF] Executed action "NetCoreApp.Controllers.CartController.AddCart (NetCoreApp)" in 2157.9472ms (afa2e885)
+2019-04-09T13:47:59.4988562+07:00  [INF] Entity Framework Core "2.0.0-rtm-26452" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=NetCoreApp.Data.EF " (9958f5bb)
+2019-04-09T13:48:02.2332160+07:00  [INF] Executed DbCommand ("772"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppRoles] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2019-04-09T13:48:02.4123370+07:00  [INF] Executed DbCommand ("60"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppUsers] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2019-04-09T13:48:02.5652615+07:00  [INF] Executed DbCommand ("62"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Functions] AS [f]" (0723d8ff)
+2019-04-09T13:48:02.8583961+07:00  [INF] Executed DbCommand ("133"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Footers] AS [x]
+WHERE [x].[Id] = 'DefaultFooterId'" (0723d8ff)
+2019-04-09T13:48:03.0630907+07:00  [INF] Executed DbCommand ("123"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Colors] AS [c]" (0723d8ff)
+2019-04-09T13:48:03.2022191+07:00  [INF] Executed DbCommand ("67"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [AdvertisementPages] AS [a]" (0723d8ff)
+2019-04-09T13:48:03.6483643+07:00  [INF] Executed DbCommand ("267"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Slides] AS [s]" (0723d8ff)
+2019-04-09T13:48:04.0529384+07:00  [INF] Executed DbCommand ("347"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Sizes] AS [s]" (0723d8ff)
+2019-04-09T13:48:04.5436583+07:00  [INF] Executed DbCommand ("315"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [ProductCategories] AS [p])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2019-04-09T13:48:05.4050951+07:00  [INF] Executed DbCommand ("523"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeTitle')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2019-04-09T13:48:05.6400243+07:00  [INF] Executed DbCommand ("181"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaKeyword')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2019-04-09T13:48:06.4486672+07:00  [INF] Executed DbCommand ("466"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaDescription')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2019-04-09T13:48:09.9443311+07:00 0HLLSMT9MCVG8:00000001 [INF] Request starting HTTP/1.1 DEBUG http://localhost:15649/  0 (ca22a1cb)
+2019-04-09T13:48:09.9443303+07:00 0HLLSMT9MCVG7:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44383/   (ca22a1cb)
+2019-04-09T13:48:10.1913823+07:00 0HLLSMT9MCVG8:00000001 [INF] Request finished in 439.9777ms 200  (791a596a)
+2019-04-09T13:48:12.8927708+07:00 0HLLSMT9MCVG7:00000001 [INF] Executing action method "NetCoreApp.Controllers.HomeController.Index (NetCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2019-04-09T13:48:38.6370877+07:00 0HLLSMT9MCVG7:00000001 [INF] Executing ViewResult, running view at path "/Views/Home/Index.cshtml". (9707eebe)
+2019-04-09T13:48:49.2443022+07:00 0HLLSMT9MCVG7:00000001 [INF] Accessing expired session, Key:"969109a0-d837-7761-0fa8-8cb6de1051bb" (08c5a9e7)
+2019-04-09T13:49:00.2758063+07:00 0HLLSMT9MCVG7:00000001 [INF] Executed action "NetCoreApp.Controllers.HomeController.Index (NetCoreApp)" in 47528.3538ms (afa2e885)
+2019-04-09T13:49:00.5913079+07:00 0HLLSMT9MCVG7:00000001 [INF] Request finished in 50647.4726ms 200 text/html; charset=utf-8 (791a596a)
+2019-04-09T13:49:02.4764405+07:00 0HLLSMT9MCVG8:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44383/client-side/~/client-side/images/banner-left.jpg   (ca22a1cb)
+2019-04-09T13:49:03.1324723+07:00 0HLLSMT9MCVG7:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44383/client-side/~/client-side/~/client-side/images/sub1.jpg   (ca22a1cb)
+2019-04-09T13:49:03.3564171+07:00 0HLLSMT9MCVG8:00000002 [INF] Request finished in 693.9432ms 404  (791a596a)
+2019-04-09T13:49:03.5218174+07:00 0HLLSMT9MCVG7:00000002 [INF] Request finished in 858.1044ms 404  (791a596a)
+2019-04-09T13:49:07.5619268+07:00 0HLLSMT9MCVG8:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44383/   (ca22a1cb)
+2019-04-09T13:49:07.9351917+07:00 0HLLSMT9MCVG8:00000003 [INF] Executing action method "NetCoreApp.Controllers.HomeController.Index (NetCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2019-04-09T13:49:11.1290641+07:00 0HLLSMT9MCVG8:00000003 [INF] Executing ViewResult, running view at path "/Views/Home/Index.cshtml". (9707eebe)
+2019-04-09T13:49:12.9929160+07:00 0HLLSMT9MCVG8:00000003 [INF] Accessing expired session, Key:"969109a0-d837-7761-0fa8-8cb6de1051bb" (08c5a9e7)
+2019-04-09T13:49:17.4705989+07:00 0HLLSMT9MCVG8:00000003 [INF] Executed action "NetCoreApp.Controllers.HomeController.Index (NetCoreApp)" in 9802.7648ms (afa2e885)
+2019-04-09T13:49:17.6349542+07:00 0HLLSMT9MCVG8:00000003 [INF] Request finished in 9939.5256ms 200 text/html; charset=utf-8 (791a596a)
+2019-04-09T13:49:20.8163840+07:00 0HLLSMT9MCVG7:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44383/client-side/css/grabbing.png   (ca22a1cb)
+2019-04-09T13:49:20.9262703+07:00 0HLLSMT9MCVG7:00000003 [INF] Request finished in 65.4196ms 404  (791a596a)
+2019-04-09T13:49:20.9864932+07:00 0HLLSMT9MCVG7:00000004 [INF] Request starting HTTP/1.1 POST http://localhost:44383/Cart/AddCart application/x-www-form-urlencoded; charset=UTF-8 37 (ca22a1cb)
+2019-04-09T13:49:21.0839952+07:00 0HLLSMT9MCVG7:00000004 [INF] Executed action "NetCoreApp.Controllers.CartController.AddCart (NetCoreApp)" in 6.9339ms (afa2e885)
+2019-04-09T13:49:21.6792068+07:00 0HLLSMT9MCVG7:00000004 [ERR] An unhandled exception has occurred while executing the request (cf926119)
+System.InvalidOperationException: Unable to resolve service for type 'AutoMapper.Configuration.IConfiguration' while attempting to activate 'NetCoreApp.Controllers.CartController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass4_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeInnerFilterAsync>d__14.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextResourceFilter>d__22.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeFilterPipelineAsync>d__17.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeAsync>d__15.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.<Invoke>d__9.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Session.SessionMiddleware.<Invoke>d__9.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.MigrationsEndPointMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+2019-04-09T13:49:22.9232741+07:00 0HLLSMT9MCVG7:00000004 [INF] Request finished in 1764.6796ms 500 text/html; charset=utf-8 (791a596a)
+2019-04-09T13:49:25.0459728+07:00 0HLLSMT9MCVG7:00000005 [INF] Request starting HTTP/1.1 POST http://localhost:44383/Cart/AddCart application/x-www-form-urlencoded; charset=UTF-8 37 (ca22a1cb)
+2019-04-09T13:49:25.3473799+07:00 0HLLSMT9MCVG7:00000005 [INF] Executed action "NetCoreApp.Controllers.CartController.AddCart (NetCoreApp)" in 9.8814ms (afa2e885)
+2019-04-09T13:49:26.0532968+07:00 0HLLSMT9MCVG7:00000005 [ERR] An unhandled exception has occurred while executing the request (cf926119)
+System.InvalidOperationException: Unable to resolve service for type 'AutoMapper.Configuration.IConfiguration' while attempting to activate 'NetCoreApp.Controllers.CartController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass4_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeInnerFilterAsync>d__14.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextResourceFilter>d__22.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeFilterPipelineAsync>d__17.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeAsync>d__15.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.<Invoke>d__9.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Session.SessionMiddleware.<Invoke>d__9.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.MigrationsEndPointMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+2019-04-09T13:49:26.5159022+07:00 0HLLSMT9MCVG7:00000005 [INF] Request finished in 1674.134ms 500 text/html; charset=utf-8 (791a596a)
